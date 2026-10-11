@@ -1,0 +1,196 @@
+# Proposed test evidence templates, one per test type code. These are proposals written by the maintainer from the
+# retrieved sources. They are not requirements of any authority, and none has been reviewed by one.
+PERF:
+  name: Performance and validity evaluation
+  what_to_run:
+    - Define the task, the unit of evaluation and the metrics before looking at results.
+    - Run the system on a held out test set drawn from data that resembles deployment conditions, and on a separate set of known hard cases.
+    - Report the metric with an uncertainty estimate (confidence interval or repeated runs), not a single point value.
+  record:
+    - Test data source, version, size, date range, and how it was kept apart from training data.
+    - Metric definitions, thresholds fixed in advance, and who approved them.
+    - Results per metric, per important slice, and the failure examples reviewed.
+    - Model or system version identifier, configuration, and random seeds.
+  reviewer_looks_for:
+    - Thresholds were set before testing and are tied to the stakes of the decision.
+    - The test set matches the real population and language, and there is no leakage from training data.
+    - Uncertainty is stated and weak slices are reported rather than averaged away.
+    - The metric measures what the service needs (a benchmark that predicts the outcome of interest).
+ROB:
+  name: Robustness, reliability and fault testing
+  what_to_run:
+    - Perturb inputs (noise, missing fields, formatting changes, paraphrases, scanned versus digital documents) and compare outputs.
+    - Run extreme and out of range values, and repeated runs of the same input to measure run to run stability.
+    - Inject faults (dependency down, slow response, malformed input) and observe fail safe behaviour.
+  record:
+    - Perturbation types and magnitudes, number of cases, and output change rates.
+    - Failure modes found, severity, and the mitigation or accepted risk for each.
+    - Fallback behaviour observed, and the time to recover.
+  reviewer_looks_for:
+    - A defined acceptable degradation, not just a list of tests run.
+    - Fallback to a human or manual process is tested, not assumed.
+    - Failures are traced to causes and either fixed or explicitly accepted by a named owner.
+FAIR:
+  name: Fairness, bias and representativeness testing
+  what_to_run:
+    - Decide which groups and attributes are relevant for the service (including language, nationality, age, gender and disability where lawful and appropriate) before testing.
+    - Compare error rates and outcomes across groups, with enough cases per group to say something.
+    - Check how well the data represents the groups affected, including under represented groups.
+  record:
+    - Group definitions, how group membership was obtained, and the legal basis for using it.
+    - Per group sample sizes, metrics and gaps, with uncertainty.
+    - Mitigations tried and the residual gaps accepted, with the decision maker named.
+  reviewer_looks_for:
+    - Small groups are flagged as underpowered, not reported as equal.
+    - The chosen fairness measure is justified for the decision, and trade offs between measures are stated.
+    - Proxy variables were considered.
+SEC:
+  name: Security and adversarial resilience testing
+  what_to_run:
+    - Review code and dependencies, scan for vulnerabilities and test the deployment configuration (access control, secrets, logging).
+    - Run penetration tests against the application and interfaces around the model.
+    - For learned models, test AI specific attacks relevant to the system type, such as prompt injection, data poisoning, evasion, model extraction and data leakage.
+  record:
+    - Scope, method, tools and versions, dates, and who carried out the test.
+    - Findings with severity, status and retest evidence.
+    - Residual risk accepted and by whom.
+  reviewer_looks_for:
+    - Third party and open source components were covered.
+    - AI specific attacks were chosen for the actual threat model, not copied from a list.
+    - Fixes were retested before release.
+RED:
+  name: Red teaming and dangerous capability evaluation
+  what_to_run:
+    - Plan the red team scope from the misuse and failure scenarios of the deployment, including tool use for agentic systems.
+    - Use testers who were not involved in building the system, with domain knowledge relevant to the service.
+    - Record attempts, not only successes, so the effort is visible.
+  record:
+    - Scenarios, tester roles and independence, attack strategies tried, number of attempts.
+    - Successful attacks with reproduction steps, severity and the fix or accepted risk.
+    - Residual risk statement and re test plan after changes.
+  reviewer_looks_for:
+    - Independence of the testers from the developers.
+    - Coverage of the whole workflow, not only the model.
+    - Findings drive changes and re testing, rather than ending in a report.
+CSAFE:
+  name: Content safety evaluation
+  what_to_run:
+    - Build question banks for harmful content categories relevant to the service and a separate bank of legitimate requests to detect over refusal.
+    - Measure harmful output rate and refusal rate, in each language the service supports.
+    - Re run after prompt, model or filter changes.
+  record:
+    - Bank composition, size, languages, and how it was built and protected from leakage into tuning.
+    - Rates per category with uncertainty, against thresholds set in advance.
+  reviewer_looks_for:
+    - Banks cover the languages and dialects used by the audience.
+    - Over refusal is measured as well as harm.
+    - Thresholds were set before the run.
+PRIV:
+  name: Privacy and data protection assessment or testing
+  what_to_run:
+    - Complete a data protection impact assessment where the processing is high risk, and record the legal basis and scope check.
+    - Test for leakage of training or personal data in outputs, membership inference where relevant, and re identification risk in any released data.
+    - Check data minimisation, retention and access controls in the live configuration.
+  record:
+    - Data map, legal basis and scope analysis, including whether the entity and the data are within the law that applies.
+    - Test method and results for leakage and re identification.
+    - Actions taken and residual risk with sign off.
+  reviewer_looks_for:
+    - The scope question (which law applies to this entity and data) was answered by someone qualified to answer it.
+    - Tests used realistic prompts and data.
+TRANS:
+  name: Transparency, explainability and reproducibility checks
+  what_to_run:
+    - Check that explanations or reason codes shown to users match what the system actually used.
+    - Check that disclosures and labels appear where they should and survive export or copy.
+    - Re run a saved test and confirm the same result from the same version and data.
+  record:
+    - Explanation method, user testing results, disclosure wording and placement.
+    - Version identifiers, data snapshots and commands needed to reproduce results.
+  reviewer_looks_for:
+    - Explanations are faithful, not decorative.
+    - Another team can reproduce the headline results from the saved record.
+OVER:
+  name: Human oversight validation
+  what_to_run:
+    - Trial the review and override process with real reviewers under realistic workload and time pressure.
+    - Measure how often reviewers accept, change or reject outputs, and whether wrong outputs are caught.
+    - Test that an override or stop actually takes effect.
+  record:
+    - Reviewer roles, training, workload assumptions, and acceptance and override rates.
+    - Cases where wrong outputs were missed and why.
+    - Evidence that stop, override and escalation work.
+  reviewer_looks_for:
+    - Evidence that reviewers can disagree with the system in practice (automation bias is addressed).
+    - Reviewers have authority, competence and time.
+RISK:
+  name: Risk, impact and compliance assessment
+  what_to_run:
+    - Identify affected people and groups, harms, likelihood and severity, and legal obligations that apply to the entity.
+    - Assign an impact or risk tier and the controls that follow from it.
+    - Review the assessment when the system, data or use changes.
+  record:
+    - Tier, reasoning, owners, controls, residual risk and approver.
+    - Applicable instruments checked and which could not be checked (unknown).
+  reviewer_looks_for:
+    - Unknowns are written down with an owner and a date.
+    - The tier decides how deep later tests go.
+DATA:
+  name: Data and training corpus quality validation
+  what_to_run:
+    - Check data for accuracy, completeness, duplicates, labelling quality and provenance.
+    - Check lawful basis and permission to use the data for this purpose.
+    - Check that test data is separate from training data and reflects the deployment setting.
+  record:
+    - Data sources, dates, versions, sampling and labelling procedure, and quality checks with results.
+    - Known gaps and their expected effect.
+  reviewer_looks_for:
+    - Label quality was sampled and measured.
+    - Provenance can be traced for the data that matters most.
+CONF:
+  name: Conformity assessment, independent review, audit or certification
+  what_to_run:
+    - Identify which instrument requires or recommends independent review for this entity and tier (this is often UNKNOWN until legal review).
+    - Give the reviewer the evidence pack from the other tests, and the system access they need.
+    - Record findings and how each was closed.
+  record:
+    - Reviewer identity, qualifications and independence, scope, access given, dates.
+    - Findings, closure evidence, and the final opinion or certificate with its conditions.
+  reviewer_looks_for:
+    - Independence from the development team.
+    - The scope matches the system as deployed, including vendor components.
+REAL:
+  name: Real world, sandbox and pilot testing
+  what_to_run:
+    - Run a limited pilot with defined users, duration, stop conditions and monitoring.
+    - Agree in advance with the responsible authority what the pilot may and may not do, where such agreement is required.
+    - Compare pilot results with the pre deployment tests.
+  record:
+    - Pilot plan, participants, consent and safeguards, stop criteria, and results.
+    - Differences between pilot and test environment results.
+  reviewer_looks_for:
+    - Stop conditions were real and were tested.
+    - Harm to participants was monitored.
+MON:
+  name: Post deployment monitoring and re assessment
+  what_to_run:
+    - Monitor performance, drift, outcomes, complaints and overrides on a schedule that matches the stakes.
+    - Define triggers for re testing: model or data change, vendor update, scope change, incident.
+    - Rehearse incident escalation, suspension and rollback.
+  record:
+    - Metrics, thresholds, dashboards, review dates and owners.
+    - Incidents, decisions taken and lessons learned.
+  reviewer_looks_for:
+    - Alerts have owners and a response time.
+    - Rollback has been practised, not only written.
+GATE:
+  name: Acceptance criteria and release decision
+  what_to_run:
+    - Write acceptance criteria before testing, mapped to the risk tier.
+    - Hold a release decision at an authority level matched to the tier, using the evidence pack.
+    - Record conditions, waivers and the rule for unacceptable residual risk.
+  record:
+    - Criteria, evidence reference for each, decision, decision maker, date and conditions.
+  reviewer_looks_for:
+    - Waivers are explicit and time limited.
+    - The decision maker saw the weak results as well as the strong ones.

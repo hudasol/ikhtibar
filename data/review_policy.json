@@ -1,0 +1,5 @@
+{
+ "note": "Proposed review intervals in days, counted from the last check (or the retrieval date if never rechecked). Shorter intervals apply to families where documents were drafts, recently launched, or under active revision. This is a proposal for the maintainer to adjust.",
+ "default_days": {"mandatory": 180, "conditional": 180, "voluntary": 270, "guidance": 365, "ambiguous": 120, "other": 180},
+ "family_days": {"Saudi": 90, "UAE-AbuDhabi-DoH": 90, "UAE-DIFC": 90, "EU-AI-Act": 90, "EU-GPAI": 90, "EU-Standards": 90, "Korea": 120, "ISO-IEC": 180, "UAE-Federal": 120, "UAE-Dubai": 120}
+}

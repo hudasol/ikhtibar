@@ -1,0 +1,979 @@
+{
+ "meta": {
+  "version": "2.0-proposal",
+  "status": "proposal assembled from retrieved sources; applicability rules are the maintainer's interpretation",
+  "conditions": "always | eq | in | tri | contains | any_contains | all | any | not (see src/ikhtibar/engine.py)"
+ },
+ "phases": {
+  "A": "Scope and risk",
+  "B": "Define what good enough means",
+  "C": "Data",
+  "D": "System testing before release",
+  "E": "Oversight and independent review",
+  "F": "Release decision and evidence",
+  "G": "After deployment",
+  "H": "Jurisdiction specific checks (apply only when the entity zone is stated)"
+ },
+ "items": [
+  {
+   "id": "A1",
+   "phase": "A",
+   "text": "Classify the use case by impact or risk tier before build or procurement, and record the reasoning.",
+   "rows": [
+    "Canada-005",
+    "US-OMB-002",
+    "EU-AI-Act-011",
+    "Korea-006",
+    "UAE-AbuDhabi-DoH-009",
+    "Singapore-008",
+    "UAE-Dubai-021"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice; several regimes scale duties by tier.",
+   "templates": [
+    "RISK"
+   ]
+  },
+  {
+   "id": "A2",
+   "phase": "A",
+   "text": "Run a documented risk and impact assessment that names affected groups (including vulnerable groups) and the harms considered.",
+   "rows": [
+    "EU-AI-Act-014",
+    "EU-AI-Act-019",
+    "Canada-015",
+    "US-OMB-004",
+    "UAE-AbuDhabi-DoH-009",
+    "Saudi-014",
+    "UAE-Dubai-013"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "RISK"
+   ]
+  },
+  {
+   "id": "A3",
+   "phase": "A",
+   "text": "Involve legal and data protection review from concept stage; run a data protection impact assessment where personal data is processed at risk.",
+   "rows": [
+    "Canada-018",
+    "UAE-Federal-005",
+    "UAE-Federal-032",
+    "UAE-DIFC-ADGM-006",
+    "UAE-DIFC-ADGM-008",
+    "UAE-DIFC-ADGM-012",
+    "UAE-Federal-026"
+   ],
+   "applies_when": {
+    "any_contains": [
+     "data_types",
+     [
+      "personal",
+      "sensitive_personal",
+      "biometric",
+      "health",
+      "financial"
+     ]
+    ]
+   },
+   "to_settle": [
+    "data_types"
+   ],
+   "why": "The item is premised on personal data being processed.",
+   "templates": [
+    "PRIV",
+    "RISK"
+   ]
+  },
+  {
+   "id": "B1",
+   "phase": "B",
+   "text": "Fix metrics and acceptance thresholds before testing, scaled to stakes, including whether pass criteria are absolute or comparative.",
+   "rows": [
+    "EU-AI-Act-018",
+    "Singapore-009",
+    "Singapore-010",
+    "US-NIST-026",
+    "Saudi-004",
+    "EU-GPAI-CoP-008",
+    "UAE-AbuDhabi-DoH-003",
+    "UAE-Federal-009"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice; binding regimes mostly leave thresholds to the provider.",
+   "templates": [
+    "GATE",
+    "PERF"
+   ]
+  },
+  {
+   "id": "B2",
+   "phase": "B",
+   "text": "Record why the chosen metrics and benchmarks are valid for the deployment context, and the limits of what the tests cannot show.",
+   "rows": [
+    "US-NIST-006",
+    "US-NIST-035",
+    "US-NIST-037",
+    "US-NIST-041",
+    "US-NIST-043"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "PERF"
+   ]
+  },
+  {
+   "id": "C1",
+   "phase": "C",
+   "text": "Validate training, validation and test data for quality, provenance, lawfulness and representativeness.",
+   "rows": [
+    "Canada-011",
+    "EU-AI-Act-020",
+    "China-002",
+    "UAE-AbuDhabi-DoH-008",
+    "UAE-Federal-028"
+   ],
+   "applies_when": {
+    "in": [
+     "system_type",
+     [
+      "predictive_ml",
+      "genai_llm",
+      "agentic",
+      "computer_vision"
+     ]
+    ]
+   },
+   "to_settle": [
+    "system_type"
+   ],
+   "why": "The item concerns learned models; a rules based system has no training data.",
+   "templates": [
+    "DATA"
+   ]
+  },
+  {
+   "id": "C2",
+   "phase": "C",
+   "text": "Check that test data reflects the local deployment setting (population, language, geography) and under represented groups.",
+   "rows": [
+    "EU-AI-Act-022",
+    "UAE-Dubai-002",
+    "UAE-AbuDhabi-DoH-008",
+    "UAE-Dubai-012"
+   ],
+   "applies_when": {
+    "tri": [
+     "audience",
+     [
+      "public_facing"
+     ],
+     []
+    ]
+   },
+   "to_settle": [
+    "audience"
+   ],
+   "why": "For staff only systems the relevant population and languages are not settled by the answers, so the item stays UNKNOWN.",
+   "close_by": "Confirm who the staff users are, which languages they work in, and which population the outputs concern (staff only systems can still affect the public).",
+   "templates": [
+    "FAIR",
+    "DATA"
+   ]
+  },
+  {
+   "id": "D1",
+   "phase": "D",
+   "text": "Test accuracy and task performance on diverse datasets in deployment like conditions.",
+   "rows": [
+    "EU-AI-Act-016",
+    "Canada-007",
+    "UAE-AbuDhabi-DoH-004",
+    "US-OMB-003",
+    "US-NIST-009",
+    "Singapore-005"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "PERF"
+   ]
+  },
+  {
+   "id": "D2",
+   "phase": "D",
+   "text": "Test for bias and unequal performance across subgroups.",
+   "rows": [
+    "Canada-007",
+    "EU-AI-Act-020",
+    "UAE-AbuDhabi-DoH-008",
+    "UAE-Dubai-001",
+    "Singapore-019",
+    "US-NIST-034",
+    "Saudi-004",
+    "UAE-Federal-018",
+    "UAE-Dubai-011"
+   ],
+   "applies_when": {
+    "all": [
+     {
+      "tri": [
+       "decision_impact",
+       [
+        "significant_support",
+        "automated_significant",
+        "critical"
+       ],
+       [
+        "none"
+       ]
+      ]
+     },
+     {
+      "in": [
+       "system_type",
+       [
+        "predictive_ml",
+        "genai_llm",
+        "agentic",
+        "computer_vision"
+       ]
+      ]
+     }
+    ]
+   },
+   "to_settle": [
+    "decision_impact",
+    "system_type"
+   ],
+   "why": "Premised on outputs that bear on people and on a learned model.",
+   "templates": [
+    "FAIR"
+   ]
+  },
+  {
+   "id": "D3",
+   "phase": "D",
+   "text": "Test robustness: perturbed inputs, outliers and extreme cases, and run to run stability.",
+   "rows": [
+    "EU-AI-Act-029",
+    "UAE-AbuDhabi-DoH-005",
+    "Saudi-003",
+    "Singapore-006",
+    "Singapore-017",
+    "ISO-IEC-009",
+    "UAE-Federal-023"
+   ],
+   "applies_when": {
+    "in": [
+     "system_type",
+     [
+      "predictive_ml",
+      "genai_llm",
+      "agentic",
+      "computer_vision"
+     ]
+    ]
+   },
+   "to_settle": [
+    "system_type"
+   ],
+   "why": "Premised on a learned model.",
+   "templates": [
+    "ROB"
+   ]
+  },
+  {
+   "id": "D4",
+   "phase": "D",
+   "text": "Analyse failure modes and confirm fail safe or graceful degradation behaviour.",
+   "rows": [
+    "UAE-AbuDhabi-DoH-005",
+    "US-NIST-023",
+    "US-NIST-011",
+    "EU-AI-Act-029",
+    "UAE-Federal-023"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "ROB"
+   ]
+  },
+  {
+   "id": "D5",
+   "phase": "D",
+   "text": "Run security testing: secure code review, vulnerability scanning, penetration testing, and AI specific attacks (prompt injection, poisoning, evasion).",
+   "rows": [
+    "UAE-AbuDhabi-DoH-007",
+    "EU-AI-Act-030",
+    "Canada-017",
+    "Saudi-019",
+    "Saudi-021",
+    "Singapore-025",
+    "UAE-Federal-007",
+    "UAE-Federal-025",
+    "UAE-Dubai-034"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "SEC"
+   ]
+  },
+  {
+   "id": "D6",
+   "phase": "D",
+   "text": "Test for privacy leakage and re identification risk.",
+   "rows": [
+    "US-NIST-033",
+    "Saudi-005",
+    "Singapore-012"
+   ],
+   "applies_when": {
+    "any_contains": [
+     "data_types",
+     [
+      "personal",
+      "sensitive_personal",
+      "biometric",
+      "health",
+      "financial"
+     ]
+    ]
+   },
+   "to_settle": [
+    "data_types"
+   ],
+   "why": "Premised on personal data.",
+   "templates": [
+    "PRIV"
+   ]
+  },
+  {
+   "id": "D7",
+   "phase": "D",
+   "text": "For generative or agentic systems, run structured red teaming and harmful output and refusal tests, and test whole workflow and tool use behaviour.",
+   "rows": [
+    "Singapore-007",
+    "Singapore-016",
+    "US-NIST-024",
+    "US-NIST-028",
+    "Japan-020",
+    "Japan-021",
+    "Saudi-020",
+    "EU-GPAI-CoP-003",
+    "Singapore-032",
+    "Singapore-033",
+    "China-024",
+    "China-025"
+   ],
+   "applies_when": {
+    "in": [
+     "system_type",
+     [
+      "genai_llm",
+      "agentic"
+     ]
+    ]
+   },
+   "to_settle": [
+    "system_type"
+   ],
+   "why": "Premised on a generative or agentic system.",
+   "templates": [
+    "RED",
+    "CSAFE"
+   ]
+  },
+  {
+   "id": "D8",
+   "phase": "D",
+   "text": "For vendor or black box systems, secure contractual access for testing and verify vendor performance claims independently, using alternative methods where internals are closed.",
+   "rows": [
+    "US-OMB-003",
+    "Canada-022",
+    "Singapore-023",
+    "Saudi-007"
+   ],
+   "applies_when": {
+    "in": [
+     "acquisition",
+     [
+      "vendor_product",
+      "mixed"
+     ]
+    ]
+   },
+   "to_settle": [
+    "acquisition"
+   ],
+   "why": "Premised on a vendor supplied component.",
+   "templates": [
+    "PERF",
+    "SEC"
+   ]
+  },
+  {
+   "id": "E1",
+   "phase": "E",
+   "text": "Design human oversight and test that override and review actually work, with trained reviewers.",
+   "rows": [
+    "EU-AI-Act-026",
+    "Canada-019",
+    "Canada-016",
+    "Saudi-020",
+    "UAE-Federal-008",
+    "UAE-DIFC-ADGM-015"
+   ],
+   "applies_when": {
+    "tri": [
+     "decision_impact",
+     [
+      "significant_support",
+      "automated_significant",
+      "critical"
+     ],
+     [
+      "none"
+     ]
+    ]
+   },
+   "to_settle": [
+    "decision_impact"
+   ],
+   "why": "Premised on outputs with a significant effect. Advisory only use is not settled by the answers and stays UNKNOWN; no effect on anyone does not apply.",
+   "templates": [
+    "OVER"
+   ]
+  },
+  {
+   "id": "E2",
+   "phase": "E",
+   "text": "Obtain independent review scaled to impact level (qualified expert reviewers, independent assessors, or notified body style assessment).",
+   "rows": [
+    "Canada-013",
+    "Canada-014",
+    "US-OMB-004",
+    "US-NIST-007",
+    "EU-AI-Act-045",
+    "Singapore-026",
+    "EU-GPAI-CoP-007",
+    "UAE-Federal-021",
+    "UAE-Dubai-016"
+   ],
+   "applies_when": {
+    "tri": [
+     "decision_impact",
+     [
+      "automated_significant",
+      "critical"
+     ],
+     [
+      "none"
+     ]
+    ]
+   },
+   "to_settle": [
+    "decision_impact"
+   ],
+   "why": "Sources scale independent review to higher impact levels; lower levels are not settled by the answers.",
+   "close_by": "Decide with the system owner, and with legal review, whether independent review is expected at this tier. The sources scale it with impact.",
+   "templates": [
+    "CONF"
+   ]
+  },
+  {
+   "id": "F1",
+   "phase": "F",
+   "text": "Make a documented go or no go decision at an authority level matched to the impact tier, with a rule for unacceptable residual risk.",
+   "rows": [
+    "Canada-020",
+    "UAE-AbuDhabi-DoH-011",
+    "EU-AI-Act-015",
+    "US-NIST-017",
+    "Saudi-006",
+    "Singapore-026",
+    "UAE-Federal-009",
+    "UAE-Dubai-021"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "GATE"
+   ]
+  },
+  {
+   "id": "F2",
+   "phase": "F",
+   "text": "Keep reproducible evidence: test data versions, protocols, results and logs.",
+   "rows": [
+    "EU-AI-Act-023",
+    "Canada-023",
+    "UAE-AbuDhabi-DoH-006",
+    "US-NIST-044",
+    "Singapore-022",
+    "UAE-Federal-010"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "TRANS"
+   ]
+  },
+  {
+   "id": "F3",
+   "phase": "F",
+   "text": "Publish or disclose a summary of tested performance and fairness results as appropriate to the audience.",
+   "rows": [
+    "Canada-024",
+    "Canada-021",
+    "UK-018",
+    "EU-AI-Act-025",
+    "Singapore-029"
+   ],
+   "applies_when": {
+    "tri": [
+     "audience",
+     [
+      "public_facing"
+     ],
+     []
+    ]
+   },
+   "to_settle": [
+    "audience"
+   ],
+   "why": "Disclosure audience is not settled for staff only systems, so the item stays UNKNOWN.",
+   "close_by": "Decide who should see tested results (oversight body, auditors, affected public).",
+   "templates": [
+    "TRANS"
+   ]
+  },
+  {
+   "id": "G1",
+   "phase": "G",
+   "text": "Monitor performance, drift, outcomes, complaints and human overrides on a schedule.",
+   "rows": [
+    "Canada-008",
+    "Canada-010",
+    "EU-AI-Act-060",
+    "US-OMB-006",
+    "UAE-AbuDhabi-DoH-005",
+    "UK-003",
+    "Singapore-034",
+    "UAE-Federal-011",
+    "UAE-Dubai-014",
+    "UAE-Dubai-028",
+    "UAE-DIFC-ADGM-010"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "MON"
+   ]
+  },
+  {
+   "id": "G2",
+   "phase": "G",
+   "text": "Define re testing triggers: model or data change, vendor update, scope change.",
+   "rows": [
+    "Singapore-014",
+    "UK-011",
+    "EU-AI-Act-043",
+    "Canada-006",
+    "Singapore-018"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "MON"
+   ]
+  },
+  {
+   "id": "G3",
+   "phase": "G",
+   "text": "Set incident escalation, suspension and rollback procedures.",
+   "rows": [
+    "EU-AI-Act-061",
+    "EU-AI-Act-034",
+    "UK-012",
+    "Canada-010"
+   ],
+   "applies_when": {
+    "always": true
+   },
+   "why": "Generic good practice.",
+   "templates": [
+    "MON"
+   ]
+  },
+  {
+   "id": "H1",
+   "phase": "H",
+   "text": "Healthcare entity licensed by Abu Dhabi Department of Health: check each applicable clause of the DoH Responsible AI Standard V1 (validation, safety testing, security review, representativeness audits, risk assessment, conformity assessment for high risk).",
+   "rows": [
+    "UAE-AbuDhabi-DoH-003",
+    "UAE-AbuDhabi-DoH-004",
+    "UAE-AbuDhabi-DoH-005",
+    "UAE-AbuDhabi-DoH-006",
+    "UAE-AbuDhabi-DoH-007",
+    "UAE-AbuDhabi-DoH-008",
+    "UAE-AbuDhabi-DoH-009",
+    "UAE-AbuDhabi-DoH-010",
+    "UAE-AbuDhabi-DoH-011",
+    "UAE-AbuDhabi-DoH-012",
+    "UAE-AbuDhabi-DoH-013"
+   ],
+   "applies_when": {
+    "eq": [
+     "entity_zone",
+     "health_abu_dhabi"
+    ]
+   },
+   "to_settle": [
+    "entity_zone"
+   ],
+   "why": "The standard is addressed to DoH and licensed healthcare entities. Check for a revision (the document states one was due October 2026).",
+   "templates": [
+    "PERF",
+    "ROB",
+    "SEC",
+    "FAIR",
+    "RISK",
+    "CONF",
+    "GATE"
+   ]
+  },
+  {
+   "id": "H2",
+   "phase": "H",
+   "text": "Healthcare entity regulated by Dubai Health Authority: check the DHA AI in Healthcare Policy (independent third party validation, certification, auditable validation statements, regular independent audits).",
+   "rows": [
+    "UAE-Dubai-025",
+    "UAE-Dubai-026",
+    "UAE-Dubai-027",
+    "UAE-Dubai-028",
+    "UAE-Dubai-029",
+    "UAE-Dubai-030"
+   ],
+   "applies_when": {
+    "eq": [
+     "entity_zone",
+     "health_dubai"
+    ]
+   },
+   "to_settle": [
+    "entity_zone"
+   ],
+   "why": "The policy is addressed to DHA regulated healthcare. Its cover and header give conflicting effective dates; check for a current version.",
+   "templates": [
+    "CONF",
+    "MON"
+   ]
+  },
+  {
+   "id": "H3",
+   "phase": "H",
+   "text": "Determine whether the federal personal data law applies to the entity and the data (Article 2 excludes government data and government entities controlling or processing personal data), then, if it does, check the impact assessment and security testing duties.",
+   "rows": [
+    "UAE-Federal-034",
+    "UAE-Federal-032",
+    "UAE-Federal-033",
+    "UAE-Federal-005",
+    "UAE-Federal-007"
+   ],
+   "applies_when": {
+    "any_contains": [
+     "data_types",
+     [
+      "personal",
+      "sensitive_personal",
+      "biometric",
+      "health",
+      "financial"
+     ]
+    ]
+   },
+   "to_settle": [
+    "data_types",
+    "entity_zone"
+   ],
+   "why": "Whether the law reaches a given government deployment is a legal question the answers cannot settle; obtain legal review.",
+   "templates": [
+    "PRIV",
+    "SEC"
+   ]
+  },
+  {
+   "id": "H4",
+   "phase": "H",
+   "text": "DIFC or ADGM entity: check the DIFC Data Protection Regulations Regulation 10, the Commissioner's Accreditation and Certification Framework, and the ADGM data protection and FSRA guidance that applies.",
+   "rows": [
+    "UAE-DIFC-ADGM-001",
+    "UAE-DIFC-ADGM-003",
+    "UAE-DIFC-ADGM-004",
+    "UAE-DIFC-ADGM-016",
+    "UAE-DIFC-ADGM-018",
+    "UAE-DIFC-ADGM-020",
+    "UAE-DIFC-ADGM-009",
+    "UAE-DIFC-ADGM-010",
+    "UAE-DIFC-ADGM-012",
+    "UAE-DIFC-ADGM-013",
+    "UAE-DIFC-ADGM-014"
+   ],
+   "applies_when": {
+    "in": [
+     "entity_zone",
+     [
+      "difc",
+      "adgm"
+     ]
+    ]
+   },
+   "to_settle": [
+    "entity_zone"
+   ],
+   "why": "The official DIFC text was read in phase 2. Regulation 10.3.3 makes certification a precondition for commercial high risk processing and the Commissioner has published an accreditation and certification framework, whose pages say they are informational and may be incomplete. Amendments after Version No. 2 were not checked.",
+   "templates": [
+    "CONF",
+    "PRIV"
+   ]
+  },
+  {
+   "id": "H5",
+   "phase": "H",
+   "text": "Dubai government entity: check the Dubai AI Ethics Guidelines and self assessment tool, the AI Integration Matrix Framework, and the DESC Information Security Regulation controls on testing and sign off.",
+   "rows": [
+    "UAE-Dubai-011",
+    "UAE-Dubai-015",
+    "UAE-Dubai-020",
+    "UAE-Dubai-021",
+    "UAE-Dubai-022",
+    "UAE-Dubai-031",
+    "UAE-Dubai-033",
+    "UAE-Dubai-034",
+    "UAE-Dubai-035"
+   ],
+   "applies_when": {
+    "eq": [
+     "entity_zone",
+     "dubai_gov"
+    ]
+   },
+   "to_settle": [
+    "entity_zone"
+   ],
+   "why": "The ethics guidelines are recommended, not compulsory, in the pages read; the security regulation is mandatory for Dubai government entities but is not AI specific.",
+   "templates": [
+    "GATE",
+    "SEC"
+   ]
+  },
+  {
+   "id": "H6",
+   "phase": "H",
+   "text": "Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions; none with AI testing content were found in the public sources searched.",
+   "rows": [
+    "UAE-AbuDhabi-Other-001",
+    "UAE-AbuDhabi-Other-002",
+    "UAE-Federal-009",
+    "UAE-Federal-018",
+    "UAE-Federal-021"
+   ],
+   "applies_when": {
+    "in": [
+     "entity_zone",
+     [
+      "abu_dhabi_gov",
+      "federal_gov"
+     ]
+    ]
+   },
+   "to_settle": [
+    "entity_zone"
+   ],
+   "why": "Absence in public sources searched is not proof that no instruction exists. Ask the entity's governance office.",
+   "templates": [
+    "GATE"
+   ]
+  }
+ ],
+ "row_binding": {
+  "by_family": {
+   "UAE-AbuDhabi-DoH": {
+    "actor": "healthcare entities licensed by Abu Dhabi DoH",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_abu_dhabi"
+     ]
+    }
+   },
+   "EU-AI-Act": {
+    "actor": "providers and deployers in scope of the EU AI Act (see the row for the trigger)",
+    "applies_when": {
+     "eq": [
+      "eu_market",
+      "yes"
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-DIFC-ADGM": {
+    "actor": "entities in DIFC or ADGM (see the row; Regulation 10 duties depend on Commissioner requirements)",
+    "applies_when": {
+     "in": [
+      "entity_zone",
+      [
+       "difc",
+       "adgm"
+      ]
+     ]
+    },
+    "still_conditional": true
+   }
+  },
+  "by_row": {
+   "UAE-Dubai-025": {
+    "actor": "DHA regulated healthcare",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_dubai"
+     ]
+    }
+   },
+   "UAE-Dubai-026": {
+    "actor": "DHA regulated healthcare",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_dubai"
+     ]
+    }
+   },
+   "UAE-Dubai-027": {
+    "actor": "DHA regulated healthcare",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_dubai"
+     ]
+    }
+   },
+   "UAE-Dubai-028": {
+    "actor": "DHA regulated healthcare",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_dubai"
+     ]
+    }
+   },
+   "UAE-Dubai-029": {
+    "actor": "DHA regulated healthcare",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_dubai"
+     ]
+    }
+   },
+   "UAE-Dubai-030": {
+    "actor": "DHA Health Regulation Sector (regulator)",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "health_dubai"
+     ]
+    }
+   },
+   "UAE-Dubai-033": {
+    "actor": "Dubai government entities, but the control is not AI specific",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "dubai_gov"
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Dubai-034": {
+    "actor": "Dubai government entities, but the control is not AI specific",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "dubai_gov"
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Dubai-035": {
+    "actor": "Dubai government entities, but the control is not AI specific",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "dubai_gov"
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-034": {
+    "actor": "scope exclusion in the federal personal data law (government data and government entities)",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "federal_gov"
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-032": {
+    "actor": "controllers in scope of the federal personal data law",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "other_uae"
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-033": {
+    "actor": "controllers and processors in scope of the federal personal data law",
+    "applies_when": {
+     "eq": [
+      "entity_zone",
+      "other_uae"
+     ]
+    },
+    "still_conditional": true
+   }
+  }
+ }
+}

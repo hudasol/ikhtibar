@@ -1,0 +1,2498 @@
+[
+ {
+  "row_id": "US-NIST-001",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "p.2 (Executive Summary)",
+  "source": "vres_02",
+  "reason": "locator label"
+ },
+ {
+  "row_id": "US-NIST-015",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Subcategory number printed as 2.13 at the end of the MEASURE 2 list on p.30.",
+  "new": "Subcategory number and placement as printed in the MEASURE 2 list on p.30.",
+  "source": "vres_02",
+  "reason": "numbering note reworded"
+ },
+ {
+  "row_id": "US-NIST-026",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "GV-1.3-002, p.15",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-027",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "GV-1.3-003, p.15",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-028",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MS-1.1-008, p.30; MS-1.3-002 and MS-1.3-003, p.30",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-030",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MS-2.5-001, MS-2.5-003, MS-2.5-006, p.32",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-033",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MS-2.10-001, p.36",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-034",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MS-2.11-001 and MS-2.11-002, p.37",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-035",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MS-2.13-001, p.39",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-044",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Practice 3.2, pp.26-27",
+  "source": "vres_03",
+  "reason": "page corrected to printed footer"
+ },
+ {
+  "row_id": "US-NIST-033",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Red teams (with TEVV actors and domain experts)",
+  "source": "vres_03",
+  "reason": "who_tests broadened per source"
+ },
+ {
+  "row_id": "US-NIST-035",
+  "field": "who_tests",
+  "op": "set",
+  "value": "TEVV actors and/or domain experts (actor not fully specified)",
+  "source": "vres_03",
+  "reason": "who_tests partly unseen"
+ },
+ {
+  "row_id": "US-NIST-034",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "where outcomes are categorical",
+  "new": "where outcomes are categorical or numeric",
+  "source": "vres_03",
+  "reason": "paraphrase detail"
+ },
+ {
+  "row_id": "US-NIST-041",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Select benchmarks that meet the objectives: document what the benchmark measures and verify its relevance to the objective; confirming that a benchmark predicts downstream outcomes of interest is described as emerging practice.",
+  "source": "vres_03",
+  "reason": "label scope of emerging practice"
+ },
+ {
+  "row_id": "US-OMB-001",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Scope section; Appendix s.1(a) p.4 and s.1(c) p.5 (national security systems exclusion); s.4 intro (pp.13-14)",
+  "source": "vres_03",
+  "reason": "locator incomplete"
+ },
+ {
+  "row_id": "US-OMB-002",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "with a legal, material, binding or significant effect on rights or safety",
+  "new": "with a legal, material, binding or significant effect on one of the six areas listed in the memo's definition",
+  "source": "vres_03",
+  "reason": "definition narrowed in earlier wording"
+ },
+ {
+  "row_id": "UK-003",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified (delivery team implied)",
+  "source": "vres_04",
+  "reason": "who_tests not stated"
+ },
+ {
+  "row_id": "UK-003",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Uses 'should'.",
+  "new": "Uses 'should'. Page metadata shows a later internal update timestamp (2026-09-09) than the visible 2025-02-10 publication date.",
+  "source": "vres_04",
+  "reason": "version metadata"
+ },
+ {
+  "row_id": "UK-004",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified (delivery team or red team is an inference)",
+  "source": "vres_04",
+  "reason": "who_tests not stated"
+ },
+ {
+  "row_id": "UK-004",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Ethics > Safety, security and robustness (H3) > Practical recommendations",
+  "source": "vres_04",
+  "reason": "locator"
+ },
+ {
+  "row_id": "UK-006",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Ethics > Accountability and responsibility (Practical recommendations and Liability)",
+  "source": "vres_04",
+  "reason": "locator"
+ },
+ {
+  "row_id": "UK-006",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified; senior responsible owner and human reviewers are named",
+  "source": "vres_04",
+  "reason": "dropped unsupported actor"
+ },
+ {
+  "row_id": "UK-006",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Refers to DSIT Introduction to AI assurance. A reference to a portfolio of assurance techniques was not re-confirmed in verification.",
+  "source": "vres_04",
+  "reason": "unverified reference removed"
+ },
+ {
+  "row_id": "UK-014",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Ethics > Transparency and explainability",
+  "source": "vres_04",
+  "reason": "locator"
+ },
+ {
+  "row_id": "UK-014",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Operative scope is in the ATRS scope policy (see ATRS rows).",
+  "new": "Operative scope is in the ATRS scope policy (see ATRS rows). Status judgement: kept conditional because the trigger is ATRS scope; under the protocol a policy binding only on government bodies could also be coded mandatory for those bodies (verifier suggestion).",
+  "source": "vres_04",
+  "reason": "arguable status recorded"
+ },
+ {
+  "row_id": "UK-015",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Publishing an ATRS record is mandatory for ministerial and non-ministerial departments, and for arm's-length bodies that provide public or frontline services or routinely interact with the public, for algorithmic tools that significantly influence a decision-making process with public effect or directly interact with the public; the scope policy also ties the duty to the stage of the tool (Beta, Pilot or Production).",
+  "source": "vres_04",
+  "reason": "qualifier misplaced"
+ },
+ {
+  "row_id": "UK-015",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Public body completes its own record",
+  "source": "vres_04",
+  "reason": "review-by-ATRS-team statement not re-confirmed"
+ },
+ {
+  "row_id": "UK-032",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Policy statement, not a testing requirement. The statement does not announce statutory pre-deployment testing of AI models. Read directly from the Parliament web page via WebFetch on 2026-10-12 (statement HCWS314, 7 Sep 2026).",
+  "source": "vres_04",
+  "reason": "provenance note corrected; page was readable"
+ },
+ {
+  "row_id": "UK-032",
+  "field": "retrieval_date",
+  "op": "set",
+  "value": "2026-10-12",
+  "source": "vres_04",
+  "reason": "re-read"
+ },
+ {
+  "row_id": "UK-033",
+  "field": "binding_status",
+  "op": "set",
+  "value": "voluntary",
+  "source": "vres_04",
+  "reason": "kept; status inferred"
+ },
+ {
+  "row_id": "UK-033",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Voluntary status is inferred (page does not say so).",
+  "new": "Voluntary status is inferred (page does not say so). Not a pre-deployment system test.",
+  "source": "vres_04",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-002",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.1.1.3, p.10 and footnote 2",
+  "source": "vres_05",
+  "reason": "citation incomplete"
+ },
+ {
+  "row_id": "Singapore-005",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Component testing is recommended even when outputs look satisfactory, especially in high-stakes cases. Who tests: s.1.1.2 p.9 gives the intended audience of the kit.",
+  "source": "vres_05",
+  "reason": "who_tests support"
+ },
+ {
+  "row_id": "Singapore-006",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Scales with stakes but gives no minimum sample size. Who tests: s.1.1.2 p.9 gives the intended audience of the kit.",
+  "source": "vres_05",
+  "reason": "who_tests support"
+ },
+ {
+  "row_id": "Singapore-009",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Developer / deployer (each organisation sets its own threshold)",
+  "source": "vres_05",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-015",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "repeatability",
+  "new": "reproducibility",
+  "source": "vres_06",
+  "reason": "principle label"
+ },
+ {
+  "row_id": "Singapore-015",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Overview (unnumbered, before p.2) of the PDF; mapping, date and audiences from the web page https://aiverifyfoundation.sg/tools/ai-verify-testing-framework/",
+  "source": "vres_06",
+  "reason": "locator"
+ },
+ {
+  "row_id": "Singapore-027",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Open-source toolkit that assesses safety and reliability of LLMs/apps through benchmark testing and red teaming; described as implementing the benchmarks recommended in IMDA's Starter Kit.",
+  "source": "vres_06",
+  "reason": "ERROR fixed: removed CI/CD, custom datasets, manual/automated red teaming and local-run claims not supported by cited page"
+ },
+ {
+  "row_id": "Singapore-027",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Developers and deployers using the toolkit",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-027",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Tool description from the project page (page shows last modified 25 Sep 2026). The Starter Kit says Singapore-specific benchmark availability is expected by 2026; that statement belongs to the Starter Kit rows, not this one.",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-031",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Agentic AI (version read: v1.0, 22 Jan 2026; the v1.5 file was not readable)",
+  "source": "vres_06",
+  "reason": "ERROR fixed: label said v1.5 but only v1.0 was read"
+ },
+ {
+  "row_id": "Singapore-031",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Executive Summary, pp.1-2 (v1.0)",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-031",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Described as a living document. Earlier text about feedback from 60+ companies was removed (not supported by the version read). Check the v1.5 file by hand.",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-032",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Agentic AI (version read: v1.0, 22 Jan 2026; v1.5 not read)",
+  "source": "vres_06",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "Singapore-033",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Agentic AI (version read: v1.0, 22 Jan 2026; v1.5 not read)",
+  "source": "vres_06",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "Singapore-034",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Agentic AI (version read: v1.0, 22 Jan 2026; v1.5 not read)",
+  "source": "vres_06",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "Singapore-032",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.2.3.2, pp.19-20 (v1.0)",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-033",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.2.3.2, pp.19-20 (v1.0)",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-033",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "LLM or agent evaluators with human-in-the-loop review",
+  "new": "LLM or agent evaluators, or human evaluation",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-033",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Notes that reliably evaluating large agent logs is an open challenge (s.2.3.3 p.21).",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-034",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.2.3.3, pp.20-21 (v1.0)",
+  "source": "vres_06",
+  "reason": ""
+ },
+ {
+  "row_id": "Singapore-034",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Descriptive. A GovTech phased-rollout case study stated in the earlier row was not found in the version read and was removed.",
+  "source": "vres_06",
+  "reason": "ERROR fixed"
+ },
+ {
+  "row_id": "Singapore-035",
+  "field": "verification_override",
+  "op": "set",
+  "value": "ERROR_WITHDRAWN",
+  "source": "vres_06",
+  "reason": "ERROR: clause not found in v1.0; not re-verified against v1.5; withdrawn from analysis pending hand download"
+ },
+ {
+  "row_id": "EU-Standards-005",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "The JTC 21 post cited earlier is dated 8 May 2026 (not 9 Apr 2026) and does not mention prEN 18281; it describes 18282 as open for public enquiry. Use the feed entries for scope. The feed lists adversarial examples as a topic.",
+  "source": "vres_10",
+  "reason": "date and claim corrected"
+ },
+ {
+  "row_id": "ISO-IEC-005",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "no stage code seen",
+  "new": "stage 20.00 (registered 2025-07-25)",
+  "source": "vres_10",
+  "reason": ""
+ },
+ {
+  "row_id": "ISO-IEC-006",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "published June 2023",
+  "new": "published June 2023, stage 90.92 (to be revised)",
+  "source": "vres_10",
+  "reason": ""
+ },
+ {
+  "row_id": "ISO-IEC-006",
+  "field": "binding_status",
+  "op": "set",
+  "value": "voluntary",
+  "source": "vres_10",
+  "reason": "protocol: adoptable standard = voluntary"
+ },
+ {
+  "row_id": "ISO-IEC-008",
+  "field": "binding_status",
+  "op": "set",
+  "value": "voluntary",
+  "source": "vres_10",
+  "reason": "protocol: adoptable standard = voluntary"
+ },
+ {
+  "row_id": "ISO-IEC-011",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "; CEN adoption listed as EN ISO/IEC 12792:2025",
+  "new": "",
+  "source": "vres_11",
+  "reason": "ERROR fixed: CEN adoption claim unsupported by the cited source"
+ },
+ {
+  "row_id": "Japan-006",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Official English outline from Cabinet Office; summary not full statute. The statute says Chapters 3-4 take effect by Cabinet order within three months of promulgation (consistent with 1 Sep 2025).",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-010",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "pp. 10-11 and 19 (government use)",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-010",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "safe and appropriate",
+  "new": "safe and secure",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-015",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "translation: provisional English translation by ministries; some appendices Japanese only. The PDF read is the outline slides (page numbers are slide numbers). Document describes efforts as voluntary. Version 1.1 read; version 1.2 reportedly published 31 Mar 2026 was not accessible.",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-016",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Business actors involved in advanced AI systems",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-018",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": " and minimise risks",
+  "new": "",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-018",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Part 4 P-2 i (p. 22)",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Japan-021",
+  "field": "what_is_tested",
+  "op": "replace",
+  "old": "ten evaluation perspectives",
+  "new": "seven evaluation perspectives (Sec. 7.1)",
+  "source": "vres_11",
+  "reason": "ERROR fixed"
+ },
+ {
+  "row_id": "Japan-021",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Sec. 6.3.3",
+  "new": "Sec. 6.3.1 (p. 31)",
+  "source": "vres_11",
+  "reason": "locator fixed"
+ },
+ {
+  "row_id": "Japan-022",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Non-binding by Sec. 1.1.",
+  "new": "Presented as reference concepts for developers and providers.",
+  "source": "vres_11",
+  "reason": ""
+ },
+ {
+  "row_id": "Korea-004",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": " (see below)",
+  "new": "",
+  "source": "vres_12",
+  "reason": ""
+ },
+ {
+  "row_id": "China-005",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Provider; assessor not specified in Art 17 (set by separate national rules, not retrieved); CAC receives algorithm filing under the algorithm provisions",
+  "source": "vres_12",
+  "reason": ""
+ },
+ {
+  "row_id": "China-012",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Provider or entrusted professional body; technical supporters also covered",
+  "source": "vres_12",
+  "reason": ""
+ },
+ {
+  "row_id": "China-014",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Providers with public opinion or mobilisation capacity must file under the algorithm recommendation provisions; technical supporters file by reference; filed entities must display the filing number and link.",
+  "source": "vres_12",
+  "reason": ""
+ },
+ {
+  "row_id": "China-015",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "Providers must add explicit labels",
+  "new": "For services within Deep Synthesis Provisions Art 17(1) (services that may confuse or mislead the public), providers must add explicit labels",
+  "source": "vres_12",
+  "reason": "scope trigger added"
+ },
+ {
+  "row_id": "China-023",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "criteria for 31 risk types",
+  "new": "classification models should cover all 31 risk types (B.1.4)",
+  "source": "vres_13",
+  "reason": ""
+ },
+ {
+  "row_id": "China-023",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "App. B.1 (B.1.1 to B.1.4)",
+  "source": "vres_13",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-002",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": " and surface unintended consequences",
+  "new": "",
+  "source": "vres_13",
+  "reason": "unsupported phrase removed"
+ },
+ {
+  "row_id": "UAE-Federal-002",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Objective 8 (governance and regulation); government pilots; also pp.11, 15, 43",
+  "source": "vres_13",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-002",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "; direct curl of this u.ae URL returned 404, so the URL is as returned by search and by WebFetch",
+  "new": ". URL as returned by WebFetch.",
+  "source": "vres_13",
+  "reason": "access-route statement removed"
+ },
+ {
+  "row_id": "UAE-Federal-003",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Objective 1, UAI Brand initiative (UAI Seal)",
+  "source": "vres_13",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-008",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "based solely on automated processing",
+  "new": "based on automated processing (the word solely is not in the text)",
+  "source": "vres_13",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-008",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 18(1)-(4)",
+  "source": "vres_13",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-001",
+  "field": "framework",
+  "op": "set",
+  "value": "Smart Dubai AI Ethics Principles & Guidelines (Guidelines changelog to v1.11; v1.6 is the Principles changelog)",
+  "source": "vres_14",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "UAE-Dubai-002",
+  "field": "framework",
+  "op": "set",
+  "value": "Smart Dubai AI Ethics Principles & Guidelines (Guidelines changelog to v1.11; v1.6 is the Principles changelog)",
+  "source": "vres_14",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "UAE-Dubai-003",
+  "field": "framework",
+  "op": "set",
+  "value": "Smart Dubai AI Ethics Principles & Guidelines (Guidelines changelog to v1.11; v1.6 is the Principles changelog)",
+  "source": "vres_14",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "UAE-Dubai-004",
+  "field": "framework",
+  "op": "set",
+  "value": "Smart Dubai AI Ethics Principles & Guidelines (Guidelines changelog to v1.11; v1.6 is the Principles changelog)",
+  "source": "vres_14",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "UAE-Dubai-005",
+  "field": "framework",
+  "op": "set",
+  "value": "Smart Dubai AI Ethics Principles & Guidelines (Guidelines changelog to v1.11; v1.6 is the Principles changelog)",
+  "source": "vres_14",
+  "reason": "version label corrected"
+ },
+ {
+  "row_id": "UAE-Dubai-007",
+  "field": "framework",
+  "op": "set",
+  "value": "Dubai AI Integration Matrix Framework for Government Organizations (Dubai Digital Authority, August 2025, Version 1.0 per front matter; earlier listing date 28 Apr 2026 conflicts)",
+  "source": "vres_14",
+  "reason": "ERROR fixed: date/version"
+ },
+ {
+  "row_id": "UAE-Dubai-007",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: document front matter (Aug 2025, v1.0) vs listing page (28 Apr 2026) and PDF creation date (1 Apr 2026)",
+  "source": "vres_14",
+  "reason": "source conflict recorded"
+ },
+ {
+  "row_id": "UAE-Dubai-008",
+  "field": "framework",
+  "op": "set",
+  "value": "Dubai AI Integration Matrix Framework for Government Organizations (Dubai Digital Authority, August 2025, Version 1.0 per front matter; earlier listing date 28 Apr 2026 conflicts)",
+  "source": "vres_14",
+  "reason": "ERROR fixed: date/version"
+ },
+ {
+  "row_id": "UAE-Dubai-008",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: document front matter (Aug 2025, v1.0) vs listing page (28 Apr 2026) and PDF creation date (1 Apr 2026)",
+  "source": "vres_14",
+  "reason": "source conflict recorded"
+ },
+ {
+  "row_id": "UAE-Dubai-009",
+  "field": "framework",
+  "op": "set",
+  "value": "Dubai AI Integration Matrix Framework for Government Organizations (Dubai Digital Authority, August 2025, Version 1.0 per front matter; earlier listing date 28 Apr 2026 conflicts)",
+  "source": "vres_14",
+  "reason": "ERROR fixed: date/version"
+ },
+ {
+  "row_id": "UAE-Dubai-009",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: document front matter (Aug 2025, v1.0) vs listing page (28 Apr 2026) and PDF creation date (1 Apr 2026)",
+  "source": "vres_14",
+  "reason": "source conflict recorded"
+ },
+ {
+  "row_id": "UAE-Dubai-007",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Ch. 10.2 (Quality Assurance Process), approx. pp.85-87 (verify against print)",
+  "source": "vres_14",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-007",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Whitepaper/case study. Describes DDA internal practice rather than an obligation on other Dubai entities; text read from a multi-column PDF so page references are approximate.",
+  "source": "vres_14",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-001",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Recognised international certification agencies; technology provider (validation statement)",
+  "source": "vres_14",
+  "reason": "DoH monitors not seen"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-001",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 7.1.2.1 (p.9); Sec. 8 (p.10)",
+  "source": "vres_14",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-009",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Cl. 3.3.1.1.1 to 3.3.1.1.3",
+  "source": "vres_14",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-012",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Data scientists are to test AI systems to assess risks, confirm intended performance and compliance with healthcare and safety regulations, assess robustness, fairness and accuracy, and document metrics and logs; data users identify groups at risk of disparate outcomes and report use of relevant attributes.",
+  "source": "vres_14",
+  "reason": "ERROR fixed: duties attributed to data scientists"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-012",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Data scientists (data users for the group and attribute duties)",
+  "source": "vres_14",
+  "reason": ""
+ },
+ {
+  "row_id": "EU-AI-Act-026",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "No oversight effectiveness metric is specified. The earlier reference to draft standard prEN 18229-3 is not in the Act and is not sourced here. Text read from the Publications Office consolidated version dated 27.07.2026, which states it has no legal effect; authentic text is the Official Journal.",
+  "source": "rres_eu3",
+  "reason": ""
+ },
+ {
+  "row_id": "EU-AI-Act-021",
+  "field": "binding_status",
+  "op": "set",
+  "value": "voluntary",
+  "source": "rres_eu1",
+  "reason": "Art 4a is a permission with no duty (verifier)"
+ },
+ {
+  "row_id": "EU-AI-Act-055",
+  "field": "binding_status",
+  "op": "set",
+  "value": "voluntary",
+  "source": "rres_eu1",
+  "reason": "Art 60 is permissive (verifier)"
+ },
+ {
+  "row_id": "UAE-Federal-010",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Execution stage, pp.76-77 (page numbers tool-reported, approximate)",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-010",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "should cover",
+  "new": "is important to ensure it covers",
+  "source": "rres_uae2",
+  "reason": "wording softened"
+ },
+ {
+  "row_id": "UAE-Federal-011",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Operations stage, pp.78-79 (tool-reported, approximate)",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-012",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Initiation stage, pp.74-75 (decision gates, success criteria); Discovery stage, pp.73-74 (tested and proven feasibility point)",
+  "source": "rres_uae1",
+  "reason": "locator merged two stages"
+ },
+ {
+  "row_id": "UAE-Federal-012",
+  "field": "row_type",
+  "op": "set",
+  "value": "enabler",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-014",
+  "field": "clause_or_page",
+  "op": "replace",
+  "old": "Pillar 4 Operational Safety",
+  "new": "Pillar 4 Operational Safety (pillar number is the verifier's own count; the portal page does not number the pillars)",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-016",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "strict incident response",
+  "new": "robust incident response",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-016",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "catalogue-level only",
+  "source": "rres_uae2",
+  "reason": "portal summary only"
+ },
+ {
+  "row_id": "UAE-Federal-017",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "developed, tested and maintained securely",
+  "new": "developed, tested and maintained securely (the page does not specify a testing environment)",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-017",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "catalogue-level only",
+  "source": "rres_uae3",
+  "reason": "portal summary only"
+ },
+ {
+  "row_id": "UAE-Federal-014",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "catalogue-level only",
+  "source": "rres_uae3",
+  "reason": "portal summary only"
+ },
+ {
+  "row_id": "UAE-Federal-019",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Discrimination impact assessments could be considered before release; the guideline says the timing and documentation of results and mitigations should be addressed.",
+  "source": "rres_uae2",
+  "reason": "\"could consider\" wording"
+ },
+ {
+  "row_id": "UAE-Federal-019",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "guideline strength is 'should' (High) or 'should consider' (Moderate).",
+  "new": "the document itself carries no High/Moderate strength labels (earlier note removed).",
+  "source": "rres_uae2/3",
+  "reason": "unsupported label removed"
+ },
+ {
+  "row_id": "UAE-Federal-020",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "guideline strength is 'should' (High) or 'should consider' (Moderate).",
+  "new": "the document itself carries no High/Moderate strength labels (earlier note removed).",
+  "source": "rres_uae2/3",
+  "reason": "unsupported label removed"
+ },
+ {
+  "row_id": "UAE-Federal-022",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "guideline strength is 'should' (High) or 'should consider' (Moderate).",
+  "new": "the document itself carries no High/Moderate strength labels (earlier note removed).",
+  "source": "rres_uae2/3",
+  "reason": "unsupported label removed"
+ },
+ {
+  "row_id": "UAE-Federal-020",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Unnumbered bullet on p.22, immediately before heading s3.2.2.3 (external audit for critical decisions); layout ambiguous",
+  "source": "rres_uae3",
+  "reason": "ERROR fixed: locator"
+ },
+ {
+  "row_id": "UAE-Federal-022",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s3.2.2.3 (number to be confirmed against the PDF), pp.22-23",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-025",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "should be verified",
+  "new": "should be addressed through preventative measures",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-025",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s3.5.2.1, pp.32-33",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-025",
+  "field": "who_tests",
+  "op": "set",
+  "value": "AI operators",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-026",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s3.8.2.2 body text, p.42 (heading concerns an oversight mechanism for data)",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-029",
+  "field": "who_tests",
+  "op": "set",
+  "value": "UAE Cabinet (grants temporary licences through the RegLab)",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-031",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "national pilots",
+  "new": "the UAE's industry pilots",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-031",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not stated",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-032",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "carries high privacy risk",
+  "new": "carries high privacy risk (the Article also names large-scale processing of sensitive data as a trigger)",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-032",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Applies only to in-scope controllers; see Art 2(2) row.",
+  "new": "Applies only to in-scope controllers; Art 2(2) excludes government data and governmental entities, which matters for government deployments (see Art 2(2) row).",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Federal-033",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art 20(1)(d)",
+  "source": "rres_uae1",
+  "reason": "sub-article added"
+ },
+ {
+  "row_id": "UAE-Federal-033",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "rres_uae1",
+  "reason": "security testing of data processing, not AI model testing"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-010",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "Managers must protect",
+  "new": "Managers should protect",
+  "source": "rres_uae1",
+  "reason": "\"must\" overstated; guidance applies binding Rulebook provisions (GEN 3.3.33, PRU 6.9, GEN 2.2.2) and the FSRA states it is not bound by the guidance"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-010",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "retain ability to modify or stop the model",
+  "new": "should be able to modify or stop the model",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-010",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s4.7(c)-(d) (version VER02.061125)",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-011",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s4.2 (p.5) and s4.6 (p.6) (version VER02.061125; paragraph numbers 4.4 to 4.7 repeat in the source)",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-013",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "must consult the Commissioner",
+  "new": "must notify the Commissioner",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-013",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Controller; Commissioner of Data Protection (notification)",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-013",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "language_read:",
+  "new": "version VER1.0-11082021. language_read:",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-015",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "human reviewers must be able to overturn",
+  "new": "human reviewers should have the authority and competence to overturn",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-015",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "Date 'May 2025'",
+  "new": "The document does not name its issuer. Date 'May 2025'",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-AbuDhabi-Other-002",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "rres_uae2",
+  "reason": "implementation duty on the concerned government entities"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-Other-002",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-018",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "The suspension of guideline 1.2.3 also appears in the English v1.11 PDF, so it is not specific to the Arabic edition. The changelog date is garbled in the extraction. language_read: Arabic original; the English paraphrase is a machine rendering by the fetch tool.",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-018",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-027",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s4.6.10, p.11 of 17 (Minimum acceptable requirements for AI tools)",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-027",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "recognized",
+  "new": "recognised international or local agencies",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-027",
+  "field": "interpretation_note",
+  "op": "replace",
+  "old": "language_read: English official.",
+  "new": "language_read: English official. The cover and header give conflicting effective dates (1/7/2021 and 01/10/2021).",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-028",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "(with expected performance)",
+  "new": "compared with those obtained in training and validation; significant discrepancies trigger further inspection",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-030",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s4.10.2 and s4.10.2(a), p.15",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-031",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Every AI initiative under Dubai Digital Authority's domain is required to demonstrate alignment with the ethical principles and undergo rigorous validation to ensure ethical compliance.",
+  "source": "rres_uae2",
+  "reason": "\"across its lifecycle\" not seen"
+ },
+ {
+  "row_id": "UAE-Dubai-031",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s10.3 (AI Ethics Policy), p.86",
+  "source": "rres_uae2",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-033",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "rres_uae",
+  "reason": "ISR sets minimum requirements for Dubai Government Entities; control is generic and does not mention AI"
+ },
+ {
+  "row_id": "UAE-Dubai-033",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "rres_uae",
+  "reason": "not AI specific"
+ },
+ {
+  "row_id": "UAE-Dubai-034",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "rres_uae",
+  "reason": "ISR sets minimum requirements for Dubai Government Entities; control is generic and does not mention AI"
+ },
+ {
+  "row_id": "UAE-Dubai-034",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "rres_uae",
+  "reason": "not AI specific"
+ },
+ {
+  "row_id": "UAE-Dubai-035",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "rres_uae",
+  "reason": "ISR sets minimum requirements for Dubai Government Entities; control is generic and does not mention AI"
+ },
+ {
+  "row_id": "UAE-Dubai-035",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "rres_uae",
+  "reason": "not AI specific"
+ },
+ {
+  "row_id": "UAE-Dubai-033",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Control 6.1.6.3, approx. pp.64-65",
+  "source": "rres_uae1",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-036",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "AI-adjacent only: concerns inspection of autonomous vehicles under Dubai Law 9 of 2023.",
+  "source": "rres_uae3",
+  "reason": ""
+ },
+ {
+  "row_id": "EU-AI-Act-026",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 14(1),(3),(4)",
+  "source": "rres_eu3",
+  "reason": "unchanged"
+ },
+ {
+  "row_id": "UAE-Federal-021",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "CONF",
+  "source": "maintainer coding",
+  "reason": "external audit is coded CONF, not OVER (overrides verifier proposal)"
+ },
+ {
+  "row_id": "UAE-Federal-021",
+  "field": "coding_note",
+  "op": "set",
+  "value": "verifier proposed OVER; recoded CONF by the maintainer because the provision is about external audit, not human-oversight validation",
+  "source": "maintainer coding",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-016",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "CONF",
+  "source": "maintainer coding",
+  "reason": "external audit is coded CONF, not OVER (overrides verifier proposal)"
+ },
+ {
+  "row_id": "UAE-Dubai-016",
+  "field": "coding_note",
+  "op": "set",
+  "value": "verifier proposed OVER; recoded CONF by the maintainer because the provision is about external audit, not human-oversight validation",
+  "source": "maintainer coding",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-018",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "CONF",
+  "source": "maintainer coding",
+  "reason": "external audit is coded CONF, not OVER (overrides verifier proposal)"
+ },
+ {
+  "row_id": "UAE-Dubai-018",
+  "field": "coding_note",
+  "op": "set",
+  "value": "verifier proposed OVER; recoded CONF by the maintainer because the provision is about external audit, not human-oversight validation",
+  "source": "maintainer coding",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Edition conflict (checked 2026-10-12): the version served on SDAIA's other official host dgp.sdaia.gov.sa is Version 1.0, September 2023, not \"v1 May 2025\". The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool). Whether the 2025 text differs is open.",
+  "source": "time_saudi",
+  "reason": "edition conflict"
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: edition (v1.0 Sep 2023 on dgp.sdaia.gov.sa vs v1 May 2025 recorded earlier)",
+  "source": "time_saudi",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Source host is dataguidance.com, a third party, not DIFC. The official DIFC host could not be read (permission timeout), so the clause text is unverified. Official DIFC news (7 Sep 2023) confirms Regulation 10 concerns autonomous and semi-autonomous systems but does not state an in-force date; the earlier \"in force 1 Sep 2023\" precedes that announcement and is unresolved.",
+  "source": "time_difc",
+  "reason": "third party host"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: in-force date (1 Sep 2023 recorded earlier vs 7 Sep 2023 announcement); third party host",
+  "source": "time_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Source host is dataguidance.com, a third party, not DIFC. The official DIFC host could not be read (permission timeout), so the clause text is unverified. Official DIFC news (7 Sep 2023) confirms Regulation 10 concerns autonomous and semi-autonomous systems but does not state an in-force date; the earlier \"in force 1 Sep 2023\" precedes that announcement and is unresolved.",
+  "source": "time_difc",
+  "reason": "third party host"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: in-force date (1 Sep 2023 recorded earlier vs 7 Sep 2023 announcement); third party host",
+  "source": "time_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Source host is dataguidance.com, a third party, not DIFC. The official DIFC host could not be read (permission timeout), so the clause text is unverified. Official DIFC news (7 Sep 2023) confirms Regulation 10 concerns autonomous and semi-autonomous systems but does not state an in-force date; the earlier \"in force 1 Sep 2023\" precedes that announcement and is unresolved.",
+  "source": "time_difc",
+  "reason": "third party host"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: in-force date (1 Sep 2023 recorded earlier vs 7 Sep 2023 announcement); third party host",
+  "source": "time_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Source host is dataguidance.com, a third party, not DIFC. The official DIFC host could not be read (permission timeout), so the clause text is unverified. Official DIFC news (7 Sep 2023) confirms Regulation 10 concerns autonomous and semi-autonomous systems but does not state an in-force date; the earlier \"in force 1 Sep 2023\" precedes that announcement and is unresolved.",
+  "source": "time_difc",
+  "reason": "third party host"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: in-force date (1 Sep 2023 recorded earlier vs 7 Sep 2023 announcement); third party host",
+  "source": "time_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Source host is dataguidance.com, a third party, not DIFC. The official DIFC host could not be read (permission timeout), so the clause text is unverified. Official DIFC news (7 Sep 2023) confirms Regulation 10 concerns autonomous and semi-autonomous systems but does not state an in-force date; the earlier \"in force 1 Sep 2023\" precedes that announcement and is unresolved.",
+  "source": "time_difc",
+  "reason": "third party host"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: in-force date (1 Sep 2023 recorded earlier vs 7 Sep 2023 announcement); third party host",
+  "source": "time_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-017",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Date conflict (checked 2026-10-12): the Saudi Press Agency reports the framework launched on 14 July 2026 as a guidance reference; the \"April 2026\" in the framework label came from a secondary source. The framework text itself was not read.",
+  "source": "time_saudi",
+  "reason": "date conflict"
+ },
+ {
+  "row_id": "EU-AI-Act-001",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "EU-AI-Act-002",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "EU-AI-Act-003",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "EU-AI-Act-004",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "EU-AI-Act-005",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "EU-AI-Act-006",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "EU-AI-Act-007",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Dates checked 2026-10-12: recital 40 and recital 46 of Regulation (EU) 2026/1744 and the Commission pages agree with the dates in this row where they are given; the operative wording of the amended Articles 111 and 113 was beyond what the fetch tool returned, so the article level locators are unconfirmed (see data/time_sensitive).",
+  "source": "time_eu",
+  "reason": "time sensitive"
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-006",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "framework",
+  "op": "set",
+  "value": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the edition readable on SDAIA's other official host (English original): AI Ethics Principles Version 1.0, September 2023. The 2025 edition on sdaia.gov.sa could not be read (site rejected the fetch tool), so any difference from it is unknown. This edition carries no draft or final label, never uses the word mandatory, and describes optional registration with motivational badges (p.32) while SDAIA measures compliance and may audit (p.29); status therefore stays as coded. Page numbers are printed pages as reported by the fetch tool.",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "yes: rows were first coded from a 2025 edition on sdaia.gov.sa (unreadable now); re-anchored to v1.0 Sept 2023",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-001",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Scope and AI Risks, p. 8",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-002",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Principle 5, Build and Validate item 2, p. 22",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Principle 5, Prepare Input Data item 2, p. 22",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-003",
+  "field": "who_tests",
+  "op": "set",
+  "value": "AI System Developer (inferred, not stated)",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-004",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "failures must be justified",
+  "new": "failures should be justified",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Principle 2, Deploy and Monitor item 3, p. 17",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-007",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Principle 6, Plan and Design item 3, p. 24",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Roles and Responsibilities: AI System Assessor (pp. 7, 31); Responsible AI Officer (p. 31); SDAIA tasks (p. 29)",
+  "source": "rres_saudi_eth",
+  "reason": "ERROR fixed"
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Defines an AI System Assessor role that audits AI systems; publishing audit reports on an organisation's AI ethics assessment is a Responsible AI Officer task; SDAIA measures compliance of adopting entities and may audit AI ethics activities.",
+  "source": "rres_saudi_eth",
+  "reason": "ERROR fixed: role attribution"
+ },
+ {
+  "row_id": "Saudi-008",
+  "field": "who_tests",
+  "op": "set",
+  "value": "AI System Assessor; SDAIA with National Regulatory Authorities",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-009",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Annexure A (Ethical Impact Assessment, Algorithm Auditing, Safety Self-Assessment), pp. 34-40",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "Saudi-010",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Annexure C (AI Ethics Checklist), approx. pp. 41-46; layout scrambled in extraction, low confidence",
+  "source": "rres_saudi_eth",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.difc.com/v1/media/edge/images/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/data-protection-regulation.pdf",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "framework",
+  "op": "set",
+  "value": "DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 (autonomous and semi-autonomous systems)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the official DIFC host: Data Protection Regulations, Consolidated Version No. 2, whose cover states \"In force on 1 September 2023\". The official Regulation 10 page says the regulations were enacted on 1 Sep 2023; a DIFC news item announced them on 7 Sep 2023. The earlier statements that the official host could not be read and that no certification requirements were found are superseded: the Commissioner has published a Regulation 10 Accreditation and Certification Framework (see UAE-DIFC-ADGM-016 onward). Amendments after Version No. 2 were not checked.",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "resolved: official page says enacted 1 Sep 2023; consolidated cover says in force 1 Sep 2023; DIFC news announced 7 Sep 2023",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.difc.com/v1/media/edge/images/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/data-protection-regulation.pdf",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "framework",
+  "op": "set",
+  "value": "DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 (autonomous and semi-autonomous systems)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the official DIFC host: Data Protection Regulations, Consolidated Version No. 2, whose cover states \"In force on 1 September 2023\". The official Regulation 10 page says the regulations were enacted on 1 Sep 2023; a DIFC news item announced them on 7 Sep 2023. The earlier statements that the official host could not be read and that no certification requirements were found are superseded: the Commissioner has published a Regulation 10 Accreditation and Certification Framework (see UAE-DIFC-ADGM-016 onward). Amendments after Version No. 2 were not checked.",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "resolved: official page says enacted 1 Sep 2023; consolidated cover says in force 1 Sep 2023; DIFC news announced 7 Sep 2023",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-002",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.difc.com/v1/media/edge/images/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/data-protection-regulation.pdf",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "framework",
+  "op": "set",
+  "value": "DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 (autonomous and semi-autonomous systems)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the official DIFC host: Data Protection Regulations, Consolidated Version No. 2, whose cover states \"In force on 1 September 2023\". The official Regulation 10 page says the regulations were enacted on 1 Sep 2023; a DIFC news item announced them on 7 Sep 2023. The earlier statements that the official host could not be read and that no certification requirements were found are superseded: the Commissioner has published a Regulation 10 Accreditation and Certification Framework (see UAE-DIFC-ADGM-016 onward). Amendments after Version No. 2 were not checked.",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "resolved: official page says enacted 1 Sep 2023; consolidated cover says in force 1 Sep 2023; DIFC news announced 7 Sep 2023",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.difc.com/v1/media/edge/images/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/data-protection-regulation.pdf",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "framework",
+  "op": "set",
+  "value": "DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 (autonomous and semi-autonomous systems)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the official DIFC host: Data Protection Regulations, Consolidated Version No. 2, whose cover states \"In force on 1 September 2023\". The official Regulation 10 page says the regulations were enacted on 1 Sep 2023; a DIFC news item announced them on 7 Sep 2023. The earlier statements that the official host could not be read and that no certification requirements were found are superseded: the Commissioner has published a Regulation 10 Accreditation and Certification Framework (see UAE-DIFC-ADGM-016 onward). Amendments after Version No. 2 were not checked.",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "resolved: official page says enacted 1 Sep 2023; consolidated cover says in force 1 Sep 2023; DIFC news announced 7 Sep 2023",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.difc.com/v1/media/edge/images/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/data-protection-regulation.pdf",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "framework",
+  "op": "set",
+  "value": "DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 (autonomous and semi-autonomous systems)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Re-anchored on 2026-10-12 to the official DIFC host: Data Protection Regulations, Consolidated Version No. 2, whose cover states \"In force on 1 September 2023\". The official Regulation 10 page says the regulations were enacted on 1 Sep 2023; a DIFC news item announced them on 7 Sep 2023. The earlier statements that the official host could not be read and that no certification requirements were found are superseded: the Commissioner has published a Regulation 10 Accreditation and Certification Framework (see UAE-DIFC-ADGM-016 onward). Amendments after Version No. 2 were not checked.",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "resolved: official page says enacted 1 Sep 2023; consolidated cover says in force 1 Sep 2023; DIFC news announced 7 Sep 2023",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "language_read",
+  "op": "set",
+  "value": "English original",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-001",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "it must provide on request evidence",
+  "new": "it must provide, on request by any affected party, evidence",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "use, operate or offer",
+  "new": "use, operate, provide or offer",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Reg. 10.3.3, limbs (a)-(d); Autonomous Systems Officer appointment is limb (d)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-005",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "these may include internal governance and control frameworks or regular external auditing enabling assessment of algorithms, data and design processes",
+  "new": "these may include internal governance and control frameworks or regular external auditing (examples only)",
+  "source": "rres_difc",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-016",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Consolidated Regulations (Version No. 2, in force 1 Sep 2023), Reg. 10.3.3 lead-in p.13 and limb (d) p.14",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-016",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Commercial use of a System for High Risk Processing also requires the Deployer/Operator to appoint an Autonomous Systems Officer with DPO-like competencies, status, role and tasks (Arts 17-18 of the Law).",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-018",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "D Part 2 intro p.39; footnote 2 p.5; operative source Reg. 10.3.3",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-021",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "D Part 2 Section 1.4-1.5 pp.44-45 and Sections 2-4 (printed pp.47-52 per the later reading)",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-021",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "The first reading stopped partway through 1.5; the verifier then read Sections 2-4 (accountability and bias, robustness and algorithmic audit 2.2-2.3, audit and testing cadence 4.2-4.3.1) but this row still summarises only 1.4-1.5. Split into separate rows when the PDF is checked by hand. Page numbers from the fetch tool.",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-022",
+  "field": "binding_status",
+  "op": "set",
+  "value": "voluntary",
+  "source": "rres_difc_new",
+  "reason": "ERROR fixed: becoming an Accredited Certification Body is optional and the criteria bind only the applicant ACB"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-022",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "D Part 1, pp.6-38; definitions pp.3-4; item 4.8 pp.21-22",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-023",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "no CE mark",
+  "new": "no CE marking is required by Regulation 10 or the Framework (EU AI Act CE marking may apply separately)",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-024",
+  "field": "requirement_paraphrase",
+  "op": "replace",
+  "old": "the Commissioner runs use-case testing in a sandbox / by-design accelerator",
+  "new": "the guidance describes an accelerator and sandbox for use-case testing; neither document says who runs the testing",
+  "source": "rres_difc_new",
+  "reason": ""
+ },
+ {
+  "row_id": "UAE-Dubai-036",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "CONF",
+  "source": "phase2_review",
+  "reason": "CSAFE means content safety evaluation; a vehicle technical inspection that conditions a licence is a conformity or licensing check (CONF)."
+ },
+ {
+  "row_id": "UAE-Dubai-036",
+  "field": "coding_note",
+  "op": "set",
+  "value": "Recoded from CSAFE to CONF in phase 2 review: licensing inspection of a vehicle, not a content safety test.",
+  "source": "phase2_review",
+  "reason": ""
+ }
+]
