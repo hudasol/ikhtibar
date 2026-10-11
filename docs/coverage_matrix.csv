@@ -1,0 +1,17 @@
+Family,PERF,ROB,FAIR,SEC,RED,CSAFE,PRIV,TRANS,OVER,RISK,DATA,CONF,REAL,MON,GATE
+EU-AI-Act,C3,C1,.,C1,.,.,.,.,.,C4,C1,C2,C2,C1,C2
+EU-GPAI-CoP,.,.,.,V1,.,.,.,.,.,V1,.,.,.,.,.
+EU-Standards,V1,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+ISO-IEC,G6,V4,.,.,G1,.,.,.,.,G1,.,.,.,.,.
+US-NIST,G14,G1,G2,G2,V6,.,G1,G1,.,.,.,G2,.,G1,G2
+US-OMB,C1,.,.,.,.,.,.,.,.,C1,.,.,.,C1,.
+UK,G3+a1,.,G1,G2+a1,V2,.,.,.,.,V2,.,G2+a1,.,G1,V1
+Singapore,V8+a1,V2,V2,V1,V2,.,.,V2,.,V2,.,V1,G1,V2,V3
+Japan,G3,G1,.,.,G4,.,.,.,.,G4,.,G1,.,G1,.
+Korea,.,.,.,.,.,.,.,.,.,C3,.,V1,.,.,.
+China,.,.,.,V1,.,V2,.,M1,.,M1,M4,C5,.,M1,.
+UAE-Federal,G1,G2+a1,G3,M2,.,.,C3,.,.,A1,.,G1,.,C2,G1
+UAE-DIFC-ADGM,G1,.,C2,.,.,.,C4,.,G1,C1,.,C3+a1,.,.,C1
+UAE-Dubai,G3,.,G4,.,.,.,.,.,.,V3+a1,.,M6,G1,M2,C1
+UAE-AbuDhabi-DoH,M2,M2+a1,M1,M1,.,.,.,.,.,M3,.,M3+a1,.,.,C1
+Saudi,.,A2,A1,.,.,.,A1,.,.,G3+a2,.,A2,.,.,A1

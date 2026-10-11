@@ -1,0 +1,78 @@
+# Questions the CLI accepts. Every answer may also be "unknown", and any question left unanswered is treated as unknown.
+# This file is a proposal for a self-assessment aid. It is not a UAE requirement and not legal advice.
+questions:
+  system_type:
+    ask: "What kind of AI system is it?"
+    settle_by: "Read the system design document; confirm whether any learned model sits in the decision path."
+    type: single
+    values:
+      predictive_ml: "Predictive or classification model trained on data (scoring, ranking, anomaly detection)"
+      rules_based: "Rules or deterministic logic with no learned model (listed so the tool can say learned-model items do not apply)"
+      genai_llm: "Generative model or LLM based application (text, summarisation, chat, retrieval augmented)"
+      agentic: "Agent that plans and calls tools or takes actions"
+      computer_vision: "Image, video or document vision model"
+      other: "Other"
+  audience:
+    ask: "Who uses the system or its outputs?"
+    settle_by: "Confirm from the service description who receives outputs and who is affected by them."
+    type: single
+    values:
+      public_facing: "Members of the public or businesses interact with it, or are directly affected by its outputs"
+      internal: "Staff only"
+  data_types:
+    ask: "Which kinds of data does it process? List all that apply, or use none."
+    settle_by: "Have the data owner or data protection officer inventory the fields in real (not synthetic) inputs and outputs."
+    type: multi
+    values:
+      personal: "Personal data"
+      sensitive_personal: "Sensitive personal data"
+      biometric: "Biometric data"
+      health: "Health data"
+      financial: "Financial data"
+      confidential_government: "Government confidential or classified data"
+      none: "No personal data"
+  decision_impact:
+    ask: "What does the output do?"
+    settle_by: "Have the business owner state what the output is used for and whether a person reviews it before any effect on a trader, traveller or citizen."
+    type: single
+    values:
+      none: "No effect on any person's rights, services, duties or entitlements"
+      advisory: "Advisory only; a person decides and the output is one input among others"
+      significant_support: "Decision support where the output is a principal basis for a decision with a significant effect"
+      automated_significant: "The system makes or triggers a decision with a significant effect without a person's review"
+      critical: "Decisions affecting life, liberty or safety"
+  hosting:
+    ask: "Where does it run?"
+    settle_by: "Ask the infrastructure owner. No retrieved source sets a location keyed requirement, so this does not change the checklist today."
+    type: single
+    values:
+      uae_onprem: "On premises in the UAE"
+      uae_cloud: "Cloud region in the UAE"
+      foreign_cloud: "Cloud or service outside the UAE"
+      vendor_hosted_unknown: "Vendor hosted, location not known"
+  acquisition:
+    ask: "How was it obtained?"
+    settle_by: "Check contracts and the bill of materials for vendor models or services."
+    type: single
+    values:
+      in_house: "Built in house"
+      vendor_product: "Bought or licensed from a vendor"
+      mixed: "Vendor model with in house integration"
+  entity_zone:
+    ask: "Which regime is the deploying entity in?"
+    settle_by: "Ask the deploying authority legal and governance office which instrument family applies to it (federal, emirate level, free zone, sector regulator) and obtain legal review."
+    type: single
+    values:
+      federal_gov: "UAE federal government entity"
+      abu_dhabi_gov: "Abu Dhabi government entity (not health sector)"
+      dubai_gov: "Dubai government entity (not health sector)"
+      health_abu_dhabi: "Healthcare entity licensed by Abu Dhabi Department of Health"
+      health_dubai: "Healthcare entity regulated by Dubai Health Authority"
+      difc: "Entity in DIFC"
+      adgm: "Entity in ADGM"
+      other_uae: "Other UAE entity"
+  eu_market:
+    ask: "Is the system placed on the EU market, or is its output used in the EU?"
+    settle_by: "Confirm with the business owner whether any output is used in the EU."
+    type: single
+    values: {"yes": "Yes", "no": "No"}
