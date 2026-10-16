@@ -407,6 +407,72 @@
   },
   "date_only_minor_reclassified": 14
  },
+ "verification_p3": {
+  "recheck_by_research_agents": {
+   "n": 0,
+   "n_checked_rows": 0,
+   "PASS": 0,
+   "MINOR": 0,
+   "ERROR": 0,
+   "UNVERIFIED_BLOCKED": 0,
+   "UNVERIFIABLE_OTHER": 0,
+   "verifiable": 0,
+   "error_rate_pct": null,
+   "error_ci95_pct": [
+    0.0,
+    0.0
+   ],
+   "any_fault_rate_pct": null
+  },
+  "fresh_random_seed_20261016": {
+   "n": 0,
+   "n_checked_rows": 0,
+   "PASS": 0,
+   "MINOR": 0,
+   "ERROR": 0,
+   "UNVERIFIED_BLOCKED": 0,
+   "UNVERIFIABLE_OTHER": 0,
+   "verifiable": 0,
+   "error_rate_pct": null,
+   "error_ci95_pct": [
+    0.0,
+    0.0
+   ],
+   "any_fault_rate_pct": null
+  },
+  "new_rows_phase3": {
+   "n": 0,
+   "n_checked_rows": 0,
+   "PASS": 0,
+   "MINOR": 0,
+   "ERROR": 0,
+   "UNVERIFIED_BLOCKED": 0,
+   "UNVERIFIABLE_OTHER": 0,
+   "verifiable": 0,
+   "error_rate_pct": null,
+   "error_ci95_pct": [
+    0.0,
+    0.0
+   ],
+   "any_fault_rate_pct": null
+  },
+  "final_independent_all": {
+   "n": 0,
+   "n_checked_rows": 0,
+   "PASS": 0,
+   "MINOR": 0,
+   "ERROR": 0,
+   "UNVERIFIED_BLOCKED": 0,
+   "UNVERIFIABLE_OTHER": 0,
+   "verifiable": 0,
+   "error_rate_pct": null,
+   "error_ci95_pct": [
+    0.0,
+    0.0
+   ],
+   "any_fault_rate_pct": null
+  }
+ },
  "unverified_by_family": {
   "Canada": 23,
   "US-NIST": 5,

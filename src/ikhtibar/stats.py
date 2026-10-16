@@ -23,8 +23,9 @@ def load(path=None):
     with open(path or D / "evidence_table.csv", encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f))
 
-def verdict_tally(rows):
-    c = C(r["verdict_adjusted"] for r in rows if r["verdict_adjusted"])
+def verdict_tally(rows, key="verdict_p2_adjusted"):
+    """Tally verdicts. Phase 2 figures use the phase 2 verdict so they stay reproducible after phase 3."""
+    c = C(r[key] for r in rows if r[key])
     verifiable = c["PASS"] + c["MINOR"] + c["ERROR"]
     k = c["ERROR"]
     return {"n_checked_rows": sum(c.values()), "PASS": c["PASS"], "MINOR": c["MINOR"], "ERROR": k,
@@ -68,14 +69,23 @@ def compute(rows=None):
         "fresh_random_sample": {"n": len(fresh), **verdict_tally(fresh)},
         "new_uae_rows": {"n": len(new), **verdict_tally(new)},
         "targeted_other": {"n": len(targeted), **verdict_tally(targeted)},
-        "all_checked_this_round": verdict_tally([r for r in rows if r["verdict_adjusted"]]),
-        "all_checked_excluding_new_rows": verdict_tally([r for r in rows if r["verdict_adjusted"] and r["sample_type"] != "new_row_phase2"]),
+        "all_checked_this_round": verdict_tally([r for r in rows if r["verdict_p2_adjusted"]]),
+        "all_checked_excluding_new_rows": verdict_tally([r for r in rows if r["verdict_p2_adjusted"] and r["sample_type"] != "new_row_phase2"]),
         "phase1_provisional_rows": {"n": len(prov), **verdict_tally(prov),
                                     "ids_by_final_status": {k: sorted(r["row_id"] for r in prov if r["verification_status"] == k)
                                                            for k in sorted({r["verification_status"] for r in prov})}},
         "phase1_sample_reported": {"n": 40, "PASS": 18, "MINOR": 13, "ERROR": 1, "UNVERIFIABLE": 8,
                                    "error_rate_pct": round(100 * 1 / 32, 1), "error_ci95_pct": wilson(1, 32),
                                    "caveat": "Phase 1 verdicts that relied on a browser style user agent are provisional."},
+    }
+    p3r = [r for r in rows if r["p3_recheck_verdict"]]
+    p3f = [r for r in rows if r["p3_sample"] == "fresh_random_seed_20261016"]
+    p3n = [r for r in rows if r["p3_sample"] == "new_row_phase3"]
+    S["verification_p3"] = {
+        "recheck_by_research_agents": {"n": len(p3r), **verdict_tally(p3r, "p3_recheck_verdict")},
+        "fresh_random_seed_20261016": {"n": len(p3f), **verdict_tally(p3f, "p3_final_verdict")},
+        "new_rows_phase3": {"n": len(p3n), **verdict_tally(p3n, "p3_final_verdict")},
+        "final_independent_all": {"n": len(p3f) + len(p3n), **verdict_tally(p3f + p3n, "p3_final_verdict")},
     }
     S["verification"]["raw_verdict_counts_all"] = dict(C(r["verdict_raw"] for r in rows if r["verdict_raw"]))
     S["verification"]["date_only_minor_reclassified"] = sum(1 for r in rows if r["verdict_raw"] == "MINOR" and r["verdict_adjusted"] == "PASS")

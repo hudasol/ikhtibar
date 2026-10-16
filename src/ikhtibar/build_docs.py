@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA, DOCS, SRC = ROOT / "data", ROOT / "docs", ROOT / "docs_src"
 
 DAG = "†"
-UNRELIABLE = {"UNVERIFIED_BLOCKED", "UNVERIFIABLE_OTHER", "UNVERIFIED_SOURCE_NOT_READ", "ERROR_WITHDRAWN"}
+UNRELIABLE = {"UNVERIFIED_BLOCKED", "UNVERIFIABLE_OTHER", "UNVERIFIED_SOURCE_NOT_READ", "ERROR_WITHDRAWN", "NEW_UNCHECKED"}
 
 FAMS = ["EU-AI-Act", "EU-GPAI-CoP", "EU-Standards", "ISO-IEC", "US-NIST", "US-OMB", "UK", "Canada", "Singapore", "Japan",
         "Korea", "China", "UAE-Federal", "UAE-DIFC-ADGM", "UAE-Dubai", "UAE-AbuDhabi-DoH", "UAE-AbuDhabi-Other", "Saudi"]
@@ -81,14 +81,14 @@ def dagger_pass(text, by):
         d = DAG if by[rid]["headline_include"] != "yes" else ""
         return f"`{rid}`{d}"
 
-    out = re.sub(r"`([A-Za-z][A-Za-z0-9-]*-\d{3})`" + f"(?:{DAG})?", rep, text)
+    out = re.sub(r"`([A-Za-z][A-Za-z0-9-]*-\d{2,3})`" + f"(?:{DAG})?", rep, text)
     if unknown:
         raise SystemExit("unknown row ids in prose: " + ", ".join(sorted(set(unknown))))
     return out
 
 
 def cited_ids(text):
-    return sorted(set(re.findall(r"`([A-Za-z][A-Za-z0-9-]*-\d{3})`", text)))
+    return sorted(set(re.findall(r"`([A-Za-z][A-Za-z0-9-]*-\d{2,3})`", text)))
 
 
 def describe(cond):

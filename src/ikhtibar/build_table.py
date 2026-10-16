@@ -8,7 +8,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 D = ROOT / "data"
-TODAY = "2026-10-12"
+TODAY = "2026-10-12"      # phase 2 check date (rounds 1 and 2)
+P3_DATE = "2026-10-16"    # phase 3 check date (rounds 3 and 4)
+P3 = D / "verification" / "phase3"
 
 OUT_COLS = [
     "row_id", "family", "framework", "clause_or_page", "requirement_paraphrase", "binding_status",
@@ -18,6 +20,7 @@ OUT_COLS = [
     "verification_status", "verdict_raw", "verdict_adjusted", "verification_round", "sample_type",
     "text_basis", "block_type", "access_path", "document_to_download", "verification_note",
     "phase1_provisional", "headline_include",
+    "verdict_p2_adjusted", "p3_sample", "p3_recheck_verdict", "p3_final_verdict",
 ]
 
 def read(p):
@@ -70,6 +73,18 @@ def main():
         for r in read(f):
             r["_round"] = 2; r["_file"] = os.path.basename(f)
             ver[r["row_id"]] = r
+    ver2 = dict(ver)
+    # phase 3: round 3 = research re-check (p3res_*), round 4 = final independent check (final/fv3_*)
+    ver3, ver4 = {}, {}
+    for f in sorted(glob.glob(str(P3 / "p3res_*.csv"))):
+        for r in read(f):
+            r["_round"] = 3; r["_file"] = os.path.basename(f); ver3[r["row_id"]] = r; ver[r["row_id"]] = r
+    for f in sorted(glob.glob(str(P3 / "final" / "fv3_*.csv"))):
+        for r in read(f):
+            r["_round"] = 4; r["_file"] = os.path.basename(f); ver4[r["row_id"]] = r; ver[r["row_id"]] = r
+    fresh3 = set()
+    if (P3 / "final" / "sample_p3.json").exists():
+        fresh3 = set(json.load(open(P3 / "final" / "sample_p3.json"))["fresh_random_seed_20261016"])
 
     rows = {}
     order = []
@@ -96,6 +111,15 @@ def main():
         x["coding_note"] = "coded by independent verifier (proposal), not by the discovery agent"
         x["sample_type"] = "new_row_phase2"
         rows[r["row_id"]] = x; order.append(r["row_id"])
+    # new phase 3 rows, proposed by research agents and checked by the final independent verifier
+    for f in sorted(glob.glob(str(P3 / "p3new_*.csv"))):
+        for r in read(f):
+            x = {c: r.get(c, "") for c in OUT_COLS}
+            x["retrieved_on"] = r["retrieval_date"]
+            x["coding_note"] = "coded by phase 3 research agent (proposal)"
+            x["sample_type"] = "new_row_phase3"
+            x["phase1_provisional"] = ""
+            rows[r["row_id"]] = x; order.append(r["row_id"])
 
     # apply patches
     fails = []
@@ -122,14 +146,24 @@ def main():
     # verification fields
     for rid, x in rows.items():
         v = ver.get(rid)
-        if x["sample_type"] != "new_row_phase2":
+        v2 = ver2.get(rid)
+        x["verdict_p2_adjusted"] = adjust(v2) if v2 else ""
+        x["p3_recheck_verdict"] = adjust(ver3[rid]) if rid in ver3 else ""
+        x["p3_final_verdict"] = adjust(ver4[rid]) if rid in ver4 else ""
+        x["p3_sample"] = ("fresh_random_seed_20261016" if rid in fresh3 else
+                          "new_row_phase3" if x["sample_type"] == "new_row_phase3" else
+                          "phase3_recheck" if rid in ver3 else "")
+        if x["sample_type"] not in ("new_row_phase2", "new_row_phase3"):
             if rid in sets["fresh"]: x["sample_type"] = "fresh_random_seed_20261012"
             elif rid in sets["cited"]: x["sample_type"] = "cited_in_prose"
             elif rid in sets["must"]: x["sample_type"] = "targeted"
             elif v: x["sample_type"] = "targeted"
             else: x["sample_type"] = "not_rechecked"
             if rid in sets["cited"] and rid in sets["fresh"]: x["sample_type"] = "cited_in_prose"
-        if v is None:
+        if v is None and x["sample_type"] == "new_row_phase3":
+            x["verification_status"] = "NEW_UNCHECKED"
+            x["verification_round"] = ""
+        elif v is None:
             x["verification_status"] = ("UNVERIFIED_SOURCE_NOT_READ"
                                         if x["evidence_grade"].startswith("unverified") else "NOT_RECHECKED")
             x["verification_round"] = ""
@@ -142,12 +176,13 @@ def main():
             if x["language_read"] == "" and v.get("language_read"):
                 x["language_read"] = v["language_read"]
             if raw in ("PASS", "MINOR", "ERROR"):
-                x["last_checked_on"] = TODAY
+                x["last_checked_on"] = P3_DATE if v["_round"] >= 3 else TODAY
                 if raw == "PASS" or adj == "PASS":
                     x["verification_status"] = "VERIFIED"
                 else:
                     x["verification_status"] = "VERIFIED_CORRECTED" if rid in applied else "VERIFIED_NOTE_ONLY"
-                x["access_path"] = "standard_fetch"
+                x["access_path"] = v.get("access_path") or "standard_fetch"
+                x["block_type"] = ""; x["document_to_download"] = ""
                 x["verification_note"] = (v.get("failed_checks") or "").strip()
                 if raw in ("MINOR", "ERROR") and adj != "PASS" and rid not in applied:
                     x["verification_note"] += " | verifier fix (not applied): " + (v.get("suggested_fix") or "")[:400]
