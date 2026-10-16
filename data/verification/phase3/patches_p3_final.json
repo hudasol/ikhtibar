@@ -1,0 +1,402 @@
+[
+ {
+  "row_id": "EU-AI-Act-021",
+  "field": "binding_status",
+  "op": "set",
+  "value": "conditional",
+  "source": "fv3patch_1",
+  "reason": "Art. 4a is operative Regulation text; its safeguards bind once a provider/deployer chooses to process special-category data for bias detection (trigger). 'voluntary' is reserved for formal schemes/standards."
+ },
+ {
+  "row_id": "EU-AI-Act-021",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Providers of high-risk AI systems (para. 1); providers and deployers of other AI systems and models, and deployers of high-risk AI systems (para. 2)",
+  "source": "fv3patch_1",
+  "reason": "Art. 4a(2) also covers providers of other AI systems and models, not only deployers."
+ },
+ {
+  "row_id": "EU-AI-Act-021",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Art. 4a is a permission, not a duty to test: it allows special-category data processing for bias detection only where strictly necessary and under all para. 1 conditions; para. 2 expressly creates no obligation to conduct bias detection. Classified conditional because the safeguards bind once the permission is used.",
+  "source": "fv3patch_1",
+  "reason": "Explain the classification of a permissive legal provision."
+ },
+ {
+  "row_id": "EU-GPAI-CoP-P3-20",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Measure 3.5, fourth to sixth paragraphs (pp.14-15)",
+  "source": "fv3patch_1",
+  "reason": "Measure 3.5 begins on p.13 with three paragraphs (PMM duty, 'To these ends' list, examples list); the evaluator-access, selection-criteria and non-retaliation paragraphs are the fourth to sixth."
+ },
+ {
+  "row_id": "Japan-013",
+  "field": "who_tests",
+  "op": "set",
+  "value": "AI R&D institutes and utilization business operators (Sec. 2)",
+  "source": "fv3patch_1",
+  "reason": "Sec. 2 is addressed to both R&D institutes and utilization business operators."
+ },
+ {
+  "row_id": "Korea-P3-01",
+  "field": "language_read",
+  "op": "set",
+  "value": "fetch-tool rendering of KLRI English translation (Presidential Decree No. 36053); no legal-effect disclaimer seen on the KLRI page",
+  "source": "fv3patch_2",
+  "reason": "Disclaimer attributed to the site not seen on lawViewContent or lawViewTitle pages for hseq=73696"
+ },
+ {
+  "row_id": "Korea-P3-01",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Status 'voluntary' rests on Act Art. 35(1): operators of high-impact AI 'shall endeavor' to assess impact on fundamental rights in advance (effort duty); Act Art. 35(2): State agencies give preferential consideration to products that underwent impact assessment. Decree Art. 28(1) prescribes contents ('shall include') where an assessment is conducted.",
+  "source": "fv3patch_2",
+  "reason": "Make the basis of the binding status explicit; 'must cover' applies only once an assessment is undertaken"
+ },
+ {
+  "row_id": "Korea-P3-02",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Operator submits; MSIT decides (specialised committee advice optional at first instance under Art. 25(2); committee consultation mandatory on reconfirmation under Art. 25(5))",
+  "source": "fv3patch_2",
+  "reason": "Committee is not a mandatory participant in the initial decision"
+ },
+ {
+  "row_id": "Korea-P3-02",
+  "field": "language_read",
+  "op": "set",
+  "value": "fetch-tool rendering of KLRI English translation (Presidential Decree No. 36053); no legal-effect disclaimer seen on the KLRI page",
+  "source": "fv3patch_2",
+  "reason": "Disclaimer attributed to the site not seen on the KLRI page"
+ },
+ {
+  "row_id": "Saudi-P3-10",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Analytical validation should use a large independent reference dataset reflecting the intended purpose and population (prevalence, multi-centre sourcing, demographics, justified size, not publicly available), each requirement applying unless there is sufficient evidence that it need not be met; performance should be shown to generalise through multisite investigation and subgroup analysis, and be tested against a gold standard.",
+  "source": "fv3patch_2",
+  "reason": "Source qualifies the dataset requirements with an 'unless sufficient evidence' exception (p.10)"
+ },
+ {
+  "row_id": "Saudi-P3-15",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Review committee (not further identified on the service page; platform operated by SDAIA) reviewing the provider's questionnaire and supporting files",
+  "source": "fv3patch_2",
+  "reason": "Page says only 'after committee review'; SDAIA attribution is an inference"
+ },
+ {
+  "row_id": "Singapore-015",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Overview, PDF p.2 (printed p.2); mapping, date and audiences from https://aiverifyfoundation.sg/tools/ai-verify-testing-framework/",
+  "source": "fv3patch_2",
+  "reason": "Overview page is numbered 2, not unnumbered"
+ },
+ {
+  "row_id": "Singapore-015",
+  "field": "what_is_tested",
+  "op": "set",
+  "value": "Responsible-AI process checks with documentary evidence (technical tests where applicable, via separate AI Verify Toolkit / Project Moonshot)",
+  "source": "fv3patch_2",
+  "reason": "Web page: framework built on process checks; technical tests provided by separate tools where applicable"
+ },
+ {
+  "row_id": "Singapore-015",
+  "field": "language_read",
+  "op": "set",
+  "value": "English official",
+  "source": "fv3patch_2",
+  "reason": "Field was blank"
+ },
+ {
+  "row_id": "Singapore-032",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Agentic AI, Version 1.5 (published 20 May 2026, updated 5 June 2026)",
+  "source": "fv3patch_2",
+  "reason": "source_url now serves v1.5; v1.0 superseded and not available at the cited URL"
+ },
+ {
+  "row_id": "Singapore-032",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.2.3.2, pp.38-39 (v1.5)",
+  "source": "fv3patch_2",
+  "reason": "Locator in current version"
+ },
+ {
+  "row_id": "Singapore-032",
+  "field": "language_read",
+  "op": "set",
+  "value": "English official",
+  "source": "fv3patch_2",
+  "reason": "Field was blank"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-P3-03",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Decision Point DP1 (Residual Risk Rating), printed pp.6-7 (avoid rule p.6; routing to Steps 6/7/10 p.7); Step 6 'Avoid High Risk System', printed p.7",
+  "source": "fv3patch_3",
+  "reason": "DP1 routing to Step 6/Step 7 that the paraphrase cites is on printed p.7."
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-P3-04",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Risk assessment reviews shall be conducted at planned intervals and should also be carried out ad hoc when significant changes occur; regular assessments shall confirm that controls are implemented and effective, and corrective actions shall be verified. When reporting to DoH, organisations must give clear, accurate and timely documentation of risk assessments, controls, incidents and corrective actions; regular reporting may include audit findings. DoH review of high-risk AI systems may include compliance audits, and DoH reviews the risk register. KPIs include an annual AI ethical incident rate threshold below 15%.",
+  "source": "fv3patch_3",
+  "reason": "Step 10.1 uses 'shall' for planned-interval reviews but 'should' for ad hoc reviews on significant change; row applied 'shall' to both."
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-016",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Consolidated Regulations (Version No. 2, in force 1 Sep 2023), Reg. 10.3.3 lead-in printed p.12 (PDF p.14) and limb (d) printed p.13 (PDF p.15)",
+  "source": "fv3patch_3",
+  "reason": "Page numbers as seen in the current PDF; row's p.13/p.14 match neither printed nor PDF numbering."
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-024",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "E (FAQs DIFC-DP-GL-24 Rev. 03, updated 27 Aug 2024): Section 3 pp.5-6, Q9 p.8, Q14 p.10, Section 8 p.12",
+  "source": "fv3patch_3",
+  "reason": "'B p.5' refers to a document not at source_url."
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-024",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The FAQs state that a Deployer, Operator or Provider acting as Controller must by law assess whether it conducts High Risk Processing before the System is launched; before seeking certification an HRP assessment is described as advisable and the DIFC website offers an HRP assessment; evidence under Reg. 10.2.2(c)-(f) can be policies, governance frameworks and principles frameworks; Section 3 lists conducting use-case testing in a sandbox among the Commissioner's objectives and Section 8 says use-case testing in a data-protection-by-design accelerator may be undertaken, without saying who runs it.",
+  "source": "fv3patch_3",
+  "reason": "Section 3 links sandbox use-case testing to the Commissioner, so 'neither document says who runs the testing' was too strong and conflicted with who_tests."
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-P3-02",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Proposed new design concept: a System must be designed, developed and operated with safeguards to identify use of personal data, assess and mitigate risks of harm to individuals, and intended to prevent discriminatory or biased outcomes through appropriate oversight, testing and controls.",
+  "source": "fv3patch_3",
+  "reason": "Source says safeguards 'intended to prevent' biased outcomes; row dropped 'intended to'."
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-P3-03",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Proposed: where codes, certifications or policy frameworks are in development or do not exist for the type and use of a System, the notice must describe the privacy-by-design and default measures implemented to comply with Article 14(3) of the Law or other applicable legislation; in such cases the Commissioner and any advisory body it establishes may request an impact assessment or convene a review and audit body to give technical and governance recommendations.",
+  "source": "fv3patch_3",
+  "reason": "Trigger in source also covers frameworks 'in development'; adds the Art 14(3) link."
+ },
+ {
+  "row_id": "UAE-Dubai-028",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "AI tools must prevent misuse; performance must be monitored in clinical practice and actual outcomes compared with those obtained in training and validation; significant discrepancies trigger further inspection.",
+  "source": "fv3patch_3",
+  "reason": "Removes duplicated word 'compared'."
+ },
+ {
+  "row_id": "UAE-Federal-P3-02",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Implementation Guidance 3.4.4 'Testing and Validation of AI/ML Systems', printed p.36 (parent policy statement 2.4.4, printed p.14)",
+  "source": "fv3patch_4",
+  "reason": "Parent 'shall' statement omitted"
+ },
+ {
+  "row_id": "UAE-Federal-P3-02",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Pre-deployment testing and the accuracy/reliability/performance criteria appear only in 'should' implementation guidance (3.4.4). The binding duty is policy statement 2.4.4 ('shall'): ensure security through comprehensive testing and validation for resilience against threats. It sets no stage and covers security only. AI ethics, fairness and trustworthiness are outside the policy's scope (s1.1).",
+  "source": "fv3patch_4",
+  "reason": "Make clear what is binding and that no binding pre-deployment duty exists"
+ },
+ {
+  "row_id": "UAE-Federal-P3-02",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity: Ministries & Federal Authorities and Non-Government CII Entities (s1.2). Emirate Government Entities are covered only where no Emirate CIIP Program exists; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities (s1.2, printed p.7)",
+  "source": "fv3patch_4",
+  "reason": "s1.2 covers emirate government entities only conditionally"
+ },
+ {
+  "row_id": "UAE-Federal-P3-03",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity: Ministries & Federal Authorities and Non-Government CII Entities (s1.2). Emirate Government Entities are covered only where no Emirate CIIP Program exists; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities (s1.2, printed p.7); external audits mentioned in 3.2.4",
+  "source": "fv3patch_4",
+  "reason": "s1.2 covers emirate government entities only conditionally"
+ },
+ {
+  "row_id": "UAE-Federal-P3-04",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity: Ministries & Federal Authorities and Non-Government CII Entities (s1.2). Emirate Government Entities are covered only where no Emirate CIIP Program exists; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities (s1.2, printed p.7)",
+  "source": "fv3patch_4",
+  "reason": "s1.2 covers emirate government entities only conditionally"
+ },
+ {
+  "row_id": "UAE-Federal-P3-05",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity: Ministries & Federal Authorities and Non-Government CII Entities (s1.2). Emirate Government Entities are covered only where no Emirate CIIP Program exists; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities (s1.2, printed p.7)",
+  "source": "fv3patch_4",
+  "reason": "s1.2 covers emirate government entities only conditionally"
+ },
+ {
+  "row_id": "UAE-Federal-P3-06",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity: Ministries & Federal Authorities and Non-Government CII Entities (s1.2). Emirate Government Entities are covered only where no Emirate CIIP Program exists; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities (s1.2, printed p.7); or independent third-party assurers whose reports the entity relies on (3.1.3)",
+  "source": "fv3patch_4",
+  "reason": "s1.2 covers emirate government entities only conditionally"
+ },
+ {
+  "row_id": "UAE-Federal-P3-07",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Implementation Guidance 3.1.4 (Change Management and Reporting), printed p.21; 3.2.3 (Patch Management), printed p.24; parent policy statements 2.1.4 (printed p.11) and 2.2.3 (printed p.12)",
+  "source": "fv3patch_4",
+  "reason": "Title correction; parent 'shall' statements omitted"
+ },
+ {
+  "row_id": "UAE-Federal-P3-07",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Pre-deployment testing of changes and patches in a secure/controlled environment is 'should' guidance (3.1.4, 3.2.3). However, policy statement 2.2.3 ('shall') requires patches and updates to be identified, tested and applied in a timely manner, and 2.1.4 ('shall') requires changes to be controlled to maintain security. Patch testing is therefore mandatory, but its pre-production timing is not.",
+  "source": "fv3patch_4",
+  "reason": "Keep the modality of patch testing from being understated"
+ },
+ {
+  "row_id": "UAE-Federal-P3-07",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity: Ministries & Federal Authorities and Non-Government CII Entities (s1.2). Emirate Government Entities are covered only where no Emirate CIIP Program exists; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities (s1.2, printed p.7)",
+  "source": "fv3patch_4",
+  "reason": "s1.2 covers emirate government entities only conditionally"
+ },
+ {
+  "row_id": "UAE-Federal-P3-08",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "fv3patch_4",
+  "reason": "Policy states 'requirements' and 'shall' statements; roles table says covered entities 'comply'; compliance is monitored via UAE IA Standard; no conflicting language"
+ },
+ {
+  "row_id": "UAE-Federal-P3-08",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Sets who the policy applies to: Ministries & Federal Authorities and Non-Government CII Entities. Emirate Government Entities are covered directly only where there is no Emirate CIIP Program; where one exists, the Emirate Lead carries out applicability assessment, enforcement and monitoring for Emirate Government Entities and Non-Government CII entities. Exceptions may be granted case by case by the relevant regulator (Emirate or Sector Lead) or the CSC under special circumstances. Compliance is monitored through UAE Information Assurance Standard controls (Appendix E.2), and entities are expected to report status on the National Cyber Index Platform. Version 1.0 is dated September 2025; Version 1.1 (November 2025) revised the structure and policy statements. AI ethics, fairness and trustworthiness are stated to be outside scope (s1.1).",
+  "source": "fv3patch_4",
+  "reason": "Correct emirate scope description"
+ },
+ {
+  "row_id": "UAE-Federal-P3-08",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Mandatory for the covered entities named in s1.2 and s10.4. Policy statements use 'shall'; implementation guidance uses 'should'. Exceptions are possible (s1.4). The document does not name its legal instrument; status is taken from its own text.",
+  "source": "fv3patch_4",
+  "reason": "Record actor and the shall/should split"
+ },
+ {
+  "row_id": "UK-006",
+  "field": "language_read",
+  "op": "set",
+  "value": "English",
+  "source": "fv3patch_4",
+  "reason": "Field blank"
+ },
+ {
+  "row_id": "UK-030",
+  "field": "framework",
+  "op": "set",
+  "value": "Frontier AI Safety Commitments, AI Seoul Summit 2024 (company commitments published by UK DSIT on GOV.UK; page updated 7 February 2025)",
+  "source": "fv3patch_4",
+  "reason": "Publisher and page date missing; commitments are company commitments, not UK government ones"
+ },
+ {
+  "row_id": "UK-030",
+  "field": "language_read",
+  "op": "set",
+  "value": "English",
+  "source": "fv3patch_4",
+  "reason": "Field blank"
+ },
+ {
+  "row_id": "UK-P3-01",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified; recommendations are addressed to 'you' (the government organisation or team developing or using AI)",
+  "source": "fv3patch_4",
+  "reason": "'Delivery team' not named in the section"
+ },
+ {
+  "row_id": "UK-P3-03",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified (passive voice); context refers to the organisation running the model",
+  "source": "fv3patch_4",
+  "reason": "'Delivery team / security' not named in source"
+ },
+ {
+  "row_id": "US-NIST-006",
+  "field": "language_read",
+  "op": "set",
+  "value": "English",
+  "source": "fv3patch_4",
+  "reason": "Field blank"
+ },
+ {
+  "row_id": "US-NIST-015",
+  "field": "language_read",
+  "op": "set",
+  "value": "English",
+  "source": "fv3patch_4",
+  "reason": "Field blank"
+ },
+ {
+  "row_id": "US-NIST-016",
+  "field": "test_stage",
+  "op": "set",
+  "value": "lifecycle",
+  "source": "fv3patch_4",
+  "reason": "MEASURE 4.2 says 'in deployment context(s) and across the AI lifecycle'"
+ },
+ {
+  "row_id": "US-NIST-016",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Connect measurement approaches to deployment context, informed by consultation with domain experts and other end users, and document them; inform measurement results on trustworthiness in deployment context and across the AI lifecycle with input from domain experts and relevant AI actors, to validate whether the system performs consistently as intended, and document results.",
+  "source": "fv3patch_4",
+  "reason": "Source says 'whether', includes end users and 'across the AI lifecycle'"
+ },
+ {
+  "row_id": "US-NIST-016",
+  "field": "language_read",
+  "op": "set",
+  "value": "English",
+  "source": "fv3patch_4",
+  "reason": "Field blank"
+ },
+ {
+  "row_id": "US-NIST-040",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Define evaluation objectives: document how measurements will be used (e.g. properties vs outcomes, noting relevant baselines) and decide and document what concept should be measured (the measurement construct), including comparison and whether average-, best- or worst-case behaviour is targeted (the latter labelled emerging practice).",
+  "source": "fv3patch_4",
+  "reason": "Best-case omitted; emerging-practice label applies only to the average/best/worst-case item"
+ },
+ {
+  "row_id": "US-NIST-040",
+  "field": "test_stage",
+  "op": "set",
+  "value": "lifecycle",
+  "source": "fv3patch_4",
+  "reason": "Listed uses span development, deployment selection and post-deployment configuration validation"
+ }
+]

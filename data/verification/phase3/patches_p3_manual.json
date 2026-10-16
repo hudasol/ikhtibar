@@ -150,5 +150,69 @@
   "value": "superseded in time: Commission Implementing Decision (EU) 2026/2274 of 12 Oct 2026 (OJ 14 Oct 2026) cites EN 18286:2026 in the OJ (EU-Standards-P3-20); this row reflects the position on 12 Oct 2026",
   "source": "p3ts_g2b_eu_act_part2_cop_std",
   "reason": "status changed after retrieval"
+ },
+ {
+  "row_id": "UAE-Federal-P3-04",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "SEC",
+  "source": "lead analyst coding review",
+  "reason": "the binding statement (2.5.2) is regular security testing; red teaming appears only as an example in 'should' guidance, so RED is secondary"
+ },
+ {
+  "row_id": "UAE-Federal-P3-04",
+  "field": "secondary_test_types",
+  "op": "set",
+  "value": "RED;MON",
+  "source": "lead analyst coding review",
+  "reason": "red teaming named in guidance as an example"
+ },
+ {
+  "row_id": "Singapore-031",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "version drift: the source URL now serves the Agentic AI framework v1.5 (20 May 2026, updated 5 June 2026); this row cites v1.0 pages, which can no longer be checked at that URL (v1.5 s.2.3.2 pp.38-40, s.2.3.3 pp.42-45 per phase 3 notes)",
+  "source": "p3ts_g4_uk_singapore; fv3_2",
+  "reason": "same URL now serves a later version"
+ },
+ {
+  "row_id": "Singapore-033",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "version drift: the source URL now serves the Agentic AI framework v1.5 (20 May 2026, updated 5 June 2026); this row cites v1.0 pages, which can no longer be checked at that URL (v1.5 s.2.3.2 pp.38-40, s.2.3.3 pp.42-45 per phase 3 notes)",
+  "source": "p3ts_g4_uk_singapore; fv3_2",
+  "reason": "same URL now serves a later version"
+ },
+ {
+  "row_id": "Singapore-034",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "version drift: the source URL now serves the Agentic AI framework v1.5 (20 May 2026, updated 5 June 2026); this row cites v1.0 pages, which can no longer be checked at that URL (v1.5 s.2.3.2 pp.38-40, s.2.3.3 pp.42-45 per phase 3 notes)",
+  "source": "p3ts_g4_uk_singapore; fv3_2",
+  "reason": "same URL now serves a later version"
+ },
+ {
+  "row_id": "UAE-Federal-021",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "source URL returned 404 on 2026-10-16; the Dubai counterpart of this external audit guideline is marked suspended (UAE-Dubai-018); whether the federal text carries a similar note was not re-checked",
+  "source": "fv3_3",
+  "reason": "source moved; related caution"
+ },
+ {
+  "row_id": "UAE-Federal-P3-08",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "verifiers read s1.2 differently: one reads emirate government entities as covered directly only where no emirate CIIP programme exists (and the s10.4 roles table gives 'comply' duties only to federal bodies and non-government CII entities); another reads them as covered directly or through the Emirate Lead. Check s1.2 and s10.4 by hand",
+  "source": "fv3_3; fv3_4",
+  "reason": "conflicting readings of scope"
+ },
+ {
+  "row_id": "UAE-Federal-P3-08",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Sets who the policy applies to: ministries and federal authorities and non-government CII entities; emirate government entities are covered directly where there is no emirate CIIP programme, and otherwise the Emirate Lead carries out applicability assessment, enforcement and monitoring. Exceptions may be granted case by case by the Emirate or Sector Lead or the CSC. Compliance is monitored through UAE Information Assurance Standard controls (Appendix E.2), with status reported on the National Cyber Index Platform. Version 1.0 is dated September 2025; Version 1.1 (November 2025) revised the structure and statements. AI ethics, fairness and trustworthiness are stated to be outside scope (s1.1).",
+  "source": "fv3patch_4",
+  "reason": "verifier's correction shortened to the 120 word cell limit without changing meaning"
  }
 ]

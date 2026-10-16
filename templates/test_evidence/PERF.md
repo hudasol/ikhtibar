@@ -41,8 +41,8 @@ Selected by script from verified rows; these are examples, not a complete list. 
 
 | Row | Framework | Source status | Clause |
 |---|---|---|---|
+| `Japan-P3-01` | Japan - Digital Agency DS-920 Guideline for Japanese Governm | mandatory | Sec. 6.3.3(1) (EN p. 35; JA p. 30) |
 | `UAE-AbuDhabi-DoH-003` | DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025) | mandatory | Cl. 3.1.3.1.1 |
 | `EU-AI-Act-016` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 9(6) |
 | `US-OMB-003` | US OMB Memorandum M-25-21 (3 April 2025) - federal agency us | conditional | s.4(b)(i), p.15-16 |
-| `EU-Standards-005` | EU harmonised standards work (CEN-CENELEC JTC 21) | voluntary | JTC 21 standards feed: prEN 18281, 18282 |
-| `Singapore-023` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcome 3.12, p.27 |
+| `EU-GPAI-CoP-004` | EU AI Act - GPAI Code of Practice (Safety and Security chapt | voluntary | Appendix 3.1-3.2 |

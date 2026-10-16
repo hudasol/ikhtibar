@@ -239,11 +239,14 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
     v["p3_verification_table"] = md_table(vh, [
         vrow("Phase 3 re-check of 175 open rows, as graded by research agents", v3["recheck_as_graded_by_agents"]),
         vrow("Same rows, re-graded by the lead analyst against the rubric", v3["recheck_by_research_agents"]),
-        vrow("**Fresh random sample (seed 20261016), independent verifiers**", v3["fresh_random_seed_20261016"]),
-        vrow("New phase 3 rows, independent verifiers", v3["new_rows_phase3"]),
+        vrow("Fresh random sample (seed 20261016), as graded by the verifiers", v3["fresh_random_seed_20261016_as_graded_by_verifiers"]),
+        vrow("**Fresh random sample (seed 20261016), rubric applied**", v3["fresh_random_seed_20261016"]),
+        vrow("New phase 3 rows, as graded by the verifiers", v3["new_rows_phase3_as_graded_by_verifiers"]),
+        vrow("New phase 3 rows, rubric applied", v3["new_rows_phase3"]),
         vrow("**All rows checked by phase 3 independent verifiers**", v3["final_independent_all"])])
     for key, d in [("p3r", v3["recheck_by_research_agents"]), ("p3a", v3["recheck_as_graded_by_agents"]),
-                   ("p3f", v3["fresh_random_seed_20261016"]), ("p3n", v3["new_rows_phase3"]), ("p3x", v3["final_independent_all"])]:
+                   ("p3f", v3["fresh_random_seed_20261016"]), ("p3n", v3["new_rows_phase3"]), ("p3x", v3["final_independent_all"]),
+                   ("p3fg", v3["fresh_random_seed_20261016_as_graded_by_verifiers"]), ("p3ng", v3["new_rows_phase3_as_graded_by_verifiers"])]:
         v.update({f"{key}_n": d["n"], f"{key}_pass": d["PASS"], f"{key}_minor": d["MINOR"], f"{key}_err": d["ERROR"],
                   f"{key}_blocked": d["UNVERIFIED_BLOCKED"], f"{key}_unverif": d["UNVERIFIABLE_OTHER"],
                   f"{key}_verifiable": d["verifiable"], f"{key}_rate": d["error_rate_pct"],

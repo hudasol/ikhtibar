@@ -88,12 +88,25 @@ def compute(rows=None):
         "final_independent_all": {"n": len(p3f) + len(p3n), **verdict_tally(p3f + p3n, "p3_final_verdict")},
     }
     rc_path = D / "verification" / "phase3" / "verdict_reclass.csv"
-    n_rc = len(load(rc_path)) if rc_path.exists() else 0
+    rcs = load(rc_path) if rc_path.exists() else []
+    n_rc = sum(1 for r in rcs if r["round"] == "3")
+    S["verification_p3"]["n_regraded_final_round"] = sum(1 for r in rcs if r["round"] == "4")
     ag = dict(S["verification_p3"]["recheck_by_research_agents"])
     ag.update(MINOR=ag["MINOR"] + n_rc, ERROR=ag["ERROR"] - n_rc)
     ag["error_rate_pct"] = round(100 * ag["ERROR"] / ag["verifiable"], 1) if ag["verifiable"] else None
     ag["error_ci95_pct"] = wilson(ag["ERROR"], ag["verifiable"])
     S["verification_p3"]["recheck_as_graded_by_agents"] = ag
+    r4 = {r["row_id"] for r in rcs if r["round"] == "4"}
+    for key in ("fresh_random_seed_20261016", "new_rows_phase3", "final_independent_all"):
+        d = dict(S["verification_p3"][key])
+        ids = {r["row_id"] for r in rows if r["p3_final_verdict"] and (
+            (key != "new_rows_phase3" and r["p3_sample"] == "fresh_random_seed_20261016") or
+            (key != "fresh_random_seed_20261016" and r["p3_sample"] == "new_row_phase3"))}
+        k = len(r4 & ids)
+        d.update(MINOR=d["MINOR"] + k, ERROR=d["ERROR"] - k)
+        d["error_rate_pct"] = round(100 * d["ERROR"] / d["verifiable"], 1) if d["verifiable"] else None
+        d["error_ci95_pct"] = wilson(d["ERROR"], d["verifiable"])
+        S["verification_p3"][key + "_as_graded_by_verifiers"] = d
     S["verification_p3"]["n_regraded_minor_to_error"] = n_rc
     S["verification"]["raw_verdict_counts_all"] = dict(C(r["verdict_raw"] for r in rows if r["verdict_raw"]))
     S["verification"]["date_only_minor_reclassified"] = sum(1 for r in rows if r["verdict_raw"] == "MINOR" and r["verdict_adjusted"] == "PASS")

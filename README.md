@@ -8,7 +8,7 @@ A comparative evidence base on testing AI systems before deployment, with a gap 
 
 ## Status 🌷
 
-Version 2.0 (phase 2), 12 October 2026. 522 evidence rows (311 test provisions). Verification by independent AI subagents using only the standard fetch tool: 389 rows checked in phase 2 with 13 errors among 293 verifiable rows (4.4%, 95% interval 2.6% to 7.4%). 94 rows are excluded from the headline counts (unverified, unverifiable, or resting on a summary or secondary report only). Of 246 headline test provisions, 73 (30%) are mandatory or conditional and 154 (63%) are voluntary or guidance.
+Version 2.0 (phase 2), 12 October 2026. 522 evidence rows (311 test provisions). Verification by independent AI subagents using only the standard fetch tool: 389 rows checked in phase 2 with 13 errors among 293 verifiable rows (4.4%, 95% interval 2.6% to 7.4%). 38 rows are excluded from the headline counts (unverified, unverifiable, or resting on a summary or secondary report only). Of 290 headline test provisions, 81 (28%) are mandatory or conditional and 173 (60%) are voluntary or guidance.
 
 ## What is documented
 

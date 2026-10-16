@@ -39,3 +39,4 @@ Selected by script from verified rows; these are examples, not a complete list. 
 |---|---|---|---|
 | `China-002` | China - Interim Measures for the Management of Generative AI | mandatory | Art. 7 (training data) |
 | `EU-AI-Act-020` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 10(2)(f)-(g) and 10(3)-(4) |
+| `Saudi-P3-10` | SFDA MDS-G010 Guidance on AI and ML technologies based Medic | ambiguous | Clinical Evaluation, pp. 10-11 |

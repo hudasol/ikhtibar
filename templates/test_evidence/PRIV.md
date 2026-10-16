@@ -40,5 +40,6 @@ Selected by script from verified rows; these are examples, not a complete list. 
 |---|---|---|---|
 | `UAE-DIFC-ADGM-006` | ADGM Data Protection Regulations 2021 (via ODP Guidance Part | conditional | Guidance para. 3.1 (DPR s.34(1)) |
 | `UAE-Federal-005` | UAE Federal Decree-Law No. 45 of 2021 (PDPL) | conditional | Art. 21 |
+| `UK-009` | UK AI Playbook for the UK Government (GDS, published 2025-02 | conditional | Using AI safely and responsibly > Data protection and privac |
 | `US-NIST-033` | US NIST AI 600-1 Generative AI Profile (July 2024) | guidance | MS-2.10-001, p.36 |
 | `Saudi-005` | SDAIA AI Ethics Principles (Version 1.0, September 2023, rea | ambiguous | Principle 2, Deploy and Monitor item 3, p. 17 |
