@@ -142,5 +142,13 @@
   "value": "catalogue-level only",
   "source": "p3res_g5_japan_korea_china",
   "reason": "re-pointed to the official standards catalogue entry; standard text not read"
+ },
+ {
+  "row_id": "EU-Standards-002",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "superseded in time: Commission Implementing Decision (EU) 2026/2274 of 12 Oct 2026 (OJ 14 Oct 2026) cites EN 18286:2026 in the OJ (EU-Standards-P3-20); this row reflects the position on 12 Oct 2026",
+  "source": "p3ts_g2b_eu_act_part2_cop_std",
+  "reason": "status changed after retrieval"
  }
 ]

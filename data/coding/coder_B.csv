@@ -1,0 +1,217 @@
+row_id,normative_force,confidence,note
+US-NIST-002,RECOMMENDS,high,"""should"""
+US-NIST-003,DESCRIBES,medium,"States a benefit (""can improve""); not advice"
+US-NIST-006,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-007,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-009,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-010,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-011,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-012,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-013,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-014,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-015,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-016,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-017,RECOMMENDS,low,Imperative guidance; weak test link
+US-NIST-018,RECOMMENDS,medium,Imperative guidance outcome
+US-NIST-020,DESCRIBES,medium,"Describes TEVV tasks; ""ideally"" only on staff separation"
+US-NIST-022,RECOMMENDS,high,"""Suggested actions"""
+US-NIST-023,RECOMMENDS,high,"""Suggested actions"""
+US-NIST-024,RECOMMENDS,high,"""Suggested actions"""
+US-NIST-026,RECOMMENDS,medium,Suggested action; weak test link
+US-NIST-027,RECOMMENDS,medium,Suggested action
+US-NIST-028,RECOMMENDS,medium,Suggested action
+US-NIST-029,RECOMMENDS,medium,Suggested action
+US-NIST-030,RECOMMENDS,medium,Suggested action
+US-NIST-031,RECOMMENDS,medium,Suggested action
+US-NIST-032,RECOMMENDS,medium,Suggested action
+US-NIST-033,RECOMMENDS,medium,Suggested action
+US-NIST-034,RECOMMENDS,medium,Suggested action
+US-NIST-035,RECOMMENDS,medium,Suggested action
+US-NIST-036,RECOMMENDS,medium,Suggested action
+US-NIST-037,DESCRIBES,high,Describes limits of current testing
+US-NIST-038,DESCRIBES,medium,"Describes methods; only team composition ""suggested"""
+US-NIST-039,RECOMMENDS,medium,"""voluntary preliminary best practices"""
+US-NIST-041,RECOMMENDS,medium,Imperative best practice
+US-NIST-042,RECOMMENDS,medium,Practices; partly describes bugs
+US-NIST-043,RECOMMENDS,medium,"Imperative best practice, ""ideally"""
+US-NIST-046,DESCRIBES,high,Centre states what it will do
+UK-002,RECOMMENDS,medium,Imperative guidance
+UK-003,RECOMMENDS,medium,Principle phrased as understand/have robust testing process
+UK-004,RECOMMENDS,medium,Imperative guidance
+UK-005,RECOMMENDS,high,"""Where possible"""
+UK-006,RECOMMENDS,medium,Imperative guidance
+UK-007,OBLIGATION_WORDING,medium,"""must be secure"" with safeguards incl. security testing; testing part is ""build safeguards"""
+UK-008,RECOMMENDS,low,Imperative avoid/prevent/review; weak test link
+UK-010,RECOMMENDS,medium,Imperative guidance
+UK-011,OBLIGATION_WORDING,high,"""must go through quantitative testing and validation"""
+UK-012,RECOMMENDS,medium,Imperative guidance
+UK-020,DESCRIBES,low,"Catalogue of mechanisms but ""to be used in combination, proportionate""; doubt vs RECOMMENDS"
+UK-021,RECOMMENDS,medium,"""may include""; ""should"" be independent; policy preference for UKAS"
+UK-024,DESCRIBES,high,Institute describes its evaluations
+UK-026,DESCRIBES,high,Institute describes its own activity
+UK-029,RECOMMENDS,high,Voluntary signatory commitments (rule 3)
+UK-030,RECOMMENDS,high,Voluntary signatory commitments (rule 3)
+UK-031,RECOMMENDS,high,Voluntary signatory commitments (rule 3)
+UK-033,DESCRIBES,high,Tool description
+Singapore-001,DESCRIBES,medium,Describes scope of a voluntary guideline set; could be read as recommending testing
+Singapore-003,RECOMMENDS,medium,Recommended approach
+Singapore-005,RECOMMENDS,medium,Imperative guidance
+Singapore-006,RECOMMENDS,medium,Imperative guidance
+Singapore-007,RECOMMENDS,low,Mix of method description and imperatives
+Singapore-008,RECOMMENDS,medium,Imperative guidance
+Singapore-009,RECOMMENDS,medium,Imperative guidance
+Singapore-010,RECOMMENDS,medium,Imperative guidance
+Singapore-011,DESCRIBES,medium,"Described service; ""requires investigation"" is Litmus configuration, not general duty"
+Singapore-012,RECOMMENDS,medium,"""Prescribes"" tests in non-binding starter kit"
+Singapore-013,RECOMMENDS,medium,Imperative guidance
+Singapore-014,RECOMMENDS,medium,Imperative guidance
+Singapore-015,DESCRIBES,high,Describes framework structure
+Singapore-016,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-017,RECOMMENDS,medium,Voluntary framework process step; reads partly as method description
+Singapore-018,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-019,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-020,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-021,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-022,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-023,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-024,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-025,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-026,RECOMMENDS,medium,Voluntary framework outcomes (rule 3)
+Singapore-028,RECOMMENDS,low,"Mostly describes shortcomings; ""calls for"" better approach incl. possible required tests"
+Singapore-031,RECOMMENDS,high,"""should test"""
+Singapore-032,RECOMMENDS,medium,Imperative guidance
+Singapore-033,RECOMMENDS,medium,Imperative guidance; part describes industry practice
+Singapore-034,RECOMMENDS,medium,Imperative guidance
+Singapore-035,DESCRIBES,high,Case study
+Singapore-036,RECOMMENDS,high,"""Recommends"" baseline evaluations"
+EU-AI-Act-052,DESCRIBES,high,Describes what sandboxes provide
+EU-AI-Act-055,DESCRIBES,low,"Permission (""may test""), neither advice nor duty; doubt vs RECOMMENDS"
+EU-GPAI-CoP-002,RECOMMENDS,high,Voluntary code commitment for signatories (rule 3)
+EU-GPAI-CoP-003,RECOMMENDS,high,Voluntary code commitment for signatories (rule 3)
+EU-GPAI-CoP-004,RECOMMENDS,medium,"Appendix ""must"" within voluntary code (rule 3)"
+EU-GPAI-CoP-005,RECOMMENDS,medium,"Appendix ""must"" within voluntary code (rule 3)"
+EU-GPAI-CoP-007,RECOMMENDS,high,Voluntary code commitment for signatories (rule 3)
+EU-GPAI-CoP-008,RECOMMENDS,medium,Voluntary code commitment (rule 3); weak test link
+EU-GPAI-CoP-009,RECOMMENDS,medium,Voluntary code commitment (rule 3)
+EU-Standards-005,DESCRIBES,high,Standards stage/scope listing
+ISO-IEC-004,DESCRIBES,medium,Catalogue description of guidance scope
+ISO-IEC-005,DESCRIBES,high,Catalogue description
+ISO-IEC-007,DESCRIBES,high,Catalogue description
+ISO-IEC-008,DESCRIBES,high,Catalogue description
+ISO-IEC-009,DESCRIBES,high,Catalogue description
+ISO-IEC-012,DESCRIBES,high,Catalogue description
+ISO-IEC-013,DESCRIBES,high,Catalogue description
+ISO-IEC-014,DESCRIBES,high,Catalogue description
+ISO-IEC-015,DESCRIBES,high,Catalogue description of planned spec
+ISO-IEC-016,DESCRIBES,high,Catalogue description of planned spec
+ISO-IEC-017,DESCRIBES,high,Catalogue description
+ISO-IEC-018,DESCRIBES,high,Catalogue description
+Japan-007,RECOMMENDS,medium,"Plan ""calls for"" evaluation"
+Japan-011,RECOMMENDS,high,"""desirable to combine"""
+Japan-012,RECOMMENDS,medium,"""are to"" in non-binding guideline; weak test link"
+Japan-013,RECOMMENDS,medium,"""are to"" in non-binding guideline"
+Japan-015,RECOMMENDS,medium,"""are to"" in non-binding guideline"
+Japan-016,RECOMMENDS,medium,"""are to"" in non-binding guideline"
+Japan-017,RECOMMENDS,medium,"""are to consider"" in non-binding guideline"
+Japan-018,RECOMMENDS,medium,"""are to"" in non-binding guideline"
+Japan-019,RECOMMENDS,medium,"""are to"" in non-binding guideline"
+Japan-020,RECOMMENDS,high,"""should in principle"""
+Japan-021,DESCRIBES,high,"""Describes three processes"""
+Japan-022,DESCRIBES,high,"""Defines ten evaluation perspectives"""
+Japan-023,RECOMMENDS,high,"""should be repeated"""
+Korea-003,RECOMMENDS,high,"""should try""; voluntary"
+Korea-008,RECOMMENDS,high,"""should endeavor"""
+China-021,RECOMMENDS,medium,Voluntary standard requirement (rule 3)
+China-022,RECOMMENDS,medium,Voluntary standard requirement (rule 3)
+China-024,RECOMMENDS,medium,"Voluntary standard ""must"" (rule 3)"
+China-025,RECOMMENDS,medium,Voluntary standard threshold (rule 3)
+China-026,RECOMMENDS,medium,Voluntary standard requirement (rule 3)
+UAE-Federal-004,DESCRIBES,medium,Announcement; assessments tied to phases
+UAE-DIFC-ADGM-005,RECOMMENDS,low,"Accountability must exist but external auditing is only an example (""may include""); could be DESCRIBES"
+UAE-DIFC-ADGM-007,RECOMMENDS,high,"""should be performed"""
+UAE-Dubai-001,RECOMMENDS,high,"""should"""
+UAE-Dubai-002,RECOMMENDS,high,"""should consider"""
+UAE-Dubai-003,RECOMMENDS,high,"""could consider"""
+UAE-Dubai-004,RECOMMENDS,high,"""should"""
+UAE-Dubai-006,RECOMMENDS,medium,"Self-assessment tool; guidelines recommended, not compulsory; ""suggests"" not proceeding"
+UAE-Dubai-007,DESCRIBES,high,Describes QA applied by DDA
+UAE-Dubai-008,OBLIGATION_WORDING,high,"""every initiative must demonstrate ... undergo rigorous validation"""
+UAE-Dubai-009,DESCRIBES,high,Describes pilots
+UAE-AbuDhabi-DoH-001,RECOMMENDS,medium,"""DoH expects""; between recommendation and duty"
+UAE-AbuDhabi-DoH-002,OBLIGATION_WORDING,medium,"""must conduct regular audits"" (end-users); other parts ""should"""
+Saudi-001,OBLIGATION_WORDING,high,"""must undergo conformity assessments"""
+Saudi-002,OBLIGATION_WORDING,medium,"""requires rigorous testing"" principle statement; sign-off part ""should"""
+Saudi-003,RECOMMENDS,high,"""should"""
+Saudi-004,RECOMMENDS,high,"""should"""
+Saudi-005,RECOMMENDS,high,"""should be tested"""
+Saudi-006,RECOMMENDS,high,"""should review and sign off"""
+Saudi-007,RECOMMENDS,medium,"""owners should ensure""; due diligence rather than test"
+Saudi-008,DESCRIBES,medium,"Defines roles; SDAIA ""may audit"""
+Saudi-009,DESCRIBES,high,"""Describes tools"""
+Saudi-010,DESCRIBES,low,Checklist with binding column; no force stated for tests
+Saudi-011,RECOMMENDS,high,"""should"""
+Saudi-012,RECOMMENDS,high,"""should"""
+Saudi-013,RECOMMENDS,high,"""should"""
+Saudi-014,RECOMMENDS,high,"""Recommends"""
+Saudi-015,RECOMMENDS,high,"""recommends"""
+Saudi-016,RECOMMENDS,high,"""Recommends"""
+Saudi-017,DESCRIBES,medium,Unverified secondary commentary; says no testing rules set
+Saudi-019,RECOMMENDS,high,"""Recommends"""
+Saudi-020,RECOMMENDS,high,"""Recommends"""
+Saudi-021,RECOMMENDS,high,"""Recommends"""
+Saudi-022,RECOMMENDS,high,"""Recommends"""
+Saudi-023,RECOMMENDS,high,"""Recommends"""
+UAE-Federal-009,DESCRIBES,medium,Declarative description of execution stage evaluation
+UAE-Federal-011,DESCRIBES,medium,Declarative description of operations stage monitoring
+UAE-Federal-018,RECOMMENDS,high,"""should"""
+UAE-Federal-019,RECOMMENDS,high,"""could be considered"""
+UAE-Federal-020,RECOMMENDS,high,"""should"""
+UAE-Federal-021,RECOMMENDS,high,"""should"""
+UAE-Federal-023,RECOMMENDS,high,"""should"""
+UAE-Federal-025,RECOMMENDS,high,"""should"""
+UAE-Federal-026,RECOMMENDS,high,"""should"""
+UAE-Federal-028,RECOMMENDS,high,"""should"""
+UAE-DIFC-ADGM-009,OBLIGATION_WORDING,high,"""must document ... run sufficient testing"""
+UAE-DIFC-ADGM-012,OBLIGATION_WORDING,high,"""DPIA is required"""
+UAE-DIFC-ADGM-015,RECOMMENDS,high,"""should"""
+UAE-Dubai-011,RECOMMENDS,high,"""should"""
+UAE-Dubai-012,RECOMMENDS,high,"""could consider"""
+UAE-Dubai-014,RECOMMENDS,high,"""should consider"""
+UAE-Dubai-015,RECOMMENDS,high,"""should"""
+UAE-Dubai-016,RECOMMENDS,medium,"""should""; guideline suspended"
+EU-AI-Act-P3-22,RECOMMENDS,high,Voluntary code commitment (rule 3)
+EU-AI-Act-P3-23,RECOMMENDS,high,Voluntary code commitment (rule 3)
+EU-GPAI-CoP-P3-20,RECOMMENDS,high,Voluntary code commitment (rule 3)
+EU-GPAI-CoP-P3-22,RECOMMENDS,high,Voluntary code commitment (rule 3)
+UK-P3-01,RECOMMENDS,medium,Imperative guidance
+UK-P3-02,OBLIGATION_WORDING,low,"""never use in production without code review""; guidance document; doubt vs RECOMMENDS"
+UK-P3-03,RECOMMENDS,high,"""should be tested"""
+Singapore-P3-01,DESCRIBES,high,Case study
+Singapore-P3-02,RECOMMENDS,low,Imperative change-management guidance; weak testing link
+Korea-P3-01,OBLIGATION_WORDING,medium,"""must cover""; impact assessment content"
+China-P3-01,RECOMMENDS,medium,Guideline stage practice stated declaratively; could read as duty
+China-P3-02,RECOMMENDS,medium,"Practice guidance, declarative/imperative"
+Saudi-P3-01,RECOMMENDS,medium,Imperative in draft guideline
+Saudi-P3-02,RECOMMENDS,medium,Imperative in draft guideline
+Saudi-P3-03,RECOMMENDS,medium,Imperative in draft guideline
+Saudi-P3-05,RECOMMENDS,medium,Imperative in draft guideline
+Saudi-P3-06,RECOMMENDS,medium,Imperative in draft guideline
+Saudi-P3-07,RECOMMENDS,medium,"""expected to provide""/""should show"""
+Saudi-P3-08,OBLIGATION_WORDING,medium,"""need to show"" validation"
+Saudi-P3-09,OBLIGATION_WORDING,low,"Independent review ""should"" (RECOMMENDS) but equivalence ""must show""; stronger taken"
+Saudi-P3-10,RECOMMENDS,high,"""should"""
+Saudi-P3-11,RECOMMENDS,high,"""should"""
+Saudi-P3-12,OBLIGATION_WORDING,high,"""required to use post-market continuous monitoring"""
+Saudi-P3-13,OBLIGATION_WORDING,medium,"""required"" risk showing; review ""should""; stronger force taken"
+Saudi-P3-14,OBLIGATION_WORDING,medium,"""shall have QMS procedures; changes shall be evaluated, verified, validated"""
+Saudi-P3-15,DESCRIBES,medium,Describes accreditation process steps
+Saudi-P3-16,DESCRIBES,high,Tool description
+UAE-Federal-P3-02,RECOMMENDS,high,"""should"""
+UAE-Federal-P3-07,RECOMMENDS,high,"""should"""
+UAE-AbuDhabi-DoH-P3-01,RECOMMENDS,medium,Protocol labelled Recommended; declarative statement that controls are tested via simulation/pilot
+UAE-AbuDhabi-DoH-P3-02,OBLIGATION_WORDING,low,"Risk rating method; ""shall be avoided""/""need treatment""; weak link to testing; could be DESCRIBES"
+UAE-AbuDhabi-DoH-P3-03,OBLIGATION_WORDING,low,"""must not be implemented"" gate on residual risk; no test activity as such"
+UAE-AbuDhabi-DoH-P3-04,OBLIGATION_WORDING,medium,"""shall be reviewed/assessed""; reassessment more than testing"
+UAE-DIFC-ADGM-P3-01,OBLIGATION_WORDING,high,"""no one may use ... unless tested"""
+UAE-DIFC-ADGM-P3-02,OBLIGATION_WORDING,medium,"""must be designed ... with testing and controls""; proposed provision"
+UAE-DIFC-ADGM-P3-03,DESCRIBES,low,"Notice must describe measures (not a test); impact assessment/review only on request (""may request""); doubt vs RECOMMENDS"
