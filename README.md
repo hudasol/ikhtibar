@@ -8,14 +8,14 @@ A comparative evidence base on testing AI systems before deployment, with a gap 
 
 ## Status 🌷
 
-Version 2.0 (phase 2), 12 October 2026. 522 evidence rows (311 test provisions). Verification by independent AI subagents using only the standard fetch tool: 389 rows checked in phase 2 with 13 errors among 293 verifiable rows (4.4%, 95% interval 2.6% to 7.4%). 38 rows are excluded from the headline counts (unverified, unverifiable, or resting on a summary or secondary report only). Of 290 headline test provisions, 81 (28%) are mandatory or conditional and 173 (60%) are voluntary or guidance.
+Version 3.0 (phase 3), 16 October 2026. 522 evidence rows (311 test provisions), 56 of them added in phase 3. Phase 3 re-checked the 175 rows phase 2 had left open and ran a fresh independent check: in a seeded random sample of 30 rows, 3 of 23 verifiable rows had an error under a strict rubric (13.0%, 95% interval 4.5% to 32.1%), all corrected. 38 rows are excluded from the headline counts (unverified, unverifiable, superseded, or resting on a summary or secondary report only). Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 173 (60%) are voluntary or guidance and 36 (12%) are ambiguous.
 
 ## What is documented
 
 Documented means a retrieved source says it, and the row records where.
 
 - Each evidence row holds a paraphrase, a clause or page locator, a binding status, who tests, the source address, the retrieval date, the language read, and a verification status with a note. Quotations are short and attributed.
-- Verification outcomes per row, the raw verification files, the rules the verifiers followed, and every correction with its reason (`data/patches.json`).
+- Verification outcomes per row, the raw verification files, the rules the verifiers followed, and every correction with its reason (`data/patches.json`; phase 3 in `data/verification/phase3/`).
 - Time sensitive items checked against primary sources, with locator, retrieval date, access path and any conflict (`data/time_sensitive.csv`).
 - Every UAE search and fetch, and every source, with whether an original or a translation was read and whether an English rendering was produced by the fetch tool (`data/uae_search_log.csv`, `data/uae_sources.csv`).
 
@@ -24,6 +24,8 @@ Documented means a retrieved source says it, and the row records where.
 Interpreted means the analyst's judgement. It is labelled as such in the report.
 
 - The binding status coding (mandatory, conditional, voluntary, guidance, ambiguous) and the test type taxonomy.
+- The normative force coding of non binding rows (obligation wording, recommendation, description), double coded in `data/coding/`.
+- The lead analyst's re-grading of verifier verdicts against the rubric (`data/verification/phase3/verdict_reclass.csv`).
 - The gap analysis in Section 8 of `docs/REPORT.md`. It describes gaps in the documents retrieved, not in UAE law.
 - The assurance checklist and its applicability rules. They are proposals.
 - The test evidence templates in `templates/test_evidence/`. They are labelled proposals.
@@ -31,9 +33,11 @@ Interpreted means the analyst's judgement. It is labelled as such in the report.
 
 ## What is still open
 
-- 32 rows rest on sources that rejected the standard fetch tool or timed out, and 1 are readable but could not be located. They are not worked around. The exact documents to download by hand are in `docs/DOWNLOAD_LIST.md`.
-- EU Omnibus operative dates (Article 113 and others) are confirmed at recital level only. DoH Responsible AI Standard revision status is unknown. DIFC amendments after Version No. 2 are unchecked. The Saudi instruments cannot be called final. See `docs/TIME_SENSITIVE.md`.
-- 0 rows were not re checked in phase 2.
+- 32 rows rest on sources that rejected the standard fetch tool, mainly Canada's Directive on Automated Decision-Making, and 1 are readable but could not be located. They are not worked around. The documents to download by hand are in `docs/DOWNLOAD_LIST.md` and Appendix B of the report.
+- Seven sampled UAE and ISO rows could not be re-read on 16 October because their sources moved or exceeded the fetch limit; they keep their earlier verified status with a note.
+- The scope of the UAE National Cyber Security Policy for AI for emirate government entities was read differently by two verifiers; check it by hand.
+- The DoH Responsible AI Standard revision falls due in October 2026; the DIFC Regulation 10 amendments are consulted on but not enacted; the Saudi instruments are not final. See `docs/TIME_SENSITIVE.md`.
+- Some phase 3 rows were read from PDFs saved by the fetch tool and extracted locally; this is recorded per row in `access_path`.
 - Arabic originals were obtained for only part of the UAE sources (`docs/UAE_COVERAGE.md`).
 - Licences are proposed, not applied (`docs/LICENSING.md`).
 
