@@ -79,9 +79,17 @@ def main():
     for f in sorted(glob.glob(str(P3 / "p3res_*.csv"))):
         for r in read(f):
             r["_round"] = 3; r["_file"] = os.path.basename(f); ver3[r["row_id"]] = r; ver[r["row_id"]] = r
+    # lead analyst re-grading of round 3 verdicts against the verdict rubric (agent verdict kept in the file)
+    reclass = {r["row_id"]: r for r in read(P3 / "verdict_reclass.csv")} if (P3 / "verdict_reclass.csv").exists() else {}
+    for rid, rc in reclass.items():
+        if rid in ver3 and ver3[rid]["verdict"] == rc["agent_verdict"]:
+            ver3[rid]["verdict"] = rc["lead_verdict"]
+            ver3[rid]["failed_checks"] = f"[re-graded {rc['agent_verdict']} to {rc['lead_verdict']}: {rc['reason']}] " + (ver3[rid].get("failed_checks") or "")
     for f in sorted(glob.glob(str(P3 / "final" / "fv3_*.csv"))):
         for r in read(f):
             r["_round"] = 4; r["_file"] = os.path.basename(f); ver4[r["row_id"]] = r; ver[r["row_id"]] = r
+    # rows whose phase 3 reading used a file saved by the standard fetch tool and read locally (disclosed)
+    relabel = {r["row_id"]: r["access_path"] for r in read(P3 / "access_relabel.csv")} if (P3 / "access_relabel.csv").exists() else {}
     fresh3 = set()
     if (P3 / "final" / "sample_p3.json").exists():
         fresh3 = set(json.load(open(P3 / "final" / "sample_p3.json"))["fresh_random_seed_20261016"])
@@ -104,7 +112,7 @@ def main():
     for r in new:
         x = {c: r.get(c, "") for c in OUT_COLS}
         x["retrieved_on"] = r["retrieval_date"]
-        v = ver.get(r["row_id"], {})
+        v = ver2.get(r["row_id"], {})   # coding comes from the phase 2 verifier
         for c in ["row_type", "primary_test_type", "secondary_test_types", "test_stage", "evidence_grade", "language_read"]:
             x[c] = v.get(c, "")
         x["conflict_flag"] = r.get("conflict_flag", "") or ""
@@ -124,6 +132,8 @@ def main():
     # apply patches
     fails = []
     patches = json.load(open(D / "patches.json", encoding="utf-8"))
+    for f in sorted(glob.glob(str(P3 / "patches_*.json"))):   # phase 3 accepted corrections, applied after phase 2
+        patches += json.load(open(f, encoding="utf-8"))
     applied = {}
     for p in patches:
         rid = p["row_id"]
@@ -198,6 +208,8 @@ def main():
                 x["access_path"] = "none"
                 x["document_to_download"] = (v.get("suggested_fix") or "")[:500]
                 x["verification_note"] = (v.get("what_source_says") or "")[:300]
+        if v is not None and v["_round"] == 3 and rid in relabel and v["verdict"] in ("PASS", "MINOR", "ERROR"):
+            x["access_path"] = relabel[rid]
         if x.get("_override"):
             x["verification_status"] = x.pop("_override")
         if x["verification_status"] == "ERROR_WITHDRAWN":

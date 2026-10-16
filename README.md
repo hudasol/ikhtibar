@@ -8,7 +8,7 @@ A comparative evidence base on testing AI systems before deployment, with a gap 
 
 ## Status 🌷
 
-Version 2.0 (phase 2), 12 October 2026. 466 evidence rows (268 test provisions). Verification by independent AI subagents using only the standard fetch tool: 389 rows checked in phase 2 with 13 errors among 293 verifiable rows (4.4%, 95% interval 2.6% to 7.4%). 108 rows are excluded from the headline counts (unverified, unverifiable, or resting on a summary or secondary report only). Of 212 headline test provisions, 61 (29%) are mandatory or conditional and 132 (62%) are voluntary or guidance.
+Version 2.0 (phase 2), 12 October 2026. 522 evidence rows (311 test provisions). Verification by independent AI subagents using only the standard fetch tool: 389 rows checked in phase 2 with 13 errors among 293 verifiable rows (4.4%, 95% interval 2.6% to 7.4%). 94 rows are excluded from the headline counts (unverified, unverifiable, or resting on a summary or secondary report only). Of 246 headline test provisions, 73 (30%) are mandatory or conditional and 154 (63%) are voluntary or guidance.
 
 ## What is documented
 
@@ -31,9 +31,9 @@ Interpreted means the analyst's judgement. It is labelled as such in the report.
 
 ## What is still open
 
-- 52 rows rest on sources that rejected the standard fetch tool or timed out, and 44 are readable but could not be located. They are not worked around. The exact documents to download by hand are in `docs/DOWNLOAD_LIST.md`.
+- 32 rows rest on sources that rejected the standard fetch tool or timed out, and 1 are readable but could not be located. They are not worked around. The exact documents to download by hand are in `docs/DOWNLOAD_LIST.md`.
 - EU Omnibus operative dates (Article 113 and others) are confirmed at recital level only. DoH Responsible AI Standard revision status is unknown. DIFC amendments after Version No. 2 are unchecked. The Saudi instruments cannot be called final. See `docs/TIME_SENSITIVE.md`.
-- 70 rows were not re checked in phase 2.
+- 0 rows were not re checked in phase 2.
 - Arabic originals were obtained for only part of the UAE sources (`docs/UAE_COVERAGE.md`).
 - Licences are proposed, not applied (`docs/LICENSING.md`).
 

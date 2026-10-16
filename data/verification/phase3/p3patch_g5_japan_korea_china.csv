@@ -1,0 +1,53 @@
+row_id,field,new_value,reason
+Japan-009,requirement_paraphrase,"AI Strategic Headquarters to aggregate AI-related information (technology trends, risk incidents, international information, evaluation knowledge) and, based on it, build a mechanism encouraging ministries to voluntarily inspect and review AI-related institutional systems, guidelines and measures, including the AI Act.","'Systems' refers to rules/institutional systems (incl. the AI Act), not AI technical systems."
+Japan-009,what_is_tested,"Not a test of AI systems: periodic policy review of AI-related rules, guidelines and measures",Same.
+Japan-009,who_tests,AI Strategic Headquarters (aggregation); ministries and agencies (review of their rules),Same.
+Japan-009,row_type,context,Not an evaluation of AI systems.
+Japan-009,primary_test_type,NONE,Same.
+Japan-009,test_stage,n/a,Same.
+Japan-009,clause_or_page,"Ch. 3 Sec. 3 [Specific Initiatives] (1)(iii), printed p. 18",Locator confirmed; adds section.
+Japan-017,framework,"Japan - Outline of AI Guidelines for Business Ver. 1.1 (MIC/METI, 4 Apr 2025; provisional translation)","PDF 001003032 is the 25-page Outline, not the full guidelines."
+Japan-017,clause_or_page,"Part 3, D-3) i (printed p. 20)",Item appears on p. 20 only.
+Japan-019,framework,"Japan - Outline of AI Guidelines for Business Ver. 1.1 (MIC/METI, 4 Apr 2025; provisional translation)",PDF is the Outline.
+Japan-019,clause_or_page,"Part 5, U-2) i (printed p. 24)",Item appears on p. 24.
+Japan-024,clause_or_page,Summary pp. 5 and 8,Specific pages where the statements appear.
+Korea-013,framework,"South Korea - Enforcement Decree of the AI Framework Act (Presidential Decree No. 36053, 21 Jan 2026)",Primary decree text located.
+Korea-013,clause_or_page,Decree Art. 24(1)1-3 and (2),Seen in KLRI text.
+Korea-013,requirement_paraphrase,"Act Art. 32 safety obligations apply to AI systems meeting all three criteria: cumulative training compute at or above the decree threshold (10^26 FLOPs per MSIT releases), built and operated with the most advanced AI technology, and a risk level likely to have widespread and significant effects on life, bodily safety and fundamental rights; the Minister publicly notifies the compute calculation method.","Decree content; submission of results comes from Act Art. 32, not the decree."
+Korea-013,source_url,https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73696,Primary (KLRI English) replaces law-firm newsletter.
+Korea-013,interpretation_note,"translation: KLRI English, reference only. Exponent of the compute threshold not fully rendered by the fetch tool in KLRI text ('10^2?'); 10^26 taken from MSIT English press releases (nttSeqNo 1191 and 1214). Duty to submit results to the Minister is in Act Art. 32. Korean original on law.go.kr not readable by fetch (script-rendered).",Transparency on what was read.
+Korea-013,language_read,"English translation by KLRI (site states English version is for reference only, no legal effect)",Primary read.
+Korea-014,framework,"South Korea - Enforcement Decree of the AI Framework Act (Presidential Decree No. 36053, 21 Jan 2026)",Primary located.
+Korea-014,clause_or_page,Decree Art. 27(1)-(4) (measures themselves in Act Art. 34(1)),"Arts. 25 and 28 cover confirmation and impact assessment, not this content."
+Korea-014,requirement_paraphrase,"High-impact AI operators must implement the Act Art. 34(1) measures (risk management, explanation, user protection, human management and supervision, documentation), post the main contents of their risk management, explanation and user protection measures and the name and contact of the supervising person (trade secrets excluded), and keep supporting documents for 5 years; a downstream operator is deemed compliant if the provider implemented the measures and it makes no significant functional change.",Faithful to Decree Art. 27.
+Korea-014,source_url,https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73696,Primary replaces secondary.
+Korea-014,language_read,"English translation by KLRI (site states English version is for reference only, no legal effect)",Primary read.
+Korea-015,framework,"South Korea - Enforcement Decree of the AI Framework Act (Presidential Decree No. 36053, 21 Jan 2026)",Primary located.
+Korea-015,clause_or_page,Decree Art. 29(1)1-4 and (2),Seen.
+Korea-015,requirement_paraphrase,A foreign operator must designate a domestic agent if it meets any of: prior-year total revenue of KRW 1 trillion or more; prior-year AI service revenue of KRW 10 billion or more; an average of 1 million or more daily domestic users over the three months before the end of the prior year; or having been fined under Act Art. 43(1)3.,Adds omitted fourth criterion and averaging period.
+Korea-015,source_url,https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73696,Primary replaces secondary.
+Korea-015,language_read,"English translation by KLRI (site states English version is for reference only, no legal effect)",Primary read.
+Korea-016,framework,"South Korea - MSIT enforcement approach (press release on entry into force, Jan 2026)",Primary MSIT release located.
+Korea-016,clause_or_page,MSIT English press release 'The AI Basic Act Comes into Force to Lay the Foundation for Korea to Become an AI G3' (page undated),Locator.
+Korea-016,requirement_paraphrase,"MSIT announced a grace period of at least one year during which fact-finding investigations and penalties are deferred; investigations will be conducted only in highly exceptional cases such as loss of life, human rights violations or other serious social harm.",Matches primary wording.
+Korea-016,source_url,https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng,Primary replaces secondary.
+Korea-016,interpretation_note,"Administrative enforcement policy announced by MSIT; not contained in the Act or the Enforcement Decree (Decree Art. 32 refers fine criteria to Appendix 2). Status ambiguous: policy commitment, not law.",Explains ambiguous status.
+Korea-016,language_read,English (MSIT official English press release),Primary read.
+Korea-017,requirement_paraphrase,"Institute works on classifying AI risks needing national oversight (e.g., models that could help create chemical or biological weapons, models that could evade human control), developing risk-specific evaluation frameworks, and building evaluation datasets and tools.","Page names chemical/biological weapons, not full CBRN."
+China-008,source_url,https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm,Official CAC text available; chinalawtranslate is an unofficial translation.
+China-008,language_read,Chinese original; fetch-tool English rendering (machine),Read official Chinese via fetch-tool rendering.
+China-011,source_url,https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm,Official CAC text available.
+China-011,language_read,Chinese original; fetch-tool English rendering (machine),Same.
+China-018,requirement_paraphrase,"On user request, providers may supply generated content without explicit labels after the user agreement sets out the user's labelling obligations and responsibility for use, and must keep related logs, including recipient information, for at least six months.",Art. 9 waives only explicit labels.
+China-018,source_url,https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm,CAC official copy of the notice.
+China-018,language_read,Chinese original; fetch-tool English rendering (machine),Machine rendering of Chinese original.
+China-030,source_url,https://www.cac.gov.cn/2025-09/15/c_1759653448369123.htm,Primary CAC release notice replaces Substack newsletter.
+China-030,clause_or_page,"CAC release notice, 15 Sep 2025 (framework PDF not read: exceeds fetch size limit)",Locator of what was read.
+China-030,requirement_paraphrase,"CAC notice states that AI Safety Governance Framework 2.0, a TC260 technical document drafted under the lead of the National Internet Emergency Center with CAC guidance, refines AI safety risk classification, explores risk grading and updates prevention and governance measures.",Limited to primary notice; 'precursor to national standards' not seen.
+China-030,interpretation_note,UNVERIFIED at clause level: framework PDF (cac.gov.cn rootimages/uploadimg/1759653474200838) exceeds the fetch tool's 10 MB limit; user to download. Non-binding technical document.,Status of evidence.
+China-030,language_read,Chinese original; fetch-tool English rendering (machine),Notice read via machine rendering.
+China-031,source_url,https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=45438,Official national standards catalogue replaces expert commentary.
+China-031,clause_or_page,openstd.samr.gov.cn catalogue entry (standard text not read); Labelling Measures Art. 11,Locator.
+China-031,requirement_paraphrase,"GB 45438-2025 'Cybersecurity technology - Labelling method for AI-generated synthetic content' is a mandatory national standard, current, published 28 Feb 2025 and effective 1 Sep 2025; the Labelling Measures (Art. 11) require providers to comply with mandatory national standards when labelling.",Catalogue-level facts only.
+China-031,interpretation_note,"Catalogue-level only: explicit/implicit labelling method details not read in the standard text (free online reading on openstd is script-rendered). Cited CAC page (2025-03-18) is an expert interpretation, not an official statement.",Evidence grade.
+China-031,language_read,Chinese original; fetch-tool English rendering (machine),Catalogue read via machine rendering.

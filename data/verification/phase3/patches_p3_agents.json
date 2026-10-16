@@ -1,0 +1,874 @@
+[
+ {
+  "row_id": "US-NIST-022",
+  "field": "who_tests",
+  "op": "set",
+  "value": "AI actors with socio-technical, human factors and UI/UX experts",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "MEASURE 2.3 suggested actions name socio-technical, human factors and UI/UX practitioners; domain experts are not named there."
+ },
+ {
+  "row_id": "US-NIST-025",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The profile is a cross-sectoral profile of, and companion resource to, AI RMF 1.0 for generative AI; the AI RMF is intended for voluntary use, and the profile provides a set of suggested actions to help organisations govern, map, measure and manage GAI risks.",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Source does not say 'rather than requirements'; wording aligned to text."
+ },
+ {
+  "row_id": "US-NIST-025",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Status follows from AI RMF voluntary use and 'suggested actions' wording. Profile was developed under EO 14110 s.4.1(a)(i)(A); EO 14110 was later revoked, but the profile remains listed on NIST's AI RMF page as of 2026-10-16.",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Context for status."
+ },
+ {
+  "row_id": "US-NIST-042",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Practices 2.1-2.4 (Section 2), p.9-23",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Section 2 heading on printed p.9; Section 3 begins p.24."
+ },
+ {
+  "row_id": "US-NIST-042",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Design the evaluation protocol, write evaluation code, run and track results, and debug the evaluation; common bugs include degraded serving; evaluation cheating and evaluation awareness are listed as bugs tagged [Emerging Practice].",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Source tags these items [Emerging Practice], not 'emerging concerns'."
+ },
+ {
+  "row_id": "US-NIST-046",
+  "field": "framework",
+  "op": "set",
+  "value": "US NIST CAISSI program page (nist.gov/caisi; titled 'Center for Advancing Innovation and Standards for Super Intelligence (CAISSI)' as retrieved 2026-10-16; formerly CAISI)",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Page title and H1 changed; 'SI' used in place of 'AI'."
+ },
+ {
+  "row_id": "US-NIST-046",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The centre states it will develop guidelines and best practices and help industry develop voluntary standards, establish voluntary agreements with private sector SI developers and evaluators, and lead unclassified evaluations of SI capabilities that may pose national security risks, focusing on demonstrable risks such as cybersecurity, biosecurity and chemical weapons.",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Aligned to current page wording ('SI' systems)."
+ },
+ {
+  "row_id": "US-NIST-046",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Page retrieved 2026-10-16 uses the name CAISSI and 'SI' (super intelligence, not defined on the page); no official rename notice was located. Voluntary agreements; no binding pre-deployment testing duty.",
+  "source": "p3patch_g1_canada_us_iso",
+  "reason": "Record the name change and its unsettled documentation."
+ },
+ {
+  "row_id": "EU-AI-Act-001",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Chapter III Sections 1-3 (classification, high-risk requirements, and obligations of providers, deployers and other parties, including the Art. 16(f) duty to undergo conformity assessment) apply from 2 December 2027 for AI systems classified high-risk under Art. 6(2) and Annex III, except Art. 6(5).",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Sections 1-3 do not contain the conformity assessment framework (that is Section 5, Arts 40-49); the gloss overstated what point (c) postpones."
+ },
+ {
+  "row_id": "EU-AI-Act-001",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Art 113 third para point (c)(i) as replaced by Reg 2026/1744 Art 1 point (40)(b). Section 5 (Arts 40-49: standards, conformity assessment, certificates, registration) is not listed in point (c); provider and deployer duties that trigger it (e.g. Art 16(f), Art 26) sit in Section 3 and are postponed.",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Clarify scope of postponement."
+ },
+ {
+  "row_id": "EU-AI-Act-003",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 113 (second para.) and (third para.) points (a), (b), (d), as amended by Reg. 2026/1744 Art 1 point (40)",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "General application date 2 August 2026 is in the second paragraph; the first paragraph is entry into force."
+ },
+ {
+  "row_id": "EU-AI-Act-003",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Point (d) (Arts 102-110 from 27 July 2026) and the 2 Dec 2026 date for Art 5(1)(ba),(bb), 5(1a),(1b) are in the operative amended text. The general date does not apply to Chapter III Sections 1-3, postponed by point (c) to 2 Dec 2027 (Annex III) / 2 Aug 2028 (Annex I).",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Prevent misreading of the general date."
+ },
+ {
+  "row_id": "EU-AI-Act-012",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 6(5); Art. 113, third para., point (c) (exception for Art. 6(5)), as amended",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Precise locator."
+ },
+ {
+  "row_id": "EU-AI-Act-023",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Technical documentation drawn up before market placement must contain at least the Annex IV elements, including (point 2(g)) validation and testing procedures, the data used and its main characteristics, metrics for accuracy, robustness and compliance, potentially discriminatory impacts, and dated, signed test logs and reports, and (point 4) a justification of the chosen performance metrics. SMEs and SMCs may use a simplified Commission form, which notified bodies must accept.",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Add the amended Art 11(1) second subpara (Reg 2026/1744 Art 1 point (10)) and the correct content of Annex IV point 4."
+ },
+ {
+  "row_id": "EU-AI-Act-031",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 42(2); Art. 42(3) (inserted by Reg. 2026/1744 Art 1 point (18))",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Flag the inserted paragraph."
+ },
+ {
+  "row_id": "EU-AI-Act-031",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "High-risk systems certified, or covered by a statement of conformity, under an EU cybersecurity scheme (Reg. 2019/881) whose references are published in the OJ are presumed to meet the Art. 15 cybersecurity requirements to the extent covered; systems within the scope of Reg. 2024/2847 (Cyber Resilience Act) are deemed to comply with the Art. 15 cybersecurity requirements where the conditions of Art. 12(1) of that Regulation are met.",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Add statement-of-conformity route and the precise CRA condition."
+ },
+ {
+  "row_id": "EU-AI-Act-031",
+  "field": "test_stage",
+  "op": "set",
+  "value": "pre-deployment",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Presumption is used in pre-market conformity assessment; consistent with row 037."
+ },
+ {
+  "row_id": "EU-AI-Act-039",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The Commission may adopt common specifications by implementing act only if (a) it requested harmonised standards and the request was not accepted, the standards were not delivered on time, insufficiently address fundamental rights, or do not comply with the request, and (b) no reference to covering harmonised standards is published in the OJ or expected within a reasonable period; conformity with common specifications gives a presumption of conformity to the extent covered.",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Add the cumulative condition (b) and the fourth trigger."
+ },
+ {
+  "row_id": "EU-AI-Act-047",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Notified-body certificates are valid for the period stated, at most five years for Annex I systems and four years for Annex III systems, extendable at the provider's request after re-assessment; where a system no longer meets Section 2 requirements the body must, applying proportionality, suspend, withdraw or restrict the certificate unless the provider takes corrective action within the deadline set by the body.",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Add restriction option and corrective-action exception."
+ },
+ {
+  "row_id": "EU-AI-Act-049",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Before placing on the market or putting into service an Annex III high-risk system (except point 2, registered at national level), the provider registers itself and the system in the EU database; providers that conclude under Art. 6(3) that an Annex III system is not high-risk must also register; deployers that are public authorities or Union institutions/bodies (or act on their behalf) must register, select the system and register its use before putting it into service or using it.",
+  "source": "p3patch_g2a_eu_act_part1",
+  "reason": "Cover Art 49(2), which the cited range includes; Art 49 not amended by Reg 2026/1744."
+ },
+ {
+  "row_id": "EU-AI-Act-061",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 73(1)-(4)",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "10-day death rule is in Art 73(4); 15-day rule in 73(2); 2-day rule in 73(3)."
+ },
+ {
+  "row_id": "EU-AI-Act-061",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Providers of high-risk systems must report serious incidents to the market surveillance authorities of the Member State where they occurred, immediately after establishing a causal link (or its reasonable likelihood) and no later than 15 days after the provider or, where applicable, the deployer becomes aware; two days for widespread infringements or serious incidents under Art. 3(49)(b); 10 days in the event of a death.",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Faithful to Art 73(1)-(4) of the consolidated text 2026-07-27."
+ },
+ {
+  "row_id": "EU-AI-Act-065",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 53(1)(a) and 53(2) with Annex XI Section 1",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Open-source exemption in Art 53(2) limits scope."
+ },
+ {
+  "row_id": "EU-AI-Act-065",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "GPAI model providers must draw up and keep up to date technical documentation of the model, including its training and testing process and the results of its evaluation, containing at least the Annex XI information, for supply to the AI Office and national competent authorities on request; providers of free and open-source models with public parameters are exempt unless the model has systemic risk (Art. 53(2)).",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Row said 'All GPAI model providers', overstating scope."
+ },
+ {
+  "row_id": "EU-AI-Act-067",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Art 53(4) third sentence: providers not adhering to an approved code or harmonised standard shall demonstrate alternative adequate means; the duty to demonstrate compliance is binding, only the route is optional."
+ },
+ {
+  "row_id": "EU-AI-Act-067",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Relying on a code of practice or harmonised standard is optional, but demonstrating compliance with Art 53(1) is mandatory: providers outside an approved code or standard must show alternative adequate means for Commission assessment. Read in the consolidated text 2026-07-27 (Publications Office; authentic text is the OJ).",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Explains the mixed status."
+ },
+ {
+  "row_id": "EU-AI-Act-070",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Art 56(2),(6) bind the AI Office/Commission and Board ('shall aim to ensure', 'shall assess', 'shall publish'); codes remain voluntary for providers. Actor: AI Office, Commission, Board."
+ },
+ {
+  "row_id": "EU-AI-Act-070",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The AI Office and Board shall aim to ensure codes of practice cover at least the Art. 53 and 55 obligations, including systemic risk identification and risk assessment and management; the Commission, taking utmost account of the Board's opinion, assesses whether codes cover those obligations and publishes its adequacy assessment (Art. 56(6) as amended); if the AI Office deems a code not adequate, the Commission may adopt implementing acts with common rules (Art. 56(9)).",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Wording aligned to 'shall aim to ensure' and amended 56(6); 56(9) condition stated precisely."
+ },
+ {
+  "row_id": "EU-AI-Act-070",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Duties fall on the AI Office, Commission and Board; codes themselves are voluntary for providers. The Commission's adequacy assessment of the GPAI Code is Commission Opinion C(2025) 5361 of 1 August 2025 (concludes the Code adequately covers Arts 53 and 55). Art 56(6) replaced by Reg. (EU) 2026/1744. Read in the consolidated text 2026-07-27.",
+  "source": "p3patch_g2b_eu_act_part2_cop_std",
+  "reason": "Records the assessment that has been made."
+ },
+ {
+  "row_id": "UK-005",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Using AI safely and responsibly > Ethics (introductory paragraphs after the six themes, before 'Safety, security and robustness')",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Paragraph is in the Ethics introduction, not a fairness subsection."
+ },
+ {
+  "row_id": "UK-008",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Security > Practical recommendations: 'Applies to generative AI' (public-facing LLM chatbots; no automatic destructive or irreversible actions) and 'Applies to AI' (review enterprise access controls before deploying an AI tool)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Access-control item sits in the 'Applies to AI' list."
+ },
+ {
+  "row_id": "UK-009",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Using AI safely and responsibly > Data protection and privacy > Lawfulness and purpose limitation",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Exact heading of the DPIA passage."
+ },
+ {
+  "row_id": "UK-009",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The playbook says that before implementing AI solutions a data protection impact assessment (DPIA) is needed; it cites UK GDPR Art. 35(3)(a) as requiring one where AI involves systematic automated evaluation with significant effects, large-scale special category processing or large-scale public monitoring, notes the ICO also requires one for innovative technology processing personal data, says the DPIA should cover each life-cycle stage including training and testing, and that the ICO must be consulted if high risk cannot be mitigated.",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Reflect the Playbook's unconditional opening and the ICO prior-consultation step."
+ },
+ {
+  "row_id": "UK-009",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Playbook wording is unconditional; the legal duty (UK GDPR Art. 35) applies only where the high-risk triggers apply, hence 'conditional'. The Playbook attributes all three listed triggers to Art. 35(3)(a).",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Explain status choice."
+ },
+ {
+  "row_id": "UK-011",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Any update to an AI system must go through a quantitative testing and validation process as part of change control; teams must make sure the products, services and standards they rely on comply with the required standards set by standards development organisations (SDOs) such as ISO.",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Source uses 'must' for SDO compliance; row said 'should'."
+ },
+ {
+  "row_id": "UK-019",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Guidance for public sector bodies (updated 2025-05-08) s.13 Risks, Mitigations and Impact Assessments; updating on substantive changes in s.14",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Update trigger is in s.14."
+ },
+ {
+  "row_id": "UK-019",
+  "field": "binding_status",
+  "op": "set",
+  "value": "conditional",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Completing the ATRS record (incl. s.13 fields) is mandatory for in-scope departments and ALBs for in-scope tools (guidance s.2; scope policy s.3-4); recommended elsewhere."
+ },
+ {
+  "row_id": "UK-027",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Research Agenda: Introduction > 'Our Approach to Research and Impact'; Risks Research > 'Generalised effective measurement risk research' (Science of Evaluations)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Exact heading names."
+ },
+ {
+  "row_id": "Singapore-028",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Generative AI (IMDA / AI Verify Foundation, published 30 May 2024; PDF file dated 19 June 2024)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Cover reads 'Published 30 May 2024'; 19 June 2024 is file name/PDF build date."
+ },
+ {
+  "row_id": "Singapore-028",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Benchmarking and red teaming are the two main evaluation approaches today but fall far short of a robust assessment (front-end focus, missing tools incl. dangerous-capability tests, poor comparability); the framework calls for a more comprehensive, systematic safety evaluation approach that could include a baseline set of required safety tests developed in consultation with policymakers; the adjacent Disclosure text says greater transparency to government will be needed for potentially high-risk models.",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Accuracy of modal ('will', not 'may') and location of the government-transparency sentence."
+ },
+ {
+  "row_id": "Singapore-028",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Trusted Development and Deployment dimension, 'Evaluation', p.14 (government-transparency sentence in 'Disclosure', p.14)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Locator precision."
+ },
+ {
+  "row_id": "Singapore-029",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Generative AI (IMDA / AI Verify Foundation, published 30 May 2024; PDF file dated 19 June 2024)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Date label."
+ },
+ {
+  "row_id": "Singapore-029",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Trusted Development and Deployment dimension, 'Disclosure - Food Labels', pp.13-14",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Heading on p.13, list on p.14."
+ },
+ {
+  "row_id": "Singapore-030",
+  "field": "framework",
+  "op": "set",
+  "value": "Singapore Model AI Governance Framework for Generative AI (IMDA / AI Verify Foundation, published 30 May 2024; PDF file dated 19 June 2024)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Date label."
+ },
+ {
+  "row_id": "Singapore-030",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Testing and Assurance dimension, p.20 incl. footnote 32 (p.19 is the section divider)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Text is on p.20."
+ },
+ {
+  "row_id": "Singapore-035",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.2.3.2 'Before deploying, test agents', case study box 'Google x Singapore Government: Testing computer use agents', p.40 (v1.5)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Exact location in v1.5."
+ },
+ {
+  "row_id": "Singapore-035",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Case study (descriptive): Google, CSA, GovTech and IMDA ran a sandbox testing computer-use agents for three potential public-sector uses (automated QA of government digital services, automated AI safety testing of third-party chatbots, social assistance applications). Lessons: use realistic test data and environments; log and evaluate the agent's reasoning at each step; identify use-case-specific attack vectors such as indirect prompt injection; keep humans in the loop during testing. Findings: the agent included extraneous personal details in a significant number of cases and in some instances navigated to arbitrary URLs when instructed by injected content.",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Reinstate withdrawn row; correct 'in some cases' to 'a significant number of cases' for extraneous personal details."
+ },
+ {
+  "row_id": "Singapore-035",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Descriptive case study inside a voluntary framework; shows government agencies (CSA, GovTech, IMDA) testing agents pre-deployment in a sandbox, not a requirement.",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Clarify status."
+ },
+ {
+  "row_id": "Singapore-036",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Introduction para 4(c), p.4; Part 3 paras 39-42, p.22 (Part 3 spans pp.22-28)",
+  "source": "p3patch_g4_uk_singapore",
+  "reason": "Page precision."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "AI Strategic Headquarters to aggregate AI-related information (technology trends, risk incidents, international information, evaluation knowledge) and, based on it, build a mechanism encouraging ministries to voluntarily inspect and review AI-related institutional systems, guidelines and measures, including the AI Act.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "'Systems' refers to rules/institutional systems (incl. the AI Act), not AI technical systems."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "what_is_tested",
+  "op": "set",
+  "value": "Not a test of AI systems: periodic policy review of AI-related rules, guidelines and measures",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Same."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "who_tests",
+  "op": "set",
+  "value": "AI Strategic Headquarters (aggregation); ministries and agencies (review of their rules)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Same."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "row_type",
+  "op": "set",
+  "value": "context",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Not an evaluation of AI systems."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "NONE",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Same."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "test_stage",
+  "op": "set",
+  "value": "n/a",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Same."
+ },
+ {
+  "row_id": "Japan-009",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Ch. 3 Sec. 3 [Specific Initiatives] (1)(iii), printed p. 18",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Locator confirmed; adds section."
+ },
+ {
+  "row_id": "Japan-017",
+  "field": "framework",
+  "op": "set",
+  "value": "Japan - Outline of AI Guidelines for Business Ver. 1.1 (MIC/METI, 4 Apr 2025; provisional translation)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "PDF 001003032 is the 25-page Outline, not the full guidelines."
+ },
+ {
+  "row_id": "Japan-017",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Part 3, D-3) i (printed p. 20)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Item appears on p. 20 only."
+ },
+ {
+  "row_id": "Japan-019",
+  "field": "framework",
+  "op": "set",
+  "value": "Japan - Outline of AI Guidelines for Business Ver. 1.1 (MIC/METI, 4 Apr 2025; provisional translation)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "PDF is the Outline."
+ },
+ {
+  "row_id": "Japan-019",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Part 5, U-2) i (printed p. 24)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Item appears on p. 24."
+ },
+ {
+  "row_id": "Japan-024",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Summary pp. 5 and 8",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Specific pages where the statements appear."
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "framework",
+  "op": "set",
+  "value": "South Korea - Enforcement Decree of the AI Framework Act (Presidential Decree No. 36053, 21 Jan 2026)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary decree text located."
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Decree Art. 24(1)1-3 and (2)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Seen in KLRI text."
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Act Art. 32 safety obligations apply to AI systems meeting all three criteria: cumulative training compute at or above the decree threshold (10^26 FLOPs per MSIT releases), built and operated with the most advanced AI technology, and a risk level likely to have widespread and significant effects on life, bodily safety and fundamental rights; the Minister publicly notifies the compute calculation method.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Decree content; submission of results comes from Act Art. 32, not the decree."
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73696",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary (KLRI English) replaces law-firm newsletter."
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "translation: KLRI English, reference only. Exponent of the compute threshold not fully rendered by the fetch tool in KLRI text ('10^2?'); 10^26 taken from MSIT English press releases (nttSeqNo 1191 and 1214). Duty to submit results to the Minister is in Act Art. 32. Korean original on law.go.kr not readable by fetch (script-rendered).",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Transparency on what was read."
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "language_read",
+  "op": "set",
+  "value": "English translation by KLRI (site states English version is for reference only, no legal effect)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary read."
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "framework",
+  "op": "set",
+  "value": "South Korea - Enforcement Decree of the AI Framework Act (Presidential Decree No. 36053, 21 Jan 2026)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary located."
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Decree Art. 27(1)-(4) (measures themselves in Act Art. 34(1))",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Arts. 25 and 28 cover confirmation and impact assessment, not this content."
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "High-impact AI operators must implement the Act Art. 34(1) measures (risk management, explanation, user protection, human management and supervision, documentation), post the main contents of their risk management, explanation and user protection measures and the name and contact of the supervising person (trade secrets excluded), and keep supporting documents for 5 years; a downstream operator is deemed compliant if the provider implemented the measures and it makes no significant functional change.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Faithful to Decree Art. 27."
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73696",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary replaces secondary."
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "language_read",
+  "op": "set",
+  "value": "English translation by KLRI (site states English version is for reference only, no legal effect)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary read."
+ },
+ {
+  "row_id": "Korea-015",
+  "field": "framework",
+  "op": "set",
+  "value": "South Korea - Enforcement Decree of the AI Framework Act (Presidential Decree No. 36053, 21 Jan 2026)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary located."
+ },
+ {
+  "row_id": "Korea-015",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Decree Art. 29(1)1-4 and (2)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Seen."
+ },
+ {
+  "row_id": "Korea-015",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "A foreign operator must designate a domestic agent if it meets any of: prior-year total revenue of KRW 1 trillion or more; prior-year AI service revenue of KRW 10 billion or more; an average of 1 million or more daily domestic users over the three months before the end of the prior year; or having been fined under Act Art. 43(1)3.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Adds omitted fourth criterion and averaging period."
+ },
+ {
+  "row_id": "Korea-015",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73696",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary replaces secondary."
+ },
+ {
+  "row_id": "Korea-015",
+  "field": "language_read",
+  "op": "set",
+  "value": "English translation by KLRI (site states English version is for reference only, no legal effect)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary read."
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "framework",
+  "op": "set",
+  "value": "South Korea - MSIT enforcement approach (press release on entry into force, Jan 2026)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary MSIT release located."
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MSIT English press release 'The AI Basic Act Comes into Force to Lay the Foundation for Korea to Become an AI G3' (page undated)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Locator."
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "MSIT announced a grace period of at least one year during which fact-finding investigations and penalties are deferred; investigations will be conducted only in highly exceptional cases such as loss of life, human rights violations or other serious social harm.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Matches primary wording."
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary replaces secondary."
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Administrative enforcement policy announced by MSIT; not contained in the Act or the Enforcement Decree (Decree Art. 32 refers fine criteria to Appendix 2). Status ambiguous: policy commitment, not law.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Explains ambiguous status."
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "language_read",
+  "op": "set",
+  "value": "English (MSIT official English press release)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary read."
+ },
+ {
+  "row_id": "Korea-017",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Institute works on classifying AI risks needing national oversight (e.g., models that could help create chemical or biological weapons, models that could evade human control), developing risk-specific evaluation frameworks, and building evaluation datasets and tools.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Page names chemical/biological weapons, not full CBRN."
+ },
+ {
+  "row_id": "China-008",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Official CAC text available; chinalawtranslate is an unofficial translation."
+ },
+ {
+  "row_id": "China-008",
+  "field": "language_read",
+  "op": "set",
+  "value": "Chinese original; fetch-tool English rendering (machine)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Read official Chinese via fetch-tool rendering."
+ },
+ {
+  "row_id": "China-011",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Official CAC text available."
+ },
+ {
+  "row_id": "China-011",
+  "field": "language_read",
+  "op": "set",
+  "value": "Chinese original; fetch-tool English rendering (machine)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Same."
+ },
+ {
+  "row_id": "China-018",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "On user request, providers may supply generated content without explicit labels after the user agreement sets out the user's labelling obligations and responsibility for use, and must keep related logs, including recipient information, for at least six months.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Art. 9 waives only explicit labels."
+ },
+ {
+  "row_id": "China-018",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "CAC official copy of the notice."
+ },
+ {
+  "row_id": "China-018",
+  "field": "language_read",
+  "op": "set",
+  "value": "Chinese original; fetch-tool English rendering (machine)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Machine rendering of Chinese original."
+ },
+ {
+  "row_id": "China-030",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://www.cac.gov.cn/2025-09/15/c_1759653448369123.htm",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Primary CAC release notice replaces Substack newsletter."
+ },
+ {
+  "row_id": "China-030",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "CAC release notice, 15 Sep 2025 (framework PDF not read: exceeds fetch size limit)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Locator of what was read."
+ },
+ {
+  "row_id": "China-030",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "CAC notice states that AI Safety Governance Framework 2.0, a TC260 technical document drafted under the lead of the National Internet Emergency Center with CAC guidance, refines AI safety risk classification, explores risk grading and updates prevention and governance measures.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Limited to primary notice; 'precursor to national standards' not seen."
+ },
+ {
+  "row_id": "China-030",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "UNVERIFIED at clause level: framework PDF (cac.gov.cn rootimages/uploadimg/1759653474200838) exceeds the fetch tool's 10 MB limit; user to download. Non-binding technical document.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Status of evidence."
+ },
+ {
+  "row_id": "China-030",
+  "field": "language_read",
+  "op": "set",
+  "value": "Chinese original; fetch-tool English rendering (machine)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Notice read via machine rendering."
+ },
+ {
+  "row_id": "China-031",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=45438",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Official national standards catalogue replaces expert commentary."
+ },
+ {
+  "row_id": "China-031",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "openstd.samr.gov.cn catalogue entry (standard text not read); Labelling Measures Art. 11",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Locator."
+ },
+ {
+  "row_id": "China-031",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "GB 45438-2025 'Cybersecurity technology - Labelling method for AI-generated synthetic content' is a mandatory national standard, current, published 28 Feb 2025 and effective 1 Sep 2025; the Labelling Measures (Art. 11) require providers to comply with mandatory national standards when labelling.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Catalogue-level facts only."
+ },
+ {
+  "row_id": "China-031",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Catalogue-level only: explicit/implicit labelling method details not read in the standard text (free online reading on openstd is script-rendered). Cited CAC page (2025-03-18) is an expert interpretation, not an official statement.",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Evidence grade."
+ },
+ {
+  "row_id": "China-031",
+  "field": "language_read",
+  "op": "set",
+  "value": "Chinese original; fetch-tool English rendering (machine)",
+  "source": "p3patch_g5_japan_korea_china",
+  "reason": "Catalogue read via machine rendering."
+ },
+ {
+  "row_id": "Saudi-018",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://cdn.nca.gov.sa/api/files/public/upload/cbf45381-f94f-40c7-9b8c-553fb01b6a3b_AI_Cybersecurity_Controls_EN.pdf",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "Statement is in the PDF p. 8, not on the news page."
+ },
+ {
+  "row_id": "Saudi-018",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Scope of Work and Applicability, p. 8",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "Exact heading as printed."
+ },
+ {
+  "row_id": "Saudi-018",
+  "field": "language_read",
+  "op": "set",
+  "value": "English official (draft for consultation); Arabic PDF not located on an official host",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "PDF read in phase 3."
+ },
+ {
+  "row_id": "Saudi-022",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Guideline 1-2-6, p. 17",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "Clause number legible on rendered page 17."
+ },
+ {
+  "row_id": "Saudi-022",
+  "field": "language_read",
+  "op": "set",
+  "value": "English official (draft for consultation); Arabic PDF not located on an official host",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "PDF read in phase 3."
+ },
+ {
+  "row_id": "UAE-Dubai-017",
+  "field": "framework",
+  "op": "set",
+  "value": "Dubai AI Principles (in Smart Dubai 'AI Ethics Principles & Guidelines' PDF; Principles changelog v1.6, 2018), English",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "Sentence is in the AI Principles part, not the AI Ethics Guidelines v1.11 part."
+ },
+ {
+  "row_id": "UAE-Dubai-017",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "AI Principles - Security ('AI systems will be safe, secure and controllable by humans'), printed p. 9 (PDF p. 10)",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "Principle heading is Security, not Safety; page confirmed."
+ },
+ {
+  "row_id": "UAE-Dubai-017",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Principle statement in the Dubai AI Principles (Security). No test method, assessor or timing named. Qualifier 'to the extent permitted by technology' confirmed in the text (phase 3, 2026-10-16). English official PDF; text layer read.",
+  "source": "p3patch_g6_saudi_uae",
+  "reason": "Records phase 3 confirmation of the qualifier phase 2 could not confirm."
+ }
+]

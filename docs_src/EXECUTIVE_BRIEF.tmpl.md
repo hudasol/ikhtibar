@@ -11,7 +11,7 @@ Which governments and institutes require, recommend or merely describe testing o
 - **Most testing text is not binding.** Of {{n_test_head}} test provisions that are not marked unverified, {{head_mc}} ({{head_mc_pct}}) are mandatory or conditional, {{head_vg}} ({{head_vg_pct}}) are voluntary or guidance and {{head_am}} ({{head_am_pct}}) are ambiguous. {{sensitivity_text}}
 - **Binding rules usually say that testing must happen, not how.** The EU Act, OMB M-25-21 and the Abu Dhabi DoH Standard require testing against metrics or benchmarks that the regulated party defines or that are not named (`EU-AI-Act-018`, `US-OMB-003`, `UAE-AbuDhabi-DoH-003`).
 - **Independent testing is binding only in narrow places.** Dubai health (`UAE-Dubai-025`, `UAE-Dubai-026`) and DIFC high risk processing (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`).
-- **Red teaming is not binding in any verified row** ({{n_RED_binding}} of {{n_RED}}).
+- **Binding red teaming is narrow:** {{n_RED_binding}} of {{n_RED}} verified red teaming rows are binding, and they concern only EU general purpose models with systemic risk.
 - **For the UAE,** binding testing text found is sector or zone specific: Abu Dhabi health, Dubai health, DIFC, and Dubai government security controls that are not AI specific. Federal documents retrieved give guidance in "should" language (`UAE-Federal-009`, `UAE-Federal-018`). The federal data protection law excludes government entities (`UAE-Federal-034`).
 
 ## What this does not mean

@@ -8,10 +8,10 @@ Which governments and institutes require, recommend or merely describe testing o
 
 ## What was found
 
-- **Most testing text is not binding.** Of 212 test provisions that are not marked unverified, 61 (29%) are mandatory or conditional, 132 (62%) are voluntary or guidance and 19 (9%) are ambiguous. If the 56 excluded test rows were counted, the split would be 85 mandatory or conditional (32%), 162 voluntary or guidance (60%) and 21 ambiguous (8%) of 268.
+- **Most testing text is not binding.** Of 246 test provisions that are not marked unverified, 73 (30%) are mandatory or conditional, 154 (63%) are voluntary or guidance and 19 (8%) are ambiguous. If the 65 excluded test rows were counted, the split would be 93 mandatory or conditional (30%), 180 voluntary or guidance (58%) and 38 ambiguous (12%) of 311.
 - **Binding rules usually say that testing must happen, not how.** The EU Act, OMB M-25-21 and the Abu Dhabi DoH Standard require testing against metrics or benchmarks that the regulated party defines or that are not named (`EU-AI-Act-018`, `US-OMB-003`, `UAE-AbuDhabi-DoH-003`).
 - **Independent testing is binding only in narrow places.** Dubai health (`UAE-Dubai-025`, `UAE-Dubai-026`) and DIFC high risk processing (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`).
-- **Red teaming is not binding in any verified row** (0 of 15).
+- **Binding red teaming is narrow:** 3 of 24 verified red teaming rows are binding, and they concern only EU general purpose models with systemic risk.
 - **For the UAE,** binding testing text found is sector or zone specific: Abu Dhabi health, Dubai health, DIFC, and Dubai government security controls that are not AI specific. Federal documents retrieved give guidance in "should" language (`UAE-Federal-009`, `UAE-Federal-018`). The federal data protection law excludes government entities (`UAE-Federal-034`).
 
 ## What this does not mean
@@ -20,7 +20,7 @@ These are gaps in the documents retrieved. They are not statements of what the U
 
 ## How reliable is it
 
-Phase 2 re checked 389 rows with the standard fetch tool only: 13 errors among 293 verifiable rows (4.4%, interval 2.6% to 7.4%). 108 rows are excluded: they could not be verified (source blocked or passage not located) or rest on a summary or secondary report only. Phase 1 verdicts that depended on a user agent workaround were re verified.
+Phase 2 re checked 389 rows with the standard fetch tool only: 13 errors among 293 verifiable rows (4.4%, interval 2.6% to 7.4%). 94 rows are excluded: they could not be verified (source blocked or passage not located) or rest on a summary or secondary report only. Phase 1 verdicts that depended on a user agent workaround were re verified.
 
 ## Items to confirm
 
