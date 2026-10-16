@@ -187,6 +187,7 @@
   "UAE-Dubai-020",
   "UAE-Dubai-021",
   "UAE-Dubai-022",
+  "UAE-Dubai-023",
   "UAE-Dubai-024",
   "UAE-Dubai-025",
   "UAE-Dubai-026",
@@ -277,7 +278,7 @@
  "by_status": {
   "SUPERSEDED": 2,
   "UNVERIFIED_BLOCKED": 21,
-  "VERIFIED": 154,
+  "VERIFIED": 155,
   "VERIFIED_CORRECTED": 96
  }
 }
