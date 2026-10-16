@@ -21,14 +21,14 @@ Prepared for Huda Mueen. Version 3.0 (phase 3), 16 October 2026. Rows carry thei
 
 ## 1. Headline findings
 
-1. **Most testing content in the evidence base is not binding.** Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 173 (60%) are voluntary or guidance, and 36 (12%) are ambiguous. The binding rows come from: EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755 (27), Abu Dhabi DoH (health sector: Standard and Protocol) (11), China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide) (10), UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL) (9), DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance) (8), Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) (7), US OMB M-25-21 and M-26-04 (3), South Korea AI Basic Act and Enforcement Decree (3), Japan (Act, plan, guidelines, Digital Agency DS-920, AISI) (2), UK (Playbook, ATRS, DSIT, AISI) (1). Phase 2 had removed most EU Act rows because the fetch tool truncated EUR-Lex; phase 3 read the consolidated Act through the EU Publications Office and restored them, which is the main reason the binding share rose. Canada's Directive is still unreadable by the fetch tool and none of its rows is counted.
+1. **Most testing content in the evidence base is not binding.** Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 173 (60%) are voluntary or guidance, and 36 (12%) are ambiguous. The binding rows come from: EU-AI-Act (27), UAE-AbuDhabi-DoH (11), China (10), UAE-Federal (9), UAE-DIFC-ADGM (8), UAE-Dubai (7), US-OMB (3), Korea (3), Japan (2), UK (1). Phase 2 had removed most EU Act rows because the fetch tool truncated EUR-Lex; phase 3 read the consolidated Act through the EU Publications Office and restored them, which is the main reason the binding share rose. Canada's Directive is still unreadable by the fetch tool and none of its rows is counted.
 2. **Where testing is binding, the text mostly requires that it happens and is documented, not how.** The EU Act requires testing of high risk systems against metrics and thresholds the provider defines (`EU-AI-Act-016`, `EU-AI-Act-018`). OMB M-25-21 requires pre deployment testing plans for high impact AI (`US-OMB-003`). The Abu Dhabi DoH Standard requires validation against "established performance benchmarks" and does not name them (`UAE-AbuDhabi-DoH-003`). The first harmonised standard cited under the EU Act, on 14 October 2026, is the quality management standard EN 18286 (`EU-Standards-P3-20`), not a testing method standard.
 3. **Independent testing is binding in a few places.** Under the EU Act a notified body assesses biometric high risk systems where harmonised standards were not fully applied, and is an option otherwise (`EU-AI-Act-040`), while most Annex III systems follow internal control (`EU-AI-Act-041`), and the AI Office may evaluate general purpose models with systemic risk and require access to them (`EU-AI-Act-071`, `EU-AI-Act-P3-20`). In the UAE sources, the Dubai Health Authority AI in Healthcare Policy requires independent third party validation and audits (`UAE-Dubai-025`, `UAE-Dubai-026`), DIFC Regulation 10 makes certification a precondition for commercial high risk processing (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`), and the DoH Standard provides for DoH audits (`UAE-AbuDhabi-DoH-013`). Independent pre release evaluation of frontier models by the UK AI Security Institute remains voluntary (`UK-024`).
 4. **Binding red teaming is narrow.** There are 26 headline red teaming and dangerous capability rows and 4 of them are mandatory or conditional: `EU-AI-Act-063`, `EU-AI-Act-068`, `EU-AI-Act-071`, `EU-AI-Act-P3-20`. Binding red teaming rows that are not counted (unverified or awaiting check): none.
 5. **Human oversight is specified as design, not as something to test.** Headline rows with human oversight validation as primary test type: 1 (`UAE-DIFC-ADGM-015` (guidance)). Oversight design duties appear as enabling provisions (`EU-AI-Act-026`, `UAE-Federal-008`).
-6. **In the UAE, one cross sector instrument binding government entities was found, and it is about AI security.** The UAE National Cyber Security Policy for AI, version 1.1 (Cyber Security Council), states in "shall" form that entities test and validate AI systems, develop and test them securely, and test them regularly, and it names federal ministries and authorities, emirate government entities and critical infrastructure entities as addressees (`UAE-Federal-P3-01`, `UAE-Federal-P3-03`, `UAE-Federal-P3-04`, `UAE-Federal-P3-08`). Its wording that systems be rigorously tested *before deployment* is in the implementation guidance, phrased "should" (`UAE-Federal-P3-02`). Phase 2 had only the portal summary and coded this policy ambiguous. Other binding UAE testing text remains sector or zone specific: Abu Dhabi health (`UAE-AbuDhabi-DoH-003` to `UAE-AbuDhabi-DoH-013`), Dubai health (`UAE-Dubai-025` to `UAE-Dubai-029`), DIFC Regulation 10, and Dubai government information security, which is not AI specific (`UAE-Dubai-033` to `UAE-Dubai-035`). The federal personal data law excludes government entities (`UAE-Federal-034`). No Abu Dhabi government wide AI policy was found in public sources.
+6. **In the UAE, one cross sector instrument binding government entities was found, and it is about AI security.** The UAE National Cyber Security Policy for AI, version 1.1 (Cyber Security Council), states in "shall" form that entities test and validate AI systems, develop and test them securely, and test them regularly (`UAE-Federal-P3-01`, `UAE-Federal-P3-03`, `UAE-Federal-P3-04`). It applies to federal ministries and authorities and to non government critical infrastructure entities; for emirate government entities the two independent verifiers read the scope clause differently (covered directly only where an emirate has no programme of its own, or covered either directly or through the emirate lead), so that point needs a human reading (`UAE-Federal-P3-08`). It states that AI ethics and fairness are outside its scope. Its wording that systems be rigorously tested *before deployment* is in the implementation guidance, phrased "should" (`UAE-Federal-P3-02`). Phase 2 had only the portal summary and coded this policy ambiguous. Other binding UAE testing text remains sector or zone specific: Abu Dhabi health (`UAE-AbuDhabi-DoH-003` to `UAE-AbuDhabi-DoH-013`), Dubai health (`UAE-Dubai-025` to `UAE-Dubai-029`), DIFC Regulation 10, and Dubai government information security, which is not AI specific (`UAE-Dubai-033` to `UAE-Dubai-035`). The federal personal data law excludes government entities (`UAE-Federal-034`). No Abu Dhabi government wide AI policy was found in public sources.
 7. **Required, recommended and described.** Among the non binding test rows, two independent coders separated text with obligation wording, recommendations and descriptions of practice (Section 5.5). Of 209 such headline rows, 140 recommend a test, 40 only describe testing practice, 19 use obligation wording in a document that is not binding or whose force is unclear, and 10 were disputed between the coders (agreement 95.4%, Cohen's kappa 0.9).
-8. **Verification.** In phase 3, separate verifier subagents checked a fresh random sample of 30 rows (seed 20261016) and all 56 new rows. In the fresh sample, 3 of 23 verifiable rows had an error (13.0%, 95% interval 4.5% to 32.1%); among new rows, 7 of 56 (12.5%). The research agents' own re-check of the 175 rows phase 2 had left open found 1 errors as they graded them; applying the rubric strictly (a wrong status, date or version, or an overstated paraphrase is an error) gives 15 errors in 142 verifiable rows (10.6%). Phase 2 reported 13 errors in 293 (4.4%). All errors found were corrected. See Appendix A.
+8. **Verification.** In phase 3, separate verifier subagents checked a fresh random sample of 30 rows (seed 20261016) and all 56 new rows. In the fresh sample, 3 of 23 verifiable rows had an error when the rubric is applied strictly (13.0%, 95% interval 4.5% to 32.1%; 2 as the verifiers graded them); 7 sampled rows could not be re-read because their sources had moved or grown past the fetch limit since 12 October. Among new rows, 7 of 56 had an error (12.5%; 2 as graded). In their own re-check of the 175 rows phase 2 had left open, the research agents graded 1 row as an error; applying the rubric strictly (a wrong status, date or version, or an overstated paraphrase is an error) gives 15 errors in 142 verifiable rows (10.6%). Phase 2 reported 13 errors in 293 (4.4%). All errors found were corrected. See Appendix A.
 9. **What changed since 12 October 2026.** The amended EU application dates are now confirmed in operative text (Article 113, third paragraph, point (c)(i) and (ii)); the first harmonised standard was cited on 14 October 2026; Japan's Digital Agency guideline on generative AI in government (DS-920 v2.0, in force 1 September 2026) asks ministries to test inputs and outputs before release (`Japan-P3-01`); Singapore announced an AI tester accreditation programme; the DIFC consulted on adding a pre-use safety verification test to Regulation 10 (`UAE-DIFC-ADGM-P3-01`, not enacted). Section 7 lists every status item.
 
 ---
@@ -308,7 +308,7 @@ This section reports what the sources retrieved say. It does not describe the wh
 | UAE AI Adoption Guideline in Government Services (English and Arabic text) | UAE federal | Model evaluated against acceptance criteria before deployment; monitoring of deployed use cases; documentation of testing results; pilot gates. The text read does not state that it binds entities. | guidance | `UAE-Federal-009` to `UAE-Federal-013` |
 | UAE AI Ethics Principles and Guidelines (December 2022) and Self Assessment Tool | UAE federal | Bias testing, discrimination impact assessment, quality checks, external audit for critical decisions, fallback testing, vulnerability assessment, privacy impact assessment. Phrased "should" or "could". | guidance / voluntary | `UAE-Federal-018` to `UAE-Federal-027` |
 | UAE AI Guide (National Program for AI) | UAE federal | Test algorithms before field deployment; check representativeness; federal RegLab sandbox licences. | guidance | `UAE-Federal-028`, `UAE-Federal-029` |
-| UAE National Cyber Security Policy for AI, version 1.1, November 2025 (Cyber Security Council, full PDF read in phase 3) | Federal ministries and authorities, emirate government entities, non government critical infrastructure entities | Policy statements in "shall" form: testing and validation of AI systems, secure development and testing, regular testing, risk assessment, supply chain assessment. Implementation guidance ("should"): rigorous testing before deployment, testing of changes and patches. Compliance monitored through the UAE Information Assurance Standard. | mandatory for the named entities (statements); guidance (implementation guidance) | `UAE-Federal-P3-01` to `UAE-Federal-P3-08` (portal summary rows `UAE-Federal-014`† to `UAE-Federal-017`† superseded) |
+| UAE National Cyber Security Policy for AI, version 1.1, November 2025 (Cyber Security Council, full PDF read in phase 3) | Federal ministries and authorities and non government critical infrastructure entities; emirate government entities directly or through the emirate lead (verifiers differ on this reading) | Policy statements in "shall" form: testing and validation of AI systems, secure development and testing, regular testing, risk assessment, supply chain assessment. Implementation guidance ("should"): rigorous testing before deployment, testing of changes and patches. Compliance monitored through the UAE Information Assurance Standard. | mandatory for the named entities (statements); guidance (implementation guidance) | `UAE-Federal-P3-01` to `UAE-Federal-P3-08` (portal summary rows `UAE-Federal-014`† to `UAE-Federal-017`† superseded) |
 | Federal Decree Law No. 45 of 2021 (PDPL) | UAE federal, personal data | Impact assessment before high risk processing; testing of security measures; right to human review of automated decisions; Article 2 excludes government data and government entities. | conditional / mandatory | `UAE-Federal-005` to `UAE-Federal-008`, `UAE-Federal-032` to `UAE-Federal-034` |
 | Abu Dhabi Law No. 3 of 2024 (AI and Advanced Technology Council) | Abu Dhabi | The Council sets conditions and standards for AI investment and research; relevant entities must implement the Council's decisions. No testing content. | ambiguous / mandatory | `UAE-AbuDhabi-Other-001`, `UAE-AbuDhabi-Other-002` |
 | DoH Abu Dhabi Policy on Use of AI in the Healthcare Sector (version 0.9, April 2018) | Abu Dhabi health sector | "Expects" in one place and "must comply" in another. | ambiguous | `UAE-AbuDhabi-DoH-001`, `UAE-AbuDhabi-DoH-002` |
@@ -367,182 +367,21 @@ The full list of queries that ended in not found or blocked is in `docs/UAE_COVE
 
 ## 7. Time sensitive items
 
-Each item records the locator, the retrieval date and any source conflict. The full table, with the access path for each item, is in `docs/TIME_SENSITIVE.md` and `data/time_sensitive.csv`. Status counts: blocked: 27, changed: 27, confirmed: 87, confirmed_draft: 1, confirmed_exists: 2, corrected: 2, not_found: 13, not_found_in_sources_searched: 2, open: 15, secondary_only: 5.
+Each item records the locator, the retrieval date and any source conflict. The table below counts items by topic; every item, with its access path, locator and note, is in `docs/TIME_SENSITIVE.md` and `data/time_sensitive.csv`. Status counts: blocked: 27, changed: 27, confirmed: 87, confirmed_draft: 1, confirmed_exists: 2, corrected: 2, not_found: 13, not_found_in_sources_searched: 2, open: 15, secondary_only: 5.
 
-| Topic | Item | Status | Retrieved on |
+| Topic | Checked on | Items | Status counts |
 |---|---|---|---|
-| EU Omnibus | Act identity and title | confirmed | 2026-10-12 |
-| EU Omnibus | Signature date | confirmed | 2026-10-12 |
-| EU Omnibus | OJ publication date | confirmed | 2026-10-12 |
-| EU Omnibus | Entry into force | confirmed | 2026-10-12 |
-| EU Omnibus | Art 113 Annex III high-risk application (Chapter III Sections 1 to 3) | open | 2026-10-12 |
-| EU Omnibus | Art 113 Annex I high-risk application | open | 2026-10-12 |
-| EU Omnibus | Art 57(1) national sandboxes | confirmed | 2026-10-12 |
-| EU Omnibus | Art 111(2) public-authority backstop | open | 2026-10-12 |
-| EU Omnibus | Art 111(3)/(4) legacy GPAI | open | 2026-10-12 |
-| EU Omnibus | Art 50(2) marking, systems placed before 2 Aug 2026 | open | 2026-10-12 |
-| EU Omnibus | Art 5(1)(ba),(bb),(1a),(1b) new prohibitions | open | 2026-10-12 |
-| EU Omnibus | Commission fining powers over GPAI (Art 101) | open | 2026-10-12 |
-| EU Omnibus | Later corrigendum or further amendment | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | RAI Standard reference no. | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | RAI Standard publication/effective date | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | RAI Standard revision due | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | RAI Standard owner | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | RAI Standard current status (revised/replaced/withdrawn?) | blocked | 2026-10-12 |
-| DoH Responsible AI Standard | DoH policies listing, Arabic | blocked | 2026-10-12 |
-| DoH Responsible AI Standard | V2 / addendum / circular for RAI Standard | open | 2026-10-12 |
-| DoH Responsible AI Standard | AI Policy Standard (June 2025) referenced by Standard | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | AI Risk Management (July 2025) referenced by Standard | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | 2018 Policy on Use of AI: title/ref/version/date | confirmed | 2026-10-12 |
-| DoH Responsible AI Standard | 2018 policy current vs superseded | open | 2026-10-12 |
-| DIFC Regulation 10 | DP Regulations current consolidated version | confirmed | 2026-10-12 |
-| DIFC Regulation 10 | DP Regulations in-force date | confirmed | 2026-10-12 |
-| DIFC Regulation 10 | Amendments after Version No. 2 | open | 2026-10-12 |
-| DIFC Regulation 10 | Reg 10 exists: autonomous and semi-autonomous systems | confirmed | 2026-10-12 |
-| DIFC Regulation 10 | Commissioner audit or certification requirement for High Risk Processing | confirmed_exists | 2026-10-12 |
-| DIFC Regulation 10 | Autonomous Systems Officer guidance | confirmed_exists | 2026-10-12 |
-| DIFC Regulation 10 | 2025 to 2026 amendments to DP Law or Regulations touching AI | open | 2026-10-12 |
-| Saudi drafts | 1a SDAIA AI Ethics Principles current edition | blocked | 2026-10-12 |
-| Saudi drafts | 1b SDAIA AI Ethics Principles earlier edition (dgp.sdaia.gov.sa) | corrected | 2026-10-12 |
-| Saudi drafts | 1c SDAIA AI Ethics Principles Arabic edition | open | 2026-10-12 |
-| Saudi drafts | 1d Secondary note: Ethics Principles 2.0 | open | 2026-10-12 |
-| Saudi drafts | 2a NCA AI Cybersecurity Guidelines status | confirmed_draft | 2026-10-12 |
-| Saudi drafts | 2b NCA doc code and title: Guidelines vs Controls | open | 2026-10-12 |
-| Saudi drafts | 2c NCA mandatory vs advisory | open | 2026-10-12 |
-| Saudi drafts | 2d NCA Arabic PDF | blocked | 2026-10-12 |
-| Saudi drafts | 3 SDAIA National AI Risk Management Framework | corrected | 2026-10-12 |
-| Saudi drafts | 4a SDAIA Generative AI Guidelines for Government | blocked | 2026-10-12 |
-| Saudi drafts | 4b SDAIA AI Adoption Framework | blocked | 2026-10-12 |
-| Saudi drafts | 5a Other SDAIA instruments on AI testing or assurance | blocked | 2026-10-12 |
-| Saudi drafts | 5b NCA other AI testing/assurance instrument | not_found_in_sources_searched | 2026-10-12 |
-| Saudi drafts | 5c Saudi statutes via laws.boe.gov.sa (AI-specific) | not_found_in_sources_searched | 2026-10-12 |
-| Canada | Directive on Automated Decision-Making: current version / last amendment date | blocked | 2026-10-16 |
-| Canada | Any 2026 amendment or review of the Directive | blocked | 2026-10-16 |
-| US-NIST | AI RMF revision (1.1 / 2.0) | confirmed | 2026-10-16 |
-| US-NIST | New AI RMF profile: Trustworthy AI in Critical Infrastructure | changed | 2026-10-16 |
-| US-NIST | Cyber AI Profile (NIST IR 8596) | changed | 2026-10-16 |
-| US-NIST | NIST AI 800-2 status | confirmed | 2026-10-16 |
-| US-NIST | CAISI name / program page | changed | 2026-10-16 |
-| US-OMB | M-25-21 still current | confirmed | 2026-10-16 |
-| ISO-IEC | ISO/IEC 42001 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC 23894 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC 42005 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC 42006 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC TS 42119-2 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC TR 29119-11 (or successor) | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC TR 24027 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC 24029-2 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC 25059 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC TS 12791 | blocked | 2026-10-16 |
-| ISO-IEC | ISO/IEC 27090 (row ISO-IEC-019) | blocked | 2026-10-16 |
-| Reg 2026/1744 status | Signature date | confirmed | 2026-10-16 |
-| Reg 2026/1744 status | OJ publication date | confirmed | 2026-10-16 |
-| Reg 2026/1744 status | Entry into force | confirmed | 2026-10-16 |
-| AI Act application dates | Chapter III Sections 1-3, Annex III systems | confirmed | 2026-10-16 |
-| AI Act application dates | Chapter III Sections 1-3, Annex I systems | confirmed | 2026-10-16 |
-| AI Act application dates | Entry into force / general date of base act | confirmed | 2026-10-16 |
-| AI Act application dates | New prohibitions and Arts 102-110 | confirmed | 2026-10-16 |
-| Transitional rules | Art 111(2) legacy high-risk systems | confirmed | 2026-10-16 |
-| Transitional rules | Art 111(3) legacy GPAI models | confirmed | 2026-10-16 |
-| Transitional rules | Art 111(4) legacy generative systems | confirmed | 2026-10-16 |
-| Transitional rules | Art 111(1) Annex X large-scale IT systems | confirmed | 2026-10-16 |
-| Sandboxes | Art 57(1) national sandbox deadline | confirmed | 2026-10-16 |
-| Transparency | Art 50(2) marking timing | confirmed | 2026-10-16 |
-| Conformity assessment | Sectoral notified bodies designation deadline | confirmed | 2026-10-16 |
-| Later acts | Corrigendum after 24 July 2026 | changed | 2026-10-16 |
-| Later acts | Further amendment of Reg 2024/1689 after 24 July 2026 | not_found | 2026-10-16 |
-| harmonised_standards | EN 18286:2026 (AI QMS) OJ citation | changed | 2026-10-16 |
-| harmonised_standards | Other AI Act harmonised standards cited in OJ | confirmed | 2026-10-16 |
-| harmonised_standards | prEN 18228 AI risk management | confirmed | 2026-10-16 |
-| harmonised_standards | prEN 18229-1 to -5 AI trustworthiness framework | confirmed | 2026-10-16 |
-| harmonised_standards | prEN 18282 cybersecurity for AI systems | confirmed | 2026-10-16 |
-| harmonised_standards | prEN 18285 AI conformity assessment framework | confirmed | 2026-10-16 |
-| harmonised_standards | EC standardisation page status | changed | 2026-10-16 |
-| gpai_code | GPAI Code of Practice version | confirmed | 2026-10-16 |
-| gpai_code | Commission/AI Board adequacy assessment | confirmed | 2026-10-16 |
-| gpai_code | Signatories / partial signature | changed | 2026-10-16 |
-| guidelines | Art 6 high-risk classification guidelines | changed | 2026-10-16 |
-| guidelines | GPAI guidelines (scope of obligations) | confirmed | 2026-10-16 |
-| guidelines | Serious incident guidance (Art 73) and template | not_found | 2026-10-16 |
-| guidelines | Art 50 transparency guidelines | changed | 2026-10-16 |
-| guidelines | Art 50 Code of Practice on Transparency of AI-generated Content | changed | 2026-10-16 |
-| guidelines | Post-market monitoring template (Art 72(3)) | confirmed | 2026-10-16 |
-| implementing_acts | Implementing Regulation on GPAI evaluations and proceedings | changed | 2026-10-16 |
-| common_specifications | Art 41 common specifications | not_found | 2026-10-16 |
-| eu_ai_act_text | Consolidated text version | confirmed | 2026-10-16 |
-| UK statutory testing duty | Government AI bill / statutory AI testing duty | confirmed | 2026-10-16 |
-| UK statutory testing duty | Private members' AI bills in Parliament | blocked | 2026-10-16 |
-| UK AISI | AISI remit | confirmed | 2026-10-16 |
-| UK AISI | Pre-deployment testing agreements | confirmed | 2026-10-16 |
-| UK AISI | Published pre-deployment evaluation reports | confirmed | 2026-10-16 |
-| UK ATRS | Mandatory status and scope | confirmed | 2026-10-16 |
-| UK AI Playbook | Current version | confirmed | 2026-10-16 |
-| Singapore AI Verify | AI Verify Testing Framework version | confirmed | 2026-10-16 |
-| Singapore MGF Agentic AI | Latest version and date | confirmed | 2026-10-16 |
-| Singapore IMDA testing guidance | Starter Kit for Testing Agentic Systems for Safety and Reliability | changed | 2026-10-16 |
-| Singapore IMDA testing guidance | Starter Kit for Testing LLM-Based Applications current version | confirmed | 2026-10-16 |
-| Singapore AI assurance | AI Tester Accreditation Programme (AI TAP) | changed | 2026-10-16 |
-| Singapore AI assurance | Global AI Assurance Pilot / Sandbox outputs | confirmed | 2026-10-16 |
-| Singapore public agencies | Whether testing guidance is binding on public agencies | not_found | 2026-10-16 |
-| Singapore MGF GenAI | Publication date | changed | 2026-10-16 |
-| Korea | AI Framework Act entry into force | confirmed | 2026-10-16 |
-| Korea | Act No. 21311 delayed provisions | confirmed | 2026-10-16 |
-| Korea | Enforcement Decree number and date | confirmed | 2026-10-16 |
-| Korea | Enforcement Decree current version | changed | 2026-10-16 |
-| Korea | Decree partial amendment (MSIT legislative notice) | changed | 2026-10-16 |
-| Korea | Compute threshold for Art. 32 safety duties | confirmed | 2026-10-16 |
-| Korea | Grace period for fines and investigations | confirmed | 2026-10-16 |
-| Korea | MSIT guidelines/notices on high-impact AI safety and reliability measures | not_found | 2026-10-16 |
-| Korea | AI Basic Act Improvement Working Group | changed | 2026-10-16 |
-| Japan | AI Promotion Act implementation | confirmed | 2026-10-16 |
-| Japan | Current AI Basic Plan | confirmed | 2026-10-16 |
-| Japan | Government guideline on generative AI procurement and use | changed | 2026-10-16 |
-| Japan | Guideline for Ensuring Appropriateness (AI Act Art. 13) | confirmed | 2026-10-16 |
-| China | GB/T 45654-2025 status | confirmed | 2026-10-16 |
-| China | GB 45438-2025 status | confirmed | 2026-10-16 |
-| China | Anthropomorphic AI Interactive Services Measures | confirmed | 2026-10-16 |
-| China | Digital Virtual Human Information Services Measures | changed | 2026-10-16 |
-| China | Cybersecurity Law amendment (AI article) | confirmed | 2026-10-16 |
-| China | New generative AI national standards 2025-2026 | changed | 2026-10-16 |
-| China | Mandatory standard on AI agent application security (planned) | secondary_only | 2026-10-16 |
-| China | TC260 practice guide on AI application security (general) | changed | 2026-10-16 |
-| China | TC260 AI Safety Governance Framework 2.0 | confirmed | 2026-10-16 |
-| China | TC260 Sep 2026 notice on agentic system development security practice guide (draft) | changed | 2026-10-16 |
-| SDAIA AI Ethics Principles | current edition | confirmed | 2026-10-16 |
-| SDAIA AI Ethics Principles | 2.0 edition | secondary_only | 2026-10-16 |
-| NCA AI cybersecurity document | status (draft vs final) | confirmed | 2026-10-16 |
-| NCA AI cybersecurity document | title (Guidelines vs Controls) and code | changed | 2026-10-16 |
-| NCA AI cybersecurity document | mandatory vs advisory | confirmed | 2026-10-16 |
-| SDAIA National AI Risk Management Framework | primary publication and testing content | blocked | 2026-10-16 |
-| SDAIA Generative AI Guidelines for Government | existence and testing content | blocked | 2026-10-16 |
-| Saudi AI testing/assurance instruments | SDAIA AI service provider accreditation | confirmed | 2026-10-16 |
-| Saudi AI testing/assurance instruments | SDAIA AI ethics self-assessment tool | confirmed | 2026-10-16 |
-| Saudi AI testing/assurance instruments | SFDA AI/ML medical devices guidance | confirmed | 2026-10-16 |
-| Saudi AI testing/assurance instruments | SASO AI technical regulation | not_found | 2026-10-16 |
-| Saudi AI statutes | AI-specific statute on laws.boe.gov.sa | not_found | 2026-10-16 |
-| GCC | Qatar - QCB Artificial Intelligence Guideline | blocked | 2026-10-16 |
-| GCC | Qatar - NCSA Guidelines for Secure Adoption and Usage of AI | blocked | 2026-10-16 |
-| GCC | Bahrain - National Policy for the Use of AI (iGA, 27 Jul 2025) | confirmed | 2026-10-16 |
-| GCC | Oman - MTCIT Public Policy for Safe and Ethical Use of AI Systems | secondary_only | 2026-10-16 |
-| GCC | Kuwait - CITRA AI instrument | not_found | 2026-10-16 |
-| DoH Responsible AI Standard | Current version and status | confirmed | 2026-10-16 |
-| DoH Responsible AI Standard | DoH policies listing (EN and AR) | changed | 2026-10-16 |
-| DoH Responsible AI Standard | 2025 DoH AI Policy referenced by Standard and Protocol | not_found | 2026-10-16 |
-| DoH Responsible AI Standard | Responsible AI Risk Management Protocol (companion document) | confirmed | 2026-10-16 |
-| DoH Responsible AI Standard | Conflict: treatment of high-risk AI systems | changed | 2026-10-16 |
-| DoH Responsible AI Standard | Arabic title of the Responsible AI Standard | not_found | 2026-10-16 |
-| DIFC Regulation 10 | DP Regulations current consolidated version | confirmed | 2026-10-16 |
-| DIFC Regulation 10 | Amendments after Version No. 2 touching Regulation 10 | changed | 2026-10-16 |
-| DIFC Regulation 10 | 2025 amendment to DIFC Data Protection Law | secondary_only | 2026-10-16 |
-| UAE federal instruments | UAE Charter for the Development and Use of AI (2024) updated? | confirmed | 2026-10-16 |
-| UAE federal instruments | National Strategy for AI 2031 updated? | confirmed | 2026-10-16 |
-| UAE federal instruments | New federal AI legislation (2025-2026) | not_found | 2026-10-16 |
-| UAE federal instruments | National Cyber Security Policy for AI: version and binding status (rows UAE-Federal-014 to 017) | changed | 2026-10-16 |
-| UAE federal instruments | CBUAE Guidance Note on AI/ML for licensed financial institutions (Feb 2026) | blocked | 2026-10-16 |
-| UAE federal instruments | Agentic AI government framework date (row UAE-Federal-004) | secondary_only | 2026-10-16 |
-| Dubai instruments | Dubai AI Policy for Government Entities (Apr 2025) text | not_found | 2026-10-16 |
-| Dubai instruments | Dubai AI Security Policy (DESC, Sep 2024) text | not_found | 2026-10-16 |
-| DIFC-ADGM instruments | DFSA letter on AI risk management (4 Jun 2026) | blocked | 2026-10-16 |
+| EU Omnibus | 2026-10-12 | 13 | confirmed 6, open 7 |
+| DoH Responsible AI Standard | 2026-10-12 | 11 | blocked 2, confirmed 7, open 2 |
+| DIFC Regulation 10 | 2026-10-12 | 7 | confirmed 3, confirmed_exists 2, open 2 |
+| Saudi drafts | 2026-10-12 | 14 | blocked 5, confirmed_draft 1, corrected 2, not_found_in_sources_searched 2, open 4 |
+| Canada, US, ISO (phase 3) | 2026-10-16 | 19 | blocked 13, changed 3, confirmed 3 |
+| EU AI Act text (phase 3) | 2026-10-16 | 16 | changed 1, confirmed 14, not_found 1 |
+| EU codes, guidelines, standards (phase 3) | 2026-10-16 | 19 | changed 7, confirmed 10, not_found 2 |
+| UK and Singapore (phase 3) | 2026-10-16 | 15 | blocked 1, changed 3, confirmed 10, not_found 1 |
+| Japan, Korea, China (phase 3) | 2026-10-16 | 23 | changed 8, confirmed 13, not_found 1, secondary_only 1 |
+| Saudi and Gulf (phase 3) | 2026-10-16 | 17 | blocked 4, changed 1, confirmed 7, not_found 3, secondary_only 2 |
+| UAE (phase 3) | 2026-10-16 | 18 | blocked 2, changed 4, confirmed 5, not_found 5, secondary_only 2 |
 
 Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase 3 item updates a phase 2 item, the phase 3 status applies.
 
@@ -567,7 +406,8 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 **Framing.** These are gaps in the evidence base retrieved, measured against what other frameworks in this table contain. They are not claims about what the UAE does or does not require. A UAE government entity may be subject to internal, sectoral or non public instruments that were not found.
 
 **G1. A federal binding duty exists for AI security testing, not for testing whether a system works well or fairly.**
-*Source says:* the National Cyber Security Policy for AI binds federal ministries and authorities and emirate government entities to test and validate AI systems, develop and test them securely, test them regularly, and assess risks and suppliers (`UAE-Federal-P3-01`, `UAE-Federal-P3-03` to `UAE-Federal-P3-06`); its before deployment wording is guidance (`UAE-Federal-P3-02`). The Adoption Guideline in Government Services describes evaluation against acceptance criteria and monitoring (`UAE-Federal-009`, `UAE-Federal-011`), and the Ethics Guidelines suggest bias testing and external audit for critical decisions (`UAE-Federal-018`, `UAE-Federal-021`), in "should" language. The Charter states a safety principle (`UAE-Federal-001`). Comparators that bind government bodies on performance testing are OMB M-25-21 (`US-OMB-003`, `US-OMB-004`), Japan's DS-920 for generative AI (`Japan-P3-01`) and, for health, the DoH Standard (`UAE-AbuDhabi-DoH-003`).
+*Source says:* the National Cyber Security Policy for AI binds federal ministries and authorities, and non government critical infrastructure entities (emirate government entities subject to the scope reading noted in Section 1), to test and validate AI systems, develop and test them securely, test them regularly, and assess risks and suppliers (`UAE-Federal-P3-01`, `UAE-Federal-P3-03` to `UAE-Federal-P3-06`); its before deployment wording is guidance (`UAE-Federal-P3-02`). The Adoption Guideline in Government Services describes evaluation against acceptance criteria and monitoring (`UAE-Federal-009`, `UAE-Federal-011`), and the Ethics Guidelines suggest bias testing and external audit for critical decisions (`UAE-Federal-018`, `UAE-Federal-021`), in "should" language. The Charter states a safety principle (`UAE-Federal-001`). Comparators that bind government bodies on performance testing are OMB M-25-21 (`US-OMB-003`, `US-OMB-004`), Japan's DS-920 for generative AI (`Japan-P3-01`) and, for health, the DoH Standard (`UAE-AbuDhabi-DoH-003`).
+The policy states that AI ethics and fairness are outside its scope (`UAE-Federal-P3-08`).
 *Interpretation:* a federal entity has a security testing duty but, in the texts read, no binding requirement to test accuracy, robustness for the task, or fairness before deployment. Whether the Adoption Guideline binds a particular entity is not stated in the text read. The policy refers compliance to the UAE Information Assurance Standard appendix, which was not found, so how the testing duty is checked in practice is not known from public sources.
 
 **G2. Beyond security, binding testing text is sector, zone or data specific.**
@@ -612,7 +452,7 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 
 ## 9. Proposed assurance checklist
 
-**This is a proposal assembled from the sources, not a UAE requirement.** 29 items. Each cites the rows that motivate it. The last column shows whether any cited reliable row binds the item, and for which sources. Rows with a dagger are shown but excluded from the trace. The checklist is also a tool: `python -m ikhtibar.cli` takes answers about a system and returns, for each item, APPLIES, DOES_NOT_APPLY or UNKNOWN, with source traces and what would settle each UNKNOWN. The machine readable version is `data/checklist.yaml`; the table below is generated from it.
+**This is a proposal assembled from the sources, not a UAE requirement.** 30 items. Each cites the rows that motivate it. The last column shows whether any cited reliable row binds the item, and for which sources. Rows with a dagger are shown but excluded from the trace. The checklist is also a tool: `python -m ikhtibar.cli` takes answers about a system and returns, for each item, APPLIES, DOES_NOT_APPLY or UNKNOWN, with source traces and what would settle each UNKNOWN. The machine readable version is `data/checklist.yaml`; the table below is generated from it.
 
 | # | Check | Applies when (proposal) | Motivating rows | Binding trace |
 |---|---|---|---|---|
@@ -631,10 +471,10 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 | D2 | Test for bias and unequal performance across subgroups. | {"all": [{"tri": ["decision_impact", ["significant_support", "automated_significant", "critical"], ["none"]]}, {"in": ["system_type", ["predictive_ml", "genai_llm", "agentic", "computer_vision"]]}]} | `Canada-007`†, `EU-AI-Act-020`, `UAE-AbuDhabi-DoH-008`, `UAE-Dubai-001`, `Singapore-019`, `US-NIST-034`, `Saudi-004`, `UAE-Federal-018`, `UAE-Dubai-011` | binding in some cited sources: EU-AI-Act (C), UAE-AbuDhabi-DoH (M) |
 | D3 | Test robustness: perturbed inputs, outliers and extreme cases, and run to run stability. | system_type in {predictive_ml, genai_llm, agentic, computer_vision} | `EU-AI-Act-029`, `UAE-AbuDhabi-DoH-005`, `Saudi-003`, `Singapore-006`, `Singapore-017`, `ISO-IEC-009`, `UAE-Federal-023` | binding in some cited sources: EU-AI-Act (C), UAE-AbuDhabi-DoH (M) |
 | D4 | Analyse failure modes and confirm fail safe or graceful degradation behaviour. | always | `UAE-AbuDhabi-DoH-005`, `US-NIST-023`, `US-NIST-011`, `EU-AI-Act-029`, `UAE-Federal-023` | binding in some cited sources: EU-AI-Act (C), UAE-AbuDhabi-DoH (M) |
-| D5 | Run security testing: secure code review, vulnerability scanning, penetration testing, and AI specific attacks (prompt injection, poisoning, evasion). | always | `UAE-AbuDhabi-DoH-007`, `EU-AI-Act-030`, `Canada-017`†, `Saudi-019`, `Saudi-021`, `Singapore-025`, `UAE-Federal-007`, `UAE-Federal-025`, `UAE-Dubai-034` | binding in some cited sources: EU-AI-Act (C), UAE-AbuDhabi-DoH (M), UAE-Dubai (M), UAE-Federal (M) |
+| D5 | Run security testing: secure code review, vulnerability scanning, penetration testing, and AI specific attacks (prompt injection, poisoning, evasion). | always | `UAE-AbuDhabi-DoH-007`, `EU-AI-Act-030`, `Canada-017`†, `Saudi-019`, `Saudi-021`, `Singapore-025`, `UAE-Federal-007`, `UAE-Federal-025`, `UAE-Dubai-034`, `UAE-Federal-P3-01`, `UAE-Federal-P3-03`, `UAE-Federal-P3-04` | binding in some cited sources: EU-AI-Act (C), UAE-AbuDhabi-DoH (M), UAE-Dubai (M), UAE-Federal (M) |
 | D6 | Test for privacy leakage and re identification risk. | data_types includes any of {personal, sensitive_personal, biometric, health, financial} | `US-NIST-033`, `Saudi-005`, `Singapore-012` | not binding in the reliable cited rows (guidance) |
-| D7 | For generative or agentic systems, run structured red teaming and harmful output and refusal tests, and test whole workflow and tool use behaviour. | system_type in {genai_llm, agentic} | `Singapore-007`, `Singapore-016`, `US-NIST-024`, `US-NIST-028`, `Japan-020`, `Japan-021`, `Saudi-020`, `EU-GPAI-CoP-003`, `Singapore-032`, `Singapore-033`, `China-024`, `China-025` | not binding in the reliable cited rows (voluntary) |
-| D8 | For vendor or black box systems, secure contractual access for testing and verify vendor performance claims independently, using alternative methods where internals are closed. | acquisition in {vendor_product, mixed} | `US-OMB-003`, `Canada-022`†, `Singapore-023`, `Saudi-007` | binding in some cited sources: US-OMB (C) |
+| D7 | For generative or agentic systems, run structured red teaming and harmful output and refusal tests, and test whole workflow and tool use behaviour. | system_type in {genai_llm, agentic} | `Singapore-007`, `Singapore-016`, `US-NIST-024`, `US-NIST-028`, `Japan-020`, `Japan-021`, `Saudi-020`, `EU-GPAI-CoP-003`, `Singapore-032`, `Singapore-033`, `China-024`, `China-025`, `EU-AI-Act-068`, `Japan-P3-01`, `Saudi-P3-03`, `Singapore-P3-01` | binding in some cited sources: EU-AI-Act (C), Japan (M) |
+| D8 | For vendor or black box systems, secure contractual access for testing and verify vendor performance claims independently, using alternative methods where internals are closed. | acquisition in {vendor_product, mixed} | `US-OMB-003`, `Canada-022`†, `Singapore-023`, `Saudi-007`, `US-OMB-P3-01`, `US-OMB-P3-02`, `UAE-Federal-P3-06` | binding in some cited sources: UAE-Federal (M), US-OMB (M) |
 | **E** | **Oversight and independent review** |  |  |  |
 | E1 | Design human oversight and test that override and review actually work, with trained reviewers. | decision_impact in {significant_support, automated_significant, critical} | `EU-AI-Act-026`, `Canada-019`†, `Canada-016`†, `Saudi-020`, `UAE-Federal-008`, `UAE-DIFC-ADGM-015` | binding in some cited sources: EU-AI-Act (C), UAE-Federal (M) |
 | E2 | Obtain independent review scaled to impact level (qualified expert reviewers, independent assessors, or notified body style assessment). | decision_impact in {automated_significant, critical} | `Canada-013`†, `Canada-014`†, `US-OMB-004`, `US-NIST-007`, `EU-AI-Act-045`, `Singapore-026`, `EU-GPAI-CoP-007`, `UAE-Federal-021`, `UAE-Dubai-016` | binding in some cited sources: EU-AI-Act (C), US-OMB (C) |
@@ -644,7 +484,7 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 | F3 | Publish or disclose a summary of tested performance and fairness results as appropriate to the audience. | audience in {public_facing} | `Canada-024`†, `Canada-021`†, `UK-018`, `EU-AI-Act-025`, `Singapore-029` | binding in some cited sources: EU-AI-Act (C) |
 | **G** | **After deployment** |  |  |  |
 | G1 | Monitor performance, drift, outcomes, complaints and human overrides on a schedule. | always | `Canada-008`†, `Canada-010`†, `EU-AI-Act-060`, `US-OMB-006`, `UAE-AbuDhabi-DoH-005`, `UK-003`, `Singapore-034`, `UAE-Federal-011`, `UAE-Dubai-014`, `UAE-Dubai-028`, `UAE-DIFC-ADGM-010` | binding in some cited sources: EU-AI-Act (C), UAE-AbuDhabi-DoH (M), UAE-Dubai (M), US-OMB (C) |
-| G2 | Define re testing triggers: model or data change, vendor update, scope change. | always | `Singapore-014`, `UK-011`, `EU-AI-Act-043`, `Canada-006`†, `Singapore-018` | binding in some cited sources: EU-AI-Act (C) |
+| G2 | Define re testing triggers: model or data change, vendor update, scope change. | always | `Singapore-014`, `UK-011`, `EU-AI-Act-043`, `Canada-006`†, `Singapore-018`, `UAE-Federal-P3-07` | binding in some cited sources: EU-AI-Act (C) |
 | G3 | Set incident escalation, suspension and rollback procedures. | always | `EU-AI-Act-061`, `EU-AI-Act-034`, `UK-012`, `Canada-010`† | binding in some cited sources: EU-AI-Act (C) |
 | **H** | **Jurisdiction specific checks (apply only when the entity zone is stated)** |  |  |  |
 | H1 | Healthcare entity licensed by Abu Dhabi Department of Health: check each applicable clause of the DoH Responsible AI Standard V1 (validation, safety testing, security review, representativeness audits, risk assessment, conformity assessment for high risk). | entity_zone = health_abu_dhabi | `UAE-AbuDhabi-DoH-003`, `UAE-AbuDhabi-DoH-004`, `UAE-AbuDhabi-DoH-005`, `UAE-AbuDhabi-DoH-006`, `UAE-AbuDhabi-DoH-007`, `UAE-AbuDhabi-DoH-008`, `UAE-AbuDhabi-DoH-009`, `UAE-AbuDhabi-DoH-010`, `UAE-AbuDhabi-DoH-011`, `UAE-AbuDhabi-DoH-012`, `UAE-AbuDhabi-DoH-013` | binding in some cited sources: UAE-AbuDhabi-DoH (M) |
@@ -652,11 +492,12 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 | H3 | Determine whether the federal personal data law applies to the entity and the data (Article 2 excludes government data and government entities controlling or processing personal data), then, if it does, check the impact assessment and security testing duties. | data_types includes any of {personal, sensitive_personal, biometric, health, financial} | `UAE-Federal-034`, `UAE-Federal-032`, `UAE-Federal-033`, `UAE-Federal-005`, `UAE-Federal-007` | binding in some cited sources: UAE-Federal (M) |
 | H4 | DIFC or ADGM entity: check the DIFC Data Protection Regulations Regulation 10, the Commissioner's Accreditation and Certification Framework, and the ADGM data protection and FSRA guidance that applies. | entity_zone in {difc, adgm} | `UAE-DIFC-ADGM-001`, `UAE-DIFC-ADGM-003`, `UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-016`, `UAE-DIFC-ADGM-018`, `UAE-DIFC-ADGM-020`, `UAE-DIFC-ADGM-009`, `UAE-DIFC-ADGM-010`, `UAE-DIFC-ADGM-012`, `UAE-DIFC-ADGM-013`, `UAE-DIFC-ADGM-014` | binding in some cited sources: UAE-DIFC-ADGM (C) |
 | H5 | Dubai government entity: check the Dubai AI Ethics Guidelines and self assessment tool, the AI Integration Matrix Framework, and the DESC Information Security Regulation controls on testing and sign off. | entity_zone = dubai_gov | `UAE-Dubai-011`, `UAE-Dubai-015`, `UAE-Dubai-020`, `UAE-Dubai-021`, `UAE-Dubai-022`, `UAE-Dubai-031`, `UAE-Dubai-033`, `UAE-Dubai-034`, `UAE-Dubai-035` | binding in some cited sources: UAE-Dubai (M) |
-| H6 | Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions; none with AI testing content were found in the public sources searched. | entity_zone in {abu_dhabi_gov, federal_gov} | `UAE-AbuDhabi-Other-001`, `UAE-AbuDhabi-Other-002`, `UAE-Federal-009`, `UAE-Federal-018`, `UAE-Federal-021` | binding in some cited sources: UAE-AbuDhabi-Other (M) |
+| H6 | Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions on testing performance and fairness; beyond the security testing statements of the National Cyber Security Policy for AI (item H7), none were found in the public sources searched. | entity_zone in {abu_dhabi_gov, federal_gov} | `UAE-AbuDhabi-Other-001`, `UAE-AbuDhabi-Other-002`, `UAE-Federal-009`, `UAE-Federal-018`, `UAE-Federal-021` | binding in some cited sources: UAE-AbuDhabi-Other (M) |
+| H7 | UAE federal or emirate government entity, or critical infrastructure entity: apply the National Cyber Security Policy for AI testing statements (testing and validation, secure development and testing, regular testing, risk and supply chain assessment, testing of changes), and confirm with the Cyber Security Council or the emirate lead whether the entity is in scope. | entity_zone in {federal_gov, abu_dhabi_gov, dubai_gov} | `UAE-Federal-P3-01`, `UAE-Federal-P3-03`, `UAE-Federal-P3-04`, `UAE-Federal-P3-05`, `UAE-Federal-P3-06`, `UAE-Federal-P3-07`, `UAE-Federal-P3-08` | binding in some cited sources: UAE-Federal (M) |
 
 **How to use it.** Scale depth to the impact tier assigned in A1. Items D7 and D8 apply only to generative or agentic systems and to purchased systems. The checklist concerns testing and assurance; it omits procurement law, data sharing agreements and sector regulation. Test evidence templates (labelled proposals) are in `templates/test_evidence/`.
 
-**Worked example.** `examples/MADOUN_EXAMPLE.md` applies the tool to a hypothetical customs clearance decision support system based on the author's synthetic prototype Madoun. It is not deployed, and it is not used or endorsed by any authority. With the answers given, 16 items apply, 2 do not apply and 11 are UNKNOWN; the file lists what would close each.
+**Worked example.** `examples/MADOUN_EXAMPLE.md` applies the tool to a hypothetical customs clearance decision support system based on the author's synthetic prototype Madoun. It is not deployed, and it is not used or endorsed by any authority. With the answers given, 16 items apply, 2 do not apply and 12 are UNKNOWN; the file lists what would close each.
 
 ---
 
@@ -677,15 +518,16 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 
 ## 11. What to double check before relying on this
 
-1. **The UAE cyber security policy rows.** Read sections 1.2, 2 and 3.4 of the National Cyber Security Policy for AI v1.1 yourself and confirm the addressees and the "shall" wording (`UAE-Federal-P3-01` to `UAE-Federal-P3-08`). This is the finding most likely to be quoted, and it rests on text extracted from a saved PDF.
-2. **Unverified rows.** Download the blocked documents in `docs/DOWNLOAD_LIST.md`, starting with Canada's Directive.
-3. **DoH Standard.** Check the DoH site for a revision (the document states October 2026) and for the 2025 DoH AI Policy.
-4. **DIFC.** Check whether the June 2026 amendments to Regulation 10 have been enacted.
-5. **Korea.** Confirm the compute threshold exponent in the Korean original and what the August 2026 decree changed.
-6. **The NIST page name.** The NIST institute page now shows a different centre name (`US-NIST-046`); confirm on nist.gov before quoting it.
-7. **Status calls.** Review the ambiguous rows and the disputed normative force rows; they are judgement calls.
-8. **Framing of Section 8.** Do not present the gap analysis as a statement of UAE law or policy.
-9. **Legal review.** Have a qualified lawyer review anything you plan to rely on for compliance.
+1. **The UAE cyber security policy rows.** Read sections 1.2, 10.4, 2 and 3.4 of the National Cyber Security Policy for AI v1.1 yourself. Confirm the "shall" wording and, above all, whether emirate government entities are covered directly or only through an emirate lead; the two verifiers disagreed (`UAE-Federal-P3-08`). This is the finding most likely to be quoted, and it rests on text extracted from a saved PDF.
+2. **Moved UAE sources.** The UAE AI Adoption Guideline, the federal AI Ethics Guidelines, the federal self assessment page, the National AI Strategy PDF and the Dubai AI Integration Matrix could not be re-read on 16 October (404, 403 or file too large). Open them in a browser and confirm the rows (`UAE-Federal-009`, `UAE-Federal-012`, `UAE-Federal-021`, `UAE-Federal-027`, `UAE-Federal-031`, `UAE-Dubai-008`).
+3. **Unverified rows.** Download the blocked documents in `docs/DOWNLOAD_LIST.md`, starting with Canada's Directive.
+4. **DoH Standard.** Check the DoH site for a revision (the document states October 2026) and for the 2025 DoH AI Policy.
+5. **DIFC.** Check whether the June 2026 amendments to Regulation 10 have been enacted.
+6. **Korea.** Confirm the compute threshold exponent in the Korean original and what the August 2026 decree changed.
+7. **The NIST page name.** The NIST institute page now shows a different centre name (`US-NIST-046`); confirm on nist.gov before quoting it.
+8. **Status calls.** Review the ambiguous rows and the disputed normative force rows; they are judgement calls.
+9. **Framing of Section 8.** Do not present the gap analysis as a statement of UAE law or policy.
+10. **Legal review.** Have a qualified lawyer review anything you plan to rely on for compliance.
 
 ---
 
@@ -703,7 +545,7 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 | New phase 3 rows, rubric applied | 56 | 38 | 11 | 7 | 0 | 0 | 56 | 12.5% (6.2 to 23.6) |
 | **All rows checked by phase 3 independent verifiers** | 86 | 48 | 21 | 10 | 7 | 0 | 79 | 12.7% (7.0 to 21.8) |
 
-**Headline figure.** The fresh random sample is the figure to quote: 3 errors in 23 verifiable rows (13.0%, Wilson 95% interval 4.5% to 32.1%), with 10 further rows having minor imprecision and 7 blocked. It was drawn from the corrected table, so it estimates the error rate of the table as published. New phase 3 rows: 7 errors in 56 verifiable (12.5%). Every error found was corrected through `data/verification/phase3/final/` patches before this report was generated.
+**Headline figure.** The fresh random sample is the figure to quote: 3 errors in 23 verifiable rows (13.0%, Wilson 95% interval 4.5% to 32.1%), with 10 further rows having minor imprecision and 7 not re-readable. The errors were a binding status (`EU-AI-Act-021`, a permission in the Act coded voluntary, now conditional), a document version (`Singapore-032`, the same address now serves a later version of the framework) and a paraphrase that said no document names who runs sandbox testing (`UAE-DIFC-ADGM-024`). Six of the seven unreadable sampled rows are UAE federal or Dubai documents whose addresses returned 404 or whose files exceeded the fetch limit on 16 October; they keep their phase 2 verified status, with a note, and are listed for a hand check. It was drawn from the corrected table, so it estimates the error rate of the table as published. New phase 3 rows: 7 errors in 56 verifiable (12.5%). Every error found was corrected through `data/verification/phase3/final/` patches before this report was generated.
 
 **The re-check of open rows.** The 175 rows phase 2 had left open are not a random sample: they are the rows that were hardest to read. As graded by the research agents they show 1 errors in 142 verifiable rows (0.7%); re-graded against the rubric, 15 (10.6%, interval 6.5% to 16.7%). The re-graded figure is the honest one; the gap shows that agent graders under-call errors, which is a reason to read every verification figure here as a lower bound.
 
@@ -721,7 +563,7 @@ Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase
 | All rows checked, excluding new UAE rows | 314 | 140 | 67 | 11 | 52 | 44 | 218 | 5.0% (2.8 to 8.8) |
 | Phase 1 provisional rows (re verified) | 49 | 17 | 10 | 4 | 12 | 6 | 31 | 12.9% (5.1 to 28.9) |
 
-**Coverage of cited rows.** The report prose, brief and checklist cite 268 distinct rows. Of these, 245 were verified in phase 2, 23 are excluded from counts and carry a dagger wherever they appear, and 0 were not rechecked. A test fails if any cited row is neither verified nor marked unverified.
+**Coverage of cited rows.** The report prose, brief and checklist cite 273 distinct rows. Of these, 250 were verified in phase 2, 23 are excluded from counts and carry a dagger wherever they appear, and 0 were not rechecked. A test fails if any cited row is neither verified nor marked unverified.
 
 **Combined figure.** Over all 389 rows checked in phase 2, 180 passed, 100 had minor imprecision and 13 had errors; 52 were blocked and 44 unverifiable. The error rate among the 293 verifiable rows is 4.4% (95% interval 2.6% to 7.4%). The cited row sample, which is not random and is weighted to the rows the report relies on, shows 11 errors in 168 verifiable rows (6.5%). The fresh random sample shows 0 errors in 44 (0.0%, interval 0.0% to 8.0%). The new UAE rows show 2 errors in 75 (2.7%).
 

@@ -24,10 +24,17 @@ def rows():
                     "access_path": r.get("access_path", ""), "status": r.get("status", ""),
                     "retrieved_on": r.get("retrieval_date", ""), "conflict_or_note": r.get("note", "")})
     # phase 3 status checks (16 October 2026), already in the output column layout
+    groups = {"g1": "Canada, US, ISO (phase 3)", "g2a": "EU AI Act text (phase 3)", "g2b": "EU codes, guidelines, standards (phase 3)",
+              "g4": "UK and Singapore (phase 3)", "g5": "Japan, Korea, China (phase 3)", "g6": "Saudi and Gulf (phase 3)",
+              "g7": "UAE (phase 3)"}
     for fn in sorted(glob.glob(os.path.join(D, "verification", "phase3", "p3ts_*.csv"))):
+        g = os.path.basename(fn)[5:].split("_")[0]
         with open(fn, newline="", encoding="utf-8") as f:
             for r in csv.DictReader(f):
-                out.append({c: (r.get(c) or "").replace("—", ",").replace("–", "-") for c in OUT_COLS})
+                x = {c: (r.get(c) or "").replace("—", ",").replace("–", "-") for c in OUT_COLS}
+                x["item"] = f"{x['topic']}: {x['item']}" if x["topic"] else x["item"]
+                x["topic"] = groups.get(g, g)
+                out.append(x)
     return out
 
 

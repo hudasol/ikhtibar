@@ -1,6 +1,6 @@
 {
  "meta": {
-  "version": "2.0-proposal",
+  "version": "3.0-proposal",
   "status": "proposal assembled from retrieved sources; applicability rules are the maintainer's interpretation",
   "conditions": "always | eq | in | tri | contains | any_contains | all | any | not (see src/ikhtibar/engine.py)"
  },
@@ -328,7 +328,10 @@
     "Singapore-025",
     "UAE-Federal-007",
     "UAE-Federal-025",
-    "UAE-Dubai-034"
+    "UAE-Dubai-034",
+    "UAE-Federal-P3-01",
+    "UAE-Federal-P3-03",
+    "UAE-Federal-P3-04"
    ],
    "applies_when": {
     "always": true
@@ -383,7 +386,11 @@
     "Singapore-032",
     "Singapore-033",
     "China-024",
-    "China-025"
+    "China-025",
+    "EU-AI-Act-068",
+    "Japan-P3-01",
+    "Saudi-P3-03",
+    "Singapore-P3-01"
    ],
    "applies_when": {
     "in": [
@@ -411,7 +418,10 @@
     "US-OMB-003",
     "Canada-022",
     "Singapore-023",
-    "Saudi-007"
+    "Saudi-007",
+    "US-OMB-P3-01",
+    "US-OMB-P3-02",
+    "UAE-Federal-P3-06"
    ],
    "applies_when": {
     "in": [
@@ -605,7 +615,8 @@
     "UK-011",
     "EU-AI-Act-043",
     "Canada-006",
-    "Singapore-018"
+    "Singapore-018",
+    "UAE-Federal-P3-07"
    ],
    "applies_when": {
     "always": true
@@ -798,7 +809,7 @@
   {
    "id": "H6",
    "phase": "H",
-   "text": "Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions; none with AI testing content were found in the public sources searched.",
+   "text": "Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions on testing performance and fairness; beyond the security testing statements of the National Cyber Security Policy for AI (item H7), none were found in the public sources searched.",
    "rows": [
     "UAE-AbuDhabi-Other-001",
     "UAE-AbuDhabi-Other-002",
@@ -821,6 +832,37 @@
    "why": "Absence in public sources searched is not proof that no instruction exists. Ask the entity's governance office.",
    "templates": [
     "GATE"
+   ]
+  },
+  {
+   "id": "H7",
+   "phase": "H",
+   "text": "UAE federal or emirate government entity, or critical infrastructure entity: apply the National Cyber Security Policy for AI testing statements (testing and validation, secure development and testing, regular testing, risk and supply chain assessment, testing of changes), and confirm with the Cyber Security Council or the emirate lead whether the entity is in scope.",
+   "rows": [
+    "UAE-Federal-P3-01",
+    "UAE-Federal-P3-03",
+    "UAE-Federal-P3-04",
+    "UAE-Federal-P3-05",
+    "UAE-Federal-P3-06",
+    "UAE-Federal-P3-07",
+    "UAE-Federal-P3-08"
+   ],
+   "applies_when": {
+    "in": [
+     "entity_zone",
+     [
+      "federal_gov",
+      "abu_dhabi_gov",
+      "dubai_gov"
+     ]
+    ]
+   },
+   "to_settle": [
+    "entity_zone"
+   ],
+   "why": "The policy statements use 'shall' and apply to federal ministries and authorities; for emirate government entities coverage depends on the scope clause, which two verifiers read differently. The policy covers security only and puts ethics and fairness out of scope.",
+   "templates": [
+    "SEC"
    ]
   }
  ],
@@ -860,6 +902,76 @@
    }
   },
   "by_row": {
+   "UAE-Federal-P3-01": {
+    "actor": "federal ministries and authorities and non-government critical infrastructure entities; emirate government entities per the scope clause (readings differ)",
+    "applies_when": {
+     "in": [
+      "entity_zone",
+      [
+       "federal_gov",
+       "abu_dhabi_gov",
+       "dubai_gov"
+      ]
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-P3-03": {
+    "actor": "federal ministries and authorities and non-government critical infrastructure entities; emirate government entities per the scope clause (readings differ)",
+    "applies_when": {
+     "in": [
+      "entity_zone",
+      [
+       "federal_gov",
+       "abu_dhabi_gov",
+       "dubai_gov"
+      ]
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-P3-04": {
+    "actor": "federal ministries and authorities and non-government critical infrastructure entities; emirate government entities per the scope clause (readings differ)",
+    "applies_when": {
+     "in": [
+      "entity_zone",
+      [
+       "federal_gov",
+       "abu_dhabi_gov",
+       "dubai_gov"
+      ]
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-P3-05": {
+    "actor": "federal ministries and authorities and non-government critical infrastructure entities; emirate government entities per the scope clause (readings differ)",
+    "applies_when": {
+     "in": [
+      "entity_zone",
+      [
+       "federal_gov",
+       "abu_dhabi_gov",
+       "dubai_gov"
+      ]
+     ]
+    },
+    "still_conditional": true
+   },
+   "UAE-Federal-P3-06": {
+    "actor": "federal ministries and authorities and non-government critical infrastructure entities; emirate government entities per the scope clause (readings differ)",
+    "applies_when": {
+     "in": [
+      "entity_zone",
+      [
+       "federal_gov",
+       "abu_dhabi_gov",
+       "dubai_gov"
+      ]
+     ]
+    },
+    "still_conditional": true
+   },
    "UAE-Dubai-025": {
     "actor": "DHA regulated healthcare",
     "applies_when": {

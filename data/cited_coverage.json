@@ -40,6 +40,7 @@
   "EU-AI-Act-018",
   "EU-AI-Act-019",
   "EU-AI-Act-020",
+  "EU-AI-Act-021",
   "EU-AI-Act-022",
   "EU-AI-Act-023",
   "EU-AI-Act-025",
@@ -164,6 +165,7 @@
   "UAE-DIFC-ADGM-018",
   "UAE-DIFC-ADGM-020",
   "UAE-DIFC-ADGM-022",
+  "UAE-DIFC-ADGM-024",
   "UAE-DIFC-ADGM-025",
   "UAE-DIFC-ADGM-P3-01",
   "UAE-DIFC-ADGM-P3-04",
@@ -172,6 +174,7 @@
   "UAE-Dubai-005",
   "UAE-Dubai-006",
   "UAE-Dubai-007",
+  "UAE-Dubai-008",
   "UAE-Dubai-009",
   "UAE-Dubai-010",
   "UAE-Dubai-011",
@@ -211,6 +214,7 @@
   "UAE-Federal-009",
   "UAE-Federal-010",
   "UAE-Federal-011",
+  "UAE-Federal-012",
   "UAE-Federal-013",
   "UAE-Federal-014",
   "UAE-Federal-017",
@@ -231,6 +235,7 @@
   "UAE-Federal-P3-02",
   "UAE-Federal-P3-03",
   "UAE-Federal-P3-04",
+  "UAE-Federal-P3-05",
   "UAE-Federal-P3-06",
   "UAE-Federal-P3-07",
   "UAE-Federal-P3-08",
@@ -273,6 +278,6 @@
   "SUPERSEDED": 2,
   "UNVERIFIED_BLOCKED": 21,
   "VERIFIED": 154,
-  "VERIFIED_CORRECTED": 91
+  "VERIFIED_CORRECTED": 96
  }
 }
