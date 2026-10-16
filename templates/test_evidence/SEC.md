@@ -43,4 +43,4 @@ Selected by script from verified rows; these are examples, not a complete list. 
 | `UAE-Federal-007` | UAE Federal Decree-Law No. 45 of 2021 (PDPL) | mandatory | Art. 20(1)(d) |
 | `EU-AI-Act-030` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 15(5) |
 | `China-026` | China - GB/T 45654-2025 Cybersecurity Technology: Basic Safe | voluntary | Sec. 5.1; App. B.2.2.1 |
-| `Singapore-025` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcomes 5.2 and 5.9, p.47 and p.54 |
+| `EU-GPAI-CoP-009` | EU AI Act - GPAI Code of Practice (Safety and Security chapt | voluntary | Measure 5.1 and Measure 3.5 |

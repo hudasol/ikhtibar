@@ -39,8 +39,8 @@ Selected by script from verified rows; these are examples, not a complete list. 
 
 | Row | Framework | Source status | Clause |
 |---|---|---|---|
+| `EU-AI-Act-063` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 51(1)-(2) |
+| `EU-GPAI-CoP-003` | EU AI Act - GPAI Code of Practice (Safety and Security chapt | voluntary | Measure 3.2 |
 | `Singapore-016` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcome 4.1 / Process 4.1.1, p.29 (technical testing, genera |
 | `UK-024` | UK AI Security Institute (AISI) | voluntary | AI Safety Institute approach to evaluations (published 2024- |
-| `ISO-IEC-015` | ISO/IEC standards | guidance | ISO/IEC AWI TS 42119-7 catalogue page |
-| `Japan-020` | Japan AISI - Guide to Red Teaming Methodology on AI Safety v | guidance | Sec. 5.1 and 6.1 |
-| `US-NIST-027` | US NIST AI 600-1 Generative AI Profile (July 2024) | guidance | GV-1.3-003, p.15 |
+| `US-NIST-046` | US NIST CAISSI program page (nist.gov/caisi; titled 'Center  | voluntary | About page, nist.gov/caisi (no clause numbers) |

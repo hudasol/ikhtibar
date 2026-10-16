@@ -1,4 +1,5 @@
-"""Turn reviewed phase 3 patch proposals (p3patch_*.csv) into data/verification/phase3/patches_p3_agents.json.
+"""Turn reviewed phase 3 patch proposals into JSON patch files: research agents (p3patch_*.csv ->
+patches_p3_agents.json) and final independent verifiers (final/fv3patch_*.csv -> patches_p3_final.json).
 
 Each proposal was read by the lead analyst before acceptance. Proposals listed in REJECT are not applied
 and the reason is recorded in the output file. Run: python scripts/p3_accept_patches.py
@@ -13,8 +14,13 @@ REJECT = {}  # (row_id, field) -> reason
 
 
 def main():
+    run("p3patch_*.csv", "patches_p3_agents.json", "rejected_p3_patches.json")
+    run(os.path.join("final", "fv3patch_*.csv"), "patches_p3_final.json", "rejected_p3_final_patches.json")
+
+
+def run(pattern, out_name, rej_name):
     out, rejected = [], []
-    for f in sorted(glob.glob(os.path.join(P3, "p3patch_*.csv"))):
+    for f in sorted(glob.glob(os.path.join(P3, pattern))):
         src = os.path.basename(f)[:-4]
         with open(f, newline="", encoding="utf-8") as fh:
             for r in csv.DictReader(fh):
@@ -25,11 +31,11 @@ def main():
                     rejected.append({**r, "source": src, "why": REJECT[key]}); continue
                 out.append({"row_id": r["row_id"], "field": r["field"], "op": "set", "value": r["new_value"],
                             "source": src, "reason": r["reason"]})
-    with open(os.path.join(P3, "patches_p3_agents.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(P3, out_name), "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=1, ensure_ascii=False)
-    with open(os.path.join(P3, "rejected_p3_patches.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(P3, rej_name), "w", encoding="utf-8") as fh:
         json.dump(rejected, fh, indent=1, ensure_ascii=False)
-    print("accepted", len(out), "rejected", len(rejected))
+    print(out_name, "accepted", len(out), "rejected", len(rejected))
 
 
 if __name__ == "__main__":

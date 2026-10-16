@@ -1,6 +1,6 @@
 # Executive brief: testing AI before deployment
 
-Prepared for Huda Mueen. Version 2.0, 12 October 2026. Generated from the data files. **Research analysis, not legal advice.** A dagger after a row identifier means the row is excluded from the counts (unverified, or resting on a summary or secondary report only).
+Prepared for Huda Mueen. Version 3.0, 16 October 2026. Generated from the data files. **Research analysis, not legal advice.** A dagger after a row identifier means the row is excluded from the counts (unverified, or resting on a summary or secondary report only).
 
 ## The question
 
@@ -8,19 +8,20 @@ Which governments and institutes require, recommend or merely describe testing o
 
 ## What was found
 
-- **Most testing text is not binding.** Of 246 test provisions that are not marked unverified, 73 (30%) are mandatory or conditional, 154 (63%) are voluntary or guidance and 19 (8%) are ambiguous. If the 65 excluded test rows were counted, the split would be 93 mandatory or conditional (30%), 180 voluntary or guidance (58%) and 38 ambiguous (12%) of 311.
-- **Binding rules usually say that testing must happen, not how.** The EU Act, OMB M-25-21 and the Abu Dhabi DoH Standard require testing against metrics or benchmarks that the regulated party defines or that are not named (`EU-AI-Act-018`, `US-OMB-003`, `UAE-AbuDhabi-DoH-003`).
-- **Independent testing is binding only in narrow places.** Dubai health (`UAE-Dubai-025`, `UAE-Dubai-026`) and DIFC high risk processing (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`).
-- **Binding red teaming is narrow:** 3 of 24 verified red teaming rows are binding, and they concern only EU general purpose models with systemic risk.
-- **For the UAE,** binding testing text found is sector or zone specific: Abu Dhabi health, Dubai health, DIFC, and Dubai government security controls that are not AI specific. Federal documents retrieved give guidance in "should" language (`UAE-Federal-009`, `UAE-Federal-018`). The federal data protection law excludes government entities (`UAE-Federal-034`).
+- **Most testing text is not binding.** Of 290 test provisions that are not marked unverified, 81 (28%) are mandatory or conditional, 173 (60%) are voluntary or guidance and 36 (12%) are ambiguous.
+- **Recommended is far more common than merely described.** Of 209 such headline rows, 140 recommend a test, 40 only describe testing practice, 19 use obligation wording in a document that is not binding or whose force is unclear, and 10 were disputed between the coders (agreement 95.4%, Cohen's kappa 0.9).
+- **Binding rules usually say that testing must happen, not how.** The EU Act, OMB M-25-21 and the Abu Dhabi DoH Standard require testing against metrics or benchmarks that the regulated party defines or that are not named (`EU-AI-Act-018`, `US-OMB-003`, `UAE-AbuDhabi-DoH-003`). The only EU harmonised standard cited so far (14 October 2026) is about quality management, not test methods (`EU-Standards-P3-20`).
+- **Independent testing is binding only in narrow places.** EU notified bodies for some biometric systems and AI Office evaluations of the largest general purpose models (`EU-AI-Act-040`, `EU-AI-Act-071`); Dubai health (`UAE-Dubai-025`); DIFC high risk processing (`UAE-DIFC-ADGM-018`).
+- **Binding red teaming is narrow:** 4 of 26 verified red teaming rows are binding (`EU-AI-Act-063`, `EU-AI-Act-068`, `EU-AI-Act-071`, `EU-AI-Act-P3-20`).
+- **For the UAE, one cross government instrument binds entities to test AI, and it is about security.** The National Cyber Security Policy for AI (version 1.1) uses "shall" for testing and validation, secure development and regular testing, and names federal ministries and authorities and emirate government entities (`UAE-Federal-P3-01`, `UAE-Federal-P3-08`). Its "test before deployment" wording is guidance (`UAE-Federal-P3-02`). No binding federal text was found that requires testing accuracy or fairness before deployment; that remains sector specific (Abu Dhabi and Dubai health) or zone specific (DIFC). The federal data protection law excludes government entities (`UAE-Federal-034`). No Abu Dhabi government wide AI policy was found, and Dubai's AI policy for government entities is not published.
 
 ## What this does not mean
 
-These are gaps in the documents retrieved. They are not statements of what the UAE requires. Public sources were searched in English and Arabic (230 searches and fetches logged); non public instruments may exist.
+These are gaps in the documents retrieved. They are not statements of what the UAE requires. Public sources were searched in English and Arabic; non public instruments may exist.
 
 ## How reliable is it
 
-Phase 2 re checked 389 rows with the standard fetch tool only: 13 errors among 293 verifiable rows (4.4%, interval 2.6% to 7.4%). 94 rows are excluded: they could not be verified (source blocked or passage not located) or rest on a summary or secondary report only. Phase 1 verdicts that depended on a user agent workaround were re verified.
+Separate verifier agents checked a fresh random sample of 30 rows on 16 October 2026: 3 errors in 23 verifiable rows (13.0%, 95% interval 4.5% to 32.1%). All 56 new rows were also checked (7 errors in 56). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, 15 of 142 had errors before correction. 38 rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
 
 ## Items to confirm
 

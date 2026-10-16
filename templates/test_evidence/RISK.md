@@ -37,8 +37,8 @@ Selected by script from verified rows; these are examples, not a complete list. 
 
 | Row | Framework | Source status | Clause |
 |---|---|---|---|
+| `China-008` | China - Provisions on Algorithmic Recommendation Management  | mandatory | Art. 7 |
+| `Japan-P3-02` | Japan - Digital Agency DS-920 Guideline for Japanese Governm | mandatory | Sec. 3.2 (EN pp. 11-12; JA p. 10) |
 | `UAE-AbuDhabi-DoH-009` | DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025) | mandatory | Cl. 3.3.1.1.1 to 3.3.1.1.3 |
+| `UAE-Federal-P3-05` | UAE National Cyber Security Policy for Artificial Intelligen | mandatory | Policy statement 2.1.2, printed p.11; Implementation Guidanc |
 | `EU-AI-Act-011` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 6(3)-(4) |
-| `Korea-005` | South Korea - AI Framework Act (AI Basic Act) | conditional | Art. 32 (safety obligations) |
-| `UAE-DIFC-ADGM-020` | DIFC Data Protection Regulations Reg 10 / Commissioner mater | conditional | D Part 2 Section 1.1-1.3 pp.43-44 |
-| `US-OMB-004` | US OMB Memorandum M-25-21 (3 April 2025) - federal agency us | conditional | s.4(b)(ii), p.16-17 |

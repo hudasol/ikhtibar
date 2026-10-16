@@ -80,14 +80,20 @@ def main():
         for r in read(f):
             r["_round"] = 3; r["_file"] = os.path.basename(f); ver3[r["row_id"]] = r; ver[r["row_id"]] = r
     # lead analyst re-grading of round 3 verdicts against the verdict rubric (agent verdict kept in the file)
-    reclass = {r["row_id"]: r for r in read(P3 / "verdict_reclass.csv")} if (P3 / "verdict_reclass.csv").exists() else {}
-    for rid, rc in reclass.items():
-        if rid in ver3 and ver3[rid]["verdict"] == rc["agent_verdict"]:
-            ver3[rid]["verdict"] = rc["lead_verdict"]
-            ver3[rid]["failed_checks"] = f"[re-graded {rc['agent_verdict']} to {rc['lead_verdict']}: {rc['reason']}] " + (ver3[rid].get("failed_checks") or "")
+    reclass = read(P3 / "verdict_reclass.csv") if (P3 / "verdict_reclass.csv").exists() else []
+
+    def regrade(round_no, table):
+        for rc in reclass:
+            rid = rc["row_id"]
+            if rc["round"] == str(round_no) and rid in table and table[rid]["verdict"] == rc["agent_verdict"]:
+                table[rid]["verdict"] = rc["lead_verdict"]
+                table[rid]["failed_checks"] = (f"[re-graded {rc['agent_verdict']} to {rc['lead_verdict']}: {rc['reason']}] "
+                                               + (table[rid].get("failed_checks") or ""))
+    regrade(3, ver3)
     for f in sorted(glob.glob(str(P3 / "final" / "fv3_*.csv"))):
         for r in read(f):
             r["_round"] = 4; r["_file"] = os.path.basename(f); ver4[r["row_id"]] = r; ver[r["row_id"]] = r
+    regrade(4, ver4)
     # rows whose phase 3 reading used a file saved by the standard fetch tool and read locally (disclosed)
     relabel = {r["row_id"]: r["access_path"] for r in read(P3 / "access_relabel.csv")} if (P3 / "access_relabel.csv").exists() else {}
     fresh3 = set()
@@ -157,6 +163,15 @@ def main():
     for rid, x in rows.items():
         v = ver.get(rid)
         v2 = ver2.get(rid)
+        later_block = ""
+        if v is not None and v["verdict"] not in ("PASS", "MINOR", "ERROR"):
+            # a later round could not read the source: keep the latest earlier verdict that did read it
+            for earlier in (ver3.get(rid) if v["_round"] == 4 else None, v2):
+                if earlier is not None and earlier is not v and earlier["verdict"] in ("PASS", "MINOR", "ERROR"):
+                    later_block = (f"source not readable on {P3_DATE} (round {v['_round']}: {v['verdict']}; "
+                                   f"{(v.get('access_log') or '')[:160]}); status kept from round {earlier['_round']}")
+                    v = earlier
+                    break
         x["verdict_p2_adjusted"] = adjust(v2) if v2 else ""
         x["p3_recheck_verdict"] = adjust(ver3[rid]) if rid in ver3 else ""
         x["p3_final_verdict"] = adjust(ver4[rid]) if rid in ver4 else ""
@@ -210,6 +225,9 @@ def main():
                 x["verification_note"] = (v.get("what_source_says") or "")[:300]
         if v is not None and v["_round"] == 3 and rid in relabel and v["verdict"] in ("PASS", "MINOR", "ERROR"):
             x["access_path"] = relabel[rid]
+        if later_block:
+            x["verification_note"] = (later_block + " | " + x["verification_note"]).strip(" |")
+            x["document_to_download"] = "re-check by hand: " + x["source_url"]
         if x.get("_override"):
             x["verification_status"] = x.pop("_override")
         if x["verification_status"] == "ERROR_WITHDRAWN":

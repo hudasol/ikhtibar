@@ -39,6 +39,6 @@ Selected by script from verified rows; these are examples, not a complete list. 
 |---|---|---|---|
 | `UAE-AbuDhabi-DoH-013` | DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025) | mandatory | Sec. 5 (Monitoring and Evaluation) |
 | `UAE-Dubai-025` | DHA Artificial Intelligence in the Healthcare Policy (HISHD/ | mandatory | s4.3.3, p.8 |
+| `UAE-Federal-P3-06` | UAE National Cyber Security Policy for Artificial Intelligen | mandatory | Policy statement 2.1.3, printed p.11; Implementation Guidanc |
 | `China-005` | China - Interim Measures for the Management of Generative AI | conditional | Art. 17 |
 | `EU-AI-Act-032` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 16(f),(g),(h),(k) |
-| `UAE-DIFC-ADGM-003` | DIFC Data Protection Regulations, Consolidated Version No. 2 | conditional | Reg. 10.3.2(b) |

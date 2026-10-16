@@ -43,4 +43,4 @@ Selected by script from verified rows; these are examples, not a complete list. 
 | `EU-AI-Act-029` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 15(4) |
 | `ISO-IEC-008` | ISO/IEC standards | voluntary | ISO/IEC 24029-2:2023 catalogue page |
 | `Singapore-017` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcome 6.1 / Process 6.1.1, p.61 (technical testing) |
-| `UAE-Federal-023` | UAE AI Ethics: Principles & Guidelines (Dec 2022) | guidance | s3.5.2.2, pp.32-33 |
+| `Japan-017` | Japan - Outline of AI Guidelines for Business Ver. 1.1 (MIC/ | guidance | Part 3, D-3) i (printed p. 20) |
