@@ -1,0 +1,146 @@
+[
+ {
+  "row_id": "Singapore-035",
+  "field": "verification_override",
+  "op": "set",
+  "value": "VERIFIED_CORRECTED",
+  "source": "p3res_g4_uk_singapore",
+  "reason": "phase 2 withdrawal reversed: case study found in Agentic AI framework v1.5 s.2.3.2, p.40; row corrected"
+ },
+ {
+  "row_id": "UAE-Federal-014",
+  "field": "verification_override",
+  "op": "set",
+  "value": "SUPERSEDED",
+  "source": "p3ts_g7_uae",
+  "reason": "portal summary row superseded for counting by rows read from the full policy PDF v1.1 (UAE-Federal-P3-01 to P3-08)"
+ },
+ {
+  "row_id": "UAE-Federal-015",
+  "field": "verification_override",
+  "op": "set",
+  "value": "SUPERSEDED",
+  "source": "p3ts_g7_uae",
+  "reason": "portal summary row superseded for counting by rows read from the full policy PDF v1.1 (UAE-Federal-P3-01 to P3-08)"
+ },
+ {
+  "row_id": "UAE-Federal-016",
+  "field": "verification_override",
+  "op": "set",
+  "value": "SUPERSEDED",
+  "source": "p3ts_g7_uae",
+  "reason": "portal summary row superseded for counting by rows read from the full policy PDF v1.1 (UAE-Federal-P3-01 to P3-08)"
+ },
+ {
+  "row_id": "UAE-Federal-017",
+  "field": "verification_override",
+  "op": "set",
+  "value": "SUPERSEDED",
+  "source": "p3ts_g7_uae",
+  "reason": "portal summary row superseded for counting by rows read from the full policy PDF v1.1 (UAE-Federal-P3-01 to P3-08)"
+ },
+ {
+  "row_id": "UAE-Federal-014",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Phase 3: the full policy PDF (v1.1) was read; its policy statements use 'shall' and name addressees. See UAE-Federal-P3-01 to P3-08, which replace this row in counts. The portal calls domain 4 'Operational Safety'; the PDF calls it 'Operational Security'.",
+  "source": "p3ts_g7_uae",
+  "reason": "record supersession and naming conflict"
+ },
+ {
+  "row_id": "UAE-Federal-014",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "portal heading 'Operational Safety' vs PDF heading 'Operational Security' (domain 4)",
+  "source": "p3ts_g7_uae",
+  "reason": "naming conflict between portal and PDF"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-010",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "DoH Responsible AI Risk Management Protocol V1 Step 6 says a system that remains high risk after controls must be avoided (UAE-AbuDhabi-DoH-P3-03), while this Standard clause sends high risk systems to conformity assessment; the Protocol's own decision point sends only very high risk systems to Step 6",
+  "source": "p3ts_g7_uae",
+  "reason": "conflict between companion documents"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-003",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "pending: June 2026 DIFC consultation proposes renumbering this clause to 10.3.2(c) and adding a pre-use safety verification test at 10.3.2(b) (UAE-DIFC-ADGM-P3-01); not enacted as of 2026-10-16",
+  "source": "p3ts_g7_uae",
+  "reason": "pending amendment"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-004",
+  "field": "conflict_flag",
+  "op": "append",
+  "value": "| pending: June 2026 DIFC consultation proposes changes to the Autonomous Systems Officer wording and a new Regulation 11 on certification (UAE-DIFC-ADGM-P3-04); not enacted as of 2026-10-16",
+  "source": "p3ts_g7_uae",
+  "reason": "pending amendment"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-016",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "pending: June 2026 DIFC consultation proposes changes to the Autonomous Systems Officer wording (UAE-DIFC-ADGM-P3-04); not enacted as of 2026-10-16",
+  "source": "p3ts_g7_uae",
+  "reason": "pending amendment"
+ },
+ {
+  "row_id": "Singapore-028",
+  "field": "conflict_flag",
+  "op": "set",
+  "value": "date: cover says published 30 May 2024; file name and PDF build date say 19 June 2024",
+  "source": "p3res_g4_uk_singapore",
+  "reason": "record date conflict inside the source"
+ },
+ {
+  "row_id": "UK-009",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "primary text read",
+  "source": "p3res_g4_uk_singapore",
+  "reason": "phase 3 read the full Playbook passage with the fetch tool offset"
+ },
+ {
+  "row_id": "Korea-013",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "read via unofficial/machine translation",
+  "source": "p3res_g5_japan_korea_china",
+  "reason": "re-pointed to the KLRI English translation of the decree, which the site says is for reference only"
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "read via unofficial/machine translation",
+  "source": "p3res_g5_japan_korea_china",
+  "reason": "re-pointed to the KLRI English translation of the decree, which the site says is for reference only"
+ },
+ {
+  "row_id": "Korea-015",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "read via unofficial/machine translation",
+  "source": "p3res_g5_japan_korea_china",
+  "reason": "re-pointed to the KLRI English translation of the decree, which the site says is for reference only"
+ },
+ {
+  "row_id": "Korea-016",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "primary text read",
+  "source": "p3res_g5_japan_korea_china",
+  "reason": "re-pointed to the MSIT official English press release"
+ },
+ {
+  "row_id": "China-031",
+  "field": "evidence_grade",
+  "op": "set",
+  "value": "catalogue-level only",
+  "source": "p3res_g5_japan_korea_china",
+  "reason": "re-pointed to the official standards catalogue entry; standard text not read"
+ }
+]

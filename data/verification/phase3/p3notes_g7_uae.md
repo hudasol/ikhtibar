@@ -104,7 +104,7 @@ Outputs: `p3new_g7_uae.csv` (16 new rows), `p3ts_g7_uae.csv` (18 status items).
 
 ## Documents the user must download by hand (blocked or unreadable)
 
-1. **CBUAE, "Guidance Note on the Consumer Protection and Responsible Adoption and Use of Artificial Intelligence and Machine Learning by Licensed Financial Institutions in the U.A.E." (23 Feb 2026).** https://rulebook.centralbank.ae/en/entiresection/6958 returned HTTP 403 twice, and the press-release PDF returned 404. Needed to verify bias-testing and model-validation expectations for a possible UAE-Federal row.
+1. **CBUAE, *Guidance Note on the Consumer Protection and Responsible Adoption and Use of Artificial Intelligence and Machine Learning by Licensed Financial Institutions in the U.A.E.* (document title) (23 Feb 2026).** https://rulebook.centralbank.ae/en/entiresection/6958 returned HTTP 403 twice, and the press-release PDF returned 404. Needed to verify bias-testing and model-validation expectations for a possible UAE-Federal row.
 2. **DFSA, "DFSA regulatory expectations on artificial intelligence risk management in the DIFC" (SEO letter, 4 Jun 2026).** Listed at https://www.dfsa.ae/your-resources/publications-reports/seo-letters-1, which returned HTTP 403 twice. Needed for a possible UAE-DIFC-ADGM row on testing and validation.
 3. **National Committee for Agentic AI, practical guide for government entities on designing agentic-AI service experiences.** https://uaemodel.egsep.ae/agentic_ai_guide_website.html returned HTTP 403 twice.
 4. **UAE Charter policy details page.** https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence returned HTTP 403 twice. Needed to confirm the issue date and lead entity.

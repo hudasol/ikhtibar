@@ -3,7 +3,7 @@ from tests.helpers import ROOT, rows
 
 BINDING = {"mandatory", "conditional", "voluntary", "guidance", "ambiguous"}
 STATUS = {"VERIFIED", "VERIFIED_CORRECTED", "VERIFIED_NOTE_ONLY", "NOT_RECHECKED", "UNVERIFIED_BLOCKED", "UNVERIFIABLE_OTHER",
-          "UNVERIFIED_SOURCE_NOT_READ", "ERROR_WITHDRAWN"}
+          "UNVERIFIED_SOURCE_NOT_READ", "ERROR_WITHDRAWN", "NEW_UNCHECKED", "SUPERSEDED"}
 UNRELIABLE = {"UNVERIFIED_BLOCKED", "UNVERIFIABLE_OTHER", "UNVERIFIED_SOURCE_NOT_READ", "ERROR_WITHDRAWN", "NEW_UNCHECKED"}
 TYPES = set("PERF ROB FAIR SEC RED CSAFE PRIV TRANS OVER RISK DATA CONF REAL MON GATE".split())
 
@@ -28,6 +28,10 @@ class TableTests(unittest.TestCase):
         for r in self.rows:
             if r["verification_status"] in UNRELIABLE:
                 self.assertEqual(r["headline_include"], "no", r["row_id"])
+            elif r["verification_status"] == "SUPERSEDED":
+                # replaced in counts by rows read from a fuller version of the same source
+                self.assertEqual(r["headline_include"], "no", r["row_id"])
+                self.assertIn("supersed", (r["interpretation_note"] + r["verification_note"]).lower(), r["row_id"])
             elif r["headline_include"] == "no":
                 # excluded although checked: rests on a summary or secondary report only
                 self.assertTrue(r["evidence_grade"].startswith("unverified") or r["evidence_grade"] == "catalogue-level only", r["row_id"])

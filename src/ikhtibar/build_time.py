@@ -2,7 +2,7 @@
 
 DIFC first round rows are superseded by time_difc_round2.csv (official host read in round 2).
 """
-import csv, os, sys
+import csv, glob, os, sys
 
 D = os.path.join(os.path.dirname(__file__), "..", "..", "data")
 OUT_COLS = ["topic", "item", "our_value", "primary_value_seen", "locator_seen", "source_url",
@@ -23,6 +23,11 @@ def rows():
                     "locator_seen": r.get("locator_seen", ""), "source_url": r.get("source_url", ""),
                     "access_path": r.get("access_path", ""), "status": r.get("status", ""),
                     "retrieved_on": r.get("retrieval_date", ""), "conflict_or_note": r.get("note", "")})
+    # phase 3 status checks (16 October 2026), already in the output column layout
+    for fn in sorted(glob.glob(os.path.join(D, "verification", "phase3", "p3ts_*.csv"))):
+        with open(fn, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                out.append({c: (r.get(c) or "").replace("—", ",").replace("–", "-") for c in OUT_COLS})
     return out
 
 

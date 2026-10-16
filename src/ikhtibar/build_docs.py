@@ -188,6 +188,8 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
         rs = [r for r in T if r["primary_test_type"] == t]
         v[f"n_{t}"] = len(rs)
         v[f"n_{t}_binding"] = sum(1 for r in rs if r["binding_status"] in ("mandatory", "conditional"))
+        b_ids = [r["row_id"] for r in rs if r["binding_status"] in ("mandatory", "conditional")]
+        v[f"{t}_binding_ids"] = ", ".join(f"`{i}`" for i in b_ids) if b_ids else "none"
         ex = [r["row_id"] for r in E if r["primary_test_type"] == t and r["binding_status"] in ("mandatory", "conditional")]
         v[f"{t}_excluded_binding_ids"] = ", ".join(f"`{i}`" for i in ex) if ex else "none"
         v[f"n_{t}_all"] = sum(1 for r in T_all if r["primary_test_type"] == t)

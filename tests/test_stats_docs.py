@@ -89,8 +89,10 @@ class DocsTests(unittest.TestCase):
         by = rows()
         red = [r for r in by if r["row_type"] == "test" and r["headline_include"] == "yes" and r["primary_test_type"] == "RED"]
         binding = [r for r in red if r["binding_status"] in ("mandatory", "conditional")]
-        self.assertEqual(len(binding), 0)
-        self.assertIn("Red teaming is not binding in any verified row", self.out["docs/REPORT.md"])
+        # every binding headline red teaming row is named in the headline finding
+        for r in binding:
+            self.assertIn(r["row_id"], self.out["docs/REPORT.md"].split("## 2. Method")[0])
+        self.assertTrue(all(r["family"].startswith("EU") for r in binding), [r["row_id"] for r in binding])
 
 
 if __name__ == "__main__":

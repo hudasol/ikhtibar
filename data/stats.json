@@ -1,54 +1,53 @@
 {
- "total_rows": 466,
+ "total_rows": 522,
  "row_type": {
-  "context": 85,
-  "test": 268,
-  "enabler": 113
+  "context": 89,
+  "test": 311,
+  "enabler": 122
  },
  "verification_status": {
-  "UNVERIFIED_BLOCKED": 52,
-  "NOT_RECHECKED": 70,
-  "VERIFIED_CORRECTED": 111,
-  "VERIFIED": 180,
-  "UNVERIFIABLE_OTHER": 44,
-  "ERROR_WITHDRAWN": 1,
-  "UNVERIFIED_SOURCE_NOT_READ": 7,
-  "VERIFIED_NOTE_ONLY": 1
+  "UNVERIFIED_BLOCKED": 32,
+  "VERIFIED_CORRECTED": 151,
+  "VERIFIED": 278,
+  "UNVERIFIABLE_OTHER": 1,
+  "SUPERSEDED": 4,
+  "NEW_UNCHECKED": 56
  },
- "test_rows_all": 268,
- "test_rows_headline": 212,
- "test_rows_excluded": 56,
+ "test_rows_all": 311,
+ "test_rows_headline": 246,
+ "test_rows_excluded": 65,
  "binding_headline": {
   "mandatory": 19,
-  "conditional": 42,
-  "voluntary": 31,
-  "guidance": 101,
+  "conditional": 54,
+  "voluntary": 37,
+  "guidance": 117,
   "ambiguous": 19
  },
  "binding_all_tests": {
-  "mandatory": 28,
-  "conditional": 57,
-  "voluntary": 37,
-  "guidance": 125,
-  "ambiguous": 21
+  "mandatory": 35,
+  "conditional": 58,
+  "voluntary": 42,
+  "guidance": 138,
+  "ambiguous": 38
  },
  "excluded_test_rows_by_status": {
-  "UNVERIFIED_BLOCKED": 34,
-  "UNVERIFIABLE_OTHER": 18,
-  "ERROR_WITHDRAWN": 1,
-  "UNVERIFIED_SOURCE_NOT_READ": 2,
-  "VERIFIED_CORRECTED": 1
+  "UNVERIFIED_BLOCKED": 19,
+  "SUPERSEDED": 2,
+  "NEW_UNCHECKED": 44
  },
  "excluded_test_rows_by_family": {
   "Canada": 12,
-  "US-NIST": 4,
-  "UK": 5,
-  "Singapore": 5,
-  "EU-AI-Act": 11,
-  "EU-GPAI-CoP": 5,
+  "Saudi": 22,
+  "UAE-Federal": 9,
+  "EU-AI-Act": 3,
+  "EU-GPAI-CoP": 2,
+  "UK": 3,
+  "Singapore": 2,
+  "Japan": 2,
   "Korea": 1,
-  "Saudi": 12,
-  "UAE-Federal": 1
+  "China": 2,
+  "UAE-AbuDhabi-DoH": 4,
+  "UAE-DIFC-ADGM": 3
  },
  "by_family": {
   "Canada": {
@@ -61,7 +60,7 @@
    "ambiguous": 0
   },
   "China": {
-   "rows": 31,
+   "rows": 33,
    "test_headline": 15,
    "mandatory": 5,
    "conditional": 5,
@@ -70,25 +69,25 @@
    "ambiguous": 0
   },
   "EU-AI-Act": {
-   "rows": 74,
-   "test_headline": 17,
+   "rows": 78,
+   "test_headline": 28,
    "mandatory": 0,
-   "conditional": 16,
-   "voluntary": 1,
-   "guidance": 0,
-   "ambiguous": 0
-  },
-  "EU-GPAI-CoP": {
-   "rows": 9,
-   "test_headline": 2,
-   "mandatory": 0,
-   "conditional": 0,
+   "conditional": 26,
    "voluntary": 2,
    "guidance": 0,
    "ambiguous": 0
   },
+  "EU-GPAI-CoP": {
+   "rows": 13,
+   "test_headline": 7,
+   "mandatory": 0,
+   "conditional": 0,
+   "voluntary": 7,
+   "guidance": 0,
+   "ambiguous": 0
+  },
   "EU-Standards": {
-   "rows": 8,
+   "rows": 9,
    "test_headline": 1,
    "mandatory": 0,
    "conditional": 0,
@@ -106,43 +105,43 @@
    "ambiguous": 0
   },
   "Japan": {
-   "rows": 24,
-   "test_headline": 14,
+   "rows": 28,
+   "test_headline": 13,
    "mandatory": 0,
    "conditional": 0,
    "voluntary": 0,
-   "guidance": 14,
+   "guidance": 13,
    "ambiguous": 0
   },
   "Korea": {
-   "rows": 17,
-   "test_headline": 4,
+   "rows": 19,
+   "test_headline": 5,
    "mandatory": 0,
-   "conditional": 2,
+   "conditional": 3,
    "voluntary": 2,
    "guidance": 0,
    "ambiguous": 0
   },
   "Saudi": {
-   "rows": 23,
-   "test_headline": 10,
+   "rows": 39,
+   "test_headline": 15,
    "mandatory": 0,
    "conditional": 0,
    "voluntary": 0,
-   "guidance": 1,
+   "guidance": 6,
    "ambiguous": 9
   },
   "Singapore": {
-   "rows": 36,
-   "test_headline": 26,
+   "rows": 38,
+   "test_headline": 31,
    "mandatory": 0,
    "conditional": 0,
    "voluntary": 12,
-   "guidance": 13,
+   "guidance": 18,
    "ambiguous": 1
   },
   "UAE-AbuDhabi-DoH": {
-   "rows": 14,
+   "rows": 18,
    "test_headline": 13,
    "mandatory": 8,
    "conditional": 3,
@@ -160,7 +159,7 @@
    "ambiguous": 0
   },
   "UAE-DIFC-ADGM": {
-   "rows": 25,
+   "rows": 29,
    "test_headline": 13,
    "mandatory": 0,
    "conditional": 8,
@@ -178,34 +177,34 @@
    "ambiguous": 1
   },
   "UAE-Federal": {
-   "rows": 34,
-   "test_headline": 16,
+   "rows": 42,
+   "test_headline": 15,
    "mandatory": 1,
    "conditional": 3,
    "voluntary": 0,
    "guidance": 10,
-   "ambiguous": 2
+   "ambiguous": 1
   },
   "UK": {
-   "rows": 33,
-   "test_headline": 14,
+   "rows": 36,
+   "test_headline": 19,
    "mandatory": 0,
-   "conditional": 0,
+   "conditional": 1,
    "voluntary": 5,
-   "guidance": 6,
-   "ambiguous": 3
+   "guidance": 9,
+   "ambiguous": 4
   },
   "US-NIST": {
    "rows": 46,
-   "test_headline": 32,
+   "test_headline": 36,
    "mandatory": 0,
    "conditional": 0,
    "voluntary": 1,
-   "guidance": 31,
+   "guidance": 35,
    "ambiguous": 0
   },
   "US-OMB": {
-   "rows": 7,
+   "rows": 9,
    "test_headline": 3,
    "mandatory": 0,
    "conditional": 3,
@@ -230,7 +229,7 @@
     11.3
    ],
    "any_fault_rate_pct": 36.9,
-   "no_check_source_unread": 5
+   "no_check_source_unread": 0
   },
   "fresh_random_sample": {
    "n": 64,
@@ -265,7 +264,7 @@
    "any_fault_rate_pct": 46.7
   },
   "targeted_other": {
-   "n": 7,
+   "n": 79,
    "n_checked_rows": 7,
    "PASS": 4,
    "MINOR": 2,
@@ -326,33 +325,22 @@
    ],
    "any_fault_rate_pct": 45.2,
    "ids_by_final_status": {
-    "UNVERIFIABLE_OTHER": [
-     "EU-AI-Act-031",
-     "EU-AI-Act-038",
-     "EU-AI-Act-044",
-     "EU-AI-Act-068",
-     "Singapore-014",
-     "UK-009"
-    ],
     "UNVERIFIED_BLOCKED": [
      "Canada-002",
      "Canada-008",
      "Canada-009",
      "Canada-014",
      "Canada-020",
-     "Canada-021",
-     "Saudi-018",
-     "Saudi-019",
-     "Saudi-020",
-     "Saudi-021",
-     "Saudi-022",
-     "Saudi-023"
+     "Canada-021"
     ],
     "VERIFIED": [
      "China-013",
      "EU-AI-Act-028",
      "EU-AI-Act-032",
      "EU-AI-Act-034",
+     "EU-AI-Act-038",
+     "EU-AI-Act-044",
+     "EU-AI-Act-068",
      "EU-Standards-002",
      "EU-Standards-003",
      "EU-Standards-004",
@@ -361,6 +349,11 @@
      "ISO-IEC-009",
      "ISO-IEC-015",
      "ISO-IEC-017",
+     "Saudi-019",
+     "Saudi-020",
+     "Saudi-021",
+     "Saudi-023",
+     "Singapore-014",
      "UAE-AbuDhabi-DoH-008",
      "UAE-DIFC-ADGM-002",
      "UAE-DIFC-ADGM-008",
@@ -368,9 +361,12 @@
      "US-NIST-005"
     ],
     "VERIFIED_CORRECTED": [
+     "EU-AI-Act-031",
      "EU-Standards-005",
      "Japan-016",
      "Saudi-008",
+     "Saudi-018",
+     "Saudi-022",
      "Singapore-002",
      "Singapore-033",
      "UAE-Dubai-001",
@@ -381,6 +377,7 @@
      "UAE-Dubai-007",
      "UAE-Dubai-008",
      "UAE-Dubai-009",
+     "UK-009",
      "UK-032"
     ]
    }
@@ -399,30 +396,30 @@
    "caveat": "Phase 1 verdicts that relied on a browser style user agent are provisional."
   },
   "raw_verdict_counts_all": {
-   "UNVERIFIED_BLOCKED": 52,
-   "MINOR": 114,
-   "UNVERIFIABLE_OTHER": 44,
-   "PASS": 166,
-   "ERROR": 13
+   "UNVERIFIED_BLOCKED": 32,
+   "MINOR": 141,
+   "PASS": 265,
+   "ERROR": 27,
+   "UNVERIFIABLE_OTHER": 1
   },
   "date_only_minor_reclassified": 14
  },
  "verification_p3": {
   "recheck_by_research_agents": {
-   "n": 0,
-   "n_checked_rows": 0,
-   "PASS": 0,
-   "MINOR": 0,
-   "ERROR": 0,
-   "UNVERIFIED_BLOCKED": 0,
-   "UNVERIFIABLE_OTHER": 0,
-   "verifiable": 0,
-   "error_rate_pct": null,
+   "n": 175,
+   "n_checked_rows": 175,
+   "PASS": 99,
+   "MINOR": 28,
+   "ERROR": 15,
+   "UNVERIFIED_BLOCKED": 32,
+   "UNVERIFIABLE_OTHER": 1,
+   "verifiable": 142,
+   "error_rate_pct": 10.6,
    "error_ci95_pct": [
-    0.0,
-    0.0
+    6.5,
+    16.7
    ],
-   "any_fault_rate_pct": null
+   "any_fault_rate_pct": 30.3
   },
   "fresh_random_seed_20261016": {
    "n": 0,
@@ -441,7 +438,7 @@
    "any_fault_rate_pct": null
   },
   "new_rows_phase3": {
-   "n": 0,
+   "n": 56,
    "n_checked_rows": 0,
    "PASS": 0,
    "MINOR": 0,
@@ -457,7 +454,7 @@
    "any_fault_rate_pct": null
   },
   "final_independent_all": {
-   "n": 0,
+   "n": 56,
    "n_checked_rows": 0,
    "PASS": 0,
    "MINOR": 0,
@@ -474,24 +471,30 @@
   }
  },
  "unverified_by_family": {
-  "Canada": 23,
-  "US-NIST": 5,
-  "UK": 6,
-  "Singapore": 6,
-  "EU-AI-Act": 37,
-  "EU-GPAI-CoP": 6,
-  "EU-Standards": 1,
-  "Korea": 4,
-  "China": 2,
-  "Saudi": 13
+  "Canada": 24,
+  "ISO-IEC": 1,
+  "China": 1,
+  "Saudi": 7
  },
  "block_types": {
-  "site_rejected": 29,
-  "permission_timeout": 23,
-  "truncated_or_unreadable": 44
+  "site_rejected": 32,
+  "truncated_or_unreadable": 1
  },
  "language_read": {
+  "none": 25,
+  "English": 132,
+  "English text on MoJ Japanese Law Translation database (page does not state official/tentative status)": 3,
+  "English provisional translation (Cabinet Office; 'refer to the original text for accuracy')": 1,
+  "English provisional translation (Cabinet Office)": 4,
+  "English provisional translation (Cabinet Office); Japanese original not checked": 1,
+  "English provisional translation (MIC/METI)": 2,
+  "English version by Japan AISI ('refer to the original text for accuracy')": 1,
+  "English (Japan AISI)": 1,
   "official-source English translation (KLRI eLaw reference translation, not authoritative; no translator credit on page); Korean original not read; page includes amendments to Act No. 21311 (20 Jan 2026)": 10,
+  "English translation by KLRI (site states English version is for reference only, no legal effect)": 7,
+  "English (MSIT official English press release)": 1,
+  "English (Korea AISI official page)": 1,
+  "Chinese original; fetch-tool English rendering (machine)": 10,
   "original Chinese read (cac.gov.cn, issuing authority); no machine translation relied on for the clause": 5,
   "unofficial translation (China Law Translate, crowdsourced, no named translator); Chinese original NOT read (fetch of https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm failed after one retry). To finish: download the Chinese text at https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm by hand.": 2,
   "original Chinese read (cac.gov.cn, located via web search) for Arts 15, 19, 20, plus unofficial English (China Law Translate) at the row's source_url": 3,
@@ -505,20 +508,26 @@
   "English text hosted on uaelegislation.gov.ae (official host; whether it is an official translation not confirmed); Arabic original not read: Arabic URL fetch blocked": 4,
   "English original": 15,
   "English original (ADGM official guidance, VER1.0-11082021 footer, likely 11 Aug 2021); DPR 2021 text itself not read": 3,
-  "none read": 11,
-  "PDF: none read. News page: English official": 1,
-  "English official": 52,
+  "none read": 6,
+  "Arabic (SPA headline, fetch-tool rendering)": 1,
+  "English official (draft for consultation); Arabic PDF not located on an official host": 12,
+  "English official": 60,
   "original Arabic": 8,
   "English official (portal summary)": 2,
   "English official (Arabic opening not re-read by me)": 1,
   "English official (convenience translation; Arabic prevails)": 1,
   "English official (bilingual PDF; English read)": 1,
-  "English": 10
+  "English provisional translation (Digital Agency) checked against Japanese original": 4,
+  "Chinese original read in full (PDF from tc260.org.cn via fetch, text extracted); English paraphrase is unofficial translation": 2,
+  "Arabic original (fetch-tool rendering)": 2,
+  "English (official English original from issuer; PDF obtained by WebFetch, text extracted locally from that same file because the tool could not decode it)": 8,
+  "English (issuer's English original; PDF obtained by WebFetch, text extracted locally from that file). Arabic version not located.": 4,
+  "English (official original; PDF obtained by WebFetch, text extracted locally; blackline insertions and deletions are merged in plain extraction, insertions identified by comparison with Consolidated Version No. 2)": 4
  },
  "evidence_grade": {
-  "primary text read": 419,
-  "unverified (secondary or unread source)": 9,
-  "catalogue-level only": 22,
-  "read via unofficial/machine translation": 16
+  "primary text read": 475,
+  "catalogue-level only": 23,
+  "read via unofficial/machine translation": 21,
+  "unverified (secondary or unread source)": 3
  }
 }
