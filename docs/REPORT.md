@@ -246,7 +246,7 @@ Cell notation: letter = highest unambiguous binding status among headline test r
 2. **What triggers the duty.** EU duties depend on classification as high risk (`EU-AI-Act-011`); OMB's on "high impact" use (`US-OMB-002`); Korea's on a compute threshold or high impact classification (`Korea-005`, `Korea-006`); DIFC's on high risk processing for commercial purposes (`UAE-DIFC-ADGM-004`). Most binding rows in the table are conditional on a trigger.
 3. **Method versus outcome.** The Act requires testing against provider defined metrics (`EU-AI-Act-018`); the DoH Standard requires validation against benchmarks without naming them (`UAE-AbuDhabi-DoH-003`). **Interpretation:** binding regimes mostly standardise that a test is done and documented, leaving what counts as a pass to the regulated party, to standards or to later guidance.
 4. **Who tests.** Most binding testing is by the provider or deployer. Independent assessment is binding on narrower routes: DHA third party validation and audits (`UAE-Dubai-025`, `UAE-Dubai-026`), DIFC accredited certification bodies (`UAE-DIFC-ADGM-018`, `UAE-DIFC-ADGM-022`), DoH audits (`UAE-AbuDhabi-DoH-013`). The status of the DIFC accreditation criteria is voluntary for a body that chooses to apply (`UAE-DIFC-ADGM-022`).
-5. **Binding standards versus binding principles.** Several frameworks bind an obligation while pointing to non binding standards for method (`EU-AI-Act-037` is unverified; `EU-Standards-002` shows the relevant standards at draft or enquiry stages).
+5. **Binding standards versus binding principles.** Several frameworks bind an obligation while pointing to non binding standards for method. The EU Act presumes conformity where harmonised standards are applied (`EU-AI-Act-037`), but the only one cited so far is the quality management standard (`EU-Standards-P3-20`); testing related standards are still drafts.
 
 **Interpretation.** A statement such as "country X requires testing" is incomplete until it says: for whom, under what trigger, by whom, against what, and with what evidence.
 
@@ -563,7 +563,7 @@ The policy states that AI ethics and fairness are outside its scope (`UAE-Federa
 | All rows checked, excluding new UAE rows | 314 | 140 | 67 | 11 | 52 | 44 | 218 | 5.0% (2.8 to 8.8) |
 | Phase 1 provisional rows (re verified) | 49 | 17 | 10 | 4 | 12 | 6 | 31 | 12.9% (5.1 to 28.9) |
 
-**Coverage of cited rows.** The report prose, brief and checklist cite 273 distinct rows. Of these, 250 were verified in phase 2, 23 are excluded from counts and carry a dagger wherever they appear, and 0 were not rechecked. A test fails if any cited row is neither verified nor marked unverified.
+**Coverage of cited rows.** The report prose, brief and checklist cite 273 distinct rows. Of these, 250 are verified (phase 2 or 3), 23 are excluded from counts and carry a dagger wherever they appear, and 0 were not rechecked. A test fails if any cited row is neither verified nor marked unverified.
 
 **Combined figure.** Over all 389 rows checked in phase 2, 180 passed, 100 had minor imprecision and 13 had errors; 52 were blocked and 44 unverifiable. The error rate among the 293 verifiable rows is 4.4% (95% interval 2.6% to 7.4%). The cited row sample, which is not random and is weighted to the rows the report relies on, shows 11 errors in 168 verifiable rows (6.5%). The fresh random sample shows 0 errors in 44 (0.0%, interval 0.0% to 8.0%). The new UAE rows show 2 errors in 75 (2.7%).
 
