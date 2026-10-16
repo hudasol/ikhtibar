@@ -2,7 +2,7 @@
 # Each item links to evidence table rows (data/evidence_table.csv). "applies_when" uses three valued logic:
 # an answer that is missing or "unknown" makes the condition UNKNOWN, never true.
 meta:
-  version: "2.0-proposal"
+  version: "3.0-proposal"
   status: "proposal assembled from retrieved sources; applicability rules are the maintainer's interpretation"
   conditions: "always | eq | in | tri | contains | any_contains | all | any | not (see src/ikhtibar/engine.py)"
 phases:
@@ -104,7 +104,7 @@ items:
 - id: D5
   phase: D
   text: "Run security testing: secure code review, vulnerability scanning, penetration testing, and AI specific attacks (prompt injection, poisoning, evasion)."
-  rows: [UAE-AbuDhabi-DoH-007, EU-AI-Act-030, Canada-017, Saudi-019, Saudi-021, Singapore-025, UAE-Federal-007, UAE-Federal-025, UAE-Dubai-034]
+  rows: [UAE-AbuDhabi-DoH-007, EU-AI-Act-030, Canada-017, Saudi-019, Saudi-021, Singapore-025, UAE-Federal-007, UAE-Federal-025, UAE-Dubai-034, UAE-Federal-P3-01, UAE-Federal-P3-03, UAE-Federal-P3-04]
   applies_when: {always: true}
   why: Generic good practice.
   templates: [SEC]
@@ -119,7 +119,7 @@ items:
 - id: D7
   phase: D
   text: For generative or agentic systems, run structured red teaming and harmful output and refusal tests, and test whole workflow and tool use behaviour.
-  rows: [Singapore-007, Singapore-016, US-NIST-024, US-NIST-028, Japan-020, Japan-021, Saudi-020, EU-GPAI-CoP-003, Singapore-032, Singapore-033, China-024, China-025]
+  rows: [Singapore-007, Singapore-016, US-NIST-024, US-NIST-028, Japan-020, Japan-021, Saudi-020, EU-GPAI-CoP-003, Singapore-032, Singapore-033, China-024, China-025, EU-AI-Act-068, Japan-P3-01, Saudi-P3-03, Singapore-P3-01]
   applies_when: {in: [system_type, [genai_llm, agentic]]}
   to_settle: [system_type]
   why: Premised on a generative or agentic system.
@@ -127,7 +127,7 @@ items:
 - id: D8
   phase: D
   text: For vendor or black box systems, secure contractual access for testing and verify vendor performance claims independently, using alternative methods where internals are closed.
-  rows: [US-OMB-003, Canada-022, Singapore-023, Saudi-007]
+  rows: [US-OMB-003, Canada-022, Singapore-023, Saudi-007, US-OMB-P3-01, US-OMB-P3-02, UAE-Federal-P3-06]
   applies_when: {in: [acquisition, [vendor_product, mixed]]}
   to_settle: [acquisition]
   why: Premised on a vendor supplied component.
@@ -182,7 +182,7 @@ items:
 - id: G2
   phase: G
   text: "Define re testing triggers: model or data change, vendor update, scope change."
-  rows: [Singapore-014, UK-011, EU-AI-Act-043, Canada-006, Singapore-018]
+  rows: [Singapore-014, UK-011, EU-AI-Act-043, Canada-006, Singapore-018, UAE-Federal-P3-07]
   applies_when: {always: true}
   why: Generic good practice.
   templates: [MON]
@@ -235,12 +235,20 @@ items:
   templates: [GATE, SEC]
 - id: H6
   phase: H
-  text: "Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions; none with AI testing content were found in the public sources searched."
+  text: "Abu Dhabi government entity (not health) or UAE federal entity: look for entity specific or council instructions on testing performance and fairness; beyond the security testing statements of the National Cyber Security Policy for AI (item H7), none were found in the public sources searched."
   rows: [UAE-AbuDhabi-Other-001, UAE-AbuDhabi-Other-002, UAE-Federal-009, UAE-Federal-018, UAE-Federal-021]
   applies_when: {in: [entity_zone, [abu_dhabi_gov, federal_gov]]}
   to_settle: [entity_zone]
   why: Absence in public sources searched is not proof that no instruction exists. Ask the entity's governance office.
   templates: [GATE]
+- id: H7
+  phase: H
+  text: "UAE federal or emirate government entity, or critical infrastructure entity: apply the National Cyber Security Policy for AI testing statements (testing and validation, secure development and testing, regular testing, risk and supply chain assessment, testing of changes), and confirm with the Cyber Security Council or the emirate lead whether the entity is in scope."
+  rows: [UAE-Federal-P3-01, UAE-Federal-P3-03, UAE-Federal-P3-04, UAE-Federal-P3-05, UAE-Federal-P3-06, UAE-Federal-P3-07, UAE-Federal-P3-08]
+  applies_when: {in: [entity_zone, [federal_gov, abu_dhabi_gov, dubai_gov]]}
+  to_settle: [entity_zone]
+  why: "The policy statements use 'shall' and apply to federal ministries and authorities; for emirate government entities coverage depends on the scope clause, which two verifiers read differently. The policy covers security only and puts ethics and fairness out of scope."
+  templates: [SEC]
 row_binding:
   # How a source's binding force relates to the deploying entity. "yes" only when the answers settle that the entity is the stated actor.
   # Rows not listed here are treated by their binding status alone (guidance and voluntary rows never bind).
@@ -257,6 +265,11 @@ row_binding:
       applies_when: {in: [entity_zone, [difc, adgm]]}
       still_conditional: true
   by_row:
+    UAE-Federal-P3-01: &cscai {actor: "federal ministries and authorities and non-government critical infrastructure entities; emirate government entities per the scope clause (readings differ)", applies_when: {in: [entity_zone, [federal_gov, abu_dhabi_gov, dubai_gov]]}, still_conditional: true}
+    UAE-Federal-P3-03: *cscai
+    UAE-Federal-P3-04: *cscai
+    UAE-Federal-P3-05: *cscai
+    UAE-Federal-P3-06: *cscai
     UAE-Dubai-025: &dha {actor: "DHA regulated healthcare", applies_when: {eq: [entity_zone, health_dubai]}}
     UAE-Dubai-026: *dha
     UAE-Dubai-027: *dha

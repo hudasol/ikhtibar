@@ -172,7 +172,7 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
     # binding by family sentence (computed)
     fam_mc = [(f, sum(1 for r in T if r["family"] == f and r["binding_status"] in ("mandatory", "conditional"))) for f in FAMS]
     fam_mc = sorted([(f, k) for f, k in fam_mc if k], key=lambda x: -x[1])
-    v["binding_by_family"] = ", ".join(f"{FAM_LABEL[f]} ({k})" for f, k in fam_mc)
+    v["binding_by_family"] = ", ".join(f"{f} ({k})" for f, k in fam_mc)
     exm = collections.Counter(r["family"] for r in E if r["binding_status"] in ("mandatory", "conditional"))
     v["excluded_binding_by_family"] = ", ".join(f"{FAM_LABEL[f]} ({k})" for f, k in exm.most_common())
 
@@ -370,12 +370,15 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
     # time sensitive
     st = collections.Counter(r["status"] for r in tsens)
     v["time_status_text"] = ", ".join(f"{k}: {x}" for k, x in sorted(st.items()))
-    lines = []
+    # compact view for the report: status counts per topic and check date; the full item list is docs/TIME_SENSITIVE.md
+    agg = collections.OrderedDict()
     for r in tsens:
         if r["item"].startswith("UAE-"):
             continue
-        lines.append([r["topic"], r["item"], r["status"], r["retrieved_on"]])
-    v["time_table"] = md_table(["Topic", "Item", "Status", "Retrieved on"], lines)
+        key = (r["topic"], r["retrieved_on"])
+        agg.setdefault(key, collections.Counter())[r["status"]] += 1
+    lines = [[t, d, sum(c.values()), ", ".join(f"{k} {n}" for k, n in sorted(c.items()))] for (t, d), c in agg.items()]
+    v["time_table"] = md_table(["Topic", "Checked on", "Items", "Status counts"], lines)
     # staleness
     ages = [r["next_review_by"] for r in rows if r["next_review_by"]]
     v["earliest_review"] = min(ages) if ages else "n/a"
