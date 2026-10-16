@@ -1,0 +1,9 @@
+row_id,field,new_value,reason
+Saudi-018,source_url,https://cdn.nca.gov.sa/api/files/public/upload/cbf45381-f94f-40c7-9b8c-553fb01b6a3b_AI_Cybersecurity_Controls_EN.pdf,"Statement is in the PDF p. 8, not on the news page."
+Saudi-018,clause_or_page,"Scope of Work and Applicability, p. 8",Exact heading as printed.
+Saudi-018,language_read,English official (draft for consultation); Arabic PDF not located on an official host,PDF read in phase 3.
+Saudi-022,clause_or_page,"Guideline 1-2-6, p. 17",Clause number legible on rendered page 17.
+Saudi-022,language_read,English official (draft for consultation); Arabic PDF not located on an official host,PDF read in phase 3.
+UAE-Dubai-017,framework,"Dubai AI Principles (in Smart Dubai 'AI Ethics Principles & Guidelines' PDF; Principles changelog v1.6, 2018), English","Sentence is in the AI Principles part, not the AI Ethics Guidelines v1.11 part."
+UAE-Dubai-017,clause_or_page,"AI Principles - Security ('AI systems will be safe, secure and controllable by humans'), printed p. 9 (PDF p. 10)","Principle heading is Security, not Safety; page confirmed."
+UAE-Dubai-017,interpretation_note,"Principle statement in the Dubai AI Principles (Security). No test method, assessor or timing named. Qualifier 'to the extent permitted by technology' confirmed in the text (phase 3, 2026-10-16). English official PDF; text layer read.",Records phase 3 confirmation of the qualifier phase 2 could not confirm.
