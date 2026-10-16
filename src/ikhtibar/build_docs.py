@@ -249,6 +249,32 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
                   f"{key}_verifiable": d["verifiable"], f"{key}_rate": d["error_rate_pct"],
                   f"{key}_lo": d["error_ci95_pct"][0], f"{key}_hi": d["error_ci95_pct"][1], f"{key}_fault": d["any_fault_rate_pct"]})
     v["p3_regraded"] = v3["n_regraded_minor_to_error"]
+    # normative force of non-binding test rows (two independent coders), headline rows only
+    nf_path = DATA / "coding" / "normative_force.csv"
+    if nf_path.exists():
+        nf = {r["row_id"]: r["agreed"] for r in read_csv(nf_path)}
+        ns = json.loads((DATA / "coding" / "normative_force_stats.json").read_text(encoding="utf-8"))
+        H = [r for r in T if r["binding_status"] in ("voluntary", "guidance", "ambiguous")]
+        coded = [r for r in H if r["row_id"] in nf]
+        cc = collections.Counter(nf[r["row_id"]] for r in coded)
+        v.update(nf_n=len(coded), nf_uncoded=len(H) - len(coded), nf_obl=cc["OBLIGATION_WORDING"], nf_rec=cc["RECOMMENDS"],
+                 nf_des=cc["DESCRIBES"], nf_dis=cc["DISPUTED"], nf_kappa=ns["cohens_kappa"], nf_agree=round(100 * ns["observed_agreement"], 1),
+                 nf_total_coded=ns["n"])
+        v["nf_summary"] = (f"Of {len(coded)} such headline rows, {cc['RECOMMENDS']} recommend a test, {cc['DESCRIBES']} only describe "
+                           f"testing practice, {cc['OBLIGATION_WORDING']} use obligation wording in a document that is not binding or whose "
+                           f"force is unclear, and {cc['DISPUTED']} were disputed between the coders (agreement {v['nf_agree']}%, "
+                           f"Cohen's kappa {ns['cohens_kappa']}).")
+        lines = []
+        for fam in FAMS:
+            fr = [r for r in coded if r["family"] == fam]
+            if fr:
+                c2 = collections.Counter(nf[r["row_id"]] for r in fr)
+                mc2 = sum(1 for r in T if r["family"] == fam and r["binding_status"] in ("mandatory", "conditional"))
+                lines.append([FAM_LABEL.get(fam, fam), mc2, c2["OBLIGATION_WORDING"], c2["RECOMMENDS"], c2["DESCRIBES"], c2["DISPUTED"]])
+        v["nf_table"] = md_table(["Family", "Required (mandatory or conditional)", "Obligation wording, not binding",
+                                  "Recommended", "Described only", "Disputed"], lines)
+        v["nf_obligation_ids"] = ", ".join(f"`{r['row_id']}`" for r in coded if nf[r["row_id"]] == "OBLIGATION_WORDING") or "none"
+        v["nf_disputed_ids"] = ", ".join(f"`{r['row_id']}`" for r in coded if nf[r["row_id"]] == "DISPUTED") or "none"
     v["n_superseded"] = vs["SUPERSEDED"]
     v["n_new_p3"] = sum(1 for r in rows if r["sample_type"] == "new_row_phase3")
     v["n_new_unchecked"] = vs["NEW_UNCHECKED"]

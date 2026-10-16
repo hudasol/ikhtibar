@@ -1,0 +1,27 @@
+{
+ "n": 216,
+ "observed_agreement": 0.954,
+ "cohens_kappa": 0.9,
+ "agreed_counts": {
+  "RECOMMENDS": 146,
+  "DESCRIBES": 41,
+  "DISPUTED": 10,
+  "OBLIGATION_WORDING": 19
+ },
+ "coder_A_counts": {
+  "RECOMMENDS": 149,
+  "DESCRIBES": 42,
+  "OBLIGATION_WORDING": 25
+ },
+ "coder_B_counts": {
+  "RECOMMENDS": 153,
+  "DESCRIBES": 43,
+  "OBLIGATION_WORDING": 20
+ },
+ "disagreements": {
+  "OBLIGATION_WORDING vs RECOMMENDS": 6,
+  "RECOMMENDS vs DESCRIBES": 2,
+  "DESCRIBES vs RECOMMENDS": 1,
+  "RECOMMENDS vs OBLIGATION_WORDING": 1
+ }
+}
