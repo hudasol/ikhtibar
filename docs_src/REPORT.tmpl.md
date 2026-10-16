@@ -209,10 +209,11 @@ This section reports what the sources retrieved say. It does not describe the wh
 | UAE AI Adoption Guideline in Government Services (English and Arabic text) | UAE federal | Model evaluated against acceptance criteria before deployment; monitoring of deployed use cases; documentation of testing results; pilot gates. The text read does not state that it binds entities. | guidance | `UAE-Federal-009` to `UAE-Federal-013` |
 | UAE AI Ethics Principles and Guidelines (December 2022) and Self Assessment Tool | UAE federal | Bias testing, discrimination impact assessment, quality checks, external audit for critical decisions, fallback testing, vulnerability assessment, privacy impact assessment. Phrased "should" or "could". | guidance / voluntary | `UAE-Federal-018` to `UAE-Federal-027` |
 | UAE AI Guide (National Program for AI) | UAE federal | Test algorithms before field deployment; check representativeness; federal RegLab sandbox licences. | guidance | `UAE-Federal-028`, `UAE-Federal-029` |
-| UAE National Cyber Security Policy for AI (portal summary and Arabic wording) | UAE federal | Comprehensive testing and validation for reliability; secure development and testing. The full PDF was blocked; the portal text does not state binding force. | ambiguous | `UAE-Federal-014` to `UAE-Federal-017` |
+| UAE National Cyber Security Policy for AI, version 1.1, November 2025 (Cyber Security Council, full PDF read in phase 3) | Federal ministries and authorities, emirate government entities, non government critical infrastructure entities | Policy statements in "shall" form: testing and validation of AI systems, secure development and testing, regular testing, risk assessment, supply chain assessment. Implementation guidance ("should"): rigorous testing before deployment, testing of changes and patches. Compliance monitored through the UAE Information Assurance Standard. | mandatory for the named entities (statements); guidance (implementation guidance) | `UAE-Federal-P3-01` to `UAE-Federal-P3-08` (portal summary rows `UAE-Federal-014` to `UAE-Federal-017` superseded) |
 | Federal Decree Law No. 45 of 2021 (PDPL) | UAE federal, personal data | Impact assessment before high risk processing; testing of security measures; right to human review of automated decisions; Article 2 excludes government data and government entities. | conditional / mandatory | `UAE-Federal-005` to `UAE-Federal-008`, `UAE-Federal-032` to `UAE-Federal-034` |
 | Abu Dhabi Law No. 3 of 2024 (AI and Advanced Technology Council) | Abu Dhabi | The Council sets conditions and standards for AI investment and research; relevant entities must implement the Council's decisions. No testing content. | ambiguous / mandatory | `UAE-AbuDhabi-Other-001`, `UAE-AbuDhabi-Other-002` |
 | DoH Abu Dhabi Policy on Use of AI in the Healthcare Sector (version 0.9, April 2018) | Abu Dhabi health sector | "Expects" in one place and "must comply" in another. | ambiguous | `UAE-AbuDhabi-DoH-001`, `UAE-AbuDhabi-DoH-002` |
+| DoH Abu Dhabi Responsible AI Risk Management Protocol V1 (October 2025) | Abu Dhabi health sector | Controls tested by simulation or pilot before implementation; risk rating; avoid high residual risk; reassessment and DoH review. Section headed "Recommended Protocol". | ambiguous | `UAE-AbuDhabi-DoH-P3-01` to `UAE-AbuDhabi-DoH-P3-04` |
 | DoH Abu Dhabi Responsible AI Standard V1 (October 2025) | Abu Dhabi health sector | Mandatory validation against benchmarks, testing across diverse data, safety testing and failure mode analysis, code review and vulnerability scanning, representativeness audits, risk assessment, documented evidence, internal and DoH audits. Conditional: conformity assessment for high risk systems, no deployment at very high residual risk. | mandatory / conditional | `UAE-AbuDhabi-DoH-003` to `UAE-AbuDhabi-DoH-014` |
 | DHA Artificial Intelligence in the Healthcare Policy (HISHD/PP-09) | Dubai health sector | Independent third party validation, independent audits of AI functionality, certification from recognised bodies, performance monitoring against training results, auditable validation statements. | mandatory | `UAE-Dubai-025` to `UAE-Dubai-030` |
 | Dubai AI Ethics Guidelines (English and Arabic editions), Ethics Toolkit and Self Assessment Tool | Dubai | Bias testing, discrimination impact assessment, quality checks as stringent as for a human, external audit for critical decisions (marked suspended in the versions read because no mechanism existed). The Executive Council reportedly advised all public entities to use the toolkit. | guidance / voluntary / ambiguous | `UAE-Dubai-001` to `UAE-Dubai-006`, `UAE-Dubai-011` to `UAE-Dubai-024` |
@@ -222,16 +223,20 @@ This section reports what the sources retrieved say. It does not describe the wh
 | Dubai Department of Finance and Dubai Culture AI policies | Dubai entities | Commitments to risk assessment, monitoring and internal audit of their own AI. | ambiguous | `UAE-Dubai-038` to `UAE-Dubai-040` |
 | DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 | DIFC | High risk processing by autonomous or semi autonomous systems for commercial purposes needs audit and certification; an Autonomous Systems Officer; accountability and bias mitigation. | conditional | `UAE-DIFC-ADGM-001` to `UAE-DIFC-ADGM-005`, `UAE-DIFC-ADGM-016` |
 | DIFC Commissioner guidance, Accreditation and Certification Framework and FAQs | DIFC | Certification application to an accredited certification body; criteria for those bodies; assessment of governance, risk choice, bias and transparency. Each Framework page says it is informational and may be incomplete. | conditional / voluntary / guidance | `UAE-DIFC-ADGM-017` to `UAE-DIFC-ADGM-025` |
+| DIFC consultation on amending Regulation 10 (June 2026, not enacted) | DIFC | Would add a duty that a system be tested for safety verification before commercial use, a safety principle, a Commissioner power to require an impact assessment or audit, and a certification regulation. | ambiguous (proposal) | `UAE-DIFC-ADGM-P3-01` to `UAE-DIFC-ADGM-P3-04` |
 | ADGM data protection and FSRA guidance | ADGM | Impact assessment before high risk processing; automated decision guidance; digital investment management guidance on testing. | conditional / guidance | `UAE-DIFC-ADGM-006` to `UAE-DIFC-ADGM-015` |
 | SDAIA AI Ethics Principles (version 1.0, September 2023, portal host) | Saudi Arabia | Robustness testing, fairness metrics, privacy leakage testing, user acceptance testing, third party due diligence, conformity assessment for high risk systems. Scope says it applies to all AI stakeholders; the compliance mechanism is optional registration. | ambiguous | `Saudi-001` to `Saudi-010` |
-| SDAIA Generative AI Guidelines, AI Adoption Framework, National AI Risk Management Framework | Saudi Arabia | Blocked or secondary only; rows are unverified. | guidance | `Saudi-011` to `Saudi-017` |
-| NCA AI Cybersecurity Guidelines (draft, AICG-1:2026) | Saudi Arabia | AI penetration testing, red teaming, validating human override. Draft; consultation closed 5 August 2026; binding force not stated. Rows rest on a document read through OCR and are unverified. | guidance | `Saudi-018` to `Saudi-023` |
+| SDAIA Generative AI Guidelines, AI Adoption Framework, National AI Risk Management Framework | Saudi Arabia | sdaia.gov.sa still rejects the fetch tool; rows are unverified. | guidance | `Saudi-011` to `Saudi-017` |
+| SDAIA AI service provider accreditation and AI ethics self assessment (Arabic service pages) | Saudi Arabia | A questionnaire reviewed by a committee leading to a label; a self assessment tool. | ambiguous | `Saudi-P3-15`, `Saudi-P3-16` |
+| SFDA guidance on AI based medical devices (MDS-G010, 2022) | Saudi medical devices | Pre market verification and validation, clinical validation, independent review, reference datasets and subgroup analysis, local validation, post market monitoring, change control. Clarifies requirements set in another document that was not read. | ambiguous | `Saudi-P3-07` to `Saudi-P3-14` |
+| NCA AI Cybersecurity Guidelines (draft, AICG-1:2026) | Saudi Arabia | AI penetration testing, red teaming, guardrail testing before production, validating human override. Draft; the document states it is not mandatory. Read in phase 3 from page images of the PDF the fetch tool saved. | guidance | `Saudi-018` to `Saudi-023`, `Saudi-P3-01` to `Saudi-P3-06` |
 
 **Source says (selected details).**
 
 - **DoH Standard.** It applies to DoH and licensed healthcare entities developing, procuring or deploying AI; it states a revision date of October 2026 (Section 7). DoH states it will conduct periodic audits (`UAE-AbuDhabi-DoH-013`).
 - **DHA policy.** Independent third party validation and independent audits of AI functionality are mandatory for healthcare AI in Dubai (`UAE-Dubai-025`, `UAE-Dubai-026`). The policy shows conflicting effective dates and a revision date that has passed.
 - **DIFC Regulation 10.** Commercial high risk processing needs certification under the Commissioner's framework (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`). The Framework carries a notice that it is informational only and that its implementation timeline is at the Commissioner's discretion; this conflicts with wording that certification is required (conflict flag on `UAE-DIFC-ADGM-018`).
+- **National Cyber Security Policy for AI.** The scope section names ministries and federal authorities and non government critical infrastructure entities, and covers emirate government entities through the emirate lead where an emirate programme exists (`UAE-Federal-P3-08`). The policy statements use "shall" and the implementation guidance "should" (`UAE-Federal-P3-01`, `UAE-Federal-P3-02`). *Interpretation:* under the protocol's four part test, the "shall" statements are binding testing duties for those entities, but the statement on testing and validation does not itself fix when testing happens; the before deployment wording is in guidance. Its subject is security; it does not address accuracy, fairness or fitness for purpose.
 - **PDPL.** The retrieved articles address personal data processing, do not set accuracy, robustness or fairness testing for AI as such, and exclude government data and government entities (`UAE-Federal-034`).
 
 ### 6.2 What was searched, where
@@ -244,15 +249,14 @@ Federal, Abu Dhabi and Dubai sources were searched with English and Arabic queri
 
 ### 6.3 Searched for and not found in the public sources searched
 
-- A UAE federal binding rule or technical standard for testing AI systems in government.
+- A UAE federal law or Cabinet resolution on AI. The federal AI and Data Authority approved in June 2026 was found only as an announcement, with no legal instrument cited.
+- A UAE federal technical standard for functional, fairness or accuracy testing of AI in government. The cyber security policy for AI covers security testing only.
+- An Abu Dhabi government wide AI policy or standard for government entities (Department of Government Enablement, Abu Dhabi Digital Authority, AI and Advanced Technology Council). The Council's website did not resolve.
+- The text of the Dubai AI Policy for Government Entities (April 2025) and of the Dubai Electronic Security Center AI Security Policy. Both are referred to publicly; neither text is published (the Center says its documents are available by e-mail request).
+- The DoH AI Policy of 2025 that the DoH Standard and Protocol both cite; the DoH policies listing, now readable, shows only the 2018 policy.
 - UAE PDPL Executive Regulations.
-- A TDRA specific AI guideline with testing content.
-- A Dubai government wide mandatory AI testing or certification instrument other than the Information Security Regulation (not AI specific) and the DHA policy (health only). The Universal Blueprint for AI was found only in summaries.
 - An external audit mechanism replacing the suspended Dubai guideline.
-- An Abu Dhabi government wide AI policy or standard with testing content (the Council law was found; it has none).
-- The DoH "AI Policy Standard" and "AI Risk Management" documents that the Standard cites; DoH listing pages could not be opened.
-- ADGM AI specific guidance beyond data protection and the FSRA digital investment note.
-- Federal leads found only in secondary sources and therefore not evidence: reports of a National AI Test and Validation Lab, a Federal Authority for AI and Data, a guide on leading generative AI applications and an agentic AI guide. They are listed in `docs/UAE_COVERAGE.md` as leads.
+- Leads that could not be read: the Central Bank of the UAE guidance note on AI and machine learning for licensed financial institutions (February 2026; rulebook site rejected the fetch), a DFSA letter on AI risk management (June 2026; rejected), an agentic AI guide for government entities (rejected), and the UAE Information Assurance Standard appendix that the cyber security policy uses for compliance monitoring (no public copy found).
 
 The full list of queries that ended in not found or blocked is in `docs/UAE_COVERAGE.md`.
 
@@ -264,13 +268,21 @@ Each item records the locator, the retrieval date and any source conflict. The f
 
 {{time_table}}
 
-**EU Omnibus (Regulation (EU) 2026/1744).** *Source says:* identity, signature date 8 July 2026, Official Journal date 24 July 2026 and entry into force 27 July 2026 are confirmed from EUR-Lex metadata and the Official Journal headers; the Article 57(1) sandbox date of 2 August 2027 is confirmed; no corrigendum or further amendment was found in metadata. The Annex III date (2 December 2027) and the Annex I date (2 August 2028) are confirmed only at recital 40 and agree with Commission pages; the operative Article 113 text was not seen because the fetch tool returned the Official Journal only to about page 29 of 41. The Article 111(2) date, Articles 111(3) and (4), Article 50(2), Article 5 application dates and Article 101 are not confirmed. *Interpretation:* the headline EU dates are probably right but are not confirmed from operative text; rows `EU-AI-Act-001` to `EU-AI-Act-003`, `EU-AI-Act-006`, `EU-AI-Act-007` and `EU-AI-Act-008` stay unverified.
+Phase 3 items (16 October 2026) are appended to the phase 2 items; where a phase 3 item updates a phase 2 item, the phase 3 status applies.
 
-**DoH Responsible AI Standard.** *Source says:* reference DoH/ST/DDGO/RAI/V1/2025, publication and effective date October 2025, revision date October 2026 with a one year revision period, owner the Data and Digital Governance Office. The PDF still resolves at the recorded address and shows V1. Whether a revision, addendum or replacement exists is open because the DoH listing pages could not be opened (permission timeout, not a site block). The two documents the Standard cites (AI Policy Standard, June 2025; AI Risk Management, July 2025) exist as references only and were not located. The 2018 policy is version 0.9, dated 30 April 2018; its current status is open.
+**EU Act after Regulation (EU) 2026/1744.** *Source says:* signed 8 July 2026, published in the Official Journal on 24 July 2026, in force 27 July 2026 (Article 4 of the amending act). In the amended Article 113, third paragraph, point (c)(i) sets 2 December 2027 for Annex III high risk systems and point (c)(ii) sets 2 August 2028 for Annex I systems; point (a) sets 2 December 2026 for the new prohibitions and point (d) applies Articles 102 to 110 from 27 July 2026. The amended Article 111(2) gives public authority deployers of legacy systems until 2 August 2030; a new Article 111(4) gives generative systems already on the market until 2 December 2026 for marking. A corrigendum of 29 September 2026 changes one word in the German version only. The consolidated text read is dated 27 July 2026 and lists only this amendment. *Interpretation:* the phase 2 caveat that the dates were confirmed only at recital level is resolved.
 
-**DIFC Regulation 10.** *Source says:* the official consolidated Regulations, Version No. 2, show "In force on 1 September 2023". The Commissioner has issued Regulation 10 materials: an Accreditation and Certification Framework, guidance and FAQs. Regulation 10.3.3 makes certification a precondition for commercial high risk processing. This replaces the first round finding that no such scheme was found. Open: whether amendments after Version No. 2 exist (the legal database was not read), and Framework sections 2.2 to 4, which were read only partly. Conflict: the Framework's informational notice versus its wording that certification is required.
+**EU codes, guidelines and standards.** *Source says:* Commission Implementing Decision (EU) 2026/2274 of 12 October 2026, published 14 October 2026, cites EN 18286:2026 (quality management); no other AI Act harmonised standard is cited, and the risk management, trustworthiness, cybersecurity and conformity assessment drafts are at enquiry or earlier stages. The General Purpose AI Code of Practice is still the July 2025 version; the Commission's opinion of 1 August 2025 found it adequate. The Article 50 guidelines were adopted and a code of practice on transparency of AI generated content was finalised in June 2026. Implementing Regulation (EU) 2026/1755 sets arrangements for AI Office model evaluations. The Article 6 classification guidelines are still a draft. Final serious incident guidance and any common specifications were not found.
 
-**Saudi drafts.** *Source says:* the SDAIA AI Ethics Principles read on the portal host are version 1.0 of September 2023 with no draft label; the 2025 edition and the page that calls it a draft were blocked by the site. The NCA AI Cybersecurity document is a draft (AICG-1:2026); the consultation was open from 5 July and closed after 5 August 2026; no final issue was seen. The National AI Risk Management Framework was launched on 14 July 2026 according to the Saudi Press Agency; the framework document itself was not read, and an earlier "April 2026" date is not supported. The Adoption Framework and Generative AI guidelines are blocked. *Interpretation:* none of the Saudi instruments can be called final from the retrieved evidence.
+**United States, United Kingdom, Singapore.** *Source says:* NIST has not released a revised AI RMF; AI 800-2 remains an initial public draft; OMB M-25-21 is current and M-26-04 adds procurement transparency for large language models. No UK government AI bill was announced; the AI Security Institute describes itself as a research body without regulatory powers; the AI Playbook is still the February 2025 edition; ATRS remains mandatory for in scope bodies. Singapore's agentic AI framework is at version 1.5 (May 2026, updated June 2026); IMDA lists a starter kit for testing agentic systems (October 2026, text not read) and an AI tester accreditation programme with five accredited firms listed.
+
+**Japan, Korea, China.** *Source says:* Japan's Digital Agency guideline DS-920 v2.0 replaced the May 2025 edition and applies from 1 September 2026; the second AI Basic Plan (July 2026) is current. Korea's AI Basic Act and decree are in force; the national law site now shows a newer decree number (August 2026, an amendment made through another law) whose content could not be read, and no final MSIT guideline on high impact or safety measures was found. In China, GB/T 45654-2025 is a recommended standard in force since 1 November 2025; no new mandatory AI national standard was found in the official catalogue; the anthropomorphic AI measures are in force from 15 July 2026.
+
+**DoH Responsible AI Standard.** *Source says:* still V1 (October 2025) with a stated revision date of October 2026; the DoH policies listing, blocked in phase 2, is now readable and lists only the 2018 AI policy. A companion Risk Management Protocol V1 was read (Section 6.1). *Interpretation:* the revision date falls this month; check again before relying on V1.
+
+**DIFC Regulation 10.** *Source says:* Consolidated Version No. 2 (in force 1 September 2023) is still the in force text. A consultation paper proposed amendments; comments closed 18 July 2026 and no enactment notice was seen on 16 October 2026.
+
+**Saudi instruments.** *Source says:* the NCA AI cybersecurity document remains a draft, titled guidelines, and states it is not mandatory. The SDAIA Ethics Principles official Arabic cover reads first edition, September 2023. The National AI Risk Management Framework, the generative AI guidelines and the adoption framework are on sdaia.gov.sa, which rejects the fetch tool; an official news headline describes the framework as a guidance reference. *Interpretation:* none of the Saudi instruments read is binding on its face.
 
 ---
 
@@ -278,13 +290,13 @@ Each item records the locator, the retrieval date and any source conflict. The f
 
 **Framing.** These are gaps in the evidence base retrieved, measured against what other frameworks in this table contain. They are not claims about what the UAE does or does not require. A UAE government entity may be subject to internal, sectoral or non public instruments that were not found.
 
-**G1. No federal binding test method in the instruments retrieved.**
-*Source says:* the Charter states a safety principle (`UAE-Federal-001`). The Adoption Guideline in Government Services describes evaluation against acceptance criteria and monitoring (`UAE-Federal-009`, `UAE-Federal-011`) and the Ethics Guidelines suggest bias testing and external audit for critical decisions (`UAE-Federal-018`, `UAE-Federal-021`), in "should" language. The Cabinet release ties adoption phases to performance and impact assessments without a method (`UAE-Federal-004`). Comparators that bind government bodies are OMB M-25-21 (`US-OMB-003`, `US-OMB-004`) and the DoH Standard for health (`UAE-AbuDhabi-DoH-003`).
-*Interpretation:* an entity in a federal setting would find guidance on acceptance criteria and testing but not a shared binding procedure. Whether the Adoption Guideline binds a particular entity is not stated in the text read; the entity's governance office would need to say.
+**G1. A federal binding duty exists for AI security testing, not for testing whether a system works well or fairly.**
+*Source says:* the National Cyber Security Policy for AI binds federal ministries and authorities and emirate government entities to test and validate AI systems, develop and test them securely, test them regularly, and assess risks and suppliers (`UAE-Federal-P3-01`, `UAE-Federal-P3-03` to `UAE-Federal-P3-06`); its before deployment wording is guidance (`UAE-Federal-P3-02`). The Adoption Guideline in Government Services describes evaluation against acceptance criteria and monitoring (`UAE-Federal-009`, `UAE-Federal-011`), and the Ethics Guidelines suggest bias testing and external audit for critical decisions (`UAE-Federal-018`, `UAE-Federal-021`), in "should" language. The Charter states a safety principle (`UAE-Federal-001`). Comparators that bind government bodies on performance testing are OMB M-25-21 (`US-OMB-003`, `US-OMB-004`), Japan's DS-920 for generative AI (`Japan-P3-01`) and, for health, the DoH Standard (`UAE-AbuDhabi-DoH-003`).
+*Interpretation:* a federal entity has a security testing duty but, in the texts read, no binding requirement to test accuracy, robustness for the task, or fairness before deployment. Whether the Adoption Guideline binds a particular entity is not stated in the text read. The policy refers compliance to the UAE Information Assurance Standard appendix, which was not found, so how the testing duty is checked in practice is not known from public sources.
 
-**G2. Binding testing text is sector, zone or data specific.**
-*Source says:* mandatory text covers Abu Dhabi health (`UAE-AbuDhabi-DoH-003` to `UAE-AbuDhabi-DoH-013`), Dubai health (`UAE-Dubai-025`, `UAE-Dubai-026`), commercial high risk processing in DIFC (`UAE-DIFC-ADGM-004`), personal data (`UAE-Federal-005`, `UAE-Federal-007`) and security testing in Dubai government (`UAE-Dubai-034`).
-*Interpretation:* for non health public sector uses such as eligibility, licensing, customs or inspection, the retrieved sources contain no AI specific binding equivalent. A cross sector baseline, if one exists, was not found.
+**G2. Beyond security, binding testing text is sector, zone or data specific.**
+*Source says:* mandatory text covers Abu Dhabi health (`UAE-AbuDhabi-DoH-003` to `UAE-AbuDhabi-DoH-013`), Dubai health (`UAE-Dubai-025`, `UAE-Dubai-026`), commercial high risk processing in DIFC (`UAE-DIFC-ADGM-004`), personal data (`UAE-Federal-005`, `UAE-Federal-007`), information security in Dubai government (`UAE-Dubai-034`) and AI security across government (`UAE-Federal-P3-01`).
+*Interpretation:* for non health public sector uses such as eligibility, licensing, customs or inspection, the retrieved sources contain no AI specific binding duty to test performance or fairness. A cross sector baseline for those properties, if one exists, was not found; the Dubai AI Policy for Government Entities may contain one, but its text is not published.
 
 **G3. Benchmarks and thresholds are not defined.**
 *Source says:* the DoH Standard requires validation against "established performance benchmarks" (`UAE-AbuDhabi-DoH-003`); the federal Ethics Guidelines say a fallback plan should include thresholds for acceptable results (`UAE-Federal-023`). The EU Act leaves metrics to the provider (`EU-AI-Act-018`); Singapore's Starter Kit and NIST describe how to set acceptance criteria (`Singapore-009`, `US-NIST-026`).
@@ -295,20 +307,20 @@ Each item records the locator, the retrieval date and any source conflict. The f
 *Interpretation:* independent testing capacity outside those two is an open question, in most jurisdictions here and not only in the UAE.
 
 **G5. Generative, agentic and frontier style evaluation.**
-*Source says:* no UAE row retrieved covers red teaming or capability evaluation. A draft Saudi guideline recommends it (rows † unverified). Comparators: `US-NIST-028`, `Japan-020`, `Singapore-007`, `UK-024`.
-*Interpretation:* the Cabinet announcement of a move toward agentic AI in federal services (`UAE-Federal-004`) contrasts with the absence of retrieved test guidance for agentic systems.
+*Source says:* the cyber security policy requires regular security testing of AI systems (`UAE-Federal-P3-04`), which the research agent coded as red teaming; no UAE row retrieved covers capability evaluation or misuse testing of generative or agentic systems specifically. Comparators: binding model evaluation for EU general purpose models with systemic risk (`EU-AI-Act-068`); guidance in `US-NIST-028`, `Japan-020`, `Singapore-007`, `UK-024`; Singapore's case studies of government agencies testing agents before rollout (`Singapore-035`, `Singapore-P3-01`); the Saudi NCA draft on guardrail testing before production (`Saudi-P3-03`).
+*Interpretation:* the Cabinet announcement of a move toward agentic AI in federal services (`UAE-Federal-004`) contrasts with the absence of retrieved test guidance for agentic systems. An agentic AI guide for government entities was reported but could not be read (Section 6.3).
 
 **G6. Vendor and black box systems.**
-*Source says:* OMB requires alternative test methods when internals are inaccessible (`US-OMB-003`). The DoH Standard requires secure code review and vulnerability scanning for proprietary and third party software (`UAE-AbuDhabi-DoH-007`).
-*Interpretation:* no general procurement stage testing requirement for AI was retrieved for UAE government buyers.
+*Source says:* OMB requires alternative test methods when internals are inaccessible (`US-OMB-003`) and, for large language models, asks agencies to obtain model and system cards with evaluation information when buying (`US-OMB-P3-01`). The UAE cyber security policy requires supply chain risk assessment (`UAE-Federal-P3-06`). The DoH Standard requires secure code review and vulnerability scanning for proprietary and third party software (`UAE-AbuDhabi-DoH-007`).
+*Interpretation:* no UAE procurement stage requirement was retrieved for obtaining a vendor's evaluation evidence on performance or bias.
 
 **G7. Language and local context performance.**
 *Source says:* no extracted test row requires language specific performance testing, such as Arabic dialects or bilingual use. Adjacent: dataset diversity (`UAE-AbuDhabi-DoH-008`), generalisation for under represented groups (`UAE-Dubai-002`), representativeness of training data (`UAE-Federal-028`).
 *Interpretation:* an absence in this table, not a claim that no source addresses it. For a bilingual public service it is a natural item for a test plan (checklist C2, D1).
 
 **G8. Post deployment monitoring outside health.**
-*Source says:* binding monitoring appears in OMB (`US-OMB-006`), the DoH Standard (`UAE-AbuDhabi-DoH-005`) and the DHA policy (`UAE-Dubai-028`). Federal guidance mentions monitoring (`UAE-Federal-011`). Federal law retrieved contains a periodic review of an impact assessment only (`UAE-Federal-006`).
-*Interpretation:* an incident or drift reporting duty for non health government AI was not found.
+*Source says:* binding monitoring appears in OMB (`US-OMB-006`), the DoH Standard (`UAE-AbuDhabi-DoH-005`) and the DHA policy (`UAE-Dubai-028`). Federal guidance mentions monitoring (`UAE-Federal-011`), and the cyber security policy requires regular security testing and the testing of changes (`UAE-Federal-P3-04`, `UAE-Federal-P3-07`). Federal law retrieved contains a periodic review of an impact assessment only (`UAE-Federal-006`).
+*Interpretation:* outside security, an incident or drift reporting duty for non health government AI was not found.
 
 **G9. Human oversight is required in places but its validation is not.**
 *Source says:* the table has {{n_OVER}} oversight validation test row(s): {{OVER_ids}}. Federal law gives a right to human review (`UAE-Federal-008`); the EU Act specifies oversight design (`EU-AI-Act-026`).
@@ -318,7 +330,7 @@ Each item records the locator, the retrieval date and any source conflict. The f
 *Source says:* Federal Decree Law 45 of 2021 does not apply to government data or government entities that control or process personal data (`UAE-Federal-034`).
 *Interpretation:* the impact assessment and security testing duties in that law (`UAE-Federal-005`, `UAE-Federal-007`) cannot be assumed to apply to a federal entity. The checklist treats them as conditional on entity type.
 
-**G11. Gaps in the evidence itself.** Blocked or unread: Canada's Directive and tools, much of SDAIA and NCA, the National Cyber Security Policy for AI PDF, the EU Official Journal pages 30 to 41, ISO clause text, the Korean decree, DoH listing pages, and Arabic originals of several documents. See Appendix B.
+**G11. Gaps in the evidence itself.** Still blocked or unread: Canada's Directive, ISO catalogue pages, most SDAIA documents, the Dubai AI Policy for Government Entities and the DESC AI Security Policy (not published), the UAE Information Assurance Standard appendix, the CBUAE AI guidance note, the Korean decree's current version, and Arabic originals of several UAE documents. See Appendix B.
 
 ---
 
@@ -336,33 +348,44 @@ Each item records the locator, the retrieval date and any source conflict. The f
 
 ## 10. Limitations
 
-1. **Language.** UAE and Saudi documents were mostly read in English. Arabic wording was obtained for some documents (Section 6.2); machine renderings are flagged. Chinese original rows rest on the original or on unofficial translation as the `language_read` column states.
-2. **Documents unavailable or not read.** See Appendix B and `docs/DOWNLOAD_LIST.md`.
-3. **Second hand reading.** The fetch tool often returns extracted text or summaries. Clause text is partly second hand; verification is the main check.
-4. **Ambiguity in "required".** Status coding is an application of the protocol. {{head_am}} headline test rows are ambiguous.
+1. **Language.** UAE and Saudi documents were mostly read in English. Arabic originals were read for some (Section 6.2, `language_read`); fetch tool renderings of Arabic, Chinese, Japanese and Korean text are machine renderings and are flagged. The Korean decree was read in a reference translation that renders one number illegibly.
+2. **Documents unavailable or not read.** Canada's Directive, ISO catalogue pages and SDAIA documents rejected the fetch tool on two dates; two files exceeded the size limit; several UAE instruments are referred to publicly but not published. See Appendix B and `docs/DOWNLOAD_LIST.md`.
+3. **Second hand reading.** The fetch tool often returns extracted text or summaries. In phase 3 some PDFs were read from the file the tool saved, by local text extraction or by reading rendered page images ({{n_local_pdf}} rows; `access_path`). This is disclosed per row; a reader who wants only text returned by the tool itself can exclude those rows.
+4. **Ambiguity in "required".** Status coding applies the protocol. {{head_am}} headline test rows are ambiguous. Section 5.5 adds a second, interpretive layer for non binding rows, coded from paraphrases. A "shall" in a policy is coded mandatory for the named entities even where no penalty or enforcement mechanism was seen.
 5. **Row counts are not weights.** Counts reflect extraction and document length.
-6. **Coding subjectivity.** Test type coding was done by AI subagents and not double coded.
-7. **Verification limits.** Verification checks rows against sources; it does not check the report narrative. {{n_not_rechecked}} rows were not rechecked in phase 2. The error rate is an estimate with a wide interval.
-8. **Access method disclosure.** Phase 1 verification used a browser style user agent for some downloads and a research subagent used one for a data feed. The phase 1 verdicts that depended on this were treated as provisional and re verified (Section 2.3). They are listed above by final status.
-9. **Time.** Status statements are as of 2026-10-12. Drafts and revisions may already be out of date. A column `next_review_by` and a script flag stale rows.
-10. **Scope.** The study covers testing provisions, not the whole of AI regulation, and not enforcement. Nothing here is legal advice.
+6. **Coding subjectivity.** Test type and stage were coded by AI subagents and not double coded; new phase 3 rows were coded by the agent that found them. Normative force was double coded, but both coders are models of the same family.
+7. **Verification limits.** Verification checks rows against sources; it does not check the report narrative. All verifiers are AI subagents; none is a human expert. The research agents tended to grade substantive faults as MINOR; the lead analyst re-graded {{p3_regraded}} of them, which is itself a judgement. Error rates are estimates with wide intervals.
+8. **Access method disclosure.** Phase 1 used a browser style user agent for some downloads; those verdicts were re verified in phase 2 (Section 2.3). Phase 3 used the EU Publications Office endpoint for EU texts and local reading of files saved by the fetch tool, both recorded per row.
+9. **Time.** Status statements are as of 16 October 2026 for items checked in phase 3 and 12 October 2026 otherwise. The DoH Standard revision falls due this month. The `next_review_by` column and a script flag stale rows.
+10. **Scope.** The study covers testing provisions, not the whole of AI regulation, and not enforcement. Non public instruments that may bind UAE entities could not be seen. Nothing here is legal advice.
 
 ---
 
 ## 11. What to double check before relying on this
 
-1. **Unverified rows.** Download the blocked documents listed in `docs/DOWNLOAD_LIST.md` and check the rows; the named earlier unverifiable rows are in Appendix A.
-2. **EU dates.** Read the Official Journal text of Regulation (EU) 2026/1744 pages 30 to 41 and the consolidated Articles 111 and 113.
-3. **DoH Standard.** Check the DoH listing for a revision (the document states October 2026).
-4. **DIFC.** Check the legal database for amendments after Version No. 2, and the remaining Framework sections.
-5. **Saudi.** Check whether SDAIA and NCA documents have moved from draft to final.
-6. **Status calls.** Review the ambiguous rows; they are judgement calls.
-7. **Framing of Section 8.** Do not present the gap analysis as a statement of UAE law or policy.
-8. **Legal review.** Have a qualified lawyer review anything you plan to rely on for compliance.
+1. **The UAE cyber security policy rows.** Read sections 1.2, 2 and 3.4 of the National Cyber Security Policy for AI v1.1 yourself and confirm the addressees and the "shall" wording (`UAE-Federal-P3-01` to `UAE-Federal-P3-08`). This is the finding most likely to be quoted, and it rests on text extracted from a saved PDF.
+2. **Unverified rows.** Download the blocked documents in `docs/DOWNLOAD_LIST.md`, starting with Canada's Directive.
+3. **DoH Standard.** Check the DoH site for a revision (the document states October 2026) and for the 2025 DoH AI Policy.
+4. **DIFC.** Check whether the June 2026 amendments to Regulation 10 have been enacted.
+5. **Korea.** Confirm the compute threshold exponent in the Korean original and what the August 2026 decree changed.
+6. **The NIST page name.** The NIST institute page now shows a different centre name (`US-NIST-046`); confirm on nist.gov before quoting it.
+7. **Status calls.** Review the ambiguous rows and the disputed normative force rows; they are judgement calls.
+8. **Framing of Section 8.** Do not present the gap analysis as a statement of UAE law or policy.
+9. **Legal review.** Have a qualified lawyer review anything you plan to rely on for compliance.
 
 ---
 
 ## Appendix A. Verification
+
+### A.1 Phase 3 (16 October 2026)
+
+{{p3_verification_table}}
+
+**Headline figure.** The fresh random sample is the figure to quote: {{p3f_err}} errors in {{p3f_verifiable}} verifiable rows ({{p3f_rate}}%, Wilson 95% interval {{p3f_lo}}% to {{p3f_hi}}%), with {{p3f_minor}} further rows having minor imprecision and {{p3f_blocked}} blocked. It was drawn from the corrected table, so it estimates the error rate of the table as published. New phase 3 rows: {{p3n_err}} errors in {{p3n_verifiable}} verifiable ({{p3n_rate}}%). Every error found was corrected through `data/verification/phase3/final/` patches before this report was generated.
+
+**The re-check of open rows.** The {{p3r_n}} rows phase 2 had left open are not a random sample: they are the rows that were hardest to read. As graded by the research agents they show {{p3a_err}} errors in {{p3a_verifiable}} verifiable rows ({{p3a_rate}}%); re-graded against the rubric, {{p3r_err}} ({{p3r_rate}}%, interval {{p3r_lo}}% to {{p3r_hi}}%). The re-graded figure is the honest one; the gap shows that agent graders under-call errors, which is a reason to read every verification figure here as a lower bound.
+
+### A.2 Phase 2 (12 October 2026)
 
 **Design.** Phase 1 checked a seeded random sample of 40 rows plus 5 targeted rows (seed 20261011) and reported {{p1_err}} error in {{p1_verifiable}} verifiable rows ({{p1_rate}}; interval {{p1_lo}}% to {{p1_hi}}%). Phase 2 re checked on the standard fetch tool only. Samples are reported separately because they were drawn differently: the cited row sample is not random (it is every row cited in the phase 1 prose and checklist), the fresh sample is a seeded random draw of rows not otherwise checked, targeted rows were chosen for doubt, and the new UAE rows were checked as a full set.
 
@@ -388,14 +411,14 @@ Resolved: {{named_resolved}}. Still unverified and excluded: {{named_open}}.
 
 ## Appendix B. Free resources to download and read
 
-All documents below are free. The complete, row linked list of documents to download by hand is `docs/DOWNLOAD_LIST.md`. In summary:
+All documents below are free. The complete, row linked list is `docs/DOWNLOAD_LIST.md`; phase 3 agents' lists are in `data/verification/phase3/p3notes_*.md`. In summary:
 
-- **Canada:** the Directive on Automated Decision Making, the Algorithmic Impact Assessment tool page and peer review guide (Treasury Board Secretariat).
-- **EU:** Regulation (EU) 2026/1744, Official Journal L of 24 July 2026, pages 30 to 41; the consolidated Articles 111 and 113; the General Purpose AI Code of Practice safety chapter.
-- **Saudi Arabia:** the SDAIA AI Ethics Principles 2025 PDF and the AI Ethics page, the Generative AI Guidelines and the AI Adoption Framework (SDAIA); the NCA AI Cybersecurity Guidelines draft and Arabic PDF.
-- **UAE:** the National Cyber Security Policy for AI PDF (Cyber Security Council); DoH policies listing pages in English and Arabic; Arabic originals of the Charter, the PDPL and the Adoption Guideline.
-- **Standards:** ISO/IEC catalogue entries and public summaries are free to read on the ISO site; full texts of standards may require payment and are not required for this work. Where a clause could not be read, the row says so.
-- **NIST:** the AI RMF Playbook pages that the fetch tool could not read.
+- **Canada:** the Directive on Automated Decision-Making, https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592 (save the page as PDF and note "Date modified"). All {{canada_rows}} Canada rows depend on it.
+- **ISO/IEC:** the free catalogue pages on iso.org for ISO/IEC 42001, 23894, 42005, 42006, TS 42119-2, TR 29119-11, TR 24027, 24029-2, 25059, TS 12791 and 27090 (abstract and status only; nothing needs buying).
+- **Saudi Arabia (sdaia.gov.sa):** Generative AI Guidelines for the Public, AI Adoption Framework, National AI Risk Management Framework executive summary and full text, Generative AI Guidelines for Government, AI Ethics Principles 2025 file; the NCA draft in Arabic; laws.boe.gov.sa search for AI.
+- **UAE:** the Central Bank guidance note on AI and machine learning (February 2026); the DFSA letter on AI risk management (June 2026); the agentic AI guide for government entities; the National AI Strategy 2031 PDF (over the size limit); the UAE Information Assurance Standard appendix E.2, if obtainable.
+- **Korea and China:** the Korean original of the current Enforcement Decree (law.go.kr); China's AI Safety Governance Framework 2.0 PDF (over the size limit); GB 45438-2025 from the national standards portal.
+- **Singapore and UK:** IMDA Starter Kit for Testing Agentic Systems (October 2026); IMDA press release of 14 October 2026; bills.parliament.uk for AI private members' bills.
 
 ---
 
@@ -414,7 +437,9 @@ All documents below are free. The complete, row linked list of documents to down
 | `docs/LICENSING.md` | Licence proposal and library and data licence record |
 | `data/evidence_table.csv` | {{n_rows}} rows with verification status and review dates |
 | `data/checklist.yaml`, `data/answers_schema.yaml` | The checklist and the questions the tool asks |
-| `data/time_sensitive.csv`, `data/uae_search_log.csv`, `data/uae_sources.csv` | Phase 2 records |
+| `data/time_sensitive.csv`, `data/uae_search_log.csv`, `data/uae_sources.csv` | Status items (phases 2 and 3) and phase 2 UAE search records |
+| `data/verification/phase3/` | Phase 3 rules, inputs, agent results, notes, patches, re-grades, access labels and the final independent check (`final/`) |
+| `data/coding/` | Normative force codebook, both coders' files, merged codes and agreement |
 | `data/verification/` | Raw verification results and rules |
 | `src/ikhtibar/` | Build scripts, engine, command line tool, staleness script |
 | `templates/test_evidence/` | Evidence templates per test type (proposals) |
