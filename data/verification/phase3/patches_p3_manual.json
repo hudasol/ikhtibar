@@ -214,5 +214,101 @@
   "value": "Sets who the policy applies to: ministries and federal authorities and non-government CII entities; emirate government entities are covered directly where there is no emirate CIIP programme, and otherwise the Emirate Lead carries out applicability assessment, enforcement and monitoring. Exceptions may be granted case by case by the Emirate or Sector Lead or the CSC. Compliance is monitored through UAE Information Assurance Standard controls (Appendix E.2), with status reported on the National Cyber Index Platform. Version 1.0 is dated September 2025; Version 1.1 (November 2025) revised the structure and statements. AI ethics, fairness and trustworthiness are stated to be outside scope (s1.1).",
   "source": "fv3patch_4",
   "reason": "verifier's correction shortened to the 120 word cell limit without changing meaning"
+ },
+ {
+  "row_id": "EU-AI-Act-002",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Phase 3 (16 Oct 2026): the operative amended Art 113 third para point (c)(ii) was read in the consolidated text; the earlier caveat about unconfirmed locators no longer applies.",
+  "source": "prose_review",
+  "reason": "row note contradicted the phase 3 finding"
+ },
+ {
+  "row_id": "EU-AI-Act-005",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Phase 3 (16 Oct 2026): the dates announced here were confirmed in the operative amended Art 113 (EU-AI-Act-001, EU-AI-Act-002).",
+  "source": "prose_review",
+  "reason": "row note contradicted the phase 3 finding"
+ },
+ {
+  "row_id": "Korea-014",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Phase 3 re-pointed this row to the KLRI reference English text of the Enforcement Decree, Art. 27(1)-(4), read with Act Art. 34(1). The measures themselves are set in the Act; the decree sets posting and five year record keeping.",
+  "source": "prose_review",
+  "reason": "stale note said unverified secondary source"
+ },
+ {
+  "row_id": "Saudi-019",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Phase 3: the English cover and Arabic web pages say Guidelines; the Arabic PDF cover was not seen, so the earlier statement that it says Controls is unconfirmed.",
+  "source": "prose_review",
+  "reason": "note contradicted phase 3 finding"
+ },
+ {
+  "row_id": "Saudi-020",
+  "field": "interpretation_note",
+  "op": "append",
+  "value": "Phase 3: the English cover and Arabic web pages say Guidelines; the Arabic PDF cover was not seen, so any statement that it says Controls is unconfirmed.",
+  "source": "prose_review",
+  "reason": "consistency with Saudi-019"
+ },
+ {
+  "row_id": "UAE-Federal-P3-01",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
+ },
+ {
+  "row_id": "UAE-Federal-P3-02",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
+ },
+ {
+  "row_id": "UAE-Federal-P3-03",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
+ },
+ {
+  "row_id": "UAE-Federal-P3-04",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
+ },
+ {
+  "row_id": "UAE-Federal-P3-05",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
+ },
+ {
+  "row_id": "UAE-Federal-P3-06",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
+ },
+ {
+  "row_id": "UAE-Federal-P3-07",
+  "field": "who_tests",
+  "op": "set",
+  "value": "The entity in scope under s1.2: ministries and federal authorities and non-government CII entities; for emirate government entities verifiers read s1.2 differently (directly only where no emirate CIIP programme exists, or directly or through the Emirate Lead). See UAE-Federal-P3-08.",
+  "source": "prose_review",
+  "reason": "neutral wording until a human reads s1.2; verifiers disagree"
  }
 ]

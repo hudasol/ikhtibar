@@ -193,7 +193,8 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
         ex = [r["row_id"] for r in E if r["primary_test_type"] == t and r["binding_status"] in ("mandatory", "conditional")]
         v[f"{t}_excluded_binding_ids"] = ", ".join(f"`{i}`" for i in ex) if ex else "none"
         v[f"n_{t}_all"] = sum(1 for r in T_all if r["primary_test_type"] == t)
-        v[f"{t}_ids"] = ", ".join(f"`{r['row_id']}` ({r['binding_status']})" for r in rs) if rs else "none"
+        v[f"{t}_ids"] = ", ".join(f"`{r['row_id']}`, {r['binding_status']}" for r in rs) if rs else "none"
+        v[f"{t}_rows_word"] = "row" if len(rs) == 1 else "rows"
     # matrix
     hdr = ["Family"] + TYPES
     mx = []
@@ -261,13 +262,16 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
         H = [r for r in T if r["binding_status"] in ("voluntary", "guidance", "ambiguous")]
         coded = [r for r in H if r["row_id"] in nf]
         cc = collections.Counter(nf[r["row_id"]] for r in coded)
+        full = {r["row_id"]: r for r in read_csv(nf_path)}
+        ag_h = sum(1 for r in coded if full[r["row_id"]]["coder_A"] == full[r["row_id"]]["coder_B"])
+        v["nf_agree_head"] = round(100 * ag_h / len(coded), 1) if coded else 0
         v.update(nf_n=len(coded), nf_uncoded=len(H) - len(coded), nf_obl=cc["OBLIGATION_WORDING"], nf_rec=cc["RECOMMENDS"],
                  nf_des=cc["DESCRIBES"], nf_dis=cc["DISPUTED"], nf_kappa=ns["cohens_kappa"], nf_agree=round(100 * ns["observed_agreement"], 1),
                  nf_total_coded=ns["n"])
         v["nf_summary"] = (f"Of {len(coded)} such headline rows, {cc['RECOMMENDS']} recommend a test, {cc['DESCRIBES']} only describe "
                            f"testing practice, {cc['OBLIGATION_WORDING']} use obligation wording in a document that is not binding or whose "
-                           f"force is unclear, and {cc['DISPUTED']} were disputed between the coders (agreement {v['nf_agree']}%, "
-                           f"Cohen's kappa {ns['cohens_kappa']}).")
+                           f"force is unclear, and {cc['DISPUTED']} were disputed between the coders (agreement {v['nf_agree_head']}% on these rows; "
+                           f"{v['nf_agree']}% and Cohen's kappa {ns['cohens_kappa']} on all {ns['n']} rows coded).")
         lines = []
         for fam in FAMS:
             fr = [r for r in coded if r["family"] == fam]
@@ -373,8 +377,6 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
     # compact view for the report: status counts per topic and check date; the full item list is docs/TIME_SENSITIVE.md
     agg = collections.OrderedDict()
     for r in tsens:
-        if r["item"].startswith("UAE-"):
-            continue
         key = (r["topic"], r["retrieved_on"])
         agg.setdefault(key, collections.Counter())[r["status"]] += 1
     lines = [[t, d, sum(c.values()), ", ".join(f"{k} {n}" for k, n in sorted(c.items()))] for (t, d), c in agg.items()]
@@ -513,10 +515,12 @@ def extra_values(rows, by, log, src, tsens):
     ev = {}
     ev.update(madoun_values())
     ev["brief_time"] = "\n".join([
-        "- **EU Omnibus (Regulation (EU) 2026/1744):** identity, 27 July 2026 entry into force and the 2 August 2027 sandbox date are confirmed. The Annex III date (2 December 2027) and Annex I date (2 August 2028) are confirmed at recital level only; the operative Article 113 text is still to be read.",
-        "- **DoH Responsible AI Standard:** V1, October 2025, revision due October 2026. Whether it has been revised is open (listing pages unreadable).",
-        "- **DIFC Regulation 10:** the Commissioner has published an accreditation and certification framework; amendments after Version No. 2 are unchecked.",
-        "- **Saudi drafts:** none can be called final from the evidence retrieved; the NCA document is a draft and SDAIA 2025 documents were blocked."])
+        "- **EU Act dates:** confirmed in operative text on 16 October 2026: Annex III high risk rules from 2 December 2027 and Annex I from 2 August 2028 (amended Article 113). The first harmonised standard (quality management) was cited on 14 October 2026.",
+        "- **UAE National Cyber Security Policy for AI:** confirm by hand whether it reaches emirate government entities directly; two verifiers read the scope clause differently.",
+        "- **DoH Responsible AI Standard:** still V1 (October 2025); its revision falls due in October 2026, so check for a new version. The DoH listing shows only the 2018 AI policy.",
+        "- **DIFC Regulation 10:** a June 2026 consultation proposes a pre-use safety verification test; not enacted as of 16 October 2026.",
+        "- **Saudi instruments:** none is final or binding on its face; the NCA document is a draft that says it is not mandatory, and SDAIA documents could not be read.",
+        "- **Moved UAE sources:** six UAE documents verified on 12 October could not be re-read on 16 October; open them in a browser before quoting."])
     lines = []
     for r in src:
         lines.append([r["zone"], r["title"][:90], r["issuer"][:50], r["language_read"][:70], r["reading_class"],
