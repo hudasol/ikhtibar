@@ -17,17 +17,17 @@ UNRELIABLE = {"UNVERIFIED_BLOCKED", "UNVERIFIABLE_OTHER", "UNVERIFIED_SOURCE_NOT
 FAMS = ["EU-AI-Act", "EU-GPAI-CoP", "EU-Standards", "ISO-IEC", "US-NIST", "US-OMB", "UK", "Canada", "Singapore", "Japan",
         "Korea", "China", "UAE-Federal", "UAE-DIFC-ADGM", "UAE-Dubai", "UAE-AbuDhabi-DoH", "UAE-AbuDhabi-Other", "Saudi"]
 FAM_LABEL = {
-    "EU-AI-Act": "EU AI Act (as amended 2026)", "EU-GPAI-CoP": "EU GPAI Code of Practice",
-    "EU-Standards": "EU harmonised standards (JTC 21)", "ISO-IEC": "ISO/IEC (catalogue level)",
-    "US-NIST": "NIST (AI RMF, Playbook, 600-1, 800-2 draft)", "US-OMB": "US OMB M-25-21",
+    "EU-AI-Act": "EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755", "EU-GPAI-CoP": "EU GPAI Code of Practice",
+    "EU-Standards": "EU harmonised standards (JTC 21, EN 18286 citation)", "ISO-IEC": "ISO/IEC (catalogue level)",
+    "US-NIST": "NIST (AI RMF, Playbook, 600-1, 800-2 draft)", "US-OMB": "US OMB M-25-21 and M-26-04",
     "UK": "UK (Playbook, ATRS, DSIT, AISI)", "Canada": "Canada Directive on Automated Decision-Making",
-    "Singapore": "Singapore (AI Verify, Starter Kit, frameworks)", "Japan": "Japan (Act, plan, guidelines, AISI)",
-    "Korea": "South Korea AI Basic Act", "China": "China (GenAI, algorithm, labelling, GB/T 45654)",
-    "UAE-Federal": "UAE federal (Charter, Strategy, Guidelines, Ethics, Cyber policy, PDPL)",
-    "UAE-DIFC-ADGM": "DIFC and ADGM (Reg 10, Framework, DP guidance)",
+    "Singapore": "Singapore (AI Verify, Starter Kit, frameworks)", "Japan": "Japan (Act, plan, guidelines, Digital Agency DS-920, AISI)",
+    "Korea": "South Korea AI Basic Act and Enforcement Decree", "China": "China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide)",
+    "UAE-Federal": "UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL)",
+    "UAE-DIFC-ADGM": "DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance)",
     "UAE-Dubai": "Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies)",
-    "UAE-AbuDhabi-DoH": "Abu Dhabi DoH (health sector)", "UAE-AbuDhabi-Other": "Abu Dhabi AI and Advanced Technology Council law",
-    "Saudi": "Saudi Arabia (SDAIA, NCA draft)"}
+    "UAE-AbuDhabi-DoH": "Abu Dhabi DoH (health sector: Standard and Protocol)", "UAE-AbuDhabi-Other": "Abu Dhabi AI and Advanced Technology Council law",
+    "Saudi": "Saudi Arabia (SDAIA, NCA draft, SFDA)"}
 TYPES = ["PERF", "ROB", "FAIR", "SEC", "RED", "CSAFE", "PRIV", "TRANS", "OVER", "RISK", "DATA", "CONF", "REAL", "MON", "GATE"]
 TYPE_NAME = {
     "PERF": "Performance and validity", "ROB": "Robustness and reliability", "FAIR": "Fairness and representativeness",
@@ -234,6 +234,24 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
           vrow("All rows checked, excluding new UAE rows", ver["all_checked_excluding_new_rows"]),
           vrow("Phase 1 provisional rows (re verified)", ver["phase1_provisional_rows"])]
     v["verification_table"] = md_table(vh, vr)
+    # phase 3
+    v3 = stats["verification_p3"]
+    v["p3_verification_table"] = md_table(vh, [
+        vrow("Phase 3 re-check of 175 open rows, as graded by research agents", v3["recheck_as_graded_by_agents"]),
+        vrow("Same rows, re-graded by the lead analyst against the rubric", v3["recheck_by_research_agents"]),
+        vrow("**Fresh random sample (seed 20261016), independent verifiers**", v3["fresh_random_seed_20261016"]),
+        vrow("New phase 3 rows, independent verifiers", v3["new_rows_phase3"]),
+        vrow("**All rows checked by phase 3 independent verifiers**", v3["final_independent_all"])])
+    for key, d in [("p3r", v3["recheck_by_research_agents"]), ("p3a", v3["recheck_as_graded_by_agents"]),
+                   ("p3f", v3["fresh_random_seed_20261016"]), ("p3n", v3["new_rows_phase3"]), ("p3x", v3["final_independent_all"])]:
+        v.update({f"{key}_n": d["n"], f"{key}_pass": d["PASS"], f"{key}_minor": d["MINOR"], f"{key}_err": d["ERROR"],
+                  f"{key}_blocked": d["UNVERIFIED_BLOCKED"], f"{key}_unverif": d["UNVERIFIABLE_OTHER"],
+                  f"{key}_verifiable": d["verifiable"], f"{key}_rate": d["error_rate_pct"],
+                  f"{key}_lo": d["error_ci95_pct"][0], f"{key}_hi": d["error_ci95_pct"][1], f"{key}_fault": d["any_fault_rate_pct"]})
+    v["p3_regraded"] = v3["n_regraded_minor_to_error"]
+    v["n_superseded"] = vs["SUPERSEDED"]
+    v["n_new_p3"] = sum(1 for r in rows if r["sample_type"] == "new_row_phase3")
+    v["n_new_unchecked"] = vs["NEW_UNCHECKED"]
     a = ver["all_checked_this_round"]
     v.update(ver_all_n=a["n_checked_rows"], ver_all_verifiable=a["verifiable"], ver_all_err=a["ERROR"], ver_all_rate=a["error_rate_pct"],
              ver_all_lo=a["error_ci95_pct"][0], ver_all_hi=a["error_ci95_pct"][1], ver_all_fault=a["any_fault_rate_pct"],
@@ -283,8 +301,11 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
         rs = [r for r in rows if r["family"] == fam and r["headline_include"] != "yes"]
         if rs:
             c = collections.Counter(r["verification_status"] for r in rs)
-            lines.append([FAM_LABEL[fam], len(rs), c["UNVERIFIED_BLOCKED"], c["UNVERIFIABLE_OTHER"], c["UNVERIFIED_SOURCE_NOT_READ"] + c["ERROR_WITHDRAWN"]])
-    v["unverified_by_family"] = md_table(["Family", "Rows", "Blocked", "Readable but passage not located", "Source not read or withdrawn"], lines)
+            other = len(rs) - c["UNVERIFIED_BLOCKED"] - c["UNVERIFIABLE_OTHER"] - c["UNVERIFIED_SOURCE_NOT_READ"] - c["ERROR_WITHDRAWN"]
+            lines.append([FAM_LABEL.get(fam, fam), len(rs), c["UNVERIFIED_BLOCKED"], c["UNVERIFIABLE_OTHER"],
+                          c["UNVERIFIED_SOURCE_NOT_READ"] + c["ERROR_WITHDRAWN"], other])
+    v["unverified_by_family"] = md_table(["Family", "Rows", "Blocked", "Readable but passage not located", "Source not read or withdrawn",
+                                          "Other (superseded, portal or secondary only, awaiting check)"], lines)
     # sensitivity
     sens = collections.Counter(r["binding_status"] for r in T_all)
     v["sensitivity_text"] = (f"If the {len(E)} excluded test rows were counted, the split would be {sens['mandatory'] + sens['conditional']} "

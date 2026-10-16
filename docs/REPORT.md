@@ -21,7 +21,7 @@ Prepared for Huda Mueen. Version 2.0 (phase 2), 12 October 2026. All retrieval d
 
 ## 1. Headline findings
 
-1. **Most testing content in the evidence base is not binding.** Of 246 headline test provisions, 73 (30%) are mandatory or conditional, 154 (63%) are voluntary or guidance, and 19 (8%) are ambiguous. Phase 1 reported 73 / 142 / 19 of 234. The two sets differ because phase 2 removed rows that could not be verified without a workaround (all Canada test rows and most EU Act rows beyond the first part of the text) and added UAE rows. The binding rows now come from: EU AI Act (as amended 2026) (26), Abu Dhabi DoH (health sector) (11), China (GenAI, algorithm, labelling, GB/T 45654) (10), DIFC and ADGM (Reg 10, Framework, DP guidance) (8), Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) (7), UAE federal (Charter, Strategy, Guidelines, Ethics, Cyber policy, PDPL) (4), US OMB M-25-21 (3), South Korea AI Basic Act (3), UK (Playbook, ATRS, DSIT, AISI) (1).
+1. **Most testing content in the evidence base is not binding.** Of 246 headline test provisions, 73 (30%) are mandatory or conditional, 154 (63%) are voluntary or guidance, and 19 (8%) are ambiguous. Phase 1 reported 73 / 142 / 19 of 234. The two sets differ because phase 2 removed rows that could not be verified without a workaround (all Canada test rows and most EU Act rows beyond the first part of the text) and added UAE rows. The binding rows now come from: EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755 (26), Abu Dhabi DoH (health sector: Standard and Protocol) (11), China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide) (10), DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance) (8), Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) (7), UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL) (4), US OMB M-25-21 and M-26-04 (3), South Korea AI Basic Act and Enforcement Decree (3), UK (Playbook, ATRS, DSIT, AISI) (1).
 2. **Where testing is binding, the text mostly requires that it happens and is documented, not how.** The EU Act requires testing of high risk systems against metrics and thresholds the provider defines (`EU-AI-Act-016`, `EU-AI-Act-018`). OMB M-25-21 requires pre deployment testing plans for high impact AI (`US-OMB-003`). The Abu Dhabi DoH Standard requires validation against "established performance benchmarks" and does not name them (`UAE-AbuDhabi-DoH-003`).
 3. **Independent testing is binding in a few places and mostly for health or certified processing.** The Dubai Health Authority AI in Healthcare Policy requires independent third party validation and independent audits of AI functionality (`UAE-Dubai-025`, `UAE-Dubai-026`). DIFC Regulation 10 makes certification a precondition for commercial high risk processing, and the Commissioner has published an accreditation and certification framework (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`). The DoH Standard provides for DoH audits (`UAE-AbuDhabi-DoH-013`). Independent evaluation of frontier models appears only in voluntary instruments (`UK-024`).
 4. **Binding red teaming is narrow.** There are 24 headline red teaming and dangerous capability rows and 3 of them are mandatory or conditional: `EU-AI-Act-063`, `EU-AI-Act-068`, `EU-AI-Act-071`. In the verified rows these are EU duties for general purpose models with systemic risk (model evaluation including adversarial testing) and the AI Office power to evaluate such models. Binding red teaming rows that are not yet verified, and so excluded: `EU-AI-Act-P3-20`†, `UAE-Federal-P3-04`†.
@@ -68,46 +68,46 @@ Phase 1 verification used a browser style user agent for some downloads, and a r
 
 | Family | Rows | Headline test rows | Primary text read | Catalogue only | Unofficial or machine translation | Unverified or unverifiable |
 |---|---|---|---|---|---|---|
-| EU AI Act (as amended 2026) | 78 | 28 | 78 | 0 | 0 | 4 |
+| EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755 | 78 | 28 | 78 | 0 | 0 | 4 |
 | EU GPAI Code of Practice | 13 | 7 | 13 | 0 | 0 | 4 |
-| EU harmonised standards (JTC 21) | 9 | 1 | 9 | 0 | 0 | 1 |
+| EU harmonised standards (JTC 21, EN 18286 citation) | 9 | 1 | 9 | 0 | 0 | 1 |
 | ISO/IEC (catalogue level) | 19 | 12 | 0 | 19 | 0 | 1 |
 | NIST (AI RMF, Playbook, 600-1, 800-2 draft) | 46 | 36 | 46 | 0 | 0 | 0 |
-| US OMB M-25-21 | 9 | 3 | 9 | 0 | 0 | 2 |
+| US OMB M-25-21 and M-26-04 | 9 | 3 | 9 | 0 | 0 | 2 |
 | UK (Playbook, ATRS, DSIT, AISI) | 36 | 19 | 36 | 0 | 0 | 3 |
 | Canada Directive on Automated Decision-Making | 24 | 0 | 24 | 0 | 0 | 24 |
 | Singapore (AI Verify, Starter Kit, frameworks) | 38 | 31 | 38 | 0 | 0 | 2 |
-| Japan (Act, plan, guidelines, AISI) | 28 | 13 | 28 | 0 | 0 | 4 |
-| South Korea AI Basic Act | 19 | 5 | 16 | 0 | 3 | 2 |
-| China (GenAI, algorithm, labelling, GB/T 45654) | 33 | 15 | 13 | 1 | 18 | 3 |
-| UAE federal (Charter, Strategy, Guidelines, Ethics, Cyber policy, PDPL) | 42 | 15 | 39 | 3 | 0 | 12 |
-| DIFC and ADGM (Reg 10, Framework, DP guidance) | 29 | 13 | 29 | 0 | 0 | 4 |
+| Japan (Act, plan, guidelines, Digital Agency DS-920, AISI) | 28 | 13 | 28 | 0 | 0 | 4 |
+| South Korea AI Basic Act and Enforcement Decree | 19 | 5 | 16 | 0 | 3 | 2 |
+| China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide) | 33 | 15 | 13 | 1 | 18 | 3 |
+| UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL) | 42 | 15 | 39 | 3 | 0 | 12 |
+| DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance) | 29 | 13 | 29 | 0 | 0 | 4 |
 | Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 40 | 20 | 39 | 0 | 0 | 1 |
-| Abu Dhabi DoH (health sector) | 18 | 13 | 18 | 0 | 0 | 4 |
+| Abu Dhabi DoH (health sector: Standard and Protocol) | 18 | 13 | 18 | 0 | 0 | 4 |
 | Abu Dhabi AI and Advanced Technology Council law | 2 | 0 | 2 | 0 | 0 | 0 |
-| Saudi Arabia (SDAIA, NCA draft) | 39 | 15 | 38 | 0 | 0 | 23 |
+| Saudi Arabia (SDAIA, NCA draft, SFDA) | 39 | 15 | 38 | 0 | 0 | 23 |
 | **Total** | **522** | **246** | **475** | **23** | **21** | **94** |
 
 **Source says (about access).** Some sources could not be read. Rows are unverified when the issuing site rejected the standard fetch tool (Canada Treasury Board Secretariat, parts of SDAIA and NCA), when a permission timeout stopped a fetch, when the fetch tool truncated a very long document (the EUR-Lex consolidated Act is readable only to about Article 38), or when a passage could not be located. Block types among the unverified rows: none: 61, site_rejected: 32, truncated_or_unreadable: 1.
 
-| Family | Rows | Blocked | Readable but passage not located | Source not read or withdrawn |
-|---|---|---|---|---|
-| EU AI Act (as amended 2026) | 4 | 0 | 0 | 0 |
-| EU GPAI Code of Practice | 4 | 0 | 0 | 0 |
-| EU harmonised standards (JTC 21) | 1 | 0 | 0 | 0 |
-| ISO/IEC (catalogue level) | 1 | 1 | 0 | 0 |
-| US OMB M-25-21 | 2 | 0 | 0 | 0 |
-| UK (Playbook, ATRS, DSIT, AISI) | 3 | 0 | 0 | 0 |
-| Canada Directive on Automated Decision-Making | 24 | 24 | 0 | 0 |
-| Singapore (AI Verify, Starter Kit, frameworks) | 2 | 0 | 0 | 0 |
-| Japan (Act, plan, guidelines, AISI) | 4 | 0 | 0 | 0 |
-| South Korea AI Basic Act | 2 | 0 | 0 | 0 |
-| China (GenAI, algorithm, labelling, GB/T 45654) | 3 | 0 | 1 | 0 |
-| UAE federal (Charter, Strategy, Guidelines, Ethics, Cyber policy, PDPL) | 12 | 0 | 0 | 0 |
-| DIFC and ADGM (Reg 10, Framework, DP guidance) | 4 | 0 | 0 | 0 |
-| Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 1 | 0 | 0 | 0 |
-| Abu Dhabi DoH (health sector) | 4 | 0 | 0 | 0 |
-| Saudi Arabia (SDAIA, NCA draft) | 23 | 7 | 0 | 0 |
+| Family | Rows | Blocked | Readable but passage not located | Source not read or withdrawn | Other (superseded, portal or secondary only, awaiting check) |
+|---|---|---|---|---|---|
+| EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755 | 4 | 0 | 0 | 0 | 4 |
+| EU GPAI Code of Practice | 4 | 0 | 0 | 0 | 4 |
+| EU harmonised standards (JTC 21, EN 18286 citation) | 1 | 0 | 0 | 0 | 1 |
+| ISO/IEC (catalogue level) | 1 | 1 | 0 | 0 | 0 |
+| US OMB M-25-21 and M-26-04 | 2 | 0 | 0 | 0 | 2 |
+| UK (Playbook, ATRS, DSIT, AISI) | 3 | 0 | 0 | 0 | 3 |
+| Canada Directive on Automated Decision-Making | 24 | 24 | 0 | 0 | 0 |
+| Singapore (AI Verify, Starter Kit, frameworks) | 2 | 0 | 0 | 0 | 2 |
+| Japan (Act, plan, guidelines, Digital Agency DS-920, AISI) | 4 | 0 | 0 | 0 | 4 |
+| South Korea AI Basic Act and Enforcement Decree | 2 | 0 | 0 | 0 | 2 |
+| China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide) | 3 | 0 | 1 | 0 | 2 |
+| UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL) | 12 | 0 | 0 | 0 | 12 |
+| DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance) | 4 | 0 | 0 | 0 | 4 |
+| Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 1 | 0 | 0 | 0 | 1 |
+| Abu Dhabi DoH (health sector: Standard and Protocol) | 4 | 0 | 0 | 0 | 4 |
+| Saudi Arabia (SDAIA, NCA draft, SFDA) | 23 | 7 | 0 | 0 | 16 |
 
 ---
 
@@ -150,23 +150,23 @@ The taxonomy was built bottom up. The first extraction pass produced a free text
 
 | Family | Headline test rows | M | C | V | G | A | Binding where triggered (M+C) | Test rows excluded as unverified |
 |---|---|---|---|---|---|---|---|---|
-| EU AI Act (as amended 2026) | 28 | 0 | 26 | 2 | 0 | 0 | 26 of 28 | 3 |
+| EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755 | 28 | 0 | 26 | 2 | 0 | 0 | 26 of 28 | 3 |
 | EU GPAI Code of Practice | 7 | 0 | 0 | 7 | 0 | 0 | 0 of 7 | 2 |
-| EU harmonised standards (JTC 21) | 1 | 0 | 0 | 1 | 0 | 0 | 0 of 1 | 0 |
+| EU harmonised standards (JTC 21, EN 18286 citation) | 1 | 0 | 0 | 1 | 0 | 0 | 0 of 1 | 0 |
 | ISO/IEC (catalogue level) | 12 | 0 | 0 | 1 | 11 | 0 | 0 of 12 | 0 |
 | NIST (AI RMF, Playbook, 600-1, 800-2 draft) | 36 | 0 | 0 | 1 | 35 | 0 | 0 of 36 | 0 |
-| US OMB M-25-21 | 3 | 0 | 3 | 0 | 0 | 0 | 3 of 3 | 0 |
+| US OMB M-25-21 and M-26-04 | 3 | 0 | 3 | 0 | 0 | 0 | 3 of 3 | 0 |
 | UK (Playbook, ATRS, DSIT, AISI) | 19 | 0 | 1 | 5 | 9 | 4 | 1 of 19 | 3 |
 | Canada Directive on Automated Decision-Making | 0 | 0 | 0 | 0 | 0 | 0 | 0 of 0 | 12 |
 | Singapore (AI Verify, Starter Kit, frameworks) | 31 | 0 | 0 | 12 | 18 | 1 | 0 of 31 | 2 |
-| Japan (Act, plan, guidelines, AISI) | 13 | 0 | 0 | 0 | 13 | 0 | 0 of 13 | 2 |
-| South Korea AI Basic Act | 5 | 0 | 3 | 2 | 0 | 0 | 3 of 5 | 1 |
-| China (GenAI, algorithm, labelling, GB/T 45654) | 15 | 5 | 5 | 5 | 0 | 0 | 10 of 15 | 2 |
-| UAE federal (Charter, Strategy, Guidelines, Ethics, Cyber policy, PDPL) | 15 | 1 | 3 | 0 | 10 | 1 | 4 of 15 | 9 |
-| DIFC and ADGM (Reg 10, Framework, DP guidance) | 13 | 0 | 8 | 0 | 4 | 1 | 8 of 13 | 3 |
+| Japan (Act, plan, guidelines, Digital Agency DS-920, AISI) | 13 | 0 | 0 | 0 | 13 | 0 | 0 of 13 | 2 |
+| South Korea AI Basic Act and Enforcement Decree | 5 | 0 | 3 | 2 | 0 | 0 | 3 of 5 | 1 |
+| China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide) | 15 | 5 | 5 | 5 | 0 | 0 | 10 of 15 | 2 |
+| UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL) | 15 | 1 | 3 | 0 | 10 | 1 | 4 of 15 | 9 |
+| DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance) | 13 | 0 | 8 | 0 | 4 | 1 | 8 of 13 | 3 |
 | Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 20 | 5 | 2 | 1 | 11 | 1 | 7 of 20 | 0 |
-| Abu Dhabi DoH (health sector) | 13 | 8 | 3 | 0 | 0 | 2 | 11 of 13 | 4 |
-| Saudi Arabia (SDAIA, NCA draft) | 15 | 0 | 0 | 0 | 6 | 9 | 0 of 15 | 22 |
+| Abu Dhabi DoH (health sector: Standard and Protocol) | 13 | 8 | 3 | 0 | 0 | 2 | 11 of 13 | 4 |
+| Saudi Arabia (SDAIA, NCA draft, SFDA) | 15 | 0 | 0 | 0 | 6 | 9 | 0 of 15 | 22 |
 | **All** | **246** | **19** | **54** | **37** | **117** | **19** | **73 of 246** | **65** |
 
 **Source says (selected, verified rows).**
@@ -685,24 +685,24 @@ Resolved: `EU-AI-Act-034`, `EU-AI-Act-044`, `EU-AI-Act-068`, `Saudi-008`, `Singa
 
 **Rows excluded from headline counts, by family.**
 
-| Family | Rows | Blocked | Readable but passage not located | Source not read or withdrawn |
-|---|---|---|---|---|
-| EU AI Act (as amended 2026) | 4 | 0 | 0 | 0 |
-| EU GPAI Code of Practice | 4 | 0 | 0 | 0 |
-| EU harmonised standards (JTC 21) | 1 | 0 | 0 | 0 |
-| ISO/IEC (catalogue level) | 1 | 1 | 0 | 0 |
-| US OMB M-25-21 | 2 | 0 | 0 | 0 |
-| UK (Playbook, ATRS, DSIT, AISI) | 3 | 0 | 0 | 0 |
-| Canada Directive on Automated Decision-Making | 24 | 24 | 0 | 0 |
-| Singapore (AI Verify, Starter Kit, frameworks) | 2 | 0 | 0 | 0 |
-| Japan (Act, plan, guidelines, AISI) | 4 | 0 | 0 | 0 |
-| South Korea AI Basic Act | 2 | 0 | 0 | 0 |
-| China (GenAI, algorithm, labelling, GB/T 45654) | 3 | 0 | 1 | 0 |
-| UAE federal (Charter, Strategy, Guidelines, Ethics, Cyber policy, PDPL) | 12 | 0 | 0 | 0 |
-| DIFC and ADGM (Reg 10, Framework, DP guidance) | 4 | 0 | 0 | 0 |
-| Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 1 | 0 | 0 | 0 |
-| Abu Dhabi DoH (health sector) | 4 | 0 | 0 | 0 |
-| Saudi Arabia (SDAIA, NCA draft) | 23 | 7 | 0 | 0 |
+| Family | Rows | Blocked | Readable but passage not located | Source not read or withdrawn | Other (superseded, portal or secondary only, awaiting check) |
+|---|---|---|---|---|---|
+| EU AI Act (as amended 2026), Art 50 code, Reg 2026/1755 | 4 | 0 | 0 | 0 | 4 |
+| EU GPAI Code of Practice | 4 | 0 | 0 | 0 | 4 |
+| EU harmonised standards (JTC 21, EN 18286 citation) | 1 | 0 | 0 | 0 | 1 |
+| ISO/IEC (catalogue level) | 1 | 1 | 0 | 0 | 0 |
+| US OMB M-25-21 and M-26-04 | 2 | 0 | 0 | 0 | 2 |
+| UK (Playbook, ATRS, DSIT, AISI) | 3 | 0 | 0 | 0 | 3 |
+| Canada Directive on Automated Decision-Making | 24 | 24 | 0 | 0 | 0 |
+| Singapore (AI Verify, Starter Kit, frameworks) | 2 | 0 | 0 | 0 | 2 |
+| Japan (Act, plan, guidelines, Digital Agency DS-920, AISI) | 4 | 0 | 0 | 0 | 4 |
+| South Korea AI Basic Act and Enforcement Decree | 2 | 0 | 0 | 0 | 2 |
+| China (GenAI, algorithm, labelling, GB/T 45654, TC260 guide) | 3 | 0 | 1 | 0 | 2 |
+| UAE federal (Charter, Strategy, Guidelines, Ethics, CSC AI security policy, PDPL) | 12 | 0 | 0 | 0 | 12 |
+| DIFC and ADGM (Reg 10, Framework, 2026 draft amendments, DP guidance) | 4 | 0 | 0 | 0 | 4 |
+| Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 1 | 0 | 0 | 0 | 1 |
+| Abu Dhabi DoH (health sector: Standard and Protocol) | 4 | 0 | 0 | 0 | 4 |
+| Saudi Arabia (SDAIA, NCA draft, SFDA) | 23 | 7 | 0 | 0 | 16 |
 
 ---
 

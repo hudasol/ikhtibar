@@ -87,6 +87,14 @@ def compute(rows=None):
         "new_rows_phase3": {"n": len(p3n), **verdict_tally(p3n, "p3_final_verdict")},
         "final_independent_all": {"n": len(p3f) + len(p3n), **verdict_tally(p3f + p3n, "p3_final_verdict")},
     }
+    rc_path = D / "verification" / "phase3" / "verdict_reclass.csv"
+    n_rc = len(load(rc_path)) if rc_path.exists() else 0
+    ag = dict(S["verification_p3"]["recheck_by_research_agents"])
+    ag.update(MINOR=ag["MINOR"] + n_rc, ERROR=ag["ERROR"] - n_rc)
+    ag["error_rate_pct"] = round(100 * ag["ERROR"] / ag["verifiable"], 1) if ag["verifiable"] else None
+    ag["error_ci95_pct"] = wilson(ag["ERROR"], ag["verifiable"])
+    S["verification_p3"]["recheck_as_graded_by_agents"] = ag
+    S["verification_p3"]["n_regraded_minor_to_error"] = n_rc
     S["verification"]["raw_verdict_counts_all"] = dict(C(r["verdict_raw"] for r in rows if r["verdict_raw"]))
     S["verification"]["date_only_minor_reclassified"] = sum(1 for r in rows if r["verdict_raw"] == "MINOR" and r["verdict_adjusted"] == "PASS")
     S["unverified_by_family"] = dict(C(r["family"] for r in rows if r["verification_status"].startswith("UNVERIFI")))
