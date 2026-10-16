@@ -78,4 +78,4 @@ Proposal only, to be confirmed by the author: documents and data under CC BY 4.0
 
 ## Author
 
-Huda Mueen. Analysis prepared with Claude AI research assistance under her direction.
+Huda Mueen. Analysis prepared with AI research assistance under her direction.
