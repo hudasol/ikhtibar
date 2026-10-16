@@ -249,6 +249,7 @@ def build_values(rows, by, stats, tsens, uae_log, uae_src):
                   f"{key}_verifiable": d["verifiable"], f"{key}_rate": d["error_rate_pct"],
                   f"{key}_lo": d["error_ci95_pct"][0], f"{key}_hi": d["error_ci95_pct"][1], f"{key}_fault": d["any_fault_rate_pct"]})
     v["p3_regraded"] = v3["n_regraded_minor_to_error"]
+    v["n_local_pdf"] = sum(1 for r in rows if r["access_path"].startswith("standard_fetch_saved_pdf"))
     # normative force of non-binding test rows (two independent coders), headline rows only
     nf_path = DATA / "coding" / "normative_force.csv"
     if nf_path.exists():

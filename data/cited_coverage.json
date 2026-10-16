@@ -30,11 +30,7 @@
   "China-P3-02",
   "EU-AI-Act-001",
   "EU-AI-Act-002",
-  "EU-AI-Act-003",
   "EU-AI-Act-005",
-  "EU-AI-Act-006",
-  "EU-AI-Act-007",
-  "EU-AI-Act-008",
   "EU-AI-Act-009",
   "EU-AI-Act-011",
   "EU-AI-Act-014",
@@ -101,6 +97,13 @@
   "Saudi-020",
   "Saudi-021",
   "Saudi-023",
+  "Saudi-P3-01",
+  "Saudi-P3-03",
+  "Saudi-P3-06",
+  "Saudi-P3-07",
+  "Saudi-P3-14",
+  "Saudi-P3-15",
+  "Saudi-P3-16",
   "Singapore-005",
   "Singapore-006",
   "Singapore-007",
@@ -139,7 +142,9 @@
   "UAE-AbuDhabi-DoH-012",
   "UAE-AbuDhabi-DoH-013",
   "UAE-AbuDhabi-DoH-014",
+  "UAE-AbuDhabi-DoH-P3-01",
   "UAE-AbuDhabi-DoH-P3-03",
+  "UAE-AbuDhabi-DoH-P3-04",
   "UAE-AbuDhabi-Other-001",
   "UAE-AbuDhabi-Other-002",
   "UAE-DIFC-ADGM-001",
@@ -226,6 +231,8 @@
   "UAE-Federal-P3-02",
   "UAE-Federal-P3-03",
   "UAE-Federal-P3-04",
+  "UAE-Federal-P3-06",
+  "UAE-Federal-P3-07",
   "UAE-Federal-P3-08",
   "UK-003",
   "UK-004",
@@ -263,10 +270,10 @@
   "US-OMB-P3-02"
  ],
  "by_status": {
-  "NEW_UNCHECKED": 20,
+  "NEW_UNCHECKED": 31,
   "SUPERSEDED": 2,
   "UNVERIFIED_BLOCKED": 21,
-  "VERIFIED": 137,
-  "VERIFIED_CORRECTED": 81
+  "VERIFIED": 134,
+  "VERIFIED_CORRECTED": 80
  }
 }
