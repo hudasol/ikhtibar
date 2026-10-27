@@ -67,10 +67,12 @@ def values():
         x = e["baselines"][k]
         rows.append([t, x["accuracy"], x["scenarios_exact_match_pct"], x["wrongly_excluded"], x["wrongly_applied"], x["unknown_returned"]])
     v["ev_table"] = _t(["Method", "Item accuracy (%)", "Scenarios matched exactly (%)", "Wrongly excluded", "Wrongly applied", "Returned unknown"], rows)
+    v["ev_struct_acc"] = e["baselines"]["structure_only"]["accuracy"]
     v["ev_sim_profiles"], v["ev_sim_steps"], v["ev_sim_flips"] = sim["profiles"], sim["monotonicity_steps_checked"], sim["applies_to_not_apply_flips"]
     v["ev_invalid_rejected"] = sum(x["engine"] == "rejected with a message" for x in e["invalid_inputs"])
     v["ev_invalid_crashed"] = sum(x["engine"] == "crashed" for x in e["invalid_inputs"])
     v["ev_invalid_n"] = len(e["invalid_inputs"])
+    v["ev_invalid_accepted"] = sum(x["engine"] == "accepted" for x in e["invalid_inputs"])
     i0 = _j("data/evaluation/initial_run/results.json")
     v["ev0_acc"], v["ev0_ok"], v["ev0_wex"] = i0["engine"]["accuracy"], i0["engine"]["agree_with_expected"], i0["engine"]["wrongly_excluded"]
     v["ev0_exact"] = i0["engine"]["scenarios_exact_match"]
@@ -86,7 +88,10 @@ def values():
     v["ag_table"] = _t(["Field", "Original and blind coder 2: agreement % (kappa)", "Original and blind coder 3", "Blind coder 2 and 3", "Krippendorff alpha, 3 coders"], rows)
     v["ag_n"] = a["n"]
     v["ag_odd_original"] = a["binding5_odd_one_out"].get("original", 0)
-    v["ag_odd_total"] = sum(a["binding5_odd_one_out"].values())
+    v["ag_odd_total"] = sum(n for k, n in a["binding5_odd_one_out"].items() if k != "all_three_differ")
+    v["ag_all_differ"] = a["binding5_odd_one_out"].get("all_three_differ", 0)
+    amb = {k: c.get("ambiguous", 0) for k, c in f["binding5"]["label_counts"].items()}
+    v["ag_amb_orig"], v["ag_amb_b2"], v["ag_amb_b3"] = amb["original"], amb["coder2"], amb["coder3"]
     v["ag_k_blind"] = f["binding5"]["pairs"]["coder2|coder3"]["kappa"]
     v["ag_k_orig"] = f["binding5"]["pairs"]["original|coder2"]["kappa"]
     ks = sorted([f["binding5"]["pairs"]["original|coder2"]["kappa"], f["binding5"]["pairs"]["original|coder3"]["kappa"]])
@@ -115,6 +120,9 @@ def values():
     v["cp_pos"], v["cp_in"], v["cp_rec"] = cp["confirmed_positive"], cp["confirmed_positive_in_table"], cp["recall_confirmed_pct"]
     v["cp_ci"], v["cp_unres"], v["cp_unres_in"] = _ci(cp["recall_confirmed_ci95"]), cp["unresolved"], cp["unresolved_in_table"]
     v["cp_lb"], v["cp_ref"], v["cp_out"] = cp["recall_lower_bound_pct"], cp["reference_candidates"], cp["out_of_frame"]
+    jur = cp["unresolved_not_in_table_by_jurisdiction"]
+    v["cp_unres_miss"] = cp["unresolved_not_in_table"]
+    v["cp_unres_miss_uae"] = sum(n for k, n in jur.items() if k.startswith("UAE"))
     v["cp_missed"] = "; ".join(m["title"] for m in cp["missed_confirmed"])
 
     v["vf_sampled"], v["vf_read"], v["vf_read_pct"] = vf["sampled"], vf["readable"], vf["readable_pct_of_sample"]
@@ -125,6 +133,16 @@ def values():
     v["vf_fault"], v["vf_fault_pct"], v["vf_fault_ci"] = vf["any_fault_strict"], vf["any_fault_strict_pct"], _ci(vf["any_fault_strict_ci95"])
     pp = vf["pooled_with_phase3_fresh_sample"]
     v["vf_pool"] = f"{pp['errors']} of {pp['readable']} ({pp['pct']}%, 95% interval {_ci(pp['ci95'])})"
+    fam = vf["by_family"]
+    eu = [k for k in fam if k.startswith("EU")]
+    v["vf_eu_sampled"] = sum(fam[k]["sampled"] for k in eu)
+    v["vf_eu_read"] = sum(fam[k]["readable"] for k in eu)
     v["vf_err_rows"] = ", ".join(vf["error_rows_strict"])
     v["vf_bound_hi"] = vf["bounds_all_sampled_strict_error_pct"]["all_of_unreadable_in_error"]
+    import csv
+    with open(ROOT / "data" / "evidence_table.csv", encoding="utf-8", newline="") as fh:
+        tab = list(csv.DictReader(fh))
+    v["n_translated"] = sum(("translat" in r["language_read"].lower() or "fetch" in r["language_read"].lower()) for r in tab)
+    v["n_iso"] = sum(r["family"] == "ISO-IEC" for r in tab)
+    v["n_iso_head"] = sum(r["family"] == "ISO-IEC" and r["row_type"] == "test" and r["headline_include"] == "yes" for r in tab)
     return v

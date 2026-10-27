@@ -34,7 +34,8 @@ Interpreted means the analyst's judgement. It is labelled as such in the report.
 ## What is still open
 
 - 32 rows rest on sources that rejected the standard fetch tool, mainly Canada's Directive on Automated Decision-Making, and 1 are readable but could not be located. They are not worked around. The documents to download by hand are in `docs/DOWNLOAD_LIST.md` and Appendix B of the report.
-- Seven sampled UAE and ISO rows could not be re-read on 16 October because their sources moved or exceeded the fetch limit; they keep their earlier verified status with a note.
+- Seven sampled UAE and ISO rows could not be re-read on 16 October because their sources moved or exceeded the fetch limit; on 28 October five of the six moved UAE sources were read again, and UAE-Dubai-008 is still too large for the fetch tool.
+- About 39% of the phase 4 fresh verification sample could not be read in the working session, so its error rate describes readable rows only (`docs/EVALUATION.md`).
 - The scope of the UAE National Cyber Security Policy for AI for emirate government entities was read differently by two verifiers; check it by hand.
 - The DoH Responsible AI Standard revision falls due in October 2026; the DIFC Regulation 10 amendments are consulted on but not enacted; the Saudi instruments are not final. See `docs/TIME_SENSITIVE.md`.
 - Some phase 3 rows were read from PDFs saved by the fetch tool and extracted locally; this is recorded per row in `access_path`.

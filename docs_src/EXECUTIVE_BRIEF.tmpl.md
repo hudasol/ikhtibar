@@ -21,7 +21,7 @@ These are gaps in the documents retrieved. They are not statements of what the U
 
 ## How reliable is it
 
-Separate verifier agents checked a fresh random sample of {{p3f_n}} rows on 16 October 2026: {{p3f_err}} errors in {{p3f_verifiable}} verifiable rows under a strict rubric ({{p3f_rate}}%, 95% interval {{p3f_lo}}% to {{p3f_hi}}%; the interval is wide because the sample is small). All {{p3n_n}} new rows were also checked ({{p3n_err}} errors in {{p3n_verifiable}}). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, {{p3r_err}} of {{p3r_verifiable}} had errors before correction. {{n_unreliable_rows}} rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
+Phase 4 (28 October) added a second fresh sample with its own rate and caveats (`docs/EVALUATION.md`). Separate verifier agents checked a fresh random sample of {{p3f_n}} rows on 16 October 2026: {{p3f_err}} errors in {{p3f_verifiable}} verifiable rows under a strict rubric ({{p3f_rate}}%, 95% interval {{p3f_lo}}% to {{p3f_hi}}%; the interval is wide because the sample is small). All {{p3n_n}} new rows were also checked ({{p3n_err}} errors in {{p3n_verifiable}}). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, {{p3r_err}} of {{p3r_verifiable}} had errors before correction. {{n_unreliable_rows}} rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
 
 ## Items to confirm
 

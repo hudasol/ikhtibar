@@ -59,8 +59,8 @@ Work is done in small commits straight to main, with the full test suite, `check
 | G6 | Closed for the headline | Document level and family level weighting and a cluster bootstrap are reported. |
 | G7 | Closed | 94 preregistered scenarios, four naive baselines, 3000 profile simulation. Two defects found and fixed; one documented conservative divergence (D3). |
 | G8 | Open, author action | 32 rows still blocked. |
-| G9 | Mostly closed | Five of six moved UAE sources were re read on 28 October (UAE-Federal-009, 012, 021, 027, 031); UAE-Dubai-008 is still blocked by file size and has a date conflict recorded. |
-| G10 | Open | Of 181 status items only 22 were re read on 28 October and none changed; 154 could not be fetched in the session. A retry is scheduled. The DoH revision, DIFC Regulation 10 enactment, EU, Korea decree and Canada versions are not determined. |
+| G9 | Mostly closed | Five of six moved UAE sources were reread on 28 October (UAE-Federal-009, 012, 021, 027, 031); UAE-Dubai-008 is still blocked by file size and has a date conflict recorded. |
+| G10 | Open | Of 181 status items only 22 were reread on 28 October and none changed; 154 could not be fetched in the session and 5 were not found. A retry is scheduled. The DoH revision, DIFC Regulation 10 enactment, EU, Korea decree and Canada versions are not determined. |
 | G11 | Draft done | `paper/` holds a generated draft (nine pages). Related work is thin for Gulf governance and public sector assurance, and most works were read at abstract level. |
 | G12 | Partly closed | Data sheet and citation file added. No frozen release or archive identifier yet; to be made once the author has chosen licences and venue. |
 | G13 | Open, author action | No domain or legal review. |

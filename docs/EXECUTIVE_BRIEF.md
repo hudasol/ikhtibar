@@ -21,7 +21,7 @@ These are gaps in the documents retrieved. They are not statements of what the U
 
 ## How reliable is it
 
-Separate verifier agents checked a fresh random sample of 30 rows on 16 October 2026: 3 errors in 23 verifiable rows under a strict rubric (13.0%, 95% interval 4.5% to 32.1%; the interval is wide because the sample is small). All 56 new rows were also checked (7 errors in 56). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, 15 of 142 had errors before correction. 38 rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
+Phase 4 (28 October) added a second fresh sample with its own rate and caveats (`docs/EVALUATION.md`). Separate verifier agents checked a fresh random sample of 30 rows on 16 October 2026: 3 errors in 23 verifiable rows under a strict rubric (13.0%, 95% interval 4.5% to 32.1%; the interval is wide because the sample is small). All 56 new rows were also checked (7 errors in 56). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, 15 of 142 had errors before correction. 38 rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
 
 ## Items to confirm
 

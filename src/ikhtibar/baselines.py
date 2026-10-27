@@ -6,7 +6,7 @@ This is a construct validity check, not an accuracy claim. The labels are the an
 codes, so a high score shows that the coding is regular and predictable, not that it is right.
 
 Population: headline test rows (row_type == test and headline_include == yes).
-Methods, fixed before any result was seen:
+Methods, chosen by the analyst who had seen the table and committed with the code (the keyword lexicon was not written blind):
   majority      most frequent label in the training part
   framework     most frequent label among training rows of the same framework (document level prior)
   modal_rule    binding status only: wording rule (shall, must, required versus should, may, recommend)
