@@ -1,14 +1,14 @@
 {
  "ambiguous_bounds": {
-  "ambiguous_all_binding_pct": 40.3,
+  "ambiguous_all_binding_pct": 40.0,
   "ambiguous_all_non_binding_pct": 27.9
  },
  "base": {
-  "ambiguous": 36,
+  "ambiguous": 35,
   "binding": 81,
   "binding_pct": 27.9,
   "n": 290,
-  "non_binding": 173
+  "non_binding": 174
  },
  "claim_binding_is_minority": {
   "all_leave_one_family_out": true,
@@ -32,7 +32,7 @@
  },
  "extreme_bounds": {
   "least_favourable_to_binding_pct": 26.0,
-  "most_favourable_to_binding_pct": 44.4
+  "most_favourable_to_binding_pct": 44.1
  },
  "family_weighted": {
   "families": 16,
@@ -57,108 +57,108 @@
  },
  "leave_one_family_out": {
   "China": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 71,
    "binding_pct": 26.0,
    "dropped_rows": 17,
    "n": 273,
-   "non_binding": 166
+   "non_binding": 167
   },
   "EU-AI-Act": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 54,
    "binding_pct": 20.8,
    "dropped_rows": 31,
    "n": 259,
-   "non_binding": 169
+   "non_binding": 170
   },
   "EU-GPAI-CoP": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 81,
    "binding_pct": 28.8,
    "dropped_rows": 9,
    "n": 281,
-   "non_binding": 164
+   "non_binding": 165
   },
   "EU-Standards": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 81,
    "binding_pct": 28.0,
    "dropped_rows": 1,
    "n": 289,
-   "non_binding": 172
+   "non_binding": 173
   },
   "ISO-IEC": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 81,
    "binding_pct": 29.1,
    "dropped_rows": 12,
    "n": 278,
-   "non_binding": 161
+   "non_binding": 162
   },
   "Japan": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 79,
    "binding_pct": 28.7,
    "dropped_rows": 15,
    "n": 275,
-   "non_binding": 160
+   "non_binding": 161
   },
   "Korea": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 78,
    "binding_pct": 27.5,
    "dropped_rows": 6,
    "n": 284,
-   "non_binding": 170
+   "non_binding": 171
   },
   "Saudi": {
-   "ambiguous": 17,
+   "ambiguous": 16,
    "binding": 81,
    "binding_pct": 31.2,
    "dropped_rows": 30,
    "n": 260,
-   "non_binding": 162
+   "non_binding": 163
   },
   "Singapore": {
-   "ambiguous": 35,
+   "ambiguous": 34,
    "binding": 81,
    "binding_pct": 31.5,
    "dropped_rows": 33,
    "n": 257,
-   "non_binding": 141
+   "non_binding": 142
   },
   "UAE-AbuDhabi-DoH": {
-   "ambiguous": 30,
+   "ambiguous": 29,
    "binding": 70,
    "binding_pct": 25.6,
    "dropped_rows": 17,
    "n": 273,
-   "non_binding": 173
+   "non_binding": 174
   },
   "UAE-DIFC-ADGM": {
-   "ambiguous": 32,
+   "ambiguous": 31,
    "binding": 73,
    "binding_pct": 26.6,
    "dropped_rows": 16,
    "n": 274,
-   "non_binding": 169
+   "non_binding": 170
   },
   "UAE-Dubai": {
-   "ambiguous": 35,
+   "ambiguous": 34,
    "binding": 74,
    "binding_pct": 27.4,
    "dropped_rows": 20,
    "n": 270,
-   "non_binding": 161
+   "non_binding": 162
   },
   "UAE-Federal": {
-   "ambiguous": 35,
+   "ambiguous": 34,
    "binding": 72,
    "binding_pct": 26.9,
    "dropped_rows": 22,
    "n": 268,
-   "non_binding": 161
+   "non_binding": 162
   },
   "UK": {
    "ambiguous": 32,
@@ -169,20 +169,20 @@
    "non_binding": 156
   },
   "US-NIST": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 81,
    "binding_pct": 31.9,
    "dropped_rows": 36,
    "n": 254,
-   "non_binding": 137
+   "non_binding": 138
   },
   "US-OMB": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 78,
    "binding_pct": 27.2,
    "dropped_rows": 3,
    "n": 287,
-   "non_binding": 173
+   "non_binding": 174
   }
  },
  "leave_one_family_out_range": {

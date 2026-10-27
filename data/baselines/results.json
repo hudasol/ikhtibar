@@ -2,36 +2,36 @@
  "binding3": {
   "cv": {
    "framework": {
-    "accuracy": 89.4,
+    "accuracy": 89.6,
     "accuracy_ci95": [
-     86.1,
-     92.5
+     86.2,
+     92.8
     ],
-    "kappa": 0.803,
-    "macro_f1": 86.5,
+    "kappa": 0.805,
+    "macro_f1": 87.0,
     "macro_f1_ci95": [
-     81.5,
-     90.8
+     81.8,
+     91.1
     ]
    },
    "majority": {
-    "accuracy": 59.7,
+    "accuracy": 60.0,
     "accuracy_ci95": [
-     53.8,
-     65.2
+     54.1,
+     65.5
     ],
     "kappa": 0.0,
-    "macro_f1": 24.9,
+    "macro_f1": 25.0,
     "macro_f1_ci95": [
-     23.3,
-     26.3
+     23.4,
+     26.4
     ]
    },
    "modal_rule": {
     "accuracy": 76.9,
     "accuracy_ci95": [
      72.1,
-     81.7
+     82.1
     ],
     "kappa": 0.554,
     "macro_f1": 60.8,
@@ -41,16 +41,16 @@
     ]
    },
    "tfidf_lr": {
-    "accuracy": 64.1,
+    "accuracy": 64.6,
     "accuracy_ci95": [
-     58.4,
-     69.2
+     58.9,
+     69.8
     ],
-    "kappa": 0.15,
-    "macro_f1": 35.5,
+    "kappa": 0.154,
+    "macro_f1": 35.6,
     "macro_f1_ci95": [
-     31.2,
-     39.6
+     31.3,
+     39.7
     ]
    },
    "tfidf_lr_fw": {
@@ -59,51 +59,51 @@
      80.8,
      88.2
     ],
-    "kappa": 0.7,
-    "macro_f1": 80.4,
+    "kappa": 0.699,
+    "macro_f1": 80.6,
     "macro_f1_ci95": [
-     74.7,
-     85.0
+     75.0,
+     85.3
     ]
    }
   },
   "label_counts": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "binding": 81,
-   "non_binding": 173
+   "non_binding": 174
   },
   "lofo": {
    "framework": {
-    "accuracy": 59.7,
+    "accuracy": 60.0,
     "accuracy_ci95": [
-     53.8,
-     65.2
+     54.1,
+     65.5
     ],
     "kappa": 0.0,
-    "macro_f1": 24.9,
+    "macro_f1": 25.0,
     "macro_f1_ci95": [
-     23.3,
-     26.3
+     23.4,
+     26.4
     ]
    },
    "majority": {
-    "accuracy": 59.7,
+    "accuracy": 60.0,
     "accuracy_ci95": [
-     53.8,
-     65.2
+     54.1,
+     65.5
     ],
     "kappa": 0.0,
-    "macro_f1": 24.9,
+    "macro_f1": 25.0,
     "macro_f1_ci95": [
-     23.3,
-     26.3
+     23.4,
+     26.4
     ]
    },
    "modal_rule": {
     "accuracy": 76.9,
     "accuracy_ci95": [
      72.1,
-     81.7
+     82.1
     ],
     "kappa": 0.554,
     "macro_f1": 60.8,
@@ -113,29 +113,29 @@
     ]
    },
    "tfidf_lr": {
-    "accuracy": 61.4,
+    "accuracy": 61.7,
     "accuracy_ci95": [
      55.9,
-     66.6
+     66.9
     ],
     "kappa": 0.056,
     "macro_f1": 29.1,
     "macro_f1_ci95": [
-     25.8,
-     32.8
+     25.9,
+     32.9
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 59.7,
+    "accuracy": 60.0,
     "accuracy_ci95": [
-     53.8,
-     65.2
+     54.1,
+     65.5
     ],
     "kappa": 0.0,
-    "macro_f1": 24.9,
+    "macro_f1": 25.0,
     "macro_f1_ci95": [
-     23.3,
-     26.3
+     23.4,
+     26.4
     ]
    }
   }
@@ -143,142 +143,142 @@
  "binding5": {
   "cv": {
    "framework": {
-    "accuracy": 83.8,
+    "accuracy": 84.3,
     "accuracy_ci95": [
-     79.8,
-     87.5
+     80.2,
+     88.2
     ],
-    "kappa": 0.768,
-    "macro_f1": 81.2,
+    "kappa": 0.774,
+    "macro_f1": 81.9,
     "macro_f1_ci95": [
-     76.2,
-     85.6
+     76.6,
+     86.2
     ]
    },
    "majority": {
-    "accuracy": 45.2,
+    "accuracy": 45.5,
     "accuracy_ci95": [
-     39.3,
-     51.0
+     39.7,
+     51.4
     ],
     "kappa": 0.0,
-    "macro_f1": 12.4,
+    "macro_f1": 12.5,
     "macro_f1_ci95": [
-     11.3,
-     13.5
+     11.4,
+     13.6
     ]
    },
    "modal_rule": {
-    "accuracy": 57.9,
+    "accuracy": 58.3,
     "accuracy_ci95": [
-     52.4,
-     63.8
+     52.8,
+     64.1
     ],
-    "kappa": 0.34,
-    "macro_f1": 31.1,
+    "kappa": 0.344,
+    "macro_f1": 31.2,
     "macro_f1_ci95": [
-     27.3,
-     35.0
+     27.5,
+     35.1
     ]
    },
    "tfidf_lr": {
-    "accuracy": 50.2,
+    "accuracy": 50.5,
     "accuracy_ci95": [
-     44.3,
-     56.0
+     44.7,
+     56.2
     ],
-    "kappa": 0.116,
-    "macro_f1": 21.0,
+    "kappa": 0.117,
+    "macro_f1": 21.1,
     "macro_f1_ci95": [
-     18.0,
-     24.0
+     18.1,
+     24.1
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 79.0,
+    "accuracy": 79.1,
     "accuracy_ci95": [
      74.4,
-     83.0
+     83.1
     ],
-    "kappa": 0.685,
-    "macro_f1": 74.9,
+    "kappa": 0.686,
+    "macro_f1": 74.8,
     "macro_f1_ci95": [
-     69.1,
-     79.5
+     68.9,
+     79.7
     ]
    }
   },
   "label_counts": {
-   "ambiguous": 36,
+   "ambiguous": 35,
    "conditional": 55,
-   "guidance": 131,
+   "guidance": 132,
    "mandatory": 26,
    "voluntary": 42
   },
   "lofo": {
    "framework": {
-    "accuracy": 45.2,
+    "accuracy": 45.5,
     "accuracy_ci95": [
-     39.7,
-     50.7
+     40.0,
+     51.4
     ],
     "kappa": 0.0,
-    "macro_f1": 12.4,
+    "macro_f1": 12.5,
     "macro_f1_ci95": [
      11.4,
-     13.5
+     13.6
     ]
    },
    "majority": {
-    "accuracy": 45.2,
+    "accuracy": 45.5,
     "accuracy_ci95": [
-     39.7,
-     50.7
+     40.0,
+     51.4
     ],
     "kappa": 0.0,
-    "macro_f1": 12.4,
+    "macro_f1": 12.5,
     "macro_f1_ci95": [
      11.4,
-     13.5
+     13.6
     ]
    },
    "modal_rule": {
-    "accuracy": 57.9,
+    "accuracy": 58.3,
     "accuracy_ci95": [
-     52.4,
-     63.8
+     52.8,
+     64.1
     ],
-    "kappa": 0.34,
-    "macro_f1": 31.1,
+    "kappa": 0.344,
+    "macro_f1": 31.2,
     "macro_f1_ci95": [
-     27.3,
-     34.8
+     27.4,
+     35.0
     ]
    },
    "tfidf_lr": {
-    "accuracy": 46.9,
+    "accuracy": 47.2,
     "accuracy_ci95": [
-     41.4,
-     52.4
+     41.7,
+     52.8
     ],
-    "kappa": 0.039,
-    "macro_f1": 15.9,
+    "kappa": 0.04,
+    "macro_f1": 16.0,
     "macro_f1_ci95": [
-     13.1,
+     13.2,
      18.9
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 45.2,
+    "accuracy": 45.5,
     "accuracy_ci95": [
-     39.7,
-     50.7
+     40.0,
+     51.4
     ],
     "kappa": 0.0,
-    "macro_f1": 12.4,
+    "macro_f1": 12.5,
     "macro_f1_ci95": [
      11.4,
-     13.5
+     13.6
     ]
    }
   },
@@ -336,7 +336,7 @@
     "n": 22
    },
    "UK": {
-    "accuracy": 59.1,
+    "accuracy": 63.6,
     "n": 22
    },
    "US-NIST": {
@@ -351,15 +351,15 @@
   "lofo_per_class_tfidf_lr": {
    "ambiguous": {
     "f1": 0.0,
-    "n": 36
+    "n": 35
    },
    "conditional": {
     "f1": 16.7,
     "n": 55
    },
    "guidance": {
-    "f1": 63.0,
-    "n": 131
+    "f1": 63.3,
+    "n": 132
    },
    "mandatory": {
     "f1": 0.0,
@@ -373,10 +373,10 @@
  },
  "lofo_confusion_tfidf_lr": {
   "binding5": {
-   "ambiguous|guidance": 36,
+   "ambiguous|guidance": 35,
    "conditional|conditional": 5,
    "conditional|guidance": 50,
-   "guidance|guidance": 131,
+   "guidance|guidance": 132,
    "mandatory|guidance": 26,
    "voluntary|guidance": 42
   },
@@ -419,7 +419,7 @@
  "meta": {
   "bootstrap": 2000,
   "folds": 5,
-  "input_sha256": "5bc44b86061ec266d44e2a88cfa91b9b7828d74547905fa4f40042abce69a839",
+  "input_sha256": "bb109b196212ceb1103c810d225759a94bd1475ad09283a4c9a8f5f9e84a0d04",
   "n_families": 16,
   "n_frameworks": 71,
   "n_rows": 290,
@@ -472,7 +472,7 @@
    "tfidf_lr": {
     "accuracy": 30.0,
     "accuracy_ci95": [
-     25.4,
+     25.3,
      35.2
     ],
     "kappa": 0.139,
@@ -486,7 +486,7 @@
     "accuracy": 32.2,
     "accuracy_ci95": [
      27.5,
-     37.2
+     37.3
     ],
     "kappa": 0.195,
     "macro_f1": 15.4,
@@ -575,7 +575,7 @@
     "kappa": 0.055,
     "macro_f1": 5.7,
     "macro_f1_ci95": [
-     4.4,
+     4.3,
      7.7
     ]
    }
