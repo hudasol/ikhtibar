@@ -456,7 +456,8 @@ def render(template_name, values, by):
 
 OUTPUTS = [("REPORT.tmpl.md", "docs/REPORT.md"), ("EXECUTIVE_BRIEF.tmpl.md", "docs/EXECUTIVE_BRIEF.md"),
            ("READING_LIST.tmpl.md", "docs/READING_LIST.md"), ("UAE_COVERAGE.tmpl.md", "docs/UAE_COVERAGE.md"),
-           ("TIME_SENSITIVE.tmpl.md", "docs/TIME_SENSITIVE.md"), ("README.tmpl.md", "README.md")]
+           ("TIME_SENSITIVE.tmpl.md", "docs/TIME_SENSITIVE.md"), ("EVALUATION.tmpl.md", "docs/EVALUATION.md"),
+           ("README.tmpl.md", "README.md")]
 
 
 def render_all(write_support=True):
@@ -514,6 +515,8 @@ def extra_values(rows, by, log, src, tsens):
     """Large tables used by the coverage and time sensitive documents."""
     ev = {}
     ev.update(madoun_values())
+    from . import eval_values
+    ev.update(eval_values.values())
     ev["brief_time"] = "\n".join([
         "- **EU Act dates:** confirmed in operative text on 16 October 2026: Annex III high risk rules from 2 December 2027 and Annex I from 2 August 2028 (amended Article 113). The first harmonised standard (quality management) was cited on 14 October 2026.",
         "- **UAE National Cyber Security Policy for AI:** confirm by hand whether it reaches emirate government entities directly; two verifiers read the scope clause differently.",
