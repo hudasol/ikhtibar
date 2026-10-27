@@ -47,6 +47,26 @@ Work is done in small commits straight to main, with the full test suite, `check
 4. Choose licences and add the files.
 5. Choose the venue and its template, and approve authorship and acknowledgements.
 
+## E. Status at the end of the first phase 4 session (28 October 2026)
+
+| ID | Status | What was done, and what is left |
+|---|---|---|
+| G1 | Closed | Baselines for binding status and test type with cross validation and leave one family out (`docs/EVALUATION.md`, section 1). Findings: binding status is mostly document level; the best test type baseline is a keyword rule. |
+| G2 | Partly closed | Two blind AI second codings of 120 rows (kappa 0.91 between blind coders, about 0.65 with the original). Both coders are models, so a human second coding is still needed (100 row template ready). |
+| G3 | Partly closed | Fresh sample of 120 rows, 73 readable: strict error rate 6.8% (3.0% to 15.1%); pooled with the phase 3 sample 8 of 96. Verifiers are AI. 39% of the sample could not be read because of a session domain restriction. A retry with a fresh search budget is scheduled. |
+| G4 | Partly closed | Pilot recall 68.4% on 19 confirmed candidates (46.0% to 84.6%), with 58 unresolved. All confirmed misses are United States federal documents. A capture recapture estimate was not attempted: the two lists were built under the same search tools, so they are not independent, and the method has been questioned for searches of this kind. Widening the reference list needs web access. |
+| G5 | Closed | Robustness analysis. The statement that binding is a minority survives every scenario tried (most favourable 44.1%). |
+| G6 | Closed for the headline | Document level and family level weighting and a cluster bootstrap are reported. |
+| G7 | Closed | 94 preregistered scenarios, four naive baselines, 3000 profile simulation. Two defects found and fixed; one documented conservative divergence (D3). |
+| G8 | Open, author action | 32 rows still blocked. |
+| G9 | Mostly closed | Five of six moved UAE sources were re read on 28 October (UAE-Federal-009, 012, 021, 027, 031); UAE-Dubai-008 is still blocked by file size and has a date conflict recorded. |
+| G10 | Open | Of 181 status items only 22 were re read on 28 October and none changed; 154 could not be fetched in the session. A retry is scheduled. The DoH revision, DIFC Regulation 10 enactment, EU, Korea decree and Canada versions are not determined. |
+| G11 | Draft done | `paper/` holds a generated draft (nine pages). Related work is thin for Gulf governance and public sector assurance, and most works were read at abstract level. |
+| G12 | Partly closed | Data sheet and citation file added. No frozen release or archive identifier yet; to be made once the author has chosen licences and venue. |
+| G13 | Open, author action | No domain or legal review. |
+| G14 | Open, author action | Licences not applied. |
+| G15 | Open | Arabic originals still partial. |
+
 ## D. What is not claimed
 
 No claim is made about what the UAE or any other jurisdiction requires beyond what a retrieved source states. Baselines measure how predictable the coding is from text. They do not establish that the coding is correct. The tool is a proposal that structures questions. It is not a compliance determination.

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this evidence base, please cite it. Licence terms are proposed in docs/LICENSING.md and have not yet been applied."
+title: "Ikhtibar: a comparative evidence base on pre deployment testing of AI systems"
+type: dataset
+authors:
+  - family-names: "Mueen"
+    given-names: "Huda"
+repository-code: "https://github.com/hudasol/ikhtibar"
+date-released: "2026-10-28"
+version: "4.0"
+keywords:
+  - AI assurance
+  - pre deployment testing
+  - AI governance
+  - United Arab Emirates
