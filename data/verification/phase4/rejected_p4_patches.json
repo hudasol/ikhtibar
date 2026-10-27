@@ -1,1 +1,10 @@
-[]
+[
+ {
+  "row_id": "Singapore-033",
+  "field": "framework",
+  "new_value": "Singapore Model AI Governance Framework for Agentic AI (versions: v1.0, 22 Jan 2026; v1.5, 20 May 2026, read)",
+  "reason": "v1.5 was read via the source URL",
+  "source": "v4retry2patch_2",
+  "why": "The framework field groups rows for analysis; version detail belongs in the locator, which was patched."
+ }
+]

@@ -144,6 +144,46 @@
   "reason": "Disclosure text spans pp.13-14"
  },
  {
+  "row_id": "EU-AI-Act-020",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Training, validation and testing data must be governed by data governance and management practices including examination for biases likely to affect health and safety or fundamental rights or lead to prohibited discrimination, and measures to detect, prevent and mitigate them; data sets must be relevant, sufficiently representative, to the best extent possible free of errors and complete for the intended purpose, and must take into account, to the extent required by the intended purpose, the geographical, contextual, behavioural or functional setting of intended use (high-risk AI systems).",
+  "source": "v4retry2patch_1",
+  "reason": "Source narrows the bias scope and says 'take into account to the extent required', not 'reflect'."
+ },
+ {
+  "row_id": "EU-AI-Act-004",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Commission page states the Act becomes fully applicable on 2 August 2026, with exceptions: prohibitions and AI literacy from 2 Feb 2025; governance and GPAI obligations from 2 Aug 2025; high-risk systems embedded in regulated products (Annex I) extended to 2 Aug 2028 and listed-area high-risk (Annex III) to 2 Dec 2027 under the AI omnibus political agreement of 7 May 2026. (Omnibus entry into force 27 July 2026 is not on this page; cite Reg. (EU) 2026/1744 OJ L separately.)",
+  "source": "v4retry2patch_2",
+  "reason": "Page does not state the omnibus entry-into-force date"
+ },
+ {
+  "row_id": "EU-AI-Act-037",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "High-risk AI systems (and GPAI models, for Chapter V Sections 2-3 obligations) conforming to harmonised standards (or parts) whose references are published in the OJ are presumed to meet the Section 2 requirements to the extent the standards cover them.",
+  "source": "v4retry2patch_2",
+  "reason": "Art. 40(1) also covers GPAI models"
+ },
+ {
+  "row_id": "ISO-IEC-010",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Technical report surveying how trust in AI can be built through transparency, explainability and controllability, engineering pitfalls and threats, and approaches to assessing and improving properties such as resilience, safety, security and privacy; does not define trustworthiness levels; published May 2020, 43 pages.",
+  "source": "v4retry2patch_2",
+  "reason": "Day of month not seen on catalogue page"
+ },
+ {
+  "row_id": "Singapore-033",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "s.2.3.2, pp.19-20 (v1.0, unchecked); in v1.5 (20 May 2026) s.2.3.2 'Before deploying, test agents', pp.39-40",
+  "source": "v4retry2patch_2",
+  "reason": "Current URL serves v1.5 with different pagination"
+ },
+ {
   "row_id": "UAE-Federal-009",
   "field": "source_url",
   "op": "set",

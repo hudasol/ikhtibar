@@ -9,7 +9,7 @@ import csv, glob, json, os
 P4 = os.path.join(os.path.dirname(__file__), "..", "data", "verification", "phase4")
 ALLOWED = {"framework", "clause_or_page", "requirement_paraphrase", "binding_status", "what_is_tested", "who_tests",
            "source_url", "interpretation_note", "conflict_flag", "language_read"}
-REJECT = {}
+REJECT = {("Singapore-033", "framework"): "The framework field groups rows for analysis; version detail belongs in the locator, which was patched."}
 OVERRIDE = {
     ("Korea-002", "binding_status"): (
         "conditional",
