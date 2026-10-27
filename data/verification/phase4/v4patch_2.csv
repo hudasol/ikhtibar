@@ -1,0 +1,4 @@
+row_id,field,new_value,reason
+EU-AI-Act-073,requirement_paraphrase,"The Commission may fine GPAI providers up to 3% of worldwide annual turnover or EUR 15 million, whichever is higher, where it finds intentional or negligent infringement, failure to answer Art. 91 information requests, failure to comply with Art. 93 measures, or failure to give model access for Art. 92 evaluation.",Omitted 'whichever is higher' and the intent or negligence condition.
+UAE-Dubai-033,clause_or_page,"Control 6.1.6.3, p. 63","Page marker seen was 63, not 64-65."
+UAE-Dubai-033,requirement_paraphrase,"Organisations carry out suitable security testing of information systems during development and prior to acceptance and deployment, and periodically (control text has no modal verb).",Source adds pre-acceptance and periodic testing.

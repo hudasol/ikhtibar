@@ -1,0 +1,3 @@
+row_id,agent_verdict,lead_verdict,reason
+Korea-003,MINOR,ERROR,Rubric: a paraphrase that turns must into should is an error. Art. 30(4) says must give preferential consideration.
+US-NIST-033,MINOR,ERROR,Rubric: unsupported actor. The source does not name red teams as the actor; it lists AI actor tasks for the whole subcategory.

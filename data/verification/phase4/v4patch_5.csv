@@ -1,0 +1,4 @@
+row_id,field,new_value,reason
+Korea-002,binding_status,mandatory,"Art. 12(2) says AISI 'shall' carry out the listed projects; operative statutory text, not guidance (establishment itself is 'may')."
+Korea-002,interpretation_note,"Minister may operate AISI (Art. 12(1)); once operated, AISI shall carry out the listed projects (Art. 12(2)).",Clarify discretionary establishment vs duty.
+US-NIST-033,who_tests,"TEVV, domain experts, AI deployment, impact assessment, operation and monitoring, end-users (AI Actor tasks listed for MEASURE 2.10)","Source lists actor tasks for the whole subcategory, not 'red teams'."

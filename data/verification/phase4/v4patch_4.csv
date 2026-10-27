@@ -1,0 +1,4 @@
+row_id,field,new_value,reason
+China-014,interpretation_note,Art. 19 itself does not name the filing authority; CAC role derives from the algorithm recommendation provisions.,Art. 19 text does not name an authority.
+UK-004,binding_status,guidance,Non binding playbook recommendations are guidance under the protocol.
+US-NIST-031,clause_or_page,"MS-2.6-005 to MS-2.6-007, pp.33-34","Items seen at pp.33-34, not p.32."

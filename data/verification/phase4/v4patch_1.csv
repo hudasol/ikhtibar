@@ -1,0 +1,4 @@
+row_id,field,new_value,reason
+ISO-IEC-003,requirement_paraphrase,"Adds requirements for bodies that audit and certify AI management systems under ISO/IEC 42001, supplementing ISO/IEC 17021-1; published July 2025, 31 pages, stage 60.60.","Catalogue page shows 2025-07 only, no day."
+Japan-019,clause_or_page,"Part 5, U-2) i (printed p. 25)",Sentence appears on page footed 'Part 5 Main Appx. 25'.
+UAE-Federal-019,requirement_paraphrase,Organisations could consider Discrimination Impact Assessments; the guidelines say the assessment and mitigation measures should be documented and that it should be conducted pre-release and regularly afterwards.,"Source gives specific timing, row was vaguer."
