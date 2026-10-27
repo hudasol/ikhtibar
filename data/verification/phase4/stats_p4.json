@@ -1,23 +1,23 @@
 {
- "any_fault_strict": 15,
+ "any_fault_strict": 20,
  "any_fault_strict_ci95": [
-  12.9,
-  31.2
+  14.2,
+  30.6
  ],
- "any_fault_strict_pct": 20.5,
+ "any_fault_strict_pct": 21.3,
  "bounds_all_sampled_strict_error_pct": {
-  "all_of_unreadable_in_error": 43.3,
-  "none_of_unreadable_in_error": 4.2
+  "all_of_unreadable_in_error": 26.7,
+  "none_of_unreadable_in_error": 5.0
  },
  "by_family": {
   "China": {
    "errors_strict": 0,
-   "readable": 8,
+   "readable": 9,
    "sampled": 9
   },
   "EU-AI-Act": {
-   "errors_strict": 0,
-   "readable": 6,
+   "errors_strict": 1,
+   "readable": 17,
    "sampled": 20
   },
   "EU-GPAI-CoP": {
@@ -32,12 +32,12 @@
   },
   "ISO-IEC": {
    "errors_strict": 0,
-   "readable": 3,
+   "readable": 4,
    "sampled": 4
   },
   "Japan": {
    "errors_strict": 0,
-   "readable": 6,
+   "readable": 7,
    "sampled": 7
   },
   "Korea": {
@@ -52,12 +52,12 @@
   },
   "Singapore": {
    "errors_strict": 0,
-   "readable": 5,
+   "readable": 6,
    "sampled": 8
   },
   "UAE-AbuDhabi-DoH": {
    "errors_strict": 0,
-   "readable": 3,
+   "readable": 4,
    "sampled": 4
   },
   "UAE-AbuDhabi-Other": {
@@ -67,17 +67,17 @@
   },
   "UAE-DIFC-ADGM": {
    "errors_strict": 1,
-   "readable": 3,
+   "readable": 4,
    "sampled": 6
   },
   "UAE-Dubai": {
    "errors_strict": 0,
-   "readable": 10,
+   "readable": 11,
    "sampled": 13
   },
   "UAE-Federal": {
    "errors_strict": 0,
-   "readable": 7,
+   "readable": 8,
    "sampled": 9
   },
   "UK": {
@@ -87,7 +87,7 @@
   },
   "US-NIST": {
    "errors_strict": 1,
-   "readable": 4,
+   "readable": 6,
    "sampled": 9
   },
   "US-OMB": {
@@ -97,16 +97,17 @@
   }
  },
  "error_rate_as_graded_ci95": [
-  1.4,
-  11.4
+  1.7,
+  10.4
  ],
- "error_rate_as_graded_pct": 4.1,
+ "error_rate_as_graded_pct": 4.3,
  "error_rate_strict_ci95": [
   3.0,
-  15.1
+  13.2
  ],
- "error_rate_strict_pct": 6.8,
+ "error_rate_strict_pct": 6.4,
  "error_rows_strict": [
+  "EU-AI-Act-004",
   "Korea-002",
   "Korea-003",
   "UAE-DIFC-ADGM-010",
@@ -115,26 +116,28 @@
  ],
  "error_types_among_faults": {
   "locator": 4,
-  "other": 3,
-  "understated": 4,
+  "other": 5,
+  "overstated": 1,
+  "understated": 5,
   "unsupported_test": 1,
+  "wrong_date_or_version": 1,
   "wrong_status": 3
  },
- "errors_as_graded": 3,
- "errors_strict": 5,
+ "errors_as_graded": 4,
+ "errors_strict": 6,
  "pooled_with_phase3_fresh_sample": {
   "ci95": [
-   4.3,
-   15.6
+   4.1,
+   14.0
   ],
-  "errors": 8,
-  "pct": 8.3,
-  "readable": 96
+  "errors": 9,
+  "pct": 7.7,
+  "readable": 117
  },
  "population_size": 485,
- "readable": 73,
- "readable_pct_of_sample": 60.8,
- "retry_resolved": 8,
+ "readable": 94,
+ "readable_pct_of_sample": 78.3,
+ "retry_resolved": 29,
  "row_verdicts": {
   "China-001": {
    "as_graded": "PASS",
@@ -153,8 +156,8 @@
    "strict": "MINOR"
   },
   "China-018": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "China-020": {
    "as_graded": "PASS",
@@ -173,20 +176,20 @@
    "strict": "MINOR"
   },
   "EU-AI-Act-004": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "ERROR",
+   "strict": "ERROR"
   },
   "EU-AI-Act-011": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-013": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-020": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "MINOR",
+   "strict": "MINOR"
   },
   "EU-AI-Act-025": {
    "as_graded": "PASS",
@@ -197,20 +200,20 @@
    "strict": "PASS"
   },
   "EU-AI-Act-037": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "MINOR",
+   "strict": "MINOR"
   },
   "EU-AI-Act-038": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-041": {
    "as_graded": "PASS",
    "strict": "PASS"
   },
   "EU-AI-Act-047": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-048": {
    "as_graded": "PASS",
@@ -221,20 +224,20 @@
    "strict": "PASS"
   },
   "EU-AI-Act-056": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-059": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-064": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-069": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "EU-AI-Act-073": {
    "as_graded": "MINOR",
@@ -285,8 +288,8 @@
    "strict": "MINOR"
   },
   "ISO-IEC-010": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "MINOR",
+   "strict": "MINOR"
   },
   "ISO-IEC-018": {
    "as_graded": "PASS",
@@ -313,8 +316,8 @@
    "strict": "PASS"
   },
   "Japan-022": {
-   "as_graded": "UNVERIFIABLE_OTHER",
-   "strict": "UNVERIFIABLE_OTHER"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "Japan-P3-04": {
    "as_graded": "PASS",
@@ -393,8 +396,8 @@
    "strict": "MINOR"
   },
   "Singapore-033": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "MINOR",
+   "strict": "MINOR"
   },
   "UAE-AbuDhabi-DoH-002": {
    "as_graded": "PASS",
@@ -405,8 +408,8 @@
    "strict": "PASS"
   },
   "UAE-AbuDhabi-DoH-010": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "UAE-AbuDhabi-DoH-013": {
    "as_graded": "PASS",
@@ -417,8 +420,8 @@
    "strict": "UNVERIFIED_BLOCKED"
   },
   "UAE-DIFC-ADGM-002": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "UAE-DIFC-ADGM-010": {
    "as_graded": "ERROR",
@@ -469,8 +472,8 @@
    "strict": "PASS"
   },
   "UAE-Dubai-022": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "UAE-Dubai-026": {
    "as_graded": "PASS",
@@ -493,8 +496,8 @@
    "strict": "UNVERIFIED_BLOCKED"
   },
   "UAE-Federal-009": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "UAE-Federal-019": {
    "as_graded": "MINOR",
@@ -573,8 +576,8 @@
    "strict": "UNVERIFIED_BLOCKED"
   },
   "US-NIST-005": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "US-NIST-021": {
    "as_graded": "PASS",
@@ -593,8 +596,8 @@
    "strict": "UNVERIFIABLE_OTHER"
   },
   "US-NIST-042": {
-   "as_graded": "UNVERIFIED_BLOCKED",
-   "strict": "UNVERIFIED_BLOCKED"
+   "as_graded": "PASS",
+   "strict": "PASS"
   },
   "US-NIST-045": {
    "as_graded": "UNVERIFIED_BLOCKED",
@@ -619,41 +622,36 @@
  },
  "sampled": 120,
  "seed": 20261028,
- "unreadable": 47,
+ "unreadable": 26,
  "unreadable_by_family": {
-  "China": 1,
-  "EU-AI-Act": 14,
+  "EU-AI-Act": 3,
   "EU-GPAI-CoP": 5,
   "EU-Standards": 1,
-  "ISO-IEC": 1,
-  "Japan": 1,
   "Saudi": 4,
-  "Singapore": 3,
-  "UAE-AbuDhabi-DoH": 1,
+  "Singapore": 2,
   "UAE-AbuDhabi-Other": 1,
-  "UAE-DIFC-ADGM": 3,
-  "UAE-Dubai": 3,
-  "UAE-Federal": 2,
+  "UAE-DIFC-ADGM": 2,
+  "UAE-Dubai": 2,
+  "UAE-Federal": 1,
   "UK": 2,
-  "US-NIST": 5
+  "US-NIST": 3
  },
  "unreadable_by_reason": {
-  "session_allowlist": 39,
-  "site_rejected": 1,
+  "session_allowlist": 19,
   "unreadable_passage_or_binary": 7
  },
  "verdicts_as_graded": {
-  "ERROR": 3,
-  "MINOR": 12,
-  "PASS": 58,
-  "UNVERIFIABLE_OTHER": 11,
-  "UNVERIFIED_BLOCKED": 36
+  "ERROR": 4,
+  "MINOR": 16,
+  "PASS": 74,
+  "UNVERIFIABLE_OTHER": 10,
+  "UNVERIFIED_BLOCKED": 16
  },
  "verdicts_strict": {
-  "ERROR": 5,
-  "MINOR": 10,
-  "PASS": 58,
-  "UNVERIFIABLE_OTHER": 11,
-  "UNVERIFIED_BLOCKED": 36
+  "ERROR": 6,
+  "MINOR": 14,
+  "PASS": 74,
+  "UNVERIFIABLE_OTHER": 10,
+  "UNVERIFIED_BLOCKED": 16
  }
 }
