@@ -1,0 +1,63 @@
+field,row_id,framework,original,coder2,coder3,coder2_note,coder3_note
+binding5,Saudi-P3-16,SDAIA AI Ethics Self-Assessment tool (National Data Governance Platform service),ambiguous,voluntary,voluntary,"Self assessment tool, optional use","self assessment tool, optional use"
+binding5,Japan-P3-02,"Japan - Digital Agency DS-920 Guideline for Japanese Government's Procurements and Utilizations of Generative AI, v2.0 (decided 12 Jun 2026; in force 1 Sep 2026)",mandatory,ambiguous,mandatory,Government guideline using shall; binding force not settled,government guideline using shall for ministries
+binding5,Saudi-P3-15,SDAIA AI Service Provider Accreditation (National Data Governance Platform service),ambiguous,voluntary,voluntary,"Accreditation scheme, optional",
+binding5,ISO-IEC-015,ISO/IEC standards,guidance,voluntary,voluntary,,
+binding5,ISO-IEC-017,ISO/IEC standards,guidance,voluntary,voluntary,,
+binding5,UAE-AbuDhabi-DoH-001,"DoH Abu Dhabi Policy on Use of AI in the Healthcare Sector (Policy/AI/0.9, 30 Apr 2018)",ambiguous,ambiguous,mandatory,Draft policy v0.9 says expects; force unclear,regulator policy expectation of certification
+binding5,EU-AI-Act-052,"EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026/1744)",voluntary,mandatory,voluntary,Sandbox duty on member states,sandbox participation optional
+binding5,Saudi-P3-11,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",ambiguous,guidance,guidance,,clinical performance evaluation
+binding5,UAE-DIFC-ADGM-012,ADGM Office of Data Protection - Guidance on DPR 2021 Part 4 (DPIA),guidance,conditional,conditional,Guidance describing trigger based legal DPIA duty,guidance restating a regulation with triggers
+binding5,UAE-AbuDhabi-DoH-P3-01,"DoH Abu Dhabi Responsible AI Risk Management Protocol (ref. as extracted DoH/Protocol/DDGO/RALRM/V1/2025, V1, published and effective Oct 2025, revision Oct 2028)",ambiguous,guidance,guidance,Recommended protocol; pilot testing of controls,recommended protocol; pilot testing of controls
+binding5,Saudi-002,"SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",ambiguous,guidance,guidance,,ethics principles
+binding5,UK-024,UK AI Security Institute (AISI),voluntary,guidance,guidance,,description of institute practice
+binding5,Saudi-P3-07,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",ambiguous,guidance,guidance,,regulator guidance
+binding5,Saudi-P3-08,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",ambiguous,guidance,guidance,,
+binding5,EU-AI-Act-071,"EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026/1744)",conditional,mandatory,conditional,Regulator power and provider access duty,regulator evaluation powers over GPAI models
+binding5,Saudi-005,"SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",ambiguous,guidance,guidance,,
+binding5,UAE-AbuDhabi-DoH-011,DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025),conditional,mandatory,mandatory,,
+binding5,Korea-006,South Korea - AI Framework Act (AI Basic Act),conditional,mandatory,conditional,Duty to review classification,classification review of high impact AI
+binding5,UAE-Dubai-008,"Dubai AI Integration Matrix Framework for Government Organizations (Dubai Digital Authority, August 2025, Version 1.0 per front matter; earlier listing date 28 Apr 2026 conflicts)",ambiguous,mandatory,mandatory,Binding on government entity initiatives,government framework; binding only on one authority
+binding5,Singapore-011,"Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",ambiguous,guidance,guidance,,case study of government service
+binding5,ISO-IEC-016,ISO/IEC standards,guidance,voluntary,voluntary,Planned standard; mixes quality and red teaming,planned standard on safety assessment
+binding5,UAE-Dubai-036,Law No. (9) of 2023 Regulating the Operation of Autonomous Vehicles in Dubai,conditional,mandatory,mandatory,,inspection required for licence
+binding5,Saudi-P3-10,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",ambiguous,guidance,guidance,,validation dataset requirements
+binding5,UK-007,"UK AI Playbook for the UK Government (GDS, published 2025-02-10)",ambiguous,guidance,guidance,,government playbook
+binding5,Saudi-P3-14,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",ambiguous,guidance,guidance,,regulator guidance using shall; change control
+binding5,UAE-DIFC-ADGM-005,"DIFC Data Protection Regulations, Consolidated Version No. 2, Regulation 10 (autonomous and semi-autonomous systems)",ambiguous,conditional,mandatory,Applies to autonomous systems; audit only example,external audit given only as example
+binding5,Saudi-P3-09,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",ambiguous,guidance,guidance,,independent review
+binding5,UAE-AbuDhabi-DoH-002,"DoH Abu Dhabi Policy on Use of AI in the Healthcare Sector (Policy/AI/0.9, 30 Apr 2018)",ambiguous,ambiguous,mandatory,Policy mixes should and must for users,policy uses should; sector regulator policy
+binding5,Saudi-004,"SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",ambiguous,guidance,guidance,,
+binding5,UK-009,"UK AI Playbook for the UK Government (GDS, published 2025-02-10)",conditional,guidance,guidance,Playbook guidance restating legal duty,restates legal duty in guidance
+binding5,ISO-IEC-009,ISO/IEC standards,guidance,voluntary,voluntary,Standard not yet published,standard in development
+test_type,Singapore-020,Singapore AI Verify Testing Framework (for traditional and generative AI; updated 2025-05-29),FAIR,CSAFE,CSAFE,AI Verify testing scheme; harms via benchmarks and red teaming,benchmarks and red teaming for harms
+test_type,Singapore-013,"Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",PERF,GATE,GATE,Threshold comparison and result analysis,thresholds and result review
+test_type,Singapore-012,"Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",PERF,CSAFE,CSAFE,Mix of risk specific tests,mixed set of risk tests; no single dominant type
+test_type,Saudi-P3-06,"NCA 'Draft of AI Cybersecurity Guidelines' (AICG-1:2026), draft for public consultation (closed 5 Aug 2026)",GATE,SEC,SEC,,vulnerability response; could be MON
+test_type,ISO-IEC-018,ISO/IEC standards,ROB,RISK,ROB,"Technical report, informative",technical report on safety functions
+test_type,UAE-Federal-019,UAE AI Ethics: Principles & Guidelines (Dec 2022),FAIR,FAIR,RISK,,discrimination impact assessment; impact assessments are RISK
+test_type,UAE-DIFC-ADGM-009,ADGM FSRA Supplementary Guidance - Digital Investment Management,PERF,TRANS,TRANS,Regulator supplementary guidance with must wording,regulator guidance; explainability and repeatability with testing
+test_type,UAE-Federal-028,UAE AI Guide (National Program for AI),FAIR,PERF,PERF,,also touches representativeness
+test_type,Singapore-028,"Singapore Model AI Governance Framework for Generative AI (IMDA / AI Verify Foundation, published 30 May 2024; PDF file dated 19 June 2024)",PERF,RED,RED,Evaluation approaches discussion,calls for baseline safety tests
+test_type,Singapore-001,"Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",PERF,CSAFE,CSAFE,Voluntary guidelines across five risks,overview of five risk tests
+test_type,Singapore-P3-01,"Singapore Model AI Governance Framework for Agentic AI (v1.5, published 2026-05-20, updated 2026-06-05)",RED,REAL,REAL,Case study phased rollout,case study pilot with red teaming
+test_type,Saudi-P3-11,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",REAL,PERF,PERF,,clinical performance evaluation
+test_type,Singapore-015,Singapore AI Verify Testing Framework (for traditional and generative AI; updated 2025-05-29),CONF,RISK,CONF,Process check framework across principles,process check framework across many principles
+test_type,UAE-Dubai-012,"Dubai AI Ethics Guidelines (Smart Dubai v1.11, English)",FAIR,FAIR,RISK,,discrimination impact assessment
+test_type,EU-AI-Act-071,"EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026/1744)",RED,RED,CONF,Regulator power and provider access duty,regulator evaluation powers over GPAI models
+test_type,UAE-DIFC-ADGM-P3-02,"DIFC Data Protection Regulations, proposed amendments (Annex A 'Proposed Changes' to DIFCA Consultation Paper No. 3, June 2026; draft cover 'Consolidated Version No. 3, in force on [XX 2026]'; NOT enacted as seen on 2026-10-16)",FAIR,RISK,FAIR,"Proposed amendment, not in force",proposed amendment not yet in force
+test_type,UAE-Dubai-008,"Dubai AI Integration Matrix Framework for Government Organizations (Dubai Digital Authority, August 2025, Version 1.0 per front matter; earlier listing date 28 Apr 2026 conflicts)",RISK,GATE,GATE,Binding on government entity initiatives,government framework; binding only on one authority
+test_type,UAE-AbuDhabi-DoH-012,DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025),RISK,PERF,PERF,,regulator standard; role duties
+test_type,Singapore-011,"Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",PERF,CSAFE,CSAFE,,case study of government service
+test_type,ISO-IEC-016,ISO/IEC standards,PERF,PERF,CSAFE,Planned standard; mixes quality and red teaming,planned standard on safety assessment
+test_type,Japan-019,"Japan - Outline of AI Guidelines for Business Ver. 1.1 (MIC/METI, 4 Apr 2025; provisional translation)",PERF,RISK,PERF,,
+test_type,Singapore-016,Singapore AI Verify Testing Framework (for traditional and generative AI; updated 2025-05-29),RED,CSAFE,CSAFE,AI Verify,framework
+test_type,Saudi-P3-10,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",DATA,PERF,PERF,,validation dataset requirements
+test_type,EU-GPAI-CoP-007,EU AI Act - GPAI Code of Practice (Safety and Security chapter),RED,CONF,CONF,Code of practice; external evaluators,independent external evaluators
+test_type,Japan-022,Japan AISI - Guide to Evaluation Perspectives on AI Safety v1.10 (28 Mar 2025),PERF,CSAFE,PERF,"Ten perspectives, no single type",ten perspectives across test types
+test_type,EU-GPAI-CoP-009,EU AI Act - GPAI Code of Practice (Safety and Security chapter),SEC,MON,MON,Code of practice,code of practice; mitigation and monitoring
+test_type,UK-002,"UK AI Playbook for the UK Government (GDS, published 2025-02-10)",PERF,OVER,MON,,testing plus live checks and issue reporting
+test_type,Saudi-P3-14,"SFDA MDS-G010 Guidance on AI and ML technologies based Medical Devices (v1.0, 29/11/2022)",GATE,MON,MON,,regulator guidance using shall; change control
+test_type,Singapore-005,"Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",PERF,PERF,ROB,,component and output fault finding
+test_type,UAE-AbuDhabi-DoH-002,"DoH Abu Dhabi Policy on Use of AI in the Healthcare Sector (Policy/AI/0.9, 30 Apr 2018)",ROB,CONF,MON,Policy mixes should and must for users,policy uses should; sector regulator policy
+test_type,UAE-Federal-P3-06,"UAE National Cyber Security Policy for Artificial Intelligence, Version 1.1 (UAE Cyber Security Council, November 2025; v1.0 September 2025)",CONF,RISK,RISK,Policy statement must,policy statement is must

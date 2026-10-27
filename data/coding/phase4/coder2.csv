@@ -1,0 +1,121 @@
+row_id,binding_status,primary_test_type,confidence,note
+US-NIST-022,guidance,PERF,high,
+Saudi-010,ambiguous,RISK,low,Ethics guidance document but checklist marks items binding for third parties; force unclear
+UAE-Federal-026,guidance,PRIV,medium,PIA should; ethics guideline
+UAE-Federal-005,conditional,PRIV,high,
+Singapore-007,guidance,RED,high,
+EU-GPAI-CoP-P3-22,voluntary,SEC,medium,Code of practice adopted by signatories
+UAE-Federal-006,conditional,MON,medium,Binding only for high risk processing; review on risk change
+Saudi-019,guidance,SEC,high,
+Singapore-006,guidance,ROB,high,
+UAE-Federal-021,guidance,CONF,high,
+Saudi-P3-16,voluntary,RISK,medium,"Self assessment tool, optional use"
+UK-026,guidance,RED,medium,Description of practice by institute
+EU-GPAI-CoP-008,voluntary,GATE,medium,"Code of practice, signatories"
+US-NIST-029,guidance,PERF,medium,"Mixed benchmark, validity and sharing results"
+UAE-Federal-P3-04,mandatory,SEC,medium,Policy statement must; guidance part only should
+Singapore-020,voluntary,CSAFE,medium,AI Verify testing scheme; harms via benchmarks and red teaming
+Singapore-013,guidance,GATE,medium,Threshold comparison and result analysis
+Japan-013,guidance,RISK,medium,
+Singapore-012,guidance,CSAFE,low,Mix of risk specific tests
+US-NIST-030,guidance,PERF,medium,
+Saudi-P3-06,guidance,SEC,medium,
+Japan-P3-02,ambiguous,RISK,low,Government guideline using shall; binding force not settled
+ISO-IEC-018,guidance,RISK,low,"Technical report, informative"
+UAE-Federal-019,guidance,FAIR,high,
+UAE-DIFC-ADGM-009,guidance,TRANS,medium,Regulator supplementary guidance with must wording
+Saudi-P3-15,voluntary,CONF,medium,"Accreditation scheme, optional"
+Japan-015,guidance,RISK,high,
+UAE-AbuDhabi-DoH-009,mandatory,RISK,medium,Regulator standard with must
+US-NIST-036,guidance,RED,medium,Adversarial testing plus go no go inputs
+ISO-IEC-015,voluntary,RED,high,
+Singapore-035,guidance,REAL,high,
+China-022,voluntary,DATA,high,GB/T recommended national standard
+UAE-AbuDhabi-DoH-007,mandatory,SEC,high,
+ISO-IEC-017,voluntary,PERF,high,
+UAE-Federal-028,guidance,PERF,medium,
+UAE-AbuDhabi-DoH-001,ambiguous,CONF,low,Draft policy v0.9 says expects; force unclear
+Korea-005,conditional,RISK,high,
+EU-AI-Act-019,conditional,RISK,high,
+EU-AI-Act-042,conditional,CONF,high,
+UAE-Federal-P3-07,guidance,GATE,low,Should wording; change testing before deployment
+EU-AI-Act-043,conditional,CONF,high,
+Singapore-028,guidance,RED,medium,Evaluation approaches discussion
+UAE-Federal-023,guidance,ROB,medium,Fallback plan testing
+Singapore-001,guidance,CSAFE,low,Voluntary guidelines across five risks
+UAE-AbuDhabi-DoH-008,mandatory,FAIR,high,
+UK-020,guidance,CONF,medium,Overview of assurance mechanisms
+EU-AI-Act-052,mandatory,REAL,medium,Sandbox duty on member states
+Saudi-022,guidance,GATE,high,
+Singapore-P3-01,guidance,REAL,medium,Case study phased rollout
+Singapore-019,voluntary,FAIR,medium,AI Verify
+UAE-AbuDhabi-DoH-004,mandatory,PERF,medium,
+Saudi-P3-11,guidance,PERF,medium,
+Singapore-015,voluntary,RISK,low,Process check framework across principles
+UAE-Federal-P3-02,guidance,PERF,medium,Should wording
+US-NIST-043,guidance,PERF,high,
+UAE-Dubai-012,guidance,FAIR,high,
+US-NIST-013,guidance,TRANS,medium,
+US-NIST-002,guidance,PERF,high,
+UAE-DIFC-ADGM-012,conditional,PRIV,medium,Guidance describing trigger based legal DPIA duty
+US-NIST-034,guidance,FAIR,high,
+UAE-AbuDhabi-DoH-P3-01,guidance,REAL,medium,Recommended protocol; pilot testing of controls
+US-NIST-011,guidance,ROB,high,
+Saudi-002,guidance,ROB,medium,
+Saudi-021,guidance,SEC,high,
+EU-GPAI-CoP-005,voluntary,RED,medium,Code of practice
+UK-024,guidance,RED,high,
+Saudi-P3-07,guidance,PERF,medium,
+Saudi-P3-08,guidance,PERF,high,
+EU-AI-Act-071,mandatory,RED,medium,Regulator power and provider access duty
+US-NIST-039,guidance,PERF,high,
+Saudi-005,guidance,PRIV,high,
+UAE-AbuDhabi-DoH-011,mandatory,GATE,high,
+Korea-006,mandatory,RISK,medium,Duty to review classification
+US-NIST-026,guidance,GATE,high,
+UAE-DIFC-ADGM-P3-02,ambiguous,RISK,low,"Proposed amendment, not in force"
+China-005,conditional,CONF,high,
+US-NIST-010,guidance,PERF,high,
+UAE-Dubai-008,mandatory,GATE,medium,Binding on government entity initiatives
+ISO-IEC-007,guidance,ROB,high,
+UAE-Dubai-027,mandatory,CONF,medium,Policy requires certification; truncated text
+UAE-AbuDhabi-DoH-012,mandatory,PERF,medium,
+Saudi-P3-01,guidance,RISK,high,
+Singapore-011,guidance,CSAFE,high,
+ISO-IEC-016,voluntary,PERF,low,Planned standard; mixes quality and red teaming
+Japan-019,guidance,RISK,medium,
+Saudi-P3-03,guidance,SEC,high,
+UK-P3-01,guidance,FAIR,high,
+Singapore-025,voluntary,SEC,medium,AI Verify
+UAE-Dubai-036,mandatory,CONF,high,
+Singapore-016,voluntary,CSAFE,medium,AI Verify
+UAE-AbuDhabi-DoH-010,conditional,CONF,high,
+Saudi-P3-10,guidance,PERF,high,
+EU-GPAI-CoP-007,voluntary,CONF,medium,Code of practice; external evaluators
+UK-029,voluntary,RISK,medium,Voluntary commitments
+UAE-Dubai-014,guidance,MON,high,
+UAE-Dubai-002,guidance,PERF,high,
+UK-007,guidance,SEC,high,
+Japan-022,guidance,CSAFE,low,"Ten perspectives, no single type"
+China-008,mandatory,RISK,medium,
+EU-GPAI-CoP-009,voluntary,MON,medium,Code of practice
+Japan-016,guidance,RISK,high,
+UAE-Dubai-015,guidance,PERF,low,Quality checks wording
+UK-002,guidance,OVER,medium,
+EU-AI-Act-069,conditional,RISK,medium,Systemic risk GPAI only
+UAE-Federal-P3-05,mandatory,RISK,medium,Policy statement must
+UAE-Federal-009,guidance,GATE,high,
+Saudi-P3-14,guidance,MON,medium,
+Singapore-005,guidance,PERF,medium,
+UAE-DIFC-ADGM-005,conditional,CONF,low,Applies to autonomous systems; audit only example
+EU-AI-Act-041,conditional,CONF,high,
+US-NIST-018,guidance,MON,high,
+UK-008,guidance,SEC,medium,
+Saudi-P3-09,guidance,CONF,high,
+UAE-AbuDhabi-DoH-002,ambiguous,CONF,low,Policy mixes should and must for users
+Saudi-004,guidance,FAIR,high,
+US-NIST-024,guidance,RED,medium,
+UK-009,guidance,PRIV,medium,Playbook guidance restating legal duty
+ISO-IEC-009,voluntary,ROB,medium,Standard not yet published
+US-NIST-016,guidance,PERF,medium,
+UAE-Federal-P3-06,mandatory,RISK,medium,Policy statement must
