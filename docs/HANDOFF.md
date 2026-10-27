@@ -24,7 +24,7 @@ A test fails if a stored result file or the paper source is older than the table
 4. **Apply licences.** Proposed: CC BY 4.0 for documents and data, MIT for code (`docs/LICENSING.md`). Add `LICENSE` files once chosen.
 5. **Choose a venue and its template**, then port `paper/main.tmpl.tex`. Complete the affiliation, funding and acknowledgements in the author block (marked by a comment), and decide authorship.
 6. **Check the reference metadata.** `data/paper/refs_candidates.csv` lists 61 works that were opened and read at abstract or landing page level, never in full text. Some authors, years and venues are blank where the page did not show them (see `data/paper/refs_notes.md`). Resolve these and read the works before submission.
-7. **Decide about two early commits** (`47e465a` and the initial commit) that carry assistant attribution trailers from before your rule. They cannot be removed without rewriting history, which your rules forbid; say if you want them handled another way.
+7. **Decide about commit attribution.** Before your rule was applied, 21 commits carry an assistant co author trailer, and 25 commits (including most of those made on 28 October before the author name was corrected) show the assistant as the author name. They cannot be changed without rewriting published history, which your rules forbid, so they are left. Commits from this point use your name. Tell me if you want them handled another way.
 
 ## Still to do with web access (scheduled)
 
