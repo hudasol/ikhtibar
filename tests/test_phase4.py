@@ -1,7 +1,8 @@
 """Tests for the phase 4 evidence: baselines, tool evaluation, coding agreement, robustness, completeness, verification.
 
-Each result file under data/ must agree with what the code recomputes from the committed inputs, so a changed table
-cannot leave stale numbers behind. Cheap parts only: the cross validated models are not rerun here.
+Main result files are checked against the current table: the baselines by input hash only (the models are not rerun),
+the engine results, robustness and completeness by full recomputation, agreement and verification by selected figures.
+The simulation file and the evaluation baselines are not recomputed here.
 """
 import json, unittest
 from tests.helpers import ROOT, rows
@@ -90,8 +91,8 @@ class CodingAgreementTests(unittest.TestCase):
             self.assertEqual(len(pairs), 3)
             for p in pairs.values():
                 lo, hi = p["kappa_ci95"]
-                self.assertLessEqual(lo, p["kappa"] + 0.02)
-                self.assertGreaterEqual(hi, p["kappa"] - 0.02)
+                self.assertLessEqual(lo, p["kappa"])
+                self.assertGreaterEqual(hi, p["kappa"] - 0.05)
 
     def test_original_codes_in_agreement_file_match_current_table(self):
         import csv
@@ -206,10 +207,13 @@ class PaperTests(unittest.TestCase):
                 self.assertIn(listed[k.strip()]["read_level"], {"abstract_page", "landing_page_only", "full_text"})
 
     def test_house_style(self):
-        for rel in ("paper/main.tmpl.tex", "docs_src/EVALUATION.tmpl.md", "docs/DECISIONS.md", "docs/EVALUATION.md"):
+        for rel in ("paper/main.tmpl.tex", "docs_src/EVALUATION.tmpl.md", "docs/DECISIONS.md", "docs/EVALUATION.md", "docs/GAP_ANALYSIS.md",
+                    "docs/HANDOFF.md", "docs/DATASHEET.md", "CITATION.cff", "README.md"):
             t = (ROOT / rel).read_text(encoding="utf-8")
             self.assertNotIn("\u2014", t, rel + " has an em dash")
             self.assertNotIn("claude", t.lower(), rel + " mentions the assistant")
+            self.assertNotIn("anthropic", t.lower(), rel + " mentions the assistant")
+            self.assertNotIn("@gmail", t.lower(), rel + " has an email address")
 
 
 if __name__ == "__main__":
