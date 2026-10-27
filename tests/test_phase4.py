@@ -184,5 +184,33 @@ class VerificationTests(unittest.TestCase):
             self.assertEqual(by[rid][field], value, (rid, field))
 
 
+class PaperTests(unittest.TestCase):
+    def test_paper_source_is_current(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("build_paper", ROOT / "scripts" / "build_paper.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        tex, bib, n = mod.render()
+        self.assertEqual(tex, (ROOT / "paper" / "main.tex").read_text(encoding="utf-8"),
+                         "paper/main.tex is older than the results; run python scripts/build_paper.py")
+        self.assertEqual(bib, (ROOT / "paper" / "refs.bib").read_text(encoding="utf-8"))
+        self.assertGreater(n, 20)
+
+    def test_every_cited_work_was_read(self):
+        import csv, re
+        listed = {r["key"]: r for r in csv.DictReader(open(ROOT / "data/paper/refs_candidates.csv", encoding="utf-8"))}
+        text = (ROOT / "paper" / "main.tex").read_text(encoding="utf-8")
+        for m in re.finditer(r"\\cite[a-z]*\{([^}]+)\}", text):
+            for k in m.group(1).split(","):
+                self.assertIn(k.strip(), listed)
+                self.assertIn(listed[k.strip()]["read_level"], {"abstract_page", "landing_page_only", "full_text"})
+
+    def test_house_style(self):
+        for rel in ("paper/main.tmpl.tex", "docs_src/EVALUATION.tmpl.md", "docs/DECISIONS.md", "docs/EVALUATION.md"):
+            t = (ROOT / rel).read_text(encoding="utf-8")
+            self.assertNotIn("\u2014", t, rel + " has an em dash")
+            self.assertNotIn("claude", t.lower(), rel + " mentions the assistant")
+
+
 if __name__ == "__main__":
     unittest.main()

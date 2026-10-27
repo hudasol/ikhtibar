@@ -89,6 +89,8 @@ def values():
     v["ag_odd_total"] = sum(a["binding5_odd_one_out"].values())
     v["ag_k_blind"] = f["binding5"]["pairs"]["coder2|coder3"]["kappa"]
     v["ag_k_orig"] = f["binding5"]["pairs"]["original|coder2"]["kappa"]
+    ks = sorted([f["binding5"]["pairs"]["original|coder2"]["kappa"], f["binding5"]["pairs"]["original|coder3"]["kappa"]])
+    v["ag_k_orig_range"] = f"{ks[0]} to {ks[1]}"
 
     ba, ex, am, xt = rb["base"], rb["excluded_bounds"], rb["ambiguous_bounds"], rb["extreme_bounds"]
     lo = rb["leave_one_family_out_range"]
