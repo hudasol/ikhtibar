@@ -84,6 +84,19 @@ class RunTests(unittest.TestCase):
         with self.assertRaises(AnswerError):
             validate_answers({"nonsense": "x"}, load_schema())
 
+    def test_wrong_shape_raises_a_clean_error_not_a_crash(self):
+        schema = load_schema()
+        for bad in ({"system_type": ["genai_llm"]}, {"system_type": ["unknown"]},
+                    {"data_types": [["personal"]]}, {"system_type": {"a": 1}}):
+            with self.assertRaises(AnswerError):
+                validate_answers(bad, schema)
+
+    def test_empty_list_is_unknown_not_none(self):
+        schema = load_schema()
+        self.assertEqual(validate_answers({"data_types": []}, schema), {})
+        res = run({"data_types": []})
+        self.assertEqual(states(res)["A3"], UNKNOWN)
+
     def test_multi_value_question(self):
         out = validate_answers({"data_types": "personal,health"}, load_schema())
         self.assertEqual(out["data_types"], ["health", "personal"])

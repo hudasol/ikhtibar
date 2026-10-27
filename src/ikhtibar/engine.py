@@ -41,13 +41,18 @@ def validate_answers(answers, schema):
         allowed = set(q["values"])
         if q["type"] == "multi":
             vals = v if isinstance(v, list) else [x.strip() for x in str(v).split(",") if x.strip()]
-            if "unknown" in vals:
+            if any(not isinstance(x, str) for x in vals):
+                raise AnswerError(f"'{k}' takes a list of text values; got {v!r}")
+            if "unknown" in vals or not vals:
+                # an empty list says nothing (use "none" to state that there is none), so it stays unknown
                 continue
             bad = [x for x in vals if x not in allowed]
             if bad:
                 raise AnswerError(f"invalid value(s) {bad} for '{k}'. Valid: {', '.join(sorted(allowed))}")
             out[k] = sorted(set(vals))
         else:
+            if isinstance(v, (list, dict)):
+                raise AnswerError(f"'{k}' takes one value, not a list or object; got {v!r}")
             if v not in allowed:
                 raise AnswerError(f"invalid value '{v}' for '{k}'. Valid: {', '.join(sorted(allowed))}")
             out[k] = v
