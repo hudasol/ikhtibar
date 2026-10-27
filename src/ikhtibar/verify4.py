@@ -28,7 +28,7 @@ def load_results():
             first[r["row_id"]] = r
     final = dict(first)
     retry_used = set()
-    for f in sorted(glob.glob(str(P4 / "v4retryres_*.csv"))):
+    for f in sorted(glob.glob(str(P4 / "v4retryres_*.csv"))) + sorted(glob.glob(str(P4 / "v4retry2res_*.csv"))):
         for r in rd(f):
             if r["verdict"] in READ and final[r["row_id"]]["verdict"] not in READ:
                 final[r["row_id"]] = r

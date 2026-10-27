@@ -1,6 +1,6 @@
 """Turn reviewed phase 4 patch proposals into data/verification/phase4/patches_p4.json.
 
-Sources: v4patch_*.csv (first round verifiers), v4retrypatch_*.csv (retry round) and uae_moved_patch.csv (UAE sources
+Sources: v4patch_*.csv (first round verifiers), v4retrypatch_*.csv and v4retry2patch_*.csv (retry rounds) and uae_moved_patch.csv (UAE sources
 re-read at their current address). Each proposal was read by the lead analyst. REJECT lists proposals not applied;
 OVERRIDE lists proposals applied with a different value (the reason is recorded). Run: python scripts/p4_accept_patches.py
 """
@@ -22,6 +22,7 @@ OVERRIDE = {
 def main():
     out, rejected = [], []
     files = (sorted(glob.glob(os.path.join(P4, "v4patch_*.csv"))) + sorted(glob.glob(os.path.join(P4, "v4retrypatch_*.csv")))
+             + sorted(glob.glob(os.path.join(P4, "v4retry2patch_*.csv")))
              + [os.path.join(P4, "uae_moved_patch.csv")])
     for f in files:
         src = os.path.basename(f)[:-4]
