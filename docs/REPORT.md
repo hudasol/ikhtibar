@@ -2,7 +2,7 @@
 
 **A comparative evidence review, with a gap analysis for UAE public sector deployment**
 
-Prepared for Huda Mueen. Version 3.0 (phase 3), 16 October 2026. Rows carry their own retrieval and check dates: phase 1 and 2 rows were retrieved on 11 or 12 October 2026, and phase 3 checks and new rows are dated 16 October 2026. This file is generated from the data files by `python -m ikhtibar.build_docs`; do not edit it by hand.
+Prepared for Huda Mueen. Version 4.0 (phase 4), 28 October 2026. Counts are computed from the current table, which includes the 25 phase 4 corrections (two of them status changes); the phase 4 evaluation is in `docs/EVALUATION.md`. Rows carry their own retrieval and check dates: phase 1 and 2 rows were retrieved on 11 or 12 October 2026, and phase 3 checks and new rows are dated 16 October 2026. This file is generated from the data files by `python -m ikhtibar.build_docs`; do not edit it by hand.
 
 **This is research analysis, not legal advice.** It has not been peer reviewed. It was produced with AI research subagents and independent AI verification passes in three phases (Appendix A); phase 3 re-checked every row that phase 2 had left open, re-checked the status of time sensitive items, added new rows, and ran a fresh independent verification sample. Statements about what a document says trace to a row in `data/evidence_table.csv`. Statements that are interpretation appear in paragraphs marked **Interpretation**. A dagger (†) after a row identifier means the row is excluded from every headline count: it could not be verified (source blocked, passage not located, or source not read), or it rests on a portal summary or a secondary report only.
 

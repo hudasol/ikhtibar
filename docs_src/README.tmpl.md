@@ -8,7 +8,7 @@ A comparative evidence base on testing AI systems before deployment, with a gap 
 
 ## Status 🌷
 
-Version 3.0 (phase 3), 16 October 2026. {{n_rows}} evidence rows ({{n_test_all}} test provisions), {{n_new_p3}} of them added in phase 3. Phase 3 re-checked the {{p3r_n}} rows phase 2 had left open and ran a fresh independent check: in a seeded random sample of {{p3f_n}} rows, {{p3f_err}} of {{p3f_verifiable}} verifiable rows had an error under a strict rubric ({{p3f_rate}}%, 95% interval {{p3f_lo}}% to {{p3f_hi}}%), all corrected. {{n_unreliable_rows}} rows are excluded from the headline counts (unverified, unverifiable, superseded, or resting on a summary or secondary report only). Of {{n_test_head}} headline test provisions, {{head_mc}} ({{head_mc_pct}}) are mandatory or conditional, {{head_vg}} ({{head_vg_pct}}) are voluntary or guidance and {{head_am}} ({{head_am_pct}}) are ambiguous.
+Version 4.0 (phase 4), 28 October 2026. Phase 4 added baselines, a tool evaluation, blind second codings, a robustness analysis, a fresh verification sample, a completeness pilot and a conference paper draft (see `docs/EVALUATION.md`; judgement calls in `docs/DECISIONS.md`). Counts are computed from the current table, which includes the 25 phase 4 corrections. {{n_rows}} evidence rows ({{n_test_all}} test provisions), {{n_new_p3}} of them added in phase 3. Phase 3 re-checked the {{p3r_n}} rows phase 2 had left open and ran a fresh independent check: in a seeded random sample of {{p3f_n}} rows, {{p3f_err}} of {{p3f_verifiable}} verifiable rows had an error under a strict rubric ({{p3f_rate}}%, 95% interval {{p3f_lo}}% to {{p3f_hi}}%), all corrected. {{n_unreliable_rows}} rows are excluded from the headline counts (unverified, unverifiable, superseded, or resting on a summary or secondary report only). Of {{n_test_head}} headline test provisions, {{head_mc}} ({{head_mc_pct}}) are mandatory or conditional, {{head_vg}} ({{head_vg_pct}}) are voluntary or guidance and {{head_am}} ({{head_am_pct}}) are ambiguous.
 
 ## What is documented
 
@@ -67,6 +67,9 @@ The tool returns, for each checklist item, APPLIES, DOES_NOT_APPLY or UNKNOWN, w
 | `docs/REPORT.md`, `docs/EXECUTIVE_BRIEF.md` | Generated report and brief |
 | `docs/DOWNLOAD_LIST.md` | Documents to download by hand |
 | `docs/UAE_COVERAGE.md`, `docs/TIME_SENSITIVE.md` | Phase 2 records |
+| `docs/EVALUATION.md`, `docs/DECISIONS.md`, `docs/GAP_ANALYSIS.md` | Phase 4 evaluation (generated), decision log, limitations and plan |
+| `paper/` | Conference paper draft, generated from the result files (`scripts/build_paper.py`, `scripts/compile_paper.sh`) |
+| `data/baselines/`, `data/evaluation/`, `data/robustness.json`, `data/completeness/`, `data/coding/phase4/` | Phase 4 result files and inputs |
 | `docs/LICENSING.md` | Licence proposal and library licence record |
 | `data/evidence_table.csv` | The evidence table |
 | `data/checklist.yaml`, `data/answers_schema.yaml` | Checklist and questions |

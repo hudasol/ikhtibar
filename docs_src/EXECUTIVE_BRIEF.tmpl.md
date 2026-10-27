@@ -1,6 +1,6 @@
 # Executive brief: testing AI before deployment
 
-Prepared for Huda Mueen. Version 3.0, 16 October 2026. Generated from the data files. **Research analysis, not legal advice.** A dagger after a row identifier means the row is excluded from the counts (unverified, or resting on a summary or secondary report only).
+Prepared for Huda Mueen. Version 4.0, 28 October 2026. Phase 4 evaluation is in `docs/EVALUATION.md`. Generated from the data files. **Research analysis, not legal advice.** A dagger after a row identifier means the row is excluded from the counts (unverified, or resting on a summary or secondary report only).
 
 ## The question
 
