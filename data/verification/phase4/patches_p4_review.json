@@ -1,0 +1,18 @@
+[
+ {
+  "row_id": "Korea-003",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "translation: English text from Korea Legislation Research Institute (KLRI) eLaw site; KLRI translations are reference translations, not authoritative; translator not credited in text read. Operators are encouraged ('should') to obtain certification, but public agencies planning to use high impact AI 'must give preferential consideration' to certified products (Art. 30(4)). That procurement preference is the only binding element and it concerns preference, not testing; the row is kept as voluntary for the certification scheme itself. Detailed scheme not read.",
+  "source": "review_p4",
+  "reason": "Note said 'Should' wording only and contradicted the corrected paraphrase."
+ },
+ {
+  "row_id": "UK-004",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Section text says 'You must build safe, secure and robust AI solutions' but the 'practical recommendations' are advisory; coded guidance in phase 4 (earlier coded ambiguous). Government bodies in scope are civil servants, but the document does not state a legal basis.",
+  "source": "review_p4",
+  "reason": "Note said treated as ambiguous after the status was changed to guidance."
+ }
+]
