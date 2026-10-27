@@ -26,9 +26,9 @@ A test fails if a stored result file or the paper source is older than the table
 6. **Check the reference metadata.** `data/paper/refs_candidates.csv` lists 61 works that were opened and read at abstract or landing page level, never in full text. Some authors, years and venues are blank where the page did not show them (see `data/paper/refs_notes.md`). Resolve these and read the works before submission.
 7. **Decide about commit attribution.** Before your rule was applied, 21 commits carry an assistant coauthor trailer, and 25 commits (including most of those made on 28 October before the author name was corrected) show the assistant as the author name. They cannot be changed without rewriting published history, which your rules forbid, so they are left. Commits from this point use your name. Tell me if you want them handled another way.
 
-## Still to do with web access (scheduled)
+## Still to do with web access
 
-Retry the 47 unreadable rows of the fresh verification sample; widen the completeness reference list and read the six missed United States documents; recheck the status items still not reread (DoH Responsible AI revision, DIFC Regulation 10, EU, Saudi, Korea decree, Canada); add related work for the Gulf and for public sector assurance. After any of these, rerun the analyses and the builds as above.
+Done on 28 October: two retry rounds on the unreadable verification rows (26 of 120 remain unreadable), the six missed United States documents read, a second status recheck, and 14 related work items added. Left: verify the 19 candidate rows in `data/completeness/us_docs_candidate_rows.csv` and add them to the table through the build; widen the completeness reference list beyond the United States; read the 26 still unreadable sample rows (mostly EU Act, EU code of practice and NIST pages refused by the session) from a machine without the domain restriction; the DoH revision, DIFC Regulation 10, EU harmonised standards and Canada Directive points. After any of these, rerun the analyses and the builds as above.
 
 ## Claims the paper may make, and may not
 

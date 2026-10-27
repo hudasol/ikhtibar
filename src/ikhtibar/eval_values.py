@@ -140,6 +140,12 @@ def values():
     v["vf_err_rows"] = ", ".join(vf["error_rows_strict"])
     v["vf_bound_hi"] = vf["bounds_all_sampled_strict_error_pct"]["all_of_unreadable_in_error"]
     import csv
+    with open(ROOT / "data" / "completeness" / "us_docs_read.csv", encoding="utf-8", newline="") as fh:
+        us = list(csv.DictReader(fh))
+    with open(ROOT / "data" / "completeness" / "us_docs_candidate_rows.csv", encoding="utf-8", newline="") as fh:
+        v["us_cand_rows"] = len(list(csv.DictReader(fh)))
+    v["us_read"] = sum(r["access_status"] == "read" for r in us)
+    v["us_total"] = len(us)
     with open(ROOT / "data" / "evidence_table.csv", encoding="utf-8", newline="") as fh:
         tab = list(csv.DictReader(fh))
     v["n_translated"] = sum(("translat" in r["language_read"].lower() or "fetch" in r["language_read"].lower()) for r in tab)

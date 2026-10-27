@@ -8,7 +8,7 @@ The fresh verifier proposed changing the binding status from guidance to mandato
 
 ## D2. Two rows moved from MINOR to ERROR on strict grading
 
-Korea-003 (the source says public agencies "must give preferential consideration" to certified products, the row said "should prefer") and US-NIST-033 (the row named an actor the source does not name) were graded MINOR by the verifier. The rubric treats a wrong obligation level or an unsupported actor as an error, so the lead regraded both. Both grades are kept: the report gives the rate as graded by the verifier (3 of 73) and the rate after strict grading (5 of 73). The strict rate is the one used in the paper.
+Korea-003 (the source says public agencies "must give preferential consideration" to certified products, the row said "should prefer") and US-NIST-033 (the row named an actor the source does not name) were graded MINOR by the verifier. The rubric treats a wrong obligation level or an unsupported actor as an error, so the lead regraded both. Both grades are kept: the report gives the rate as graded by the verifier (4 of 94 after the retry rounds) and the rate after strict grading (6 of 94). The strict rate is the one used in the paper.
 
 ## D3. S43 left as a documented divergence
 
@@ -24,7 +24,7 @@ Blind coders agree with each other far more than with the original coding. The m
 
 ## D6. Verification rates are for readable rows only
 
-About 39% of the fresh sample could not be read in the working session because of a session level domain allowlist, not because the sites refused access. No workaround was used (no changed user agents, caches or mirrors). The error rates are stated for the readable rows, with the extreme bounds if every unreadable row were an error, and the unreadable rows are listed for manual checking.
+At first 39% of the fresh sample could not be read, and 22% (26 of 120) still could not be read after two retry rounds, in the working session because of a session level domain allowlist, not because the sites refused access. No workaround was used (no changed user agents, caches or mirrors). The error rates are stated for the readable rows, with the extreme bounds if every unreadable row were an error, and the unreadable rows are listed for manual checking.
 
 ## D7. Accepted patches
 

@@ -28,7 +28,7 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 | Majority class | 45.5 (39.7 to 51.4) | 12.5 | 0.0 | 45.5 (40.0 to 51.4) | 12.5 |
 | Document prior (most common label in the same document) | 84.3 (80.2 to 88.2) | 81.9 | 0.774 | 45.5 (40.0 to 51.4) | 12.5 |
 | Wording rule (shall, must versus should, may) | 58.3 (52.8 to 64.1) | 31.2 | 0.344 | 58.3 (52.8 to 64.1) | 31.2 |
-| TF-IDF with logistic regression | 50.5 (44.7 to 56.2) | 21.1 | 0.117 | 47.2 (41.7 to 52.8) | 16.0 |
+| TF-IDF with logistic regression | 50.9 (45.0 to 56.5) | 21.6 | 0.125 | 46.9 (41.4 to 52.4) | 15.3 |
 | TF-IDF with logistic regression plus document indicator | 79.1 (74.4 to 83.1) | 74.8 | 0.686 | 45.5 (40.0 to 51.4) | 12.5 |
 
 ### Binding status, three classes (binding, non binding, ambiguous)
@@ -38,8 +38,8 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 | Majority class | 60.0 (54.1 to 65.5) | 25.0 | 0.0 | 60.0 (54.1 to 65.5) | 25.0 |
 | Document prior (most common label in the same document) | 89.6 (86.2 to 92.8) | 87.0 | 0.805 | 60.0 (54.1 to 65.5) | 25.0 |
 | Wording rule (shall, must versus should, may) | 76.9 (72.1 to 82.1) | 60.8 | 0.554 | 76.9 (72.1 to 82.1) | 60.8 |
-| TF-IDF with logistic regression | 64.6 (58.9 to 69.8) | 35.6 | 0.154 | 61.7 (55.9 to 66.9) | 29.1 |
-| TF-IDF with logistic regression plus document indicator | 84.7 (80.8 to 88.2) | 80.6 | 0.699 | 60.0 (54.1 to 65.5) | 25.0 |
+| TF-IDF with logistic regression | 64.9 (59.2 to 70.0) | 36.2 | 0.164 | 61.4 (55.5 to 66.6) | 28.4 |
+| TF-IDF with logistic regression plus document indicator | 84.7 (80.7 to 88.2) | 80.6 | 0.698 | 60.0 (54.1 to 65.5) | 25.0 |
 
 ### Primary test type, fifteen classes
 
@@ -48,14 +48,14 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 | Majority class | 20.0 (15.5 to 24.8) | 2.2 | 0.0 | 14.5 (10.7 to 18.6) | 1.8 |
 | Document prior (most common label in the same document) | 27.8 (23.4 to 32.6) | 17.3 | 0.166 | 14.5 (10.7 to 18.6) | 1.8 |
 | Keyword rule (taxonomy definitions) | 47.2 (41.4 to 53.1) | 43.9 | 0.414 | 47.2 (41.4 to 53.1) | 43.9 |
-| TF-IDF with logistic regression | 30.0 (25.3 to 35.2) | 9.8 | 0.139 | 25.2 (20.3 to 30.3) | 7.0 |
-| TF-IDF with logistic regression plus document indicator | 32.2 (27.5 to 37.3) | 15.4 | 0.195 | 22.8 (17.9 to 27.6) | 5.7 |
+| TF-IDF with logistic regression | 29.9 (25.3 to 35.1) | 9.8 | 0.138 | 25.2 (20.3 to 30.3) | 7.0 |
+| TF-IDF with logistic regression plus document indicator | 32.2 (27.3 to 37.2) | 15.4 | 0.195 | 22.8 (17.9 to 27.6) | 5.7 |
 
 ### Reading the results
 
 - Binding status is largely a property of the document, in the sense that a document prior reaches 84.3% accuracy when other provisions of the same document were seen in training, against 45.5% for the majority class. This is close to tautological. When a whole family is held out, the document prior falls back to the majority rate (45.5%), because it has nothing to look up, and the wording rule is the better method.
-- A bag of words model does little better than the majority class on binding status (50.5%). Wording alone is a weak signal, which is why the coding reads each provision in the context of its document.
-- For test type, a keyword rule built from the taxonomy definitions (47.2%) beats TF-IDF with logistic regression (30.0%) and the majority class (20.0%). With 290 rows and fifteen classes, a learned model has too little data. This is a modest baseline, not evidence that test type is easy to code.
+- A bag of words model does little better than the majority class on binding status (50.9%). Wording alone is a weak signal, which is why the coding reads each provision in the context of its document.
+- For test type, a keyword rule built from the taxonomy definitions (47.2%) beats TF-IDF with logistic regression (29.9%) and the majority class (20.0%). With 290 rows and fifteen classes, a learned model has too little data. This is a modest baseline, not evidence that test type is easy to code.
 - Limits of these baselines: intervals are bootstrap intervals over rows and ignore clustering by document, so they understate uncertainty. The keyword lexicon was written by an analyst who had seen the table. The text classified is the analyst's own paraphrase. The labels are the analyst's own codes.
 - The best baseline is therefore not a trained model. Any later classifier, or any language model coder, should be compared with the document prior and the keyword rule, not with the majority class alone.
 
@@ -120,19 +120,19 @@ The claim survives every scenario. Even when every excluded row and every ambigu
 
 ## 5. Fresh independent verification
 
-120 rows were drawn at random (fixed seed) from the 485 rows that earlier checks had marked as verified and readable. A verifier who saw only the row and the rules reread the primary source. A source can be read only when the session can fetch it, and 47 of 120 rows (39.2%) could not be read in this session, mostly because of a session level domain allowlist, not because the sites refused. The error rates below therefore describe the 73 readable rows only.
+120 rows were drawn at random (fixed seed) from the 485 rows that earlier checks had marked as verified and readable. A verifier who saw only the row and the rules reread the primary source. A source can be read only when the session can fetch it, and 26 of 120 rows (21.7%) could not be read in this session, mostly because of a session level domain allowlist, not because the sites refused. The error rates below therefore describe the 94 readable rows only.
 
 | Measure | Rows | Rate | 95% interval (Wilson) |
 |---|---|---|---|
-| Errors, as graded by the verifier | 3 of 73 | 4.1% | 1.4 to 11.4 |
-| Errors, after the lead applied the rubric strictly | 5 of 73 | 6.8% | 3.0 to 15.1 |
-| Any fault, including minor | 15 of 73 | 20.5% | 12.9 to 31.2 |
+| Errors, as graded by the verifier | 4 of 94 | 4.3% | 1.7 to 10.4 |
+| Errors, after the lead applied the rubric strictly | 6 of 94 | 6.4% | 3.0 to 13.2 |
+| Any fault, including minor | 20 of 94 | 21.3% | 14.2 to 30.6 |
 
-Rows with a strict error: Korea-002, Korea-003, UAE-DIFC-ADGM-010, UK-004, US-NIST-033. Only 6 of 26 sampled European Union rows could be read, and that family supplies a large share of the binding rows, so the rate says little about the rows behind the headline. It is also a rate among rows that earlier checks had already passed. The phase 3 fresh sample (drawn before the corrections) is reported separately because it was drawn at a different time: 3 errors in 23 verifiable rows (13.0%, 95% interval 4.5% to 32.1%); the phase 3 recheck of rows phase 2 had left open found 15 in 142 (10.6%). The true error rate of the whole table is plausibly higher than the readable subset of this sample suggests. Accepted corrections were applied to the table and listed in `data/verification/phase4/patches_p4.json`. If every unreadable row were an error, the rate for the sample could be as high as 43.3%, so the rate describes readable rows and must not be extended to the rest without saying so. The unreadable rows are listed for manual checking.
+Rows with a strict error: EU-AI-Act-004, Korea-002, Korea-003, UAE-DIFC-ADGM-010, UK-004, US-NIST-033. Only 17 of 26 sampled European Union rows could be read, and that family supplies a large share of the binding rows, so the rate says little about the rows behind the headline. It is also a rate among rows that earlier checks had already passed. The phase 3 fresh sample (drawn before the corrections) is reported separately because it was drawn at a different time: 3 errors in 23 verifiable rows (13.0%, 95% interval 4.5% to 32.1%); the phase 3 recheck of rows phase 2 had left open found 15 in 142 (10.6%). The true error rate of the whole table is plausibly higher than the readable subset of this sample suggests. Accepted corrections were applied to the table and listed in `data/verification/phase4/patches_p4.json`. If every unreadable row were an error, the rate for the sample could be as high as 26.7%, so the rate describes readable rows and must not be extended to the rest without saying so. The unreadable rows are listed for manual checking.
 
 ## 6. Completeness pilot
 
-A separate agent built a reference list of 82 candidate documents without seeing the table, and the matches were made by hand. 3 candidates were outside the stated frame. Of 19 candidates confirmed to contain a testing provision, 13 are in the table: recall 68.4% (95% interval 46.0 to 84.6). A further 58 candidates could not be confirmed either way, of which 30 are in the table, so the most pessimistic recall is 55.8%. Missed documents (all United States federal): NIST AI 200-2 ipd, The TEVV-Athlon Framework for Evaluating AI Systems; NIST AI 700-2 ARIA Pilot Evaluation Report (ARIA 0.1); ARIA Program Evaluation Design Document; NIST SP 800-218A Secure Software Development Practices for Generative AI and Dual-Use Foundation Models; M-25-22 Driving Efficient Acquisition of Artificial Intelligence in Government; America's AI Action Plan. Of the 28 unresolved candidates not in the table, 6 are UAE instruments. Matching was done by hand by the author of the table.
+A separate agent built a reference list of 82 candidate documents without seeing the table, and the matches were made by hand. 3 candidates were outside the stated frame. Of 19 candidates confirmed to contain a testing provision, 13 are in the table: recall 68.4% (95% interval 46.0 to 84.6). A further 58 candidates could not be confirmed either way, of which 30 are in the table, so the most pessimistic recall is 55.8%. Missed documents (all United States federal): NIST AI 200-2 ipd, The TEVV-Athlon Framework for Evaluating AI Systems; NIST AI 700-2 ARIA Pilot Evaluation Report (ARIA 0.1); ARIA Program Evaluation Design Document; NIST SP 800-218A Secure Software Development Practices for Generative AI and Dual-Use Foundation Models; M-25-22 Driving Efficient Acquisition of Artificial Intelligence in Government; America's AI Action Plan. Of the 28 unresolved candidates not in the table, 6 are UAE instruments. Matching was done by hand by the author of the table. After the benchmark was scored, the six confirmed misses were read from official hosts (6 of 6 readable) and 19 candidate rows were drafted from them in `data/completeness/us_docs_candidate_rows.csv`. Those rows are not in the table and were not used to change the recall figure, because they have not been independently verified; adding them unverified would also raise recall by construction.
 
 This is a pilot, not a population estimate. The reference list was built under the same tool limits as the table, so the two are not independent of search behaviour, and the interval is wide because the count is small.
 
