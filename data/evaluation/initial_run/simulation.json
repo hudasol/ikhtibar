@@ -1,0 +1,110 @@
+{
+ "applies_items_by_questions_answered": {
+  "0": {
+   "max": 12,
+   "mean": 12.0,
+   "min": 12
+  },
+  "1": {
+   "max": 15,
+   "mean": 13.01,
+   "min": 12
+  },
+  "2": {
+   "max": 18,
+   "mean": 14.03,
+   "min": 12
+  },
+  "3": {
+   "max": 21,
+   "mean": 15.04,
+   "min": 12
+  },
+  "4": {
+   "max": 23,
+   "mean": 16.08,
+   "min": 12
+  },
+  "5": {
+   "max": 25,
+   "mean": 17.15,
+   "min": 12
+  },
+  "6": {
+   "max": 26,
+   "mean": 18.22,
+   "min": 12
+  },
+  "7": {
+   "max": 26,
+   "mean": 19.32,
+   "min": 12
+  },
+  "8": {
+   "max": 26,
+   "mean": 20.44,
+   "min": 13
+  }
+ },
+ "applies_to_not_apply_flips": 0,
+ "items": 30,
+ "items_by_question_in_to_settle": {
+  "acquisition": 1,
+  "audience": 2,
+  "data_types": 3,
+  "decision_impact": 3,
+  "entity_zone": 7,
+  "system_type": 4
+ },
+ "monotonicity_steps_checked": 24000,
+ "profiles": 3000,
+ "questions": 8,
+ "seed": 20261028,
+ "unknown_items_by_questions_answered": {
+  "0": {
+   "max": 18,
+   "mean": 18.0,
+   "min": 18
+  },
+  "1": {
+   "max": 18,
+   "mean": 15.96,
+   "min": 12
+  },
+  "2": {
+   "max": 18,
+   "mean": 13.93,
+   "min": 8
+  },
+  "3": {
+   "max": 18,
+   "mean": 11.89,
+   "min": 5
+  },
+  "4": {
+   "max": 18,
+   "mean": 9.88,
+   "min": 3
+  },
+  "5": {
+   "max": 17,
+   "mean": 7.83,
+   "min": 1
+  },
+  "6": {
+   "max": 14,
+   "mean": 5.8,
+   "min": 0
+  },
+  "7": {
+   "max": 11,
+   "mean": 3.76,
+   "min": 0
+  },
+  "8": {
+   "max": 5,
+   "mean": 1.69,
+   "min": 0
+  }
+ }
+}

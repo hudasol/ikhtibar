@@ -1,0 +1,257 @@
+{
+ "assumptions": [
+  {
+   "id": "A1",
+   "text": "tri [q, TRUE_LIST, FALSE_LIST]: answer in TRUE_LIST gives APPLIES, in FALSE_LIST gives DOES_NOT_APPLY, missing or 'unknown' gives UNKNOWN, and a known value in neither list (audience=internal; decision_impact=advisory, and significant_support for E2) gives UNKNOWN, as the why fields of C2, F3, E1, E2 state."
+  },
+  {
+   "id": "A2",
+   "text": "any_contains [q, LIST] on a multi answer is a Kleene OR over its elements: any element in LIST gives APPLIES even if 'unknown' is also listed; no match plus 'unknown' present gives UNKNOWN; no match and no 'unknown' (including only 'none' or only confidential_government) gives DOES_NOT_APPLY; question omitted gives UNKNOWN."
+  },
+  {
+   "id": "A3",
+   "text": "An empty list for a multi question is not an affirmative 'none' and is treated as UNKNOWN."
+  },
+  {
+   "id": "A4",
+   "text": "'none' combined with other values is not rejected; the list is evaluated by plain membership (so ['none','personal'] makes A3, D6, H3 APPLY). Alternative reading: validation error. Revising ['none'] to ['none','personal'] changes one answer and is outside the monotonicity property, which concerns adding answers to unanswered questions."
+  },
+  {
+   "id": "A5",
+   "text": "eq and in compare exact strings and give UNKNOWN for missing/'unknown'; all/any/not are Kleene (all: any F gives F, else any U gives U; any: any T gives T, else any U gives U; not swaps T/F and keeps U). 'contains' is not used by any item; assumed to be single value membership with the same missing/unknown handling as any_contains. No item reads hosting or eu_market in applies_when, so they never change item statuses (row_binding is out of scope)."
+  },
+  {
+   "id": "A6",
+   "text": "Best reading for invalid input (value not in schema, wrong shape, wrong type, case or whitespace mismatch, nested list, unknown key): the tool rejects it with a validation error rather than silently accepting it. The spec does not say; such scenarios carry expected_status 'unspecified'."
+  },
+  {
+   "id": "A7",
+   "text": "If the tool instead accepts invalid input, the fallback expected map treats the whole invalid answer as unknown (no coercion, no partial credit for valid elements of a list)."
+  },
+  {
+   "id": "A8",
+   "text": "The bare string 'unknown' is accepted for a multi question as equivalent to ['unknown'], following 'Every answer may also be unknown'."
+  },
+  {
+   "id": "A9",
+   "text": "A JSON null answer is treated as omitted (missing); alternative reading is rejection."
+  },
+  {
+   "id": "A10",
+   "text": "An unknown top-level question key is either rejected or ignored; fallback expected map ignores it."
+  }
+ ],
+ "baselines": {
+  "always_applies": {
+   "accuracy": 49.7,
+   "agree_with_expected": 1222,
+   "item_decisions": 2460,
+   "scenarios_exact_match_pct": 0.0,
+   "unknown_returned": 0,
+   "wrongly_applied": 1238,
+   "wrongly_excluded": 0
+  },
+  "closed_two_valued": {
+   "accuracy": 56.8,
+   "agree_with_expected": 1398,
+   "item_decisions": 2460,
+   "scenarios_exact_match_pct": 4.9,
+   "unknown_returned": 0,
+   "wrongly_applied": 0,
+   "wrongly_excluded": 1062
+  },
+  "open_two_valued": {
+   "accuracy": 57.0,
+   "agree_with_expected": 1401,
+   "item_decisions": 2460,
+   "scenarios_exact_match_pct": 4.9,
+   "unknown_returned": 0,
+   "wrongly_applied": 1011,
+   "wrongly_excluded": 48
+  },
+  "structure_only": {
+   "accuracy": 83.0,
+   "agree_with_expected": 2043,
+   "item_decisions": 2460,
+   "scenarios_exact_match_pct": 17.1,
+   "unknown_returned": 1476,
+   "wrongly_applied": 0,
+   "wrongly_excluded": 0
+  }
+ },
+ "engine": {
+  "accuracy": 99.8,
+  "agree_with_expected": 2454,
+  "item_decisions": 2460,
+  "misses_in_assumption_dependent_scenarios": 2,
+  "scenarios_depending_on_assumptions": 31,
+  "scenarios_exact_match": 80,
+  "scenarios_exact_match_pct": 97.6,
+  "unknown_returned": 1059,
+  "wrongly_applied": 0,
+  "wrongly_excluded": 3
+ },
+ "invalid_inputs": [
+  {
+   "answers": {
+    "decision_impact": "critical",
+    "system_type": "decision_tree"
+   },
+   "description": "Invalid: system_type='decision_tree' is not in the schema. Best reading: validation error. Fallback expected map treats the invalid answer as unknown.",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: invalid value 'decision_tree' for 'system_type'. Valid: agentic, computer_vision, genai_llm, other, predictive_ml, rules_based",
+   "scenario": "S73"
+  },
+  {
+   "answers": {
+    "region": "uae",
+    "system_type": "genai_llm"
+   },
+   "description": "Invalid: unknown question key 'region'. Best reading: reject or warn; fallback ignores it.",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: unknown question 'region'. Valid: acquisition, audience, data_types, decision_impact, entity_zone, eu_market, hosting, system_type",
+   "scenario": "S74"
+  },
+  {
+   "answers": {
+    "data_types": "personal",
+    "system_type": "predictive_ml"
+   },
+   "description": "Invalid: data_types given as the string 'personal' instead of a list.",
+   "engine": "accepted",
+   "matches_lenient_expected": false,
+   "message": "",
+   "scenario": "S75"
+  },
+  {
+   "answers": {
+    "system_type": [
+     "genai_llm"
+    ]
+   },
+   "description": "Invalid: system_type given as a list ['genai_llm'] where a single value is expected.",
+   "engine": "crashed",
+   "matches_lenient_expected": null,
+   "message": "CRASH TypeError: unhashable type: 'list'",
+   "scenario": "S76"
+  },
+  {
+   "answers": {
+    "eu_market": true
+   },
+   "description": "Invalid: eu_market given as JSON boolean true instead of the string 'yes'.",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: invalid value 'True' for 'eu_market'. Valid: no, yes",
+   "scenario": "S77"
+  },
+  {
+   "answers": {
+    "audience": "Public_Facing"
+   },
+   "description": "Invalid: audience='Public_Facing' (case differs from schema).",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: invalid value 'Public_Facing' for 'audience'. Valid: internal, public_facing",
+   "scenario": "S78"
+  },
+  {
+   "answers": {
+    "data_types": [
+     "personal",
+     "bogus"
+    ]
+   },
+   "description": "Invalid: data_types=['personal','bogus'] has one value outside the schema.",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: invalid value(s) ['bogus'] for 'data_types'. Valid: biometric, confidential_government, financial, health, none, personal, sensitive_personal",
+   "scenario": "S79"
+  },
+  {
+   "answers": {
+    "data_types": [
+     [
+      "personal"
+     ]
+    ]
+   },
+   "description": "Invalid: data_types=[['personal']] nested list.",
+   "engine": "crashed",
+   "matches_lenient_expected": null,
+   "message": "CRASH TypeError: unhashable type: 'list'",
+   "scenario": "S80"
+  },
+  {
+   "answers": {
+    "entity_zone": "health_abu_dhabi "
+   },
+   "description": "Invalid: entity_zone='health_abu_dhabi ' with trailing space.",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: invalid value 'health_abu_dhabi ' for 'entity_zone'. Valid: abu_dhabi_gov, adgm, difc, dubai_gov, federal_gov, health_abu_dhabi, health_dubai, other_uae",
+   "scenario": "S81"
+  },
+  {
+   "answers": {
+    "decision_impact": null,
+    "system_type": "agentic"
+   },
+   "description": "Edge: decision_impact=null. Best reading: treated as omitted (missing).",
+   "engine": "accepted",
+   "matches_lenient_expected": true,
+   "message": "",
+   "scenario": "S82"
+  },
+  {
+   "answers": {
+    "hosting": 3
+   },
+   "description": "Invalid: hosting given as number 3.",
+   "engine": "rejected with a message",
+   "matches_lenient_expected": null,
+   "message": "AnswerError: invalid value '3' for 'hosting'. Valid: foreign_cloud, uae_cloud, uae_onprem, vendor_hosted_unknown",
+   "scenario": "S83"
+  },
+  {
+   "answers": {
+    "system_type": [
+     "unknown"
+    ]
+   },
+   "description": "Invalid: system_type=['unknown'] list holding unknown for a single question.",
+   "engine": "crashed",
+   "matches_lenient_expected": null,
+   "message": "CRASH TypeError: unhashable type: 'list'",
+   "scenario": "S84"
+  }
+ ],
+ "items": 30,
+ "monotone_pairs_checked": [
+  {
+   "flips": [],
+   "pair": "S85/S86"
+  },
+  {
+   "flips": [],
+   "pair": "S87/S88"
+  },
+  {
+   "flips": [],
+   "pair": "S89/S90"
+  },
+  {
+   "flips": [],
+   "pair": "S91/S92"
+  },
+  {
+   "flips": [],
+   "pair": "S93/S94"
+  }
+ ],
+ "scenarios_specified": 82,
+ "scenarios_total": 94,
+ "scenarios_unspecified": 12
+}
