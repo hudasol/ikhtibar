@@ -66,8 +66,8 @@
    "item_decisions": 2460,
    "scenarios_exact_match_pct": 4.9,
    "unknown_returned": 0,
-   "wrongly_applied": 1011,
-   "wrongly_excluded": 48
+   "wrongly_applied": 1014,
+   "wrongly_excluded": 45
   },
   "structure_only": {
    "accuracy": 83.0,
@@ -80,16 +80,16 @@
   }
  },
  "engine": {
-  "accuracy": 99.8,
-  "agree_with_expected": 2454,
+  "accuracy": 99.9,
+  "agree_with_expected": 2457,
   "item_decisions": 2460,
-  "misses_in_assumption_dependent_scenarios": 2,
+  "misses_in_assumption_dependent_scenarios": 1,
   "scenarios_depending_on_assumptions": 31,
-  "scenarios_exact_match": 80,
-  "scenarios_exact_match_pct": 97.6,
-  "unknown_returned": 1059,
+  "scenarios_exact_match": 81,
+  "scenarios_exact_match_pct": 98.8,
+  "unknown_returned": 1062,
   "wrongly_applied": 0,
-  "wrongly_excluded": 3
+  "wrongly_excluded": 0
  },
  "invalid_inputs": [
   {
@@ -132,9 +132,9 @@
     ]
    },
    "description": "Invalid: system_type given as a list ['genai_llm'] where a single value is expected.",
-   "engine": "crashed",
+   "engine": "rejected with a message",
    "matches_lenient_expected": null,
-   "message": "CRASH TypeError: unhashable type: 'list'",
+   "message": "AnswerError: 'system_type' takes one value, not a list or object; got ['genai_llm']",
    "scenario": "S76"
   },
   {
@@ -179,9 +179,9 @@
     ]
    },
    "description": "Invalid: data_types=[['personal']] nested list.",
-   "engine": "crashed",
+   "engine": "rejected with a message",
    "matches_lenient_expected": null,
-   "message": "CRASH TypeError: unhashable type: 'list'",
+   "message": "AnswerError: 'data_types' takes a list of text values; got [['personal']]",
    "scenario": "S80"
   },
   {
@@ -222,9 +222,9 @@
     ]
    },
    "description": "Invalid: system_type=['unknown'] list holding unknown for a single question.",
-   "engine": "crashed",
+   "engine": "rejected with a message",
    "matches_lenient_expected": null,
-   "message": "CRASH TypeError: unhashable type: 'list'",
+   "message": "AnswerError: 'system_type' takes one value, not a list or object; got ['unknown']",
    "scenario": "S84"
   }
  ],

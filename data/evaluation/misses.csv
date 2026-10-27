@@ -1,7 +1,4 @@
 scenario,item,expected,got,assumptions,tags
-S41,A3,UNKNOWN,DOES_NOT_APPLY,A3,multi;empty_list
-S41,D6,UNKNOWN,DOES_NOT_APPLY,A3,multi;empty_list
-S41,H3,UNKNOWN,DOES_NOT_APPLY,A3,multi;empty_list
 S43,A3,APPLIES,UNKNOWN,A2,multi;unknown_in_list
 S43,D6,APPLIES,UNKNOWN,A2,multi;unknown_in_list
 S43,H3,APPLIES,UNKNOWN,A2,multi;unknown_in_list
