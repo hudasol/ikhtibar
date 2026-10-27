@@ -1,0 +1,202 @@
+[
+ {
+  "row_id": "ISO-IEC-003",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Adds requirements for bodies that audit and certify AI management systems under ISO/IEC 42001, supplementing ISO/IEC 17021-1; published July 2025, 31 pages, stage 60.60.",
+  "source": "v4patch_1",
+  "reason": "Catalogue page shows 2025-07 only, no day."
+ },
+ {
+  "row_id": "Japan-019",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Part 5, U-2) i (printed p. 25)",
+  "source": "v4patch_1",
+  "reason": "Sentence appears on page footed 'Part 5 Main Appx. 25'."
+ },
+ {
+  "row_id": "UAE-Federal-019",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Organisations could consider Discrimination Impact Assessments; the guidelines say the assessment and mitigation measures should be documented and that it should be conducted pre-release and regularly afterwards.",
+  "source": "v4patch_1",
+  "reason": "Source gives specific timing, row was vaguer."
+ },
+ {
+  "row_id": "EU-AI-Act-073",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The Commission may fine GPAI providers up to 3% of worldwide annual turnover or EUR 15 million, whichever is higher, where it finds intentional or negligent infringement, failure to answer Art. 91 information requests, failure to comply with Art. 93 measures, or failure to give model access for Art. 92 evaluation.",
+  "source": "v4patch_2",
+  "reason": "Omitted 'whichever is higher' and the intent or negligence condition."
+ },
+ {
+  "row_id": "UAE-Dubai-033",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Control 6.1.6.3, p. 63",
+  "source": "v4patch_2",
+  "reason": "Page marker seen was 63, not 64-65."
+ },
+ {
+  "row_id": "UAE-Dubai-033",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Organisations carry out suitable security testing of information systems during development and prior to acceptance and deployment, and periodically (control text has no modal verb).",
+  "source": "v4patch_2",
+  "reason": "Source adds pre-acceptance and periodic testing."
+ },
+ {
+  "row_id": "China-029",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Art. 26 (algorithm filing) is a binding duty on providers; Art. 28 sandbox access is encouraged, not required.",
+  "source": "v4patch_3",
+  "reason": "Row mixes a mandatory and a voluntary provision under one status."
+ },
+ {
+  "row_id": "China-014",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Art. 19 itself does not name the filing authority; CAC role derives from the algorithm recommendation provisions.",
+  "source": "v4patch_4",
+  "reason": "Art. 19 text does not name an authority."
+ },
+ {
+  "row_id": "UK-004",
+  "field": "binding_status",
+  "op": "set",
+  "value": "guidance",
+  "source": "v4patch_4",
+  "reason": "Non binding playbook recommendations are guidance under the protocol."
+ },
+ {
+  "row_id": "US-NIST-031",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "MS-2.6-005 to MS-2.6-007, pp.33-34",
+  "source": "v4patch_4",
+  "reason": "Items seen at pp.33-34, not p.32."
+ },
+ {
+  "row_id": "Korea-002",
+  "field": "binding_status",
+  "op": "set",
+  "value": "conditional",
+  "source": "v4patch_5",
+  "reason": "Verifier proposed mandatory (Art. 12(2): the institute shall carry out the listed projects). Art. 12(1) makes operating the institute discretionary (the Minister may operate it), so the duty applies only if the trigger occurs, which the protocol codes conditional. Lead analyst judgement."
+ },
+ {
+  "row_id": "Korea-002",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Minister may operate AISI (Art. 12(1)); once operated, AISI shall carry out the listed projects (Art. 12(2)).",
+  "source": "v4patch_5",
+  "reason": "Clarify discretionary establishment vs duty."
+ },
+ {
+  "row_id": "US-NIST-033",
+  "field": "who_tests",
+  "op": "set",
+  "value": "TEVV, domain experts, AI deployment, impact assessment, operation and monitoring, end-users (AI Actor tasks listed for MEASURE 2.10)",
+  "source": "v4patch_5",
+  "reason": "Source lists actor tasks for the whole subcategory, not 'red teams'."
+ },
+ {
+  "row_id": "Korea-003",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Art. 30(1)-(4) (support for verification and certification of AI safety and trustworthiness)",
+  "source": "v4patch_6",
+  "reason": "Locator and title"
+ },
+ {
+  "row_id": "Korea-003",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Minister may support voluntary verification and certification; high-impact AI operators should try to obtain certification in advance; public agencies planning to use high-impact AI must give preferential consideration to certified products.",
+  "source": "v4patch_6",
+  "reason": "Para 4 is 'must give preferential consideration', not 'should prefer'"
+ },
+ {
+  "row_id": "UAE-DIFC-ADGM-010",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Managers must establish safeguards (access controls, security) for source code, must have contingency plans for model failure, and must conduct ongoing monitoring and review of whether the model meets objectives while managing inaccuracy, bias and exceptions risks; should maintain ability to modify or stop the model; FSRA will require a process to detect and report programming errors and unexpected outcomes; Board and Senior Management should periodically review governance.",
+  "source": "v4patch_6",
+  "reason": "Source uses must for several items; row wrote should throughout"
+ },
+ {
+  "row_id": "Saudi-005",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified in item 3 (AI System Owners are named in the preceding Deploy and Monitor item)",
+  "source": "v4retrypatch_1",
+  "reason": "Item 3 names no actor"
+ },
+ {
+  "row_id": "Singapore-028",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Trusted Development and Deployment dimension, 'Evaluation', p.14; 'Disclosure', pp.13-14",
+  "source": "v4retrypatch_2",
+  "reason": "Disclosure text spans pp.13-14"
+ },
+ {
+  "row_id": "UAE-Federal-009",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+  "source": "uae_moved_patch",
+  "reason": "Official u.ae asset address; MOJ mirror returns Request Rejected"
+ },
+ {
+  "row_id": "UAE-Federal-009",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Execution stage, approx. pp.78-79 (locator approximate, tool-reported)",
+  "source": "uae_moved_patch",
+  "reason": "Fetch of the u.ae copy places the passage at approx. pp.78-79, not 76-77"
+ },
+ {
+  "row_id": "UAE-Federal-012",
+  "field": "source_url",
+  "op": "set",
+  "value": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+  "source": "uae_moved_patch",
+  "reason": "Official u.ae asset address; MOJ mirror returns Request Rejected"
+ },
+ {
+  "row_id": "UAE-Federal-012",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Initiation stage, approx. pp.76-77 (success criteria, decision gates); Discovery stage, approx. pp.74-75 (feasibility: tested and proven before) (locators approximate, tool-reported)",
+  "source": "uae_moved_patch",
+  "reason": "Stage pages differ from row; stages now stated separately"
+ },
+ {
+  "row_id": "UAE-Federal-012",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Planning for the pilot, POC and MVP path should define what success looks like and the decision gates for each phase; feasibility assessment asks whether the approach has been tested and proven before.",
+  "source": "uae_moved_patch",
+  "reason": "Source says planning should define criteria and gates; it does not set metrics or thresholds"
+ },
+ {
+  "row_id": "UAE-Federal-027",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Organisations can self-assess the ethics level of an AI system against the UAE AI Ethics Principles from early ideas through maintenance; the guidelines are recommended instead of compulsory, and the page says results will not be audited, checked or regulated \"during this time\" (period not defined).",
+  "source": "uae_moved_patch",
+  "reason": "Page qualifies the no audit statement with \"during this time\""
+ },
+ {
+  "row_id": "UAE-Federal-027",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "language_read: English (official); translation_flag: none. Page says guidelines are recommended instead of compulsory; no minimum score is stated, but the page says proceeding with implementation is not suggested unless a certain ethics performance level is reached (level not stated); the period covered by the no audit statement is undefined; page undated. Re-read 2026-10-28.",
+  "source": "uae_moved_patch",
+  "reason": "Records the performance level wording and the undefined period"
+ }
+]

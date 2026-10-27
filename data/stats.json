@@ -19,15 +19,15 @@
   "mandatory": 26,
   "conditional": 55,
   "voluntary": 42,
-  "guidance": 131,
-  "ambiguous": 36
+  "guidance": 132,
+  "ambiguous": 35
  },
  "binding_all_tests": {
   "mandatory": 35,
   "conditional": 58,
   "voluntary": 42,
-  "guidance": 138,
-  "ambiguous": 38
+  "guidance": 139,
+  "ambiguous": 37
  },
  "excluded_test_rows_by_status": {
   "UNVERIFIED_BLOCKED": 19,
@@ -180,8 +180,8 @@
    "mandatory": 0,
    "conditional": 1,
    "voluntary": 5,
-   "guidance": 12,
-   "ambiguous": 4
+   "guidance": 13,
+   "ambiguous": 3
   },
   "US-NIST": {
    "rows": 46,

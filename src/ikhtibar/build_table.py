@@ -11,6 +11,7 @@ D = ROOT / "data"
 TODAY = "2026-10-12"      # phase 2 check date (rounds 1 and 2)
 P3_DATE = "2026-10-16"    # phase 3 check date (rounds 3 and 4)
 P3 = D / "verification" / "phase3"
+P4 = D / "verification" / "phase4"
 
 OUT_COLS = [
     "row_id", "family", "framework", "clause_or_page", "requirement_paraphrase", "binding_status",
@@ -21,6 +22,7 @@ OUT_COLS = [
     "text_basis", "block_type", "access_path", "document_to_download", "verification_note",
     "phase1_provisional", "headline_include",
     "verdict_p2_adjusted", "p3_sample", "p3_recheck_verdict", "p3_final_verdict",
+    "p4_sample", "p4_verdict",
 ]
 
 def read(p):
@@ -100,6 +102,8 @@ def main():
     if (P3 / "final" / "sample_p3.json").exists():
         fresh3 = set(json.load(open(P3 / "final" / "sample_p3.json"))["fresh_random_seed_20261016"])
 
+    from .verify4 import row_verdicts
+    p4_verdicts = row_verdicts()
     rows = {}
     order = []
     for r in phase1:
@@ -140,6 +144,8 @@ def main():
     patches = json.load(open(D / "patches.json", encoding="utf-8"))
     for f in sorted(glob.glob(str(P3 / "patches_*.json"))):   # phase 3 accepted corrections, applied after phase 2
         patches += json.load(open(f, encoding="utf-8"))
+    for f in sorted(glob.glob(str(P4 / "patches_*.json"))):   # phase 4 accepted corrections, applied last
+        patches += json.load(open(f, encoding="utf-8"))
     applied = {}
     for p in patches:
         rid = p["row_id"]
@@ -175,6 +181,8 @@ def main():
         x["verdict_p2_adjusted"] = adjust(v2) if v2 else ""
         x["p3_recheck_verdict"] = adjust(ver3[rid]) if rid in ver3 else ""
         x["p3_final_verdict"] = adjust(ver4[rid]) if rid in ver4 else ""
+        x["p4_sample"] = "fresh_random_seed_20261028" if rid in p4_verdicts else ""
+        x["p4_verdict"] = p4_verdicts.get(rid, "")
         x["p3_sample"] = ("fresh_random_seed_20261016" if rid in fresh3 else
                           "new_row_phase3" if x["sample_type"] == "new_row_phase3" else
                           "phase3_recheck" if rid in ver3 else "")

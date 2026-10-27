@@ -13,7 +13,7 @@ Prepared for Huda Mueen. Version 3.0 (phase 3), 16 October 2026. Rows carry thei
 - **Row IDs.** Every factual claim cites row IDs such as `EU-AI-Act-018` or `UAE-AbuDhabi-DoH-003`. Each row holds the clause or page, a paraphrase, a binding status, who tests, the source URL, the retrieval date and a verification status.
 - **Documented versus interpreted.** Where the text separates what a document states from what the analyst makes of it, the first is labelled **Source says** and the second **Interpretation**.
 - **Counts are counts of extracted provisions.** A long guidance document yields many rows; a short statute yields few. Section 5.4 explains why raw counts must not be read as league tables.
-- **Headline counts exclude unverified rows.** 38 of 522 rows are excluded (unverified, unverifiable, or resting on a portal summary or secondary report only). If the 21 excluded test rows were counted, the split would be 93 mandatory or conditional (30%), 180 voluntary or guidance (58%) and 38 ambiguous (12%) of 311.
+- **Headline counts exclude unverified rows.** 38 of 522 rows are excluded (unverified, unverifiable, or resting on a portal summary or secondary report only). If the 21 excluded test rows were counted, the split would be 93 mandatory or conditional (30%), 181 voluntary or guidance (58%) and 37 ambiguous (12%) of 311.
 - **Absence is not evidence of absence.** "Not found in the public sources searched" means exactly that. It does not mean a UAE or Gulf requirement does not exist.
 - **No claim about what the UAE requires is made unless a retrieved source says so.** Where a source's own binding force is unclear, the row is coded ambiguous.
 
@@ -21,7 +21,7 @@ Prepared for Huda Mueen. Version 3.0 (phase 3), 16 October 2026. Rows carry thei
 
 ## 1. Headline findings
 
-1. **Most testing content in the evidence base is not binding.** Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 173 (60%) are voluntary or guidance, and 36 (12%) are ambiguous. The binding rows come from: EU-AI-Act (27), UAE-AbuDhabi-DoH (11), China (10), UAE-Federal (9), UAE-DIFC-ADGM (8), UAE-Dubai (7), US-OMB (3), Korea (3), Japan (2), UK (1). Phase 2 had removed most EU Act rows because the fetch tool truncated EUR-Lex; phase 3 read the consolidated Act through the EU Publications Office and restored them, which is the main reason the binding share rose. Canada's Directive is still unreadable by the fetch tool and none of its rows is counted.
+1. **Most testing content in the evidence base is not binding.** Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 174 (60%) are voluntary or guidance, and 35 (12%) are ambiguous. The binding rows come from: EU-AI-Act (27), UAE-AbuDhabi-DoH (11), China (10), UAE-Federal (9), UAE-DIFC-ADGM (8), UAE-Dubai (7), US-OMB (3), Korea (3), Japan (2), UK (1). Phase 2 had removed most EU Act rows because the fetch tool truncated EUR-Lex; phase 3 read the consolidated Act through the EU Publications Office and restored them, which is the main reason the binding share rose. Canada's Directive is still unreadable by the fetch tool and none of its rows is counted.
 2. **Interpretation: where testing is binding, the text mostly requires that it happens and is documented, not how.** *Source says:* the EU Act requires testing of high risk systems against metrics and thresholds the provider defines (`EU-AI-Act-016`, `EU-AI-Act-018`). OMB M-25-21 requires pre deployment testing plans for high impact AI (`US-OMB-003`). The Abu Dhabi DoH Standard requires validation against performance benchmarks that it does not name (`UAE-AbuDhabi-DoH-003`). The first harmonised standard cited under the EU Act, on 14 October 2026, is the quality management standard EN 18286 (`EU-Standards-P3-20`), not a testing method standard.
 3. **Independent assessment is binding in a few places, and it is rarely technical testing.** Under the EU Act a notified body assesses biometric high risk systems where harmonised standards were not fully applied, and is an option otherwise (`EU-AI-Act-040`), while most Annex III systems follow internal control (`EU-AI-Act-041`), and the AI Office may evaluate general purpose models with systemic risk and require access to them (`EU-AI-Act-071`, `EU-AI-Act-P3-20`). In the UAE sources, the Dubai Health Authority AI in Healthcare Policy requires independent third party validation and audits (`UAE-Dubai-025`, `UAE-Dubai-026`), DIFC Regulation 10 makes certification a precondition for commercial high risk processing, but the certification criteria are a review of governance documents and evidence rather than performance testing, the framework describes itself as informational, and whether external certification is operating is not stated (`UAE-DIFC-ADGM-004`, `UAE-DIFC-ADGM-018`, `UAE-DIFC-ADGM-020`, `UAE-DIFC-ADGM-022`); the DoH Standard provides for DoH audits (`UAE-AbuDhabi-DoH-013`). Independent pre release evaluation of frontier models by the UK AI Security Institute remains voluntary (`UK-024`).
 4. **Binding red teaming is narrow.** There are 26 headline rows coded red teaming or dangerous capability evaluation and 4 of them are mandatory or conditional: `EU-AI-Act-063`, `EU-AI-Act-068`, `EU-AI-Act-071`, `EU-AI-Act-P3-20`. Only one of these obliges a provider to carry out adversarial testing (`EU-AI-Act-068`, general purpose models with systemic risk); the others classify models by evaluated capability or give the EU AI Office power to evaluate and to require access. Binding red teaming rows not counted: none.
@@ -157,7 +157,7 @@ The taxonomy was built bottom up. The first extraction pass produced a free text
 | ISO/IEC (catalogue level) | 12 | 0 | 0 | 1 | 11 | 0 | 0 of 12 | 0 |
 | NIST (AI RMF, Playbook, 600-1, 800-2 draft) | 36 | 0 | 0 | 1 | 35 | 0 | 0 of 36 | 0 |
 | US OMB M-25-21 and M-26-04 | 3 | 0 | 3 | 0 | 0 | 0 | 3 of 3 | 0 |
-| UK (Playbook, ATRS, DSIT, AISI) | 22 | 0 | 1 | 5 | 12 | 4 | 1 of 22 | 0 |
+| UK (Playbook, ATRS, DSIT, AISI) | 22 | 0 | 1 | 5 | 13 | 3 | 1 of 22 | 0 |
 | Canada Directive on Automated Decision-Making | 0 | 0 | 0 | 0 | 0 | 0 | 0 of 0 | 12 |
 | Singapore (AI Verify, Starter Kit, frameworks) | 33 | 0 | 0 | 12 | 20 | 1 | 0 of 33 | 0 |
 | Japan (Act, plan, guidelines, Digital Agency DS-920, AISI) | 15 | 2 | 0 | 0 | 13 | 0 | 2 of 15 | 0 |
@@ -168,7 +168,7 @@ The taxonomy was built bottom up. The first extraction pass produced a free text
 | Dubai (Ethics, Matrix, DHA, ISR, AV law, entity policies) | 20 | 5 | 2 | 1 | 11 | 1 | 7 of 20 | 0 |
 | Abu Dhabi DoH (health sector: Standard and Protocol) | 17 | 8 | 3 | 0 | 0 | 6 | 11 of 17 | 0 |
 | Saudi Arabia (SDAIA, NCA draft, SFDA) | 30 | 0 | 0 | 0 | 11 | 19 | 0 of 30 | 7 |
-| **All** | **290** | **26** | **55** | **42** | **131** | **36** | **81 of 290** | **21** |
+| **All** | **290** | **26** | **55** | **42** | **132** | **35** | **81 of 290** | **21** |
 
 **Source says (selected, verified rows).**
 
@@ -190,7 +190,7 @@ The taxonomy was built bottom up. The first extraction pass produced a free text
 
 | Code | Test type | Headline test rows | M | C | V | G | A | Families with M or C rows |
 |---|---|---|---|---|---|---|---|---|
-| PERF | Performance and validity | 58 | 3 | 4 | 3 | 43 | 5 | EU-AI-Act, Japan, UAE-AbuDhabi-DoH, US-OMB |
+| PERF | Performance and validity | 58 | 3 | 4 | 3 | 44 | 4 | EU-AI-Act, Japan, UAE-AbuDhabi-DoH, US-OMB |
 | ROB | Robustness and reliability | 18 | 1 | 1 | 4 | 9 | 3 | EU-AI-Act, UAE-AbuDhabi-DoH |
 | FAIR | Fairness and representativeness | 18 | 1 | 2 | 2 | 11 | 2 | UAE-AbuDhabi-DoH, UAE-DIFC-ADGM |
 | SEC | Security and adversarial resilience | 22 | 5 | 1 | 4 | 11 | 1 | EU-AI-Act, UAE-AbuDhabi-DoH, UAE-Federal |
@@ -227,7 +227,7 @@ Cell notation: letter = highest unambiguous binding status among headline test r
 | ISO-IEC | G6 | V4 | . | . | G1 | . | . | . | . | G1 | . | . | . | . | . |
 | US-NIST | G16 | G2 | G2 | G2 | V7 | . | G1 | G1 | . | . | . | G2 | . | G1 | G2 |
 | US-OMB | C1 | . | . | . | . | . | . | . | . | C1 | . | . | . | C1 | . |
-| UK | G5+a2 | . | G2 | G4+a1 | V3 | . | C1 | . | . | V2 | . | G2+a1 | . | G2 | V1 |
+| UK | G5+a1 | . | G2 | G4+a1 | V3 | . | C1 | . | . | V2 | . | G2+a1 | . | G2 | V1 |
 | Singapore | V11+a1 | V2 | V2 | V1 | V3 | . | . | V2 | . | V3 | . | V1 | G2 | V3 | V3 |
 | Japan | M4 | G1 | . | . | G4 | . | . | . | . | M5 | . | . | . | G1 | . |
 | Korea | . | . | . | . | . | . | . | . | . | C5 | . | V1 | . | . | . |
@@ -506,7 +506,7 @@ The policy states that AI ethics and fairness are outside its scope (`UAE-Federa
 1. **Language.** UAE and Saudi documents were mostly read in English. Arabic originals were read for some (Section 6.2, `language_read`); fetch tool renderings of Arabic, Chinese, Japanese and Korean text are machine renderings and are flagged. The Korean decree was read in a reference translation that renders one number illegibly.
 2. **Documents unavailable or not read.** Canada's Directive, ISO catalogue pages and SDAIA documents rejected the fetch tool on two dates; two files exceeded the size limit; several UAE instruments are referred to publicly but not published. See Appendix B and `docs/DOWNLOAD_LIST.md`.
 3. **Second hand reading.** The fetch tool often returns extracted text or summaries. In phase 3 some PDFs were read from the file the tool saved, by local text extraction or by reading rendered page images (111 rows; `access_path`). This is disclosed per row; a reader who wants only text returned by the tool itself can exclude those rows.
-4. **Ambiguity in "required".** Status coding applies the protocol. 36 headline test rows are ambiguous. Section 5.5 adds a second, interpretive layer for non binding rows, coded from paraphrases. A "shall" in a policy is coded mandatory for the named entities even where no penalty or enforcement mechanism was seen.
+4. **Ambiguity in "required".** Status coding applies the protocol. 35 headline test rows are ambiguous. Section 5.5 adds a second, interpretive layer for non binding rows, coded from paraphrases. A "shall" in a policy is coded mandatory for the named entities even where no penalty or enforcement mechanism was seen.
 5. **Row counts are not weights.** Counts reflect extraction and document length.
 6. **Coding subjectivity.** Test type and stage were coded by AI subagents and not double coded; new phase 3 rows were coded by the agent that found them. Normative force was double coded, but both coders are models of the same family.
 7. **Verification limits.** Verification checks rows against sources; it does not check the report narrative. All verifiers are AI subagents; none is a human expert. The research agents tended to grade substantive faults as MINOR; the lead analyst re-graded 14 of them, which is itself a judgement. Error rates are estimates with wide intervals.

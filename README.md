@@ -8,7 +8,7 @@ A comparative evidence base on testing AI systems before deployment, with a gap 
 
 ## Status 🌷
 
-Version 3.0 (phase 3), 16 October 2026. 522 evidence rows (311 test provisions), 56 of them added in phase 3. Phase 3 re-checked the 175 rows phase 2 had left open and ran a fresh independent check: in a seeded random sample of 30 rows, 3 of 23 verifiable rows had an error under a strict rubric (13.0%, 95% interval 4.5% to 32.1%), all corrected. 38 rows are excluded from the headline counts (unverified, unverifiable, superseded, or resting on a summary or secondary report only). Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 173 (60%) are voluntary or guidance and 36 (12%) are ambiguous.
+Version 3.0 (phase 3), 16 October 2026. 522 evidence rows (311 test provisions), 56 of them added in phase 3. Phase 3 re-checked the 175 rows phase 2 had left open and ran a fresh independent check: in a seeded random sample of 30 rows, 3 of 23 verifiable rows had an error under a strict rubric (13.0%, 95% interval 4.5% to 32.1%), all corrected. 38 rows are excluded from the headline counts (unverified, unverifiable, superseded, or resting on a summary or secondary report only). Of 290 headline test provisions, 81 (28%) are mandatory or conditional, 174 (60%) are voluntary or guidance and 35 (12%) are ambiguous.
 
 ## What is documented
 
