@@ -1,0 +1,21 @@
+{
+ "inputs": [
+  "data/evidence_table.csv",
+  "data/specificity.json",
+  "data/baselines/results.json",
+  "data/robustness.json",
+  "data/evaluation/archetypes.json",
+  "data/verification/phase4/stats_p4.json",
+  "data/completeness/recall.json",
+  "data/coding/phase4/agreement.json"
+ ],
+ "inputs_sha256": "4a31963b7abcf8df7c6471bba3e41b3c827a4277607870badab543b5985c3c71",
+ "files": [
+  "fig1_pipeline.png",
+  "fig2_family.png",
+  "fig3_specificity.png",
+  "fig4_baselines.png",
+  "fig5_robustness.png",
+  "fig6_archetypes.png"
+ ]
+}
