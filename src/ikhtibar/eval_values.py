@@ -170,6 +170,7 @@ def values():
     v["cp_lb"], v["cp_ref"], v["cp_out"] = cp["recall_lower_bound_pct"], cp["reference_candidates"], cp["out_of_frame"]
     jur = cp["unresolved_not_in_table_by_jurisdiction"]
     v["cp_unres_miss"] = cp["unresolved_not_in_table"]
+    v["cp_ub"] = cp["recall_if_no_unresolved_miss_pct"]
     v["cp_unres_miss_uae"] = sum(n for k, n in jur.items() if k.startswith("UAE"))
     v["cp_missed"] = "; ".join(m["title"] for m in cp["missed_confirmed"])
 

@@ -227,6 +227,9 @@ def render():
     rb, vf = j("data/robustness.json"), j("data/verification/phase4/stats_p4.json")
     vals.update(tables(b, e, a, rb, vf))
     vals.update(extra_tables())
+    for k in list(vals):
+        if k.startswith("sp_") and isinstance(vals[k], str):
+            vals[k] = re.sub(r"(?<![\w.])-(?=\d)", "$-$", vals[k])
     vals["author_block"] = author_block()
     allrows = evidence_all()
     vals["n_docs_total"] = len({r["framework"] for r in allrows})
