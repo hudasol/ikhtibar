@@ -29,22 +29,29 @@ def bibtex_key_ok(rows):
 
 
 def make_bib(rows):
+    """Write BibTeX from data/paper/refs_curated.csv (structured fields; only facts seen on opened pages)."""
+    def esc(v):
+        v = re.sub(r"(?<!\\)&", r"\\&", v)
+        v = re.sub(r"(?<!\\)%", r"\\%", v)
+        return v.replace("_", "\\_") if "http" not in v else v
+
     out = []
     for r in rows:
         fields = []
-        if r["authors"].strip():
-            fields.append(("author", r["authors"].strip()))
-        fields.append(("title", "{" + r["title"].strip() + "}"))
-        if r["venue_or_publisher"].strip():
-            fields.append(("howpublished", r["venue_or_publisher"].strip()))
-        if r["year"].strip():
-            fields.append(("year", r["year"].strip()))
-        if r["doi_or_arxiv"].strip():
-            fields.append(("note", r["doi_or_arxiv"].strip()))
-        if r["url"].strip():
-            fields.append(("url", r["url"].strip()))
-        body = ",\n".join("  %s = {%s}" % (k, v.replace("&", "\\&").replace("%", "\\%").replace("_", "\\_") if k != "url" else v) for k, v in fields)
-        out.append("@misc{%s,\n%s\n}\n" % (r["key"], body))
+        for k in ("author", "title", "journal", "booktitle", "institution", "howpublished", "year", "volume",
+                  "number", "pages", "doi", "note", "url"):
+            v = (r.get(k) or "").strip()
+            if not v:
+                continue
+            if k == "title":
+                v = "{" + esc(v) + "}"
+            elif k in ("doi", "url"):
+                pass
+            else:
+                v = esc(v)
+            fields.append((k, v))
+        body = ",\n".join("  %s = {%s}" % (k, v) for k, v in fields)
+        out.append("@%s{%s,\n%s\n}\n" % (r["entrytype"] or "misc", r["key"], body))
     return "\n".join(out)
 
 
@@ -116,7 +123,9 @@ def render():
     """Return (main.tex text, refs.bib text, number of works cited)."""
     rows = list(csv.DictReader(open(ROOT / "data" / "paper" / "refs_candidates.csv", encoding="utf-8")))
     keys = bibtex_key_ok(rows)
-    bib = make_bib(rows)
+    cur = list(csv.DictReader(open(ROOT / "data" / "paper" / "refs_curated.csv", encoding="utf-8")))
+    assert {r["key"] for r in cur} == keys, "refs_curated.csv and refs_candidates.csv list different keys"
+    bib = make_bib(cur)
     vals = {}
     vals.update({k: tex(v) for k, v in j("data/docs_values.json").items()})
     vals.update({k: tex(v) for k, v in eval_values.values().items() if not k.startswith(("bl_binding", "bl_type", "ev_table", "ag_table", "rb_table"))})

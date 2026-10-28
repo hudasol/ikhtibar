@@ -1,0 +1,634 @@
+{
+ "archetypes": {
+  "A1": {
+   "answers": {
+    "acquisition": "vendor_product",
+    "audience": "internal",
+    "data_types": [
+     "confidential_government"
+    ],
+    "decision_impact": "none",
+    "entity_zone": "federal_gov",
+    "eu_market": "no",
+    "hosting": "uae_onprem",
+    "system_type": "genai_llm"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 15,
+     "does_not_apply": 0,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 15,
+     "does_not_apply": 0,
+     "unknown": 15
+    },
+    {
+     "answered": 3,
+     "applies": 15,
+     "does_not_apply": 3,
+     "unknown": 12
+    },
+    {
+     "answered": 4,
+     "applies": 15,
+     "does_not_apply": 6,
+     "unknown": 9
+    },
+    {
+     "answered": 5,
+     "applies": 17,
+     "does_not_apply": 10,
+     "unknown": 3
+    },
+    {
+     "answered": 6,
+     "applies": 18,
+     "does_not_apply": 10,
+     "unknown": 2
+    },
+    {
+     "answered": 7,
+     "applies": 18,
+     "does_not_apply": 10,
+     "unknown": 2
+    },
+    {
+     "answered": 8,
+     "applies": 18,
+     "does_not_apply": 10,
+     "unknown": 2
+    }
+   ],
+   "full": {
+    "APPLIES": 18,
+    "DOES_NOT_APPLY": 10,
+    "UNKNOWN": 2,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Internal document search assistant, federal entity"
+  },
+  "A2": {
+   "answers": {
+    "acquisition": "vendor_product",
+    "audience": "public_facing",
+    "data_types": [
+     "personal"
+    ],
+    "decision_impact": "advisory",
+    "entity_zone": "dubai_gov",
+    "eu_market": "no",
+    "hosting": "uae_cloud",
+    "system_type": "genai_llm"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 15,
+     "does_not_apply": 0,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 17,
+     "does_not_apply": 0,
+     "unknown": 13
+    },
+    {
+     "answered": 3,
+     "applies": 17,
+     "does_not_apply": 0,
+     "unknown": 13
+    },
+    {
+     "answered": 4,
+     "applies": 20,
+     "does_not_apply": 0,
+     "unknown": 10
+    },
+    {
+     "answered": 5,
+     "applies": 22,
+     "does_not_apply": 4,
+     "unknown": 4
+    },
+    {
+     "answered": 6,
+     "applies": 23,
+     "does_not_apply": 4,
+     "unknown": 3
+    },
+    {
+     "answered": 7,
+     "applies": 23,
+     "does_not_apply": 4,
+     "unknown": 3
+    },
+    {
+     "answered": 8,
+     "applies": 23,
+     "does_not_apply": 4,
+     "unknown": 3
+    }
+   ],
+   "full": {
+    "APPLIES": 23,
+    "DOES_NOT_APPLY": 4,
+    "UNKNOWN": 3,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Public facing citizen chatbot, Dubai government"
+  },
+  "A3": {
+   "answers": {
+    "acquisition": "mixed",
+    "audience": "internal",
+    "data_types": [
+     "health",
+     "sensitive_personal"
+    ],
+    "decision_impact": "significant_support",
+    "entity_zone": "health_abu_dhabi",
+    "eu_market": "no",
+    "hosting": "uae_onprem",
+    "system_type": "predictive_ml"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 14,
+     "does_not_apply": 1,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 14,
+     "does_not_apply": 1,
+     "unknown": 15
+    },
+    {
+     "answered": 3,
+     "applies": 16,
+     "does_not_apply": 1,
+     "unknown": 13
+    },
+    {
+     "answered": 4,
+     "applies": 19,
+     "does_not_apply": 1,
+     "unknown": 10
+    },
+    {
+     "answered": 5,
+     "applies": 20,
+     "does_not_apply": 6,
+     "unknown": 4
+    },
+    {
+     "answered": 6,
+     "applies": 21,
+     "does_not_apply": 6,
+     "unknown": 3
+    },
+    {
+     "answered": 7,
+     "applies": 21,
+     "does_not_apply": 6,
+     "unknown": 3
+    },
+    {
+     "answered": 8,
+     "applies": 21,
+     "does_not_apply": 6,
+     "unknown": 3
+    }
+   ],
+   "full": {
+    "APPLIES": 21,
+    "DOES_NOT_APPLY": 6,
+    "UNKNOWN": 3,
+    "rows_binding_you_yes": 9
+   },
+   "label": "Clinical risk prediction model, Abu Dhabi health"
+  },
+  "A4": {
+   "answers": {
+    "acquisition": "in_house",
+    "audience": "public_facing",
+    "data_types": [
+     "personal",
+     "financial"
+    ],
+    "decision_impact": "automated_significant",
+    "entity_zone": "abu_dhabi_gov",
+    "eu_market": "no",
+    "hosting": "uae_onprem",
+    "system_type": "predictive_ml"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 14,
+     "does_not_apply": 1,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 16,
+     "does_not_apply": 1,
+     "unknown": 13
+    },
+    {
+     "answered": 3,
+     "applies": 19,
+     "does_not_apply": 1,
+     "unknown": 10
+    },
+    {
+     "answered": 4,
+     "applies": 22,
+     "does_not_apply": 1,
+     "unknown": 7
+    },
+    {
+     "answered": 5,
+     "applies": 24,
+     "does_not_apply": 5,
+     "unknown": 1
+    },
+    {
+     "answered": 6,
+     "applies": 24,
+     "does_not_apply": 6,
+     "unknown": 0
+    },
+    {
+     "answered": 7,
+     "applies": 24,
+     "does_not_apply": 6,
+     "unknown": 0
+    },
+    {
+     "answered": 8,
+     "applies": 24,
+     "does_not_apply": 6,
+     "unknown": 0
+    }
+   ],
+   "full": {
+    "APPLIES": 24,
+    "DOES_NOT_APPLY": 6,
+    "UNKNOWN": 0,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Automated benefit eligibility decision, Abu Dhabi government"
+  },
+  "A5": {
+   "answers": {
+    "acquisition": "vendor_product",
+    "audience": "public_facing",
+    "data_types": [
+     "biometric",
+     "personal"
+    ],
+    "decision_impact": "critical",
+    "entity_zone": "federal_gov",
+    "eu_market": "no",
+    "hosting": "uae_onprem",
+    "system_type": "computer_vision"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 14,
+     "does_not_apply": 1,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 16,
+     "does_not_apply": 1,
+     "unknown": 13
+    },
+    {
+     "answered": 3,
+     "applies": 19,
+     "does_not_apply": 1,
+     "unknown": 10
+    },
+    {
+     "answered": 4,
+     "applies": 22,
+     "does_not_apply": 1,
+     "unknown": 7
+    },
+    {
+     "answered": 5,
+     "applies": 24,
+     "does_not_apply": 5,
+     "unknown": 1
+    },
+    {
+     "answered": 6,
+     "applies": 25,
+     "does_not_apply": 5,
+     "unknown": 0
+    },
+    {
+     "answered": 7,
+     "applies": 25,
+     "does_not_apply": 5,
+     "unknown": 0
+    },
+    {
+     "answered": 8,
+     "applies": 25,
+     "does_not_apply": 5,
+     "unknown": 0
+    }
+   ],
+   "full": {
+    "APPLIES": 25,
+    "DOES_NOT_APPLY": 5,
+    "UNKNOWN": 0,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Face matching at a border checkpoint, federal entity"
+  },
+  "A6": {
+   "answers": {
+    "acquisition": "vendor_product",
+    "audience": "public_facing",
+    "data_types": [
+     "financial",
+     "personal"
+    ],
+    "decision_impact": "automated_significant",
+    "entity_zone": "difc",
+    "eu_market": "yes",
+    "hosting": "foreign_cloud",
+    "system_type": "predictive_ml"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 14,
+     "does_not_apply": 1,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 16,
+     "does_not_apply": 1,
+     "unknown": 13
+    },
+    {
+     "answered": 3,
+     "applies": 19,
+     "does_not_apply": 1,
+     "unknown": 10
+    },
+    {
+     "answered": 4,
+     "applies": 22,
+     "does_not_apply": 1,
+     "unknown": 7
+    },
+    {
+     "answered": 5,
+     "applies": 23,
+     "does_not_apply": 6,
+     "unknown": 1
+    },
+    {
+     "answered": 6,
+     "applies": 24,
+     "does_not_apply": 6,
+     "unknown": 0
+    },
+    {
+     "answered": 7,
+     "applies": 24,
+     "does_not_apply": 6,
+     "unknown": 0
+    },
+    {
+     "answered": 8,
+     "applies": 24,
+     "does_not_apply": 6,
+     "unknown": 0
+    }
+   ],
+   "full": {
+    "APPLIES": 24,
+    "DOES_NOT_APPLY": 6,
+    "UNKNOWN": 0,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Credit scoring model offered in the European market, financial centre firm"
+  },
+  "A7": {
+   "answers": {
+    "acquisition": "mixed",
+    "audience": "internal",
+    "data_types": [
+     "personal"
+    ],
+    "decision_impact": "significant_support",
+    "entity_zone": "dubai_gov",
+    "eu_market": "no",
+    "hosting": "uae_cloud",
+    "system_type": "agentic"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 15,
+     "does_not_apply": 0,
+     "unknown": 15
+    },
+    {
+     "answered": 2,
+     "applies": 15,
+     "does_not_apply": 0,
+     "unknown": 15
+    },
+    {
+     "answered": 3,
+     "applies": 17,
+     "does_not_apply": 0,
+     "unknown": 13
+    },
+    {
+     "answered": 4,
+     "applies": 20,
+     "does_not_apply": 0,
+     "unknown": 10
+    },
+    {
+     "answered": 5,
+     "applies": 22,
+     "does_not_apply": 4,
+     "unknown": 4
+    },
+    {
+     "answered": 6,
+     "applies": 23,
+     "does_not_apply": 4,
+     "unknown": 3
+    },
+    {
+     "answered": 7,
+     "applies": 23,
+     "does_not_apply": 4,
+     "unknown": 3
+    },
+    {
+     "answered": 8,
+     "applies": 23,
+     "does_not_apply": 4,
+     "unknown": 3
+    }
+   ],
+   "full": {
+    "APPLIES": 23,
+    "DOES_NOT_APPLY": 4,
+    "UNKNOWN": 3,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Agent that takes actions on internal systems, Dubai government"
+  },
+  "A8": {
+   "answers": {
+    "acquisition": "in_house",
+    "audience": "public_facing",
+    "data_types": [
+     "personal"
+    ],
+    "decision_impact": "significant_support",
+    "entity_zone": "federal_gov",
+    "eu_market": "no",
+    "hosting": "uae_onprem",
+    "system_type": "rules_based"
+   },
+   "baseline_zero_answers": {
+    "APPLIES": 12,
+    "DOES_NOT_APPLY": 0,
+    "UNKNOWN": 18,
+    "rows_binding_you_yes": 0
+   },
+   "curve": [
+    {
+     "answered": 1,
+     "applies": 12,
+     "does_not_apply": 4,
+     "unknown": 14
+    },
+    {
+     "answered": 2,
+     "applies": 14,
+     "does_not_apply": 4,
+     "unknown": 12
+    },
+    {
+     "answered": 3,
+     "applies": 15,
+     "does_not_apply": 4,
+     "unknown": 11
+    },
+    {
+     "answered": 4,
+     "applies": 18,
+     "does_not_apply": 4,
+     "unknown": 8
+    },
+    {
+     "answered": 5,
+     "applies": 20,
+     "does_not_apply": 8,
+     "unknown": 2
+    },
+    {
+     "answered": 6,
+     "applies": 20,
+     "does_not_apply": 9,
+     "unknown": 1
+    },
+    {
+     "answered": 7,
+     "applies": 20,
+     "does_not_apply": 9,
+     "unknown": 1
+    },
+    {
+     "answered": 8,
+     "applies": 20,
+     "does_not_apply": 9,
+     "unknown": 1
+    }
+   ],
+   "full": {
+    "APPLIES": 20,
+    "DOES_NOT_APPLY": 9,
+    "UNKNOWN": 1,
+    "rows_binding_you_yes": 0
+   },
+   "label": "Rules based eligibility calculator (no learned model), federal entity"
+  }
+ },
+ "items_that_differ": {
+  "constant_applies": 12,
+  "constant_not_apply": 1,
+  "n_total": 30,
+  "n_varying": 17
+ },
+ "meta": {
+  "n_items": 30,
+  "note": "Synthetic archetypes; no real system is described."
+ }
+}
