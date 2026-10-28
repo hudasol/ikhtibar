@@ -51,7 +51,7 @@ Work is done in small commits straight to main, with the full test suite, `check
 
 | ID | Status | What was done, and what is left |
 |---|---|---|
-| G1 | Closed | Baselines for binding status and test type with cross validation and leave one family out (`docs/EVALUATION.md`, section 1). Findings: binding status is mostly document level; the best test type baseline is a keyword rule. |
+| G1 | Closed | Baselines for binding status and test type with cross validation and leave one family out (`docs/EVALUATION.md`, section 1). Findings: binding status is mostly document level; test type is best predicted by a frozen embedding baseline. |
 | G2 | Partly closed | Two blind AI second codings of 120 rows (kappa 0.91 between blind coders, about 0.65 with the original). Both coders are models, so a human second coding is still needed (100 row template ready). |
 | G3 | Partly closed | Fresh sample of 120 rows; after two retry rounds 94 are readable and the strict error rate is 6 of 94 (6.4%, 3.0% to 13.2%). Verifiers are AI. 26 rows are still unreadable, mostly European Union and NIST sources refused by a session domain restriction, so the rate says little about the EU rows behind the headline. |
 | G4 | Partly closed | Pilot recall 68.4% on 19 confirmed candidates (46.0% to 84.6%), with 58 unresolved. All confirmed misses are United States federal documents; they were read afterwards and 19 candidate rows drafted but held out of the table until verified (`data/completeness/`). A capture recapture estimate was not attempted: the two lists were built under the same search tools, so they are not independent, and the method has been questioned for searches of this kind. Widening the reference list needs web access. |

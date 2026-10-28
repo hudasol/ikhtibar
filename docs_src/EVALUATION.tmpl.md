@@ -36,10 +36,10 @@ Population: {{bl_n}} headline test rows from {{bl_frameworks}} documents in {{bl
 ### Reading the results
 
 - Binding status is largely a property of the document, in the sense that a document prior reaches {{bl_fw5}}% accuracy when other provisions of the same document were seen in training, against {{bl_maj5}}% for the majority class. This is close to tautological. When a whole family is held out, the document prior falls back to the majority rate ({{bl_fw5_lofo}}%), because it has nothing to look up, and the wording rule is the better method.
-- A bag of words model does little better than the majority class on binding status ({{bl_tfidf5}}%). Wording alone is a weak signal, which is why the coding reads each provision in the context of its document.
-- For test type, a keyword rule built from the taxonomy definitions ({{bl_kw}}%) beats TF-IDF with logistic regression ({{bl_tfidf_type}}%) and the majority class ({{bl_maj_type}}%). With 290 rows and fifteen classes, a learned model has too little data. This is a modest baseline, not evidence that test type is easy to code.
+- Learned wording models do little better than the majority class on binding status when families are held out (TF-IDF {{bl_tfidf5_lofo}}%, frozen sentence embedding {{bl_emb5_lofo}}%, against {{bl_maj5}}%), and the wording rule reaches {{bl_wording_lofo}}%. Document level intervals overlap, so this ordering is suggestive. Wording carries some signal but much less than document identity.
+- For test type, a frozen sentence embedding with logistic regression ({{bl_emb_type}}% under cross validation, {{bl_emb_type_lofo}}% leaving a family out) beats a keyword rule built from the taxonomy definitions ({{bl_kw}}%), which beats TF-IDF ({{bl_tfidf_type}}%) and the majority class ({{bl_maj_type}}%). Test type is largely recoverable from the paraphrase text; the paraphrase was written by the analyst, so this shows regularity and not correctness.
 - Limits of these baselines: intervals are bootstrap intervals over rows and ignore clustering by document, so they understate uncertainty. The keyword lexicon was written by an analyst who had seen the table. The text classified is the analyst's own paraphrase. The labels are the analyst's own codes.
-- The best baseline is therefore not a trained model. Any later classifier, or any language model coder, should be compared with the document prior and the keyword rule, not with the majority class alone.
+- Any later classifier, or any language model coder, should be compared with the document prior, the wording rule and the embedding baseline, not with the majority class alone.
 
 ## 2. Evaluation of the checklist tool
 

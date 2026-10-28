@@ -28,8 +28,10 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 | Majority class | 45.5 (39.7 to 51.4) | 12.5 | 0.0 | 45.5 (40.0 to 51.4) | 12.5 |
 | Document prior (most common label in the same document) | 84.3 (80.2 to 88.2) | 81.9 | 0.774 | 45.5 (40.0 to 51.4) | 12.5 |
 | Wording rule (shall, must versus should, may) | 58.3 (52.8 to 64.1) | 31.2 | 0.344 | 58.3 (52.8 to 64.1) | 31.2 |
-| TF-IDF with logistic regression | 50.9 (45.0 to 56.5) | 21.6 | 0.125 | 46.9 (41.4 to 52.4) | 15.3 |
+| TF-IDF with logistic regression | 50.9 (45.0 to 56.5) | 21.6 | 0.125 | 46.9 (41.0 to 52.8) | 15.3 |
 | TF-IDF with logistic regression plus document indicator | 79.1 (74.4 to 83.1) | 74.8 | 0.686 | 45.5 (40.0 to 51.4) | 12.5 |
+| Frozen sentence embedding with logistic regression | 61.7 (56.7 to 66.8) | 46.2 | 0.419 | 49.3 (43.4 to 55.2) | 28.6 |
+| Frozen sentence embedding with logistic regression plus document indicator | 82.9 (79.1 to 86.5) | 79.5 | 0.751 | 47.9 (42.1 to 53.8) | 18.6 |
 
 ### Binding status, three classes (binding, non binding, ambiguous)
 
@@ -40,6 +42,8 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 | Wording rule (shall, must versus should, may) | 76.9 (72.1 to 82.1) | 60.8 | 0.554 | 76.9 (72.1 to 82.1) | 60.8 |
 | TF-IDF with logistic regression | 64.9 (59.2 to 70.0) | 36.2 | 0.164 | 61.4 (55.5 to 66.6) | 28.4 |
 | TF-IDF with logistic regression plus document indicator | 84.7 (80.7 to 88.2) | 80.6 | 0.698 | 60.0 (54.1 to 65.5) | 25.0 |
+| Frozen sentence embedding with logistic regression | 73.5 (69.0 to 78.0) | 59.0 | 0.484 | 62.1 (56.6 to 67.6) | 42.3 |
+| Frozen sentence embedding with logistic regression plus document indicator | 88.0 (84.7 to 91.1) | 84.5 | 0.773 | 61.7 (56.2 to 67.2) | 31.2 |
 
 ### Primary test type, fifteen classes
 
@@ -49,15 +53,17 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 | Document prior (most common label in the same document) | 27.8 (23.4 to 32.6) | 17.3 | 0.166 | 14.5 (10.7 to 18.6) | 1.8 |
 | Keyword rule (taxonomy definitions) | 47.2 (41.4 to 53.1) | 43.9 | 0.414 | 47.2 (41.4 to 53.1) | 43.9 |
 | TF-IDF with logistic regression | 29.9 (25.3 to 35.1) | 9.8 | 0.138 | 25.2 (20.3 to 30.3) | 7.0 |
-| TF-IDF with logistic regression plus document indicator | 32.2 (27.3 to 37.2) | 15.4 | 0.195 | 22.8 (17.9 to 27.6) | 5.7 |
+| TF-IDF with logistic regression plus document indicator | 32.2 (27.3 to 37.2) | 15.4 | 0.195 | 22.8 (18.3 to 27.6) | 5.7 |
+| Frozen sentence embedding with logistic regression | 61.2 (56.3 to 66.3) | 47.0 | 0.556 | 53.8 (48.3 to 59.7) | 38.5 |
+| Frozen sentence embedding with logistic regression plus document indicator | 55.0 (50.2 to 60.3) | 44.4 | 0.486 | 51.4 (45.5 to 57.2) | 32.9 |
 
 ### Reading the results
 
 - Binding status is largely a property of the document, in the sense that a document prior reaches 84.3% accuracy when other provisions of the same document were seen in training, against 45.5% for the majority class. This is close to tautological. When a whole family is held out, the document prior falls back to the majority rate (45.5%), because it has nothing to look up, and the wording rule is the better method.
-- A bag of words model does little better than the majority class on binding status (50.9%). Wording alone is a weak signal, which is why the coding reads each provision in the context of its document.
-- For test type, a keyword rule built from the taxonomy definitions (47.2%) beats TF-IDF with logistic regression (29.9%) and the majority class (20.0%). With 290 rows and fifteen classes, a learned model has too little data. This is a modest baseline, not evidence that test type is easy to code.
+- Learned wording models do little better than the majority class on binding status when families are held out (TF-IDF 46.9%, frozen sentence embedding 49.3%, against 45.5%), and the wording rule reaches 58.3%. Document level intervals overlap, so this ordering is suggestive. Wording carries some signal but much less than document identity.
+- For test type, a frozen sentence embedding with logistic regression (61.2% under cross validation, 53.8% leaving a family out) beats a keyword rule built from the taxonomy definitions (47.2%), which beats TF-IDF (29.9%) and the majority class (20.0%). Test type is largely recoverable from the paraphrase text; the paraphrase was written by the analyst, so this shows regularity and not correctness.
 - Limits of these baselines: intervals are bootstrap intervals over rows and ignore clustering by document, so they understate uncertainty. The keyword lexicon was written by an analyst who had seen the table. The text classified is the analyst's own paraphrase. The labels are the analyst's own codes.
-- The best baseline is therefore not a trained model. Any later classifier, or any language model coder, should be compared with the document prior and the keyword rule, not with the majority class alone.
+- Any later classifier, or any language model coder, should be compared with the document prior, the wording rule and the embedding baseline, not with the majority class alone.
 
 ## 2. Evaluation of the checklist tool
 
