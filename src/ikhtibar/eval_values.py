@@ -196,7 +196,7 @@ def values():
     v["us_total"] = len(us)
     with open(ROOT / "data" / "evidence_table.csv", encoding="utf-8", newline="") as fh:
         tab = list(csv.DictReader(fh))
-    v["n_translated"] = sum(("translat" in r["language_read"].lower() or "fetch" in r["language_read"].lower()) for r in tab)
+    v["n_translated"] = sum(r["evidence_grade"] == "read via unofficial/machine translation" for r in tab)
     v["n_iso"] = sum(r["family"] == "ISO-IEC" for r in tab)
     v["n_iso_head"] = sum(r["family"] == "ISO-IEC" and r["row_type"] == "test" and r["headline_include"] == "yes" for r in tab)
     return v
