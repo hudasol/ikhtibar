@@ -1,0 +1,146 @@
+row_id,specificity,confidence,note
+Singapore-034,S3,medium,"continuous monitoring, audit, alert thresholds, drift retesting; no fixed values"
+EU-GPAI-CoP-008,S4,medium,acceptance criteria and go/no-go on acceptability of systemic risk
+UAE-Federal-P3-04,S2,high,
+UAE-Dubai-002,S2,medium,generalisation to unseen data named as property
+Korea-013,S1,high,scope/definition with compute threshold; no test described
+ISO-IEC-015,S2,medium,planned guidance on red teaming; catalogue entry only
+China-028,S4,medium,security assessment with fixed triggers (user counts) and reporting
+Saudi-008,S1,high,audit role and tasks; no property or method
+Singapore-028,S2,medium,names benchmarking and red teaming; baseline tests only a possibility
+EU-GPAI-CoP-007,S3,high,
+UAE-DIFC-ADGM-009,S2,medium,"regular testing for explainability, traceability, repeatability; no method or fixed frequency"
+US-NIST-034,S3,high,
+ISO-IEC-007,S2,medium,overview of robustness assessment methods; catalogue entry
+China-003,S3,high,
+EU-GPAI-CoP-P3-22,S3,medium,independent reviewers when internal expertise inadequate; frequency not fixed
+EU-AI-Act-019,S2,high,
+Korea-P3-01,S3,high,
+UAE-Dubai-011,S2,high,
+UK-P3-01,S3,high,
+ISO-IEC-004,S2,medium,guidance on impact assessment; catalogue entry
+UAE-AbuDhabi-DoH-010,S2,medium,"conformity assessment before and after deployment; kind of test, no method"
+China-021,S4,high,
+Saudi-P3-12,S2,high,
+Japan-017,S2,high,
+US-NIST-012,S2,high,
+EU-AI-Act-063,S1,high,classification definition with compute threshold; no test described
+Singapore-014,S3,high,
+EU-AI-Act-016,S2,high,
+UAE-Dubai-012,S2,high,
+UAE-Dubai-027,S4,low,certification from recognised bodies as named external test; text truncated
+Singapore-020,S3,high,
+EU-AI-Act-055,S2,medium,permissive; real-world testing as kind of test
+UAE-Federal-009,S4,low,"evaluation against acceptance criteria, criteria not stated"
+Saudi-P3-14,S2,medium,"10 day deadline is for notification, not testing; verification and validation named"
+UAE-Dubai-001,S2,high,
+Japan-019,S2,medium,precision and risks of output; no method
+UAE-AbuDhabi-DoH-007,S3,high,
+Saudi-P3-07,S3,high,
+Japan-020,S2,medium,red teaming before release; no method or criterion
+Singapore-036,S2,high,
+UAE-AbuDhabi-DoH-011,S4,medium,prohibition on deployment when residual risk very high acts as pass/fail criterion
+US-NIST-029,S3,high,
+Singapore-022,S3,high,
+Saudi-019,S2,medium,penetration testing before deployment and periodically; no fixed frequency
+UAE-DIFC-ADGM-007,S2,low,DPIA trigger list; closer to scope
+EU-GPAI-CoP-005,S3,high,
+UAE-Dubai-028,S3,medium,compare real outcomes with training and validation; discrepancy not quantified
+Japan-011,S3,medium,independent external testing such as red teaming stated as desirable
+UK-029,S3,medium,internal and external evaluations including independent third parties
+Saudi-P3-15,S2,low,accreditation questionnaire on ethics adherence; process description
+Saudi-P3-11,S3,high,
+Saudi-003,S3,high,
+Japan-007,S2,low,evaluation of frontier AI for national security; plan statement
+UAE-AbuDhabi-DoH-001,S4,low,certification from recognised agencies expected; older policy
+US-NIST-046,S2,high,
+China-026,S3,high,
+Saudi-009,S2,medium,describes assessment tools by kind
+EU-AI-Act-017,S2,medium,real-world testing as possible kind of test
+EU-AI-Act-015,S1,medium,risk management measures and residual risk; no test described
+UAE-AbuDhabi-DoH-005,S3,medium,failure mode analysis named as method
+UK-021,S3,medium,independent third party and UKAS accreditation stated
+UAE-Dubai-015,S3,medium,comparison to human decision maker standard
+EU-AI-Act-071,S3,low,regulator evaluation powers incl. independent experts and access modes
+Singapore-031,S2,high,
+EU-AI-Act-060,S2,medium,post market monitoring plan; Commission deadline is not a test criterion
+Saudi-P3-05,S2,high,
+UAE-DIFC-ADGM-018,S4,medium,accredited certification with three year validity
+US-OMB-004,S3,high,
+UAE-Federal-019,S2,medium,pre-release and regular assessment; frequency not fixed
+US-NIST-026,S4,high,
+China-022,S4,high,
+UK-009,S2,medium,DPIA across lifecycle
+US-NIST-010,S2,high,
+UAE-Federal-025,S2,high,
+US-NIST-016,S3,medium,consultation with domain experts and documented measurement approaches
+Singapore-018,S2,medium,decision mechanism for new robustness review
+China-P3-01,S4,medium,retest until requirements met; set metrics
+US-OMB-003,S3,high,
+Singapore-025,S3,high,
+Korea-006,S1,high,classification review; no test described
+UK-012,S2,high,
+UAE-Dubai-003,S2,high,
+UAE-DIFC-ADGM-006,S2,medium,impact assessment on data protection
+US-NIST-017,S2,low,determination whether purpose achieved; no method
+Japan-013,S2,high,
+US-NIST-015,S2,low,evaluates the TEVV metrics and processes themselves
+China-024,S4,high,
+US-NIST-020,S3,high,
+UAE-DIFC-ADGM-002,S2,medium,evidence on request of bias risk assessment
+US-NIST-013,S2,high,
+Singapore-006,S3,high,
+Saudi-022,S2,medium,approval gate with cybersecurity risk assessment
+UK-P3-03,S3,high,
+Singapore-010,S4,high,
+ISO-IEC-014,S3,low,names formal methods and simulation; catalogue entry
+Japan-022,S2,high,
+EU-AI-Act-042,S3,low,sectoral conformity assessment by notified bodies; designation deadline not a test criterion
+Singapore-008,S3,high,
+Saudi-P3-09,S3,high,
+UK-020,S2,high,
+Saudi-P3-06,S2,low,restrict features until remediation validated; security vulnerability
+Saudi-P3-16,S2,low,self-assessment tool of ethical compliance
+UAE-Dubai-025,S3,high,
+UAE-Dubai-014,S2,high,
+UAE-Federal-P3-03,S3,high,
+US-NIST-006,S3,high,
+Singapore-009,S4,high,
+Saudi-P3-03,S2,medium,guardrails tested before production and after changes
+UAE-Federal-020,S1,high,quality checks without detail
+UK-003,S2,high,
+ISO-IEC-009,S3,medium,statistical methodology for robustness; catalogue entry
+EU-AI-Act-020,S3,high,
+UAE-Dubai-037,S4,medium,prior regulator approval gate after verification
+UAE-DIFC-ADGM-P3-02,S2,low,"proposed, not enacted; testing and controls general"
+EU-GPAI-CoP-002,S3,medium,trigger points defined by signatories
+UAE-DIFC-ADGM-021,S2,low,testing framework and bias measures; text not visible
+US-NIST-030,S3,medium,verification of sources and citations; review of guardrails
+UK-033,S1,high,self-assessment tool description
+EU-AI-Act-033,S3,medium,"frequency to be stated by provider, not fixed"
+UAE-Federal-006,S1,medium,periodic review of impact assessment on risk change
+Singapore-007,S3,high,
+UK-008,S2,low,prompt injection risk acceptance and access control review
+EU-AI-Act-P3-20,S3,low,access arrangements and time limit for evaluation
+China-002,S1,low,training data requirements; not a test
+China-005,S2,medium,security assessment under national rules
+Japan-015,S2,medium,risk analysis and countermeasures
+UAE-Dubai-029,S1,high,"validation statements documented, no detail"
+EU-GPAI-CoP-003,S3,high,
+UAE-Federal-028,S3,medium,training data representativeness check
+Singapore-035,S3,medium,descriptive case study with test conditions
+UAE-Federal-011,S4,low,acceptance criteria such as accuracy; values not stated
+Japan-021,S3,high,
+Singapore-001,S2,high,
+Saudi-P3-01,S3,medium,"classification by impact, likelihood, reversibility"
+Korea-003,S2,low,voluntary certification; not a test described
+China-025,S4,high,
+EU-GPAI-CoP-009,S3,medium,adversarial robustness and post market monitoring channels named
+US-NIST-041,S3,high,
+Singapore-012,S3,high,
+US-NIST-039,S3,medium,three stage evaluation process
+UAE-Dubai-004,S3,medium,comparison to human decision standard
+UAE-AbuDhabi-DoH-P3-02,S4,medium,risk method with scales and avoid rule for very high risk
+ISO-IEC-017,S3,high,
+US-NIST-009,S3,high,
+UAE-DIFC-ADGM-003,S4,low,must comply with audit and certification requirements set by Commissioner

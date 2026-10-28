@@ -1,0 +1,146 @@
+row_id,specificity,confidence,note
+Saudi-004,S4,medium,threshold for fairness metrics defined earlier
+Singapore-013,S4,high,pre-defined thresholds
+US-NIST-028,S3,high,evaluator independence from developers
+UK-026,S1,medium,"institute self-description; tests before release, no property or method"
+US-OMB-006,S2,high,"ongoing testing for performance, security, privacy, civil rights"
+Saudi-021,S2,high,cybersecurity testing of AI code
+US-NIST-032,S2,medium,red teaming for named attack classes
+China-013,S2,high,security assessment
+US-NIST-003,S3,medium,independent review stated
+UAE-AbuDhabi-DoH-012,S2,high,robustness fairness accuracy named; metrics documented without detail
+ISO-IEC-013,S1,medium,catalogue page on risk based selection of practices
+UAE-Dubai-007,S3,medium,named test cycles and benchmarking
+Singapore-026,S3,medium,metrics presented; frequency left to provider
+UAE-AbuDhabi-DoH-008,S3,high,data requirements and audit checkpoints
+Saudi-P3-13,S3,medium,risk management review per ISO 14971 before release
+UK-030,S4,medium,thresholds for intolerable risk set and breach assessed
+UK-P3-02,S2,medium,code review for security
+EU-AI-Act-030,S2,medium,vulnerability types named; no test method
+Japan-016,S1,high,risk evaluation without property or method
+US-NIST-042,S3,medium,evaluation protocol and procedure practices
+Saudi-010,S1,high,lifecycle checklist only
+Japan-023,S3,medium,repeated evaluation with named methods
+EU-AI-Act-068,S3,high,standardised protocols and documented adversarial testing
+Saudi-006,S2,medium,sign off after UAT rounds
+UAE-DIFC-ADGM-020,S1,medium,"governance check, not a test"
+Singapore-016,S3,high,"benchmarks, checkpoints, stakeholder decision"
+UAE-Federal-023,S4,high,thresholds for acceptable results
+UAE-AbuDhabi-DoH-002,S1,high,audits only
+UK-024,S3,medium,"automated assessments, uplift studies named"
+UAE-AbuDhabi-DoH-013,S1,high,compliance audits
+UAE-Federal-007,S2,high,test effectiveness of security measures
+Korea-008,S2,high,impact assessment on fundamental rights
+UK-011,S3,medium,quantitative testing in change control
+US-NIST-023,S3,high,stress testing and chaos engineering
+ISO-IEC-018,S1,high,catalogue page; scope only
+US-NIST-035,S3,high,measurement error models
+UAE-Federal-005,S3,medium,required assessment content
+US-NIST-022,S3,high,test conditions and metrics
+US-NIST-014,S2,high,fairness and bias named
+Korea-005,S1,medium,risk assessment without method; compute threshold is scope
+UAE-Federal-032,S3,medium,required assessment content
+US-NIST-038,S3,medium,red team composition and expertise
+EU-AI-Act-069,S2,medium,systemic risk assessment
+EU-AI-Act-034,S1,medium,monitoring operation
+UAE-AbuDhabi-DoH-009,S1,high,risk assessment and register
+Saudi-023,S2,high,"recovery testing, no fixed frequency"
+Saudi-020,S2,high,red teaming and override validation
+UK-002,S1,high,generic testing and checks
+China-009,S1,high,periodic review
+EU-AI-Act-011,S1,high,documentation of assessment
+UK-031,S2,high,red teaming named
+Saudi-P3-10,S3,high,dataset and gold standard requirements
+China-008,S1,high,review without detail
+Singapore-015,S2,high,"principles named, no method"
+Japan-012,S1,high,governance; no test described
+EU-AI-Act-028,S3,medium,accuracy metrics declared
+UAE-Federal-004,S1,high,performance and impact assessments only
+Saudi-002,S2,high,robustness testing
+UAE-Dubai-009,S3,medium,pilot with success metrics
+Japan-018,S2,medium,performance named
+UAE-Dubai-008,S2,medium,ethical compliance validation
+Singapore-032,S3,high,test dimensions and workflow testing
+UAE-Federal-021,S3,low,external audit; no property
+Saudi-P3-08,S3,high,validation steps and example metrics
+UAE-Dubai-006,S2,medium,self assessment; level unspecified
+EU-AI-Act-036,S3,medium,required assessment content
+Singapore-011,S4,high,95 percent threshold
+Saudi-P3-02,S2,high,cybersecurity resilience
+UAE-Federal-P3-06,S3,medium,named assurance reports and certifications
+UAE-Federal-018,S2,high,bias detection testing
+UAE-Federal-026,S2,high,privacy and ethics impact assessment
+Japan-P3-01,S3,high,scenarios and methods named
+UAE-Federal-P3-07,S3,medium,test in secure environment before deployment
+UK-010,S3,medium,test against expertise
+Singapore-021,S2,medium,explainability named
+Saudi-005,S2,high,privacy re-identification test
+US-NIST-011,S4,medium,residual risk within tolerance
+Japan-P3-02,S1,medium,"risk classification, not a test"
+China-011,S2,high,security assessment
+US-NIST-018,S1,high,monitoring plans
+US-NIST-043,S3,high,statistical analysis procedure
+China-017,S1,medium,"platform checks of labels, not a test"
+EU-AI-Act-P3-22,S3,high,test conditions and benchmarks
+ISO-IEC-012,S1,high,catalogue page
+ISO-IEC-008,S3,high,formal methods named
+UAE-DIFC-ADGM-015,S3,medium,accept reject rate monitoring
+Singapore-P3-01,S2,medium,case study red teaming
+UAE-DIFC-ADGM-012,S1,high,DPIA triggers only
+UAE-Federal-P3-02,S3,medium,test scope and defined criteria
+US-NIST-037,S1,medium,descriptive of limitations
+UAE-AbuDhabi-DoH-003,S3,medium,performance benchmarks
+EU-AI-Act-P3-23,S3,high,metrics and conditions
+UAE-AbuDhabi-DoH-004,S3,high,diverse datasets
+EU-Standards-005,S1,high,standards status only
+UAE-Dubai-036,S4,high,must pass RTA inspection
+US-NIST-033,S2,medium,privacy red teaming
+Singapore-033,S3,high,test environment and repetition
+Singapore-003,S4,medium,thresholds set and met
+UK-004,S3,high,metrics and scenarios
+Saudi-001,S1,high,conformity assessment
+EU-AI-Act-018,S4,high,pre defined metrics and thresholds
+UAE-DIFC-ADGM-004,S4,medium,must meet certification requirements
+Singapore-023,S2,high,accuracy claim assessment
+EU-AI-Act-043,S1,high,reassessment trigger
+China-012,S2,medium,security assessment
+EU-AI-Act-029,S2,medium,resilience property
+Singapore-019,S3,high,metrics specified
+Singapore-005,S3,high,output and component testing
+UK-006,S1,medium,assurance generic
+UAE-DIFC-ADGM-P3-03,S1,high,notice and impact assessment request
+ISO-IEC-005,S1,high,catalogue page
+EU-AI-Act-014,S2,medium,risk management
+UAE-AbuDhabi-DoH-014,S2,medium,sustainability assessment
+UAE-AbuDhabi-DoH-P3-01,S2,medium,simulations or pilot
+China-P3-02,S2,medium,security capability tests
+Singapore-024,S3,medium,TEVV considerations
+UAE-DIFC-ADGM-005,S1,high,accountability examples
+US-NIST-036,S2,medium,adversarial testing regular cadence
+EU-GPAI-CoP-P3-20,S3,high,independent external evaluators
+EU-AI-Act-032,S1,high,conformity assessment
+UK-005,S2,medium,accuracy against protected characteristics
+UAE-AbuDhabi-DoH-P3-04,S4,high,KPI threshold and planned intervals
+EU-AI-Act-044,S3,low,verification procedure steps
+UK-007,S2,high,security testing
+UAE-Dubai-026,S3,high,independent third party audit
+EU-AI-Act-047,S4,medium,fixed validity periods
+EU-AI-Act-041,S1,low,conformity route only
+UAE-DIFC-ADGM-008,S1,high,DPIA requirement
+Saudi-007,S1,high,due diligence
+UAE-Federal-P3-05,S2,medium,cyber risk assessments at stages
+UAE-DIFC-ADGM-P3-01,S2,medium,safety verification testing
+US-NIST-002,S3,high,"uncertainty, benchmarks, documented reporting"
+US-NIST-024,S3,high,separate testing teams
+EU-AI-Act-052,S1,high,sandbox
+EU-GPAI-CoP-004,S3,high,rigor and elicitation requirements
+UAE-Dubai-016,S3,low,external audit; suspended
+US-NIST-007,S3,high,independent assessors
+ISO-IEC-016,S2,high,red teaming safety assessment planned
+Singapore-017,S3,high,metrics and perturbations
+UAE-Federal-P3-01,S2,medium,resilience testing
+Singapore-P3-02,S1,low,"change management, not a test"
+US-NIST-027,S2,high,CBRN and cyber evaluation
+EU-AI-Act-045,S3,high,data access and own tests
+US-NIST-031,S2,high,vulnerability evaluation
+UAE-AbuDhabi-DoH-P3-03,S4,medium,avoid rule for very high residual risk

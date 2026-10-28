@@ -1,0 +1,6 @@
+{
+ "model": "sentence-transformers/all-MiniLM-L6-v2",
+ "texts_sha256": "f8579f503e14cc8505e8b22e8abb7a33e4264c0f2e7f6c2b8b70bff4b3a0bdea",
+ "n": 290,
+ "dim": 384
+}

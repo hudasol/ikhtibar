@@ -1,0 +1,146 @@
+row_id,specificity,confidence,note
+Saudi-004,S4,high,
+Singapore-013,S4,high,
+US-NIST-028,S3,medium,Names red teaming and a developer independence check for evaluators.
+UK-026,S1,medium,Describes an institute testing before release; no property or method required.
+US-OMB-006,S2,medium,"Ongoing testing for named properties (performance, security, civil rights); no method."
+Saudi-021,S2,medium,Code review and testing for cybersecurity; no method or criterion.
+US-NIST-032,S2,medium,Red teaming for named attack types; no procedure or criterion.
+China-013,S2,medium,Security assessment before launch; no method.
+US-NIST-003,S3,low,Independent review of testing described as beneficial; evaluator independence named.
+UAE-AbuDhabi-DoH-012,S2,medium,"Names risks, accuracy, robustness, fairness; documenting metrics gives no detail."
+ISO-IEC-013,S3,medium,Catalogue entry naming risk based approach and 29119 series; description rather than requirement.
+UAE-Dubai-007,S3,medium,"Names end to end cycles, benchmarking, UAT and audits as methods."
+Singapore-026,S3,high,
+UAE-AbuDhabi-DoH-008,S3,high,
+Saudi-P3-13,S3,medium,Named procedure (ISO 14971 clause 9) before release; no threshold.
+UK-030,S4,medium,Thresholds for intolerable risk required but values left to signatories.
+UK-P3-02,S2,medium,Code review for insecure LLM code; no method detail.
+EU-AI-Act-030,S2,high,
+Japan-016,S1,high,
+US-NIST-042,S3,high,
+Saudi-010,S1,high,Checklist description only; no specific test described.
+Japan-023,S2,medium,Repeated evaluation with red teaming or document review named; no procedure.
+EU-AI-Act-068,S3,high,
+Saudi-006,S2,medium,Sign off after testing and UAT rounds; kind of test named only.
+UAE-DIFC-ADGM-020,S2,low,"Governance document check naming fairness, security etc; not a clear test."
+Singapore-016,S3,high,
+UAE-Federal-023,S4,medium,Fallback test with thresholds for acceptable results; values left to operator.
+UAE-AbuDhabi-DoH-002,S1,medium,Audits of AI functionality without stated method.
+UK-024,S3,high,
+UAE-AbuDhabi-DoH-013,S1,high,
+UAE-Federal-007,S2,high,
+Korea-008,S2,medium,Impact assessment on fundamental rights; no method.
+UK-011,S3,medium,Quantitative testing and validation at change control.
+US-NIST-023,S3,high,
+ISO-IEC-018,S1,medium,Catalogue description of a technical report; no test described.
+US-NIST-035,S3,high,
+UAE-Federal-005,S3,high,
+US-NIST-022,S3,high,
+US-NIST-014,S2,high,
+Korea-005,S1,medium,"Risk identification and assessment; compute threshold is a scope trigger, not a test criterion."
+UAE-Federal-032,S3,high,
+US-NIST-038,S3,medium,Red team composition and expertise described.
+EU-AI-Act-069,S2,medium,Systemic risk assessment named; no method.
+EU-AI-Act-034,S1,high,
+UAE-AbuDhabi-DoH-009,S1,high,
+Saudi-023,S2,high,
+Saudi-020,S2,high,
+UK-002,S1,high,
+China-009,S1,high,
+EU-AI-Act-011,S1,high,"Documentation of a classification assessment, not a test."
+UK-031,S2,medium,Internal and external red teaming affirmed; no procedure.
+Saudi-P3-10,S3,high,
+China-008,S1,high,
+Singapore-015,S2,medium,Process check against eleven named principles; yes/no answers with evidence.
+Japan-012,S1,high,
+EU-AI-Act-028,S3,medium,Accuracy levels and metrics must be declared.
+UAE-Federal-004,S1,high,Announcement of phased rollout tied to assessments.
+Saudi-002,S2,high,
+UAE-Dubai-009,S3,medium,Pilots with defined success metrics; values not set.
+Japan-018,S1,medium,Ensure proper performance; no test described.
+UAE-Dubai-008,S2,medium,Validation for ethical compliance and approval workflow.
+Singapore-032,S3,high,
+UAE-Federal-021,S3,low,External audit; independence stated but no method.
+Saudi-P3-08,S3,high,
+UAE-Dubai-006,S2,medium,Self assessment of named ethics properties; level not defined.
+EU-AI-Act-036,S3,high,
+Singapore-011,S4,high,
+Saudi-P3-02,S2,high,
+UAE-Federal-P3-06,S3,medium,Names vendor assessments and assurance reports; supply chain rather than model test.
+UAE-Federal-018,S2,high,
+UAE-Federal-026,S2,medium,Impact assessments extended to societal and ethical issues.
+Japan-P3-01,S3,high,
+UAE-Federal-P3-07,S3,medium,Testing in a secure or controlled environment before deployment.
+UK-010,S3,medium,Test outputs against existing expertise.
+Singapore-021,S2,medium,Explainability methods named only generically.
+Saudi-005,S2,high,
+US-NIST-011,S4,medium,Residual risk must not exceed tolerance; tolerance set by user.
+Japan-P3-02,S3,low,Risk assessment with named tool rather than a test.
+China-011,S2,high,
+US-NIST-018,S2,medium,Post deployment monitoring plan elements listed.
+US-NIST-043,S3,high,
+China-017,S1,low,"Platform metadata check, not a test of an AI system."
+EU-AI-Act-P3-22,S3,high,
+ISO-IEC-012,S3,medium,Catalogue entry naming black box and white box approaches.
+ISO-IEC-008,S3,high,
+UAE-DIFC-ADGM-015,S3,medium,Tracks reviewer accept and reject rates; tests design assumptions.
+Singapore-P3-01,S2,medium,Case study; tests on failure and threat vectors and red teaming.
+UAE-DIFC-ADGM-012,S1,high,"Trigger for a DPIA, not a test."
+UAE-Federal-P3-02,S3,medium,Edge case and scenario testing; criteria left to entity.
+US-NIST-037,S1,low,"Descriptive limitations of pre-deployment testing, not a requirement."
+UAE-AbuDhabi-DoH-003,S4,medium,Validation against established performance benchmarks.
+EU-AI-Act-P3-23,S3,high,
+UAE-AbuDhabi-DoH-004,S3,medium,"Diverse dataset requirement; properties accuracy, safety, efficacy."
+EU-Standards-005,S1,medium,"Standards status entry, no test requirement described."
+UAE-Dubai-036,S4,high,
+US-NIST-033,S2,high,
+Singapore-033,S3,high,
+Singapore-003,S4,medium,Thresholds set by each organisation and compared with results.
+UK-004,S3,high,
+Saudi-001,S1,medium,Conformity assessments required; no property or method.
+EU-AI-Act-018,S4,high,
+UAE-DIFC-ADGM-004,S4,low,Must meet Commissioner audit and certification requirements; content unspecified.
+Singapore-023,S2,medium,Assess vendor accuracy claim.
+EU-AI-Act-043,S1,high,"Trigger for reassessment, not a test."
+China-012,S2,high,
+EU-AI-Act-029,S2,low,"Resilience requirement, not a test."
+Singapore-019,S3,high,
+Singapore-005,S3,high,
+UK-006,S1,high,
+UAE-DIFC-ADGM-P3-03,S1,medium,Proposed notice content and impact assessment on request; no test.
+ISO-IEC-005,S1,low,Catalogue entry for evaluation guidance using a quality model.
+EU-AI-Act-014,S3,low,Risk management process steps described.
+UAE-AbuDhabi-DoH-014,S3,low,Sustainability assessment with report content; not an AI test.
+UAE-AbuDhabi-DoH-P3-01,S2,medium,Simulations or pilot studies named as test kinds.
+China-P3-02,S2,medium,Security testing of protection services and checks.
+Singapore-024,S3,high,
+UAE-DIFC-ADGM-005,S1,high,Examples only.
+US-NIST-036,S3,medium,Regular adversarial testing and real world scenarios; cadence not fixed.
+EU-GPAI-CoP-P3-20,S3,high,
+EU-AI-Act-032,S1,high,
+UK-005,S2,medium,Measurements such as accuracy against protected characteristics; where possible.
+UAE-AbuDhabi-DoH-P3-04,S4,high,
+EU-AI-Act-044,S1,medium,Documentation based internal control check.
+UK-007,S2,high,
+UAE-Dubai-026,S3,high,
+EU-AI-Act-047,S4,medium,Fixed certificate validity periods; certification administration.
+EU-AI-Act-041,S1,high,"Procedure route selection, not a test."
+UAE-DIFC-ADGM-008,S1,high,Trigger for a DPIA.
+Saudi-007,S1,high,
+UAE-Federal-P3-05,S3,medium,Assessments at regular intervals and named lifecycle stages.
+UAE-DIFC-ADGM-P3-01,S2,medium,Proposed safety verification testing.
+US-NIST-002,S3,high,
+US-NIST-024,S3,high,
+EU-AI-Act-052,S2,low,Sandbox testing under plan.
+EU-GPAI-CoP-004,S3,high,
+UAE-Dubai-016,S3,low,External audit; suspended guideline.
+US-NIST-007,S3,high,
+ISO-IEC-016,S2,medium,Planned specification at early stage; red teaming safety assessment named.
+Singapore-017,S3,high,
+UAE-Federal-P3-01,S2,high,
+Singapore-P3-02,S3,low,"Change review triggers, not a test."
+US-NIST-027,S2,medium,Test plan for CBRN and cyber misuse; periodic.
+EU-AI-Act-045,S3,high,
+US-NIST-031,S2,medium,Verification of named behaviours; regular vulnerability evaluation.
+UAE-AbuDhabi-DoH-P3-03,S4,medium,Residual risk rating rule that bars implementation.
