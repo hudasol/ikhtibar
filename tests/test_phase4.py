@@ -186,6 +186,22 @@ class VerificationTests(unittest.TestCase):
 
 
 class PaperTests(unittest.TestCase):
+    def test_paper_figures_current_and_trace_paths_exist(self):
+        import hashlib, json, re
+        man = json.loads((ROOT / "paper" / "figures" / "manifest.json").read_text(encoding="utf-8"))
+        self.assertTrue(man)
+        h = hashlib.sha256()
+        for rel in man["inputs"]:
+            h.update((ROOT / rel).read_bytes())
+        self.assertEqual(h.hexdigest(), man["inputs_sha256"], "figure inputs changed; rerun scripts/make_figures.py")
+        tmpl = (ROOT / "paper" / "main.tmpl.tex").read_text(encoding="utf-8")
+        app = tmpl.split("\\section{Traceability map}")[1].split("\\section{Reproducibility")[0]
+        for m in re.finditer(r"\\path\{([^}]+)\}", app):
+            pth = m.group(1)
+            if "(" in pth:
+                continue
+            self.assertTrue((ROOT / pth).exists(), "trace map path missing: " + pth)
+
     def test_paper_source_is_current(self):
         import importlib.util
         spec = importlib.util.spec_from_file_location("build_paper", ROOT / "scripts" / "build_paper.py")

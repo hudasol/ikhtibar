@@ -5,7 +5,9 @@ set -e
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 OUT=${1:-$(mktemp -d)}
 PYTHONPATH="$ROOT/src" python "$ROOT/scripts/build_paper.py"
+mkdir -p "$OUT/figures"
 cp "$ROOT/paper/main.tex" "$ROOT/paper/refs.bib" "$OUT/"
+cp "$ROOT"/paper/figures/*.png "$OUT/figures/"
 cd "$OUT"
 pdflatex -interaction=nonstopmode main > /dev/null
 bibtex main > /dev/null
