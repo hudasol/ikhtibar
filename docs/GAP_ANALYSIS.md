@@ -21,7 +21,7 @@ Reviewer standard assumed: a reader who asks (1) is every claim traceable, (2) c
 | G11 | No manuscript, related work section, bibliography or paper style limitations and ethics statements. | Not submittable. | No `paper/` directory. | High |
 | G12 | No data sheet, no frozen release, no archive identifier. | Reproducibility and citation. | No `CITATION.cff`, no release tag. | Medium |
 | G13 | No expert review (domain or legal). | Interpretation and Section 8 are the author's judgement. | Report Section 11. | High, author action |
-| G14 | Licences proposed, not applied. | A paper needs an explicit data licence. | `docs/LICENSING.md`. | Low, author action |
+| G14 | Licence notice added: all rights reserved. | A paper needs an explicit statement of terms of use. | `LICENSE`. | Low |
 | G15 | Arabic originals read for part of the UAE sources only. | Arabic text governs in some cases. | `language_read` column. | Medium |
 
 ## B. Plan
@@ -44,7 +44,7 @@ Work is done in small commits straight to main, with the full test suite, `check
 1. Download the blocked documents (Canada Directive, ISO catalogue pages, SDAIA files) so the 32 unverified rows can be checked. Steps are in `docs/DOWNLOAD_LIST.md`.
 2. Label the 100 row gold template (about one hour) so that a human, not a model, is the reference for binding status.
 3. Arrange a domain or legal reviewer for Section 8 and the UAE rows.
-4. Choose licences and add the files.
+4. Check that the venue accepts an all rights reserved data statement.
 5. Choose the venue and its template, and approve authorship and acknowledgements.
 
 ## E. Status at the end of the first phase 4 session (28 October 2026)
@@ -64,7 +64,7 @@ Work is done in small commits straight to main, with the full test suite, `check
 | G11 | Draft done | `paper/` holds a generated draft (nine pages). Related work is thin for Gulf governance and public sector assurance, and most works were read at abstract level. |
 | G12 | Partly closed | Data sheet and citation file added. No frozen release or archive identifier yet; to be made once the author has chosen licences and venue. |
 | G13 | Open, author action | No domain or legal review. |
-| G14 | Open, author action | Licences not applied. |
+| G14 | Closed | All rights reserved notice added in `LICENSE`. |
 | G15 | Open | Arabic originals still partial. |
 
 ## D. What is not claimed

@@ -131,13 +131,13 @@ def fig_baselines():
     labels = {"majority": "Majority", "framework": "Document prior", "modal_rule": "Wording rule", "keyword_rule": "Keyword rule",
               "tfidf_lr": "TF-IDF", "tfidf_lr_fw": "TF-IDF + document", "embed_lr": "Embedding", "embed_lr_fw": "Embedding + document"}
     for ax, key, title in ((axes[0], "binding5", "Binding status (5 classes)"), (axes[1], "test_type", "Primary test type (15 classes)")):
-        ms = [m for m in labels if m in b[key]["cv"]]
+        ms = [m for m in labels if m in b[key]["gcv"]]
         y = np.arange(len(ms))[::-1]
         for yy, m in zip(y, ms):
-            cv, lo = b[key]["cv"][m], b[key]["lofo"][m]
+            cv, lo = b[key]["gcv"][m], b[key]["lofo"][m]
             ax.plot(cv["accuracy_ci95_doc"], [yy + 0.13] * 2, color=BIND, lw=1.2, alpha=0.5)
             ax.plot(lo["accuracy_ci95_doc"], [yy - 0.13] * 2, color=NONB, lw=1.2, alpha=0.5)
-            ax.plot(cv["accuracy"], yy + 0.13, "o", color=BIND, ms=4.5, label="Cross validation" if m == ms[0] else None)
+            ax.plot(cv["accuracy"], yy + 0.13, "o", color=BIND, ms=4.5, label="Document grouped cross validation" if m == ms[0] else None)
             ax.plot(lo["accuracy"], yy - 0.13, "s", color=NONB, ms=4.5, label="Leave one family out" if m == ms[0] else None)
         ax.set_yticks(y)
         ax.set_yticklabels([labels[m] for m in ms], fontsize=7)
@@ -193,6 +193,7 @@ def fig_archetypes():
         ax.plot(xs, ys, marker=m, ms=3.5, lw=1.1, color=c, label=aid)
     ax.set_xlabel("Questions answered (fixed order)")
     ax.set_ylabel("Items still unknown (of 30)")
+    ax.yaxis.set_major_locator(plt.MaxNLocator(integer=True))
     ax.yaxis.grid(True, color=GRID)
     ax.set_axisbelow(True)
     ax.legend(ncol=4, frameon=False, fontsize=7, loc="upper right")

@@ -23,39 +23,39 @@ Population: 290 headline test rows from 71 documents in 16 families. Protocols: 
 
 ### Binding status, five classes (mandatory, conditional, voluntary, guidance, ambiguous)
 
-| Method | Accuracy, repeated 5 fold CV (95% CI) | Macro F1 | Kappa | Accuracy, leave one family out (95% CI) | Macro F1 |
-|---|---|---|---|---|---|
-| Majority class | 45.5 (39.7 to 51.4) | 12.5 | 0.0 | 45.5 (40.0 to 51.4) | 12.5 |
-| Document prior (most common label in the same document) | 84.3 (80.2 to 88.2) | 81.9 | 0.774 | 45.5 (40.0 to 51.4) | 12.5 |
-| Wording rule (shall, must versus should, may) | 58.3 (52.8 to 64.1) | 31.2 | 0.344 | 58.3 (52.8 to 64.1) | 31.2 |
-| TF-IDF with logistic regression | 50.9 (45.0 to 56.5) | 21.6 | 0.125 | 46.9 (41.0 to 52.8) | 15.3 |
-| TF-IDF with logistic regression plus document indicator | 79.1 (74.4 to 83.1) | 74.8 | 0.686 | 45.5 (40.0 to 51.4) | 12.5 |
-| Frozen sentence embedding with logistic regression | 61.7 (56.7 to 66.8) | 46.2 | 0.419 | 49.3 (43.4 to 55.2) | 28.6 |
-| Frozen sentence embedding with logistic regression plus document indicator | 82.9 (79.1 to 86.5) | 79.5 | 0.751 | 47.9 (42.1 to 53.8) | 18.6 |
+| Method | Accuracy, row level 5 fold CV (95% CI over rows) | Accuracy, document grouped CV (95% CI over documents) | Macro F1 (grouped) | Kappa (grouped) | Accuracy, leave one family out (95% CI over documents) | Macro F1 |
+|---|---|---|---|---|---|---|
+| Majority class | 45.5 (39.7 to 51.4) | 45.5 (30.2 to 61.7) | 12.5 | 0.0 | 45.5 (29.7 to 61.8) | 12.5 |
+| Document prior (most common label in the same document) | 84.3 (80.2 to 88.2) | 45.5 (30.2 to 61.7) | 12.5 | 0.0 | 45.5 (29.7 to 61.8) | 12.5 |
+| Wording rule (shall, must versus should, may) | 58.3 (52.8 to 64.1) | 55.6 (43.7 to 67.9) | 29.1 | 0.306 | 58.3 (46.1 to 69.6) | 31.2 |
+| TF-IDF with logistic regression | 50.9 (45.0 to 56.5) | 48.1 (32.8 to 64.4) | 17.4 | 0.064 | 46.9 (31.0 to 63.3) | 15.3 |
+| TF-IDF with logistic regression plus document indicator | 79.1 (74.4 to 83.1) | 45.5 (30.2 to 61.7) | 12.5 | 0.0 | 45.5 (29.7 to 61.8) | 12.5 |
+| Frozen sentence embedding with logistic regression | 61.7 (56.7 to 66.8) | 49.2 (35.7 to 63.7) | 25.4 | 0.186 | 49.3 (36.5 to 63.3) | 28.6 |
+| Frozen sentence embedding with logistic regression plus document indicator | 82.9 (79.1 to 86.5) | 47.6 (32.2 to 63.6) | 17.6 | 0.075 | 47.9 (32.7 to 64.3) | 18.6 |
 
 ### Binding status, three classes (binding, non binding, ambiguous)
 
-| Method | Accuracy, repeated 5 fold CV (95% CI) | Macro F1 | Kappa | Accuracy, leave one family out (95% CI) | Macro F1 |
-|---|---|---|---|---|---|
-| Majority class | 60.0 (54.1 to 65.5) | 25.0 | 0.0 | 60.0 (54.1 to 65.5) | 25.0 |
-| Document prior (most common label in the same document) | 89.6 (86.2 to 92.8) | 87.0 | 0.805 | 60.0 (54.1 to 65.5) | 25.0 |
-| Wording rule (shall, must versus should, may) | 76.9 (72.1 to 82.1) | 60.8 | 0.554 | 76.9 (72.1 to 82.1) | 60.8 |
-| TF-IDF with logistic regression | 64.9 (59.2 to 70.0) | 36.2 | 0.164 | 61.4 (55.5 to 66.6) | 28.4 |
-| TF-IDF with logistic regression plus document indicator | 84.7 (80.7 to 88.2) | 80.6 | 0.698 | 60.0 (54.1 to 65.5) | 25.0 |
-| Frozen sentence embedding with logistic regression | 73.5 (69.0 to 78.0) | 59.0 | 0.484 | 62.1 (56.6 to 67.6) | 42.3 |
-| Frozen sentence embedding with logistic regression plus document indicator | 88.0 (84.7 to 91.1) | 84.5 | 0.773 | 61.7 (56.2 to 67.2) | 31.2 |
+| Method | Accuracy, row level 5 fold CV (95% CI over rows) | Accuracy, document grouped CV (95% CI over documents) | Macro F1 (grouped) | Kappa (grouped) | Accuracy, leave one family out (95% CI over documents) | Macro F1 |
+|---|---|---|---|---|---|---|
+| Majority class | 60.0 (54.1 to 65.5) | 60.0 (44.8 to 75.3) | 25.0 | 0.0 | 60.0 (44.8 to 75.3) | 25.0 |
+| Document prior (most common label in the same document) | 89.6 (86.2 to 92.8) | 60.0 (44.8 to 75.3) | 25.0 | 0.0 | 60.0 (44.8 to 75.3) | 25.0 |
+| Wording rule (shall, must versus should, may) | 76.9 (72.1 to 82.1) | 76.9 (68.8 to 84.5) | 60.8 | 0.554 | 76.9 (68.8 to 84.5) | 60.8 |
+| TF-IDF with logistic regression | 64.9 (59.2 to 70.0) | 62.4 (47.2 to 77.6) | 31.0 | 0.087 | 61.4 (46.0 to 76.9) | 28.4 |
+| TF-IDF with logistic regression plus document indicator | 84.7 (80.7 to 88.2) | 60.0 (44.8 to 75.3) | 25.0 | 0.0 | 60.0 (44.8 to 75.3) | 25.0 |
+| Frozen sentence embedding with logistic regression | 73.5 (69.0 to 78.0) | 64.2 (51.3 to 77.4) | 42.0 | 0.263 | 62.1 (50.6 to 74.6) | 42.3 |
+| Frozen sentence embedding with logistic regression plus document indicator | 88.0 (84.7 to 91.1) | 61.7 (46.6 to 76.7) | 31.8 | 0.104 | 61.7 (46.4 to 77.2) | 31.2 |
 
 ### Primary test type, fifteen classes
 
-| Method | Accuracy, repeated 5 fold CV (95% CI) | Macro F1 | Kappa | Accuracy, leave one family out (95% CI) | Macro F1 |
-|---|---|---|---|---|---|
-| Majority class | 20.0 (15.5 to 24.8) | 2.2 | 0.0 | 14.5 (10.7 to 18.6) | 1.8 |
-| Document prior (most common label in the same document) | 27.8 (23.4 to 32.6) | 17.3 | 0.166 | 14.5 (10.7 to 18.6) | 1.8 |
-| Keyword rule (taxonomy definitions) | 47.2 (41.4 to 53.1) | 43.9 | 0.414 | 47.2 (41.4 to 53.1) | 43.9 |
-| TF-IDF with logistic regression | 29.9 (25.3 to 35.1) | 9.8 | 0.138 | 25.2 (20.3 to 30.3) | 7.0 |
-| TF-IDF with logistic regression plus document indicator | 32.2 (27.3 to 37.2) | 15.4 | 0.195 | 22.8 (18.3 to 27.6) | 5.7 |
-| Frozen sentence embedding with logistic regression | 61.2 (56.3 to 66.3) | 47.0 | 0.556 | 53.8 (48.3 to 59.7) | 38.5 |
-| Frozen sentence embedding with logistic regression plus document indicator | 55.0 (50.2 to 60.3) | 44.4 | 0.486 | 51.4 (45.5 to 57.2) | 32.9 |
+| Method | Accuracy, row level 5 fold CV (95% CI over rows) | Accuracy, document grouped CV (95% CI over documents) | Macro F1 (grouped) | Kappa (grouped) | Accuracy, leave one family out (95% CI over documents) | Macro F1 |
+|---|---|---|---|---|---|---|
+| Majority class | 20.0 (15.5 to 24.8) | 20.0 (13.8 to 26.4) | 2.2 | 0.0 | 14.5 (8.9 to 21.0) | 1.8 |
+| Document prior (most common label in the same document) | 27.8 (23.4 to 32.6) | 20.0 (13.8 to 26.4) | 2.2 | 0.0 | 14.5 (8.9 to 21.0) | 1.8 |
+| Keyword rule (taxonomy definitions) | 47.2 (41.4 to 53.1) | 47.2 (41.2 to 52.9) | 43.9 | 0.414 | 47.2 (41.6 to 52.8) | 43.9 |
+| TF-IDF with logistic regression | 29.9 (25.3 to 35.1) | 27.9 (22.2 to 34.1) | 8.5 | 0.112 | 25.2 (19.9 to 31.1) | 7.0 |
+| TF-IDF with logistic regression plus document indicator | 32.2 (27.3 to 37.2) | 27.4 (22.3 to 32.8) | 7.2 | 0.109 | 22.8 (18.1 to 28.7) | 5.7 |
+| Frozen sentence embedding with logistic regression | 61.2 (56.3 to 66.3) | 55.7 (49.2 to 62.2) | 39.6 | 0.492 | 53.8 (46.6 to 61.2) | 38.5 |
+| Frozen sentence embedding with logistic regression plus document indicator | 55.0 (50.2 to 60.3) | 55.0 (48.4 to 61.1) | 37.1 | 0.481 | 51.4 (43.5 to 58.7) | 32.9 |
 
 ### Reading the results
 

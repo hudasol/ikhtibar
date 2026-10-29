@@ -74,12 +74,12 @@ def tables(b, e, a, rb, vf):
 
     body = []
     for m, lab in names:
-        row = [lab] + [cell("binding5", m, "cv"), cell("binding5", m, "lofo"), cell("binding3", m, "cv"),
-                       cell("test_type", m, "cv"), cell("test_type", m, "lofo")]
+        row = [lab] + [cell("binding5", m, "cv"), cell("binding5", m, "gcv"), cell("binding5", m, "lofo"),
+                       cell("binding3", m, "gcv"), cell("test_type", m, "gcv"), cell("test_type", m, "lofo")]
         if all(c == "n/a" for c in row[1:]):
             continue
         body.append(row)
-    t["tex_baselines"] = tabular(["Method", "Binding (5) CV", "Binding (5) LOFO", "Binding (3) CV", "Type CV", "Type LOFO"], body, "lrrrrr")
+    t["tex_baselines"] = tabular(["Method", "B5 row", "B5 doc", "B5 LOFO", "B3 doc", "Type doc", "Type LOFO"], body, "lrrrrrr")
 
     en = e["engine"]
     lab = [("closed_two_valued", "Two valued, missing counts as no"), ("open_two_valued", "Two valued, missing counts as yes"),
@@ -108,7 +108,10 @@ def tables(b, e, a, rb, vf):
             ["Ambiguous rows all binding", am["ambiguous_all_binding_pct"]],
             ["Both, most favourable to binding", xt["most_favourable_to_binding_pct"]],
             ["Each document weighted equally", rb["framework_weighted"]["mean_framework_binding_pct"]],
-            ["Document level bootstrap, 95\\% interval", "%s to %s" % tuple(rb["framework_bootstrap"]["binding_pct_ci95"])]]
+            ["Document level bootstrap, 95\\% interval", "%s to %s" % tuple(rb["framework_bootstrap"]["binding_pct_ci95"])],
+            ["Without ISO and IEC catalogue rows", rb["access_sensitivity"]["without_iso_catalogue_rows"]["binding_pct"]],
+            ["Without machine translated rows", rb["access_sensitivity"]["without_translated_rows"]["binding_pct"]],
+            ["Most favourable assumptions with document resampling, 95\\% interval", "%s to %s" % tuple(rb["favourable_with_sampling"]["binding_pct_ci95"])]]
     t["tex_robust"] = tabular(["Scenario", "Binding share (\\%)"], body, "lr")
 
     def iv(x):
@@ -175,7 +178,13 @@ def extra_tables():
         n = d["b"] + d["n"] + d["a"]
         body.append([c, tex(build_docs.TYPE_NAME[c]), n, d["b"], d["n"], d["a"]])
     t["tex_types"] = tabular(["Code", "Test type", "Rows", "Binding", "Vol./guid.", "Ambig."], body, "llrrrr")
-    t["tex_taxonomy"] = tabular(["Code", "Test type"], [[c, tex(build_docs.TYPE_NAME[c])] for c in build_docs.TYPES], "ll")
+    import re as _re
+    defs = {}
+    for line in (ROOT / "docs_src" / "REPORT.tmpl.md").read_text(encoding="utf-8").splitlines():
+        mm = _re.match(r"\| ([A-Z]{2,5}) \| [^|]+ \| ([^|]+) \|", line)
+        if mm:
+            defs[mm.group(1)] = mm.group(2).strip()
+    t["tex_taxonomy"] = tabular(["Code", "Test type", "Definition"], [[c, tex(build_docs.TYPE_NAME[c]), tex(defs.get(c, ""))] for c in build_docs.TYPES], "lp{3.4cm}p{7.6cm}")
 
     sp = j("data/specificity.json")["by_coder"]
     body = []

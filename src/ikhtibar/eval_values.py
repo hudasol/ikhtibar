@@ -33,14 +33,23 @@ def values():
     def block(task, order):
         rows = []
         for m in order:
-            c, l = b[task]["cv"][m], b[task]["lofo"][m]
-            rows.append([names[m], f"{c['accuracy']} ({_ci(c['accuracy_ci95'])})", c["macro_f1"], c["kappa"],
-                         f"{l['accuracy']} ({_ci(l['accuracy_ci95'])})", l["macro_f1"]])
-        return _t(["Method", "Accuracy, repeated 5 fold CV (95% CI)", "Macro F1", "Kappa", "Accuracy, leave one family out (95% CI)", "Macro F1"], rows)
+            c, g, l = b[task]["cv"][m], b[task]["gcv"][m], b[task]["lofo"][m]
+            rows.append([names[m], f"{c['accuracy']} ({_ci(c['accuracy_ci95'])})",
+                         f"{g['accuracy']} ({_ci(g['accuracy_ci95_doc'])})", g["macro_f1"], g["kappa"],
+                         f"{l['accuracy']} ({_ci(l['accuracy_ci95_doc'])})", l["macro_f1"]])
+        return _t(["Method", "Accuracy, row level 5 fold CV (95% CI over rows)", "Accuracy, document grouped CV (95% CI over documents)", "Macro F1 (grouped)", "Kappa (grouped)",
+                   "Accuracy, leave one family out (95% CI over documents)", "Macro F1"], rows)
 
     v["bl_binding5"] = block("binding5", ["majority", "framework", "modal_rule", "tfidf_lr", "tfidf_lr_fw", "embed_lr", "embed_lr_fw"])
     v["bl_binding3"] = block("binding3", ["majority", "framework", "modal_rule", "tfidf_lr", "tfidf_lr_fw", "embed_lr", "embed_lr_fw"])
     v["bl_type"] = block("test_type", ["majority", "framework", "keyword_rule", "tfidf_lr", "tfidf_lr_fw", "embed_lr", "embed_lr_fw"])
+    G = lambda t, m, k="accuracy": b[t]["gcv"][m][k]
+    v["bl_fw5_g"], v["bl_maj5_g"] = G("binding5", "framework"), G("binding5", "majority")
+    v["bl_emb5_g"], v["bl_tfidf5_g"], v["bl_wording_g"] = G("binding5", "embed_lr"), G("binding5", "tfidf_lr"), G("binding5", "modal_rule")
+    v["bl_emb5_g_ci"], v["bl_wording_g_ci"] = _ci(G("binding5", "embed_lr", "accuracy_ci95_doc")), _ci(G("binding5", "modal_rule", "accuracy_ci95_doc"))
+    v["bl_emb5_fw_cv"], v["bl_emb5_fw_g"] = b["binding5"]["cv"]["embed_lr_fw"]["accuracy"], G("binding5", "embed_lr_fw")
+    v["bl_maj3"], v["bl_wording3"], v["bl_emb3_g"] = G("binding3", "majority"), G("binding3", "modal_rule"), G("binding3", "embed_lr")
+    v["bl_emb_type_g"], v["bl_tfidf_type_g"], v["bl_maj_type_g"] = G("test_type", "embed_lr"), G("test_type", "tfidf_lr"), G("test_type", "majority")
     v["bl_n"] = b["meta"]["n_rows"]
     v["bl_frameworks"] = b["meta"]["n_frameworks"]
     v["bl_families"] = b["meta"]["n_families"]
@@ -65,6 +74,26 @@ def values():
     v["bl_fw5_ci_row"] = _ci(b["binding5"]["cv"]["framework"]["accuracy_ci95"])
     v["bl_emb_model"] = b["meta"]["embedding_model"].split("/")[-1]
     sp = _j("data/specificity.json")
+    for c in "AB":
+        for sn, tag in (("test_type", "T"), ("family", "F")):
+            for ln, lt in (("S1_process_only", "s1"), ("S3_or_S4_method_or_criterion", "s34")):
+                x = sp["adjusted"][c][f"{sn}|{ln}"]
+                v[f"sp_adj{tag}_{lt}_{c}"] = x["difference_pp"]
+                v[f"sp_adj{tag}_{lt}_ci_{c}"] = _ci(x["ci95_doc_cluster_pp"])
+    rbx = rb["access_sensitivity"]
+    v["rb_noiso"], v["rb_notrans"], v["rb_noeither"] = rbx["without_iso_catalogue_rows"]["binding_pct"], rbx["without_translated_rows"]["binding_pct"], rbx["without_either"]["binding_pct"]
+    v["n_trans_head"] = rbx["n_translated_headline"]
+    v["rb_fav_ci"], v["rb_fav_ge50"], v["rb_fav_med"] = _ci(rb["favourable_with_sampling"]["binding_pct_ci95"]), rb["favourable_with_sampling"]["share_of_resamples_at_or_above_50"], rb["favourable_with_sampling"]["median_pct"]
+    mk = _j("data/coding/phase6/masked_agreement.json")
+    mp, ms = mk["pairs"], mk["shares"]
+    v["mk_k_masked"], v["mk_agree_masked"] = mp["M1|M2"]["kappa5"], mp["M1|M2"]["agreement5_pct"]
+    v["mk_k_vs_named_lo"] = min(mp[k]["kappa5"] for k in ("M1|B2", "M1|B3", "M2|B2", "M2|B3"))
+    v["mk_k_vs_named_hi"] = max(mp[k]["kappa5"] for k in ("M1|B2", "M1|B3", "M2|B2", "M2|B3"))
+    v["mk_k_vs_orig_lo"] = min(mp[k]["kappa5"] for k in ("M1|orig", "M2|orig"))
+    v["mk_k_vs_orig_hi"] = max(mp[k]["kappa5"] for k in ("M1|orig", "M2|orig"))
+    v["mk_flips_masked"], v["mk_flips_named"] = mp["M1|M2"]["binding_vs_nonbinding_flips"], mp["B2|B3"]["binding_vs_nonbinding_flips"]
+    v["mk_bind_m1"], v["mk_bind_m2"] = ms["M1"]["binding"], ms["M2"]["binding"]
+    v["mk_amb_m1"], v["mk_amb_m2"] = ms["M1"]["ambiguous"], ms["M2"]["ambiguous"]
     sa = sp["agreement"]
     v["sp_n"] = sa["n"]
     v["sp_exact"], v["sp_within1"] = sa["exact_pct"], sa["within_one_pct"]
