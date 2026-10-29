@@ -1,0 +1,121 @@
+row_id,binding_status,primary_test_type,confidence,note
+US-NIST-010,guidance,PERF,high,force or type not fully settled by wording
+UAE-DIFC-ADGM-009,mandatory,TRANS,medium,explainability and testing mixed; binding on managers
+Korea-006,mandatory,RISK,medium,duty to review classification
+Saudi-P3-14,mandatory,MON,low,change control validation
+US-NIST-011,guidance,ROB,medium,safety and fail safe
+Saudi-021,guidance,SEC,high,force or type not fully settled by wording
+Singapore-011,guidance,CSAFE,medium,description of government service
+US-NIST-026,guidance,GATE,high,force or type not fully settled by wording
+UAE-Federal-006,conditional,MON,medium,review triggered by risk change
+ISO-IEC-007,guidance,ROB,high,force or type not fully settled by wording
+UAE-Federal-005,conditional,PRIV,high,force or type not fully settled by wording
+Singapore-019,guidance,FAIR,high,force or type not fully settled by wording
+US-NIST-039,guidance,PERF,medium,benchmark evaluation practices
+Singapore-007,guidance,RED,high,force or type not fully settled by wording
+UAE-DIFC-ADGM-005,mandatory,CONF,low,examples only; accountability mechanisms
+Japan-015,guidance,RISK,high,force or type not fully settled by wording
+UAE-Federal-023,guidance,ROB,medium,fallback plan test
+UK-002,guidance,OVER,medium,human control principle with testing
+UAE-Dubai-027,mandatory,CONF,medium,certification requirement
+Singapore-001,guidance,PERF,low,five mixed risks
+Saudi-019,guidance,SEC,high,force or type not fully settled by wording
+China-005,conditional,CONF,high,force or type not fully settled by wording
+EU-AI-Act-041,conditional,CONF,high,force or type not fully settled by wording
+US-NIST-022,guidance,PERF,high,force or type not fully settled by wording
+UAE-Dubai-012,guidance,RISK,medium,discrimination impact assessment is an impact assessment
+UAE-Federal-021,guidance,CONF,high,force or type not fully settled by wording
+US-NIST-018,guidance,MON,high,force or type not fully settled by wording
+UAE-Federal-P3-04,mandatory,SEC,medium,"policy must, guidance should"
+ISO-IEC-018,guidance,ROB,low,safety function properties
+UAE-AbuDhabi-DoH-002,mandatory,MON,medium,mixed should and must; audits primary
+Saudi-022,guidance,GATE,high,force or type not fully settled by wording
+Saudi-P3-03,guidance,SEC,medium,guardrail testing
+EU-GPAI-CoP-009,voluntary,SEC,medium,code of practice; adversarial robustness of mitigations
+Singapore-035,guidance,REAL,high,force or type not fully settled by wording
+UK-020,guidance,RISK,medium,list of assurance mechanisms
+Saudi-005,guidance,PRIV,high,force or type not fully settled by wording
+Saudi-P3-06,guidance,SEC,medium,remediation validation
+US-NIST-024,guidance,RED,medium,red teaming and independence of testers
+EU-GPAI-CoP-P3-22,voluntary,SEC,high,force or type not fully settled by wording
+UAE-Federal-P3-05,mandatory,RISK,medium,"policy must, guidance should"
+UAE-Dubai-008,mandatory,GATE,medium,approval workflow plus ethics validation
+UK-024,guidance,RED,high,force or type not fully settled by wording
+UAE-AbuDhabi-DoH-010,conditional,CONF,high,force or type not fully settled by wording
+US-NIST-030,guidance,PERF,medium,mixed measurement items
+Singapore-028,guidance,RED,medium,framework calls for evaluation
+UAE-Dubai-014,guidance,MON,high,force or type not fully settled by wording
+ISO-IEC-009,guidance,ROB,high,force or type not fully settled by wording
+Singapore-006,guidance,ROB,high,force or type not fully settled by wording
+Japan-P3-02,mandatory,RISK,high,force or type not fully settled by wording
+China-008,mandatory,RISK,low,algorithm and ethics review
+UK-029,voluntary,RISK,medium,voluntary commitments
+UAE-AbuDhabi-DoH-011,conditional,GATE,high,force or type not fully settled by wording
+UAE-Dubai-015,guidance,PERF,low,quality checks equal to human
+UAE-AbuDhabi-DoH-012,mandatory,PERF,low,role duties; broad testing list
+EU-AI-Act-069,conditional,RISK,medium,systemic risk providers only
+US-NIST-034,guidance,FAIR,high,force or type not fully settled by wording
+UAE-Dubai-002,guidance,FAIR,medium,generalisation to under represented groups
+UAE-Federal-026,guidance,PRIV,high,force or type not fully settled by wording
+Singapore-P3-01,guidance,REAL,medium,phased rollout case study
+EU-AI-Act-042,conditional,CONF,high,force or type not fully settled by wording
+Saudi-P3-08,mandatory,PERF,medium,regulator guidance wording
+Singapore-015,voluntary,RISK,low,process check framework across principles
+Saudi-P3-10,mandatory,PERF,low,requirement wording unclear
+Saudi-010,ambiguous,RISK,low,checklist force depends on third party column; layout scrambled
+UAE-Federal-P3-06,mandatory,SEC,medium,"policy must, guidance should"
+Saudi-P3-11,guidance,REAL,low,should wording in guidance document
+UAE-AbuDhabi-DoH-P3-01,guidance,REAL,medium,pilot testing of controls
+US-NIST-002,guidance,PERF,medium,force or type not fully settled by wording
+UAE-Federal-009,guidance,GATE,low,process description
+UK-007,guidance,SEC,medium,playbook principle
+Singapore-013,guidance,PERF,medium,analysis of test results
+UAE-Federal-P3-02,guidance,PERF,high,force or type not fully settled by wording
+EU-AI-Act-019,conditional,RISK,high,force or type not fully settled by wording
+Saudi-002,guidance,ROB,high,force or type not fully settled by wording
+UAE-AbuDhabi-DoH-009,mandatory,RISK,high,force or type not fully settled by wording
+UK-008,guidance,SEC,medium,deployment advice
+UAE-Federal-P3-07,mandatory,GATE,medium,policy must; change approval and testing
+Saudi-P3-09,guidance,CONF,low,independent review; should wording
+EU-GPAI-CoP-008,voluntary,GATE,high,force or type not fully settled by wording
+Singapore-020,guidance,CSAFE,medium,harm benchmarks and red teaming
+Japan-022,guidance,CSAFE,low,ten mixed perspectives
+Saudi-P3-07,mandatory,PERF,medium,expected documentation
+ISO-IEC-016,guidance,RED,medium,planned specification
+UK-P3-01,guidance,FAIR,high,force or type not fully settled by wording
+UAE-AbuDhabi-DoH-004,mandatory,PERF,high,force or type not fully settled by wording
+US-NIST-016,guidance,PERF,medium,force or type not fully settled by wording
+Saudi-P3-15,voluntary,CONF,high,force or type not fully settled by wording
+UAE-AbuDhabi-DoH-001,mandatory,CONF,medium,expectation wording
+UK-009,guidance,PRIV,high,force or type not fully settled by wording
+EU-AI-Act-043,conditional,CONF,high,force or type not fully settled by wording
+Saudi-P3-16,voluntary,RISK,medium,self assessment tool
+China-022,voluntary,DATA,medium,recommended standard
+US-NIST-029,guidance,PERF,medium,force or type not fully settled by wording
+UAE-DIFC-ADGM-P3-02,ambiguous,RISK,low,proposed regulation not in force
+EU-AI-Act-052,mandatory,REAL,high,force or type not fully settled by wording
+UAE-AbuDhabi-DoH-007,mandatory,SEC,high,force or type not fully settled by wording
+Japan-013,guidance,RISK,medium,misuse risk identification
+EU-GPAI-CoP-005,voluntary,RED,medium,code of practice; adversarial evaluation
+ISO-IEC-015,guidance,RED,high,force or type not fully settled by wording
+Japan-019,guidance,PERF,low,user understanding of output
+Singapore-005,guidance,PERF,medium,component and output testing
+Singapore-012,guidance,CSAFE,low,mixed risk specific tests
+ISO-IEC-017,guidance,PERF,high,force or type not fully settled by wording
+Singapore-016,guidance,CSAFE,high,force or type not fully settled by wording
+UAE-Federal-028,guidance,FAIR,medium,representativeness check
+Japan-016,guidance,RISK,high,force or type not fully settled by wording
+UK-026,guidance,RED,medium,pre deployment access evaluations
+US-NIST-043,guidance,PERF,high,force or type not fully settled by wording
+UAE-Dubai-036,mandatory,CONF,high,force or type not fully settled by wording
+Saudi-004,guidance,FAIR,high,force or type not fully settled by wording
+Singapore-025,guidance,SEC,high,force or type not fully settled by wording
+EU-GPAI-CoP-007,voluntary,CONF,medium,independent external evaluators
+UAE-Federal-019,guidance,RISK,medium,discrimination impact assessment
+Korea-005,conditional,RISK,high,force or type not fully settled by wording
+UAE-DIFC-ADGM-012,conditional,PRIV,high,force or type not fully settled by wording
+UAE-AbuDhabi-DoH-008,mandatory,FAIR,high,force or type not fully settled by wording
+Saudi-P3-01,guidance,RISK,medium,guideline wording
+US-NIST-036,guidance,RED,medium,adversarial testing plus feedback
+US-NIST-013,guidance,TRANS,medium,mixed transparency and privacy
+EU-AI-Act-071,conditional,CONF,medium,regulator evaluation of GPAI

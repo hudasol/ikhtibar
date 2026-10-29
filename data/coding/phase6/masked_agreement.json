@@ -1,0 +1,102 @@
+{
+ "n": 120,
+ "pairs": {
+  "B2|B3": {
+   "agreement3_pct": 96.7,
+   "agreement5_pct": 94.2,
+   "binding_vs_nonbinding_flips": 1,
+   "kappa3": 0.919,
+   "kappa5": 0.905
+  },
+  "B2|orig": {
+   "agreement3_pct": 83.3,
+   "agreement5_pct": 75.8,
+   "binding_vs_nonbinding_flips": 3,
+   "kappa3": 0.664,
+   "kappa5": 0.636
+  },
+  "B3|orig": {
+   "agreement3_pct": 83.3,
+   "agreement5_pct": 77.5,
+   "binding_vs_nonbinding_flips": 2,
+   "kappa3": 0.66,
+   "kappa5": 0.662
+  },
+  "M1|B2": {
+   "agreement3_pct": 92.5,
+   "agreement5_pct": 83.3,
+   "binding_vs_nonbinding_flips": 6,
+   "kappa3": 0.829,
+   "kappa5": 0.726
+  },
+  "M1|B3": {
+   "agreement3_pct": 94.2,
+   "agreement5_pct": 85.8,
+   "binding_vs_nonbinding_flips": 7,
+   "kappa3": 0.864,
+   "kappa5": 0.766
+  },
+  "M1|M2": {
+   "agreement3_pct": 92.5,
+   "agreement5_pct": 88.3,
+   "binding_vs_nonbinding_flips": 7,
+   "kappa3": 0.83,
+   "kappa5": 0.805
+  },
+  "M1|orig": {
+   "agreement3_pct": 80.8,
+   "agreement5_pct": 75.0,
+   "binding_vs_nonbinding_flips": 5,
+   "kappa3": 0.627,
+   "kappa5": 0.621
+  },
+  "M2|B2": {
+   "agreement3_pct": 95.0,
+   "agreement5_pct": 90.0,
+   "binding_vs_nonbinding_flips": 3,
+   "kappa3": 0.882,
+   "kappa5": 0.836
+  },
+  "M2|B3": {
+   "agreement3_pct": 96.7,
+   "agreement5_pct": 92.5,
+   "binding_vs_nonbinding_flips": 2,
+   "kappa3": 0.92,
+   "kappa5": 0.877
+  },
+  "M2|orig": {
+   "agreement3_pct": 83.3,
+   "agreement5_pct": 73.3,
+   "binding_vs_nonbinding_flips": 2,
+   "kappa3": 0.668,
+   "kappa5": 0.595
+  }
+ },
+ "shares": {
+  "B2": {
+   "ambiguous": 4.2,
+   "binding": 23.3,
+   "non_binding": 72.5
+  },
+  "B3": {
+   "ambiguous": 1.7,
+   "binding": 25.0,
+   "non_binding": 73.3
+  },
+  "M1": {
+   "ambiguous": 1.7,
+   "binding": 30.8,
+   "non_binding": 67.5
+  },
+  "M2": {
+   "ambiguous": 3.3,
+   "binding": 25.8,
+   "non_binding": 70.8
+  },
+  "orig": {
+   "ambiguous": 16.7,
+   "binding": 21.7,
+   "non_binding": 61.7
+  }
+ }
+}
