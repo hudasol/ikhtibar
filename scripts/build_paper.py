@@ -109,6 +109,9 @@ def tables(b, e, a, rb, vf):
             ["Both, most favourable to binding", xt["most_favourable_to_binding_pct"]],
             ["Each document weighted equally", rb["framework_weighted"]["mean_framework_binding_pct"]],
             ["Document level bootstrap, 95\\% interval", "%s to %s" % tuple(rb["framework_bootstrap"]["binding_pct_ci95"])],
+            ["Each family weighted equally", rb["family_weighted"]["mean_family_binding_pct"]],
+            ["Mandatory only (conditional not counted)", round(100 * rb["base"]["mandatory"] / rb["base"]["n"], 1)],
+            ["Without ISO, IEC and translated rows", rb["access_sensitivity"]["without_either"]["binding_pct"]],
             ["Without ISO and IEC catalogue rows", rb["access_sensitivity"]["without_iso_catalogue_rows"]["binding_pct"]],
             ["Without machine translated rows", rb["access_sensitivity"]["without_translated_rows"]["binding_pct"]],
             ["Most favourable assumptions with document resampling, 95\\% interval", "%s to %s" % tuple(rb["favourable_with_sampling"]["binding_pct_ci95"])]]
