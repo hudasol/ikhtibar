@@ -188,6 +188,8 @@ def values():
     v["rb_lofo_lo"], v["rb_lofo_hi"] = lo["min_binding_pct"], lo["max_binding_pct"]
     v["rb_doc_mean"] = rb["framework_weighted"]["mean_framework_binding_pct"]
     v["rb_fam_mean"] = rb["family_weighted"]["mean_family_binding_pct"]
+    v["am_total"], v["mand_n"] = rb["base"]["ambiguous"], rb["base"]["mandatory"]
+    v["mand_pct"] = round(100 * rb["base"]["mandatory"] / rb["base"]["n"], 1)
     v["rb_fam_any"], v["rb_fam_n"] = rb["family_weighted"]["families_with_any_binding"], rb["family_weighted"]["families"]
     v["rb_docs"] = rb["framework_weighted"]["frameworks"]
     v["rb_docs_any"] = rb["framework_weighted"]["frameworks_with_any_binding_test_provision"]

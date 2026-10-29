@@ -31,7 +31,7 @@ def share(rows):
     n = len(rows)
     b = sum(r["binding_status"] in BIND for r in rows)
     a = sum(r["binding_status"] == "ambiguous" for r in rows)
-    return {"n": n, "binding": b, "ambiguous": a, "non_binding": n - b - a,
+    return {"n": n, "binding": b, "mandatory": sum(r["binding_status"] == "mandatory" for r in rows), "ambiguous": a, "non_binding": n - b - a,
             "binding_pct": round(100 * b / n, 1) if n else None}
 
 
