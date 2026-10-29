@@ -18,4 +18,4 @@ Following the questions of the datasheets for datasets proposal, answered briefl
 
 **Maintenance.** Rows carry retrieval dates and `python -m ikhtibar.staleness` lists rows older than a chosen age. Changes are made by commit, with corrections recorded in patch files with a reason.
 
-**Licence.** Proposed, not yet applied: documents and data under CC BY 4.0, code under the MIT licence (`docs/LICENSING.md`).
+**Licence.** All rights reserved (`LICENSE`). Contact the author before reuse (`docs/LICENSING.md`).

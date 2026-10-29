@@ -19,7 +19,7 @@ MAX_FILE_BYTES = 2_000_000
 QUOTE_WORDS = 20          # protocol: short attributed quotes only (under 15 words); 20 gives a margin for detection
 CELL_WORDS = 120
 CELL_COLS = {"requirement_paraphrase", "interpretation_note", "verification_note"}
-NOTICE_RE = re.compile(r"(©|\(c\)|copyright)\s*(iso|iec|ieee|cen|bsi|astm|ansi)\b|all rights reserved", re.I)
+NOTICE_RE = re.compile(r"(©|\(c\)|copyright)\s*(iso|iec|ieee|cen|bsi|astm|ansi)\b", re.I)
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".pytest_cache"}
 ALLOW_FILE = ROOT / ".contentcheck-allow"
 
@@ -63,7 +63,7 @@ def main():
             continue
         text = p.read_text(encoding="utf-8", errors="replace")
         if NOTICE_RE.search(text) and rel not in {"scripts/check_content.py"} and not rel.startswith("tests/"):
-            bad.append(f"{rel}: contains a copyright or all rights reserved notice (is standard text pasted in?)")
+            bad.append(f"{rel}: contains a copyright notice from a standards body (is standard text pasted in?)")
         if p.suffix.lower() == ".md":
             for q in quoted_spans(text):
                 if words(q) >= QUOTE_WORDS:

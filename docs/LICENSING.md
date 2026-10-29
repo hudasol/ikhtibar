@@ -1,8 +1,8 @@
-# Licence proposal and licence record
+# Licence decision and licence record
 
-This is a proposal for the author to confirm. No LICENSE file has been added to the repository, because choosing a licence is the author's decision. Research, not legal advice; ask a lawyer or the university or employer if either could have a claim on the work.
+**Decision (author, standing):** no open licence. All rights are reserved. Anyone who wishes to use, modify, distribute or sell the work should contact the author first. The `LICENSE` file records this. The open licence table below is the earlier proposal and is kept only for reference; it is not in force. Research, not legal advice; ask a lawyer or the university or employer if either could have a claim on the work.
 
-## Proposal
+## Earlier proposal (not adopted)
 
 | Part | Proposed licence | Reason |
 |---|---|---|
@@ -26,6 +26,6 @@ No dataset is bundled. No paid service, subscription or paid API is used or requ
 
 ## Things the author must confirm
 
-1. The licence choices above (or replacements), then add the LICENSE files.
+1. That the all rights reserved notice in `LICENSE` is what you want for a conference submission, since some venues ask for a data availability statement.
 2. That no employer or university terms apply to the work.
 3. Whether CC BY 4.0 attribution wording should name the author in a particular form.

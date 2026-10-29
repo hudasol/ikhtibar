@@ -436,7 +436,7 @@ All documents below are free. The complete, row linked list is `docs/DOWNLOAD_LI
 | `docs/DOWNLOAD_LIST.md` | Documents to download by hand, per unverified row |
 | `docs/UAE_COVERAGE.md` | Per source and per search record for the UAE work |
 | `docs/TIME_SENSITIVE.md` | Time sensitive items with locators |
-| `docs/LICENSING.md` | Licence proposal and library and data licence record |
+| `LICENSE`, `docs/LICENSING.md` | All rights reserved notice; library and data licence record |
 | `data/evidence_table.csv` | {{n_rows}} rows with verification status and review dates |
 | `data/checklist.yaml`, `data/answers_schema.yaml` | The checklist and the questions the tool asks |
 | `data/time_sensitive.csv`, `data/uae_search_log.csv`, `data/uae_sources.csv` | Status items (phases 2 and 3) and phase 2 UAE search records |

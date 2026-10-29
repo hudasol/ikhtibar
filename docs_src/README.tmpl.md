@@ -40,7 +40,7 @@ Interpreted means the analyst's judgement. It is labelled as such in the report.
 - The DoH Responsible AI Standard revision falls due in October 2026; the DIFC Regulation 10 amendments are consulted on but not enacted; the Saudi instruments are not final. See `docs/TIME_SENSITIVE.md`.
 - Some phase 3 rows were read from PDFs saved by the fetch tool and extracted locally; this is recorded per row in `access_path`.
 - Arabic originals were obtained for only part of the UAE sources (`docs/UAE_COVERAGE.md`).
-- Licences are proposed, not applied (`docs/LICENSING.md`).
+- All rights reserved (`LICENSE`); contact the author before reuse (`docs/LICENSING.md`).
 
 ## Quick start
 
@@ -71,7 +71,7 @@ The tool returns, for each checklist item, APPLIES, DOES_NOT_APPLY or UNKNOWN, w
 | `docs/EVALUATION.md`, `docs/DECISIONS.md`, `docs/GAP_ANALYSIS.md` | Phase 4 evaluation (generated), decision log, limitations and plan |
 | `paper/` | Conference paper draft, generated from the result files (`scripts/build_paper.py`, `scripts/compile_paper.sh`) |
 | `data/baselines/`, `data/evaluation/`, `data/robustness.json`, `data/completeness/`, `data/coding/phase4/` | Phase 4 result files and inputs |
-| `docs/LICENSING.md` | Licence proposal and library licence record |
+| `LICENSE`, `docs/LICENSING.md` | All rights reserved notice; library licence record |
 | `data/evidence_table.csv` | The evidence table |
 | `data/checklist.yaml`, `data/answers_schema.yaml` | Checklist and questions |
 | `data/verification/` | Raw verification results |
@@ -82,7 +82,7 @@ The tool returns, for each checklist item, APPLIES, DOES_NOT_APPLY or UNKNOWN, w
 
 ## Licences
 
-Proposal only, to be confirmed by the author: documents and data under CC BY 4.0, code under the MIT licence. Reasons and the licence record for libraries and data are in `docs/LICENSING.md`. Source documents remain the property of their publishers; this repository stores paraphrases and short attributed quotations, and a check fails the build on long quotations or document binaries.
+All rights reserved. No open licence is applied. Anyone who wishes to use, modify, distribute or sell the work should contact the author first (see `LICENSE`). Reasons and the licence record for libraries and data are in `docs/LICENSING.md`. Source documents remain the property of their publishers.
 
 ## Author
 
