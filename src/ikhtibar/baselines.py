@@ -266,6 +266,35 @@ def run_repeated_cv(method, texts, fws, y, task):
     return preds  # list of prediction vectors, one per repeat
 
 
+def folds_grouped(fws, seed):
+    """Document grouped folds: all rows of a document stay together; documents are shuffled and
+    placed greedily into the currently smallest fold, so rows of one document never straddle train and test."""
+    rng = np.random.RandomState(seed)
+    docs = sorted(set(fws))
+    rng.shuffle(docs)
+    size = {d: sum(1 for f in fws if f == d) for d in docs}
+    docs.sort(key=lambda d: -size[d])  # stable after shuffle: ties stay shuffled
+    load = [0] * N_FOLDS
+    assign = {}
+    for d in docs:
+        k = int(np.argmin(load))
+        assign[d] = k
+        load[k] += size[d]
+    return [([i for i in range(len(fws)) if assign[fws[i]] != f], [i for i in range(len(fws)) if assign[fws[i]] == f])
+            for f in range(N_FOLDS)]
+
+
+def run_grouped_cv(method, texts, fws, y, task):
+    preds = []
+    for rep in range(N_REPEATS):
+        p = [None] * len(y)
+        for tr, te in folds_grouped(fws, SEED + 100 + rep):
+            for i, lab in zip(te, method(texts, fws, y, tr, te, task)):
+                p[i] = lab
+        preds.append(p)
+    return preds
+
+
 def run_lofo(method, texts, fws, y, fams, task):
     p = [None] * len(y)
     for fam in sorted(set(fams)):
@@ -330,21 +359,24 @@ def main():
     y5 = [r["binding_status"] for r in rows]
     y3 = [TO3[v] for v in y5]
     ytt = [r["primary_test_type"] for r in rows]
-    result["binding5"] = {"label_counts": dict(collections.Counter(y5)), "cv": {}, "lofo": {}}
-    result["binding3"] = {"label_counts": dict(collections.Counter(y3)), "cv": {}, "lofo": {}}
-    result["test_type"] = {"label_counts": dict(collections.Counter(ytt)), "cv": {}, "lofo": {}}
+    result["binding5"] = {"label_counts": dict(collections.Counter(y5)), "cv": {}, "gcv": {}, "lofo": {}}
+    result["binding3"] = {"label_counts": dict(collections.Counter(y3)), "cv": {}, "gcv": {}, "lofo": {}}
+    result["test_type"] = {"label_counts": dict(collections.Counter(ytt)), "cv": {}, "gcv": {}, "lofo": {}}
     confusion = {}
     for task, y, key in (("binding", y5, "binding5"), ("test_type", ytt, "test_type")):
         for mname, fn in METHODS[task]:
             rng = np.random.RandomState(SEED + 7)
             cv = run_repeated_cv(fn, texts, fws, y, task)
             lo = run_lofo(fn, texts, fws, y, fams, task)
+            gc = run_grouped_cv(fn, texts, fws, y, task)
+            result[key]["gcv"][mname] = summarise(y, gc, np.random.RandomState(SEED + 7), fws)
             result[key]["cv"][mname] = summarise(y, cv, rng, fws)
             result[key]["lofo"][mname] = summarise(y, lo, rng, fws)
             if task == "binding":
                 m3 = lambda ps: [[TO3[a] for a in p] for p in ps]
                 result["binding3"]["cv"][mname] = summarise(y3, m3(cv), np.random.RandomState(SEED + 7), fws)
                 result["binding3"]["lofo"][mname] = summarise(y3, m3(lo), np.random.RandomState(SEED + 7), fws)
+                result["binding3"]["gcv"][mname] = summarise(y3, m3(gc), np.random.RandomState(SEED + 7), fws)
             if mname == "tfidf_lr":
                 result[key]["lofo_per_class_tfidf_lr"] = per_class(y, lo[0])
                 cm = collections.Counter(zip(y, lo[0]))
@@ -362,6 +394,7 @@ def main():
         f.write("\n")
     for t in ("binding5", "binding3", "test_type"):
         print(t, "CV  ", {k: (v["accuracy"], v["macro_f1"]) for k, v in result[t]["cv"].items()})
+        print(t, "GCV ", {k: (v["accuracy"], v["macro_f1"]) for k, v in result[t]["gcv"].items()})
         print(t, "LOFO", {k: (v["accuracy"], v["macro_f1"]) for k, v in result[t]["lofo"].items()})
 
 

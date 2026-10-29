@@ -121,6 +121,127 @@
     ]
    }
   },
+  "gcv": {
+   "embed_lr": {
+    "accuracy": 64.2,
+    "accuracy_ci95": [
+     59.3,
+     68.9
+    ],
+    "accuracy_ci95_doc": [
+     51.3,
+     77.4
+    ],
+    "kappa": 0.263,
+    "macro_f1": 42.0,
+    "macro_f1_ci95": [
+     38.3,
+     45.6
+    ]
+   },
+   "embed_lr_fw": {
+    "accuracy": 61.7,
+    "accuracy_ci95": [
+     56.6,
+     66.9
+    ],
+    "accuracy_ci95_doc": [
+     46.6,
+     76.7
+    ],
+    "kappa": 0.104,
+    "macro_f1": 31.8,
+    "macro_f1_ci95": [
+     28.6,
+     35.1
+    ]
+   },
+   "framework": {
+    "accuracy": 60.0,
+    "accuracy_ci95": [
+     54.1,
+     65.5
+    ],
+    "accuracy_ci95_doc": [
+     44.8,
+     75.3
+    ],
+    "kappa": 0.0,
+    "macro_f1": 25.0,
+    "macro_f1_ci95": [
+     23.4,
+     26.4
+    ]
+   },
+   "majority": {
+    "accuracy": 60.0,
+    "accuracy_ci95": [
+     54.1,
+     65.5
+    ],
+    "accuracy_ci95_doc": [
+     44.8,
+     75.3
+    ],
+    "kappa": 0.0,
+    "macro_f1": 25.0,
+    "macro_f1_ci95": [
+     23.4,
+     26.4
+    ]
+   },
+   "modal_rule": {
+    "accuracy": 76.9,
+    "accuracy_ci95": [
+     72.1,
+     82.1
+    ],
+    "accuracy_ci95_doc": [
+     68.8,
+     84.5
+    ],
+    "kappa": 0.554,
+    "macro_f1": 60.8,
+    "macro_f1_ci95": [
+     54.8,
+     67.0
+    ]
+   },
+   "tfidf_lr": {
+    "accuracy": 62.4,
+    "accuracy_ci95": [
+     56.9,
+     67.6
+    ],
+    "accuracy_ci95_doc": [
+     47.2,
+     77.6
+    ],
+    "kappa": 0.087,
+    "macro_f1": 31.0,
+    "macro_f1_ci95": [
+     27.7,
+     34.4
+    ]
+   },
+   "tfidf_lr_fw": {
+    "accuracy": 60.0,
+    "accuracy_ci95": [
+     54.1,
+     65.5
+    ],
+    "accuracy_ci95_doc": [
+     44.8,
+     75.3
+    ],
+    "kappa": 0.0,
+    "macro_f1": 25.0,
+    "macro_f1_ci95": [
+     23.4,
+     26.4
+    ]
+   }
+  },
   "label_counts": {
    "ambiguous": 35,
    "binding": 81,
@@ -367,6 +488,127 @@
     "macro_f1_ci95": [
      68.9,
      79.7
+    ]
+   }
+  },
+  "gcv": {
+   "embed_lr": {
+    "accuracy": 49.2,
+    "accuracy_ci95": [
+     44.0,
+     54.5
+    ],
+    "accuracy_ci95_doc": [
+     35.7,
+     63.7
+    ],
+    "kappa": 0.186,
+    "macro_f1": 25.4,
+    "macro_f1_ci95": [
+     22.2,
+     28.4
+    ]
+   },
+   "embed_lr_fw": {
+    "accuracy": 47.6,
+    "accuracy_ci95": [
+     42.0,
+     53.3
+    ],
+    "accuracy_ci95_doc": [
+     32.2,
+     63.6
+    ],
+    "kappa": 0.075,
+    "macro_f1": 17.6,
+    "macro_f1_ci95": [
+     15.1,
+     20.0
+    ]
+   },
+   "framework": {
+    "accuracy": 45.5,
+    "accuracy_ci95": [
+     39.7,
+     51.4
+    ],
+    "accuracy_ci95_doc": [
+     30.2,
+     61.7
+    ],
+    "kappa": 0.0,
+    "macro_f1": 12.5,
+    "macro_f1_ci95": [
+     11.4,
+     13.6
+    ]
+   },
+   "majority": {
+    "accuracy": 45.5,
+    "accuracy_ci95": [
+     39.7,
+     51.4
+    ],
+    "accuracy_ci95_doc": [
+     30.2,
+     61.7
+    ],
+    "kappa": 0.0,
+    "macro_f1": 12.5,
+    "macro_f1_ci95": [
+     11.4,
+     13.6
+    ]
+   },
+   "modal_rule": {
+    "accuracy": 55.6,
+    "accuracy_ci95": [
+     50.1,
+     61.3
+    ],
+    "accuracy_ci95_doc": [
+     43.7,
+     67.9
+    ],
+    "kappa": 0.306,
+    "macro_f1": 29.1,
+    "macro_f1_ci95": [
+     25.3,
+     32.8
+    ]
+   },
+   "tfidf_lr": {
+    "accuracy": 48.1,
+    "accuracy_ci95": [
+     42.4,
+     53.8
+    ],
+    "accuracy_ci95_doc": [
+     32.8,
+     64.4
+    ],
+    "kappa": 0.064,
+    "macro_f1": 17.4,
+    "macro_f1_ci95": [
+     14.8,
+     20.0
+    ]
+   },
+   "tfidf_lr_fw": {
+    "accuracy": 45.5,
+    "accuracy_ci95": [
+     39.7,
+     51.4
+    ],
+    "accuracy_ci95_doc": [
+     30.2,
+     61.7
+    ],
+    "kappa": 0.0,
+    "macro_f1": 12.5,
+    "macro_f1_ci95": [
+     11.4,
+     13.6
     ]
    }
   },
@@ -765,6 +1007,127 @@
     "macro_f1_ci95": [
      12.4,
      19.2
+    ]
+   }
+  },
+  "gcv": {
+   "embed_lr": {
+    "accuracy": 55.7,
+    "accuracy_ci95": [
+     50.7,
+     61.0
+    ],
+    "accuracy_ci95_doc": [
+     49.2,
+     62.2
+    ],
+    "kappa": 0.492,
+    "macro_f1": 39.6,
+    "macro_f1_ci95": [
+     35.0,
+     46.6
+    ]
+   },
+   "embed_lr_fw": {
+    "accuracy": 55.0,
+    "accuracy_ci95": [
+     49.9,
+     60.0
+    ],
+    "accuracy_ci95_doc": [
+     48.4,
+     61.1
+    ],
+    "kappa": 0.481,
+    "macro_f1": 37.1,
+    "macro_f1_ci95": [
+     33.1,
+     43.2
+    ]
+   },
+   "framework": {
+    "accuracy": 20.0,
+    "accuracy_ci95": [
+     15.5,
+     24.8
+    ],
+    "accuracy_ci95_doc": [
+     13.8,
+     26.4
+    ],
+    "kappa": 0.0,
+    "macro_f1": 2.2,
+    "macro_f1_ci95": [
+     1.8,
+     2.8
+    ]
+   },
+   "keyword_rule": {
+    "accuracy": 47.2,
+    "accuracy_ci95": [
+     41.4,
+     53.1
+    ],
+    "accuracy_ci95_doc": [
+     41.2,
+     52.9
+    ],
+    "kappa": 0.414,
+    "macro_f1": 43.9,
+    "macro_f1_ci95": [
+     36.6,
+     51.0
+    ]
+   },
+   "majority": {
+    "accuracy": 20.0,
+    "accuracy_ci95": [
+     15.5,
+     24.8
+    ],
+    "accuracy_ci95_doc": [
+     13.8,
+     26.4
+    ],
+    "kappa": 0.0,
+    "macro_f1": 2.2,
+    "macro_f1_ci95": [
+     1.8,
+     2.8
+    ]
+   },
+   "tfidf_lr": {
+    "accuracy": 27.9,
+    "accuracy_ci95": [
+     23.6,
+     32.7
+    ],
+    "accuracy_ci95_doc": [
+     22.2,
+     34.1
+    ],
+    "kappa": 0.112,
+    "macro_f1": 8.5,
+    "macro_f1_ci95": [
+     7.0,
+     10.6
+    ]
+   },
+   "tfidf_lr_fw": {
+    "accuracy": 27.4,
+    "accuracy_ci95": [
+     22.8,
+     31.9
+    ],
+    "accuracy_ci95_doc": [
+     22.3,
+     32.8
+    ],
+    "kappa": 0.109,
+    "macro_f1": 7.2,
+    "macro_f1_ci95": [
+     6.1,
+     8.9
     ]
    }
   },
