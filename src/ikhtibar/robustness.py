@@ -13,7 +13,7 @@ Scenarios, all computed from data/evidence_table.csv:
   document_level        share of frameworks that contain at least one binding test provision
 Output: data/robustness.json. Run: python -m ikhtibar.robustness
 """
-import csv, json, random, collections
+import csv, random, json, collections
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -108,6 +108,29 @@ def compute():
     vals.sort()
     out["framework_bootstrap"] = {"reps": 5000, "binding_pct_ci95": [round(vals[124], 1), round(vals[4874], 1)],
                                   "seed": SEED}
+
+    # sensitivity to access type: rows read from catalogue pages or through machine translation
+    trans = lambda r: r["evidence_grade"] == "read via unofficial/machine translation"
+    iso = lambda r: r["family"] == "ISO-IEC"
+    out["access_sensitivity"] = {
+        "without_iso_catalogue_rows": share([r for r in head if not iso(r)]),
+        "without_translated_rows": share([r for r in head if not trans(r)]),
+        "without_either": share([r for r in head if not iso(r) and not trans(r)]),
+        "n_translated_headline": sum(trans(r) for r in head), "n_iso_headline": sum(iso(r) for r in head)}
+
+    # combined worst case with sampling uncertainty: resample documents (all test rows), count excluded rows and
+    # ambiguous rows as binding inside each resample, take the upper end
+    rng = random.Random(SEED + 5)
+    fwk = sorted({r["framework"] for r in tests})
+    byf = {f: [r for r in tests if r["framework"] == f] for f in fwk}
+    fav = []
+    for _ in range(5000):
+        rs = [r for f in (rng.choice(fwk) for _ in fwk) for r in byf[f]]
+        nb = sum((r["binding_status"] in BIND) or r["binding_status"] == "ambiguous" or r["headline_include"] != "yes" for r in rs)
+        fav.append(100 * nb / len(rs))
+    fav.sort()
+    out["favourable_with_sampling"] = {"reps": 5000, "binding_pct_ci95": [round(fav[124], 1), round(fav[4874], 1)],
+                                       "median_pct": round(fav[2500], 1), "share_of_resamples_at_or_above_50": round(100 * sum(v >= 50 for v in fav) / len(fav), 1)}
 
     # does the claim survive every scenario?
     claim = {"statement": "binding (mandatory or conditional) test provisions are a minority (below 50%)",

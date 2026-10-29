@@ -1,4 +1,29 @@
 {
+ "access_sensitivity": {
+  "n_iso_headline": 12,
+  "n_translated_headline": 13,
+  "without_either": {
+   "ambiguous": 35,
+   "binding": 75,
+   "binding_pct": 28.3,
+   "n": 265,
+   "non_binding": 155
+  },
+  "without_iso_catalogue_rows": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 29.1,
+   "n": 278,
+   "non_binding": 162
+  },
+  "without_translated_rows": {
+   "ambiguous": 35,
+   "binding": 75,
+   "binding_pct": 27.1,
+   "n": 277,
+   "non_binding": 167
+  }
+ },
  "ambiguous_bounds": {
   "ambiguous_all_binding_pct": 40.0,
   "ambiguous_all_non_binding_pct": 27.9
@@ -38,6 +63,15 @@
   "families": 16,
   "families_with_any_binding": 10,
   "mean_family_binding_pct": 31.5
+ },
+ "favourable_with_sampling": {
+  "binding_pct_ci95": [
+   29.2,
+   59.1
+  ],
+  "median_pct": 43.9,
+  "reps": 5000,
+  "share_of_resamples_at_or_above_50": 22.0
  },
  "framework_bootstrap": {
   "binding_pct_ci95": [

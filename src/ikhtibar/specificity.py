@@ -117,6 +117,42 @@ def main():
                 "difference_ci95_doc_cluster_pp": [round(100 * float(np.percentile(bs, 2.5)), 1),
                                                    round(100 * float(np.percentile(bs, 97.5)), 1)]}
         comp[cname] = res
+    # adjusted differences: compare binding with non binding rows inside the same stratum (test type, or family),
+    # weighting each stratum by its number of binding rows, so that the comparison is not driven by the mix of types
+    ttype = [table[i]["primary_test_type"] for i in ids]
+    famv = [table[i]["family"] for i in ids]
+
+    def strat_diff(labs, lvls, strata, ix):
+        num, den = 0.0, 0
+        for s_ in sorted(set(strata[i] for i in ix)):
+            sb = [i for i in ix if strata[i] == s_ and grp[i] == "binding"]
+            sn = [i for i in ix if strata[i] == s_ and grp[i] == "non_binding"]
+            if not sb or not sn:
+                continue
+            db = np.mean([labs[i] in lvls for i in sb]) - np.mean([labs[i] in lvls for i in sn])
+            num += len(sb) * db
+            den += len(sb)
+        return (num / den) if den else float("nan"), den
+
+    adjusted = {}
+    for cname in ("A", "B"):
+        labs = coders[cname]
+        adjusted[cname] = {}
+        for sname, strata in (("test_type", ttype), ("family", famv)):
+            for name, lvls in (("S1_process_only", ("S1",)), ("S3_or_S4_method_or_criterion", ("S3", "S4"))):
+                d0, used = strat_diff(labs, lvls, strata, list(range(n)))
+                rng3 = np.random.RandomState(SEED + 2)
+                bs = []
+                for _ in range(N_BOOT):
+                    pick = rng3.randint(0, len(docs), len(docs))
+                    ix = [i for k in pick for i in by_doc[docs[k]]]
+                    d, u = strat_diff(labs, lvls, strata, ix)
+                    if u:
+                        bs.append(d)
+                adjusted[cname][f"{sname}|{name}"] = {
+                    "difference_pp": round(100 * d0, 1), "binding_rows_compared": used,
+                    "ci95_doc_cluster_pp": [round(100 * float(np.percentile(bs, 2.5)), 1),
+                                            round(100 * float(np.percentile(bs, 97.5)), 1)]}
     # binding rows by family, for the discussion
     fam = collections.defaultdict(lambda: collections.Counter())
     for i in range(n):
@@ -124,7 +160,7 @@ def main():
             fam[table[ids[i]]["family"]][a[i]] += 1
     out = {"meta": {"n_rows": n, "seed": SEED, "bootstrap": N_BOOT, "levels": LEVELS,
                     "coders": "two blind language model instances, paraphrase only, binding status hidden"},
-           "agreement": agreement, "by_coder": comp,
+           "agreement": agreement, "by_coder": comp, "adjusted": adjusted,
            "binding_by_family_coder_A": {k: dict(v) for k, v in sorted(fam.items())}}
     (ROOT / "data" / "specificity.json").write_text(json.dumps(out, indent=1, sort_keys=True) + "\n")
     print(json.dumps(agreement, indent=1))
