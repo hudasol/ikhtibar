@@ -1,18 +1,19 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[conference]{IEEEtran}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=2.2cm]{geometry}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{array}
 \usepackage[expansion=false]{microtype}
 \usepackage[numbers,sort&compress]{natbib}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do\-\do\.\do\_\do\=\do\?\do\&}
+\Urlmuskip=0mu plus 2mu
 \usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
 \usepackage{enumitem}
-\usepackage[font=small,labelfont=bf]{caption}
-\setlist{nosep}
+\setlist{nosep,leftmargin=1.2em}
 \setlength{\emergencystretch}{2em}
-\setlength{\tabcolsep}{4.5pt}
+\setlength{\tabcolsep}{3pt}
 \title{Ikhtibar: required, recommended or described? An audited evidence base on testing AI systems before deployment}
 {{author_block}}
 \begin{document}
@@ -194,7 +195,7 @@ The study uses public documents and involves no human subjects and no personal d
 \section{Conclusion}
 In this sample of documents, which were chosen because they mention testing, testing AI before deployment is mentioned far more often than it is required. Fewer than half of headline test provisions are binding under each assumption we tried separately (we did not combine them with sampling uncertainty), binding provisions are no more specific than guidance and more often say only that testing happens, and several test types, among them red teaming, robustness and fairness testing, have few binding provisions. The table is documented and partly independently checked, with a measured error rate and a measured gap in coverage. It is not complete and not error free. The next steps are a human second coding, a domain and legal review, rereading the blocked sources, and a larger completeness benchmark.
 
-\bibliographystyle{plainnat}
+\bibliographystyle{IEEEtran}
 \bibliography{refs}
 
 \clearpage
@@ -235,7 +236,7 @@ Strict errors in the fresh verification sample (grading by the verifier, regrade
 Every number computed from the data is read from a committed result file by \path{scripts/build_paper.py} through \path{src/ikhtibar/eval_values.py}; \texttt{python -m ikhtibar.build\_all} regenerates all result files and documents, and the test suite fails if a result file is stale or the paper differs from its template.
 
 \begin{table}[h]\centering\footnotesize
-\begin{tabular}{p{2.9cm}p{5.0cm}p{5.0cm}}
+\begin{tabular}{p{2.3cm}p{3.0cm}p{3.0cm}}
 \toprule
 Content & Result file & Code \\
 \midrule

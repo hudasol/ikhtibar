@@ -56,9 +56,9 @@ def make_bib(rows):
 
 
 def tabular(header, body, spec):
-    lines = ["\\begin{tabular}{%s}" % spec, "\\toprule", " & ".join(header) + " \\\\", "\\midrule"]
+    lines = ["\\resizebox{\\ifdim\\width>\\columnwidth\\columnwidth\\else\\width\\fi}{!}{%", "\\begin{tabular}{%s}" % spec, "\\toprule", " & ".join(header) + " \\\\", "\\midrule"]
     lines += [" & ".join(str(c) for c in r) + " \\\\" for r in body]
-    lines += ["\\bottomrule", "\\end{tabular}"]
+    lines += ["\\bottomrule", "\\end{tabular}}"]
     return "\n".join(lines)
 
 
@@ -184,7 +184,7 @@ def extra_tables():
         mm = _re.match(r"\| ([A-Z]{2,5}) \| [^|]+ \| ([^|]+) \|", line)
         if mm:
             defs[mm.group(1)] = mm.group(2).strip()
-    t["tex_taxonomy"] = tabular(["Code", "Test type", "Definition"], [[c, tex(build_docs.TYPE_NAME[c]), tex(defs.get(c, ""))] for c in build_docs.TYPES], "lp{3.4cm}p{7.6cm}")
+    t["tex_taxonomy"] = tabular(["Code", "Test type", "Definition"], [[c, tex(build_docs.TYPE_NAME[c]), tex(defs.get(c, ""))] for c in build_docs.TYPES], "lp{2.4cm}p{4.2cm}")
 
     sp = j("data/specificity.json")["by_coder"]
     body = []
@@ -217,8 +217,10 @@ def extra_tables():
 def author_block():
     import os
     if os.environ.get("IKHTIBAR_ANON"):
-        return "\\author{Anonymous submission}\n\\date{}"
-    return "\\author{Huda Mueen\\\\Independent researcher, United Arab Emirates}\n\\date{}"
+        return "\\author{\\IEEEauthorblockN{Anonymous submission}}"
+    return ("\\author{\\IEEEauthorblockN{Huda Mueen}\\IEEEauthorblockA{\\textit{Lead author}\\\\Independent researcher\\\\United Arab Emirates}"
+            "\\and\\IEEEauthorblockN{Awaiz Ahmed}\\IEEEauthorblockA{\\textit{Dept.\\ of Software Engineering}\\\\"
+            "\\textit{Al Ain University}\\\\Abu Dhabi, United Arab Emirates}}")
 
 
 def render():

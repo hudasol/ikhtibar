@@ -1,21 +1,21 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[conference]{IEEEtran}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=2.2cm]{geometry}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{array}
 \usepackage[expansion=false]{microtype}
 \usepackage[numbers,sort&compress]{natbib}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do\-\do\.\do\_\do\=\do\?\do\&}
+\Urlmuskip=0mu plus 2mu
 \usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
 \usepackage{enumitem}
-\usepackage[font=small,labelfont=bf]{caption}
-\setlist{nosep}
+\setlist{nosep,leftmargin=1.2em}
 \setlength{\emergencystretch}{2em}
-\setlength{\tabcolsep}{4.5pt}
+\setlength{\tabcolsep}{3pt}
 \title{Ikhtibar: required, recommended or described? An audited evidence base on testing AI systems before deployment}
-\author{Huda Mueen\\Independent researcher, United Arab Emirates}
-\date{}
+\author{\IEEEauthorblockN{Huda Mueen}\IEEEauthorblockA{\textit{Lead author}\\Independent researcher\\United Arab Emirates}\and\IEEEauthorblockN{Awaiz Ahmed}\IEEEauthorblockA{\textit{Dept.\ of Software Engineering}\\\textit{Al Ain University}\\Abu Dhabi, United Arab Emirates}}
 \begin{document}
 \maketitle
 
@@ -63,6 +63,7 @@ Only standard fetch and search tools were used. If a site rejected a fetch, the 
 Table~\ref{tab:family} gives the headline rows by family. Families differ greatly in size, and the table is not a sample of a defined population: documents were chosen because they mention testing and because they could be retrieved, which is why completeness is estimated separately (Section~\ref{sec:complete}).
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lrrrrrr}
 \toprule
 Family & Docs & Rows & Binding & Vol./guid. & Ambig. & Binding \% (95\% CI) \\
@@ -85,7 +86,7 @@ Singapore & 8 & 33 & 0 & 32 & 1 & 0 (0 to 10) \\
 US-NIST & 5 & 36 & 0 & 36 & 0 & 0 (0 to 10) \\
 All headline rows & 71 & 290 & 81 & 174 & 35 & 28 (23 to 33) \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Headline test provisions by family: number of documents with headline rows, rows by binding status, and the binding (mandatory or conditional) share with a 95\% Wilson interval over rows. Intervals ignore clustering by document and are narrow for that reason.}\label{tab:family}
 \end{table}
 
@@ -100,6 +101,7 @@ All headline rows & 71 & 290 & 81 & 174 & 35 & 28 (23 to 33) \\
 \paragraph{Some test types are rarely binding.} Table~\ref{tab:types} gives the same counts by primary test type. Conformity assessment and risk or impact assessment have the largest binding counts, which is expected since these are the procedural duties of regulation. Of 26 headline rows coded red teaming or dangerous capability evaluation, 4 are binding. Human oversight validation has 1 headline row and content safety evaluation has 3; these counts are too small for more than a note. Shares differ by type, so they should not be ranked without the number of rows behind each.
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{llrrrr}
 \toprule
 Code & Test type & Rows & Binding & Vol./guid. & Ambig. \\
@@ -120,7 +122,7 @@ REAL & Real world, sandbox and pilot testing & 8 & 1 & 5 & 2 \\
 MON & Post deployment monitoring and re assessment & 18 & 6 & 10 & 2 \\
 GATE & Acceptance criteria and release decision & 20 & 5 & 11 & 4 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Headline test provisions by primary test type and binding status (mandatory or conditional counted as binding).}\label{tab:types}
 \end{table}
 
@@ -140,6 +142,7 @@ GATE & Acceptance criteria and release decision & 20 & 5 & 11 & 4 \\
 We ask how well the two main codings can be predicted by methods much simpler than reading the document, using the 290 headline rows. Methods were chosen by the analyst, who had seen the table, and committed with the code: a majority class; a document prior (the most common label among training rows of the same document); a wording rule for binding status (obligation words against recommendation words) and a keyword rule for test type built from the taxonomy definitions; TF-IDF with logistic regression; and a frozen sentence embedding (all-MiniLM-L6-v2, no fine tuning) with logistic regression whose regularisation is chosen by inner cross validation. The last two are also given a document indicator. Three protocols are used. Row level CV is 10 times repeated stratified five fold cross validation; it lets rows of one document fall in both training and test folds, so it rewards methods that recognise the document and is reported only to show that effect. Grouped CV uses the same repetitions with every document kept whole in one fold, and leave one family out (LOFO) removes every document of a family from training; these two are the fair protocols. Table~\ref{tab:bl} and Figure~\ref{fig:bl} give accuracy; macro F1 and intervals over documents are in the repository.
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lrrrrrr}
 \toprule
 Method & B5 row & B5 doc & B5 LOFO & B3 doc & Type doc & Type LOFO \\
@@ -153,7 +156,7 @@ TF-IDF plus document & 79.1 & 45.5 & 45.5 & 60.0 & 27.4 & 22.8 \\
 Embedding, logistic regression & 61.7 & 49.2 & 49.3 & 64.2 & 55.7 & 53.8 \\
 Embedding plus document & 82.9 & 47.6 & 47.9 & 61.7 & 55.0 & 51.4 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Accuracy (\%) of baselines for binding status in five classes (B5: row level CV, document grouped CV, LOFO), in three classes (B3: grouped CV) and for primary test type (grouped CV, LOFO). Row level CV leaks documents across folds. n/a means the method does not apply to that task.}\label{tab:bl}
 \end{table}
 
@@ -168,6 +171,7 @@ Binding status is largely a property of the document. A document prior reaches 8
 Two coders who saw the row paraphrase, the document name and the locator, and a written codebook but not the original codes, recoded 120 headline rows drawn uniformly at random, without stratification, from the 290 (seed 20261029). Table~\ref{tab:ag} gives percentage agreement and Cohen's kappa for each pair, and Krippendorff's alpha over three coders.
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lrrrr}
 \toprule
 Field & Orig.\ and B2 & Orig.\ and B3 & B2 and B3 & Alpha (3) \\
@@ -176,7 +180,7 @@ Binding status (5) & 75.8 / 0.64 & 77.5 / 0.66 & 94.2 / 0.91 & 0.73 \\
 Binding status (3) & 83.3 / 0.66 & 83.3 / 0.66 & 96.7 / 0.92 & 0.74 \\
 Primary test type & 78.3 / 0.76 & 78.3 / 0.76 & 90.0 / 0.89 & 0.80 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Agreement (percent / kappa) between the original coding and two blind coders (B2, B3), and alpha over the three.}\label{tab:ag}
 \end{table}
 
@@ -188,6 +192,7 @@ The blind coders agree closely with each other (kappa 0.905 on five classes). Ea
 Table~\ref{tab:rb} and Figure~\ref{fig:rb} recompute the binding share of test provisions under changes that a sceptical reader might propose: dropping each family in turn, adding back the 21 excluded test rows as all binding, counting every ambiguous row as binding, doing both, weighting each document equally, resampling documents, and dropping the rows read from catalogue pages or through machine translation.
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lr}
 \toprule
 Scenario & Binding share (\%) \\
@@ -203,7 +208,7 @@ Without ISO and IEC catalogue rows & 29.1 \\
 Without machine translated rows & 27.1 \\
 Most favourable assumptions with document resampling, 95\% interval & 29.2 to 59.1 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Binding (mandatory or conditional) share of test provisions under alternative assumptions.}\label{tab:rb}
 \end{table}
 
@@ -218,6 +223,7 @@ The statement that binding provisions are a minority survives every scenario we 
 We drew 120 rows uniformly at random (seed 20261028; rows of every type, test, enabler and context, not only headline rows) from the 485 rows that earlier checks had marked verified, and independent verifiers saw only the row and the rules and reread the primary source. Of these, 94 could be read in the working session and 26 could not (21.7\%), mostly because of a session level domain restriction and not because sites refused. Table~\ref{tab:vf} gives the error rates on readable rows. The verifiers' own grading found 4 errors (4.3\%); in the strict regrading the orchestrating agent counted as errors two rows the verifiers had called minor (an understated modality and an imprecise actor), so 6 rows had an error; they are listed in Appendix~\ref{app:errors} and accepted corrections were applied to the table. Two of the six concerned binding status: one row moved from ambiguous to guidance and one from guidance to conditional, so the corrections changed the binding count by one row, upward; the other four concerned a date attributed to a page that does not state it, an understated modality in two paraphrases and an imprecise actor. If every unreadable row were an error, the rate for the whole sample would be as high as 26.7\%, so we report the rate for readable rows. This rate is for rows that earlier checks had already passed and for the readable part of the sample: only 17 of 26 sampled European Union rows could be read; the Act itself was mostly readable (17 of 20 rows) while the unreadable ones came from the Act itself (3 of 20 rows), the general purpose model code and the standards family, so whether they would add binding provisions is unknown. The earlier phase 3 fresh sample, drawn before the corrections, found 3 errors in 23 verifiable rows (13.0\%, 95\% interval 4.5 to 32.1), and a recheck of rows that earlier passes had left open or unverified found 15 in 142 (10.6\%); the recheck covered rows that had been left open and not a random sample, so its rate is not comparable with the others. The samples are reported separately because they were drawn at different times. The true error rate of the whole table is plausibly higher than the readable subset suggests, and all verifiers are language models.
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lrrr}
 \toprule
 Measure & Rows & Rate (\%) & 95\% interval \\
@@ -226,7 +232,7 @@ Errors as graded by the verifier & 4 of 94 & 4.3 & 1.7 to 10.4 \\
 Errors after strict grading & 6 of 94 & 6.4 & 3.0 to 13.2 \\
 Any fault, including minor & 20 of 94 & 21.3 & 14.2 to 30.6 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Fresh verification sample, readable rows only.}\label{tab:vf}
 \end{table}
 
@@ -239,6 +245,7 @@ The tool turns the table into a list of 30 checklist items for an organisation. 
 \paragraph{Evaluation.} We wrote 94 scenarios from the checklist specification alone, with expected results from an oracle written by the same author from the same specification, and committed them before the engine was run: 82 with a specified result and 12 invalid inputs. Ten stated assumptions about under specified cases and five monotone pairs were checked as well, and the expected result of some scenarios depends on those assumptions. The check is therefore of the implementation against its specification and not of the specification. Table~\ref{tab:tool} compares the engine with four naive designs.
 
 \begin{table}[t]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lrrrr}
 \toprule
 Method & Accuracy (\%) & Wrongly excluded & Wrongly applied & Unknown \\
@@ -249,7 +256,7 @@ Two valued, missing counts as yes & 57.0 & 45 & 1014 & 0 \\
 Every item applies & 49.7 & 0 & 1238 & 0 \\
 Answers ignored & 83.0 & 0 & 0 & 1476 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Item level results over 82 specified scenarios (2460 decisions). Wrongly excluded: said not applicable where applicable or unknown was expected. Wrongly applied: said applicable where not applicable or unknown was expected. Unknown: the engine returned unknown.}\label{tab:tool}
 \end{table}
 
@@ -291,13 +298,14 @@ The study uses public documents and involves no human subjects and no personal d
 \section{Conclusion}
 In this sample of documents, which were chosen because they mention testing, testing AI before deployment is mentioned far more often than it is required. Fewer than half of headline test provisions are binding under each assumption we tried separately (we did not combine them with sampling uncertainty), binding provisions are no more specific than guidance and more often say only that testing happens, and several test types, among them red teaming, robustness and fairness testing, have few binding provisions. The table is documented and partly independently checked, with a measured error rate and a measured gap in coverage. It is not complete and not error free. The next steps are a human second coding, a domain and legal review, rereading the blocked sources, and a larger completeness benchmark.
 
-\bibliographystyle{plainnat}
+\bibliographystyle{IEEEtran}
 \bibliography{refs}
 
 \clearpage
 \appendix
 \section{Taxonomy of test types}\label{app:taxonomy}
-\begin{tabular}{lp{3.4cm}p{7.6cm}}
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
+\begin{tabular}{lp{2.4cm}p{4.2cm}}
 \toprule
 Code & Test type & Definition \\
 \midrule
@@ -317,12 +325,13 @@ REAL & Real world, sandbox and pilot testing & Controlled live trials, regulator
 MON & Post deployment monitoring and re assessment & Performance and outcome monitoring, incident handling, re testing triggers. \\
 GATE & Acceptance criteria and release decision & Pre set thresholds, go or no go decisions, approval authority by risk level. \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 
 \section{Specificity coding}\label{app:spec}
 Levels: S1 process only; S2 property or kind of test named; S3 method, metric, procedure, data condition, evaluator type or required report content named; S4 pass criterion, numeric threshold, fixed frequency or named external test. Coders saw the framework name, locator and paraphrase only. The full codebook is \path{data/coding/phase5/CODEBOOK_SPECIFICITY.md}.
 
 \begin{table}[h]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{llrrrrr}
 \toprule
 Coder & Binding status & S1 & S2 & S3 & S4 & n \\
@@ -334,13 +343,14 @@ Coder B & Binding & 25 & 24 & 23 & 9 & 81 \\
 Coder B & Voluntary or guidance & 20 & 70 & 71 & 13 & 174 \\
 Coder B & Ambiguous & 11 & 9 & 9 & 6 & 35 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Specificity levels (counts) by binding status for the two blind coders.}
 \end{table}
 
 \section{Verification errors}\label{app:errors}
 Strict errors in the fresh verification sample (grading by the verifier, regraded against the rubric by the orchestrating agent; corrections accepted into the table unless stated).
 
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{llll}
 \toprule
 Row & Family & Error type & As graded \\
@@ -352,10 +362,11 @@ UAE-DIFC-ADGM-010 & UAE-DIFC-ADGM & understated & error \\
 UK-004 & UK & wrong status & error \\
 US-NIST-033 & US-NIST & other & minor \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 
 \section{Synthetic deployment profiles}\label{app:arch}
 \begin{table}[h]\centering\small
+\resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
 \begin{tabular}{lp{7.6cm}rrrr}
 \toprule
 Id & Profile & Appl. & Not & Unkn. & YES \\
@@ -369,7 +380,7 @@ A6 & Credit scoring model offered in the European market, financial centre firm 
 A7 & Agent that takes actions on internal systems, Dubai government & 23 & 4 & 3 & 0 \\
 A8 & Rules based eligibility calculator (no learned model), federal entity & 20 & 9 & 1 & 0 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Items applying, not applying and unknown out of 30 when all eight questions are answered; YES is the number of cited rows for which the tool reports that the source binds the organisation.}
 \end{table}
 
@@ -387,7 +398,7 @@ A8 & Rules based eligibility calculator (no learned model), federal entity & 20 
 Every number computed from the data is read from a committed result file by \path{scripts/build_paper.py} through \path{src/ikhtibar/eval_values.py}; \texttt{python -m ikhtibar.build\_all} regenerates all result files and documents, and the test suite fails if a result file is stale or the paper differs from its template.
 
 \begin{table}[h]\centering\footnotesize
-\begin{tabular}{p{2.9cm}p{5.0cm}p{5.0cm}}
+\begin{tabular}{p{2.3cm}p{3.0cm}p{3.0cm}}
 \toprule
 Content & Result file & Code \\
 \midrule
