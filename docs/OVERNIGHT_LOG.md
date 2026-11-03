@@ -36,3 +36,8 @@ Frozen reference for the compiled paper: commit fa3e410 (local tag `v4.0-paper-f
 
 ## Task 7 review and handover
 - Gap analysis section F, handoff, human gold instructions and the morning note were updated. Decisions D11 to D22 are in `docs/DECISIONS.md`.
+
+## Phase 6 rebuild around document level force
+- Registered the split and the five analyses (`docs/PREREG_PHASE6.md`), committed the code, ran design (tuning), froze, ran confirmation once, then exploratory subsets (`data/phase6/`).
+- Confirmation (65 documents, 200 rows): C1 passed, C2 failed, C3 passed, C4 passed, C5 direction only.
+- Title, abstract, research questions, contributions, a new primary section, discussion, limitations and conclusion rewritten; earlier analyses labelled exploratory.

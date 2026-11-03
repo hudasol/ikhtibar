@@ -83,3 +83,5 @@ Frozen reference: version 4.0, 290 headline test rows, 81 binding (27.9%). Exten
 | G9 | Mostly closed | No change in this phase. |
 | G10 | Open | The time sensitive rereads were blocked because the search budget was used up. Items stay "not determined". |
 | G15 | Open | The Arabic check could not run (search budget). Script, inputs and tests are in place; no UAE row was compared. |
+
+Note on phase 6: the paper no longer rests its main claim on the row share. Gaps G2, G3 and G4 apply unchanged to the document level claim: the document level counts rest on the same model coded table, and the table is a selection of main provisions.
