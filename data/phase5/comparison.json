@@ -1,0 +1,437 @@
+{
+ "baselines_out_of_sample": {
+  "embed_lr": {
+   "accuracy_pct": 56.9,
+   "documents": 30,
+   "n": 65,
+   "wilson_ci95": [
+    44.8,
+    68.2
+   ]
+  },
+  "framework": {
+   "accuracy_pct": 78.5,
+   "documents": 30,
+   "n": 65,
+   "wilson_ci95": [
+    67.0,
+    86.7
+   ]
+  },
+  "majority": {
+   "accuracy_pct": 78.5,
+   "documents": 30,
+   "n": 65,
+   "wilson_ci95": [
+    67.0,
+    86.7
+   ]
+  },
+  "modal_rule": {
+   "accuracy_pct": 78.5,
+   "documents": 30,
+   "n": 65,
+   "wilson_ci95": [
+    67.0,
+    86.7
+   ]
+  },
+  "tfidf_lr": {
+   "accuracy_pct": 78.5,
+   "documents": 30,
+   "n": 65,
+   "wilson_ci95": [
+    67.0,
+    86.7
+   ]
+  }
+ },
+ "baselines_out_of_sample_second_list": {
+  "embed_lr": {
+   "accuracy_pct": 55.8,
+   "documents": 26,
+   "n": 52,
+   "wilson_ci95": [
+    42.3,
+    68.4
+   ]
+  },
+  "framework": {
+   "accuracy_pct": 78.8,
+   "documents": 26,
+   "n": 52,
+   "wilson_ci95": [
+    66.0,
+    87.8
+   ]
+  },
+  "majority": {
+   "accuracy_pct": 78.8,
+   "documents": 26,
+   "n": 52,
+   "wilson_ci95": [
+    66.0,
+    87.8
+   ]
+  },
+  "modal_rule": {
+   "accuracy_pct": 75.0,
+   "documents": 26,
+   "n": 52,
+   "wilson_ci95": [
+    61.8,
+    84.8
+   ]
+  },
+  "tfidf_lr": {
+   "accuracy_pct": 78.8,
+   "documents": 26,
+   "n": 52,
+   "wilson_ci95": [
+    66.0,
+    87.8
+   ]
+  }
+ },
+ "extended": {
+  "base": {
+   "ambiguous": 36,
+   "binding": 88,
+   "binding_pct": 24.8,
+   "mandatory": 30,
+   "n": 355,
+   "non_binding": 231
+  },
+  "binding_headline": {
+   "ambiguous": 36,
+   "conditional": 58,
+   "guidance": 183,
+   "mandatory": 30,
+   "voluntary": 48
+  },
+  "extreme_bounds": {
+   "least_favourable_to_binding_pct": 23.3,
+   "most_favourable_to_binding_pct": 38.7
+  },
+  "framework_bootstrap": {
+   "binding_pct_ci95": [
+    12.2,
+    38.8
+   ],
+   "reps": 5000,
+   "seed": 20261028
+  },
+  "headline_test_rows": 355,
+  "leave_one_family_out_range": {
+   "family_giving_max": "US-NIST",
+   "family_giving_min": "EU-AI-Act",
+   "max_binding_pct": 28.2,
+   "min_binding_pct": 18.8
+  }
+ },
+ "frozen_v4": {
+  "base": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 27.9,
+   "mandatory": 26,
+   "n": 290,
+   "non_binding": 174
+  },
+  "binding_headline": {
+   "ambiguous": 35,
+   "conditional": 55,
+   "guidance": 132,
+   "mandatory": 26,
+   "voluntary": 42
+  },
+  "extreme_bounds": {
+   "least_favourable_to_binding_pct": 26.0,
+   "most_favourable_to_binding_pct": 44.1
+  },
+  "framework_bootstrap": {
+   "binding_pct_ci95": [
+    13.4,
+    43.7
+   ],
+   "reps": 5000,
+   "seed": 20261028
+  },
+  "headline_test_rows": 290,
+  "leave_one_family_out_range": {
+   "family_giving_max": "US-NIST",
+   "family_giving_min": "EU-AI-Act",
+   "max_binding_pct": 31.9,
+   "min_binding_pct": 20.8
+  }
+ },
+ "predictions": {
+  "failure_criteria": {
+   "best_learned_grouped_cv": 54.3,
+   "finding1_fails": false,
+   "finding2_fails": false,
+   "finding3_fails": false,
+   "majority_grouped_cv": 51.5
+  },
+  "hits": 6,
+  "misses": 5,
+  "not_tested": 1,
+  "scored": [
+   {
+    "id": "1a",
+    "note": "",
+    "observed": "7.7% on 52 rows (second list); 10.8% on 65 rows (all new)",
+    "prediction": "binding share on new documents between 15% and 40%",
+    "result": "miss"
+   },
+   {
+    "id": "1b",
+    "note": "",
+    "observed": "sector 10.5% of 38 rows; other 0.0% of 14 rows",
+    "prediction": "sector regulator documents have a higher binding share than national frameworks and standards",
+    "result": "hit"
+   },
+   {
+    "id": "2",
+    "note": "interval expected to include zero; direction is the test",
+    "observed": "16.5 points (4 binding rows)",
+    "prediction": "process only gap positive and between 5 and 30 points (coder A, new documents)",
+    "result": "hit"
+   },
+   {
+    "id": "3",
+    "note": "",
+    "observed": "document prior 78.8%, majority 78.8%, wording rule 75.0%",
+    "prediction": "document prior within 10 points of the majority rate and not above the wording rule by more than 10 points (new documents)",
+    "result": "hit"
+   },
+   {
+    "id": "4",
+    "note": "",
+    "observed": "75.0%",
+    "prediction": "wording rule accuracy between 45% and 65% on new rows",
+    "result": "miss"
+   },
+   {
+    "id": "5",
+    "note": "",
+    "observed": "5.3% of 19 rows",
+    "prediction": "binding share below 25% in families not in the frozen table (International, Other jurisdictions)",
+    "result": "hit"
+   },
+   {
+    "id": "6",
+    "note": "lower than 68.4%: yes",
+    "observed": "23.1% strict (35.2% counting partial matches)",
+    "prediction": "recall lower than the frozen 68.4%, expected range 30% to 65%",
+    "result": "miss"
+   },
+   {
+    "id": "7a",
+    "note": "",
+    "observed": "38.3%",
+    "prediction": "extraction recall between 55% and 85%",
+    "result": "miss"
+   },
+   {
+    "id": "7b",
+    "note": "precision measured on only three documents read whole",
+    "observed": "100.0% on 11 rows from 3 documents",
+    "prediction": "extraction precision between 75% and 95%",
+    "result": "miss"
+   },
+   {
+    "id": "7c",
+    "note": "",
+    "observed": "binding share: missed 4.2%, matched 10.1%",
+    "prediction": "missed provisions are more often non binding than extracted ones",
+    "result": "hit"
+   },
+   {
+    "id": "8",
+    "note": "",
+    "observed": "not tested: the search budget was used up before any Arabic original could be read",
+    "prediction": "UAE Arabic agreement at least 80%",
+    "result": "not tested"
+   },
+   {
+    "id": "9",
+    "note": "",
+    "observed": "7.7% (6 of 78 readable rows, extracted rows); 7.2% with the US candidate rows",
+    "prediction": "strict error rate on new rows between 4% and 15%",
+    "result": "hit"
+   }
+  ]
+ },
+ "process_only_gap_coderA": {
+  "extended": {
+   "binding_n": 88,
+   "binding_s1_pct": 25.0,
+   "difference_ci95_doc_cluster_pp": [
+    6.8,
+    27.1
+   ],
+   "difference_pp": 17.2,
+   "non_binding_n": 231,
+   "non_binding_s1_pct": 7.8
+  },
+  "frozen_published": null,
+  "new_all": {
+   "binding_n": 7,
+   "binding_s1_pct": 28.6,
+   "difference_ci95_doc_cluster_pp": [
+    -10.9,
+    92.4
+   ],
+   "difference_pp": 19.8,
+   "non_binding_n": 57,
+   "non_binding_s1_pct": 8.8
+  },
+  "new_second_list": {
+   "binding_n": 4,
+   "binding_s1_pct": 25.0,
+   "difference_ci95_doc_cluster_pp": [
+    -14.3,
+    96.0
+   ],
+   "difference_pp": 16.5,
+   "non_binding_n": 47,
+   "non_binding_s1_pct": 8.5
+  },
+  "old_rows": {
+   "binding_n": 81,
+   "binding_s1_pct": 24.7,
+   "difference_ci95_doc_cluster_pp": [
+    5.7,
+    27.6
+   ],
+   "difference_pp": 17.2,
+   "non_binding_n": 174,
+   "non_binding_s1_pct": 7.5
+  }
+ },
+ "sector_vs_other_new": {
+  "other": {
+   "ambiguous": 0,
+   "binding": 0,
+   "binding_pct": 0.0,
+   "document_bootstrap_ci95": [
+    0.0,
+    0.0
+   ],
+   "documents": 7,
+   "mandatory": 0,
+   "mean_document_share_pct": 0.0,
+   "n": 14,
+   "wilson_ci95": [
+    0,
+    21.5
+   ]
+  },
+  "sector": {
+   "ambiguous": 1,
+   "binding": 4,
+   "binding_pct": 10.5,
+   "document_bootstrap_ci95": [
+    0.0,
+    28.2
+   ],
+   "documents": 19,
+   "mandatory": 3,
+   "mean_document_share_pct": 10.5,
+   "n": 38,
+   "wilson_ci95": [
+    4.2,
+    24.1
+   ]
+  }
+ },
+ "seed": 20261103,
+ "sets": {
+  "extended": {
+   "ambiguous": 36,
+   "binding": 88,
+   "binding_pct": 24.8,
+   "document_bootstrap_ci95": [
+    12.6,
+    38.5
+   ],
+   "documents": 101,
+   "mandatory": 30,
+   "mean_document_share_pct": 20.5,
+   "n": 355,
+   "wilson_ci95": [
+    20.6,
+    29.5
+   ]
+  },
+  "frozen_rows_in_extended_table": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 27.9,
+   "document_bootstrap_ci95": [
+    13.4,
+    44.2
+   ],
+   "documents": 71,
+   "mandatory": 26,
+   "mean_document_share_pct": 25.5,
+   "n": 290,
+   "wilson_ci95": [
+    23.1,
+    33.4
+   ]
+  },
+  "new_all": {
+   "ambiguous": 1,
+   "binding": 7,
+   "binding_pct": 10.8,
+   "document_bootstrap_ci95": [
+    0.0,
+    24.1
+   ],
+   "documents": 30,
+   "mandatory": 4,
+   "mean_document_share_pct": 8.7,
+   "n": 65,
+   "wilson_ci95": [
+    5.3,
+    20.6
+   ]
+  },
+  "new_second_list": {
+   "ambiguous": 1,
+   "binding": 4,
+   "binding_pct": 7.7,
+   "document_bootstrap_ci95": [
+    0.0,
+    21.2
+   ],
+   "documents": 26,
+   "mandatory": 3,
+   "mean_document_share_pct": 7.7,
+   "n": 52,
+   "wilson_ci95": [
+    3.0,
+    18.2
+   ]
+  }
+ },
+ "unseen_families_new": {
+  "ambiguous": 0,
+  "binding": 1,
+  "binding_pct": 5.3,
+  "document_bootstrap_ci95": [
+   0.0,
+   18.8
+  ],
+  "documents": 10,
+  "mandatory": 1,
+  "mean_document_share_pct": 10.0,
+  "n": 19,
+  "wilson_ci95": [
+   0.9,
+   24.6
+  ]
+ }
+}

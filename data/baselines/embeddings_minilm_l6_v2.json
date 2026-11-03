@@ -1,6 +1,6 @@
 {
  "model": "sentence-transformers/all-MiniLM-L6-v2",
- "texts_sha256": "8dbcdc61e162218fc3e3feed30310b6fb1308e990f8f09b385488300d05851ba",
- "n": 303,
+ "texts_sha256": "6340c438966b268a4cc6286c58f41d362d00c1f2c1807bd90d338d7a056770f9",
+ "n": 355,
  "dim": 384
 }
