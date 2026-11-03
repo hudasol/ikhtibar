@@ -73,8 +73,10 @@ def stats():
             with open(p, encoding="utf-8", newline="") as f:
                 for r in csv.DictReader(f):
                     r["group"] = g
+                    if r.get("read_basis", "") == "not read":
+                        r["arabic_found"] = "not_checked"   # a reader that read nothing has not shown that no Arabic version exists
                     res.append(r)
-    cand = candidates(list(table.values()))
+    cand = [r for g in GROUPS for r in (csv.DictReader(open(D / 'inputs' / f'{g}.csv', encoding='utf-8')) if (D / 'inputs' / f'{g}.csv').exists() else [])]
     read = [r for r in res if r["arabic_found"] in ("yes", "partial") and r["binding_arabic"] not in ("", "not_checked")]
     same = [r for r in read if r["binding_arabic"] == table[r["row_id"]]["binding_status"]]
     diff = [r for r in read if r["binding_arabic"] != table[r["row_id"]]["binding_status"]]
@@ -83,6 +85,7 @@ def stats():
     out = {"meta": {"seed": SEED, "candidate_rows": len(cand), "rows_returned": len(res),
                     "arabic_found": sum(r["arabic_found"] in ("yes", "partial") for r in res),
                     "arabic_not_found": sum(r["arabic_found"] == "no" for r in res),
+                    "not_checked": sum(r["arabic_found"] == "not_checked" for r in res),
                     "read_with_status": len(read)},
            "binding_status_same": {"k": len(same), "n": len(read), "pct": round(100 * len(same) / len(read), 1) if read else None,
                                    "wilson_ci95": wilson(len(same), len(read))},

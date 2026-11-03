@@ -2,17 +2,17 @@
  "by_group": {
   "EU": {
    "documents": 1,
-   "precision_hits": 11,
-   "precision_n": 28,
-   "precision_pct": 39.3,
+   "precision_hits": 0,
+   "precision_n": 0,
+   "precision_pct": null,
    "recall_hits": 15,
    "recall_n": 30,
    "recall_pct": 50.0
   },
   "Japan": {
    "documents": 2,
-   "precision_hits": 6,
-   "precision_n": 6,
+   "precision_hits": 5,
+   "precision_n": 5,
    "precision_pct": 100.0,
    "recall_hits": 10,
    "recall_n": 51,
@@ -20,26 +20,26 @@
   },
   "Saudi": {
    "documents": 1,
-   "precision_hits": 10,
-   "precision_n": 10,
-   "precision_pct": 100.0,
+   "precision_hits": 0,
+   "precision_n": 0,
+   "precision_pct": null,
    "recall_hits": 23,
    "recall_n": 41,
    "recall_pct": 56.1
   },
   "Singapore": {
    "documents": 2,
-   "precision_hits": 12,
-   "precision_n": 13,
-   "precision_pct": 92.3,
+   "precision_hits": 0,
+   "precision_n": 0,
+   "precision_pct": null,
    "recall_hits": 43,
    "recall_n": 69,
    "recall_pct": 62.3
   },
   "UAE": {
    "documents": 2,
-   "precision_hits": 4,
-   "precision_n": 4,
+   "precision_hits": 3,
+   "precision_n": 3,
    "precision_pct": 100.0,
    "recall_hits": 10,
    "recall_n": 18,
@@ -47,8 +47,8 @@
   },
   "UK": {
    "documents": 2,
-   "precision_hits": 4,
-   "precision_n": 4,
+   "precision_hits": 3,
+   "precision_n": 3,
    "precision_pct": 100.0,
    "recall_hits": 13,
    "recall_n": 16,
@@ -56,9 +56,9 @@
   },
   "US": {
    "documents": 2,
-   "precision_hits": 14,
-   "precision_n": 16,
-   "precision_pct": 87.5,
+   "precision_hits": 0,
+   "precision_n": 0,
+   "precision_pct": null,
    "recall_hits": 35,
    "recall_n": 164,
    "recall_pct": 21.3

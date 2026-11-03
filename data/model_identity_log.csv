@@ -39,3 +39,24 @@ arabic_difc_adgm,task4_uae_arabic,reader,agent could not report it,claude-sonnet
 arabic_dubai,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
 arabic_federal,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
 arabic_ncsp_scope,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+newrows_extract_1,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_2,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_3,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_4,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_5,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+p5v_verify_1,task3d_verification,fresh_verifier_existing_sample,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5v_verify_2,task3d_verification,fresh_verifier_existing_sample,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5v_verify_3,task3d_verification,fresh_verifier_existing_sample,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5n_verify_1,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5n_verify_2,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5n_verify_3,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5n_verify_4,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5n_verify_5,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+p5n_verify_6,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+completeness_match_1,task3c_matching,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
+completeness_match_2,task3c_matching,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
+completeness_match_3,task3c_matching,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
+bind_coder_C2_p5,task3d_coding,blind_binding_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+bind_coder_C3_p5,task3d_coding,blind_binding_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+spec_coder_A3_p5,task3d_coding,blind_specificity_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+spec_coder_B3_p5,task3d_coding,blind_specificity_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself

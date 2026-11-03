@@ -35,8 +35,9 @@
  "difference_kinds": {},
  "meta": {
   "arabic_found": 0,
-  "arabic_not_found": 40,
+  "arabic_not_found": 0,
   "candidate_rows": 76,
+  "not_checked": 76,
   "read_with_status": 0,
   "rows_returned": 76,
   "seed": 20261103

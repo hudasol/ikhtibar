@@ -158,8 +158,8 @@ def stats():
     for g in sorted({v["group"] for v in per_doc.values()}):
         a = sum(v["n_independent_in_table"] for v in per_doc.values() if v["group"] == g)
         b = sum(v["n_independent"] for v in per_doc.values() if v["group"] == g)
-        c = sum(v["n_table_rows_found_independently"] for v in per_doc.values() if v["group"] == g)
-        e = sum(v["n_table_rows"] for v in per_doc.values() if v["group"] == g)
+        c = sum(v["n_table_rows_found_independently"] for v in per_doc.values() if v["group"] == g and v["precision_basis"])
+        e = sum(v["n_table_rows"] for v in per_doc.values() if v["group"] == g and v["precision_basis"])
         byfam[g] = {"documents": sum(1 for v in per_doc.values() if v["group"] == g), "recall_n": b, "recall_hits": a,
                     "recall_pct": round(100 * a / b, 1) if b else None, "precision_n": e, "precision_hits": c,
                     "precision_pct": round(100 * c / e, 1) if e else None}
