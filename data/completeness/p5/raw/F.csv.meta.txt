@@ -1,0 +1,7 @@
+Date: 2026-11-03
+Model: Sonnet 5.5 (claude-sonnet-5-5)
+Result: 19 instruments listed (target of 25 not met). Arabic searches performed: 9 (target of 15 not met).
+Search budget ran out: yes. The turn level WebSearch limit (shared across agents) was reached after 23 searches; four further Arabic searches were refused and are logged with result_count 0 and "NOT PERFORMED".
+Not covered: Qatar (QCB, QFC), Bahrain (EDB, CBB), Oman (MTCIT), Kuwait; SAMA (no primary instrument found in the one English search); Saudi PDPL and its regulations; CMA; CST; SASO; GAMI; GCAA; MoIAT; TDRA; UAE Cybersecurity Council; SCA stand alone; ADGM FSRA/ODP (no AI instrument seen); Dubai Digital Authority; Abu Dhabi ITC/ADIO/TAMM; DHA Dubai policy (only news results); MOHAP (only news results).
+Access problems: sdaia.gov.sa pages returned "Request Rejected" (retried once, then stopped); difc.com redirects were not on the fetch allowlist; centralbank.ae Arabic fintech page failed once. No workarounds were used.
+Caveats: DIFC Regulation 10 content was seen only through a third party copy (AGORA), so marked unclear. SDAIA generative AI, deepfake and risk management framework entries were found through tracker or law firm pages; official URLs for the first two come from a tracker page and were not fetched.

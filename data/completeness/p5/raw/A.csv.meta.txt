@@ -1,0 +1,12 @@
+Date: 2026-11-03
+Area A (EU and Council of Europe). 19 instruments listed, short of the 25 target.
+Search budget ran out (shared limit of 200 per turn): 6 planned searches were refused (EIOPA AI opinion, ESMA AI statement, ECB internal models/ML, EASA AI Roadmap 2.0, EASA NPA 2025-07, Machinery Regulation 2023/1230).
+Not covered, and why:
+- Machinery Regulation 2023/1230, Cyber Resilience Act, revised Product Liability Directive, General Product Safety Regulation, IVDR 2017/746, EIOPA, ESMA, ECB, EASA Roadmap and NPA: no official page seen in any result, so not listed.
+- EDPB Opinion 28/2024: only law firm and news results; no edpb.europa.eu page seen, so not listed.
+- GPAI Code of Practice (Safety and Security chapter): no official Commission page seen; not listed.
+- Digital Omnibus on AI, AI Act delegated acts, other JTC 21 drafts (risk management, trustworthiness, cybersecurity, bias, data quality, conformity assessment): no official or catalogue entry seen.
+- AI Act operative articles (9, 15, 43, 55, 60) and MDR Annex I section 17 and Article 61 were never reached: EUR-Lex pages returned headers or truncated text, and two Service Desk article pages were not on the fetch allowlist. Only recitals, Article 58 and MDR Articles 5, 10, 36, 38 were seen.
+- Most guidance entries were read as landing pages only, not full documents, hence mostly unclear or partly read.
+Result counts in the searches file are my own counts of returned links and may be off by one or two.
+Model: Claude Sonnet 5.5 (claude-sonnet-5-5).

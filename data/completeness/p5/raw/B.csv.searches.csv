@@ -1,0 +1,100 @@
+query,tool,allowed_domains,result_count,note
+ISO/IEC 42001 artificial intelligence management system iso.org standard,WebSearch,,10,
+ISO/IEC 42005 AI system impact assessment iso.org,WebSearch,,9,
+ISO/IEC 42006 requirements for bodies providing audit and certification of AI management systems,WebSearch,,10,
+ISO/IEC 29119-11 guidelines on the testing of AI-based systems,WebSearch,,10,
+ISO/IEC TS 4213 assessment of machine learning classification performance,WebSearch,,10,
+ISO/IEC 24029-2 robustness of neural networks formal methods,WebSearch,,10,
+ISO/IEC 25059 quality model for AI systems SQuaRE,WebSearch,,10,
+ISO/IEC 5338 AI system life cycle processes,WebSearch,,10,
+ISO/IEC 23894 AI guidance on risk management iso.org,WebSearch,,10,
+ISO/IEC TR 24029-1 overview assessment of the robustness of neural networks,WebSearch,,10,
+ISO/IEC TR 24027 bias in AI systems and AI aided decision making,WebSearch,,10,
+ISO/IEC TR 24028 overview of trustworthiness in artificial intelligence,WebSearch,,10,
+ISO/IEC TR 5469 functional safety and AI systems,WebSearch,,10,
+ISO/IEC 12792 transparency taxonomy of AI systems,WebSearch,,10,
+ISO/IEC 25058 quality evaluation guidance for AI systems SQuaRE,WebSearch,,10,
+ISO/IEC 17894 AI conformity assessment scheme,WebSearch,,10,
+ISO/IEC 22989 AI concepts and terminology iso.org standard 74296,WebSearch,,10,
+"IEEE 2937 OR ""IEEE P3119"" OR ""IEEE 7000"" standard AI system testing performance benchmarking standards.ieee.org",WebSearch,,10,
+IEEE 2802 standard performance and safety evaluation of artificial intelligence based medical device terminology,WebSearch,,10,
+ITU-T Focus Group AI for health FG-AI4H benchmarking framework deliverable,WebSearch,,10,
+ETSI GR SAI securing artificial intelligence testing of AI technical report,WebSearch,,10,
+ETSI EN 304 223 securing artificial intelligence baseline cyber security requirements for AI models and systems,WebSearch,,10,
+"IEEE 3119 OR ""IEEE 7001"" OR ""IEEE 3129"" standard for AI testing robustness image recognition",WebSearch,,10,
+ITU-T recommendation AI testing evaluation Y.3172 OR F.748 OR Y.3181 machine learning evaluation,WebSearch,,10,
+ETSI EN 304 223 Securing Artificial Intelligence baseline requirements,WebSearch,etsi.org,10,
+OECD Recommendation of the Council on Artificial Intelligence legal instrument 0449,WebSearch,,17,
+OECD Due Diligence Guidance for Responsible Business Conduct AI due diligence,WebSearch,,10,
+Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems,WebSearch,,10,
+OECD G7 Hiroshima AI Process reporting framework HAIP,WebSearch,,19,
+UNESCO Recommendation on the Ethics of Artificial Intelligence 2021 text ethical impact assessment,WebSearch,,10,
+"UN General Assembly resolution A/RES/78/265 seizing the opportunities of safe, secure and trustworthy artificial intelligence",WebSearch,,19,
+"UN Secretary-General High-level Advisory Body on AI ""Governing AI for Humanity"" final report",WebSearch,,15,
+UNESCO Recommendation on the Ethics of Artificial Intelligence unesco.org ark 48223 pf0000381137,WebSearch,unesco.org,10,
+International AI Safety Report 2026 Bengio gov.uk,WebSearch,,19,
+International Network of AI Safety Institutes joint testing exercise agentic evaluation,WebSearch,,10,
+Bletchley Declaration AI Safety Summit 2023 gov.uk text,WebSearch,,18,
+Seoul Declaration Seoul Statement of Intent AI safety science Frontier AI Safety Commitments gov.uk,WebSearch,,0,not performed: shared search budget exhausted
+WHO Ethics and governance of artificial intelligence for health guidance on large multi-modal models,WebSearch,,0,not performed: shared search budget exhausted
+https://www.iso.org/standard/42001,WebFetch,,0,failed client_error
+https://iso.org/standard/42005,WebFetch,,1,
+https://www.iso.org/standard/42006,WebFetch,,1,
+https://www.iso.org/standard/79804.html,WebFetch,,1,
+https://www.iso.org/ru/standard/81118.html,WebFetch,,1,
+https://committee.iso.org/standard/80655.html?browse=ics,WebFetch,,1,
+https://scc-ccn.ca/standardsdb/standards/8177735,WebFetch,,1,
+https://scc-ccn.ca/standardsdb/standards/8185399,WebFetch,,1,
+https://www.iso.org/standard/42001,WebFetch,,0,retry refused by tool as recent failure; not re-sent
+https://webstore.iec.ch/publication/90574,WebFetch,,1,
+https://www.iso.org/standard/77304.html,WebFetch,,1,
+https://ccn-scc.ca/standardsdb/standards/8178242,WebFetch,,1,
+https://scc-ccn.ca/standardsdb/standards/8179732,WebFetch,,1,
+https://webstore.iec.ch/en/publication/67138,WebFetch,,1,
+https://www.iso.org/standard/81283.html,WebFetch,,1,
+https://www.iso.org/standard/84111.html,WebFetch,,1,
+https://committee.iso.org/standard/82570.html?browse=ics,WebFetch,,1,
+https://www.evs.ee/en/cen-clc-tr-17894-2024,WebFetch,,1,
+https://www.iso.org/standard/74296.html,WebFetch,,1,
+https://standards.ieee.org/ieee/2802/7460,WebFetch,,1,
+https://standards.ieee.org/ieee/2937/10376/,WebFetch,,1,
+https://standards.ieee.org/ieee/3129/10747,WebFetch,,1,
+https://www.itu.int/itu-t/recommendations/rec.aspx?rec=16234,WebFetch,,1,
+https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=14329,WebFetch,,1,
+https://www.itu.int/itu-t/recommendations/rec.aspx?rec=15847,WebFetch,,1,
+https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=15195,WebFetch,,1,
+https://www.etsi.org/deliver/etsi_gr/SAI/001_099/013/01.01.01_60/gr_SAI013v010101p.pdf,WebFetch,,1,
+https://www.etsi.org/deliver/etsi_en/304200_304299/304223/02.01.01_60/en_304223v020101p.pdf,WebFetch,,1,
+https://legalinstruments.oecd.org/public/doc/648/648.en.pdf,WebFetch,,1,
+https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html,WebFetch,,1,landing page only
+https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-international-code-conduct-advanced-ai-systems,WebFetch,,1,no code text on page
+https://oecd.ai/en/g7-reporting-framework,WebFetch,,1,questions not shown
+https://digitallibrary.un.org/record/4043244/files/A_RES_78_265-EN.pdf?version=1,WebFetch,,0,failed client_error
+https://www.un.org/en/node/212881,WebFetch,,1,
+https://www.mofa.go.jp/mofaj/files/100573473.pdf,WebFetch,,1,
+https://digitallibrary.un.org/record/4043244,WebFetch,,1,metadata only
+https://wp.oecd.ai/app/uploads/2024/12/TOWARDS-A-HIROSHIMA-AI-PROCESS-CODE-OF-CONDUCT-REPORTING-FRAMEWORK.pdf,WebFetch,,1,
+https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023.,WebFetch,,1,
+https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026,WebFetch,,1,truncated at 100000 chars
+https://www.unesco.org/en/artificial-intelligence/recommendation-ethics,WebFetch,,1,summary page
+https://digital-strategy.ec.europa.eu/en/news/ai-office-contributes-third-joint-testing-exercise-international-network-ai-safety-institutes,WebFetch,,1,
+https://www.industry.gov.au/publications/advancing-methods-agentic-evaluations-across-domains,WebFetch,,1,
+https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html,WebFetch,,1,
+https://documents.un.org/doc/undoc/ltd/n24/065/92/pdf/n2406592.pdf,WebFetch,,0,robots_disallowed; not retried
+https://www.unesco.org/ethics-ai/en/recommendation,WebFetch,,1,
+https://www.un.org/sites/un2.un.org/files/governing_ai_for_humanity_press_release.pdf,WebFetch,,1,
+https://internationalaisafetyreport.org/about,WebFetch,,1,
+https://internationalaisafetyreport.org/publication/second-key-update-technical-safeguards-and-risk-management,WebFetch,,1,
+https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025,WebFetch,,1,truncated at 100000 chars
+https://www.aisi.gov.uk/blog/international-joint-testing-exercise-agentic-testing,WebFetch,,1,
+https://www.etsi.org/deliver/etsi_tr/104100_104199/104128/01.01.01_60/tr_104128v010101p.pdf,WebFetch,,1,truncated
+https://www.etsi.org/deliver/etsi_tr/104100_104199/104159/01.01.01_60/tr_104159v010101p.pdf,WebFetch,,1,truncated
+https://www.etsi.org/deliver/etsi_ts/104200_104299/104275/01.01.01_60/ts_104275v010101p.pdf,WebFetch,,1,
+https://www.oecd-ilibrary.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en,WebFetch,,1,landing page only
+https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence,WebFetch,,1,summary page
+https://unesdoc.unesco.org/ark:/48223/pf0000381137_eng,WebFetch,,0,URL_NOT_ON_ALLOWLIST; not retried
+https://digitallibrary.un.org/record/4043244/files/A_RES_78_265-EN.pdf?version=1,WebFetch,,0,second attempt refused by tool as recent failure
+https://digitallibrary.un.org/record/4043297,WebFetch,,1,metadata only
+https://transparency.oecd.ai/about,WebFetch,,1,
+https://www.gov.uk/government/news/safety-of-advanced-ai-under-the-spotlight-in-first-ever-independent-international-scientific-report,WebFetch,,0,URL_NOT_ON_ALLOWLIST; not retried
+https://www.gov.uk/government/topical-events/ai-safety-summit-2023,WebFetch,,1,

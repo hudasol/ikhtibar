@@ -1,0 +1,69 @@
+query,tool,allowed_domains,result_count,note
+UAE Charter for the Development and Use of Artificial Intelligence,WebSearch,,17,
+ميثاق التنمية والاستخدام الأخلاقي للذكاء الاصطناعي الإمارات,WebSearch,,9,Arabic
+Dubai Law autonomous vehicles Law No. 9 of 2023 RTA testing,WebSearch,,17,
+DoH Abu Dhabi Policy on Use of Artificial Intelligence in the Healthcare Sector,WebSearch,,10,
+SDAIA AI Ethics Principles Saudi Arabia,WebSearch,,18,
+الهيئة السعودية للبيانات والذكاء الاصطناعي مبادئ أخلاقيات الذكاء الاصطناعي,WebSearch,,9,Arabic
+https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence,WebFetch,,,ok
+https://dlp.dubai.gov.ae/Legislation%20Reference/2023/Law%20No.%20%289%29%20of%202023%20Regulating%20the%20Operation%20of%20Autonomous%20Vehicles.html,WebFetch,,,ok
+https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx,WebFetch,,,ok
+https://dlp.dubai.gov.ae/Legislation%20Reference/2025/Administrative%20Resolution%20No.%20%28939%29%20of%202025%20Issuing%20the%20Operation%20of%20Autonomous%20Vehicles.html,WebFetch,,,ok
+https://ai.gov.ae/wp-content/uploads/2024/07/UAEAI-Methaq-EN2-3.pdf,WebFetch,,,ok
+سياسة مصرف الإمارات العربية المتحدة المركزي الذكاء الاصطناعي إرشادات المؤسسات المالية,WebSearch,,8,Arabic
+CBUAE Guidance Note on Consumer Protection and Responsible Adoption of Enabling Technologies AI machine learning,WebSearch,,10,
+DIFC Regulation 10 autonomous and semi-autonomous systems Data Protection Regulations AI,WebSearch,,19,
+المرسوم بقانون اتحادي حماية البيانات الشخصية اللائحة التنفيذية الإمارات,WebSearch,,10,Arabic
+SAMA artificial intelligence guidance financial sector Saudi Central Bank AI principles,WebSearch,,15,No primary SAMA instrument found
+SFDA guidance on artificial intelligence and machine learning based medical devices MDS-G010,WebSearch,,10,
+https://www.centralbank.ae/media/mykn5fue/cbuae-issues-guidance-note-to-protect-consumers-and-ensure-responsible-use-of-artificial-intelligence-in-the-financial-sector-en.pdf,WebFetch,,,"ok, press release only"
+https://www.sfda.gov.sa/en/regulations/87661,WebFetch,,,"ok, title only"
+https://agora.eto.tech/instrument/1773,WebFetch,,,"ok, third party copy of DIFC Regulation 10, used as discovery only"
+https://government.ae/-/media/Documents-2023/ArFederal-Decree-Law-No-45-of-2021-regarding-the-Protection-of-Personal-Data.pdf,WebFetch,,,ok
+https://centralbank.ae/ar/our-operations/fintech-digital-transformation/fintech-regulatory-development/,WebFetch,,,failed client_error
+https://centralbank.ae/ar/our-operations/fintech-digital-transformation/fintech-regulatory-development/,WebFetch,,,retry refused by tool as too soon; stopped
+https://rulebook.centralbank.ae/en/entiresection/47,WebFetch,,,ok
+https://www.difc.ae/business/operating/data-protection/guidance/,WebFetch,,,redirect to difc.com returned
+https://www.difc.ae/newsroom/news/difc-enacts-amended-data-protection-regulations/,WebFetch,,,redirect to difc.com returned
+https://www.dfsa.ae/news/uae-regulatory-authorities-jointly-issue-guidelines-financial-institutions-adopting-enabling-technologies,WebFetch,,,ok
+https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence,WebFetch,,,ok
+difc.ae Regulation 10 Autonomous and Semi-Autonomous Systems Data Protection Regulations official PDF,WebSearch,"difc.ae, dp.difc.ae",10,
+ADGM Office of Data Protection guidance artificial intelligence,WebSearch,,17,No ADGM AI instrument found
+Guidelines for Financial Institutions adopting Enabling Technologies CBUAE SCA DFSA FSRA,WebSearch,,16,
+وزارة الصحة ووقاية المجتمع الإمارات سياسة الذكاء الاصطناعي في الرعاية الصحية,WebSearch,,10,Arabic; only news results
+هيئة الصحة بدبي سياسة استخدام الذكاء الاصطناعي في القطاع الصحي دبي,WebSearch,,10,Arabic; only news results
+https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/guidance,WebFetch,,,URL_NOT_ON_ALLOWLIST; not retried
+https://www.difc.com/whats-on/news/difc-enacts-amended-data-protection-regulations,WebFetch,,,URL_NOT_ON_ALLOWLIST; not retried
+الإطار الوطني لاعتماد الذكاء الاصطناعي سدايا,WebSearch,,10,Arabic
+SDAIA Generative AI Guidelines for Government and Public use,WebSearch,,17,
+SDAIA Deepfakes Guidelines,WebSearch,,22,
+الهيئة الوطنية للأمن السيبراني ضوابط الأمن السيبراني للذكاء الاصطناعي,WebSearch,,10,Arabic
+https://nca.gov.sa/ar/public-consultations/ai-cybersecurity-guidelines/,WebFetch,,,ok
+https://scai.sa/ar/responsible-ai,WebFetch,,,"ok, no content"
+https://gowlingwlg.com/en/insights-resources/articles/2026/what-saudi-arabias-ai-risk-management-framework-means-for-organisations,WebFetch,,,"ok, secondary source"
+sdaia.gov.sa AI Adoption Framework,WebSearch,"sdaia.gov.sa, dgp.sdaia.gov.sa, ai.sa",10,
+إطار إدارة مخاطر الذكاء الاصطناعي المملكة العربية السعودية سدايا,WebSearch,,9,Arabic
+https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf,WebFetch,,,blocked: Request Rejected
+https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf?CACHEID=ROOTWORKSPACE-4c56ed1c-1b82-447d-ac29-638f5f99c12e-p3k51U9&CONVERT_TO=url&MOD=AJPERES,WebFetch,,,ok
+https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx,WebFetch,,,blocked: Request Rejected
+https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/EN-AI-BIAS.pdf,WebFetch,,,blocked: Request Rejected; not retried
+https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIMarketGovernanceTools.pdf,WebFetch,,,blocked: Request Rejected; not retried
+https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf,WebFetch,,,retry blocked: Request Rejected
+https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx,WebFetch,,,retry blocked: Request Rejected
+نظام حماية البيانات الشخصية السعودية اللائحة التنفيذية سدايا هيئة الخبراء,WebSearch,,0,"Arabic; NOT PERFORMED, search budget exhausted"
+الهيئة العامة للغذاء والدواء دليل الذكاء الاصطناعي الأجهزة الطبية MDS-G010,WebSearch,,0,"Arabic; NOT PERFORMED, search budget exhausted"
+البنك المركزي السعودي ساما الذكاء الاصطناعي ضوابط المنشآت المالية,WebSearch,,0,"Arabic; NOT PERFORMED, search budget exhausted"
+هيئة تنظيم الاتصالات والفضاء والتقنية الذكاء الاصطناعي تنظيم السيارات ذاتية القيادة هيئة النقل,WebSearch,,0,"Arabic; NOT PERFORMED, search budget exhausted"
+https://rulebook.centralbank.ae/en/entiresection/47,WebFetch,,,"ok, offset 100000"
+https://u.ae/about-the-uae/digital-uae/regulatory-framework/Use-of-autonomous-vehicles,WebFetch,,,ok
+https://nca.gov.sa/ar/news/ai-cybersecurity-guidelines/,WebFetch,,,ok
+https://ai.gov.ae/wp-content/uploads/2024/10/UAE-Guiding-on-ai-policy-AR-V3.pdf,WebFetch,,,ok
+https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws,WebFetch,,,URL_NOT_ON_ALLOWLIST
+https://uaelegislation.gov.ae/ar/legislations/1972/download,WebFetch,,,ok
+https://www.centralbank.ae/media/mushwxyg/uae-regulatory-authorities-jointly-issue-guidelines-for-financial-institutions-adopting-enabling-technologies-en.pdf,WebFetch,,,"ok, press release"
+https://cbuae.thomsonreuters.com/node/2413,WebFetch,,,ok
+https://www.oecd.ai/en/dashboards/policy-initiatives/guidance-on-artificial-intelligence-ai-and-machine-learning-ml-technologies-based-medical-devices-6418,WebFetch,,,"ok, secondary catalogue"
+https://regulations.ai/regulations/RAI-SA-NA-GAGGSXX-2024,WebFetch,,,"ok, tracker used for discovery only"
+https://sdaia.gov.sa/en/SDAIA/about/Files/GenerativeAIPublicEN.pdf,WebFetch,,,URL_NOT_ON_ALLOWLIST
+https://regulations.ai/regulations/RAI-SA-NA-DEEGUSD-2024,WebFetch,,,"ok, tracker used for discovery only"
+https://www.tamimi.com/law_update_articles/ai-in-insurance-cbuae-sets-expectations-for-responsible-use/,WebFetch,,,"ok, secondary source"

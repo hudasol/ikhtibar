@@ -1,0 +1,743 @@
+{
+ "access": {
+  "blocked": 11,
+  "not attempted": 22,
+  "partly read": 63,
+  "read": 93
+ },
+ "all_instruments_strict": {
+  "hits": 42,
+  "n": 189,
+  "pct": 22.2,
+  "wilson_ci95": [
+   16.9,
+   28.7
+  ]
+ },
+ "by_group": {
+  "Asia Pacific": {
+   "all_strict": {
+    "hits": 11,
+    "n": 49,
+    "pct": 22.4,
+    "wilson_ci95": [
+     13.0,
+     35.9
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 5,
+    "n": 18,
+    "pct": 27.8,
+    "wilson_ci95": [
+     12.5,
+     50.9
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 4,
+    "n": 18,
+    "pct": 22.2,
+    "wilson_ci95": [
+     9.0,
+     45.2
+    ]
+   }
+  },
+  "EU": {
+   "all_strict": {
+    "hits": 2,
+    "n": 17,
+    "pct": 11.8,
+    "wilson_ci95": [
+     3.3,
+     34.3
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 2,
+    "n": 4,
+    "pct": 50.0,
+    "wilson_ci95": [
+     15.0,
+     85.0
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 1,
+    "n": 4,
+    "pct": 25.0,
+    "wilson_ci95": [
+     4.6,
+     69.9
+    ]
+   }
+  },
+  "International": {
+   "all_strict": {
+    "hits": 11,
+    "n": 42,
+    "pct": 26.2,
+    "wilson_ci95": [
+     15.3,
+     41.1
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 9,
+    "n": 29,
+    "pct": 31.0,
+    "wilson_ci95": [
+     17.3,
+     49.2
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 8,
+    "n": 29,
+    "pct": 27.6,
+    "wilson_ci95": [
+     14.7,
+     45.7
+    ]
+   }
+  },
+  "Other": {
+   "all_strict": {
+    "hits": 0,
+    "n": 8,
+    "pct": 0.0,
+    "wilson_ci95": [
+     0,
+     32.4
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 1,
+    "n": 6,
+    "pct": 16.7,
+    "wilson_ci95": [
+     3.0,
+     56.4
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 0,
+    "n": 6,
+    "pct": 0.0,
+    "wilson_ci95": [
+     0,
+     39.0
+    ]
+   }
+  },
+  "UAE and Gulf": {
+   "all_strict": {
+    "hits": 10,
+    "n": 19,
+    "pct": 52.6,
+    "wilson_ci95": [
+     31.7,
+     72.7
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 5,
+    "n": 6,
+    "pct": 83.3,
+    "wilson_ci95": [
+     43.6,
+     97.0
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 4,
+    "n": 6,
+    "pct": 66.7,
+    "wilson_ci95": [
+     30.0,
+     90.3
+    ]
+   }
+  },
+  "UK": {
+   "all_strict": {
+    "hits": 2,
+    "n": 20,
+    "pct": 10.0,
+    "wilson_ci95": [
+     2.8,
+     30.1
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 3,
+    "n": 9,
+    "pct": 33.3,
+    "wilson_ci95": [
+     12.1,
+     64.6
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 0,
+    "n": 9,
+    "pct": 0.0,
+    "wilson_ci95": [
+     0,
+     29.9
+    ]
+   }
+  },
+  "US and Canada": {
+   "all_strict": {
+    "hits": 6,
+    "n": 34,
+    "pct": 17.6,
+    "wilson_ci95": [
+     8.3,
+     33.5
+    ]
+   },
+   "confirmed_positive_lenient": {
+    "hits": 7,
+    "n": 19,
+    "pct": 36.8,
+    "wilson_ci95": [
+     19.1,
+     59.0
+    ]
+   },
+   "confirmed_positive_strict": {
+    "hits": 4,
+    "n": 19,
+    "pct": 21.1,
+    "wilson_ci95": [
+     8.5,
+     43.3
+    ]
+   }
+  }
+ },
+ "confirmed_positive_lenient": {
+  "hits": 32,
+  "n": 91,
+  "pct": 35.2,
+  "wilson_ci95": [
+   26.1,
+   45.4
+  ]
+ },
+ "confirmed_positive_strict": {
+  "hits": 21,
+  "n": 91,
+  "pct": 23.1,
+  "wilson_ci95": [
+   15.6,
+   32.7
+  ]
+ },
+ "has_testing_no": 21,
+ "has_testing_yes": 91,
+ "instruments": 189,
+ "match_counts_all": {
+  "exact": 42,
+  "none": 116,
+  "partial": 29,
+  "unclear": 2
+ },
+ "method_note": "Second reference list built by six agents blind to the table, under the same search tools as the table; matching by agents that saw titles and addresses only, so some matches rest on catalogue knowledge; the table at matching time already contained the 19 phase 5 US rows. Not independent of the table builders' tools, so no capture recapture estimate.",
+ "missed_confirmed": [
+  {
+   "access_status": "partly read",
+   "group": "EU",
+   "match": "partial",
+   "ref_id": "N008",
+   "title": "Commission guidelines on obligations for providers of general-purpose AI models (FAQ page)"
+  },
+  {
+   "access_status": "read",
+   "group": "EU",
+   "match": "none",
+   "ref_id": "N014",
+   "title": "MDCG 2019-11 Rev.1 Guidance on qualification and classification of software in Regulation (EU) 2017/745 and (EU) 2017/746"
+  },
+  {
+   "access_status": "partly read",
+   "group": "EU",
+   "match": "none",
+   "ref_id": "N015",
+   "title": "Regulation (EU) 2017/745 on medical devices (MDR)"
+  },
+  {
+   "access_status": "partly read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N018",
+   "title": "Explanatory Report to the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N019",
+   "title": "Draft Framework Convention on AI, human rights, democracy and the rule of law, CM(2024)52-prov1"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N020",
+   "title": "Draft Framework Convention on AI, human rights, democracy and the rule of law, CAI(2023)28 second reading"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "unclear",
+   "ref_id": "N025",
+   "title": "ISO/IEC TR 29119-11:2020 Software and systems engineering - Software testing - Part 11: Guidelines on the testing of AI-based systems"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N032",
+   "title": "ISO/IEC TR 24027:2021 Information technology - Artificial intelligence (AI) - Bias in AI systems and AI aided decision making"
+  },
+  {
+   "access_status": "read",
+   "group": "Other",
+   "match": "partial",
+   "ref_id": "N036",
+   "title": "CEN/CLC/TR 17894:2024 Artificial Intelligence - Artificial Intelligence Conformity Assessment"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N038",
+   "title": "IEEE 2802-2022 IEEE Standard for Performance and Safety Evaluation of Artificial Intelligence Based Medical Devices: Terminology"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N039",
+   "title": "IEEE 2937-2022 IEEE Standard for Performance Benchmarking for Artificial Intelligence Server Systems"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N040",
+   "title": "IEEE 3129-2023 IEEE Standard for Robustness Testing and Evaluation of Artificial Intelligence (AI)-based Image Recognition Service"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N041",
+   "title": "ITU-T F.748.44 Assessment criteria for foundation models - Benchmark"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N042",
+   "title": "ITU-T F.748.11 Metrics and evaluation methods for a deep neural network processor benchmark"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N043",
+   "title": "ITU-T F.748.26 Technical specification for artificial intelligence cloud platforms: Performance evaluation"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N044",
+   "title": "ITU-T F.748.18 Metric and evaluation methods for AI-enabled multimedia application computing power benchmark"
+  },
+  {
+   "access_status": "read",
+   "group": "Other",
+   "match": "none",
+   "ref_id": "N045",
+   "title": "ETSI EN 304 223 V2.1.1 Securing Artificial Intelligence (SAI); Baseline Cyber Security Requirements for AI Models and Systems"
+  },
+  {
+   "access_status": "partly read",
+   "group": "Other",
+   "match": "none",
+   "ref_id": "N046",
+   "title": "ETSI TR 104 128 V1.1.1 Securing Artificial Intelligence (SAI); Guide to Cyber Security for AI Models and Systems"
+  },
+  {
+   "access_status": "partly read",
+   "group": "Other",
+   "match": "none",
+   "ref_id": "N047",
+   "title": "ETSI TR 104 159 V1.1.1 Understanding and Preventing Harm from Generative AI"
+  },
+  {
+   "access_status": "read",
+   "group": "Other",
+   "match": "none",
+   "ref_id": "N048",
+   "title": "ETSI TS 104 275 V1.1.1 Securing Artificial Intelligence (SAI); Application of Baseline Cyber Security Requirements principles to Generative AI; Preventing Harm from Deepfakes"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N050",
+   "title": "Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N052",
+   "title": "Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems"
+  },
+  {
+   "access_status": "partly read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N056",
+   "title": "Recommendation on the Ethics of Artificial Intelligence"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N059",
+   "title": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023"
+  },
+  {
+   "access_status": "partly read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N060",
+   "title": "International AI Safety Report 2026"
+  },
+  {
+   "access_status": "partly read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N061",
+   "title": "International AI Safety Report 2025"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N062",
+   "title": "International AI Safety Report Second Key Update: Technical Safeguards and Risk Management"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "none",
+   "ref_id": "N064",
+   "title": "Advancing methods for agentic evaluations across domains (third joint testing exercise)"
+  },
+  {
+   "access_status": "read",
+   "group": "International",
+   "match": "partial",
+   "ref_id": "N065",
+   "title": "International joint testing exercise: Agentic testing"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N068",
+   "title": "Good Machine Learning Practice for Medical Device Development: Guiding Principles (FDA copy)"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N069",
+   "title": "Good Machine Learning Practice for Medical Device Development: Guiding Principles (Health Canada page)"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N071",
+   "title": "Roadmap for Artificial Intelligence Safety Assurance, Version I"
+  },
+  {
+   "access_status": "partly read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N074",
+   "title": "Brake pedal requirement updates for AVs and streamlined AV exemption programs (press page)"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N075",
+   "title": "DoD Directive 3000.09, Autonomy in Weapon Systems"
+  },
+  {
+   "access_status": "partly read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N076",
+   "title": "CDAO Test and Evaluation Strategy Frameworks (Model, HSI, Systems Integration, Operational T&E)"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N077",
+   "title": "SR 11-7, Supervisory Guidance on Model Risk Management"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N078",
+   "title": "SR 26-2, Revised Guidance on Model Risk Management"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N080",
+   "title": "Consumer Financial Protection Circular 2022-03, Adverse action notification requirements in connection with credit decisions based on complex algorithms"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "partial",
+   "ref_id": "N084",
+   "title": "ARIA (Assessing Risks and Impacts of AI) program page"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "partial",
+   "ref_id": "N085",
+   "title": "ARIA Program Overview"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "partial",
+   "ref_id": "N086",
+   "title": "Outline: Proposed Zero Draft for a Standard on AI Testing, Evaluation, Verification, and Validation"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N093",
+   "title": "Principles for the Secure Integration of Artificial Intelligence in Operational Technology"
+  },
+  {
+   "access_status": "partly read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N095",
+   "title": "SB 24-205, Consumer Protections for Artificial Intelligence"
+  },
+  {
+   "access_status": "read",
+   "group": "US and Canada",
+   "match": "none",
+   "ref_id": "N098",
+   "title": "H.B. 149, Texas Responsible Artificial Intelligence Governance Act (committee substitute text)"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "none",
+   "ref_id": "N100",
+   "title": "Software and AI as a Medical Device Change Programme: Roadmap"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "none",
+   "ref_id": "N101",
+   "title": "Good machine learning practice for medical device development: guiding principles"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "none",
+   "ref_id": "N102",
+   "title": "Predetermined change control plans for machine learning enabled medical devices: guiding principles"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "none",
+   "ref_id": "N103",
+   "title": "AI Live Testing service (press release)"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "partial",
+   "ref_id": "N108",
+   "title": "Portfolio of AI assurance techniques"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "partial",
+   "ref_id": "N111",
+   "title": "Early lessons from evaluating frontier AI systems"
+  },
+  {
+   "access_status": "partly read",
+   "group": "UK",
+   "match": "none",
+   "ref_id": "N113",
+   "title": "JSP 936 Dependable Artificial Intelligence (AI) in Defence Part 1 Directive"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "partial",
+   "ref_id": "N114",
+   "title": "AI Playbook for the UK Government (posters PDF)"
+  },
+  {
+   "access_status": "read",
+   "group": "UK",
+   "match": "none",
+   "ref_id": "N118",
+   "title": "Red Teaming for GenAI Harms discussion paper"
+  },
+  {
+   "access_status": "partly read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N120",
+   "title": "Voluntary AI Safety Standard"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N122",
+   "title": "NSW AI Assessment Framework"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N124",
+   "title": "Letter to industry on artificial intelligence (AI)"
+  },
+  {
+   "access_status": "partly read",
+   "group": "Other",
+   "match": "none",
+   "ref_id": "N129",
+   "title": "PL 2338/2023 AI bill: amendment text on Arts 12 and 25"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "partial",
+   "ref_id": "N133",
+   "title": "AI Guidelines for Business Utilization Guide (draft) (AI\u4e8b\u696d\u8005\u30ac\u30a4\u30c9\u30e9\u30a4\u30f3\u6d3b\u7528\u306e\u624b\u5f15\u304d\u6848)"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N137",
+   "title": "AI Discussion Paper v1.0: preliminary issues on AI use and sound utilisation at financial institutions"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N139",
+   "title": "Guidelines on Ensuring Safety of Automated Driving Vehicles (\u81ea\u52d5\u904b\u8ee2\u8eca\u306e\u5b89\u5168\u78ba\u4fdd\u306b\u95a2\u3059\u308b\u30ac\u30a4\u30c9\u30e9\u30a4\u30f3) 2nd edition"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N140",
+   "title": "Current systems for ensuring safety performance of automated driving vehicles (\u81ea\u52d5\u904b\u8ee2\u8eca\u306e\u5b89\u5168\u6027\u80fd\u78ba\u4fdd\u7b56\u306b\u95a2\u3059\u308b\u73fe\u884c\u5236\u5ea6\u7b49\u306b\u3064\u3044\u3066)"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N141",
+   "title": "Materials on amended Road Transport Vehicle Act and automated driving safety standards (\u8cc7\u65996-2)"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N142",
+   "title": "Review of Machine Learning-Enabled Medical Devices (\u6a5f\u68b0\u5b66\u7fd2\u3092\u6d3b\u7528\u3059\u308b\u533b\u7642\u6a5f\u5668\u306e\u5be9\u67fb\u306b\u3064\u3044\u3066) material 4"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N143",
+   "title": "20th Regular Exchange Meeting on Medical Device and IVD Approval Review and Safety Measures, material 1"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N153",
+   "title": "Guideline for Registration Review of AI Medical Devices (\u4eba\u5de5\u667a\u80fd\u533b\u7597\u5668\u68b0\u6ce8\u518c\u5ba1\u67e5\u6307\u5bfc\u539f\u5219)"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N155",
+   "title": "Regulatory Guidelines for Software Medical Devices: A Life Cycle Approach (GL-04-R2)"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N163",
+   "title": "Consumer Protection in respect of Use of Generative Artificial Intelligence (circular)"
+  },
+  {
+   "access_status": "read",
+   "group": "Asia Pacific",
+   "match": "none",
+   "ref_id": "N166",
+   "title": "Law on Artificial Intelligence No. 134/2025/QH15"
+  },
+  {
+   "access_status": "read",
+   "group": "UAE and Gulf",
+   "match": "partial",
+   "ref_id": "N176",
+   "title": "Administrative Resolution No. (939) of 2025 Issuing the Operation of Autonomous Vehicles (executive rules)"
+  },
+  {
+   "access_status": "read",
+   "group": "UAE and Gulf",
+   "match": "none",
+   "ref_id": "N180",
+   "title": "Guidelines for Financial Institutions Adopting Enabling Technologies (Big Data Analytics and AI section)"
+  }
+ ],
+ "unclear": 77
+}

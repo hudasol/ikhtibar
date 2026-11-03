@@ -1,0 +1,89 @@
+query,tool,allowed_domains,result_count,note
+FDA Artificial Intelligence-Enabled Device Software Functions lifecycle management and marketing submission recommendations draft guidance,WebSearch,,10,result count approximate (counted by hand)
+FDA predetermined change control plan AI-enabled device software functions final guidance,WebSearch,,10,result count approximate (counted by hand)
+Good Machine Learning Practice for Medical Device Development: Guiding Principles FDA Health Canada MHRA,WebSearch,,10,result count approximate (counted by hand)
+FDA considerations for the use of artificial intelligence to support regulatory decision-making for drug and biological products draft guidance,WebSearch,,10,result count approximate (counted by hand)
+FAA Roadmap for Artificial Intelligence Safety Assurance,WebSearch,,17,result count approximate (counted by hand)
+NHTSA Standing General Order crash reporting automated driving systems,WebSearch,,16,result count approximate (counted by hand)
+NHTSA AV Framework FMVSS exemption automated driving systems Part 555 rulemaking,WebSearch,,17,result count approximate (counted by hand)
+DoD Directive 3000.09 Autonomy in Weapon Systems,WebSearch,,19,result count approximate (counted by hand)
+DoD Responsible AI Toolkit CDAO test and evaluation of AI-enabled systems guidance,WebSearch,,10,result count approximate (counted by hand)
+Federal Reserve SR 11-7 Guidance on Model Risk Management model validation,WebSearch,,15,result count approximate (counted by hand)
+OCC Bulletin 2011-12 Supervisory Guidance on Model Risk Management,WebSearch,,17,result count approximate (counted by hand)
+CFPB Circular 2022-03 adverse action notification requirements complex algorithms,WebSearch,,18,result count approximate (counted by hand)
+FTC business guidance using artificial intelligence and algorithms testing for bias claims,WebSearch,,10,result count approximate (counted by hand)
+NIST AI 800-1 Managing Misuse Risk for Dual-Use Foundation Models,WebSearch,,10,result count approximate (counted by hand)
+NIST AI 100-2 Adversarial Machine Learning taxonomy and terminology,WebSearch,,10,result count approximate (counted by hand)
+NIST ARIA Assessing Risks and Impacts of AI program,WebSearch,,20,result count approximate (counted by hand)
+SR 26-2 Federal Reserve revised guidance model risk management supersedes SR 11-7,WebSearch,,16,result count approximate (counted by hand)
+NIST SP 800-218A Secure Software Development Practices for Generative AI and Dual-Use Foundation Models,WebSearch,,10,result count approximate (counted by hand)
+"NIST AI test, evaluation, validation and verification TEVV standards zero drafts",WebSearch,,10,result count approximate (counted by hand)
+"OMB M-25-21 Accelerating Federal Use of AI through Innovation, Governance, and Public Trust high-impact AI minimum risk management practices",WebSearch,,17,result count approximate (counted by hand)
+OMB M-25-22 Driving Efficient Acquisition of Artificial Intelligence in Government,WebSearch,,15,result count approximate (counted by hand)
+America's AI Action Plan July 2025 White House evaluations AI assurance testbeds,WebSearch,,17,result count approximate (counted by hand)
+Executive Order 14179 Removing Barriers to American Leadership in Artificial Intelligence federalregister.gov,WebSearch,,19,result count approximate (counted by hand)
+"""Winning the Race: America's AI Action Plan"" whitehouse.gov pdf",WebSearch,,18,result count approximate (counted by hand)
+Colorado SB 24-205 Consumer Protections for Artificial Intelligence impact assessment official text leg.colorado.gov,WebSearch,,18,result count approximate (counted by hand)
+California SB 53 Transparency in Frontier Artificial Intelligence Act leginfo.legislature.ca.gov,WebSearch,,18,result count approximate (counted by hand)
+New York RAISE Act S6953 frontier model safety protocols nysenate.gov,WebSearch,,19,result count approximate (counted by hand)
+Texas Responsible Artificial Intelligence Governance Act HB 149 capitol.texas.gov,WebSearch,,17,result count approximate (counted by hand)
+"CISA AI red teaming guidance ""AI"" Principles for secure integration of AI in operational technology",WebSearch,,10,result count approximate (counted by hand)
+NTIA AI Accountability Policy Report audits evaluations,WebSearch,,15,result count approximate (counted by hand)
+Canada Directive on Automated Decision-Making Algorithmic Impact Assessment tool peer review testing,WebSearch,,10,result count approximate (counted by hand)
+Artificial Intelligence and Data Act AIDA Bill C-27 status died on the order paper Parliament Canada,WebSearch,,0,refused: search budget exhausted
+Voluntary Code of Conduct on the Responsible Development and Management of Advanced Generative AI Systems ISED Canada,WebSearch,,0,refused: search budget exhausted
+Health Canada pre-market guidance for machine learning-enabled medical devices,WebSearch,,0,refused: search budget exhausted
+OSFI Guideline E-23 Model Risk Management final guideline effective May 2027,WebSearch,,0,refused: search budget exhausted
+https://fda.gov/regulatory-information/search-fda-guidance-documents/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing,WebFetch,,,ok
+https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/good-machine-learning-practice-medical-device-development.html,WebFetch,,,ok
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological,WebFetch,,,ok
+https://www.faa.gov/media/82891,WebFetch,,,ok
+https://www.nhtsa.gov/node/103486,WebFetch,,,ok
+https://www.nhtsa.gov/node/143616,WebFetch,,,ok
+https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/300009p.PDF,WebFetch,,,ok
+https://www.ai.mil/Portals/137/Documents/Resources Page/CDAO_TE_Framework_-_Model_TES_2024-04-compressed.pdf,WebFetch,,,failed client_error; not retried with same address
+https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm,WebFetch,,,ok
+https://occ.treas.gov/news-issuances/bulletins/2011/bulletin-2011-12a.pdf,WebFetch,,,failed client_error
+https://www.consumerfinance.gov/compliance/circulars/circular-2022-03-adverse-action-notification-requirements-in-connection-with-credit-decisions-based-on-complex-algorithms/,WebFetch,,,ok
+https://www.nist.gov/node/1855021,WebFetch,,,"ok (was CAISI guidelines page, not AI 800-1)"
+https://csrc.nist.gov/pubs/ai/100/2/e2023/final,WebFetch,,,ok
+https://ai-challenges.nist.gov/aria,WebFetch,,,ok
+https://www.ai.mil/Latest/Blog/Article-Display/Article/3940283/cdao-test-and-evaluation-strategy-frameworks/,WebFetch,,,ok
+https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm,WebFetch,,,ok
+https://csrc.nist.gov/pubs/sp/800/218/a/final,WebFetch,,,ok
+https://www.nist.gov/artificial-intelligence/nists-ai-standards-zero-drafts-pilot-project-accelerate-standardization,WebFetch,,,ok
+https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf,WebFetch,,,ok
+https://digitalgovernmenthub.org/wp-content/uploads/2025/04/M-25-22-Driving-Efficient-Acquisition-of-Artificial-Intelligence-in-Government.pdf,WebFetch,,,ok but third party copy; not counted as primary
+https://www.govinfo.gov/content/pkg/FR-2025-01-31/html/2025-02172.htm,WebFetch,,,ok
+https://www.mcdermottlaw.com/?p=325718,WebFetch,,,"ok; secondary law firm page, used only to locate primary"
+https://leg.colorado.gov/bills/sb24-205,WebFetch,,,ok
+https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/,WebFetch,,,"redirect, not followed automatically"
+https://governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models,WebFetch,,,ok
+https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149S.htm,WebFetch,,,ok
+https://www.cyber.gov.au/sites/default/files/2025-12/principles-for-the-secure-integration-of-artificial-intelligence-in-operational-technology.pdf,WebFetch,,,ok
+https://www.ntia.doc.gov/issues/artificial-intelligence/ai-accountability-policy-report/overview,WebFetch,,,redirect
+https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592,WebFetch,,,rejected by site (request rejected page)
+https://www.whitehouse.gov/briefings-statements/2025/07/white-house-unveils-americas-ai-action-plan/,WebFetch,,,ok
+http://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/,WebFetch,,,redirect loop (retry 1)
+https://www.ntia.gov/issues/artificial-intelligence/ai-accountability-policy-report/overview,WebFetch,,,not on allowlist
+https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592,WebFetch,,,redirect
+https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf,WebFetch,,,ok
+http://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/,WebFetch,,,redirect loop (retry 2); stopped
+https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592,WebFetch,,,rejected by site again; stopped
+https://www.ntia.doc.gov/sites/default/files/ntia-ai-report-final.pdf,WebFetch,,,redirect
+https://leg.colorado.gov/../sites/default/files/documents/2024A/bills/sl/2024a_sl_198.pdf,WebFetch,,,redirect
+https://ai-challenges.nist.gov/aria/docs/ARIA_Program_Overview.pdf,WebFetch,,,ok
+https://www.nist.gov/document/outline-proposed-zero-draft-standard-ai-testing-evaluation-verification-and-validation,WebFetch,,,ok
+https://www.federalreserve.gov/supervisionreg/srletters/SR2602a1.pdf,WebFetch,,,not on allowlist
+https://csrc.nist.gov/news/2025/nist-ai-100-2-adversarial-machine-learning-taxonom,WebFetch,,,ok
+https://content.leg.colorado.gov/sites/default/files/documents/2024A/bills/sl/2024a_sl_198.pdf,WebFetch,,,not on allowlist
+https://www.ntia.gov/sites/default/files/ntia-ai-report-final.pdf,WebFetch,,,not on allowlist
+https://www.nhtsa.gov/press-releases/av-framework-plan-modernize-safety-standards,WebFetch,,,ok
+https://fda.gov/media/153486/download,WebFetch,,,ok
+https://www.govinfo.gov/content/pkg/FR-2025-01-07/html/2024-31543.htm,WebFetch,,,ok
+https://www.ai.mil/Portals/137/Documents/Resources%20Page/CDAO_TE_Framework_-_OTE_TES_2024-04-compressed.pdf,WebFetch,,,failed client_error
+https://www.occ-gov.cms.awsdev.treasury.gov/news-issuances/bulletins/2011/bulletin-2011-12/,WebFetch,,,"ok; Treasury staging host, treated as unverified"
+https://www.consumerfinance.gov/about-us/newsroom/cfpb-acts-to-protect-the-public-from-black-box-credit-models-using-complex-algorithms/,WebFetch,,,not on allowlist
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.pdf,WebFetch,,,ok
+https://www.federalreserve.gov/supervisionreg/srletters/SR2602.pdf,WebFetch,,,ok
+https://fas.org/publication/nist-ai-800-1/,WebFetch,,,"ok; secondary think tank page, not listed as instrument"

@@ -1,0 +1,82 @@
+query,tool,allowed_domains,result_count,note
+MHRA software and AI as a medical device change programme roadmap,WebSearch,,17,
+FCA AI update AI live testing,WebSearch,,16,
+PRA SS1/23 model risk management principles for banks,WebSearch,,18,
+ICO guidance on AI and data protection auditing,WebSearch,,16,
+DSIT introduction to AI assurance guidance,WebSearch,,18,
+AI Security Institute Inspect evaluation framework,WebSearch,,16,
+JSP 936 Dependable AI in defence MoD,WebSearch,,19,
+Voluntary AI Safety Standard Australia guardrails testing,WebSearch,,10,
+https://www.gov.uk/government/publications/software-and-ai-as-a-medical-device-change-programme/software-and-ai-as-a-medical-device-change-programme-roadmap,WebFetch,,1,ok
+https://www.fca.org.uk/news/press-releases/fca-set-launch-live-ai-testing-service,WebFetch,,1,ok
+https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss,WebFetch,,1,headings only
+https://gov.uk/government/publications/introduction-to-ai-assurance,WebFetch,,1,landing page
+https://www.gov.uk/government/publications/jsp-936-dependable-artificial-intelligence-ai-in-defence-part-1-directive,WebFetch,,1,landing page
+https://www.industry.gov.au/publications/voluntary-ai-safety-standard/introduction-standard,WebFetch,,1,ok
+https://www.gov.uk/guidance/portfolio-of-ai-assurance-techniques,WebFetch,,1,ok
+https://www.aisi.gov.uk/work/inspect-evals,WebFetch,,1,ok
+Policy for the responsible use of AI in government Australia DTA,WebSearch,,17,
+NSW AI Assessment Framework digital.nsw.gov.au,WebSearch,,17,
+TGA artificial intelligence software as a medical device guidance,WebSearch,,9,
+MeitY India AI Governance Guidelines 2025,WebSearch,,17,
+RBI FREE-AI framework report responsible ethical enablement of AI,WebSearch,,10,
+ICMR ethical guidelines for application of artificial intelligence in biomedical research and healthcare,WebSearch,,10,
+PL 2338/2023 Brazil AI bill Senate text avaliação de impacto algorítmico,WebSearch,,17,
+SEBI consultation paper guidelines responsible usage of AI/ML in securities market,WebSearch,,10,
+https://www.digital.gov.au/policy/ai/policy2,WebFetch,,1,ok
+https://www.digital.nsw.gov.au/nsw-artificial-intelligence-assurance-framework,WebFetch,,1,ok
+https://icmr.gov.in/ethical-guidelines-for-application-of-artificial-intelligence-in-biomedical-research-and-healthcare,WebFetch,,1,landing page
+https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=61018,WebFetch,,1,ok press release
+https://legis.senado.leg.br/sdleg-getter/documento?dm=9854024,WebFetch,,1,amendment document
+https://www.industry.gov.au/sites/default/files/2024-09/voluntary-ai-safety-standard.pdf,WebFetch,,1,first 100000 chars
+https://assets.publishing.service.gov.uk/media/6735fc89f6920bfb5abc7b62/JSP936_Part1.pdf,WebFetch,,1,first 100000 chars
+https://www.claytonutz.com/insights/2026/july/healthcare-software-tga-clarifies-when-ai-will-be-regulated-as-a-medical-device,WebFetch,,1,secondary source used only to find TGA page
+https://www.tga.gov.au/products/medical-devices/software-and-artificial-intelligence-ai/manufacturing/artificial-intelligence-ai-and-medical-device-software-regulation,WebFetch,,0,URL_NOT_ON_ALLOWLIST; not repeated
+Government Digital Service AI Playbook for the UK Government testing,WebSearch,,18,
+NCSC guidelines for secure AI system development,WebSearch,,19,
+CMA AI foundation models review report,WebSearch,,19,
+CAA artificial intelligence strategy aviation regulation assurance,WebSearch,,10,
+Ofcom generative AI strategic approach online safety red teaming testing,WebSearch,,18,
+Bank of England FCA artificial intelligence in UK financial services survey,WebSearch,,15,
+APRA AI letter to industry artificial intelligence prudential expectations 2026,WebSearch,,18,
+https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development/guidelines,WebFetch,,1,overview only
+https://www.gov.uk/government/publications/ai-foundation-models-initial-report,WebFetch,,1,landing page
+https://www.caa.co.uk/our-work/research-and-innovation/artificial-intelligence,WebFetch,,1,ok
+https://ofcom.org.uk/online-safety/illegal-and-harmful-content/red-teaming-for-genai-harms,WebFetch,,1,ok
+https://www.apra.gov.au/apra-letter-to-industry-on-artificial-intelligence-ai,WebFetch,,1,ok
+https://www.fca.org.uk/publications/research-notes/ai-uk-financial-services,WebFetch,,1,summary page
+https://assets.publishing.service.gov.uk/media/67a37408b74b3d9dfe36ca9b/AI_Playbook_Posters.pdf,WebFetch,,1,ok
+https://www.ofcom.org.uk/about-ofcom/annual-reports-and-plans/ofcoms-strategic-approach-to-ai,WebFetch,,1,ok
+MHRA good machine learning practice for medical device development guiding principles,WebSearch,,10,
+MHRA predetermined change control plans for machine learning enabled medical devices guidance,WebSearch,,10,
+DSIT AI Management Essentials self-assessment tool,WebSearch,,16,
+AI Security Institute pre-deployment evaluation frontier AI trends report,WebSearch,,19,
+ASIC report beware the gap governance arrangements AI licensees,WebSearch,,16,
+Bureau of Indian Standards AI standard IS/ISO/IEC 42001 BIS artificial intelligence,WebSearch,,10,
+ANPD inteligência artificial sandbox regulatório Brasil Autoridade Nacional de Proteção de Dados,WebSearch,,10,
+Banco Central do Brasil resolução inteligência artificial modelos risco,WebSearch,,10,no official Central Bank of Brazil instrument found
+https://www.gov.uk/government/publications/good-machine-learning-practice-for-medical-device-development-guiding-principles/good-machine-learning-practice-for-medical-device-development-guiding-principles,WebFetch,,1,ok
+https://www.gov.uk/government/publications/predetermined-change-control-plans-for-machine-learning-enabled-medical-devices-guiding-principles/predetermined-change-control-plans-for-machine-learning-enabled-medical-devices-guiding-principles,WebFetch,,1,ok
+https://www.gov.uk/government/consultations/ai-management-essentials-tool/guidance-for-using-the-ai-management-essentials-tool,WebFetch,,1,ok
+https://www.aisi.gov.uk/work/early-lessons-from-evaluating-frontier-ai-systems,WebFetch,,1,ok
+https://asic.gov.au/regulatory-resources/find-a-document/reports/rep-798-beware-the-gap-governance-arrangements-in-the-face-of-ai-innovation/,WebFetch,,1,summary only
+https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/MzE4NjI=,WebFetch,,1,catalogue entry
+https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor-1/cds-ano-2023/cd-26-2023-votos.pdf,WebFetch,,1,no text returned
+https://www.prarulebook.co.uk/guidance/supervisory-statements/ss01-23--model-risk-management-principles-for-banks,WebFetch,,1,no body text; PRA Rulebook page says revised version not yet added
+New Zealand Public Service Responsible AI Guidance for the public service GenAI,WebSearch,,0,not performed: search budget exhausted
+Switzerland Federal Council AI regulation approach Council of Europe convention ratification consultation,WebSearch,,0,not performed: search budget exhausted
+Israel Ministry of Innovation Science and Technology AI regulation and ethics policy principles,WebSearch,,0,not performed: search budget exhausted
+Türkiye yapay zeka kanun teklifi TBMM,WebSearch,,0,not performed: search budget exhausted
+Australia Technical standard for government's use of artificial intelligence DTA testing,WebSearch,,0,not performed: search budget exhausted
+National framework for the assurance of artificial intelligence in government Australia,WebSearch,,0,not performed: search budget exhausted
+Australia Proposals paper for introducing mandatory guardrails for AI in high-risk settings,WebSearch,,0,not performed: search budget exhausted
+Swiss FINMA Guidance 08/2024 governance and risk management when using artificial intelligence,WebSearch,,0,not performed: search budget exhausted
+https://www.bankofengland.co.uk/report/2024/artificial-intelligence-in-uk-financial-services-2024,WebFetch,,1,ok
+https://www.fca.org.uk/cy/node/147826,WebFetch,,1,"speech page, mentions FS25/5"
+https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development/about-this-document,WebFetch,,1,ok
+https://www.digital.gov.au/ai/ai-in-government-policy,WebFetch,,0,robots_disallowed; blocked
+https://www.apra.gov.au/news-and-publications/apra-calls-step-change-ai-related-risk-management-and-governance,WebFetch,,1,ok
+https://www.caa.co.uk/ai,WebFetch,,1,ok
+https://assets.publishing.service.gov.uk/media/6981d0758c1e89ed1e91bb55/AI_Management_Essentials_tool_government_response.pdf,WebFetch,,1,ok
+https://www.nsw.gov.au/media-releases/new-ai-framework-upholds-safe-use-of-transformative-technology,WebFetch,,1,ok
+https://www.digital.gov.au/ai/ai-in-government-policy,WebFetch,,0,retry once; tool declined as repeat of robots_disallowed; stopped

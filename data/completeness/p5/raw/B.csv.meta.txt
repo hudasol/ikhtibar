@@ -1,0 +1,6 @@
+Date: 2026-11-03
+Area: B (international standards and intergovernmental instruments). 45 rows in B.csv.
+Search budget: ran out. The shared per-turn WebSearch limit (200) was reached after about 40 of my searches; two later search attempts (Seoul Declaration, WHO guidance) were refused and logged with result_count 0. No workaround was used.
+Not covered because of this: Seoul Declaration / Statement of Intent / Frontier AI Safety Commitments, Paris AI Action Summit statement, International Network of AI Safety Institutes founding documents, WHO guidance on AI for health, ICAO, IMO, IAEA AI guidance, UN General Assembly AI resolution operative texts beyond A/RES/78/265, ITU FG-AI4H deliverables (searched, not fetched), ETSI TS 104 223, TS 104 216, TS 104 119 (cited inside read ETSI documents, no address seen), OECD AI Principles page, G7 ministerial declarations.
+Other limits: ISO/IEC 42001 iso.org page failed (client_error); UN A/RES/78/265 PDF failed and was blocked on retry; UNESCO full text at unesdoc and the UK interim report page were not on the fetch allowlist; documents.un.org blocked by robots. No Arabic queries were run (area did not call for them). Several ISO catalogue rows rely on abstract text only and are marked unclear where the abstract was silent.
+Model: Claude Sonnet 5.5 (claude-sonnet-5-5)

@@ -1,0 +1,70 @@
+query,tool,allowed_domains,result_count,note
+CEN CENELEC JTC 21 harmonised standards AI Act standardisation request,WebSearch,,19,
+Commission guidelines high-risk classification AI Act Article 6,WebSearch,,17,
+MDCG 2025-6 FAQ interplay Medical Device Regulation AI Act,WebSearch,,10,
+EASA Artificial Intelligence Concept Paper Issue 2 learning assurance,WebSearch,,10,
+Council of Europe Framework Convention on Artificial Intelligence text risk and impact management,WebSearch,,17,
+EDPB Opinion 28/2024 AI models personal data,WebSearch,,18,"Only secondary sources returned; no edpb.europa.eu link seen, so opinion not listed"
+Commission guidelines prohibited artificial intelligence practices AI Act Article 5 digital-strategy.ec.europa.eu,WebSearch,,17,
+Commission guidelines obligations general-purpose AI models providers AI Act systemic risk evaluation,WebSearch,,10,
+General-Purpose AI Code of Practice safety and security chapter model evaluations,WebSearch,,10,No official Commission link in results; not listed
+Code of Practice marking and labelling AI-generated content transparency Article 50,WebSearch,,18,
+Regulation (EU) 2024/1689 Artificial Intelligence Act eur-lex Article 9 testing Article 43 conformity assessment,WebSearch,,19,
+AI Act implementing act regulatory sandboxes real-world testing plan implementing regulation,WebSearch,,18,
+eur-lex.europa.eu Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence,WebSearch,eur-lex.europa.eu,10,
+Commission Implementing Decision C(2023) 3215 standardisation request CEN CENELEC trustworthy artificial intelligence,WebSearch,,16,
+prEN 18286 quality management system AI Act CEN-CENELEC JTC 21 catalogue,WebSearch,,15,
+MDCG 2019-11 qualification and classification of software MDR IVDR,WebSearch,,10,
+Regulation (EU) 2017/745 medical devices Annex I clinical evaluation software validation eur-lex,WebSearch,eur-lex.europa.eu;health.ec.europa.eu,10,
+EBA follow-up report machine learning for IRB models,WebSearch,,10,
+EIOPA Opinion on artificial intelligence governance and risk management insurance,WebSearch,,0,Refused: shared search budget used up
+ESMA public statement on use of artificial intelligence in provision of investment services,WebSearch,,0,Refused: shared search budget used up
+ECB guide to internal models machine learning model validation banking supervision,WebSearch,,0,Refused: shared search budget used up
+EASA Artificial Intelligence Roadmap 2.0 human-centric approach,WebSearch,,0,Refused: shared search budget used up
+EASA NPA 2025-07 detailed specifications AI trustworthiness machine learning,WebSearch,,0,Refused: shared search budget used up
+Regulation (EU) 2023/1230 machinery regulation self-evolving behaviour safety components machine learning conformity assessment,WebSearch,,0,Refused: shared search budget used up
+https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence,WebFetch,,,read
+https://digital-strategy.ec.europa.eu/en/library/draft-guidelines-high-risk,WebFetch,,,read
+https://health.ec.europa.eu/latest-updates/mdcg-2025-6-faq-interplay-between-medical-devices-regulation-vitro-diagnostic-medical-devices-2025-06-19_en,WebFetch,,,"read, landing page only"
+https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-issue-2,WebFetch,,,"read, landing page only"
+https://rm.coe.int/0900001680afb11b,WebFetch,,,blocked: URL not on allowlist; not retried
+https://rm.coe.int/native/0900001680afb122,WebFetch,,,"read, first 100000 characters of 136753"
+https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act,WebFetch,,,read
+https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-gpai-providers,WebFetch,,,read
+https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content,WebFetch,,,read
+https://digital-strategy.ec.europa.eu/en/faqs/understanding-standardisation-ai-act,WebFetch,,,read
+https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-58,WebFetch,,,read
+https://futurium.ec.europa.eu/cs/apply-ai-alliance/news/regulatory-sandboxes-commission-seeks-feedback-draft-implementing-act,WebFetch,,,read
+https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng,WebFetch,,,"read, header and navigation only"
+https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818,WebFetch,,,read
+https://ec.europa.eu/transparency/documents-register/api/files/C(2023)3215_0/de00000001048942,WebFetch,,,read
+https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en,WebFetch,,,read
+https://www.eba.europa.eu/eba-publishes-follow-report-use-machine-learning-internal-ratings-based-models,WebFetch,,,"read, press release only"
+https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng,WebFetch,,,"read, header and navigation only"
+https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202401689,WebFetch,,,"read, text reached recital 62 only"
+https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-9,WebFetch,,,blocked: not on allowlist; not retried
+https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-55,WebFetch,,,blocked: not on allowlist; not retried
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02017R0745-20250110,WebFetch,,,"read, Articles 1-27 visible"
+https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202401689 (offset 100000),WebFetch,,,"read, recitals 63-87 only"
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02017R0745-20250110 (offset 100000),WebFetch,,,"read, Articles 28-47"
+https://www.easa.europa.eu/hr/downloads/139926/en,WebFetch,,,"read, EASA MLEAP report (contractor research, not listed)"
+https://www.coe.int/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence,WebFetch,,,blocked: client error
+https://rm.coe.int/0900001680aee411,WebFetch,,,read
+https://rm.coe.int/0900001680ade043,WebFetch,,,read
+https://www.din.de/en/wdc-beuth:din21:399835319,WebFetch,,,read
+https://standardsdevelopment.elot.gr/drafts/11184,WebFetch,,,"blocked: redirect to sign-in, not followed"
+https://digital-strategy.ec.europa.eu/en/library/commission-publishes-second-draft-code-practice-marking-and-labelling-ai-generated-content,WebFetch,,,read
+https://www.easa.europa.eu/en/newsroom-and-events/news/easa-publishes-artificial-intelligence-concept-paper-issue-02-guidance,WebFetch,,,blocked: server error
+https://www.coe.int/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence (retry),WebFetch,,,blocked: tool refused repeat after client error
+https://www.easa.europa.eu/en/newsroom-and-events/news/easa-publishes-artificial-intelligence-concept-paper-issue-02-guidance (retry),WebFetch,,,blocked: tool refused repeat after server error
+https://www.din.de/en/getting-involved/standards-committees/nia/projects/wdc-proj:din21:383673160,WebFetch,,,read
+https://www.din.de/en/getting-involved/standards-committees/nia/projects/wdc-proj:din21:387184304,WebFetch,,,read
+https://connect.nen.nl/Standard/Detail/3769908,WebFetch,,,read
+https://ec.europa.eu/docsroom/documents/64114?locale=sv,WebFetch,,,blocked: client error
+https://ec.europa.eu/docsroom/documents/37581/attachments/1/translations/en/renditions/native,WebFetch,,,blocked: redirect not followed
+https://easa.europa.eu/bg/downloads/139927/en,WebFetch,,,"read, MLEAP executive summary (not listed)"
+https://www.easa.europa.eu/en/node/137625,WebFetch,,,read
+https://digital-strategy.ec.europa.eu/en/faqs/code-practice-transparency-ai-generated-content,WebFetch,,,read
+https://www.eeas.europa.eu/delegations/council-europe/text-first-legally-binding-global-instrument-address-risks-posed-artificial-intelligence-finalised_en,WebFetch,,,"read, news item (not listed)"
+https://data.consilium.europa.eu/doc/document/WK-12134-2025-INIT/en/pdf,WebFetch,,,"read, Council LIMITE working paper (not listed as instrument)"
+https://eba.europa.eu/publications-and-media/press-releases/eba-publishes-follow-report-use-machine-learning-internal,WebFetch,,,read
