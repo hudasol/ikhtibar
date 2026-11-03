@@ -1,0 +1,254 @@
+{
+ "documents": {
+  "X01": {
+   "binding_rows": 1,
+   "family": "EU-AI-Act",
+   "framework": "Commission Implementing Regulation (EU) 2026/1755 (arrangements under Reg. (EU) 2024/1689 Arts 92(6), 101(6))",
+   "group": "EU",
+   "length_class": "short",
+   "n_rows": 1,
+   "row_ids": [
+    "EU-AI-Act-P3-20"
+   ],
+   "source_url": "http://publications.europa.eu/resource/cellar/b8c9e6d4-849c-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1"
+  },
+  "X02": {
+   "binding_rows": 0,
+   "family": "Japan",
+   "framework": "Japan - AI Guidelines for Business Ver. 1.1 (MIC/METI)",
+   "group": "Japan",
+   "length_class": "medium",
+   "n_rows": 5,
+   "row_ids": [
+    "Japan-015",
+    "Japan-016",
+    "Japan-017",
+    "Japan-018",
+    "Japan-019"
+   ],
+   "source_url": "https://www.soumu.go.jp/main_content/001003032.pdf"
+  },
+  "X03": {
+   "binding_rows": 0,
+   "family": "Saudi",
+   "framework": "SDAIA AI Ethics Principles (Version 1.0, September 2023, read on dgp.sdaia.gov.sa; the 2025 edition on sdaia.gov.sa was not readable)",
+   "group": "Saudi",
+   "length_class": "long",
+   "n_rows": 10,
+   "row_ids": [
+    "Saudi-001",
+    "Saudi-002",
+    "Saudi-003",
+    "Saudi-004",
+    "Saudi-005",
+    "Saudi-006",
+    "Saudi-007",
+    "Saudi-008",
+    "Saudi-009",
+    "Saudi-010"
+   ],
+   "source_url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf"
+  },
+  "X04": {
+   "binding_rows": 0,
+   "family": "Singapore",
+   "framework": "Singapore IMDA Starter Kit for Testing LLM-Based Applications for Safety and Reliability (v1.0, January 2026)",
+   "group": "Singapore",
+   "length_class": "long",
+   "n_rows": 12,
+   "row_ids": [
+    "Singapore-001",
+    "Singapore-003",
+    "Singapore-005",
+    "Singapore-006",
+    "Singapore-007",
+    "Singapore-008",
+    "Singapore-009",
+    "Singapore-010",
+    "Singapore-011",
+    "Singapore-012",
+    "Singapore-013",
+    "Singapore-014"
+   ],
+   "source_url": "https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/starter-kit-for-testing-llm-based-applications-for-safety-and-reliability.pdf"
+  },
+  "X05": {
+   "binding_rows": 0,
+   "family": "UAE-DIFC-ADGM",
+   "framework": "ADGM FSRA Supplementary Guidance - Digital Investment Management",
+   "group": "UAE",
+   "length_class": "short",
+   "n_rows": 1,
+   "row_ids": [
+    "UAE-DIFC-ADGM-009"
+   ],
+   "source_url": "https://assets.adgm.com/download/assets/Supplementary+Guidance+-+Digital+Investment+Management+VER02.061125.pdf/f2ae6f36606c11ef946bcecc50de2f68"
+  },
+  "X06": {
+   "binding_rows": 0,
+   "family": "UK",
+   "framework": "UK Frontier AI Safety Commitments (AI Seoul Summit 2024)",
+   "group": "UK",
+   "length_class": "medium",
+   "n_rows": 3,
+   "row_ids": [
+    "UK-029",
+    "UK-030",
+    "UK-031"
+   ],
+   "source_url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024"
+  },
+  "X07": {
+   "binding_rows": 0,
+   "family": "US-NIST",
+   "framework": "US NIST AI RMF Playbook (AIRC; companion to AI RMF 1.0)",
+   "group": "US",
+   "length_class": "medium",
+   "n_rows": 3,
+   "row_ids": [
+    "US-NIST-022",
+    "US-NIST-023",
+    "US-NIST-024"
+   ],
+   "source_url": "https://airc.nist.gov/docs/playbook.json"
+  },
+  "X08": {
+   "binding_rows": 26,
+   "family": "EU-AI-Act",
+   "framework": "EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026/1744)",
+   "group": "EU",
+   "length_class": "long",
+   "n_rows": 28,
+   "row_ids": [
+    "EU-AI-Act-011",
+    "EU-AI-Act-014",
+    "EU-AI-Act-015",
+    "EU-AI-Act-016",
+    "EU-AI-Act-017",
+    "EU-AI-Act-018",
+    "EU-AI-Act-019",
+    "EU-AI-Act-020",
+    "EU-AI-Act-028",
+    "EU-AI-Act-029",
+    "EU-AI-Act-030",
+    "EU-AI-Act-032",
+    "EU-AI-Act-033",
+    "EU-AI-Act-034",
+    "EU-AI-Act-036",
+    "EU-AI-Act-041",
+    "EU-AI-Act-042",
+    "EU-AI-Act-043",
+    "EU-AI-Act-044",
+    "EU-AI-Act-045",
+    "EU-AI-Act-047",
+    "EU-AI-Act-052",
+    "EU-AI-Act-055",
+    "EU-AI-Act-060",
+    "EU-AI-Act-063",
+    "EU-AI-Act-068",
+    "EU-AI-Act-069",
+    "EU-AI-Act-071"
+   ],
+   "source_url": "https://publications.europa.eu/resource/celex/02024R1689-20260727"
+  },
+  "X09": {
+   "binding_rows": 0,
+   "family": "Japan",
+   "framework": "Japan - AI Basic Plan (Second plan, as of 14 Jul 2026)",
+   "group": "Japan",
+   "length_class": "short",
+   "n_rows": 1,
+   "row_ids": [
+    "Japan-007"
+   ],
+   "source_url": "https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_eng_20260714.pdf"
+  },
+  "X10": {
+   "binding_rows": 0,
+   "family": "Saudi",
+   "framework": "NCA AI Cybersecurity Guidelines (draft, AICG-1:2026)",
+   "group": "Saudi",
+   "length_class": "long",
+   "n_rows": 10,
+   "row_ids": [
+    "Saudi-019",
+    "Saudi-020",
+    "Saudi-021",
+    "Saudi-022",
+    "Saudi-023",
+    "Saudi-P3-01",
+    "Saudi-P3-02",
+    "Saudi-P3-03",
+    "Saudi-P3-05",
+    "Saudi-P3-06"
+   ],
+   "source_url": "https://cdn.nca.gov.sa/api/files/public/upload/cbf45381-f94f-40c7-9b8c-553fb01b6a3b_AI_Cybersecurity_Controls_EN.pdf"
+  },
+  "X11": {
+   "binding_rows": 0,
+   "family": "Singapore",
+   "framework": "Singapore Cataloguing LLM Evaluations (IMDA / AI Verify Foundation discussion draft, October 2023)",
+   "group": "Singapore",
+   "length_class": "short",
+   "n_rows": 1,
+   "row_ids": [
+    "Singapore-036"
+   ],
+   "source_url": "https://aiverifyfoundation.sg/wp-content/uploads/2025/10/Cataloguing_LLM_Evaluations.pdf"
+  },
+  "X12": {
+   "binding_rows": 0,
+   "family": "UAE-Dubai",
+   "framework": "Dubai AI Integration Matrix Framework for Government Organizations (Dubai Digital Authority, August 2025, Version 1.0 per front matter; earlier listing date 28 Apr 2026 conflicts)",
+   "group": "UAE",
+   "length_class": "medium",
+   "n_rows": 3,
+   "row_ids": [
+    "UAE-Dubai-007",
+    "UAE-Dubai-008",
+    "UAE-Dubai-009"
+   ],
+   "source_url": "https://www.digitaldubai.ae/docs/default-source/publications/the-ai-integration-matrix-framework-1.pdf?sfvrsn=820a85b0_2"
+  },
+  "X13": {
+   "binding_rows": 0,
+   "family": "UK",
+   "framework": "UK AI Security Institute (AISI)",
+   "group": "UK",
+   "length_class": "short",
+   "n_rows": 1,
+   "row_ids": [
+    "UK-026"
+   ],
+   "source_url": "https://www.aisi.gov.uk/about"
+  },
+  "X14": {
+   "binding_rows": 0,
+   "family": "US-NIST",
+   "framework": "US NIST AI 600-1 Generative AI Profile (July 2024)",
+   "group": "US",
+   "length_class": "long",
+   "n_rows": 13,
+   "row_ids": [
+    "US-NIST-026",
+    "US-NIST-027",
+    "US-NIST-028",
+    "US-NIST-029",
+    "US-NIST-030",
+    "US-NIST-031",
+    "US-NIST-032",
+    "US-NIST-033",
+    "US-NIST-034",
+    "US-NIST-035",
+    "US-NIST-036",
+    "US-NIST-037",
+    "US-NIST-038"
+   ],
+   "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+  }
+ },
+ "method": "round robin over family groups in sorted order; inside a group a seeded permutation, preferring the length class chosen least often so far; length class from number of table rows (short 1 to 2, medium 3 to 6, long 7 or more)",
+ "n_drawn": 14,
+ "n_eligible": 54,
+ "seed": 20261103
+}

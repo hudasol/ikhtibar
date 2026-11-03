@@ -1,0 +1,15 @@
+run_id,task,role,reported_by_agent,session_configured,recorded_on,note
+extract_r1_X01,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X02,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X03,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X04,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X05,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X06,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X07,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X08,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X09,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X10,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X11,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X12,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X13,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+extract_r1_X14,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
