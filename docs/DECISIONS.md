@@ -46,3 +46,43 @@ An independent review of the repository raised these points; they were examined 
 - Removing assistant or organisation names, an official contact address and local paths from data files: they are source facts (a UK AISI report title, a DoH contact address on a source page, a path recorded in a preregistration file that must not be edited after the fact).
 - A cluster bootstrap for the baseline intervals: noted as a limit in the evaluation report instead; the document level bootstrap is used for the headline claim.
 - Reference metadata gaps (missing authors, years and venues): listed in the handoff note for the author to resolve against the sources.
+
+## D11. Model identity is recorded as data, not named in prose
+
+The overnight brief asks for the exact model name and version of every coder, extractor and verifier run to be recorded in a `model_identity` field and in `data/model_identity_log.csv`. Another standing rule asks that no product name appears in public material. I read the first as a data requirement and the second as a rule for prose: the identifier is kept only in the log and in result file fields, and sentences in the paper and the documents say "language model agents" without a product name. If she prefers the identifier redacted, the log can be replaced by the generic text without changing any result. Where an agent could not report its identity, the log says so.
+
+## D12. Fetch tool allowlist and the search workaround
+
+During this run the fetch tool accepted only addresses that had appeared in search results or in pages already read. The readers were therefore told to search the exact title and fetch the official result link (rule 3a of the phase 4 rules, copied to `data/verification/phase5/RULES_P5.md`). The search budget for the turn (200, shared by all agents) was then used up, so later tasks could fetch only addresses seen before. No cache, mirror, archive or third party copy was used. The fetch tool also answers through a summarising model, so readers saw summaries, not verbatim pages; page numbers and wording from that route are less reliable, and every affected row says so in `evidence_grade` and `text_basis`.
+
+## D13. Tag push and the frozen reference
+
+The remote refused the push of tag `v4.0-paper-frozen` (HTTP 403 on tag refs through the session proxy, one retry). The tag exists locally at commit fa3e410, and a branch `frozen/v4.0-paper` was created at the same commit through the repository connector. The branch must not be advanced. Copies of the version 4.0 result files are in `data/phase5/frozen_v4/` so the new numbers can be set next to them.
+
+## D14. Extraction recall: sample exclusions and the precision basis
+
+Of the 14 documents drawn (seed 20261103), two (X01 and X10) were excluded because the reader could not obtain the text (X01 unreadable, X10 headings only). Only three documents (X02, X06, X12) were read in their whole text; for the others the summarising fetch tool reached only part, so recall is computed over what the reader reached and precision is computed only over the three documents read whole. Recall counts yes or partial matches. The recall figure is therefore a rough measure, and the partial reading may bias it in either direction. Missed provisions are in `missed_candidates.csv` and are not added to the headline table.
+
+## D15. Phase 5 ids and retrieval dates for the US candidate rows
+
+The 19 US candidate rows from the completeness pilot were renamed from the P4 ids to `<family>-P5-<nn>`, as the brief asks. Their retrieval date is recorded as 3 November 2026, the date the fresh verifiers read the sources. The verifier corrections (locator fixes, one binding status corrected from conditional to mandatory for the OMB authorization to operate clause) are applied through `data/verification/phase5/patches_p5_us.json`.
+
+## D16. Which existing rows were sampled for the fresh check
+
+Every family had been touched by an earlier fresh draw, so "families not previously sampled" could not be applied literally. I took the families where earlier fresh draws had covered at most a quarter of the rows (Canada, Saudi, UAE Abu Dhabi DoH), drew from rows never in any fresh draw (seed 20261103, 30 rows), and report the rest of the result separately. Most of these rows could not be read because of the allowlist and site blocks (see the stats file); the error rate rests on a handful of readable rows and is reported with its wide interval.
+
+## D17. Choice of instruments for new rows
+
+The second reference list has 189 instruments (91 with a testing provision). I extracted rows for 36 of the 58 that were read, had a testing provision and were not in the table, choosing a spread across jurisdictions and sources and skipping near duplicates (several ITU recommendations, several Japanese road transport documents, drafts without readable text). The rest are listed in `data/completeness/reference_list_p5.csv` and remain candidates. New rows from catalogue pages only are marked `catalogue-level only` and do not enter the headline counts.
+
+## D18. UAE Arabic check and time sensitive rereads blocked
+
+The four Arabic readers and the National Cyber Security Policy scope check returned nothing, because the search budget was already used up and the fetch tool refused addresses it had not seen. Tasks 4 and 5 are logged as blocked and can be rerun when the budget resets. No result is claimed; the scope question stays open and the UAE rows stay "not read in original Arabic". The script, input files and tests are in place.
+
+## D19. Completeness comparison with the first list
+
+The second list was built and matched by agents using the same tools as the table, so the two lists are not independent samples and no capture recapture estimate is made. Matching used titles, issuers and addresses only, and two matchers said they relied on catalogue knowledge for some standards; the matching file shows the notes. The table at matching time already contained the 19 US rows, which were the misses of the first pilot.
+
+## D20. Texas H.B. 149 rows left ambiguous
+
+Two fresh verifiers disagreed about the two Texas rows (one proposed conditional, the other mandatory), and both noted that the text read is the Senate committee substitute, not the enacted act. The enacted text could not be fetched in the session. I kept their wording corrections but set the binding status of both rows to ambiguous with a note, because a status cannot be settled from a version that is not the law. This is a status of the text read, not a statement about what Texas requires.
