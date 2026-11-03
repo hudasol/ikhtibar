@@ -1,0 +1,162 @@
+[
+ {
+  "row_id": "US-Sector-P5-35",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Not specified in the passage (document elsewhere assigns responsibility to the designer and AI developer; the FAA plans supplemental guidance)",
+  "source": "p5n_patch_1",
+  "reason": "Applicants and a certification framework to be developed are not stated in the p. 20 passage"
+ },
+ {
+  "row_id": "International-P5-51",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 2.4, p. 16 of 25 (PDF page)",
+  "source": "p5n_patch_2",
+  "reason": "Fetched text places section 2.4 on page 16 of 25"
+ },
+ {
+  "row_id": "US-Sector-P5-37",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Explores Overarching Properties (intent, correctness, innocuity) as a basis for assurance case arguments matched to risk consequence; the FAA is working with NASA on an alternate process using them, described as showing promise, with case studies under development with industry partners.",
+  "source": "p5n_patch_3",
+  "reason": "FAA/NASA promise statement refers to the approach, not to completed case studies."
+ },
+ {
+  "row_id": "US-Sector-P5-46",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Banking organisations (independence of validation is addressed in Sections III and VI, not Section V)",
+  "source": "p5n_patch_3",
+  "reason": "Section V does not mention independence."
+ },
+ {
+  "row_id": "US-Sector-P5-52",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "A defendant may not be found liable where the violation was discovered through its own testing, including adversarial or red team testing (item (B)); internal review is a separate route (item (D)) that requires substantial compliance with a recognised AI risk management framework. Other conditions apply.",
+  "source": "p5n_patch_3",
+  "reason": "Separate (B) from (D) and state the (D) condition."
+ },
+ {
+  "row_id": "Japan-P5-90",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Use of the IDATEN change plan scheme is generally expected for adaptive devices; changes made under a confirmed change plan need no new approval application if notified in advance, with the notice period set by ministerial ordinance; initial performance evaluation follows normal review.",
+  "source": "p5n_patch_3",
+  "reason": "Slide 10 describes prior notification."
+ },
+ {
+  "row_id": "UAE-Federal-P5-96",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The governance framework should ensure proper validation of Big Data Analytics and AI applications prior to their launch, with ongoing training, calibration and review afterwards.",
+  "source": "p5n_patch_3",
+  "reason": "Clause uses \"should\", not \"must\"."
+ },
+ {
+  "row_id": "UAE-Federal-P5-96",
+  "field": "binding_status",
+  "op": "set",
+  "value": "guidance",
+  "source": "p5n_patch_3",
+  "reason": "Guidelines say institutions are expected to consider their application; binding instruments take precedence."
+ },
+ {
+  "row_id": "US-Sector-P5-41",
+  "field": "who_tests",
+  "op": "set",
+  "value": "DoD components (developers and test organisations; DOT&E oversees operational T&E standards and, for programs under DOT&E oversight such as MDAPs, reviews and approves operational and live fire test plans, Sec. 2.5)",
+  "source": "p5n_patch_4",
+  "reason": "Source limits DOT&E test plan approval to programs under its oversight"
+ },
+ {
+  "row_id": "Japan-P5-85",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Vehicle manufacturers and similar parties (自動車製作者等)",
+  "source": "p5n_patch_4",
+  "reason": "Source states evaluation of individual vehicles is expected to be done by these parties"
+ },
+ {
+  "row_id": "US-Sector-P5-42",
+  "field": "binding_status",
+  "op": "set",
+  "value": "conditional",
+  "source": "p5n_patch_5",
+  "reason": "Approval requirement applies only to autonomous weapon systems outside paras 1.2.d(1)-(4)"
+ },
+ {
+  "row_id": "US-Sector-P5-42",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "Before formal development, an autonomous weapon system outside the exempt categories needs senior approval (USD(P), USD(R&E), VCJCS); the officials verify plans exist for V&V and T&E to establish reliability, effectiveness and suitability under realistic conditions, including possible adversary actions.",
+  "source": "p5n_patch_5",
+  "reason": "Scope trigger and fuller wording of 4.1.c(5)"
+ },
+ {
+  "row_id": "Japan-P5-86",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "After functional safety is ensured on the basis of ISO 26262 and ISO 21448 (SOTIF), safety can be evaluated by applying a framework based on ISO 35402; the text presents this as a conceivable approach and does not exclude other methods.",
+  "source": "p5n_patch_5",
+  "reason": "Source wording is permissive (考えられる), not directive"
+ },
+ {
+  "row_id": "Japan-P5-86",
+  "field": "who_tests",
+  "op": "set",
+  "value": "Vehicle manufacturer (製造事業者) as named in the section",
+  "source": "p5n_patch_5",
+  "reason": "Actor named in the same paragraph"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-001",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 7.1.2.1.1-7.1.2.1.3 (p.9) for requirements; Sec. 8 (p.10) for compliance and sanctions",
+  "source": "p5v_patch_3",
+  "reason": "Sec. 8 covers enforcement, not the certification, ADSSSA or validation content"
+ },
+ {
+  "row_id": "UAE-AbuDhabi-DoH-001",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Sec. 7.1.2 uses 'expects'; Sec. 8 says listed parties must comply and DoH may impose sanctions, hence ambiguous.",
+  "source": "p5v_patch_3",
+  "reason": "Explains why status is ambiguous"
+ },
+ {
+  "row_id": "US-Sector-P5-52",
+  "field": "binding_status",
+  "op": "set",
+  "value": "ambiguous",
+  "source": "lead_p5",
+  "reason": "Version of the text read is not the enacted act (decision D20)"
+ },
+ {
+  "row_id": "US-Sector-P5-52",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Verifier read the operative wording as a conditional liability defence, but the text read is the Senate committee substitute, not the enacted act, and the enacted text was not read, so the status is left ambiguous.",
+  "source": "lead_p5",
+  "reason": "Version caveat (decision D20)"
+ },
+ {
+  "row_id": "US-Sector-P5-53",
+  "field": "binding_status",
+  "op": "set",
+  "value": "ambiguous",
+  "source": "lead_p5",
+  "reason": "Version of the text read is not the enacted act (decision D20)"
+ },
+ {
+  "row_id": "US-Sector-P5-53",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Verifier read the operative wording as a duty on the Department of Information Resources to create a sandbox, optional for participants, but the text read is the Senate committee substitute, not the enacted act, and the enacted text was not read, so the status is left ambiguous.",
+  "source": "lead_p5",
+  "reason": "Version caveat (decision D20)"
+ }
+]

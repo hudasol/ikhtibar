@@ -1,0 +1,5 @@
+row_id,field,new_value,reason
+US-Sector-P5-41,who_tests,"DoD components (developers and test organisations; DOT&E oversees operational T&E standards and, for programs under DOT&E oversight such as MDAPs, reviews and approves operational and live fire test plans, Sec. 2.5)",Source limits DOT&E test plan approval to programs under its oversight
+US-Sector-P5-53,binding_status,mandatory,Operative text says the department shall create the sandbox program; participation by testers is optional
+US-Sector-P5-53,interpretation_note,"Mandatory for the Department of Information Resources (duty to create the program); optional for participants. Text cited is the Senate committee substitute, not the enacted act.",Version caveat
+Japan-P5-85,who_tests,Vehicle manufacturers and similar parties (自動車製作者等),Source states evaluation of individual vehicles is expected to be done by these parties

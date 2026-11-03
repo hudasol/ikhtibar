@@ -1,0 +1,3 @@
+row_id,field,new_value,reason
+UAE-AbuDhabi-DoH-001,clause_or_page,Sec. 7.1.2.1.1-7.1.2.1.3 (p.9) for requirements; Sec. 8 (p.10) for compliance and sanctions,"Sec. 8 covers enforcement, not the certification, ADSSSA or validation content"
+UAE-AbuDhabi-DoH-001,interpretation_note,"Sec. 7.1.2 uses 'expects'; Sec. 8 says listed parties must comply and DoH may impose sanctions, hence ambiguous.",Explains why status is ambiguous

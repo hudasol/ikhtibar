@@ -1,0 +1,154 @@
+[
+ {
+  "row_id": "International-P5-04",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code ROBU mapped to the table code ROB."
+ },
+ {
+  "row_id": "International-P5-11",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "PERF",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "International-P5-12",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code ROBU mapped to the table code ROB."
+ },
+ {
+  "row_id": "International-P5-21",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "RED",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "International-P5-22",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "RED",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "International-P5-23",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "RED",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "International-P5-24",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code ROBU mapped to the table code ROB."
+ },
+ {
+  "row_id": "International-P5-27",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "REAL",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "US-Sector-P5-36",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code ROBU mapped to the table code ROB."
+ },
+ {
+  "row_id": "US-Sector-P5-41",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "PERF",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "US-Sector-P5-45",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "CONF",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "International-P5-49",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "REAL",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "International-P5-51",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "US-Sector-P5-53",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "REAL",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "UK-P5-68",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "REAL",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "Japan-P5-84",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "REAL",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "Japan-P5-85",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "PERF",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; both blind coders agree."
+ },
+ {
+  "row_id": "Japan-P5-86",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code outside the table code list; blind coders differ (ROB versus RISK), first coder used."
+ },
+ {
+  "row_id": "Japan-P5-88",
+  "field": "primary_test_type",
+  "op": "set",
+  "value": "ROB",
+  "source": "p5_types",
+  "reason": "Extractor code ROBU mapped to the table code ROB."
+ }
+]

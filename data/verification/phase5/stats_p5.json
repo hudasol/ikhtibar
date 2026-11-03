@@ -1,0 +1,184 @@
+{
+ "existing_sample": {
+  "any_fault": 1,
+  "any_fault_ci95": [
+   6.1,
+   79.2
+  ],
+  "any_fault_pct": 33.3,
+  "blocked_by_type": {
+   "robots_disallowed": 5,
+   "session_allowlist": 15,
+   "site_rejected": 7
+  },
+  "bounds_error_pct": {
+   "all_of_unreadable_in_error": 90.0,
+   "none_of_unreadable_in_error": 0.0
+  },
+  "by_family": {
+   "Canada": {
+    "errors": 0,
+    "readable": 0,
+    "sampled": 10
+   },
+   "Saudi": {
+    "errors": 0,
+    "readable": 2,
+    "sampled": 14
+   },
+   "UAE-AbuDhabi-DoH": {
+    "errors": 0,
+    "readable": 1,
+    "sampled": 6
+   }
+  },
+  "error_rate_ci95": [
+   0,
+   56.2
+  ],
+  "error_rate_pct": 0.0,
+  "error_rows": [],
+  "errors": 0,
+  "n": 30,
+  "readable": 3,
+  "readable_pct": 10.0,
+  "verdicts": {
+   "MINOR": 1,
+   "PASS": 2,
+   "UNVERIFIED_BLOCKED": 27
+  }
+ },
+ "new_rows": {
+  "any_fault": 12,
+  "any_fault_ci95": [
+   9.0,
+   25.0
+  ],
+  "any_fault_pct": 15.4,
+  "blocked_by_type": {},
+  "bounds_error_pct": {
+   "all_of_unreadable_in_error": 7.7,
+   "none_of_unreadable_in_error": 7.7
+  },
+  "by_family": {
+   "": {
+    "errors": 6,
+    "readable": 78,
+    "sampled": 78
+   }
+  },
+  "error_rate_ci95": [
+   3.6,
+   15.8
+  ],
+  "error_rate_pct": 7.7,
+  "error_rows": [
+   "US-Sector-P5-35",
+   "US-Sector-P5-52",
+   "UAE-Federal-P5-96",
+   "US-Sector-P5-53",
+   "US-Sector-P5-42",
+   "Japan-P5-86"
+  ],
+  "errors": 6,
+  "n": 78,
+  "readable": 78,
+  "readable_pct": 100.0,
+  "verdicts": {
+   "ERROR": 6,
+   "MINOR": 6,
+   "PASS": 66
+  }
+ },
+ "note": "Verifiers could read only a small share of the existing sample because the session allowed fetches only to addresses seen in search results and the search budget was used up; blocked rows are not counted as correct.",
+ "pooled": {
+  "frozen_phase3_and_4": {
+   "ci95": [
+    4.1,
+    14.0
+   ],
+   "errors": 9,
+   "label": "fresh samples of phases 3 and 4 (frozen)",
+   "pct": 7.7,
+   "readable": 117
+  },
+  "new_rows_only": {
+   "ci95": [
+    3.5,
+    14.2
+   ],
+   "errors": 7,
+   "label": "phase 5 new rows and US candidate rows only",
+   "pct": 7.2,
+   "readable": 97
+  },
+  "plus_phase5_existing_and_new_rows": {
+   "ci95": [
+    4.6,
+    11.6
+   ],
+   "errors": 16,
+   "label": "plus the phase 5 new rows and US candidate rows",
+   "pct": 7.4,
+   "readable": 217
+  },
+  "plus_phase5_existing_sample": {
+   "ci95": [
+    4.0,
+    13.6
+   ],
+   "errors": 9,
+   "label": "plus the phase 5 sample of existing rows",
+   "pct": 7.5,
+   "readable": 120
+  }
+ },
+ "seed": 20261103,
+ "us_candidate_rows": {
+  "any_fault": 8,
+  "any_fault_ci95": [
+   23.1,
+   63.7
+  ],
+  "any_fault_pct": 42.1,
+  "blocked_by_type": {},
+  "bounds_error_pct": {
+   "all_of_unreadable_in_error": 5.3,
+   "none_of_unreadable_in_error": 5.3
+  },
+  "by_family": {
+   "US-NIST": {
+    "errors": 0,
+    "readable": 12,
+    "sampled": 12
+   },
+   "US-OMB": {
+    "errors": 1,
+    "readable": 5,
+    "sampled": 5
+   },
+   "US-WH": {
+    "errors": 0,
+    "readable": 2,
+    "sampled": 2
+   }
+  },
+  "error_rate_ci95": [
+   0.9,
+   24.6
+  ],
+  "error_rate_pct": 5.3,
+  "error_rows": [
+   "US-OMB-P5-03"
+  ],
+  "errors": 1,
+  "n": 19,
+  "readable": 19,
+  "readable_pct": 100.0,
+  "verdicts": {
+   "ERROR": 1,
+   "MINOR": 7,
+   "PASS": 11
+  }
+ }
+}

@@ -24,7 +24,7 @@ OUT_COLS = [
     "text_basis", "block_type", "access_path", "document_to_download", "verification_note",
     "phase1_provisional", "headline_include",
     "verdict_p2_adjusted", "p3_sample", "p3_recheck_verdict", "p3_final_verdict",
-    "p4_sample", "p4_verdict",
+    "p4_sample", "p4_verdict", "p5_sample", "p5_verdict",
 ]
 
 def read(p):
@@ -110,6 +110,8 @@ def main():
 
     from .verify4 import row_verdicts
     p4_verdicts = row_verdicts()
+    from .verify5 import load as load_p5
+    p5_existing = load_p5("p5v")   # fresh sample of existing rows, phase 5 (results kept apart from the main verification fields)
     rows = {}
     order = []
     for r in phase1:
@@ -201,6 +203,8 @@ def main():
         x["p3_final_verdict"] = adjust(ver4[rid]) if rid in ver4 else ""
         x["p4_sample"] = "fresh_random_seed_20261028" if rid in p4_verdicts else ""
         x["p4_verdict"] = p4_verdicts.get(rid, "")
+        x["p5_sample"] = "fresh_random_seed_20261103" if rid in p5_existing else ""
+        x["p5_verdict"] = p5_existing[rid]["verdict"] if rid in p5_existing else ""
         x["p3_sample"] = ("fresh_random_seed_20261016" if rid in fresh3 else
                           "new_row_phase3" if x["sample_type"] == "new_row_phase3" else
                           "phase3_recheck" if rid in ver3 else "")
@@ -267,7 +271,7 @@ def main():
         inc = x["verification_status"] in ("VERIFIED", "VERIFIED_CORRECTED", "VERIFIED_NOTE_ONLY", "NOT_RECHECKED")
         if x["evidence_grade"].startswith("unverified"):
             inc = False
-        if x["evidence_grade"] == "catalogue-level only" and x["sample_type"] == "new_row_phase2":
+        if x["evidence_grade"] == "catalogue-level only" and x["sample_type"] in ("new_row_phase2", "new_row_phase5"):
             inc = False  # portal summary pages only
         x["headline_include"] = "yes" if inc else "no"
         x["next_review_by"] = next_review(x, policy)

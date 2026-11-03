@@ -1,0 +1,5 @@
+row_id,field,new_value,reason
+US-Sector-P5-42,binding_status,conditional,Approval requirement applies only to autonomous weapon systems outside paras 1.2.d(1)-(4)
+US-Sector-P5-42,requirement_paraphrase,"Before formal development, an autonomous weapon system outside the exempt categories needs senior approval (USD(P), USD(R&E), VCJCS); the officials verify plans exist for V&V and T&E to establish reliability, effectiveness and suitability under realistic conditions, including possible adversary actions.",Scope trigger and fuller wording of 4.1.c(5)
+Japan-P5-86,requirement_paraphrase,"After functional safety is ensured on the basis of ISO 26262 and ISO 21448 (SOTIF), safety can be evaluated by applying a framework based on ISO 35402; the text presents this as a conceivable approach and does not exclude other methods.","Source wording is permissive (考えられる), not directive"
+Japan-P5-86,who_tests,Vehicle manufacturer (製造事業者) as named in the section,Actor named in the same paragraph
