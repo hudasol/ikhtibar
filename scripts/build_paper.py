@@ -226,7 +226,7 @@ def p5_tables(v, cm):
         ["Binding rows", "%s (%s\\%%)" % (v["p5_fz_k"], v["p5_fz_pct"]), "%s (%s\\%%)" % (v["p5_ex_tab_k"], v["p5_ex_tab_pct"]),
          "%s (%s\\%%)" % (v["p5_ns_k"], v["p5_ns_pct"])],
         ["Mean over documents, \\%", v["p5_fz_docmean"], v["p5_ex_docmean"], v["p5_ns_docmean"]],
-        ["Document bootstrap interval, \\%", v["p5_fz_boot"], v["p5_ex_boot"], v["p5_ns_docci"]],
+        ["Cluster bootstrap interval (framework level for the first two columns, document level for the third), \\%", v["p5_fz_boot"], v["p5_ex_boot"], v["p5_ns_docci"]],
         ["Leave one family out, \\%", v["p5_fz_lofo"], v["p5_ex_lofo"], "n/a"],
         ["Process only gap, coder A (points)", fmt(cm["process_only_gap_coderA"]["old_rows"].get("difference_pp")), fmt(v["p5_gap_ext"]), fmt(v["p5_gap_ns"])],
         ["Gap with test type fixed (points)", v["p5_fz_adj_type"], v["p5_ex_adj_type"], "n/a"],
