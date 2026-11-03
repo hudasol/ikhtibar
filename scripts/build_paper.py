@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from ikhtibar import paper_p5, eval_values, build_docs  # noqa: E402
+from ikhtibar import paper_p5, paper_p6, eval_values, build_docs  # noqa: E402
 
 PAPER = ROOT / "paper"
 
@@ -260,6 +260,26 @@ def author_block():
             "\\textit{Al Ain University}\\\\Abu Dhabi, United Arab Emirates}}")
 
 
+def p6_table(v):
+    rows = [
+        ("C1", "Mixed documents $\\le$ 25\\% of multi row documents", "%s\\%% (%s of %s)" % (v["p6_d_mixed"], v["p6_d_mixed_k"], v["p6_d_multi"]),
+         "%s\\%% (%s of %s; %s)" % (v["p6_c_mixed"], v["p6_c_mixed_k"], v["p6_c_multi"], v["p6_c_mixed_ci"]), v["p6_C1"]),
+        ("C2", "Concordance excess over chance, lower bound $\\ge$ 20 points", "%s (%s)" % (v["p6_d_excess"], v["p6_d_excess_ci"]),
+         "%s (%s)" % (v["p6_c_excess"], v["p6_c_excess_ci"]), v["p6_C2"]),
+        ("C3", "Documents with any binding test row, upper bound $<$ 50\\%", "%s\\%% (%s)" % (v["p6_d_anyb"], v["p6_d_anyb_ci"]),
+         "%s\\%% (%s of %s; %s)" % (v["p6_c_anyb"], v["p6_c_anyb_k"], v["p6_c_docs"], v["p6_c_anyb_ci"]), v["p6_C3"]),
+        ("C4", "Document weighted binding share, upper bound $<$ 50\\%", "%s\\%% (%s)" % (v["p6_d_docw"], v["p6_d_docw_ci"]),
+         "%s\\%% (%s)" % (v["p6_c_docw"], v["p6_c_docw_ci"]), v["p6_C4"]),
+        ("C5", "Process only gap within test type positive for both coders", "%s and %s points" % (v["p6_d_gapA"], v["p6_d_gapB"]),
+         "%s and %s points (%s; %s)" % (v["p6_c_gapA"], v["p6_c_gapB"], v["p6_c_gapA_ci"], v["p6_c_gapB_ci"]), v["p6_C5"]),
+    ]
+    out = ["\\begin{tabular}{@{}p{0.5cm}p{2.2cm}p{1.5cm}p{2.3cm}p{1.2cm}@{}}\\toprule", "ID & Rule & Design & Confirmation & Outcome \\\\ \\midrule"]
+    for r in rows:
+        out.append(" & ".join(r) + " \\\\")
+    out.append("\\bottomrule\\end{tabular}")
+    return "\n".join(out)
+
+
 def render():
     """Return (main.tex text, refs.bib text, number of works cited)."""
     rows = list(csv.DictReader(open(ROOT / "data" / "paper" / "refs_candidates.csv", encoding="utf-8")))
@@ -275,6 +295,9 @@ def render():
     rb, vf = j("data/robustness.json"), j("data/verification/phase4/stats_p4.json")
     vals.update(tables(b, e, a, rb, vf))
     vals.update(extra_tables())
+    p6v = paper_p6.values()
+    vals.update({k: tex(v) if isinstance(v, str) else v for k, v in p6v.items()})
+    vals["tex_p6_conf"] = p6_table(p6v)
     p5v = paper_p5.values()
     vals.update({k: tex(v) if isinstance(v, str) else v for k, v in p5v.items()})
     vals.update(p5_tables(p5v, j("data/phase5/comparison.json")))
