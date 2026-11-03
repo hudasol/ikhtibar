@@ -1,0 +1,158 @@
+{
+ "binding3": {
+  "C2|C3": {
+   "agree": 95,
+   "agree_pct": 97.9,
+   "kappa": 0.906,
+   "kappa_ci95": [
+    0.772,
+    1.0
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    92.8,
+    99.4
+   ]
+  },
+  "original|C2": {
+   "agree": 93,
+   "agree_pct": 95.9,
+   "kappa": 0.799,
+   "kappa_ci95": [
+    0.604,
+    0.954
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    89.9,
+    98.4
+   ]
+  },
+  "original|C3": {
+   "agree": 93,
+   "agree_pct": 95.9,
+   "kappa": 0.798,
+   "kappa_ci95": [
+    0.6,
+    0.954
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    89.9,
+    98.4
+   ]
+  }
+ },
+ "binding5": {
+  "C2|C3": {
+   "agree": 94,
+   "agree_pct": 96.9,
+   "kappa": 0.917,
+   "kappa_ci95": [
+    0.815,
+    1.0
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    91.3,
+    98.9
+   ]
+  },
+  "original|C2": {
+   "agree": 87,
+   "agree_pct": 89.7,
+   "kappa": 0.727,
+   "kappa_ci95": [
+    0.572,
+    0.863
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    82.1,
+    94.3
+   ]
+  },
+  "original|C3": {
+   "agree": 86,
+   "agree_pct": 88.7,
+   "kappa": 0.7,
+   "kappa_ci95": [
+    0.549,
+    0.831
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    80.8,
+    93.5
+   ]
+  }
+ },
+ "binding_vs_nonbinding_flips": {
+  "C2|C3": 0,
+  "original|C2": 0,
+  "original|C3": 2
+ },
+ "label_shares_pct": {
+  "C2": {
+   "ambiguous": 2.1,
+   "binding": 10.3,
+   "non_binding": 87.6
+  },
+  "C3": {
+   "binding": 12.4,
+   "non_binding": 87.6
+  },
+  "original": {
+   "ambiguous": 2.1,
+   "binding": 8.2,
+   "non_binding": 89.7
+  }
+ },
+ "n": 97,
+ "rows_with_any_binding_disagreement": 11,
+ "seed": 20261103,
+ "test_type": {
+  "C2|C3": {
+   "agree": 93,
+   "agree_pct": 95.9,
+   "kappa": 0.949,
+   "kappa_ci95": [
+    0.893,
+    0.988
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    89.9,
+    98.4
+   ]
+  },
+  "original|C2": {
+   "agree": 71,
+   "agree_pct": 73.2,
+   "kappa": 0.675,
+   "kappa_ci95": [
+    0.564,
+    0.78
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    63.6,
+    81.0
+   ]
+  },
+  "original|C3": {
+   "agree": 70,
+   "agree_pct": 72.2,
+   "kappa": 0.661,
+   "kappa_ci95": [
+    0.547,
+    0.756
+   ],
+   "n": 97,
+   "wilson_ci95": [
+    62.5,
+    80.1
+   ]
+  }
+ }
+}

@@ -1,0 +1,66 @@
+row_id,specificity,confidence,note
+International-P5-06,S2,high,
+International-P5-07,S3,high,
+International-P5-08,S2,medium,Security testing re-run on major update; no method.
+International-P5-09,S3,medium,"Red team/adversarial and multilingual prompt testing named, but only as a note of what testing could be."
+International-P5-14,S3,high,
+International-P5-16,S2,high,
+International-P5-21,S2,medium,"Safety testing via evaluations; property is safety, no method."
+International-P5-26,S1,high,
+EU-Other-P5-29,S2,medium,"Continuous clinical/performance evaluation; safety and performance named, no method."
+US-Sector-P5-30,S3,high,
+US-Sector-P5-31,S3,high,
+Other-Jurisdictions-P5-32,S3,high,
+Other-Jurisdictions-P5-33,S3,medium,Performance goals tied to clinical benefit and risk; no values set.
+Other-Jurisdictions-P5-34,S3,high,
+US-Sector-P5-35,S2,low,"Validation of learned AI named; no method, only open question and framing."
+US-Sector-P5-36,S2,medium,"Stress testing at item, system, aircraft levels cited; kind of test, no procedure."
+US-Sector-P5-41,S3,medium,V&V and realistic developmental/operational T&E against adaptive adversaries; no numeric criterion.
+US-Sector-P5-42,S3,medium,"Verifies plans for V&V/T&E under realistic and adversary conditions; approval gate, no metric."
+US-Sector-P5-43,S3,medium,Assessment under realistic conditions and reprogramming demonstration; no threshold.
+US-Sector-P5-44,S3,high,
+US-Sector-P5-46,S1,medium,"Validation before first use, no property or method."
+US-Sector-P5-47,S3,high,
+US-Sector-P5-48,S2,medium,Accuracy of approximations must be validated; no method.
+International-P5-49,S3,high,
+International-P5-50,S3,medium,Red teaming and simulated-environment validation; regularly is not a fixed frequency.
+International-P5-51,S3,high,
+US-Sector-P5-52,S2,medium,Mainly a liability defence; red team testing named as a kind of test.
+UK-P5-61,S2,low,Roadmap objective to outline test methods; no method itself.
+UK-P5-63,S3,high,
+UK-P5-64,S3,high,
+UK-P5-65,S3,medium,Performance goals for testing from clinical benefit/risk; risks named.
+UK-P5-66,S3,medium,Plan must include V&V methods and failure detection; methods not specified.
+UK-P5-67,S2,medium,Testing of changes and monitoring of performance deviations as examples.
+Other-Jurisdictions-P5-69,S1,medium,Review trigger/submission rule; no property or method.
+Other-Jurisdictions-P5-71,S2,high,
+Other-Jurisdictions-P5-72,S2,medium,Security testing scope across generated code and libraries; no method.
+Japan-P5-81,S3,medium,Independent validators and documented methodology; practice example.
+Japan-P5-83,S2,high,
+Japan-P5-84,S3,high,
+Japan-P5-85,S3,high,
+Japan-P5-86,S3,medium,"Named ISO standards as a framework, presented as optional."
+Japan-P5-87,S3,high,
+Japan-P5-88,S3,high,
+Japan-P5-89,S3,medium,Safeguards on evaluation data reuse; use cap has no stated number.
+Singapore-P5-91,S3,medium,Test protocol and report content with acceptance limits; limits not set by provision.
+Singapore-P5-92,S3,high,
+Singapore-P5-93,S3,high,
+Other-Jurisdictions-P5-94,S1,medium,"Proper validation, no property or method; human in the loop is not a test."
+Other-Jurisdictions-P5-95,S3,medium,Bias removal in validation and representative datasets.
+UAE-Federal-P5-96,S1,medium,"Validation before launch and ongoing review, no property or method."
+UAE-Federal-P5-97,S3,high,
+UAE-Federal-P5-98,S2,high,
+US-NIST-P5-01,S3,medium,Staged framework with named evaluation toolbox; draft guidance.
+US-NIST-P5-02,S1,medium,Proportionality only; no property or method.
+US-NIST-P5-03,S3,medium,Real-world testing to complement controlled testing; test condition.
+US-NIST-P5-09,S2,high,
+US-NIST-P5-10,S2,medium,Vulnerability testing with retest trigger; no method.
+US-NIST-P5-11,S2,high,
+US-NIST-P5-12,S2,medium,Frequent scanning not a fixed frequency.
+US-OMB-P5-01,S1,medium,Test to understand capabilities and limits; no specific property.
+US-OMB-P5-02,S3,high,
+US-OMB-P5-03,S4,medium,Authorization to operate is a gate before deployment; counted as named required approval.
+US-OMB-P5-04,S3,medium,Demonstrations and tests in realistic environments.
+US-OMB-P5-05,S3,low,Performance standards before deployment encouraged; standards unspecified.
+US-WH-P5-02,S2,medium,Testbeds and pilots named; no method.

@@ -1,0 +1,98 @@
+row_id,binding_status,primary_test_type,confidence,note
+International-P5-01,guidance,FAIR,high,
+International-P5-02,voluntary,PERF,medium,Terminology standard; adoption optional
+International-P5-03,voluntary,PERF,high,
+International-P5-04,voluntary,ROB,high,
+International-P5-05,voluntary,PERF,medium,"ITU-T Recommendation, non binding; benchmarking of foundation models"
+International-P5-06,voluntary,SEC,medium,"European Standard with shall wording, but adoption optional"
+International-P5-07,voluntary,SEC,medium,Recommended provisions inside a voluntary standard
+International-P5-08,voluntary,SEC,medium,Recommended re-testing on major update; could be MON
+International-P5-09,voluntary,RED,medium,Technical specification; note points to red team and adversarial testing
+International-P5-10,voluntary,CONF,medium,Normative annex of conformance test cases within a voluntary spec
+International-P5-11,guidance,PERF,low,Definition only; generic test/validate phase
+International-P5-12,guidance,ROB,high,
+International-P5-13,guidance,REAL,high,
+International-P5-14,guidance,RED,medium,Voluntary code; adversarial and independent testing
+International-P5-15,guidance,TRANS,high,
+International-P5-16,guidance,MON,high,
+International-P5-21,guidance,RED,medium,Non binding declaration; frontier safety evaluations
+International-P5-22,guidance,RED,medium,Non binding declaration; evaluation tools for safety testing
+International-P5-23,guidance,RED,medium,Report describing practice; bio misuse capability testing
+International-P5-24,guidance,RED,medium,"Report; adversarial training against harmful elicitation, could be SEC"
+International-P5-25,guidance,RED,low,"Joint testing exercise of agents across leakage, fraud, cyber; mixed"
+International-P5-26,ambiguous,RISK,medium,Draft convention not in force; treaty would bind Parties but wording is should/where appropriate
+International-P5-27,ambiguous,REAL,medium,Draft convention; as appropriate wording; force unsettled
+EU-Other-P5-28,guidance,PERF,medium,MDCG guidance explaining binding MDR; clinical evidence for claims
+EU-Other-P5-29,guidance,MON,medium,Continuous evaluation and change assessment
+US-Sector-P5-30,guidance,PERF,high,
+US-Sector-P5-31,guidance,PERF,medium,Test set independence as test validity
+Other-Jurisdictions-P5-32,guidance,PERF,medium,Test set independence as test validity
+Other-Jurisdictions-P5-33,guidance,GATE,medium,Pre set clinically meaningful performance goals
+Other-Jurisdictions-P5-34,guidance,PERF,high,
+US-Sector-P5-35,guidance,PERF,low,Validation of learned model; early stage roadmap
+US-Sector-P5-36,guidance,ROB,medium,Stress testing and failure analysis
+US-Sector-P5-37,guidance,RISK,medium,Assurance case approach under research
+US-Sector-P5-41,mandatory,PERF,medium,"DoD directive binding on DoD; V&V and T&E, also adversary conditions"
+US-Sector-P5-42,conditional,GATE,high,Applies outside exempt categories; senior approval
+US-Sector-P5-43,conditional,GATE,high,Pre-fielding review; applies outside exempt categories
+US-Sector-P5-44,guidance,PERF,medium,"Supervisory guidance, not binding rule"
+US-Sector-P5-45,guidance,CONF,medium,Independent validation
+US-Sector-P5-46,guidance,GATE,medium,Validation before first use
+US-Sector-P5-47,guidance,PERF,high,
+US-Sector-P5-48,guidance,TRANS,medium,Circular interprets law; focus on validating explanation methods
+International-P5-49,guidance,REAL,medium,Staged test environments
+International-P5-50,guidance,RED,high,
+International-P5-51,guidance,ROB,medium,Safety impacts and failsafe reversion; could be OVER
+US-Sector-P5-52,conditional,RED,medium,Statute safe harbour conditional on testing and other conditions
+US-Sector-P5-53,conditional,REAL,medium,Department must create sandbox; participation by approved persons
+UK-P5-54,guidance,RED,high,
+UK-P5-61,guidance,PERF,medium,Planned guidance on performance assessment methods
+UK-P5-62,guidance,PERF,low,Planned work on premarket data on safety and effectiveness
+UK-P5-63,guidance,PERF,medium,Test set independence as test validity
+UK-P5-64,guidance,PERF,high,
+UK-P5-65,guidance,ROB,low,"Mixed: overfitting, degradation mitigation and performance goals"
+UK-P5-66,guidance,PERF,medium,Verification and validation of planned changes
+UK-P5-67,guidance,MON,medium,Monitoring and response to deviations
+UK-P5-68,guidance,REAL,medium,Press release describing a proposed live testing service
+Other-Jurisdictions-P5-69,conditional,CONF,medium,Triggered by high or critical risk; committee review
+Other-Jurisdictions-P5-70,mandatory,RISK,medium,Binding on NSW agencies per policy; assessment where required
+Other-Jurisdictions-P5-71,guidance,RISK,medium,Regulator letter of expectations
+Other-Jurisdictions-P5-72,guidance,SEC,high,
+Japan-P5-81,guidance,PERF,medium,Describes practice examples; independent validation
+Japan-P5-82,guidance,PERF,medium,Notes lack of established metrics
+Japan-P5-83,guidance,FAIR,high,
+Japan-P5-84,guidance,REAL,medium,"Staged simulation, track and road testing"
+Japan-P5-85,guidance,PERF,medium,Scenario based evaluation; could be REAL
+Japan-P5-86,guidance,ROB,low,Functional safety standards; approach is optional
+Japan-P5-87,guidance,PERF,high,
+Japan-P5-88,guidance,PERF,medium,Coverage of clinical variation; could be FAIR
+Japan-P5-89,guidance,PERF,medium,Test data reuse and validity
+Japan-P5-90,guidance,MON,low,"Change plan scheme; generally expected, not strictly binding"
+Singapore-P5-91,guidance,PERF,medium,Regulatory guidelines supporting registration
+Singapore-P5-92,guidance,PERF,high,
+Singapore-P5-93,guidance,PERF,high,
+Other-Jurisdictions-P5-94,guidance,PERF,medium,Validation plus human in the loop
+Other-Jurisdictions-P5-95,guidance,FAIR,high,
+UAE-Federal-P5-96,guidance,PERF,medium,Regulator guidelines with should wording; validation pre-launch
+UAE-Federal-P5-97,guidance,PERF,medium,Independent validation; could be CONF
+UAE-Federal-P5-98,guidance,MON,low,Review framework before and periodically after deployment
+UAE-Federal-P5-99,guidance,PERF,low,Documentation takes code of validation it supports
+US-NIST-P5-01,guidance,PERF,low,Evaluation planning framework with mixed toolbox
+US-NIST-P5-02,guidance,RISK,low,Proportionality to risk
+US-NIST-P5-03,guidance,REAL,high,
+US-NIST-P5-04,guidance,PERF,low,Measurement science notes; explicitly not requirements
+US-NIST-P5-05,guidance,PERF,low,"Pilot practice across model, red team and field levels"
+US-NIST-P5-06,guidance,ROB,medium,Contextual Robustness Index
+US-NIST-P5-07,guidance,PERF,low,Three level testbed design
+US-NIST-P5-08,guidance,GATE,medium,Thresholds left to evaluation plans
+US-NIST-P5-09,guidance,SEC,high,
+US-NIST-P5-10,guidance,SEC,high,
+US-NIST-P5-11,guidance,SEC,high,
+US-NIST-P5-12,guidance,SEC,medium,Post release scanning; could be MON
+US-OMB-P5-01,conditional,PERF,medium,"Binds agencies, qualified by practicability"
+US-OMB-P5-02,mandatory,MON,medium,Binding on agencies for AI contracts
+US-OMB-P5-03,mandatory,GATE,medium,Authorization to operate before deployment
+US-OMB-P5-04,guidance,REAL,medium,Should where practicable
+US-OMB-P5-05,guidance,GATE,medium,Encouraged only
+US-WH-P5-01,guidance,PERF,low,Policy goals on evaluation ecosystem
+US-WH-P5-02,guidance,REAL,medium,Testbeds and national security evaluations

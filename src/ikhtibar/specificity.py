@@ -24,7 +24,9 @@ GROUP = {"mandatory": "binding", "conditional": "binding", "voluntary": "non_bin
 
 def load_coder(tag):
     out = {}
-    for part in (1, 2):
+    for part in (1, 2, 3):   # part 3: phase 5 new rows (coded after the first two parts)
+        if not (P5 / f"spec_{tag}_{part}.csv").exists():
+            continue
         with open(P5 / f"spec_{tag}_{part}.csv", encoding="utf-8", newline="") as f:
             for r in csv.DictReader(f):
                 out[r["row_id"]] = r["specificity"].strip()

@@ -1,0 +1,66 @@
+row_id,specificity,confidence,note
+International-P5-06,S2,high,
+International-P5-07,S3,high,
+International-P5-08,S2,high,
+International-P5-09,S3,medium,Note names red team and adversarial testing (S2) plus multilingual prompt testing as a test condition
+International-P5-14,S3,high,
+International-P5-16,S2,medium,"Names vulnerabilities, incidents, misuse but no method"
+International-P5-21,S2,medium,Safety testing through evaluations; property is safety only
+International-P5-26,S1,medium,"Testing before release and after modification, no property named"
+EU-Other-P5-29,S2,medium,"Safety and performance evaluation named, no method"
+US-Sector-P5-30,S3,high,
+US-Sector-P5-31,S3,high,
+Other-Jurisdictions-P5-32,S3,high,
+Other-Jurisdictions-P5-33,S3,medium,Performance goals set from clinical benefit and risk; no values
+Other-Jurisdictions-P5-34,S3,high,
+US-Sector-P5-35,S2,medium,Validation need and modelling approach; property is expected performance
+US-Sector-P5-36,S3,medium,"Stress testing at item, system and aircraft levels"
+US-Sector-P5-41,S3,medium,Realistic operational conditions and adaptive adversaries; no numeric criterion
+US-Sector-P5-42,S3,medium,Plans for V&V and T&E under realistic conditions with adversary actions
+US-Sector-P5-43,S3,medium,Realistic conditions assessment; reprogramming demonstration
+US-Sector-P5-44,S3,high,
+US-Sector-P5-46,S1,medium,"Timing of validation only, no fixed deadline or method"
+US-Sector-P5-47,S3,high,
+US-Sector-P5-48,S2,medium,"Accuracy of approximations to be validated, no method"
+International-P5-49,S3,high,
+International-P5-50,S3,medium,Red teaming plus simulated environments
+International-P5-51,S3,high,
+US-Sector-P5-52,S2,medium,Liability safe harbour condition; names adversarial or red team testing
+UK-P5-61,S2,medium,"Roadmap objective on test methods, none named; safe and effective"
+UK-P5-63,S3,high,
+UK-P5-64,S3,high,
+UK-P5-65,S2,medium,"Risks named (overfitting, degradation, security) and goals for testing, no method"
+UK-P5-66,S3,medium,Plan must include V&V methods and failure detection mechanisms
+UK-P5-67,S2,medium,"Comprehensive testing and monitoring of performance deviations, no method"
+Other-Jurisdictions-P5-69,S1,high,"Review submission trigger, no test described"
+Other-Jurisdictions-P5-71,S2,high,
+Other-Jurisdictions-P5-72,S2,high,
+Japan-P5-81,S3,high,
+Japan-P5-83,S2,medium,Bias named; indicators explicitly undefined
+Japan-P5-84,S3,high,
+Japan-P5-85,S3,high,
+Japan-P5-86,S3,high,
+Japan-P5-87,S3,medium,Evaluation data requirement
+Japan-P5-88,S3,high,
+Japan-P5-89,S3,medium,Safeguards on evaluation data reuse; cap without value
+Singapore-P5-91,S3,high,
+Singapore-P5-92,S3,high,
+Singapore-P5-93,S3,high,
+Other-Jurisdictions-P5-94,S1,medium,"Validation required, nothing on what or how"
+Other-Jurisdictions-P5-95,S3,medium,Representative datasets and bias adjustment in validation
+UAE-Federal-P5-96,S1,medium,"Validation before launch with ongoing review, no property"
+UAE-Federal-P5-97,S3,high,
+UAE-Federal-P5-98,S2,medium,"Reliability, fairness, accuracy named; periodic not a fixed frequency"
+US-NIST-P5-01,S3,medium,Staged planning framework and toolbox of methods
+US-NIST-P5-02,S1,medium,"Proportionality only, no property or method"
+US-NIST-P5-03,S3,medium,Real-world tests to complement controlled testing
+US-NIST-P5-09,S2,high,
+US-NIST-P5-10,S3,medium,"Vulnerability testing with retest triggers, no fixed frequency"
+US-NIST-P5-11,S3,medium,Integrity and provenance verification plus scanning before use
+US-NIST-P5-12,S2,medium,"Frequent scanning, periodic audits; no fixed frequency"
+US-OMB-P5-01,S1,medium,Testing of capabilities and limits during proposal evaluation
+US-OMB-P5-02,S3,high,
+US-OMB-P5-03,S4,medium,Authorization to operate as a gate before deployment
+US-OMB-P5-04,S3,medium,Demonstrations in realistic environments
+US-OMB-P5-05,S4,low,"Performance standards to be met before deployment, encouraged and unspecified"
+US-WH-P5-02,S2,medium,Pilot testbeds and national security evaluations named
