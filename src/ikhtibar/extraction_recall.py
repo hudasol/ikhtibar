@@ -116,6 +116,7 @@ def read_csv(path):
 def stats():
     sample = json.load(open(D / "sample.json", encoding="utf-8"))
     docs = sample["documents"]
+    cov = json.load(open(D / "coverage.json", encoding="utf-8"))
     raw = {}
     for did in docs:
         p = D / "raw" / f"{did}.csv"
@@ -137,7 +138,7 @@ def stats():
         tbl_rows = [rid for rid in d["row_ids"]]
         n_tbl = len(tbl_rows)
         n_tbl_found = sum(1 for rid in tbl_rows if rid in matched_rows)
-        per_doc[did] = {"family": d["family"], "group": d["group"], "length_class": d["length_class"],
+        per_doc[did] = {"coverage": cov.get(did, {}).get("read", "unknown"), "precision_basis": bool(cov.get(did, {}).get("precision_basis")), "family": d["family"], "group": d["group"], "length_class": d["length_class"],
                         "n_independent": n_ind, "n_independent_in_table": n_found,
                         "n_table_rows": n_tbl, "n_table_rows_found_independently": n_tbl_found}
         for r in ind:
@@ -148,6 +149,11 @@ def stats():
     for v in per_doc.values():
         for k in ("n_independent", "n_independent_in_table", "n_table_rows", "n_table_rows_found_independently"):
             tot[k] += v[k]
+    ptot = collections.Counter()
+    for v in per_doc.values():
+        if v["precision_basis"]:
+            for k in ("n_table_rows", "n_table_rows_found_independently"):
+                ptot[k] += v[k]
     byfam = {}
     for g in sorted({v["group"] for v in per_doc.values()}):
         a = sum(v["n_independent_in_table"] for v in per_doc.values() if v["group"] == g)
@@ -173,10 +179,12 @@ def stats():
                       "pct": round(100 * tot["n_independent_in_table"] / tot["n_independent"], 1) if tot["n_independent"] else None,
                       "wilson_row_ci95": wilson(tot["n_independent_in_table"], tot["n_independent"]),
                       "doc_bootstrap_ci95": doc_bootstrap(per_doc, "n_independent_in_table", "n_independent") if per_doc else None},
-           "precision": {"hits": tot["n_table_rows_found_independently"], "n": tot["n_table_rows"],
-                         "pct": round(100 * tot["n_table_rows_found_independently"] / tot["n_table_rows"], 1) if tot["n_table_rows"] else None,
-                         "wilson_row_ci95": wilson(tot["n_table_rows_found_independently"], tot["n_table_rows"]),
-                         "doc_bootstrap_ci95": doc_bootstrap(per_doc, "n_table_rows_found_independently", "n_table_rows") if per_doc else None},
+           "precision": {"basis": "only documents whose whole text the reader reached (coverage.json precision_basis)",
+                         "documents": sum(1 for v in per_doc.values() if v["precision_basis"]),
+                         "hits": ptot["n_table_rows_found_independently"], "n": ptot["n_table_rows"],
+                         "pct": round(100 * ptot["n_table_rows_found_independently"] / ptot["n_table_rows"], 1) if ptot["n_table_rows"] else None,
+                         "wilson_row_ci95": wilson(ptot["n_table_rows_found_independently"], ptot["n_table_rows"]),
+                         "doc_bootstrap_ci95": doc_bootstrap({k: v for k, v in per_doc.items() if v["precision_basis"]}, "n_table_rows_found_independently", "n_table_rows") if sum(1 for v in per_doc.values() if v["precision_basis"]) > 1 else None},
            "by_group": byfam,
            "force_of_independent_provisions": {"matched_n": len(matched_force), "matched_binding_pct": share(matched_force),
                                                "missed_n": len(missed_force), "missed_binding_pct": share(missed_force)},

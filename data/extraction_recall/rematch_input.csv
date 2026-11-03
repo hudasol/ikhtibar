@@ -1,0 +1,118 @@
+doc_id,indep_id,locator,paraphrase
+X04,I02,"1.1.1 What does the Starter Kit do, p.9","Three step approach: identify relevant risks, run tests in a structured way from outputs to components, then assess results against baseline safety."
+X04,I03,"1.1.2 Who should use it, p.9",Developers and testers can use the guide to validate whether the app is safe and reliable; compliance staff can use it to judge sufficiency of testing.
+X04,I05,"1.1.4 Alignment, p.10","Kit is aligned with AI Verify outcomes that recommend regular safety testing and testing for potential bias, and with NIST AI RMF MEASURE functions."
+X04,I09,"1.3.1 Rigorous and trusted tests, p.13","Test methodology must be rigorous and well designed for results to be credible; approach should combine output testing and component testing, via benchmarking and red teaming."
+X04,I16,"2.1.1 Limits of benchmarks, p.18","Benchmarks need to be complemented by red teaming for blind spots, rare failure modes and multi-turn scenarios; simulation based testing may also be considered."
+X04,I17,"2.1.2 Test datasets, p.19-20","Test dataset should represent the app's purpose, domain and anticipated usage, with realistic inputs, subject matter expert input, and about 30-50 prompts per narrow topic (100-200 wider)."
+X04,I20,"Moonshot evaluators, p.23",Users can switch evaluators or define their own LLM-as-a-Judge criteria in the testing tool.
+X04,I24,"2.2.2 Case study, p.26","IMDA ran a multicultural, multilingual red teaming exercise across nine countries."
+X04,I25,"2.2.3 Automated red teaming, p.27",Automated red teaming uses an attacker LLM to iteratively probe and refine attacks; a case study tested an agency chatbot across priority behaviour categories.
+X04,I28,"3.1.3 Calibrating extent of testing, p.34","Test depth should reflect reputational or legal exposure; even low risk apps should run simple tests on a small representative set; repeat tests and report average, minimum and maximum."
+X04,I29,"3.1.4 Setting thresholds, p.34-35","Each organisation must set its own thresholds before testing, with clear targets per risk scenario, refined and validated after testing."
+X04,I38,"3.2.1 Case study GPT-Legal, p.44","Case study used ROUGE, FactScore and human evaluation as a final check."
+X04,I40,"3.2.2 Case study KnowOrNot, p.46-47",Developers can use an open tool to build out of knowledge base robustness tests for their RAG pipeline.
+X04,I42,"3.2.3 Retrieval testing, p.48-49","Isolate the retriever and compare retrieved items to ground truth using precision and recall (recall first), or an LLM judge for relevance when no ground truth exists; keep references current."
+X04,I43,"3.2.3 Grounding during generation, p.50-51","Test whether output is grounded in retrieved information using a binary or percentage grounding score from a fine tuned model or LLM judge, reusing the output test dataset."
+X04,I44,"3.2.3 Case study Resaro, p.51","Case study tested an AML summariser with 400 multilingual samples including perturbed inputs, measuring precision of extracted facts."
+X04,I46,"3.3 Choosing method, p.53",Pick parity testing when groups and ground truth labels exist; perturbation testing when labels are unavailable or for specific updates.
+X14,I08,Section MAP 2.1 MP-2.1-002,Test and evaluate data and content flows.
+X14,I11,Section MAP 2.3 MP-2.3-004,Develop tests to identify synthetic content.
+X14,I19,Section MEASURE 1.1 MS-1.1-007,Evaluate training data quality and provenance using chaos engineering and stakeholder feedback.
+X14,I22,Section MEASURE 2.3 MS-2.3-001,Consider baseline benchmark performance when selecting a model for fine-tuning or RAG.
+X14,I28,Section MEASURE 2.5 MS-2.5-005,"Verify training, TEVV and fine-tuning or RAG data provenance and grounding."
+X14,I29,Section MEASURE 2.5 MS-2.5-006,Regularly review safety and security guardrails.
+X14,I30,Section MEASURE 2.6 MS-2.6-002,"Assess training data for bias, IP, privacy, obscenity, extremism and CBRN content."
+X14,I33,Section MEASURE 2.6 MS-2.6-005,Verify architecture monitors outputs and recovers from errors and anomalies.
+X14,I39,Section MEASURE 2.7 MS-2.7-007,"Perform AI red teaming for resilience against attacks such as prompt injection, poisoning, extraction."
+X14,I48,Section MEASURE 2.11 MS-2.11-005,Assess ratio of synthetic to non-synthetic training data for homogeneity.
+X14,I49,Section MEASURE 2.12 MS-2.12-001,Assess safety to physical environments when deploying GAI systems.
+X14,I54,Section MEASURE 4.2 MS-4.2-002,Evaluate performance in real-world scenarios.
+X14,I66,Section MANAGE 3.2 MG-3.2-009,Decommission or retrain pre-trained models outside defined limits.
+X03,I03,p.9 Plan and Design (lifecycle task list),Plan and Design tasks include a feasibility assessment of the chosen approach.
+X03,I08,"p.14 Principle 1 Fairness, Build and Validate",The champion model's fairness metrics should be within the defined threshold for sensitive features.
+X03,I11,"p.17 Principle 2 Privacy and Security, Deploy and Monitor",Privacy impact assessment and risk management assessment should be continuously revisited.
+X03,I15,"p.21 Principle 5 Reliability and Safety, Plan and Design",Standards and protocols for assessing the reliability of an AI system are necessary.
+X03,I16,"p.22 Principle 5, Prepare Input Data","Build and validate should test how the system behaves under outlier events, using stress test data prepared for extreme scenarios."
+X03,I18,"p.22 Principle 5, Build and Validate","Rigorous testing, validation and re-assessment, with adequate mechanisms, is described as required."
+X03,I23,"p.25 Principle 6, Deploy and Monitor",Periodic UI and UX testing should be conducted to avoid user confusion.
+X03,I29,"p.36 Annexure A, Architecture for Trustworthy AI",Algorithm assessment is described as an objective of the architecture tool.
+X03,I31,"p.39 Annexure A, Algorithm Auditing","Algorithm auditing should be a systematic, continuous process that can detect unexpected algorithmic behaviour."
+X03,I33,"p.42-47 Annexure C, Phase 1 Plan and Design","Checklist asks whether risk assessment, impact analysis on human rights, harm/wrong result likelihood assessment and privacy impact mechanism were done."
+X03,I34,"p.42-47 Annexure C, Phase 3 Build and Validate",Checklist asks whether system behaviour was tested against unexpected situations and environments.
+X03,I41,"p.31 Roles, AI System Assessor",An AI System Assessor is a person or body responsible for auditing AI systems to achieve certain goals.
+X07,I04,GOVERN 2.1 suggested actions,Separate AI development functions from AI testing functions and define a testing and evaluation role.
+X07,I05,GOVERN 4.2 suggested actions,Establish impact assessment policies and processes and check they suit the potential negative impact of a system.
+X07,I11,MAP 2.2 suggested actions,Plan and test human-AI configurations under close to real-world conditions and document results.
+X07,I12,MAP 2.3 suggested actions,Identify and document experiment design and statistical techniques valid for testing.
+X07,I13,MAP 2.3 suggested actions,Develop and apply TEVV protocols for models and system subcomponents deployment and operation.
+X07,I18,MAP 2.3 suggested actions,Establish practices to check for capabilities beyond those planned.
+X07,I25,MAP 3.5 suggested actions,Include relevant AI actors in prototyping and testing.
+X07,I26,MAP 4.1 suggested actions,Review audit reports and testing results for third party components.
+X07,I30,MAP 5.1 suggested actions,Establish red teaming processes to identify system limitations.
+X07,I32,MAP 5.2 suggested actions,Use a team independent of design and development to assess the system.
+X07,I35,MEASURE 1.1 suggested actions,Identify testing procedures and metrics to show whether the system is fit for purpose and trustworthy.
+X07,I39,MEASURE 1.1 suggested actions,Report metrics to inform assessments of generalizability and reliability.
+X07,I45,MEASURE 1.3 suggested actions,Plan and evaluate prototypes with end user populations early and continuously.
+X07,I47,MEASURE 2.1 suggested actions,Regularly assess effectiveness of tools documenting measurement approaches and test sets.
+X07,I52,MEASURE 2.3 suggested actions,Regularly test and evaluate systems in non optimized conditions with relevant AI actors.
+X07,I54,MEASURE 2.3 suggested actions,Measure and document performance criteria such as validity and false positive and negative rates.
+X07,I59,MEASURE 2.5 suggested actions,Document approaches to measure construct internal and external validity using experimental design and statistics.
+X07,I60,MEASURE 2.5 suggested actions,Assess and document variance and establish robustness and reliability measures.
+X07,I62,MEASURE 2.5 suggested actions,Use standard statistical methods to test bias variance and reliability of outcomes.
+X07,I63,MEASURE 2.5 suggested actions,Identify TEVV approaches for exploring system limitations including out of scope scenarios.
+X07,I67,MEASURE 2.6 suggested actions,Document practice and measure incident response plans.
+X07,I68,MEASURE 2.7 suggested actions,Establish and track security tests and metrics such as red teaming activities.
+X07,I69,MEASURE 2.7 suggested actions,Use red team exercises to test the system under adversarial or stress conditions and document results.
+X07,I76,MEASURE 2.9 suggested actions,Assess explanation properties such as fidelity and test explanation quality with end users.
+X07,I77,MEASURE 2.9 suggested actions,Test for changes in models over time including models adjusting to production data.
+X07,I79,MEASURE 2.11 suggested actions,Conduct fairness assessments quantifying harms with fairness metrics across and within groups.
+X07,I86,MEASURE 2.11 suggested actions,Work with human factors experts to evaluate biases in presentation of output.
+X07,I92,MANAGE 1.1 suggested actions,Regularly assess and document performance relative to trustworthiness characteristics.
+X07,I96,MANAGE 4.1 suggested actions,Evaluate trustworthiness in conditions similar to the deployment context and prior to deployment.
+X07,I98,MANAGE 4.2 suggested actions,Assess alignment of proposed improvements with legal frameworks and context norms.
+X11,I04,"Part 3 para 39, p22","Recommends a baseline set of pre-deployment safety and trustworthiness evaluations for LLMs, to be run irrespective of use case."
+X11,I06,"Part 3 table, Robustness, p25",Recommends evaluating robustness using the DecodingTrust framework.
+X11,I09,"Part 3 table, Bias: Fairness, p26",Recommends evaluating fairness using the UCI Adult dataset and DecodingTrust.
+X11,I12,"Part 3 table, Toxicity generation, p26",Recommends evaluating toxicity generation using RealToxicityPrompts scored with Perspective API.
+X11,I14,"Part 3 table, Data Governance: Non-personal data, p27",Recommends evaluating non-personal (e.g. copyrighted) data memorisation using a pre-processed HELM dataset and HELM.
+X11,I15,"Part 3 paras 47-50, p27",States that evaluations should ideally use contextually attuned approaches suited to the use case.
+X11,I18,"Part 3 para 51, p28",Organisations should examine the tools used to decide which evaluations to re-conduct.
+X11,I20,"Part 3 para 53, p28","Additional evaluations are warranted for frontier model risks, on top of the baseline, using the latest tools and techniques."
+X11,I22,"Conclusion para 55, p29",Encourages organisations to minimally conduct the baseline evaluations before LLM release and deployment.
+X08,I04,Art. 3(57) with 3(53),"Defines testing in real-world conditions as temporary testing for intended purpose outside a laboratory, governed by a real-world testing plan."
+X08,I06,Art. 5(2),Use of real-time remote biometric identification for law enforcement requires a completed fundamental rights impact assessment under Art. 27 first.
+X08,I07,Art. 6(4),A provider who concludes an Annex III system is not high-risk must document that assessment before placing it on the market.
+X08,I09,Art. 9(6) first sentence,High-risk systems must be tested to identify the most appropriate and targeted risk management measures.
+X08,I11,Art. 9(7),Testing procedures may include testing in real-world conditions in accordance with Art. 60.
+X08,I15,Art. 10(6),"For high-risk systems not using training techniques, the data set rules apply to testing data sets only."
+X08,I16,Art. 13(3)(b)(ii),"Instructions for use must state the accuracy, robustness and cybersecurity levels against which the system was tested and validated."
+X08,I22,Art. 17(1)(a),Quality management system must include a compliance strategy covering conformity assessment procedures.
+X08,I29,Art. 27(3),Deployers must notify the market surveillance authority of the fundamental rights impact assessment results.
+X13,I01,Organisation (heading),The Institute describes its work as testing leading AI systems before they are released to the public.
+X13,I04,Research > Evaluations & Solutions (heading),The Institute open sources many of its evaluation tools for wider use.
+X13,I05,Research > Safeguards (heading),A research question asks how effective current safety and security features are at preventing misuse.
+X13,I06,Research > Alignment (heading),A research question asks how reliably AI systems behave as intended.
+X02,I02,"Part 2 C. Common Guiding Principles, 2) Safety (1), p.15-16","Ensure the AI system or service sufficiently meets requirements, including accuracy of outputs."
+X02,I03,"Part 2 C. 2) Safety (1), p.15-16",Ensure performance is maintained under various circumstances and that grossly incorrect judgments are avoided.
+X02,I06,"Part 2 C. 3) Fairness (1), p.16-17",Decide whether unavoidable biases are acceptable from the viewpoint of respect for human rights.
+X02,I08,"Part 2 C. 5) Ensuring security (2), p.18-19","To address security risks, check the matters requiring attention."
+X02,I10,"Part 2 D. Advanced AI systems, I), p.24-25","Developers of advanced AI should identify, evaluate and mitigate risks across the AI lifecycle."
+X02,I11,"Part 2 D. I), p.24-25","Developers should use diverse internal and independent external testing, such as red teaming, including before deployment."
+X02,I13,"Part 2 D. footnote 40, p.25",Defines red teaming as a team that verifies effectiveness of security response systems and countermeasures.
+X02,I14,"Part 2 E. Building AI governance, (1), p.26-27",Each actor first conducts an environment and risk analysis of the AI system or service.
+X02,I15,"Part 2 E. (2), p.27","Based on the analysis results, each actor decides whether to develop, provide or use the AI."
+X02,I25,"Part 3 Code of Conduct, item VI, p.32",Assess the cyber security risks of advanced AI systems.
+X02,I26,"Part 3 Code of Conduct, item XI, p.33",Use countermeasures including testing and fine tuning against leaks of sensitive data.
+X02,I32,"Part 4 P-3) i (bias), p.34","Examine whether bias that arbitrarily restricts business processes may be introduced by configuration, data or external services."
+X02,I34,"Part 4 P-2) ii, p.35",Periodically verify the AI system or service is used for proper purposes.
+X02,I35,"Part 4 P-7) i heading, p.35",Provider explains conformity to common guiding principles to business users.
+X09,I11,"Leading AI governance, initiative (2)(iii), p.20","Exchange views with US CAISI, UK AISI and others on AI evaluation and standardization."
+X09,I13,"AI adoption, initiative (1)(i), pp.9-10",Develop rules for administrative bodies introducing AI agents.
+X09,I14,"Implementation chapter, initiative (3)(vi), p.24",Conduct demonstration research specialised for education to promote safe AI deployment in schools.
+X12,I03,Ch.10 section 10.1 Ethics and Compliance Board (approx p.84),"An ethics and compliance board reviews every initiative for ethical alignment, privacy safeguards and regulatory adherence."
+X12,I06,Ch.10 section 10.2 Quality Assurance Process: performance benchmarking (approx p.86),Quality assurance also includes performance benchmarking of AI systems.
+X12,I07,Ch.10 section 10.2 Quality Assurance Process: user acceptance testing (approx p.86),Quality assurance also includes user acceptance testing.
+X06,I01,"Introduction, final paragraph (best practices)",Signatories affirm they will implement current best practice including internal and external red teaming of frontier models for severe and novel threats.
+X06,I05,"Outcome 1, commitment II","Organisations will assess whether their intolerable risk thresholds have been breached, including monitoring how close a model is to breach."
+X06,I07,"Outcome 1, commitment IV",Organisations will develop and deploy models only if they assess that residual risks would stay below thresholds.

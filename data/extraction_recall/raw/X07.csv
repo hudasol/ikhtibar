@@ -1,0 +1,99 @@
+indep_id,locator,paraphrase,independent_force,what_is_tested,notes
+I01,GOVERN 1.2 suggested actions,Detail the organization's model testing and validation processes within risk management policy.,non_binding,model testing and validation process,Policy-level; included because it names testing processes
+I02,GOVERN 1.2 suggested actions,Set frequency and detail of monitoring auditing and review processes.,non_binding,audit and review cadence,Weak; partly monitoring
+I03,GOVERN 1.3 suggested actions,Set policies defining mechanisms and assessment scales for measuring potential system impacts.,non_binding,impact measurement scales,Policy about assessment; borderline
+I04,GOVERN 2.1 suggested actions,Separate AI development functions from AI testing functions and define a testing and evaluation role.,non_binding,independence of testing function,Structural; supports evaluation independence
+I05,GOVERN 4.2 suggested actions,Establish impact assessment policies and processes and check they suit the potential negative impact of a system.,non_binding,impact assessment,Unclear whether testing evidence is required
+I06,GOVERN 4.3 suggested actions,Establish policies and procedures to facilitate and equip AI system testing.,non_binding,AI system testing capability,
+I07,GOVERN 5.2 suggested actions,Establish approval or disapproval policies for design and use econometric evaluation of impacts to assess risk.,non_binding,impact likelihood evaluation,Borderline
+I08,GOVERN 6.1 suggested actions,Thoroughly test third party AI systems.,non_binding,third party AI systems,
+I09,MAP 1.1 suggested actions,Gain awareness about evaluating scientific claims related to system performance.,non_binding,performance claims,Weak
+I10,MAP 1.6 suggested actions,Develop and standardize practices to assess potential impacts at all lifecycle stages.,non_binding,impact assessment,
+I11,MAP 2.2 suggested actions,Plan and test human-AI configurations under close to real-world conditions and document results.,non_binding,human-AI configuration,
+I12,MAP 2.3 suggested actions,Identify and document experiment design and statistical techniques valid for testing.,non_binding,test design,
+I13,MAP 2.3 suggested actions,Develop and apply TEVV protocols for models and system subcomponents deployment and operation.,non_binding,TEVV protocols,
+I14,MAP 2.3 suggested actions,Show and document that performance and validation metrics are interpretable and unambiguous.,non_binding,validation metrics,
+I15,MAP 2.3 suggested actions,Document assumptions techniques and metrics used for testing and evaluation across the lifecycle.,non_binding,test and evaluation assumptions,
+I16,MAP 2.3 suggested actions,Identify testing modules that can be built in throughout the lifecycle.,non_binding,test modules,
+I17,MAP 2.3 suggested actions,Develop TEVV approaches to detect and assess potentially harmful impacts.,non_binding,harmful impacts,Wording paraphrased from truncated quote
+I18,MAP 2.3 suggested actions,Establish practices to check for capabilities beyond those planned.,non_binding,excess capabilities,
+I19,MAP 2.3 suggested actions,Establish processes to test and verify design assumptions about deployment contexts.,non_binding,deployment context assumptions,
+I20,MAP 3.1 suggested actions,Consider performance against human baseline or standard benchmarks.,non_binding,benchmark comparison,
+I21,MAP 3.4 suggested actions,Include operators and end users in prototyping and testing.,non_binding,prototype testing with users,
+I22,MAP 3.4 suggested actions,Conduct testing under scenarios similar to deployment conditions.,non_binding,deployment like conditions,
+I23,MAP 3.4 suggested actions,Verify that system output is interpretable and unambiguous for downstream decisions.,non_binding,output interpretability,
+I24,MAP 3.5 suggested actions,Evaluate oversight practices for validity and reliability and retest after extensive updates.,non_binding,human oversight practices,
+I25,MAP 3.5 suggested actions,Include relevant AI actors in prototyping and testing.,non_binding,prototype testing,
+I26,MAP 4.1 suggested actions,Review audit reports and testing results for third party components.,non_binding,third party test evidence,
+I27,MAP 4.2 suggested actions,Review third party data and models for bias and privacy risks.,non_binding,third party data and models,Borderline review rather than testing
+I28,MAP 5.1 suggested actions,Establish assessment scales for measuring impact.,non_binding,impact assessment,
+I29,MAP 5.1 suggested actions,Apply TEVV regularly at key lifecycle stages tied to impacts and update frequency.,non_binding,TEVV at key stages,
+I30,MAP 5.1 suggested actions,Establish red teaming processes to identify system limitations.,non_binding,red teaming,
+I31,MAP 5.2 suggested actions,Use quantitative qualitative and mixed methods in impact assessment.,non_binding,impact assessment,
+I32,MAP 5.2 suggested actions,Use a team independent of design and development to assess the system.,non_binding,independent assessment,
+I33,MAP 5.2 suggested actions,Develop TEVV procedures incorporating socio-technical methods and review them regularly.,non_binding,socio-technical TEVV,
+I34,MEASURE 1.1 suggested actions,Establish approaches for detecting tracking and measuring known risks errors and negative impacts.,non_binding,risks and errors,
+I35,MEASURE 1.1 suggested actions,Identify testing procedures and metrics to show whether the system is fit for purpose and trustworthy.,non_binding,fitness for purpose and trustworthiness,
+I36,MEASURE 1.1 suggested actions,Define acceptable limits for system performance such as error distribution.,non_binding,performance limits,
+I37,MEASURE 1.1 suggested actions,Define metrics for and regularly assess AI actor competency.,non_binding,operator competency,
+I38,MEASURE 1.1 suggested actions,Identify transparency and accountability metrics.,non_binding,transparency and accountability metrics,Weak
+I39,MEASURE 1.1 suggested actions,Report metrics to inform assessments of generalizability and reliability.,non_binding,generalizability and reliability,
+I40,MEASURE 1.1 suggested actions,Assess and document pre versus post deployment performance including existing and emergent risks.,non_binding,pre and post deployment performance,
+I41,MEASURE 1.2 suggested actions,Assess external validity of measurements and regularly assess effectiveness of metrics and controls.,non_binding,measurement validity,
+I42,MEASURE 1.2 suggested actions,Collect and report software quality metrics such as bug rates and severity.,non_binding,software quality,
+I43,MEASURE 1.3 suggested actions,Evaluate TEVV processes regarding incentives to identify risks.,non_binding,TEVV process,
+I44,MEASURE 1.3 suggested actions,Use separate testing teams and assess independence and stature of TEVV actors.,non_binding,independent testing,
+I45,MEASURE 1.3 suggested actions,Plan and evaluate prototypes with end user populations early and continuously.,non_binding,prototype evaluation with users,
+I46,MEASURE 1.3 suggested actions,Use participatory approaches to assess impacts from changes.,non_binding,participatory impact assessment,Wording uncertain
+I47,MEASURE 2.1 suggested actions,Regularly assess effectiveness of tools documenting measurement approaches and test sets.,non_binding,measurement and test set documentation,Mostly documentation; weak
+I48,MEASURE 2.2 suggested actions,Analyze differences between intended and actual user or data subject population.,non_binding,test population representativeness,
+I49,MEASURE 2.2 suggested actions,Use disaggregated evaluation methods by demographic group and region.,non_binding,disaggregated performance,
+I50,MEASURE 2.2 suggested actions,Evaluate data representativeness through failure mode investigation public benchmarks bias testing and chaos engineering.,non_binding,data representativeness,
+I51,MEASURE 2.2 suggested actions,Follow human subjects research requirements and informed consent when testing with people.,non_binding,human subjects testing,Concerns conduct of testing
+I52,MEASURE 2.3 suggested actions,Regularly test and evaluate systems in non optimized conditions with relevant AI actors.,non_binding,non optimized conditions,
+I53,MEASURE 2.3 suggested actions,Measure systems prior to deployment in conditions similar to expected scenarios.,non_binding,pre deployment performance,
+I54,MEASURE 2.3 suggested actions,Measure and document performance criteria such as validity and false positive and negative rates.,non_binding,validity and error rates,
+I55,MEASURE 2.3 suggested actions,Document differences between measurement setting and deployment environments.,non_binding,test versus deployment gap,
+I56,MEASURE 2.4 suggested actions,Verify alerts exist for shifts in input or prediction distributions and assess output accuracy against new ground truth.,non_binding,production drift,Mostly monitoring; included as weak
+I57,MEASURE 2.4 suggested actions,Collect use cases from the operational environment for testing and monitoring.,non_binding,operational use cases,
+I58,MEASURE 2.5 suggested actions,Define operating conditions and socio-technical context under which the system will be validated.,non_binding,validation conditions,
+I59,MEASURE 2.5 suggested actions,Document approaches to measure construct internal and external validity using experimental design and statistics.,non_binding,validity,
+I60,MEASURE 2.5 suggested actions,Assess and document variance and establish robustness and reliability measures.,non_binding,variance robustness reliability,
+I61,MEASURE 2.5 suggested actions,Use standard software testing such as unit integration functional and chaos testing.,non_binding,software testing,
+I62,MEASURE 2.5 suggested actions,Use standard statistical methods to test bias variance and reliability of outcomes.,non_binding,bias variance reliability,
+I63,MEASURE 2.5 suggested actions,Identify TEVV approaches for exploring system limitations including out of scope scenarios.,non_binding,system limitations,
+I64,MEASURE 2.6 suggested actions,Measure performance in development and deployment contexts using test data simulations and stress tests.,non_binding,safety under stress,
+I65,MEASURE 2.6 suggested actions,Test under conditions like past incidents and near misses and document conditions shown to fail safely.,non_binding,safe failure,
+I66,MEASURE 2.6 suggested actions,Compare documented safety testing with established risk tolerances.,non_binding,safety against tolerances,
+I67,MEASURE 2.6 suggested actions,Document practice and measure incident response plans.,non_binding,incident response,Borderline
+I68,MEASURE 2.7 suggested actions,Establish and track security tests and metrics such as red teaming activities.,non_binding,security,
+I69,MEASURE 2.7 suggested actions,Use red team exercises to test the system under adversarial or stress conditions and document results.,non_binding,adversarial resilience,
+I70,MEASURE 2.7 suggested actions,Use red teaming to evaluate mismatches between claimed and actual performance.,non_binding,claimed versus actual performance,
+I71,MEASURE 2.7 suggested actions,Verify third party AI resources and personnel undergo security audits.,non_binding,third party security audit,
+I72,MEASURE 2.8 suggested actions,Test explanations for calibration with different audiences.,non_binding,explanation calibration,
+I73,MEASURE 2.8 suggested actions,Track and audit effectiveness of organizational AI risk management mechanisms.,non_binding,organizational mechanisms,Organizational audit; borderline
+I74,MEASURE 2.9 suggested actions,Test explanation methods and explanations prior to deployment to gain feedback.,non_binding,explanations pre deployment,
+I75,MEASURE 2.9 suggested actions,Establish and report performance and error metrics across demographic groups.,non_binding,subgroup performance,
+I76,MEASURE 2.9 suggested actions,Assess explanation properties such as fidelity and test explanation quality with end users.,non_binding,explanation quality,
+I77,MEASURE 2.9 suggested actions,Test for changes in models over time including models adjusting to production data.,non_binding,model drift,
+I78,MEASURE 2.10 suggested actions,Quantify privacy level data aspects such as ability to identify individuals.,non_binding,privacy,Quote truncated; wording uncertain
+I79,MEASURE 2.11 suggested actions,Conduct fairness assessments quantifying harms with fairness metrics across and within groups.,non_binding,fairness,
+I80,MEASURE 2.11 suggested actions,Assess sources of bias in training and TEVV data including representativeness and proxies.,non_binding,data bias,
+I81,MEASURE 2.11 suggested actions,Use impact assessments to identify and classify system impacts and harms.,non_binding,impact assessment,
+I82,MEASURE 2.11 suggested actions,Evaluate systems regarding disability inclusion.,non_binding,disability inclusion,
+I83,MEASURE 2.11 suggested actions,Use context specific fairness metrics and define acceptable performance differences and actions if exceeded.,non_binding,group performance disparity,
+I84,MEASURE 2.11 suggested actions,Identify groups needing disaggregated analysis and monitor outputs against tolerances.,non_binding,disaggregated analysis,
+I85,MEASURE 2.11 suggested actions,Test and recalibrate models with updated more representative data.,non_binding,recalibration,
+I86,MEASURE 2.11 suggested actions,Work with human factors experts to evaluate biases in presentation of output.,non_binding,output presentation bias,
+I87,MEASURE 2.12 suggested actions,Estimate system emissions across the lifecycle and establish measurable sustainability baselines.,non_binding,environmental impact,Measurement not clearly testing; borderline
+I88,MEASURE 2.13 suggested actions,Review selected metrics and TEVV processes for ability to sustain improvements.,non_binding,metrics and TEVV effectiveness,
+I89,MEASURE 3.1 suggested actions,Compare AI system risks with simpler models human baseline and manual benchmarks.,non_binding,baseline comparison,
+I90,MEASURE 3.1 suggested actions,Assess effectiveness of metrics for identifying emergent risks.,non_binding,emergent risk metrics,Rest of 3.1 mostly post deployment
+I91,MANAGE 1.1 suggested actions,Use TEVV outputs from Map and Measure when considering risk treatment.,non_binding,TEVV results use,
+I92,MANAGE 1.1 suggested actions,Regularly assess and document performance relative to trustworthiness characteristics.,non_binding,trustworthiness performance,
+I93,MANAGE 2.2 suggested actions,Include model assessment and TEVV protocols among risk controls.,non_binding,TEVV protocols,
+I94,MANAGE 3.1 suggested actions,Establish TEVV processes for third party AI systems.,non_binding,third party systems,
+I95,MANAGE 4.1 suggested actions,Perform post deployment TEVV to evaluate validity and reliability.,non_binding,post deployment validity,Post deployment; included as it names TEVV
+I96,MANAGE 4.1 suggested actions,Evaluate trustworthiness in conditions similar to the deployment context and prior to deployment.,non_binding,pre deployment trustworthiness,
+I97,MANAGE 4.1 suggested actions,Run red teaming exercises at a set cadence and evaluate their efficacy.,non_binding,red teaming,
+I98,MANAGE 4.2 suggested actions,Assess alignment of proposed improvements with legal frameworks and context norms.,non_binding,improvement alignment,Weak

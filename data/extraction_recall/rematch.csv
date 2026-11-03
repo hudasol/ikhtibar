@@ -1,0 +1,118 @@
+doc_id,indep_id,matched,table_row_ids,reason
+X04,I02,yes,Singapore-003,Same three-step approach
+X04,I03,partial,Singapore-001,Guideline audience; row covers scope generally
+X04,I05,no,,Alignment mapping not covered
+X04,I09,partial,Singapore-005,Output and component testing covered; benchmarking mix broader
+X04,I16,partial,Singapore-007,Red teaming for blind spots; benchmark limits not stated
+X04,I17,no,,Test dataset sizing not covered
+X04,I20,no,,Evaluator switching tool feature not covered
+X04,I24,partial,Singapore-007,Red teaming generally; multicultural exercise not specific
+X04,I25,yes,Singapore-007,Automated red teaming named as complement
+X04,I28,yes,Singapore-006;Singapore-008,"Scaled depth, repeats, average min max, simple low risk tests"
+X04,I29,yes,Singapore-009,"Thresholds set before testing, refined after"
+X04,I38,partial,Singapore-012,Case study; hallucination testing only loosely related
+X04,I40,partial,Singapore-012,Out of domain and RAG hallucination tests
+X04,I42,partial,Singapore-005;Singapore-012,Retrieval component testing; metrics detail not covered
+X04,I43,partial,Singapore-012,RAG hallucination tests; grounding scoring not specific
+X04,I44,partial,Singapore-012,Hallucination/perturbation testing case study
+X04,I46,partial,Singapore-012,Parity and perturbation tests listed; selection logic not
+X14,I08,no,,Data flow testing not covered
+X14,I11,no,,Synthetic content tests not covered
+X14,I19,no,,Training data quality evaluation not covered
+X14,I22,yes,US-NIST-029,MS-2.3-001 baseline benchmark model selection
+X14,I28,partial,US-NIST-030,Same MS-2.5 section; provenance not specified
+X14,I29,yes,US-NIST-030,MS-2.5-006 guardrail review
+X14,I30,no,,Training data assessment not covered
+X14,I33,yes,US-NIST-031,MS-2.6-005 output monitoring and recovery
+X14,I39,yes,US-NIST-032,MS-2.7-007 red teaming
+X14,I48,partial,US-NIST-034,Same MS-2.11 bias section; synthetic ratio not covered
+X14,I49,no,,Physical environment safety not covered
+X14,I54,yes,US-NIST-036,MS-4.2-002 real-world scenarios
+X14,I66,no,,Decommissioning not covered
+X03,I03,no,,Feasibility assessment not covered
+X03,I08,yes,Saudi-004,Champion model fairness thresholds
+X03,I11,partial,Saudi-005,Same principle and phase; PIA revisit not stated
+X03,I15,partial,Saudi-002,Reliability assessment standards overlap with rigorous testing
+X03,I16,yes,Saudi-003,Outlier event stress test data
+X03,I18,yes,Saudi-002,"Rigorous testing, validation, re-assessment"
+X03,I23,no,,UI/UX testing not covered
+X03,I29,partial,Saudi-009,Annexure A tools broader
+X03,I31,yes,Saudi-009,Systematic continuous algorithm audits
+X03,I33,partial,Saudi-010,Annexure C checklist broader
+X03,I34,partial,Saudi-010,Annexure C checklist broader
+X03,I41,yes,Saudi-008,AI System Assessor role
+X07,I04,partial,US-NIST-024,Separate testing teams; role definition not stated
+X07,I05,no,,Impact assessment policy not covered
+X07,I11,no,,Human-AI configuration testing not covered
+X07,I12,no,,Experiment design not covered
+X07,I13,no,,TEVV protocols not covered
+X07,I18,no,,Unplanned capability checks not covered
+X07,I25,no,,Stakeholder prototyping not covered
+X07,I26,no,,Third party test review not covered
+X07,I30,partial,US-NIST-024,Red teaming covered under other sections
+X07,I32,partial,US-NIST-024,Independent testing team covered
+X07,I35,no,,Testing procedures and metrics not covered
+X07,I39,no,,Metric reporting not covered
+X07,I45,no,,End user prototype evaluation not covered
+X07,I47,no,,Measurement tool assessment not covered
+X07,I52,yes,US-NIST-022,Non optimised condition testing
+X07,I54,yes,US-NIST-022,Validity and false positive/negative rates
+X07,I59,no,,Validity methods not covered
+X07,I60,no,,Variance and robustness not covered
+X07,I62,no,,Statistical bias tests not covered
+X07,I63,partial,US-NIST-023,Testing beyond known limits; out of scope scenarios
+X07,I67,partial,US-NIST-023,MEASURE 2.6 stress tests; incident response plans not covered
+X07,I68,partial,US-NIST-024,Red team activities; tracking metrics not stated
+X07,I69,yes,US-NIST-024,"Red team under adversarial conditions, documented"
+X07,I76,no,,Explanation testing not covered
+X07,I77,no,,Model drift testing not covered
+X07,I79,no,,Fairness assessment not covered
+X07,I86,no,,Human factors bias review not covered
+X07,I92,no,,Trustworthiness performance review not covered
+X07,I96,partial,US-NIST-022,Pre deployment testing in similar conditions
+X07,I98,no,,Legal alignment not covered
+X11,I04,yes,Singapore-036,Baseline pre-deployment evaluations regardless of use case
+X11,I06,partial,Singapore-036,Robustness is baseline item; tool not stated
+X11,I09,partial,Singapore-036,Bias is baseline item; datasets not stated
+X11,I12,partial,Singapore-036,Toxicity baseline item; tooling not stated
+X11,I14,partial,Singapore-036,Data governance baseline item; HELM not stated
+X11,I15,no,,Contextual approach not covered
+X11,I18,no,,Re-evaluation tool review not covered
+X11,I20,partial,Singapore-036,Baseline covered; frontier additions not
+X11,I22,yes,Singapore-036,Minimal baseline before release
+X08,I04,partial,EU-AI-Act-055,Real-world testing; definition not covered
+X08,I06,partial,EU-AI-Act-036,FRIA under Art 27; Art 5 link not covered
+X08,I07,yes,EU-AI-Act-011,Document non-high-risk assessment before marketing
+X08,I09,yes,EU-AI-Act-016,Testing to identify risk measures
+X08,I11,yes,EU-AI-Act-017,Real-world testing in procedures
+X08,I15,partial,EU-AI-Act-020,Data set governance; testing-only rule not stated
+X08,I16,partial,EU-AI-Act-028,Accuracy declared in instructions; robustness tested levels broader
+X08,I22,partial,EU-AI-Act-032,Conformity assessment; compliance strategy not stated
+X08,I29,yes,EU-AI-Act-036,Notify authority of FRIA results
+X13,I01,yes,UK-026,Pre-release testing of leading AI
+X13,I04,yes,UK-026,Open sources evaluation tools
+X13,I05,no,,Safeguard effectiveness research not covered
+X13,I06,no,,Alignment research not covered
+X02,I02,partial,Japan-015;Japan-018,Safety principle accuracy; row broader on risk analysis
+X02,I03,partial,Japan-018;Japan-017,Performance under varied conditions
+X02,I06,no,,Bias acceptability not covered
+X02,I08,no,,Security checks not covered
+X02,I10,yes,Japan-016,Advanced AI lifecycle risk identify evaluate mitigate
+X02,I11,partial,Japan-016,Pre-deployment risk evaluation; red teaming not named
+X02,I13,no,,Red teaming definition not covered
+X02,I14,partial,Japan-015,Risk analysis by actors
+X02,I15,no,,Develop/provide decision not covered
+X02,I25,no,,Cyber risk assessment not covered
+X02,I26,no,,Leak countermeasures not covered
+X02,I32,no,,Bias examination not covered
+X02,I34,no,,Purpose verification not covered
+X02,I35,no,,Conformity explanation not covered
+X09,I11,partial,Japan-007,International information sharing on frontier evaluation
+X09,I13,no,,Agent rules not covered
+X09,I14,no,,Education demonstration not covered
+X12,I03,partial,UAE-Dubai-008,Ethics validation and approval; board not named
+X12,I06,yes,UAE-Dubai-007,Performance benchmarking in QA
+X12,I07,yes,UAE-Dubai-007,User acceptance testing in QA
+X06,I01,yes,UK-031,Internal and external red teaming affirmed
+X06,I05,yes,UK-030,Assess threshold breach
+X06,I07,yes,UK-030,Deploy only if risk below thresholds

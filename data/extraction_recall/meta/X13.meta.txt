@@ -1,0 +1,5 @@
+Web address read: https://www.aisi.gov.uk/about (the address supplied; fetch accepted it, no search needed)
+Retrieval date: 2026-11-03
+Whole document read: partial/summary only. The fetch tool answers through a summarising model. The first call returned short verbatim quotes and said the page appeared fully shown; the second call (asked for full text) returned only a summary and refused to reproduce the page. Verbatim wording is therefore limited to the few quoted fragments; the other rows rest on the summary. Not seen verbatim: leadership, funding, grants, compute, and other research-area text (cyber misuse, control, human influence, societal resilience), which the summary mentioned but which were not read as passages. The page notes JavaScript is required, so some content may not render.
+Number of provisions: 7
+Model: Sonnet 5.5 (claude-sonnet-5-5)

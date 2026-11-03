@@ -1,0 +1,72 @@
+{
+ "X01": {
+  "note": "address refused by the fetch tool; no search surfaced it; excluded",
+  "precision_basis": false,
+  "read": "none"
+ },
+ "X02": {
+  "note": "main body Parts 1 to 5 reached through the summarising fetch tool; appendix not included",
+  "precision_basis": true,
+  "read": "summary_whole"
+ },
+ "X03": {
+  "note": "summaries only; assessor responsibilities list and annex numbering unreliable",
+  "precision_basis": false,
+  "read": "summary_partial"
+ },
+ "X04": {
+  "note": "first about 55 of 105 pages only",
+  "precision_basis": false,
+  "read": "partial"
+ },
+ "X05": {
+  "note": "summaries only",
+  "precision_basis": false,
+  "read": "summary_partial"
+ },
+ "X06": {
+  "note": "whole page reached through the summarising fetch tool",
+  "precision_basis": true,
+  "read": "summary_whole"
+ },
+ "X07": {
+  "note": "Measure 3.2 to 4.3 not reached",
+  "precision_basis": false,
+  "read": "partial"
+ },
+ "X08": {
+  "note": "read through the middle of Article 36 only; Articles 37 to 113 and annexes not reached",
+  "precision_basis": false,
+  "read": "partial"
+ },
+ "X09": {
+  "note": "summaries only",
+  "precision_basis": false,
+  "read": "summary_partial"
+ },
+ "X10": {
+  "note": "only contents and headings returned, no body text; excluded",
+  "precision_basis": false,
+  "read": "none"
+ },
+ "X11": {
+  "note": "summaries only; Parts 1 and 2 not treated as provisions",
+  "precision_basis": false,
+  "read": "summary_partial"
+ },
+ "X12": {
+  "note": "whole text (104k characters) reached through the summarising fetch tool",
+  "precision_basis": true,
+  "read": "summary_whole"
+ },
+ "X13": {
+  "note": "summary only",
+  "precision_basis": false,
+  "read": "summary_partial"
+ },
+ "X14": {
+  "note": "summaries of the whole text; front matter and some action ids omitted",
+  "precision_basis": false,
+  "read": "summary_partial"
+ }
+}

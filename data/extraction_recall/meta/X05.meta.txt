@@ -1,0 +1,5 @@
+Web address read: https://assets.adgm.com/download/assets/Supplementary+Guidance+-+Digital+Investment+Management+VER02.061125.pdf/f2ae6f36606c11ef946bcecc50de2f68
+Retrieval date: 2026-11-03
+Whole document read: partial. The first WebFetch was refused (URL not on allowlist); one retry succeeded, but the fetch tool returned only summaries and paraphrases, not verbatim text, and refused to reproduce full text. Two further targeted queries returned paragraph-level excerpts on testing, algorithm governance and suitability. I did not see the raw full text, so wording, page numbers and some qualifiers (for example 'complex models') are unverified. Sections 1-3 and disclosure (4.9-4.12) were seen only in outline. The tool reported that the terms back-testing, stress testing, pre-deployment, pre-launch, simulation, verification and evaluation do not appear.
+Number of provisions: 4
+Model: Sonnet 5.5 (claude-sonnet-5-5)

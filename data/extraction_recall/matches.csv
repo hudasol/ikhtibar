@@ -1,0 +1,390 @@
+doc_id,indep_id,matched,table_row_ids,reason
+X02,I01,no,,No table row covers this provision
+X02,I02,no,,No table row covers this provision
+X02,I03,no,,No table row covers this provision
+X02,I04,yes,Japan-015,Risk analyses and countermeasures covered
+X02,I05,no,,No table row covers this provision
+X02,I06,no,,No table row covers this provision
+X02,I07,no,,No table row covers this provision
+X02,I08,no,,No table row covers this provision
+X02,I09,no,,No table row covers this provision
+X02,I10,yes,Japan-016,Same Item I lifecycle risk identification/evaluation/mitigation
+X02,I11,no,,No table row covers this provision
+X02,I12,no,,No table row covers this provision
+X02,I13,no,,No table row covers this provision
+X02,I14,partial,Japan-015,Risk analysis covered generally but not the governance step or environment analysis
+X02,I15,no,,No table row covers this provision
+X02,I16,no,,No table row covers this provision
+X02,I17,no,,No table row covers this provision
+X02,I18,no,,No table row covers this provision
+X02,I19,yes,Japan-017,Performance in unexpected environments requirement
+X02,I20,no,,No table row covers this provision
+X02,I21,no,,No table row covers this provision
+X02,I22,no,,No table row covers this provision
+X02,I23,partial,Japan-016,Mitigation of identified advanced AI risks overlaps; cooperation aspect not covered
+X02,I24,partial,Japan-016,Lifecycle risk handling overlaps with Item I row; different code item
+X02,I25,no,,No table row covers this provision
+X02,I26,no,,No table row covers this provision
+X02,I27,no,,No table row covers this provision
+X02,I28,no,,No table row covers this provision
+X02,I29,yes,Japan-018,Performance under usage conditions at provision
+X02,I30,no,,No table row covers this provision
+X02,I31,no,,No table row covers this provision
+X02,I32,no,,No table row covers this provision
+X02,I33,no,,No table row covers this provision
+X02,I34,no,,No table row covers this provision
+X02,I35,no,,No table row covers this provision
+X02,I36,yes,Japan-019,Understand precision and risks of output before use
+X02,I37,no,,No table row covers this provision
+X03,I01,yes,Saudi-001,same high risk conformity assessment requirement
+X03,I02,no,,no table row covers this provision
+X03,I03,no,,no table row covers this provision
+X03,I04,no,,no table row covers this provision
+X03,I05,no,,no table row covers this provision
+X03,I06,no,,no table row covers this provision
+X03,I07,partial,Saudi-004,row mentions threshold defined earlier but not the design stage definition itself
+X03,I08,yes,Saudi-004,champion model fairness metrics within threshold
+X03,I09,yes,Saudi-004,failures should be justified
+X03,I10,yes,Saudi-005,testing that combined data does not reveal sensitive data
+X03,I11,no,,no table row covers this provision
+X03,I12,no,,no table row covers this provision
+X03,I13,no,,no table row covers this provision
+X03,I14,no,,no table row covers this provision
+X03,I15,no,,no table row covers this provision
+X03,I16,yes,Saudi-003,outlier and stress test data
+X03,I17,no,,no table row covers this provision
+X03,I18,yes,Saudi-002,"rigorous testing, validation, re-assessment"
+X03,I19,yes,Saudi-002,system integration test sign off merged in row
+X03,I20,no,,no table row covers this provision
+X03,I21,yes,Saudi-007,third party AI ethics due diligence
+X03,I22,no,,no table row covers this provision
+X03,I23,no,,no table row covers this provision
+X03,I24,no,,no table row covers this provision
+X03,I25,no,,no table row covers this provision
+X03,I26,no,,no table row covers this provision
+X03,I27,yes,Saudi-006,sign off after testing and UAT
+X03,I28,yes,Saudi-009,ethical impact assessment informs production decision
+X03,I29,no,,no table row covers this provision
+X03,I30,yes,Saudi-009,fairness assessments listed among tools
+X03,I31,yes,Saudi-009,systematic continuous algorithm audits
+X03,I32,yes,Saudi-009,safety self assessments at each stage
+X03,I33,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I34,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I35,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I36,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I37,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I38,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I39,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I40,partial,Saudi-010,"row only describes the checklist generically, not this specific item"
+X03,I41,yes,Saudi-008,AI System Assessor role
+X04,I01,yes,Singapore-001,"Executive summary voluntary guidance, pre-deployment baseline safety"
+X04,I02,yes,Singapore-003,Three-step approach
+X04,I03,no,,Intended users not in table
+X04,I04,partial,Singapore-001,Pre-deployment scope mentioned only in summary row
+X04,I05,no,,Alignment with AI Verify/NIST not covered
+X04,I06,no,,SDLC positioning not covered
+X04,I07,yes,Singapore-003;Singapore-009,"Own thresholds, no universal baseline"
+X04,I08,no,,Core benchmarks not covered
+X04,I09,partial,Singapore-005,Output plus component testing covered; rigour/benchmarking/red teaming framing not
+X04,I10,yes,Singapore-005,Black-box output testing
+X04,I11,yes,Singapore-005,Component testing
+X04,I12,no,,User testing not covered
+X04,I13,yes,Singapore-006,"Robustness and consistency, repeat runs"
+X04,I14,no,,General method rigour not covered
+X04,I15,no,,Benchmarking mechanics not covered
+X04,I16,partial,Singapore-007,Red teaming for blind spots and multi-turn; benchmark limits not stated
+X04,I17,no,,Test dataset design not covered
+X04,I18,no,,Metrics alignment not covered
+X04,I19,no,,Automated evaluator validity not covered; 007 only touches LLM judges in red teaming
+X04,I20,no,,Tool feature not covered
+X04,I21,yes,Singapore-007,Red teaming dynamic probing
+X04,I22,yes,Singapore-007,"Objectives, diverse red teamers"
+X04,I23,yes,Singapore-007,"Scoring metrics, annotators, LLM judge sampling"
+X04,I24,no,,IMDA case study not covered
+X04,I25,yes,Singapore-007,Automated red teaming as complement
+X04,I26,yes,Singapore-014,Re-test after changes
+X04,I27,yes,Singapore-008,Identify and prioritise relevant risks
+X04,I28,yes,Singapore-006;Singapore-008,"Extent scaled to stakes, repeat, avg/min/max"
+X04,I29,yes,Singapore-009,Set thresholds before testing
+X04,I30,yes,Singapore-010,Zero tolerance hard gates
+X04,I31,yes,Singapore-010,Comparative thresholds
+X04,I32,yes,Singapore-011,Litmus 95 percent threshold
+X04,I33,yes,Singapore-012,Domain knowledge and out-of-domain areas
+X04,I34,partial,Singapore-012,Domain knowledge listed; accuracy/grounding method not detailed
+X04,I35,no,,Matching methods not covered
+X04,I36,no,,SIA case study not covered
+X04,I37,no,,Summarisation testing not covered
+X04,I38,no,,GPT-Legal case study not covered
+X04,I39,partial,Singapore-012,Out-of-domain handling named only
+X04,I40,no,,KnowOrNot not covered
+X04,I41,partial,Singapore-005;Singapore-012,RAG/retrieval component testing named; two failure points not detailed
+X04,I42,partial,Singapore-005;Singapore-012,Retrieval step mentioned; precision/recall not covered
+X04,I43,partial,Singapore-012,RAG listed; grounding score method not covered
+X04,I44,no,,Resaro case study not covered
+X04,I45,yes,Singapore-012,Parity and perturbation tests
+X04,I46,partial,Singapore-012,Both methods named; selection guidance not covered
+X04,I47,partial,Singapore-012,Parity testing named; dataset steps not covered
+X05,I01,yes,UAE-DIFC-ADGM-009,"Row covers s4.7(b) sufficient and regular testing to show the model meets explainable, traceable, repeatable logic and relevant data principles."
+X05,I02,yes,UAE-DIFC-ADGM-009,"Row states that for complex models the FSRA may require a third-party audit of performance; same clause and content, merged into one row."
+X05,I03,no,,Row does not mention a process for detecting and reporting programming errors or unexpected outcomes (s4.7(c)).
+X05,I04,no,,"No row covers technology governance audit (internal, external, technological audit)."
+X06,I01,yes,UK-031,Row states signatories affirm internal and external red-teaming for severe and novel threats.
+X06,I02,yes,UK-029,Row covers assessing risks of frontier models across lifecycle including before deployment.
+X06,I03,partial,UK-029,"Same commitment but row omits capabilities, deployment context and mitigation efficacy content of the assessment."
+X06,I04,yes,UK-029,Row covers considering internal and external evaluations such as independent third parties and home governments.
+X06,I05,yes,UK-030,Row covers assessing whether thresholds have been breached; monitoring proximity not mentioned but core point matches.
+X06,I06,partial,UK-030,Row covers setting thresholds but not the footnote requirement that they be defined so breach is assessable.
+X06,I07,yes,UK-030,Row covers not developing or deploying a model if mitigations cannot keep risk below thresholds.
+X06,I08,partial,UK-030,Row mentions articulating mitigations but not processes to assess and monitor mitigation adequacy.
+X06,I09,yes,UK-031,Row covers explaining how external actors are involved in assessing risk.
+X07,I01,no,,no table row covers this provision
+X07,I02,no,,no table row covers this provision
+X07,I03,no,,no table row covers this provision
+X07,I04,partial,US-NIST-024,row only references separate testing teams set up under GOVERN; no role definition
+X07,I05,no,,no table row covers this provision
+X07,I06,no,,no table row covers this provision
+X07,I07,no,,no table row covers this provision
+X07,I08,no,,no table row covers this provision
+X07,I09,no,,no table row covers this provision
+X07,I10,no,,no table row covers this provision
+X07,I11,no,,no table row covers this provision
+X07,I12,no,,no table row covers this provision
+X07,I13,no,,no table row covers this provision
+X07,I14,no,,no table row covers this provision
+X07,I15,no,,no table row covers this provision
+X07,I16,no,,no table row covers this provision
+X07,I17,no,,no table row covers this provision
+X07,I18,no,,no table row covers this provision
+X07,I19,no,,no table row covers this provision
+X07,I20,no,,no table row covers this provision
+X07,I21,no,,no table row covers this provision
+X07,I22,no,,no table row covers this provision
+X07,I23,no,,no table row covers this provision
+X07,I24,no,,no table row covers this provision
+X07,I25,no,,no table row covers this provision
+X07,I26,no,,no table row covers this provision
+X07,I27,no,,no table row covers this provision
+X07,I28,no,,no table row covers this provision
+X07,I29,no,,no table row covers this provision
+X07,I30,no,,no table row covers this provision
+X07,I31,no,,no table row covers this provision
+X07,I32,partial,US-NIST-024,independent testing team point is similar but from a different clause
+X07,I33,no,,no table row covers this provision
+X07,I34,no,,no table row covers this provision
+X07,I35,no,,no table row covers this provision
+X07,I36,no,,no table row covers this provision
+X07,I37,no,,no table row covers this provision
+X07,I38,no,,no table row covers this provision
+X07,I39,no,,no table row covers this provision
+X07,I40,no,,no table row covers this provision
+X07,I41,no,,no table row covers this provision
+X07,I42,no,,no table row covers this provision
+X07,I43,no,,no table row covers this provision
+X07,I44,yes,US-NIST-024,separate testing teams and independence of TEVV actors
+X07,I45,no,,no table row covers this provision
+X07,I46,no,,no table row covers this provision
+X07,I47,no,,no table row covers this provision
+X07,I48,no,,no table row covers this provision
+X07,I49,no,,no table row covers this provision
+X07,I50,no,,no table row covers this provision
+X07,I51,no,,no table row covers this provision
+X07,I52,yes,US-NIST-022,MEASURE 2.3 row covers this action
+X07,I53,yes,US-NIST-022,MEASURE 2.3 row covers this action
+X07,I54,yes,US-NIST-022,MEASURE 2.3 row covers this action
+X07,I55,yes,US-NIST-022,MEASURE 2.3 row covers this action
+X07,I56,no,,no table row covers this provision
+X07,I57,no,,no table row covers this provision
+X07,I58,no,,no table row covers this provision
+X07,I59,no,,no table row covers this provision
+X07,I60,no,,no table row covers this provision
+X07,I61,no,,no table row covers this provision
+X07,I62,no,,no table row covers this provision
+X07,I63,no,,no table row covers this provision
+X07,I64,yes,US-NIST-023,MEASURE 2.6 stress testing row
+X07,I65,yes,US-NIST-023,past incident conditions and fail-safe documentation
+X07,I66,no,,no table row covers this provision
+X07,I67,no,,no table row covers this provision
+X07,I68,partial,US-NIST-024,row covers red-team exercises but not security tests and metrics tracking
+X07,I69,yes,US-NIST-024,red team exercises under adversarial conditions with documented results
+X07,I70,partial,US-NIST-024,"row covers red teaming generally, not the claimed vs actual performance purpose"
+X07,I71,no,,no table row covers this provision
+X07,I72,no,,no table row covers this provision
+X07,I73,no,,no table row covers this provision
+X07,I74,no,,no table row covers this provision
+X07,I75,no,,no table row covers this provision
+X07,I76,no,,no table row covers this provision
+X07,I77,no,,no table row covers this provision
+X07,I78,no,,no table row covers this provision
+X07,I79,no,,no table row covers this provision
+X07,I80,no,,no table row covers this provision
+X07,I81,no,,no table row covers this provision
+X07,I82,no,,no table row covers this provision
+X07,I83,no,,no table row covers this provision
+X07,I84,no,,no table row covers this provision
+X07,I85,no,,no table row covers this provision
+X07,I86,no,,no table row covers this provision
+X07,I87,no,,no table row covers this provision
+X07,I88,no,,no table row covers this provision
+X07,I89,no,,no table row covers this provision
+X07,I90,no,,no table row covers this provision
+X07,I91,no,,no table row covers this provision
+X07,I92,no,,no table row covers this provision
+X07,I93,no,,no table row covers this provision
+X07,I94,no,,no table row covers this provision
+X07,I95,no,,no table row covers this provision
+X07,I96,no,,no table row covers this provision
+X07,I97,no,,no table row covers this provision
+X07,I98,no,,no table row covers this provision
+X08,I01,no,,No row on Art. 2(8) scope exclusion.
+X08,I02,no,,No row on the conformity assessment definition.
+X08,I03,no,,No row on testing data definition.
+X08,I04,no,,No row on the real world testing definition; Art. 60 row is the operative rule only.
+X08,I05,no,,No row on Art. 4a special category data for bias detection.
+X08,I06,no,,No row on Art. 5(2) biometric identification precondition.
+X08,I07,yes,EU-AI-Act-011,Art. 6(4) documentation of non high-risk assessment covered.
+X08,I08,no,,No row on Art. 8(2) integration of testing into sectoral documentation.
+X08,I09,yes,EU-AI-Act-016,Art. 9(6) testing to identify risk measures.
+X08,I10,yes,EU-AI-Act-016,Art. 9(6) consistent performance and compliance testing.
+X08,I11,yes,EU-AI-Act-017,Art. 9(7) real world testing option.
+X08,I12,yes,EU-AI-Act-018,Art. 9(8) pre-defined metrics and thresholds before market placement.
+X08,I13,partial,EU-AI-Act-020,Row covers data set quality in 10(2)-(4) but not the Art. 10(1) general duty.
+X08,I14,yes,EU-AI-Act-020,Art. 10(2)(f) bias examination covered.
+X08,I15,no,,No row on Art. 10(6) testing data only case.
+X08,I16,no,,No row on Art. 13(3)(b)(ii) instructions for use content.
+X08,I17,yes,EU-AI-Act-028,Art. 15(1) accuracy robustness cybersecurity.
+X08,I18,no,,No row on Commission benchmarks Art. 15(2).
+X08,I19,yes,EU-AI-Act-028,Art. 15(3) accuracy metrics declared.
+X08,I20,yes,EU-AI-Act-030,Art. 15(5) adversarial resilience.
+X08,I21,yes,EU-AI-Act-032,Art. 16(f) conformity assessment before placing.
+X08,I22,no,,Row 033 covers 17(1)(b)-(e) only; 17(1)(a) not covered.
+X08,I23,yes,EU-AI-Act-033,Art. 17(1)(d) test and validation procedures.
+X08,I24,no,,No row on importer verification.
+X08,I25,no,,No row on distributor verification.
+X08,I26,no,,No row on Art. 25(2)(b).
+X08,I27,no,,No row on Art. 25(2)(c).
+X08,I28,yes,EU-AI-Act-036,Art. 27(1) fundamental rights impact assessment.
+X08,I29,yes,EU-AI-Act-036,Art. 27(3) notification of results covered.
+X08,I30,partial,EU-AI-Act-045,Row covers notified body assessment under Annex VII but not Art. 34(1) duty itself.
+X09,I01,no,,No table row on general evaluation frameworks and tools in the development capabilities section.
+X09,I02,no,,No table row on evaluation platforms or testbeds.
+X09,I03,no,,No table row on trustworthy domestic AI.
+X09,I04,partial,Japan-007,Same governance intro passage (p.17); row covers only the frontier AI evaluation part and does not mention AISI technical evaluation of AI models generally.
+X09,I05,yes,Japan-007,Row states proactive evaluation of highly capable frontier AI to deter national security threats; same content and page.
+X09,I06,no,,No table row on ministry voluntary review mechanism.
+X09,I07,no,,No table row on vulnerability assessments of government systems.
+X09,I08,no,,No table row on AISI cybersecurity performance evaluation.
+X09,I09,no,,No table row on technical evaluation capability covering traceability and guardrails.
+X09,I10,no,,No table row on linking evaluation results to systems and guidelines.
+X09,I11,no,,No table row on exchange with CAISI and UK AISI; row 007 mentions international vulnerability sharing only.
+X09,I12,no,,No table row on procurement and safe deployment.
+X09,I13,no,,No table row on rules for AI agents.
+X09,I14,no,,No table row on education demonstration research.
+X11,I01,partial,Singapore-036,Row states the baseline pre-deployment concept but not the intro para 3 framing as a minimal safety level
+X11,I02,yes,Singapore-036,Same clause (Intro 4(c)) and content: minimal pre-deployment testing on baseline attributes
+X11,I03,no,,Combined/cross-validated evaluation approach not in table
+X11,I04,yes,Singapore-036,Part 3 para 39 baseline recommendation irrespective of use case
+X11,I05,partial,Singapore-036,Row cites paras 39-42 but omits the necessary-step/minimum threshold and deploying-organisation point
+X11,I06,partial,Singapore-036,Robustness named as attribute but DecodingTrust not mentioned
+X11,I07,partial,Singapore-036,Factuality named as attribute but TruthfulQA/HELM tools not mentioned
+X11,I08,partial,Singapore-036,Bias named generally; stereotype bias and BBQ not specified
+X11,I09,partial,Singapore-036,Bias named generally; fairness and UCI Adult not specified
+X11,I10,partial,Singapore-036,Bias named generally; subjective opinions and GlobalOpinionQA not specified
+X11,I11,partial,Singapore-036,Bias named generally; capability fairness and TwitterAAE not specified
+X11,I12,partial,Singapore-036,Toxicity generation named as attribute but RealToxicityPrompts/Perspective not mentioned
+X11,I13,partial,Singapore-036,Data governance named but personal data leakage and Enron dataset not specified
+X11,I14,partial,Singapore-036,Data governance named but non-personal data memorisation not specified
+X11,I15,no,,Contextually attuned approaches not in table
+X11,I16,no,,Use of listed benchmarks as minimum precaution (paras 47-50) not in table
+X11,I17,no,,Re-running after finetuning not in table
+X11,I18,no,,Deciding which evaluations to re-conduct not in table
+X11,I19,no,,Periodic post-deployment evaluation not in table
+X11,I20,no,,Frontier risk additional evaluations not in table
+X11,I21,no,,Ascertaining extreme risks not in table
+X11,I22,partial,Singapore-036,"Row captures minimal pre-deployment baseline idea but cites Intro/Part 3, not the conclusion encouragement"
+X12,I01,yes,UAE-Dubai-009,Pilot projects per quadrant to test assumptions before scaling; same section 7.3.
+X12,I02,no,,Iterative development with feedback and testing not in any row.
+X12,I03,partial,UAE-Dubai-008,Row covers ethical alignment validation but does not mention the ethics and compliance board or privacy/regulatory review.
+X12,I04,yes,UAE-Dubai-008,Row covers standard approval workflow with technical feasibility and risk evaluation.
+X12,I05,yes,UAE-Dubai-007,End-to-end testing cycles in QA row.
+X12,I06,yes,UAE-Dubai-007,Performance benchmarking in QA row.
+X12,I07,yes,UAE-Dubai-007,User acceptance testing in QA row.
+X12,I08,yes,UAE-Dubai-007,Continuous quality audits in QA row.
+X12,I09,no,,Lifecycle risk management framework not covered; row 008 risk evaluation is only part of the approval workflow.
+X12,I10,yes,UAE-Dubai-008,Rigorous validation for ethical compliance across lifecycle in row.
+X12,I11,no,,Continuous improvement process (routine assessments) not in table.
+X12,I12,no,,Benchmarking against global leaders not in table.
+X12,I13,no,,Level 1 maturity activities not in table.
+X12,I14,no,,Case study statement on iterative implementation not in table.
+X13,I01,yes,UK-026,Row states AISI tests leading AI systems before release.
+X13,I02,yes,UK-026,Row states pre-deployment access to leading models.
+X13,I03,yes,UK-026,Row covers testing leading systems before release; post-launch part out of scope.
+X13,I04,yes,UK-026,Row states evaluation tools such as Inspect are open-sourced.
+X13,I05,no,,Safeguard effectiveness research question; not in the row.
+X13,I06,no,,Alignment reliability research question; not in the row.
+X13,I07,no,,Autonomy research question; not in the row.
+X14,I01,no,,No table row covers this action ID or content
+X14,I02,yes,US-NIST-026,Same suggested action covered by table row
+X14,I03,yes,US-NIST-027,Same suggested action covered by table row
+X14,I04,no,,No table row covers this action ID or content
+X14,I05,no,,No table row covers this action ID or content
+X14,I06,no,,No table row covers this action ID or content
+X14,I07,no,,No table row covers this action ID or content
+X14,I08,no,,No table row covers this action ID or content
+X14,I09,no,,No table row covers this action ID or content
+X14,I10,no,,No table row covers this action ID or content
+X14,I11,no,,No table row covers this action ID or content
+X14,I12,no,,No table row covers this action ID or content
+X14,I13,no,,No table row covers this action ID or content
+X14,I14,no,,No table row covers this action ID or content
+X14,I15,no,,No table row covers this action ID or content
+X14,I16,no,,No table row covers this action ID or content
+X14,I17,no,,No table row covers this action ID or content
+X14,I18,no,,No table row covers this action ID or content
+X14,I19,no,,No table row covers this action ID or content
+X14,I20,yes,US-NIST-028,Same suggested action covered by table row
+X14,I21,yes,US-NIST-028,Same suggested action covered by table row
+X14,I22,yes,US-NIST-029,Same suggested action covered by table row
+X14,I23,yes,US-NIST-029,Same suggested action covered by table row
+X14,I24,yes,US-NIST-029,Same suggested action covered by table row
+X14,I25,yes,US-NIST-029,Same suggested action covered by table row
+X14,I26,yes,US-NIST-030,Same suggested action covered by table row
+X14,I27,yes,US-NIST-030,Same suggested action covered by table row
+X14,I28,no,,No table row covers this action ID or content
+X14,I29,yes,US-NIST-030,Same suggested action covered by table row
+X14,I30,no,,No table row covers this action ID or content
+X14,I31,no,,No table row covers this action ID or content
+X14,I32,no,,No table row covers this action ID or content
+X14,I33,yes,US-NIST-031,Same suggested action covered by table row
+X14,I34,yes,US-NIST-031,Same suggested action covered by table row
+X14,I35,yes,US-NIST-031,Same suggested action covered by table row
+X14,I36,no,,No table row covers this action ID or content
+X14,I37,no,,No table row covers this action ID or content
+X14,I38,no,,No table row covers this action ID or content
+X14,I39,yes,US-NIST-032,Same suggested action covered by table row
+X14,I40,yes,US-NIST-032,Same suggested action covered by table row
+X14,I41,no,,No table row covers this action ID or content
+X14,I42,no,,No table row covers this action ID or content
+X14,I43,yes,US-NIST-033,Same suggested action covered by table row
+X14,I44,no,,No table row covers this action ID or content
+X14,I45,yes,US-NIST-034,Same suggested action covered by table row
+X14,I46,yes,US-NIST-034,Same suggested action covered by table row
+X14,I47,no,,No table row covers this action ID or content
+X14,I48,no,,No table row covers this action ID or content
+X14,I49,no,,No table row covers this action ID or content
+X14,I50,yes,US-NIST-035,Same suggested action covered by table row
+X14,I51,no,,No table row covers this action ID or content
+X14,I52,no,,No table row covers this action ID or content
+X14,I53,yes,US-NIST-036,Same suggested action covered by table row
+X14,I54,yes,US-NIST-036,Same suggested action covered by table row
+X14,I55,no,,No table row covers this action ID or content
+X14,I56,yes,US-NIST-036,Same suggested action covered by table row
+X14,I57,no,,No table row covers this action ID or content
+X14,I58,no,,No table row covers this action ID or content
+X14,I59,no,,No table row covers this action ID or content
+X14,I60,no,,No table row covers this action ID or content
+X14,I61,no,,No table row covers this action ID or content
+X14,I62,no,,No table row covers this action ID or content
+X14,I63,no,,No table row covers this action ID or content
+X14,I64,no,,No table row covers this action ID or content
+X14,I65,no,,No table row covers this action ID or content
+X14,I66,no,,No table row covers this action ID or content

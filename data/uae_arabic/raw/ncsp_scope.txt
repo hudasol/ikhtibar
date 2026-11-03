@@ -1,0 +1,7 @@
+NOT ANSWERED from the Arabic text.
+
+I could not read the Arabic original of the UAE National Cyber Security Policy for Artificial Intelligence (v1.1, Nov 2025). The search budget for this turn was exhausted (0 of 5 Arabic queries returned results) and my one fetch (the u.ae portal page from the input) was refused as not on the allowlist. Per the access rule I stopped and did not use mirrors, archives or other workarounds.
+
+So I have no Arabic scope sentence, no Arabic heading or article number, and no Arabic quotation to give. I will not reconstruct them from memory or from the English readings.
+
+What this leaves open: the disagreement between the two English readers on whether emirate level government entities are covered is not settled by this check. Rerun with search available, looking for the scope or applicability section (likely "النطاق" or "نطاق التطبيق") of the Arabic PDF on csc.gov.ae or u.ae, and check whether the Arabic uses a federal-only term (e.g. الجهات الاتحادية) or a general one (e.g. الجهات الحكومية), and whether it names private sector or critical infrastructure.

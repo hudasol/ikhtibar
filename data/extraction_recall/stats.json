@@ -1,0 +1,248 @@
+{
+ "by_group": {
+  "EU": {
+   "documents": 1,
+   "precision_hits": 11,
+   "precision_n": 28,
+   "precision_pct": 39.3,
+   "recall_hits": 15,
+   "recall_n": 30,
+   "recall_pct": 50.0
+  },
+  "Japan": {
+   "documents": 2,
+   "precision_hits": 6,
+   "precision_n": 6,
+   "precision_pct": 100.0,
+   "recall_hits": 10,
+   "recall_n": 51,
+   "recall_pct": 19.6
+  },
+  "Saudi": {
+   "documents": 1,
+   "precision_hits": 10,
+   "precision_n": 10,
+   "precision_pct": 100.0,
+   "recall_hits": 23,
+   "recall_n": 41,
+   "recall_pct": 56.1
+  },
+  "Singapore": {
+   "documents": 2,
+   "precision_hits": 12,
+   "precision_n": 13,
+   "precision_pct": 92.3,
+   "recall_hits": 43,
+   "recall_n": 69,
+   "recall_pct": 62.3
+  },
+  "UAE": {
+   "documents": 2,
+   "precision_hits": 4,
+   "precision_n": 4,
+   "precision_pct": 100.0,
+   "recall_hits": 10,
+   "recall_n": 18,
+   "recall_pct": 55.6
+  },
+  "UK": {
+   "documents": 2,
+   "precision_hits": 4,
+   "precision_n": 4,
+   "precision_pct": 100.0,
+   "recall_hits": 13,
+   "recall_n": 16,
+   "recall_pct": 81.2
+  },
+  "US": {
+   "documents": 2,
+   "precision_hits": 14,
+   "precision_n": 16,
+   "precision_pct": 87.5,
+   "recall_hits": 35,
+   "recall_n": 164,
+   "recall_pct": 21.3
+  }
+ },
+ "force_of_independent_provisions": {
+  "matched_binding_pct": 10.1,
+  "matched_n": 149,
+  "missed_binding_pct": 4.2,
+  "missed_n": 240
+ },
+ "meta": {
+  "documents_sampled": 14,
+  "documents_with_raw": 12,
+  "n_eligible": 54,
+  "sampling_method": "round robin over family groups in sorted order; inside a group a seeded permutation, preferring the length class chosen least often so far; length class from number of table rows (short 1 to 2, medium 3 to 6, long 7 or more)",
+  "second_check": "agent re checked a seeded 30 percent of matches",
+  "seed": 20261103
+ },
+ "per_document": {
+  "X02": {
+   "coverage": "summary_whole",
+   "family": "Japan",
+   "group": "Japan",
+   "length_class": "medium",
+   "n_independent": 37,
+   "n_independent_in_table": 8,
+   "n_table_rows": 5,
+   "n_table_rows_found_independently": 5,
+   "precision_basis": true
+  },
+  "X03": {
+   "coverage": "summary_partial",
+   "family": "Saudi",
+   "group": "Saudi",
+   "length_class": "long",
+   "n_independent": 41,
+   "n_independent_in_table": 23,
+   "n_table_rows": 10,
+   "n_table_rows_found_independently": 10,
+   "precision_basis": false
+  },
+  "X04": {
+   "coverage": "partial",
+   "family": "Singapore",
+   "group": "Singapore",
+   "length_class": "long",
+   "n_independent": 47,
+   "n_independent_in_table": 29,
+   "n_table_rows": 12,
+   "n_table_rows_found_independently": 11,
+   "precision_basis": false
+  },
+  "X05": {
+   "coverage": "summary_partial",
+   "family": "UAE-DIFC-ADGM",
+   "group": "UAE",
+   "length_class": "short",
+   "n_independent": 4,
+   "n_independent_in_table": 2,
+   "n_table_rows": 1,
+   "n_table_rows_found_independently": 1,
+   "precision_basis": false
+  },
+  "X06": {
+   "coverage": "summary_whole",
+   "family": "UK",
+   "group": "UK",
+   "length_class": "medium",
+   "n_independent": 9,
+   "n_independent_in_table": 9,
+   "n_table_rows": 3,
+   "n_table_rows_found_independently": 3,
+   "precision_basis": true
+  },
+  "X07": {
+   "coverage": "partial",
+   "family": "US-NIST",
+   "group": "US",
+   "length_class": "medium",
+   "n_independent": 98,
+   "n_independent_in_table": 12,
+   "n_table_rows": 3,
+   "n_table_rows_found_independently": 3,
+   "precision_basis": false
+  },
+  "X08": {
+   "coverage": "partial",
+   "family": "EU-AI-Act",
+   "group": "EU",
+   "length_class": "long",
+   "n_independent": 30,
+   "n_independent_in_table": 15,
+   "n_table_rows": 28,
+   "n_table_rows_found_independently": 11,
+   "precision_basis": false
+  },
+  "X09": {
+   "coverage": "summary_partial",
+   "family": "Japan",
+   "group": "Japan",
+   "length_class": "short",
+   "n_independent": 14,
+   "n_independent_in_table": 2,
+   "n_table_rows": 1,
+   "n_table_rows_found_independently": 1,
+   "precision_basis": false
+  },
+  "X11": {
+   "coverage": "summary_partial",
+   "family": "Singapore",
+   "group": "Singapore",
+   "length_class": "short",
+   "n_independent": 22,
+   "n_independent_in_table": 14,
+   "n_table_rows": 1,
+   "n_table_rows_found_independently": 1,
+   "precision_basis": false
+  },
+  "X12": {
+   "coverage": "summary_whole",
+   "family": "UAE-Dubai",
+   "group": "UAE",
+   "length_class": "medium",
+   "n_independent": 14,
+   "n_independent_in_table": 8,
+   "n_table_rows": 3,
+   "n_table_rows_found_independently": 3,
+   "precision_basis": true
+  },
+  "X13": {
+   "coverage": "summary_partial",
+   "family": "UK",
+   "group": "UK",
+   "length_class": "short",
+   "n_independent": 7,
+   "n_independent_in_table": 4,
+   "n_table_rows": 1,
+   "n_table_rows_found_independently": 1,
+   "precision_basis": false
+  },
+  "X14": {
+   "coverage": "summary_partial",
+   "family": "US-NIST",
+   "group": "US",
+   "length_class": "long",
+   "n_independent": 66,
+   "n_independent_in_table": 23,
+   "n_table_rows": 13,
+   "n_table_rows_found_independently": 11,
+   "precision_basis": false
+  }
+ },
+ "precision": {
+  "basis": "only documents whose whole text the reader reached (coverage.json precision_basis)",
+  "doc_bootstrap_ci95": [
+   100.0,
+   100.0
+  ],
+  "documents": 3,
+  "hits": 11,
+  "n": 11,
+  "pct": 100.0,
+  "wilson_row_ci95": [
+   74.1,
+   100.0
+  ]
+ },
+ "recall": {
+  "doc_bootstrap_ci95": [
+   25.8,
+   56.1
+  ],
+  "hits": 149,
+  "n": 389,
+  "pct": 38.3,
+  "wilson_row_ci95": [
+   33.6,
+   43.2
+  ]
+ },
+ "rematch_agreement": {
+  "agree": 93,
+  "agree_pct": 79.5,
+  "n": 117
+ }
+}

@@ -1,0 +1,5 @@
+Web address read: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_eng_20260714.pdf (given address, accepted by fetch tool; no fallback address used)
+Retrieval date: 2026-11-03
+Whole document read: partial. Only summaries returned by the fetch tool's summarising model were available (four prompts); the tool refused verbatim reproduction and offset reads returned summaries, not raw text. Document reported as 25 pages. I did not see full raw text; provisions outside the summarised passages may be missed, and section numbering and page numbers differ between summaries (flagged in notes). Reporting of absence of red teaming, audit, conformity assessment is from the summaries only.
+Number of provisions: 14
+Model: Sonnet 5.5 (claude-sonnet-5-5)

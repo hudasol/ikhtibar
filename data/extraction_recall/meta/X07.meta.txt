@@ -1,0 +1,8 @@
+Web addresses read: https://airc.nist.gov/airmf-resources/playbook/measure/ , /map/ , /manage/ , /govern/ , and https://airc.nist.gov/docs/AI_RMF_Playbook.pdf (all airc.nist.gov, NIST AI Resource Center, same Playbook companion to AI RMF 1.0).
+Given address https://airc.nist.gov/docs/playbook.json was refused by the fetch tool (not on allowlist); not retried further. Per the addendum, one WebSearch (standard, allowed_domains airc.nist.gov) returned the PDF and the four function pages, which I used as the same document.
+Retrieval date: 2026-11-03
+Whole document read: partial. Read through a summarising model (passages only, not verbatim full text; quotes were truncated, so paraphrases rest on shortened excerpts).
+Missed: MEASURE 3.2, 3.3, 3.4 and all of MEASURE 4.1 to 4.3 (web page text ended partway through MEASURE 3.1; the PDF fetch was cut at about 126,600 characters, ended in MANAGE 3.2, and showed no MEASURE section in either segment). MAP 5.1 body was only partly seen. Page text of Govern, Manage and Map was truncated around 100,000+ characters, so later subcategories (e.g. MANAGE 3.2 to 4.3 detail, parts of GOVERN 6) may be incomplete. Govern selection was by the summariser's filter.
+Number of provisions: 98
+All rows rated non_binding because the Playbook is voluntary guidance with suggested actions.
+Model: Claude Sonnet 5.5 (claude-sonnet-5-5)

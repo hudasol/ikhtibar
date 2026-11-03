@@ -1,0 +1,45 @@
+{
+ "actor_same_no": 0,
+ "binding_status_differs": {
+  "k": 0,
+  "n": 0,
+  "pct": null,
+  "wilson_ci95": [
+   null,
+   null
+  ]
+ },
+ "binding_status_same": {
+  "k": 0,
+  "n": 0,
+  "pct": null,
+  "wilson_ci95": [
+   null,
+   null
+  ]
+ },
+ "binding_vs_nonbinding_flip": {
+  "k": 0,
+  "n": 0,
+  "pct": null,
+  "wilson_ci95": [
+   null,
+   null
+  ]
+ },
+ "clause_supported": {
+  "no": 0,
+  "partial": 0,
+  "yes": 0
+ },
+ "difference_kinds": {},
+ "meta": {
+  "arabic_found": 0,
+  "arabic_not_found": 40,
+  "candidate_rows": 76,
+  "read_with_status": 0,
+  "rows_returned": 76,
+  "seed": 20261103
+ },
+ "summary_only_rows": 0
+}

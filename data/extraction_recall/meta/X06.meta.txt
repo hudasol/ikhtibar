@@ -1,0 +1,5 @@
+Web address read: https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024 (the address given; no search needed, fetch succeeded on first try).
+Retrieval date: 2026-11-03
+Whole document read: yes, via the WebFetch tool, which answers through a summarising model. Three prompts were used (full evaluation extract, start through commitment IV, commitment V to end). I received near verbatim fragments but not a guaranteed complete verbatim text; page navigation and licence boilerplate were not read. Nothing known to be missed.
+Number of provisions: 9
+Model: Sonnet 5.5 (claude-sonnet-5-5)

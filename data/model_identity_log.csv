@@ -13,3 +13,29 @@ extract_r1_X11,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5
 extract_r1_X12,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
 extract_r1_X13,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
 extract_r1_X14,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
+match_X02,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X03,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X05,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X06,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X07,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X08,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X09,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X11,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X12,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X13,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X14,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+match_X04,task2_extraction,matcher,agent could not report it,claude-sonnet-5-5,2026-11-03,agent said its exact model version is not shown in its session
+rematch_30pct,task2_extraction,second_matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; sees no first round matches
+reflist_A,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+reflist_B,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+reflist_C,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+reflist_D,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+reflist_E,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+reflist_F,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+verify_us_1,task3a_verification,verifier,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; session configured model only
+verify_us_2,task3a_verification,verifier,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; session configured model only
+arabic_doh_other,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_difc_adgm,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_dubai,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_federal,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_ncsp_scope,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)

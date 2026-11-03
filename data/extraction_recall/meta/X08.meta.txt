@@ -1,0 +1,7 @@
+Web address read: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02024R1689-20260727
+Why this address: the given publications.europa.eu address was refused (not on allowlist). A standard WebSearch restricted to eur-lex.europa.eu returned this PDF of the same consolidated text (CELEX 02024R1689-20260727, same title, same issuer, same date).
+Retrieval date: 2026-11-03
+Whole document read: NO (partial). Read through the middle of Article 36 (chapters I to III up to notified bodies; the fetch tool exposed only about 127k characters of the PDF text). NOT read: rest of Art. 36 and Articles 37 to 113, including Art. 43 (conformity assessment procedures), 47-49, 50, 53-55 (general purpose AI), 57-63 (sandboxes, real world testing), 72 (post market), and all Annexes (including Annex IV, VI, VII, IX, XI, XIII). The ELI and other eur-lex addresses returned only navigation text; HTML and alternate PDF address forms returned a different document (Regulation 2017/745), which was discarded. No third party sources used.
+Reading was through a summarising model that gave passages, not full verbatim text; locators and paragraph numbers come from that summary and are not verified against the original wording.
+Number of provisions: 30
+Model: Claude Sonnet 5.5 (claude-sonnet-5-5)
