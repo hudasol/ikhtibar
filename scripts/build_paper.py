@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from ikhtibar import eval_values, build_docs  # noqa: E402
+from ikhtibar import paper_p5, eval_values, build_docs  # noqa: E402
 
 PAPER = ROOT / "paper"
 
@@ -217,6 +217,40 @@ def extra_tables():
     return t
 
 
+def p5_tables(v, cm):
+    """Tables for the phase 5 section, built from the values and the comparison file."""
+    t = {}
+    fmt = lambda x: "n/a" if x is None else x
+    body = [
+        ["Headline test rows", v["p5_fz_n"], v["p5_ex_tab_n"], v["p5_ns_n"]],
+        ["Binding rows", "%s (%s\\%%)" % (v["p5_fz_k"], v["p5_fz_pct"]), "%s (%s\\%%)" % (v["p5_ex_tab_k"], v["p5_ex_tab_pct"]),
+         "%s (%s\\%%)" % (v["p5_ns_k"], v["p5_ns_pct"])],
+        ["Mean over documents, \\%", v["p5_fz_docmean"], v["p5_ex_docmean"], v["p5_ns_docmean"]],
+        ["Document bootstrap interval, \\%", v["p5_fz_boot"], v["p5_ex_boot"], v["p5_ns_docci"]],
+        ["Leave one family out, \\%", v["p5_fz_lofo"], v["p5_ex_lofo"], "n/a"],
+        ["Process only gap, coder A (points)", fmt(cm["process_only_gap_coderA"]["old_rows"].get("difference_pp")), fmt(v["p5_gap_ext"]), fmt(v["p5_gap_ns"])],
+        ["Gap with test type fixed (points)", v["p5_fz_adj_type"], v["p5_ex_adj_type"], "n/a"],
+        ["Gap with family fixed (points)", v["p5_fz_adj_fam"], v["p5_ex_adj_fam"], "n/a"],
+        ["Majority class, grouped CV, \\%", v["p5_gf_majority"], v["p5_g_majority"], v["p5_oos_majority"]],
+        ["Document prior, grouped CV, \\%", v["p5_gf_framework"], v["p5_g_framework"], v["p5_oos_framework"]],
+        ["Wording rule, \\%", v["p5_gf_modal_rule"], v["p5_g_modal_rule"], v["p5_oos_modal_rule"]],
+        ["Embedding model, \\%", v["p5_gf_embed_lr"], v["p5_g_embed_lr"], v["p5_oos_embed_lr"]],
+    ]
+    body = [[r[0]] + [str(x) for x in r[1:]] for r in body]
+    t["tex_p5_compare"] = tabular(["Quantity", "Frozen v4.0", "Extended table", "New documents"], body, "lrrr")
+    short = {"1a": "Binding share 15 to 40\\% on new documents", "1b": "Sector documents more binding than frameworks",
+             "2": "Process only gap 5 to 30 points", "3": "Document prior within 10 points of majority",
+             "4": "Wording rule 45 to 65\\%", "5": "Binding below 25\\% in unseen families", "6": "Recall 30 to 65\\%, below 68.4\\%",
+             "7a": "Extraction recall 55 to 85\\%", "7b": "Extraction precision 75 to 95\\%", "7c": "Missed provisions less binding",
+             "8": "Arabic agreement at least 80\\%", "9": "Error rate on new rows 4 to 15\\%"}
+    rows = []
+    for x in cm["predictions"]["scored"]:
+        obs = x["observed"]
+        rows.append([x["id"], short[x["id"]], tex(obs) if len(obs) < 60 else tex(obs[:57] + "..."), x["result"]])
+    t["tex_p5_pred"] = tabular(["No.", "Prediction", "Observed", "Result"], rows, "llp{3.6cm}l")
+    return t
+
+
 def author_block():
     import os
     if os.environ.get("IKHTIBAR_ANON"):
@@ -241,6 +275,10 @@ def render():
     rb, vf = j("data/robustness.json"), j("data/verification/phase4/stats_p4.json")
     vals.update(tables(b, e, a, rb, vf))
     vals.update(extra_tables())
+    p5v = paper_p5.values()
+    vals.update({k: tex(v) if isinstance(v, str) else v for k, v in p5v.items()})
+    vals.update(p5_tables(p5v, j("data/phase5/comparison.json")))
+    vals["n_test_head_frozen"] = p5v["p5_fz_n"]
     for k in list(vals):
         if k.startswith("sp_") and isinstance(vals[k], str):
             vals[k] = re.sub(r"(?<![\w.])-(?=\d)", "$-$", vals[k])
