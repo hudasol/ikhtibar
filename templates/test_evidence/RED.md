@@ -41,6 +41,6 @@ Selected by script from verified rows; these are examples, not a complete list. 
 |---|---|---|---|
 | `EU-AI-Act-063` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 51(1)-(2) |
 | `EU-GPAI-CoP-003` | EU AI Act - GPAI Code of Practice (Safety and Security chapt | voluntary | Measure 3.2 |
+| `International-P5-09` | ETSI TS 104 275 V1.1.1 Securing Artificial Intelligence (SAI | voluntary | Clause 5.2.5 (Principle 9), p. 13 |
 | `Singapore-016` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcome 4.1 / Process 4.1.1, p.29 (technical testing, genera |
 | `UK-024` | UK AI Security Institute (AISI) | voluntary | AI Safety Institute approach to evaluations (published 2024- |
-| `US-NIST-046` | US NIST CAISSI program page (nist.gov/caisi; titled 'Center  | voluntary | About page, nist.gov/caisi (no clause numbers) |

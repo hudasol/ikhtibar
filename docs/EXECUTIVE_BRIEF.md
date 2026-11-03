@@ -8,7 +8,7 @@ Which governments and institutes require, recommend or merely describe testing o
 
 ## What was found
 
-- **Most testing text is not binding.** Of 303 test provisions that are not excluded, 84 (28%) are mandatory or conditional, 184 (61%) are voluntary or guidance and 35 (12%) are ambiguous.
+- **Most testing text is not binding.** Of 355 test provisions that are not excluded, 88 (25%) are mandatory or conditional, 231 (65%) are voluntary or guidance and 36 (10%) are ambiguous.
 - **Recommended is far more common than merely described.** Of 209 such headline rows, 140 recommend a test, 40 only describe testing practice, 19 use obligation wording in a document that is not binding or whose force is unclear, and 10 were disputed between the coders (agreement 95.2% on these rows; 95.4% and Cohen's kappa 0.9 on all 216 rows coded).
 - **Binding rules usually say that testing must happen, not how** (our reading of the rows cited). The EU Act, OMB M-25-21 and the Abu Dhabi DoH Standard require testing against metrics or benchmarks that the regulated party defines or that the text does not name (`EU-AI-Act-018`, `US-OMB-003`, `UAE-AbuDhabi-DoH-003`). The only EU harmonised standard cited so far (14 October 2026) is about quality management, not test methods (`EU-Standards-P3-20`).
 - **Independent assessment is binding only in narrow places.** EU notified bodies for some biometric systems and AI Office evaluations of general purpose models with systemic risk (`EU-AI-Act-040`, `EU-AI-Act-071`); independent validation and audit for Dubai health AI (`UAE-Dubai-025`); certification for DIFC high risk processing, which reviews governance documents rather than testing performance (`UAE-DIFC-ADGM-018`, `UAE-DIFC-ADGM-020`).
@@ -21,7 +21,7 @@ These are gaps in the documents retrieved. They are not statements of what the U
 
 ## How reliable is it
 
-Phase 4 (28 October) added a second fresh sample with its own rate and caveats (`docs/EVALUATION.md`). Separate verifier agents checked a fresh random sample of 30 rows on 16 October 2026: 3 errors in 23 verifiable rows under a strict rubric (13.0%, 95% interval 4.5% to 32.1%; the interval is wide because the sample is small). All 56 new rows were also checked (7 errors in 56). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, 15 of 142 had errors before correction. 38 rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
+Phase 4 (28 October) added a second fresh sample with its own rate and caveats (`docs/EVALUATION.md`). Separate verifier agents checked a fresh random sample of 30 rows on 16 October 2026: 3 errors in 23 verifiable rows under a strict rubric (13.0%, 95% interval 4.5% to 32.1%; the interval is wide because the sample is small). All 56 new rows were also checked (7 errors in 56). Every error found was corrected. Rows phase 2 could not read were the hardest; graded strictly, 15 of 142 had errors before correction. 43 rows remain excluded from the counts, mainly Canada's Directive, whose site blocks automated reading. All checking was by AI agents, not human experts.
 
 ## Items to confirm
 

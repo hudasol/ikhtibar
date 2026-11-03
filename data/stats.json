@@ -1,42 +1,44 @@
 {
- "total_rows": 541,
+ "total_rows": 619,
  "row_type": {
-  "context": 94,
-  "test": 324,
-  "enabler": 123
+  "context": 106,
+  "test": 377,
+  "enabler": 136
  },
  "verification_status": {
   "UNVERIFIED_BLOCKED": 32,
-  "VERIFIED_CORRECTED": 179,
-  "VERIFIED": 325,
+  "VERIFIED_CORRECTED": 191,
+  "VERIFIED": 391,
   "UNVERIFIABLE_OTHER": 1,
   "SUPERSEDED": 4
  },
- "test_rows_all": 324,
- "test_rows_headline": 303,
- "test_rows_excluded": 21,
+ "test_rows_all": 377,
+ "test_rows_headline": 355,
+ "test_rows_excluded": 22,
  "binding_headline": {
-  "mandatory": 27,
-  "conditional": 57,
-  "voluntary": 42,
-  "guidance": 142,
-  "ambiguous": 35
+  "mandatory": 30,
+  "conditional": 58,
+  "voluntary": 48,
+  "guidance": 183,
+  "ambiguous": 36
  },
  "binding_all_tests": {
-  "mandatory": 36,
-  "conditional": 60,
-  "voluntary": 42,
-  "guidance": 149,
-  "ambiguous": 37
+  "mandatory": 39,
+  "conditional": 61,
+  "voluntary": 49,
+  "guidance": 190,
+  "ambiguous": 38
  },
  "excluded_test_rows_by_status": {
   "UNVERIFIED_BLOCKED": 19,
-  "SUPERSEDED": 2
+  "SUPERSEDED": 2,
+  "VERIFIED": 1
  },
  "excluded_test_rows_by_family": {
   "Canada": 12,
   "Saudi": 7,
-  "UAE-Federal": 2
+  "UAE-Federal": 2,
+  "International": 1
  },
  "by_family": {
   "Canada": {
@@ -75,6 +77,15 @@
    "guidance": 0,
    "ambiguous": 0
   },
+  "EU-Other": {
+   "rows": 2,
+   "test_headline": 1,
+   "mandatory": 0,
+   "conditional": 0,
+   "voluntary": 0,
+   "guidance": 1,
+   "ambiguous": 0
+  },
   "EU-Standards": {
    "rows": 9,
    "test_headline": 1,
@@ -93,13 +104,22 @@
    "guidance": 11,
    "ambiguous": 0
   },
+  "International": {
+   "rows": 26,
+   "test_headline": 11,
+   "mandatory": 0,
+   "conditional": 0,
+   "voluntary": 6,
+   "guidance": 5,
+   "ambiguous": 0
+  },
   "Japan": {
-   "rows": 28,
-   "test_headline": 15,
+   "rows": 38,
+   "test_headline": 23,
    "mandatory": 2,
    "conditional": 0,
    "voluntary": 0,
-   "guidance": 13,
+   "guidance": 21,
    "ambiguous": 0
   },
   "Korea": {
@@ -109,6 +129,15 @@
    "conditional": 3,
    "voluntary": 3,
    "guidance": 0,
+   "ambiguous": 0
+  },
+  "Other-Jurisdictions": {
+   "rows": 9,
+   "test_headline": 8,
+   "mandatory": 1,
+   "conditional": 0,
+   "voluntary": 0,
+   "guidance": 7,
    "ambiguous": 0
   },
   "Saudi": {
@@ -121,12 +150,12 @@
    "ambiguous": 19
   },
   "Singapore": {
-   "rows": 38,
-   "test_headline": 33,
+   "rows": 41,
+   "test_headline": 36,
    "mandatory": 0,
    "conditional": 0,
    "voluntary": 12,
-   "guidance": 20,
+   "guidance": 23,
    "ambiguous": 1
   },
   "UAE-AbuDhabi-DoH": {
@@ -166,21 +195,21 @@
    "ambiguous": 1
   },
   "UAE-Federal": {
-   "rows": 42,
-   "test_headline": 22,
+   "rows": 46,
+   "test_headline": 25,
    "mandatory": 6,
    "conditional": 3,
    "voluntary": 0,
-   "guidance": 12,
+   "guidance": 15,
    "ambiguous": 1
   },
   "UK": {
-   "rows": 36,
-   "test_headline": 22,
+   "rows": 45,
+   "test_headline": 28,
    "mandatory": 0,
    "conditional": 1,
    "voluntary": 5,
-   "guidance": 13,
+   "guidance": 19,
    "ambiguous": 3
   },
   "US-NIST": {
@@ -200,6 +229,15 @@
    "voluntary": 0,
    "guidance": 2,
    "ambiguous": 0
+  },
+  "US-Sector": {
+   "rows": 15,
+   "test_headline": 12,
+   "mandatory": 2,
+   "conditional": 1,
+   "voluntary": 0,
+   "guidance": 8,
+   "ambiguous": 1
   },
   "US-WH": {
    "rows": 2,
@@ -395,9 +433,9 @@
   },
   "raw_verdict_counts_all": {
    "UNVERIFIED_BLOCKED": 32,
-   "MINOR": 157,
-   "PASS": 314,
-   "ERROR": 37,
+   "MINOR": 163,
+   "PASS": 380,
+   "ERROR": 43,
    "UNVERIFIABLE_OTHER": 1
   },
   "date_only_minor_reclassified": 12
@@ -546,7 +584,7 @@
  },
  "language_read": {
   "none": 25,
-  "English": 158,
+  "English": 226,
   "English official": 62,
   "English text on MoJ Japanese Law Translation database (page does not state official/tentative status)": 3,
   "English provisional translation (Cabinet Office; 'refer to the original text for accuracy')": 1,
@@ -588,12 +626,14 @@
   "Arabic original (fetch-tool rendering)": 2,
   "English (official English original from issuer; PDF obtained by WebFetch, text extracted locally from that same file because the tool could not decode it)": 8,
   "English (issuer's English original; PDF obtained by WebFetch, text extracted locally from that file). Arabic version not located.": 4,
-  "English (official original; PDF obtained by WebFetch, text extracted locally; blackline insertions and deletions are merged in plain extraction, insertions identified by comparison with Consolidated Version No. 2)": 4
+  "English (official original; PDF obtained by WebFetch, text extracted locally; blackline insertions and deletions are merged in plain extraction, insertions identified by comparison with Consolidated Version No. 2)": 4,
+  "Japanese original with English renderings": 10
  },
  "evidence_grade": {
   "primary text read": 494,
-  "catalogue-level only": 23,
+  "catalogue-level only": 28,
   "read via unofficial/machine translation": 21,
-  "unverified (secondary or unread source)": 3
+  "unverified (secondary or unread source)": 3,
+  "primary text read (summary only)": 73
  }
 }

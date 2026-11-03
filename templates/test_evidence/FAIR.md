@@ -42,5 +42,5 @@ Selected by script from verified rows; these are examples, not a complete list. 
 | `UAE-AbuDhabi-DoH-008` | DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025) | mandatory | Cl. 3.1.5.1.1-3.1.5.1.3 |
 | `UAE-DIFC-ADGM-002` | DIFC Data Protection Regulations, Consolidated Version No. 2 | conditional | Reg. 10.2.2(d) |
 | `Singapore-019` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcome 7.1 / Process 7.1.1, p.71 (technical testing, tradit |
-| `UAE-Dubai-001` | Smart Dubai AI Ethics Principles & Guidelines (Guidelines ch | guidance | Guideline 1.1.1.1 |
-| `UAE-Federal-018` | UAE AI Ethics: Principles & Guidelines (Dec 2022) | guidance | s3.1.2.2, pp.18-19 |
+| `Japan-P5-83` | AI Discussion Paper (AIディスカッションペーパー) version 1.0, Financial  | guidance | Section IV-1-2 (fairness and bias), p. 23 |
+| `Other-Jurisdictions-P5-95` | Consumer Protection in respect of Use of Generative Artifici | guidance | Section 2(a) Fairness, p. 3 |

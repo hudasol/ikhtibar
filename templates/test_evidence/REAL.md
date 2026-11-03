@@ -38,7 +38,7 @@ Selected by script from verified rows; these are examples, not a complete list. 
 | Row | Framework | Source status | Clause |
 |---|---|---|---|
 | `EU-AI-Act-017` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 9(7) |
+| `International-P5-16` | Hiroshima Process International Code of Conduct for Organiza | voluntary | Action 2, pp. 3-4 |
+| `Japan-P5-84` | Guidelines on Ensuring Safety of Automated Driving Vehicles  | guidance | Section 5(1), p. 8 |
 | `Singapore-033` | Singapore Model AI Governance Framework for Agentic AI (vers | guidance | s.2.3.2, pp.19-20 (v1.0, unchecked); in v1.5 (20 May 2026) s |
 | `UAE-Dubai-009` | Dubai AI Integration Matrix Framework for Government Organiz | guidance | Ch. 7.3 (Pilot Implementation), printed p. 62-63 |
-| `US-NIST-P5-03` | US NIST AI 200-2 ipd (The TEVV-Athlon Framework, initial pub | guidance | Sec. 4.3.2 (pp. 14-15) |
-| `US-OMB-P5-04` | US OMB M-25-22 (Driving Efficient Acquisition of AI in Gover | guidance | Sec. 4(b)(ii) Product Demonstration (p. 8) |

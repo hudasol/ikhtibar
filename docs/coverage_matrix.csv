@@ -5,12 +5,12 @@ EU-Standards,V1,.,.,.,.,.,.,.,.,.,.,.,.,.,.
 ISO-IEC,G6,V4,.,.,G1,.,.,.,.,G1,.,.,.,.,.
 US-NIST,G17,G2,G2,G5,V7,.,G1,G1,.,G1,.,G2,G1,G2,G2
 US-OMB,C2,.,.,.,.,.,.,.,.,C1,.,.,G1,C2,M2
-UK,G5+a1,.,G2,G4+a1,V3,.,C1,.,.,V2,.,G2+a1,.,G2,V1
-Singapore,V11+a1,V2,V2,V1,V3,.,.,V2,.,V3,.,V1,G2,V3,V3
-Japan,M4,G1,.,.,G4,.,.,.,.,M5,.,.,.,G1,.
+UK,G10+a1,.,G2,G4+a1,V3,.,C1,.,.,V2,.,G2+a1,.,G2,V2
+Singapore,V14+a1,V2,V2,V1,V3,.,.,V2,.,V3,.,V1,G2,V3,V3
+Japan,M8,G3,G1,.,G4,.,.,.,.,M5,.,.,G1,G1,.
 Korea,.,.,.,.,.,.,.,.,.,C5,.,V1,.,.,.
 China,.,.,.,V2,.,V3,.,M1,.,M1,M4,C5,.,M1,.
-UAE-Federal,G2,G1,G3,M5,.,.,C3,.,.,M2+a1,.,M2,.,C2,G2
+UAE-Federal,G4,G1,G3,M5,.,.,C3,.,.,M3+a1,.,M2,.,C2,G2
 UAE-DIFC-ADGM,G1,.,C3+a1,.,.,.,C4,.,G1,C2+a1,.,C3+a1,.,.,C2+a1
 UAE-Dubai,G3,.,G4,.,.,.,.,.,.,V3+a1,.,M6,G1,M2,C1
 UAE-AbuDhabi-DoH,M2,M2+a1,M1,M1,.,.,.,.,.,M4+a1,.,M3+a1,A1,A1,C2+a1

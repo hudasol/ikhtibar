@@ -86,3 +86,11 @@ The second list was built and matched by agents using the same tools as the tabl
 ## D20. Texas H.B. 149 rows left ambiguous
 
 Two fresh verifiers disagreed about the two Texas rows (one proposed conditional, the other mandatory), and both noted that the text read is the Senate committee substitute, not the enacted act. The enacted text could not be fetched in the session. I kept their wording corrections but set the binding status of both rows to ambiguous with a note, because a status cannot be settled from a version that is not the law. This is a status of the text read, not a statement about what Texas requires.
+
+## D21. Model identity recorded without the vendor product name
+
+The overnight brief asks for the exact name and version of the model behind every coder, extractor and verifier run. A later instruction from the author says that no vendor or assistant name may appear anywhere in the repository. The two cannot both be met in full. I kept the record and removed the name: `data/model_identity_log.csv` and the run metadata files state "language model version 5.5 (mid size tier)" and the configured identifier field reads "identifier withheld". The exact identifier was reported by the agents and is known to the author from the session settings; it can be added back by her if a venue requires it. Local paths that contained the workspace user name were replaced by neutral placeholders. Names of companies and products that occur inside quoted source text (for example a signatory list in an international commitment, or a coding assistant named in a regulator's text) are source content, not attribution, and were left untouched.
+
+## D22. Traces in published history
+
+The local `main` branch and the frozen branch contain no assistant author, committer, trailer or session link. The remote reference `refs/pull/1/head` (the closed first pull request) still holds three early commits authored as the assistant, with attribution trailers. They cannot be removed without rewriting published history, which is forbidden, so they are listed in `docs/MORNING_NOTE.md`. Handoff item 7 was stale on this point and was corrected.

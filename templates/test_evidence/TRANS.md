@@ -40,3 +40,4 @@ Selected by script from verified rows; these are examples, not a complete list. 
 | `China-017` | China - Measures for Labeling AI-Generated Synthetic Content | mandatory | Art. 6 (platform checks) |
 | `Singapore-021` | Singapore AI Verify Testing Framework (for traditional and g | voluntary | Outcome 2.1 / Process 2.1.1, p.14 (technical testing, tradit |
 | `US-NIST-013` | US NIST AI RMF 1.0 (NIST AI 100-1, January 2023) | guidance | MEASURE 2.8-2.10, Table 3, p.30 |
+| `US-Sector-P5-48` | CFPB Consumer Financial Protection Circular 2022-03 (publish | guidance | Endnote 1 (linked from the Response section) |
