@@ -1,32 +1,32 @@
 {
- "total_rows": 522,
+ "total_rows": 541,
  "row_type": {
-  "context": 89,
-  "test": 311,
-  "enabler": 122
+  "context": 94,
+  "test": 324,
+  "enabler": 123
  },
  "verification_status": {
   "UNVERIFIED_BLOCKED": 32,
-  "VERIFIED_CORRECTED": 171,
-  "VERIFIED": 314,
+  "VERIFIED_CORRECTED": 179,
+  "VERIFIED": 325,
   "UNVERIFIABLE_OTHER": 1,
   "SUPERSEDED": 4
  },
- "test_rows_all": 311,
- "test_rows_headline": 290,
+ "test_rows_all": 324,
+ "test_rows_headline": 303,
  "test_rows_excluded": 21,
  "binding_headline": {
-  "mandatory": 26,
-  "conditional": 55,
+  "mandatory": 27,
+  "conditional": 57,
   "voluntary": 42,
-  "guidance": 132,
+  "guidance": 142,
   "ambiguous": 35
  },
  "binding_all_tests": {
-  "mandatory": 35,
-  "conditional": 58,
+  "mandatory": 36,
+  "conditional": 60,
   "voluntary": 42,
-  "guidance": 139,
+  "guidance": 149,
   "ambiguous": 37
  },
  "excluded_test_rows_by_status": {
@@ -184,21 +184,30 @@
    "ambiguous": 3
   },
   "US-NIST": {
-   "rows": 46,
-   "test_headline": 36,
+   "rows": 58,
+   "test_headline": 43,
    "mandatory": 0,
    "conditional": 0,
    "voluntary": 1,
-   "guidance": 35,
+   "guidance": 42,
    "ambiguous": 0
   },
   "US-OMB": {
-   "rows": 9,
-   "test_headline": 3,
-   "mandatory": 0,
-   "conditional": 3,
+   "rows": 14,
+   "test_headline": 8,
+   "mandatory": 1,
+   "conditional": 5,
    "voluntary": 0,
-   "guidance": 0,
+   "guidance": 2,
+   "ambiguous": 0
+  },
+  "US-WH": {
+   "rows": 2,
+   "test_headline": 1,
+   "mandatory": 0,
+   "conditional": 0,
+   "voluntary": 0,
+   "guidance": 1,
    "ambiguous": 0
   }
  },
@@ -386,9 +395,9 @@
   },
   "raw_verdict_counts_all": {
    "UNVERIFIED_BLOCKED": 32,
-   "MINOR": 150,
-   "PASS": 303,
-   "ERROR": 36,
+   "MINOR": 157,
+   "PASS": 314,
+   "ERROR": 37,
    "UNVERIFIABLE_OTHER": 1
   },
   "date_only_minor_reclassified": 12
@@ -537,7 +546,7 @@
  },
  "language_read": {
   "none": 25,
-  "English": 139,
+  "English": 158,
   "English official": 62,
   "English text on MoJ Japanese Law Translation database (page does not state official/tentative status)": 3,
   "English provisional translation (Cabinet Office; 'refer to the original text for accuracy')": 1,
@@ -582,7 +591,7 @@
   "English (official original; PDF obtained by WebFetch, text extracted locally; blackline insertions and deletions are merged in plain extraction, insertions identified by comparison with Consolidated Version No. 2)": 4
  },
  "evidence_grade": {
-  "primary text read": 475,
+  "primary text read": 494,
   "catalogue-level only": 23,
   "read via unofficial/machine translation": 21,
   "unverified (secondary or unread source)": 3

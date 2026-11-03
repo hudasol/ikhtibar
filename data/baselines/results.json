@@ -2,369 +2,369 @@
  "binding3": {
   "cv": {
    "embed_lr": {
-    "accuracy": 73.5,
+    "accuracy": 73.0,
     "accuracy_ci95": [
-     69.0,
-     78.0
+     68.5,
+     77.4
     ],
     "accuracy_ci95_doc": [
-     65.1,
-     81.7
+     64.4,
+     81.4
     ],
-    "kappa": 0.484,
-    "macro_f1": 59.0,
+    "kappa": 0.456,
+    "macro_f1": 56.2,
     "macro_f1_ci95": [
-     53.6,
-     64.6
+     51.3,
+     60.9
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 88.0,
+    "accuracy": 87.5,
     "accuracy_ci95": [
-     84.7,
-     91.1
+     84.0,
+     90.7
     ],
     "accuracy_ci95_doc": [
-     82.8,
-     92.3
+     81.9,
+     91.9
     ],
-    "kappa": 0.773,
-    "macro_f1": 84.5,
+    "kappa": 0.755,
+    "macro_f1": 84.0,
     "macro_f1_ci95": [
-     79.4,
-     88.7
+     78.8,
+     88.3
     ]
    },
    "framework": {
-    "accuracy": 89.6,
+    "accuracy": 89.1,
     "accuracy_ci95": [
-     86.2,
-     92.8
+     85.6,
+     92.2
     ],
     "accuracy_ci95_doc": [
-     84.4,
-     93.7
+     83.9,
+     93.2
     ],
-    "kappa": 0.805,
-    "macro_f1": 87.0,
+    "kappa": 0.795,
+    "macro_f1": 86.4,
     "macro_f1_ci95": [
-     81.8,
-     91.1
+     81.3,
+     90.5
     ]
    },
    "majority": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    },
    "modal_rule": {
-    "accuracy": 76.9,
+    "accuracy": 77.9,
     "accuracy_ci95": [
-     72.1,
-     82.1
+     73.3,
+     82.5
     ],
     "accuracy_ci95_doc": [
-     68.8,
-     84.5
+     69.8,
+     85.4
     ],
-    "kappa": 0.554,
-    "macro_f1": 60.8,
+    "kappa": 0.568,
+    "macro_f1": 61.4,
     "macro_f1_ci95": [
-     54.8,
-     67.0
+     55.6,
+     67.3
     ]
    },
    "tfidf_lr": {
-    "accuracy": 64.9,
+    "accuracy": 65.3,
     "accuracy_ci95": [
-     59.2,
-     70.0
+     60.0,
+     70.3
     ],
     "accuracy_ci95_doc": [
-     52.1,
-     77.5
+     53.3,
+     78.1
     ],
-    "kappa": 0.164,
-    "macro_f1": 36.2,
+    "kappa": 0.158,
+    "macro_f1": 36.0,
     "macro_f1_ci95": [
-     31.8,
-     40.3
+     32.1,
+     39.9
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 84.7,
+    "accuracy": 84.9,
     "accuracy_ci95": [
-     80.7,
-     88.2
+     81.0,
+     88.4
     ],
     "accuracy_ci95_doc": [
-     77.6,
-     89.7
+     78.0,
+     90.0
     ],
-    "kappa": 0.698,
-    "macro_f1": 80.6,
+    "kappa": 0.697,
+    "macro_f1": 80.7,
     "macro_f1_ci95": [
-     75.0,
-     85.3
+     74.9,
+     85.4
     ]
    }
   },
   "gcv": {
    "embed_lr": {
-    "accuracy": 64.2,
+    "accuracy": 63.5,
     "accuracy_ci95": [
-     59.3,
-     68.9
+     58.8,
+     68.2
     ],
     "accuracy_ci95_doc": [
-     51.3,
-     77.4
+     52.0,
+     75.5
     ],
-    "kappa": 0.263,
-    "macro_f1": 42.0,
+    "kappa": 0.245,
+    "macro_f1": 42.1,
     "macro_f1_ci95": [
      38.3,
-     45.6
+     45.9
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 61.7,
+    "accuracy": 62.5,
     "accuracy_ci95": [
-     56.6,
-     66.9
+     57.3,
+     67.5
     ],
     "accuracy_ci95_doc": [
-     46.6,
-     76.7
+     48.2,
+     77.1
     ],
-    "kappa": 0.104,
-    "macro_f1": 31.8,
+    "kappa": 0.089,
+    "macro_f1": 31.3,
     "macro_f1_ci95": [
-     28.6,
-     35.1
+     28.5,
+     34.5
     ]
    },
    "framework": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    },
    "majority": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    },
    "modal_rule": {
-    "accuracy": 76.9,
+    "accuracy": 77.9,
     "accuracy_ci95": [
-     72.1,
-     82.1
+     73.3,
+     82.5
     ],
     "accuracy_ci95_doc": [
-     68.8,
-     84.5
+     69.8,
+     85.4
     ],
-    "kappa": 0.554,
-    "macro_f1": 60.8,
+    "kappa": 0.568,
+    "macro_f1": 61.4,
     "macro_f1_ci95": [
-     54.8,
-     67.0
+     55.6,
+     67.3
     ]
    },
    "tfidf_lr": {
-    "accuracy": 62.4,
+    "accuracy": 62.8,
     "accuracy_ci95": [
-     56.9,
-     67.6
+     57.5,
+     68.0
     ],
     "accuracy_ci95_doc": [
-     47.2,
-     77.6
+     48.3,
+     77.7
     ],
-    "kappa": 0.087,
-    "macro_f1": 31.0,
+    "kappa": 0.077,
+    "macro_f1": 30.6,
     "macro_f1_ci95": [
      27.7,
-     34.4
+     33.5
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    }
   },
   "label_counts": {
    "ambiguous": 35,
-   "binding": 81,
-   "non_binding": 174
+   "binding": 84,
+   "non_binding": 184
   },
   "lofo": {
    "embed_lr": {
-    "accuracy": 62.1,
+    "accuracy": 64.7,
     "accuracy_ci95": [
-     56.6,
-     67.6
+     59.1,
+     70.0
     ],
     "accuracy_ci95_doc": [
-     50.6,
-     74.6
+     53.8,
+     75.9
     ],
-    "kappa": 0.251,
-    "macro_f1": 42.3,
+    "kappa": 0.293,
+    "macro_f1": 45.2,
     "macro_f1_ci95": [
-     37.3,
-     47.4
+     39.5,
+     50.7
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 61.7,
+    "accuracy": 62.7,
     "accuracy_ci95": [
-     56.2,
-     67.2
+     57.4,
+     68.0
     ],
     "accuracy_ci95_doc": [
-     46.4,
-     77.2
+     47.7,
+     77.7
     ],
-    "kappa": 0.097,
-    "macro_f1": 31.2,
+    "kappa": 0.087,
+    "macro_f1": 30.7,
     "macro_f1_ci95": [
-     27.4,
-     35.7
+     27.2,
+     34.7
     ]
    },
    "framework": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    },
    "majority": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    },
    "modal_rule": {
-    "accuracy": 76.9,
+    "accuracy": 77.9,
     "accuracy_ci95": [
-     72.1,
-     82.1
+     73.3,
+     82.5
     ],
     "accuracy_ci95_doc": [
-     68.8,
-     84.5
+     69.8,
+     85.4
     ],
-    "kappa": 0.554,
-    "macro_f1": 60.8,
+    "kappa": 0.568,
+    "macro_f1": 61.4,
     "macro_f1_ci95": [
-     54.8,
-     67.0
+     55.6,
+     67.3
     ]
    },
    "tfidf_lr": {
-    "accuracy": 61.4,
+    "accuracy": 61.7,
     "accuracy_ci95": [
-     55.5,
-     66.6
+     56.1,
+     67.0
     ],
     "accuracy_ci95_doc": [
-     46.0,
-     76.9
+     47.3,
+     76.8
     ],
-    "kappa": 0.045,
-    "macro_f1": 28.4,
+    "kappa": 0.039,
+    "macro_f1": 28.3,
     "macro_f1_ci95": [
      25.3,
-     32.1
+     31.7
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 60.0,
+    "accuracy": 60.7,
     "accuracy_ci95": [
-     54.1,
-     65.5
+     55.1,
+     66.0
     ],
     "accuracy_ci95_doc": [
-     44.8,
-     75.3
+     46.1,
+     75.6
     ],
     "kappa": 0.0,
-    "macro_f1": 25.0,
+    "macro_f1": 25.2,
     "macro_f1_ci95": [
-     23.4,
-     26.4
+     23.7,
+     26.5
     ]
    }
   }
@@ -372,371 +372,371 @@
  "binding5": {
   "cv": {
    "embed_lr": {
-    "accuracy": 61.7,
+    "accuracy": 60.9,
     "accuracy_ci95": [
-     56.7,
-     66.8
+     56.3,
+     65.8
     ],
     "accuracy_ci95_doc": [
-     51.4,
-     71.4
+     50.8,
+     70.8
     ],
-    "kappa": 0.419,
-    "macro_f1": 46.2,
+    "kappa": 0.385,
+    "macro_f1": 43.2,
     "macro_f1_ci95": [
-     40.3,
-     51.6
+     38.1,
+     48.0
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 82.9,
+    "accuracy": 81.3,
     "accuracy_ci95": [
-     79.1,
-     86.5
+     77.3,
+     85.0
     ],
     "accuracy_ci95_doc": [
-     76.3,
-     87.7
+     73.9,
+     86.6
     ],
-    "kappa": 0.751,
-    "macro_f1": 79.5,
+    "kappa": 0.719,
+    "macro_f1": 76.9,
     "macro_f1_ci95": [
-     74.4,
-     83.7
+     71.4,
+     81.5
     ]
    },
    "framework": {
-    "accuracy": 84.3,
+    "accuracy": 83.3,
     "accuracy_ci95": [
-     80.2,
-     88.2
+     79.2,
+     87.2
     ],
     "accuracy_ci95_doc": [
-     78.0,
-     89.0
+     76.5,
+     88.4
     ],
-    "kappa": 0.774,
-    "macro_f1": 81.9,
+    "kappa": 0.757,
+    "macro_f1": 80.6,
     "macro_f1_ci95": [
-     76.6,
-     86.2
+     75.2,
+     85.1
     ]
    },
    "majority": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     39.7,
-     51.4
+     41.3,
+     52.1
     ],
     "accuracy_ci95_doc": [
-     30.2,
-     61.7
+     32.2,
+     63.3
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.7
     ]
    },
    "modal_rule": {
-    "accuracy": 58.3,
+    "accuracy": 59.7,
     "accuracy_ci95": [
-     52.8,
-     64.1
+     54.1,
+     65.0
     ],
     "accuracy_ci95_doc": [
-     45.5,
-     69.4
+     47.6,
+     70.6
     ],
-    "kappa": 0.344,
-    "macro_f1": 31.2,
+    "kappa": 0.357,
+    "macro_f1": 31.7,
     "macro_f1_ci95": [
-     27.5,
-     35.1
+     27.9,
+     35.5
     ]
    },
    "tfidf_lr": {
-    "accuracy": 50.9,
+    "accuracy": 51.9,
     "accuracy_ci95": [
-     45.0,
-     56.5
+     46.5,
+     57.3
     ],
     "accuracy_ci95_doc": [
-     37.7,
-     64.9
+     39.0,
+     65.9
     ],
-    "kappa": 0.125,
-    "macro_f1": 21.6,
+    "kappa": 0.122,
+    "macro_f1": 21.5,
     "macro_f1_ci95": [
-     18.5,
-     24.5
+     18.7,
+     24.1
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 79.1,
+    "accuracy": 79.2,
     "accuracy_ci95": [
-     74.4,
-     83.1
+     74.9,
+     83.2
     ],
     "accuracy_ci95_doc": [
-     70.9,
-     85.2
+     71.0,
+     85.1
     ],
-    "kappa": 0.686,
-    "macro_f1": 74.8,
+    "kappa": 0.681,
+    "macro_f1": 74.6,
     "macro_f1_ci95": [
-     68.9,
-     79.7
+     68.6,
+     79.5
     ]
    }
   },
   "gcv": {
    "embed_lr": {
-    "accuracy": 49.2,
+    "accuracy": 50.2,
     "accuracy_ci95": [
-     44.0,
-     54.5
+     45.2,
+     55.3
     ],
     "accuracy_ci95_doc": [
-     35.7,
-     63.7
+     38.0,
+     63.3
     ],
-    "kappa": 0.186,
-    "macro_f1": 25.4,
+    "kappa": 0.198,
+    "macro_f1": 27.2,
     "macro_f1_ci95": [
-     22.2,
-     28.4
+     23.9,
+     30.4
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 47.6,
+    "accuracy": 48.6,
     "accuracy_ci95": [
-     42.0,
-     53.3
+     43.2,
+     53.9
     ],
     "accuracy_ci95_doc": [
-     32.2,
-     63.6
+     34.2,
+     64.6
     ],
-    "kappa": 0.075,
-    "macro_f1": 17.6,
+    "kappa": 0.063,
+    "macro_f1": 17.3,
     "macro_f1_ci95": [
-     15.1,
-     20.0
+     15.0,
+     19.6
     ]
    },
    "framework": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     39.7,
-     51.4
+     41.3,
+     52.1
     ],
     "accuracy_ci95_doc": [
-     30.2,
-     61.7
+     32.2,
+     63.3
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.7
     ]
    },
    "majority": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     39.7,
-     51.4
+     41.3,
+     52.1
     ],
     "accuracy_ci95_doc": [
-     30.2,
-     61.7
+     32.2,
+     63.3
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.7
     ]
    },
    "modal_rule": {
-    "accuracy": 55.6,
+    "accuracy": 57.8,
     "accuracy_ci95": [
-     50.1,
-     61.3
+     52.4,
+     63.2
     ],
     "accuracy_ci95_doc": [
-     43.7,
-     67.9
+     46.0,
+     69.6
     ],
-    "kappa": 0.306,
-    "macro_f1": 29.1,
+    "kappa": 0.329,
+    "macro_f1": 30.4,
     "macro_f1_ci95": [
-     25.3,
-     32.8
+     26.7,
+     34.1
     ]
    },
    "tfidf_lr": {
-    "accuracy": 48.1,
+    "accuracy": 49.1,
     "accuracy_ci95": [
-     42.4,
-     53.8
+     43.7,
+     54.4
     ],
     "accuracy_ci95_doc": [
-     32.8,
-     64.4
+     34.6,
+     65.3
     ],
-    "kappa": 0.064,
-    "macro_f1": 17.4,
+    "kappa": 0.058,
+    "macro_f1": 17.1,
     "macro_f1_ci95": [
-     14.8,
-     20.0
+     14.9,
+     19.4
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     39.7,
-     51.4
+     41.3,
+     52.1
     ],
     "accuracy_ci95_doc": [
-     30.2,
-     61.7
+     32.2,
+     63.3
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.7
     ]
    }
   },
   "label_counts": {
    "ambiguous": 35,
-   "conditional": 55,
-   "guidance": 132,
-   "mandatory": 26,
+   "conditional": 57,
+   "guidance": 142,
+   "mandatory": 27,
    "voluntary": 42
   },
   "lofo": {
    "embed_lr": {
-    "accuracy": 49.3,
+    "accuracy": 52.5,
     "accuracy_ci95": [
-     43.4,
-     55.2
+     46.5,
+     58.1
     ],
     "accuracy_ci95_doc": [
-     36.5,
-     63.3
+     40.3,
+     65.1
     ],
-    "kappa": 0.22,
-    "macro_f1": 28.6,
+    "kappa": 0.254,
+    "macro_f1": 31.4,
     "macro_f1_ci95": [
-     23.6,
-     33.6
+     26.2,
+     36.5
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 47.9,
+    "accuracy": 49.2,
     "accuracy_ci95": [
-     42.1,
-     53.8
+     43.6,
+     54.8
     ],
     "accuracy_ci95_doc": [
-     32.7,
-     64.3
+     34.0,
+     64.7
     ],
-    "kappa": 0.078,
-    "macro_f1": 18.6,
+    "kappa": 0.066,
+    "macro_f1": 17.3,
     "macro_f1_ci95": [
-     15.0,
-     22.4
+     14.5,
+     20.3
     ]
    },
    "framework": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     40.0,
-     51.4
+     41.3,
+     52.5
     ],
     "accuracy_ci95_doc": [
-     29.7,
-     61.8
+     31.7,
+     62.5
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.8
     ]
    },
    "majority": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     40.0,
-     51.4
+     41.3,
+     52.5
     ],
     "accuracy_ci95_doc": [
-     29.7,
-     61.8
+     31.7,
+     62.5
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.8
     ]
    },
    "modal_rule": {
-    "accuracy": 58.3,
+    "accuracy": 59.7,
     "accuracy_ci95": [
-     52.8,
-     64.1
+     54.4,
+     65.3
     ],
     "accuracy_ci95_doc": [
-     46.1,
-     69.6
+     47.3,
+     70.7
     ],
-    "kappa": 0.344,
-    "macro_f1": 31.2,
+    "kappa": 0.357,
+    "macro_f1": 31.7,
     "macro_f1_ci95": [
-     27.3,
-     34.9
+     27.8,
+     35.4
     ]
    },
    "tfidf_lr": {
-    "accuracy": 46.9,
+    "accuracy": 48.2,
     "accuracy_ci95": [
-     41.0,
-     52.8
+     42.6,
+     54.1
     ],
     "accuracy_ci95_doc": [
-     31.0,
-     63.3
+     33.0,
+     63.5
     ],
-    "kappa": 0.032,
-    "macro_f1": 15.3,
+    "kappa": 0.033,
+    "macro_f1": 15.5,
     "macro_f1_ci95": [
-     12.8,
+     13.1,
      18.2
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 45.5,
+    "accuracy": 46.9,
     "accuracy_ci95": [
-     40.0,
-     51.4
+     41.3,
+     52.5
     ],
     "accuracy_ci95_doc": [
-     29.7,
-     61.8
+     31.7,
+     62.5
     ],
     "kappa": 0.0,
-    "macro_f1": 12.5,
+    "macro_f1": 12.8,
     "macro_f1_ci95": [
-     11.4,
-     13.6
+     11.7,
+     13.8
     ]
    }
   },
@@ -798,12 +798,16 @@
     "n": 22
    },
    "US-NIST": {
-    "accuracy": 97.2,
-    "n": 36
+    "accuracy": 97.7,
+    "n": 43
    },
    "US-OMB": {
-    "accuracy": 0.0,
-    "n": 3
+    "accuracy": 25.0,
+    "n": 8
+   },
+   "US-WH": {
+    "accuracy": 100.0,
+    "n": 1
    }
   },
   "lofo_per_class_tfidf_lr": {
@@ -812,16 +816,16 @@
     "n": 35
    },
    "conditional": {
-    "f1": 13.6,
-    "n": 55
+    "f1": 12.9,
+    "n": 57
    },
    "guidance": {
-    "f1": 63.2,
-    "n": 132
+    "f1": 64.5,
+    "n": 142
    },
    "mandatory": {
     "f1": 0.0,
-    "n": 26
+    "n": 27
    },
    "voluntary": {
     "f1": 0.0,
@@ -833,42 +837,41 @@
   "binding5": {
    "ambiguous|guidance": 35,
    "conditional|conditional": 4,
-   "conditional|guidance": 51,
-   "guidance|guidance": 132,
-   "mandatory|guidance": 26,
-   "voluntary|guidance": 42
+   "conditional|guidance": 53,
+   "guidance|guidance": 142,
+   "mandatory|guidance": 27,
+   "voluntary|conditional": 1,
+   "voluntary|guidance": 41
   },
   "test_type": {
    "CONF|CONF": 3,
-   "CONF|PERF": 28,
-   "CONF|RISK": 5,
+   "CONF|PERF": 27,
+   "CONF|RISK": 6,
    "CSAFE|PERF": 3,
-   "DATA|PERF": 6,
+   "DATA|PERF": 5,
+   "DATA|RISK": 1,
    "FAIR|FAIR": 1,
    "FAIR|PERF": 12,
    "FAIR|RISK": 5,
-   "GATE|PERF": 19,
+   "GATE|PERF": 21,
    "GATE|RISK": 1,
-   "MON|PERF": 14,
+   "MON|PERF": 16,
    "MON|RISK": 4,
    "OVER|PERF": 1,
    "PERF|CONF": 1,
-   "PERF|PERF": 50,
+   "PERF|PERF": 52,
    "PERF|RISK": 7,
    "PRIV|PERF": 5,
    "PRIV|RISK": 5,
-   "REAL|PERF": 8,
-   "RED|CONF": 1,
-   "RED|PERF": 19,
-   "RED|RED": 1,
-   "RED|RISK": 5,
-   "RISK|PERF": 24,
-   "RISK|RISK": 18,
+   "REAL|PERF": 10,
+   "RED|PERF": 20,
+   "RED|RISK": 6,
+   "RISK|PERF": 22,
+   "RISK|RISK": 22,
    "ROB|CONF": 1,
    "ROB|PERF": 16,
    "ROB|RISK": 1,
-   "SEC|CONF": 1,
-   "SEC|PERF": 19,
+   "SEC|PERF": 23,
    "SEC|RISK": 2,
    "TRANS|PERF": 3,
    "TRANS|RISK": 1
@@ -877,12 +880,12 @@
  "meta": {
   "bootstrap": 2000,
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
-  "embedding_texts_sha256": "f8579f503e14cc8505e8b22e8abb7a33e4264c0f2e7f6c2b8b70bff4b3a0bdea",
+  "embedding_texts_sha256": "8dbcdc61e162218fc3e3feed30310b6fb1308e990f8f09b385488300d05851ba",
   "folds": 5,
-  "input_sha256": "4de640630c45f998c65965fd43ec3b6370c398f683bd7c6a71a9f367d71864ff",
-  "n_families": 16,
-  "n_frameworks": 71,
-  "n_rows": 290,
+  "input_sha256": "6e3a7ed1d39a385e23b438a639a21e7373b6906d2d963c63cb0edd5db87df0c7",
+  "n_families": 17,
+  "n_frameworks": 75,
+  "n_rows": 303,
   "numpy": "2.5.3",
   "repeats": 10,
   "seed": 20261028,
@@ -891,243 +894,243 @@
  "test_type": {
   "cv": {
    "embed_lr": {
-    "accuracy": 61.2,
+    "accuracy": 59.1,
     "accuracy_ci95": [
-     56.3,
-     66.3
+     54.2,
+     64.0
     ],
     "accuracy_ci95_doc": [
-     54.2,
-     67.3
+     52.4,
+     65.3
     ],
-    "kappa": 0.556,
-    "macro_f1": 47.0,
+    "kappa": 0.533,
+    "macro_f1": 45.6,
     "macro_f1_ci95": [
-     41.9,
-     54.5
+     40.2,
+     53.2
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 55.0,
+    "accuracy": 53.1,
     "accuracy_ci95": [
-     50.2,
-     60.3
+     48.4,
+     58.1
     ],
     "accuracy_ci95_doc": [
-     47.4,
-     61.5
+     46.0,
+     59.2
     ],
-    "kappa": 0.486,
-    "macro_f1": 44.4,
+    "kappa": 0.467,
+    "macro_f1": 43.7,
     "macro_f1_ci95": [
-     38.4,
-     51.6
-    ]
-   },
-   "framework": {
-    "accuracy": 27.8,
-    "accuracy_ci95": [
-     23.4,
-     32.6
-    ],
-    "accuracy_ci95_doc": [
-     21.5,
-     34.9
-    ],
-    "kappa": 0.166,
-    "macro_f1": 17.3,
-    "macro_f1_ci95": [
-     13.8,
-     21.5
-    ]
-   },
-   "keyword_rule": {
-    "accuracy": 47.2,
-    "accuracy_ci95": [
-     41.4,
-     53.1
-    ],
-    "accuracy_ci95_doc": [
-     41.2,
-     52.9
-    ],
-    "kappa": 0.414,
-    "macro_f1": 43.9,
-    "macro_f1_ci95": [
-     36.6,
+     37.5,
      51.0
     ]
    },
+   "framework": {
+    "accuracy": 27.3,
+    "accuracy_ci95": [
+     23.2,
+     31.8
+    ],
+    "accuracy_ci95_doc": [
+     21.3,
+     34.1
+    ],
+    "kappa": 0.164,
+    "macro_f1": 18.4,
+    "macro_f1_ci95": [
+     14.3,
+     22.9
+    ]
+   },
+   "keyword_rule": {
+    "accuracy": 46.2,
+    "accuracy_ci95": [
+     40.6,
+     52.1
+    ],
+    "accuracy_ci95_doc": [
+     40.2,
+     51.6
+    ],
+    "kappa": 0.402,
+    "macro_f1": 42.9,
+    "macro_f1_ci95": [
+     35.9,
+     49.9
+    ]
+   },
    "majority": {
-    "accuracy": 20.0,
+    "accuracy": 19.8,
     "accuracy_ci95": [
      15.5,
-     24.8
+     24.4
     ],
     "accuracy_ci95_doc": [
      13.8,
-     26.4
+     25.9
     ],
     "kappa": 0.0,
     "macro_f1": 2.2,
     "macro_f1_ci95": [
      1.8,
-     2.8
+     2.7
     ]
    },
    "tfidf_lr": {
-    "accuracy": 29.9,
+    "accuracy": 29.2,
     "accuracy_ci95": [
-     25.3,
-     35.1
+     24.4,
+     34.2
     ],
     "accuracy_ci95_doc": [
-     24.4,
-     35.6
+     23.5,
+     34.8
     ],
-    "kappa": 0.138,
-    "macro_f1": 9.8,
+    "kappa": 0.131,
+    "macro_f1": 9.2,
     "macro_f1_ci95": [
-     8.1,
-     12.1
+     7.6,
+     11.5
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 32.2,
+    "accuracy": 31.6,
     "accuracy_ci95": [
      27.3,
-     37.2
+     36.4
     ],
     "accuracy_ci95_doc": [
-     25.7,
-     38.3
+     25.8,
+     37.8
     ],
-    "kappa": 0.195,
-    "macro_f1": 15.4,
+    "kappa": 0.191,
+    "macro_f1": 16.3,
     "macro_f1_ci95": [
-     12.4,
-     19.2
+     13.0,
+     20.3
     ]
    }
   },
   "gcv": {
    "embed_lr": {
-    "accuracy": 55.7,
+    "accuracy": 52.4,
     "accuracy_ci95": [
-     50.7,
-     61.0
+     47.3,
+     57.3
     ],
     "accuracy_ci95_doc": [
-     49.2,
-     62.2
+     46.3,
+     58.7
     ],
-    "kappa": 0.492,
-    "macro_f1": 39.6,
+    "kappa": 0.455,
+    "macro_f1": 37.4,
     "macro_f1_ci95": [
-     35.0,
-     46.6
+     33.2,
+     43.8
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 55.0,
+    "accuracy": 51.7,
     "accuracy_ci95": [
-     49.9,
-     60.0
+     46.5,
+     56.4
     ],
     "accuracy_ci95_doc": [
-     48.4,
-     61.1
+     45.4,
+     57.9
     ],
-    "kappa": 0.481,
-    "macro_f1": 37.1,
+    "kappa": 0.444,
+    "macro_f1": 34.4,
     "macro_f1_ci95": [
-     33.1,
-     43.2
+     30.5,
+     39.9
     ]
    },
    "framework": {
-    "accuracy": 20.0,
+    "accuracy": 19.8,
     "accuracy_ci95": [
      15.5,
-     24.8
+     24.4
     ],
     "accuracy_ci95_doc": [
      13.8,
-     26.4
+     25.9
     ],
     "kappa": 0.0,
     "macro_f1": 2.2,
     "macro_f1_ci95": [
      1.8,
-     2.8
+     2.7
     ]
    },
    "keyword_rule": {
-    "accuracy": 47.2,
+    "accuracy": 46.2,
     "accuracy_ci95": [
-     41.4,
-     53.1
+     40.6,
+     52.1
     ],
     "accuracy_ci95_doc": [
-     41.2,
-     52.9
+     40.2,
+     51.6
     ],
-    "kappa": 0.414,
-    "macro_f1": 43.9,
+    "kappa": 0.402,
+    "macro_f1": 42.9,
     "macro_f1_ci95": [
-     36.6,
-     51.0
+     35.9,
+     49.9
     ]
    },
    "majority": {
-    "accuracy": 20.0,
+    "accuracy": 19.8,
     "accuracy_ci95": [
      15.5,
-     24.8
+     24.4
     ],
     "accuracy_ci95_doc": [
      13.8,
-     26.4
+     25.9
     ],
     "kappa": 0.0,
     "macro_f1": 2.2,
     "macro_f1_ci95": [
      1.8,
-     2.8
+     2.7
     ]
    },
    "tfidf_lr": {
-    "accuracy": 27.9,
+    "accuracy": 28.2,
     "accuracy_ci95": [
      23.6,
-     32.7
+     32.9
     ],
     "accuracy_ci95_doc": [
      22.2,
-     34.1
+     34.0
     ],
-    "kappa": 0.112,
+    "kappa": 0.117,
     "macro_f1": 8.5,
     "macro_f1_ci95": [
      7.0,
-     10.6
+     10.7
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 27.4,
+    "accuracy": 27.7,
     "accuracy_ci95": [
-     22.8,
-     31.9
+     23.2,
+     32.3
     ],
     "accuracy_ci95_doc": [
-     22.3,
-     32.8
+     22.5,
+     32.9
     ],
-    "kappa": 0.109,
-    "macro_f1": 7.2,
+    "kappa": 0.116,
+    "macro_f1": 7.4,
     "macro_f1_ci95": [
-     6.1,
-     8.9
+     6.2,
+     9.2
     ]
    }
   },
@@ -1136,142 +1139,142 @@
    "CSAFE": 3,
    "DATA": 6,
    "FAIR": 18,
-   "GATE": 20,
-   "MON": 18,
+   "GATE": 22,
+   "MON": 20,
    "OVER": 1,
-   "PERF": 58,
+   "PERF": 60,
    "PRIV": 10,
-   "REAL": 8,
+   "REAL": 10,
    "RED": 26,
-   "RISK": 42,
+   "RISK": 44,
    "ROB": 18,
-   "SEC": 22,
+   "SEC": 25,
    "TRANS": 4
   },
   "lofo": {
    "embed_lr": {
     "accuracy": 53.8,
     "accuracy_ci95": [
-     48.3,
-     59.7
+     48.2,
+     59.4
     ],
     "accuracy_ci95_doc": [
      46.6,
      61.2
     ],
     "kappa": 0.471,
-    "macro_f1": 38.5,
+    "macro_f1": 37.3,
     "macro_f1_ci95": [
-     32.8,
-     46.0
+     31.9,
+     44.3
     ]
    },
    "embed_lr_fw": {
-    "accuracy": 51.4,
+    "accuracy": 51.8,
     "accuracy_ci95": [
-     45.5,
-     57.2
+     46.2,
+     57.8
     ],
     "accuracy_ci95_doc": [
-     43.5,
+     44.6,
      58.7
     ],
-    "kappa": 0.441,
-    "macro_f1": 32.9,
+    "kappa": 0.447,
+    "macro_f1": 32.8,
     "macro_f1_ci95": [
-     28.5,
-     38.9
+     28.6,
+     39.0
     ]
    },
    "framework": {
     "accuracy": 14.5,
     "accuracy_ci95": [
-     10.7,
-     18.6
+     10.9,
+     18.8
     ],
     "accuracy_ci95_doc": [
-     8.9,
-     21.0
+     9.3,
+     20.5
     ],
-    "kappa": -0.06,
-    "macro_f1": 1.8,
+    "kappa": -0.056,
+    "macro_f1": 1.9,
     "macro_f1_ci95": [
-     1.4,
-     2.3
+     1.5,
+     2.6
     ]
    },
    "keyword_rule": {
-    "accuracy": 47.2,
+    "accuracy": 46.2,
     "accuracy_ci95": [
-     41.4,
-     53.1
+     40.6,
+     52.1
     ],
     "accuracy_ci95_doc": [
-     41.6,
-     52.8
+     39.9,
+     51.5
     ],
-    "kappa": 0.414,
-    "macro_f1": 43.9,
+    "kappa": 0.402,
+    "macro_f1": 42.9,
     "macro_f1_ci95": [
-     36.9,
-     51.3
+     35.9,
+     49.8
     ]
    },
    "majority": {
     "accuracy": 14.5,
     "accuracy_ci95": [
-     10.7,
-     18.6
+     10.9,
+     18.8
     ],
     "accuracy_ci95_doc": [
-     8.9,
-     21.0
+     9.3,
+     20.5
     ],
-    "kappa": -0.06,
-    "macro_f1": 1.8,
+    "kappa": -0.056,
+    "macro_f1": 1.9,
     "macro_f1_ci95": [
-     1.4,
-     2.3
+     1.5,
+     2.6
     ]
    },
    "tfidf_lr": {
-    "accuracy": 25.2,
+    "accuracy": 25.7,
     "accuracy_ci95": [
-     20.3,
-     30.3
+     20.8,
+     31.0
     ],
     "accuracy_ci95_doc": [
-     19.9,
-     31.1
+     20.6,
+     31.2
     ],
-    "kappa": 0.08,
-    "macro_f1": 7.0,
+    "kappa": 0.088,
+    "macro_f1": 6.8,
     "macro_f1_ci95": [
-     5.0,
-     9.6
+     5.1,
+     9.1
     ]
    },
    "tfidf_lr_fw": {
-    "accuracy": 22.8,
+    "accuracy": 23.4,
     "accuracy_ci95": [
-     18.3,
-     27.6
+     18.8,
+     28.4
     ],
     "accuracy_ci95_doc": [
-     18.1,
-     28.7
+     18.5,
+     28.9
     ],
-    "kappa": 0.055,
-    "macro_f1": 5.7,
+    "kappa": 0.066,
+    "macro_f1": 5.1,
     "macro_f1_ci95": [
-     4.3,
-     7.6
+     4.1,
+     6.5
     ]
    }
   },
   "lofo_per_class_tfidf_lr": {
    "CONF": {
-    "f1": 14.0,
+    "f1": 14.6,
     "n": 36
    },
    "CSAFE": {
@@ -1288,11 +1291,11 @@
    },
    "GATE": {
     "f1": 0.0,
-    "n": 20
+    "n": 22
    },
    "MON": {
     "f1": 0.0,
-    "n": 18
+    "n": 20
    },
    "OVER": {
     "f1": 0.0,
@@ -1300,7 +1303,7 @@
    },
    "PERF": {
     "f1": 35.1,
-    "n": 58
+    "n": 60
    },
    "PRIV": {
     "f1": 0.0,
@@ -1308,15 +1311,15 @@
    },
    "REAL": {
     "f1": 0.0,
-    "n": 8
+    "n": 10
    },
    "RED": {
-    "f1": 7.4,
+    "f1": 0.0,
     "n": 26
    },
    "RISK": {
-    "f1": 37.5,
-    "n": 42
+    "f1": 41.9,
+    "n": 44
    },
    "ROB": {
     "f1": 0.0,
@@ -1324,7 +1327,7 @@
    },
    "SEC": {
     "f1": 0.0,
-    "n": 22
+    "n": 25
    },
    "TRANS": {
     "f1": 0.0,

@@ -1,0 +1,51 @@
+{
+ "allocation": {
+  "Canada": 10,
+  "Saudi": 14,
+  "UAE-AbuDhabi-DoH": 6
+ },
+ "families": [
+  "Canada",
+  "Saudi",
+  "UAE-AbuDhabi-DoH"
+ ],
+ "family_fresh_share_before": {
+  "Canada": 0.042,
+  "Saudi": 0.179,
+  "UAE-AbuDhabi-DoH": 0.222
+ },
+ "frame_size": 69,
+ "sample": [
+  "Canada-002",
+  "Canada-003",
+  "Canada-006",
+  "Canada-007",
+  "Canada-008",
+  "Canada-010",
+  "Canada-013",
+  "Canada-017",
+  "Canada-022",
+  "Canada-023",
+  "Saudi-008",
+  "Saudi-009",
+  "Saudi-011",
+  "Saudi-014",
+  "Saudi-018",
+  "Saudi-021",
+  "Saudi-P3-05",
+  "Saudi-P3-06",
+  "Saudi-P3-07",
+  "Saudi-P3-09",
+  "Saudi-P3-10",
+  "Saudi-P3-11",
+  "Saudi-P3-14",
+  "Saudi-P3-15",
+  "UAE-AbuDhabi-DoH-001",
+  "UAE-AbuDhabi-DoH-003",
+  "UAE-AbuDhabi-DoH-005",
+  "UAE-AbuDhabi-DoH-012",
+  "UAE-AbuDhabi-DoH-P3-01",
+  "UAE-AbuDhabi-DoH-P3-04"
+ ],
+ "seed": 20261103
+}

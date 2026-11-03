@@ -36,8 +36,8 @@ Selected by script from verified rows; these are examples, not a complete list. 
 
 | Row | Framework | Source status | Clause |
 |---|---|---|---|
+| `US-OMB-P5-03` | US OMB M-25-22 (Driving Efficient Acquisition of AI in Gover | mandatory | Sec. 4(e) Contract Administration, item i Authorization To O |
 | `EU-AI-Act-015` | EU AI Act (Reg. (EU) 2024/1689, as amended by Reg. (EU) 2026 | conditional | Art. 9(5) |
 | `UAE-AbuDhabi-DoH-011` | DoH Abu Dhabi Responsible AI Standard V1 (Oct 2025) | conditional | Cl. 3.3.1.2.2.1 |
 | `UAE-DIFC-ADGM-018` | DIFC Data Protection Regulations Reg 10 / Commissioner mater | conditional | D Part 2 intro p.39; footnote 2 p.5; operative source Reg. 1 |
 | `UAE-Dubai-037` | Law No. (9) of 2023 Regulating the Operation of Autonomous V | conditional | Art. 10(b) and 10(c) |
-| `EU-GPAI-CoP-008` | EU AI Act - GPAI Code of Practice (Safety and Security chapt | voluntary | Measure 4.1-4.2 |

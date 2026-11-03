@@ -1,0 +1,1 @@
+Copies of the result files of version 4.0 as they stood at commit fa3e410 (tag v4.0-paper-frozen, remote branch frozen/v4.0-paper). They are kept here so that the extended table results can be put next to the frozen ones. Do not edit.

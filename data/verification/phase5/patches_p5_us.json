@@ -1,0 +1,98 @@
+[
+ {
+  "row_id": "US-NIST-P5-05",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 2 (pp. 2-4); Appendix B (pp. 19-21)",
+  "source": "p5_us1",
+  "reason": "Testing Layer section runs pp.2-4."
+ },
+ {
+  "row_id": "US-NIST-P5-05",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "The pilot evaluated LLM applications at three levels: model testing with predefined prompts, red teaming by instructed testers, and field testing with realistic tasks. Describes practice in a pilot.",
+  "source": "p5_us1",
+  "reason": "Source says red teamers were instructed; only annotators are called trained."
+ },
+ {
+  "row_id": "US-NIST-P5-06",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 5.2 (pp. 9-12)",
+  "source": "p5_us1",
+  "reason": "Pilot Measurement Results subsection starts p.10, ends about p.12."
+ },
+ {
+  "row_id": "US-NIST-P5-07",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 4.1.1 (pp. 14-15); Sec. 1 (p. 1)",
+  "source": "p5_us1",
+  "reason": "Scenario based risk statements are on p.15 and p.1."
+ },
+ {
+  "row_id": "US-OMB-P5-01",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 4(d) Selection and Award, item i Testing and Evaluation (p. 9)",
+  "source": "p5_us2",
+  "reason": "Remove tool-rendering note and name the sub-item headings seen in the memo."
+ },
+ {
+  "row_id": "US-OMB-P5-02",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 4(d) Contract Terms, item E Ongoing Testing and Monitoring (p. 10)",
+  "source": "p5_us2",
+  "reason": "Remove tool-rendering note and name the sub-item headings seen in the memo."
+ },
+ {
+  "row_id": "US-OMB-P5-04",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 4(b)(ii) Product Demonstration (p. 8)",
+  "source": "p5_us2",
+  "reason": "Remove tool-rendering note and name the sub-item headings seen in the memo."
+ },
+ {
+  "row_id": "US-OMB-P5-05",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 4(d) Contract Terms, item F Vendor Performance Requirements (p. 10)",
+  "source": "p5_us2",
+  "reason": "Remove tool-rendering note and name the sub-item headings seen in the memo."
+ },
+ {
+  "row_id": "US-OMB-P5-03",
+  "field": "clause_or_page",
+  "op": "set",
+  "value": "Sec. 4(e) Contract Administration, item i Authorization To Operate Compliance (p. 11)",
+  "source": "p5_us2",
+  "reason": "Remove tool-rendering note; headings as seen."
+ },
+ {
+  "row_id": "US-OMB-P5-03",
+  "field": "binding_status",
+  "op": "set",
+  "value": "mandatory",
+  "source": "p5_us2",
+  "reason": "No applicability or practicability qualifier in 4(e)(i); binds covered agencies, so mandatory for those bodies under the protocol."
+ },
+ {
+  "row_id": "US-OMB-P5-03",
+  "field": "requirement_paraphrase",
+  "op": "set",
+  "value": "AI systems and services operated as an information system by or on behalf of an agency must receive an authorization to operate from an appropriate agency official before deployment.",
+  "source": "p5_us2",
+  "reason": "Align with source wording."
+ },
+ {
+  "row_id": "US-OMB-P5-03",
+  "field": "interpretation_note",
+  "op": "set",
+  "value": "Authorization gate only: the clause does not itself prescribe testing or security assessment; counts as a pre deployment gate, not a test.",
+  "source": "p5_us2",
+  "reason": "Test claim not stated in the clause."
+ }
+]

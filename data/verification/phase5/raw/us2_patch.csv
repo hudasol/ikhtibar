@@ -1,0 +1,9 @@
+row_id,field,new_value,reason
+US-OMB-P4-01,clause_or_page,"Sec. 4(d) Selection and Award, item i Testing and Evaluation (p. 9)",Remove tool-rendering note and name the sub-item headings seen in the memo.
+US-OMB-P4-02,clause_or_page,"Sec. 4(d) Contract Terms, item E Ongoing Testing and Monitoring (p. 10)",Remove tool-rendering note and name the sub-item headings seen in the memo.
+US-OMB-P4-04,clause_or_page,Sec. 4(b)(ii) Product Demonstration (p. 8),Remove tool-rendering note and name the sub-item headings seen in the memo.
+US-OMB-P4-05,clause_or_page,"Sec. 4(d) Contract Terms, item F Vendor Performance Requirements (p. 10)",Remove tool-rendering note and name the sub-item headings seen in the memo.
+US-OMB-P4-03,clause_or_page,"Sec. 4(e) Contract Administration, item i Authorization To Operate Compliance (p. 11)",Remove tool-rendering note; headings as seen.
+US-OMB-P4-03,binding_status,mandatory,"No applicability or practicability qualifier in 4(e)(i); binds covered agencies, so mandatory for those bodies under the protocol."
+US-OMB-P4-03,requirement_paraphrase,AI systems and services operated as an information system by or on behalf of an agency must receive an authorization to operate from an appropriate agency official before deployment.,Align with source wording.
+US-OMB-P4-03,interpretation_note,"Authorization gate only: the clause does not itself prescribe testing or security assessment; counts as a pre deployment gate, not a test.",Test claim not stated in the clause.

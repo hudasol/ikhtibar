@@ -20,7 +20,7 @@
 \maketitle
 
 \begin{abstract}
-Governments, standards bodies and institutes have published many documents that mention testing AI systems before deployment, but they differ in force: some require testing, some recommend it and some only describe it. We build a clause level evidence table of 522 provisions from 112 public documents and analyse the 290 test provisions that pass a verification screen. Binding provisions (mandatory or conditional) are a minority, 28\% of provisions and 25.5\% when every document is weighted equally, and stay below half under each coding assumption tried separately; combining the most favourable assumptions with resampling of documents does not rule out a majority (22.0\% of resamples reach half). Binding provisions are more often process only than the others, also within the same test type, and we find no evidence that they name methods or criteria more often. An audit of the table tempers these results: binding status is a property of the document and is modestly predictable from wording on unseen families; blind second codings agree with each other (kappa 0.905, or 0.805 without the document name) and less with the original coding; a fresh sample found 6.4\% strict errors in readable rows while 21.7\% could not be read; and an independent reference list suggests a recall of 68.4\% on 19 confirmed candidates. All coders and verifiers are language models, and a human second coding and a legal review are not yet done.
+Governments, standards bodies and institutes have published many documents that mention testing AI systems before deployment, but they differ in force: some require testing, some recommend it and some only describe it. We build a clause level evidence table of 541 provisions from 118 public documents and analyse the 303 test provisions that pass a verification screen. Binding provisions (mandatory or conditional) are a minority, 28\% of provisions and 25.0\% when every document is weighted equally, and stay below half under each coding assumption tried separately; combining the most favourable assumptions with resampling of documents does not rule out a majority (18.1\% of resamples reach half). Binding provisions are more often process only than the others, also within the same test type, and we find no evidence that they name methods or criteria more often. An audit of the table tempers these results: binding status is a property of the document and is modestly predictable from wording on unseen families; blind second codings agree with each other (kappa 0.905, or 0.805 without the document name) and less with the original coding; a fresh sample found 6.4\% strict errors in readable rows while 21.7\% could not be read; and an independent reference list suggests a recall of 68.4\% on 19 confirmed candidates. All coders and verifiers are language models, and a human second coding and a legal review are not yet done.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -57,9 +57,9 @@ We present Ikhtibar (Arabic for test), a comparative evidence base on what publi
 
 \section{Evidence base and method}\label{sec:method}
 \subsection{Frame, rows and coding}
-We included primary documents from governments, national institutes and standards bodies that were retrieved and read and that contain at least one provision on testing, evaluation, assessment, validation, conformity, red teaming, audit or verification of an AI system before or at deployment. Secondary sources were used only to locate primary ones. Each provision is a row with the clause or page, a paraphrase, the source address, the retrieval date, a binding status and a verification status. Of 522 rows, 311 are test provisions (a provision that calls for, or describes as practice, an evaluation that produces evidence), 122 are enablers such as documentation or logging, and 89 are context such as dates and penalties.
+We included primary documents from governments, national institutes and standards bodies that were retrieved and read and that contain at least one provision on testing, evaluation, assessment, validation, conformity, red teaming, audit or verification of an AI system before or at deployment. Secondary sources were used only to locate primary ones. Each provision is a row with the clause or page, a paraphrase, the source address, the retrieval date, a binding status and a verification status. Of 541 rows, 324 are test provisions (a provision that calls for, or describes as practice, an evaluation that produces evidence), 123 are enablers such as documentation or logging, and 94 are context such as dates and penalties.
 
-Binding status has five values. \emph{Mandatory} means binding on the stated actor with the duty in operative text. \emph{Conditional} means binding only if a trigger applies, such as a risk class. \emph{Voluntary} is a formal scheme or standard an organisation may adopt. \emph{Guidance} is a recommendation or a description of practice. \emph{Ambiguous} is used where the force of the source cannot be settled from the text. Each test row also has a primary test type from a taxonomy of fifteen types (Appendix~\ref{app:taxonomy}). The headline analysis uses the 290 test rows that are not unverified, unverifiable, superseded or dependent on a portal summary; 21 test rows are excluded for these reasons, and their effect is bounded in Section~\ref{sec:robust}. Coding is judgemental and was assisted by language model agents (Section~\ref{sec:ethics} and Appendix~\ref{app:llm}).
+Binding status has five values. \emph{Mandatory} means binding on the stated actor with the duty in operative text. \emph{Conditional} means binding only if a trigger applies, such as a risk class. \emph{Voluntary} is a formal scheme or standard an organisation may adopt. \emph{Guidance} is a recommendation or a description of practice. \emph{Ambiguous} is used where the force of the source cannot be settled from the text. Each test row also has a primary test type from a taxonomy of fifteen types (Appendix~\ref{app:taxonomy}). The headline analysis uses the 303 test rows that are not unverified, unverifiable, superseded or dependent on a portal summary; 21 test rows are excluded for these reasons, and their effect is bounded in Section~\ref{sec:robust}. Coding is judgemental and was assisted by language model agents (Section~\ref{sec:ethics} and Appendix~\ref{app:llm}).
 
 \subsection{Access rule}
 Only standard fetch and search tools were used. If a site rejected a fetch, the attempt was recorded and no workaround was used (no changed user agent, cache, mirror or third party copy). The row is then marked unverified because the source was blocked, excluded from the headline, and the document is listed for a person to download. 32 rows (of all types) were blocked in this way. Two further kinds of row rest on weaker access: 21 rows were graded as read through an unofficial or machine translation of the original, and 19 rows (12 of them headline rows) come from ISO catalogue pages, where the paywalled standard text was not read. Each row records which applies.
@@ -73,8 +73,8 @@ Table~\ref{tab:family} gives the headline rows by family. Families differ greatl
 \toprule
 Family & Docs & Rows & Binding & Vol./guid. & Ambig. & Binding \% (95\% CI) \\
 \midrule
-US-OMB & 1 & 3 & 3 & 0 & 0 & 100 (44 to 100) \\
 EU-AI-Act & 3 & 31 & 27 & 4 & 0 & 87 (71 to 95) \\
+US-OMB & 2 & 8 & 6 & 2 & 0 & 75 (41 to 93) \\
 UAE-AbuDhabi-DoH & 3 & 17 & 11 & 0 & 6 & 65 (41 to 83) \\
 China & 7 & 17 & 10 & 7 & 0 & 59 (36 to 78) \\
 Korea & 2 & 6 & 3 & 3 & 0 & 50 (19 to 81) \\
@@ -88,15 +88,16 @@ EU-Standards & 1 & 1 & 0 & 1 & 0 & 0 (0 to 79) \\
 ISO-IEC & 1 & 12 & 0 & 12 & 0 & 0 (0 to 24) \\
 Saudi & 6 & 30 & 0 & 11 & 19 & 0 (0 to 11) \\
 Singapore & 8 & 33 & 0 & 32 & 1 & 0 (0 to 10) \\
-US-NIST & 5 & 36 & 0 & 36 & 0 & 0 (0 to 10) \\
-All headline rows & 71 & 290 & 81 & 174 & 35 & 28 (23 to 33) \\
+US-NIST & 7 & 43 & 0 & 43 & 0 & 0 (0 to 8) \\
+US-WH & 1 & 1 & 0 & 1 & 0 & 0 (0 to 79) \\
+All headline rows & 75 & 303 & 84 & 184 & 35 & 28 (23 to 33) \\
 \bottomrule
 \end{tabular}}
 \caption{Headline test provisions by family: number of documents with headline rows, rows by binding status, and the binding (mandatory or conditional) share with a 95\% Wilson interval over rows. Intervals ignore clustering by document and are narrow for that reason.}\label{tab:family}
 \end{table}
 
 \section{What the evidence says}\label{sec:findings}
-\paragraph{RQ1: binding provisions are a minority as coded} Of 290 headline test provisions, 81 (28\%) are mandatory or conditional, 174 (60\%) are voluntary or guidance and 35 (12\%) are ambiguous. Figure~\ref{fig:family} shows that binding text is concentrated: the European Union Act supplies the largest share, followed by Abu Dhabi health regulation, China, the UAE federal instruments, the DIFC and ADGM, and Dubai, while the NIST, Singapore, ISO and general purpose model code families are almost entirely voluntary or guidance. 10 of 16 families contain any binding test provision, and 21 of 71 documents do. These shares describe the provisions that one analyst extracted from documents chosen because they mention testing; how many relevant provisions were never extracted was not measured, and Section~\ref{sec:robust} gives the range under other assumptions.
+\paragraph{RQ1: binding provisions are a minority as coded} Of 303 headline test provisions, 84 (28\%) are mandatory or conditional, 184 (61\%) are voluntary or guidance and 35 (12\%) are ambiguous. Figure~\ref{fig:family} shows that binding text is concentrated: the European Union Act supplies the largest share, followed by Abu Dhabi health regulation, China, the UAE federal instruments, the DIFC and ADGM, and Dubai, while the NIST, Singapore, ISO and general purpose model code families are almost entirely voluntary or guidance. 10 of 17 families contain any binding test provision, and 22 of 75 documents do. These shares describe the provisions that one analyst extracted from documents chosen because they mention testing; how many relevant provisions were never extracted was not measured, and Section~\ref{sec:robust} gives the range under other assumptions.
 
 \begin{figure}[t]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig2_family.png}
@@ -111,21 +112,21 @@ All headline rows & 71 & 290 & 81 & 174 & 35 & 28 (23 to 33) \\
 \toprule
 Code & Test type & Rows & Binding & Vol./guid. & Ambig. \\
 \midrule
-PERF & Performance and validity & 58 & 7 & 47 & 4 \\
+PERF & Performance and validity & 60 & 7 & 49 & 4 \\
 ROB & Robustness and reliability & 18 & 2 & 13 & 3 \\
 FAIR & Fairness and representativeness & 18 & 3 & 13 & 2 \\
-SEC & Security and adversarial resilience & 22 & 6 & 15 & 1 \\
+SEC & Security and adversarial resilience & 25 & 6 & 18 & 1 \\
 RED & Red teaming and dangerous capability evaluation & 26 & 4 & 22 & 0 \\
 CSAFE & Content safety evaluation & 3 & 0 & 3 & 0 \\
 PRIV & Privacy and data protection assessment & 10 & 5 & 4 & 1 \\
 TRANS & Transparency, explainability and reproducibility & 4 & 1 & 3 & 0 \\
 OVER & Human oversight validation & 1 & 0 & 1 & 0 \\
-RISK & Risk, impact and compliance assessment & 42 & 16 & 18 & 8 \\
+RISK & Risk, impact and compliance assessment & 44 & 16 & 20 & 8 \\
 DATA & Data quality validation & 6 & 3 & 2 & 1 \\
 CONF & Conformity assessment, independent review, certification & 36 & 22 & 7 & 7 \\
-REAL & Real world, sandbox and pilot testing & 8 & 1 & 5 & 2 \\
-MON & Post deployment monitoring and re assessment & 18 & 6 & 10 & 2 \\
-GATE & Acceptance criteria and release decision & 20 & 5 & 11 & 4 \\
+REAL & Real world, sandbox and pilot testing & 10 & 1 & 7 & 2 \\
+MON & Post deployment monitoring and re assessment & 20 & 7 & 11 & 2 \\
+GATE & Acceptance criteria and release decision & 22 & 7 & 11 & 4 \\
 \bottomrule
 \end{tabular}}
 \caption{Headline test provisions by primary test type and binding status (mandatory or conditional counted as binding).}\label{tab:types}
@@ -144,7 +145,7 @@ GATE & Acceptance criteria and release decision & 20 & 5 & 11 & 4 \\
 
 \section{Auditing the evidence base}\label{sec:audit}
 \subsection{Baselines (RQ3)}\label{sec:baselines}
-We ask how well the two main codings can be predicted by methods much simpler than reading the document, using the 290 headline rows. Methods were chosen by the analyst, who had seen the table, and committed with the code: a majority class; a document prior (the most common label among training rows of the same document); a wording rule for binding status (obligation words against recommendation words) and a keyword rule for test type built from the taxonomy definitions; TF-IDF with logistic regression; and a frozen sentence embedding (all-MiniLM-L6-v2, no fine tuning) with logistic regression whose regularisation is chosen by inner cross validation. The last two are also given a document indicator. Three protocols are used. Row level CV is 10 times repeated stratified five fold cross validation; it lets rows of one document fall in both training and test folds, so it rewards methods that recognise the document and is reported only to show that effect. Grouped CV uses the same repetitions with every document kept whole in one fold, and leave one family out (LOFO) removes every document of a family from training; these two are the fair protocols. Table~\ref{tab:bl} and Figure~\ref{fig:bl} give accuracy; macro F1 and intervals over documents are in the repository.
+We ask how well the two main codings can be predicted by methods much simpler than reading the document, using the 303 headline rows. Methods were chosen by the analyst, who had seen the table, and committed with the code: a majority class; a document prior (the most common label among training rows of the same document); a wording rule for binding status (obligation words against recommendation words) and a keyword rule for test type built from the taxonomy definitions; TF-IDF with logistic regression; and a frozen sentence embedding (all-MiniLM-L6-v2, no fine tuning) with logistic regression whose regularisation is chosen by inner cross validation. The last two are also given a document indicator. Three protocols are used. Row level CV is 10 times repeated stratified five fold cross validation; it lets rows of one document fall in both training and test folds, so it rewards methods that recognise the document and is reported only to show that effect. Grouped CV uses the same repetitions with every document kept whole in one fold, and leave one family out (LOFO) removes every document of a family from training; these two are the fair protocols. Table~\ref{tab:bl} and Figure~\ref{fig:bl} give accuracy; macro F1 and intervals over documents are in the repository.
 
 \begin{table}[t]\centering\small
 \resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
@@ -152,14 +153,14 @@ We ask how well the two main codings can be predicted by methods much simpler th
 \toprule
 Method & B5 row & B5 doc & B5 LOFO & B3 doc & Type doc & Type LOFO \\
 \midrule
-Majority class & 45.5 & 45.5 & 45.5 & 60.0 & 20.0 & 14.5 \\
-Document prior & 84.3 & 45.5 & 45.5 & 60.0 & 20.0 & 14.5 \\
-Wording rule & 58.3 & 55.6 & 58.3 & 76.9 & n/a & n/a \\
-Keyword rule & n/a & n/a & n/a & n/a & 47.2 & 47.2 \\
-TF-IDF, logistic regression & 50.9 & 48.1 & 46.9 & 62.4 & 27.9 & 25.2 \\
-TF-IDF plus document & 79.1 & 45.5 & 45.5 & 60.0 & 27.4 & 22.8 \\
-Embedding, logistic regression & 61.7 & 49.2 & 49.3 & 64.2 & 55.7 & 53.8 \\
-Embedding plus document & 82.9 & 47.6 & 47.9 & 61.7 & 55.0 & 51.4 \\
+Majority class & 46.9 & 46.9 & 46.9 & 60.7 & 19.8 & 14.5 \\
+Document prior & 83.3 & 46.9 & 46.9 & 60.7 & 19.8 & 14.5 \\
+Wording rule & 59.7 & 57.8 & 59.7 & 77.9 & n/a & n/a \\
+Keyword rule & n/a & n/a & n/a & n/a & 46.2 & 46.2 \\
+TF-IDF, logistic regression & 51.9 & 49.1 & 48.2 & 62.8 & 28.2 & 25.7 \\
+TF-IDF plus document & 79.2 & 46.9 & 46.9 & 60.7 & 27.7 & 23.4 \\
+Embedding, logistic regression & 60.9 & 50.2 & 52.5 & 63.5 & 52.4 & 53.8 \\
+Embedding plus document & 81.3 & 48.6 & 49.2 & 62.5 & 51.7 & 51.8 \\
 \bottomrule
 \end{tabular}}
 \caption{Accuracy (\%) of baselines for binding status in five classes (B5: row level CV, document grouped CV, LOFO), in three classes (B3: grouped CV) and for primary test type (grouped CV, LOFO). Row level CV leaks documents across folds. n/a means the method does not apply to that task.}\label{tab:bl}
@@ -170,10 +171,10 @@ Embedding plus document & 82.9 & 47.6 & 47.9 & 61.7 & 55.0 & 51.4 \\
 \caption{Accuracy of baselines under document grouped cross validation and leave one family out. Bars are 95\% intervals from a bootstrap over documents.}\label{fig:bl}
 \end{figure}
 
-Binding status is largely a property of the document. A document prior reaches 84.3\% under row level CV, where other provisions of the same document are in training, against 45.5\% for the majority class, and falls back to the majority rate under grouped CV and LOFO (45.5\% and 45.5\%) because it has nothing to look up. The same leak inflates the learned models: the embedding with a document indicator drops from 82.9\% under row level CV to 47.6\% under grouped CV, and the plain embedding from 61.7\% to 49.2\%. Under the fair protocols the learned wording models are not clearly better than the majority class on binding status in five classes (embedding 49.2\%, TF-IDF 48.1\%, against 45.5\%; document level interval for the embedding 35.7 to 63.7). The wording rule does better (55.6\% grouped, interval 43.7 to 67.9; 76.9\% against 60.0\% in three classes), so the wording of one provision carries some information about its force, but document level intervals overlap heavily and the ordering is suggestive. For test type the picture reverses: the embedding (55.7\% grouped, 53.8\% under LOFO) beats the keyword rule (47.2\%), which beats TF-IDF (27.9\%) and the majority class (20.0\%); the test type is recoverable from the text of the paraphrase, binding status much less so. These scores show that the coding is regular and not that it is correct, since the labels are the analyst's own and the paraphrase being classified was written by the same analyst. Row level intervals ignore clustering by document (80.2 to 88.2 for the document prior under row level CV, against 78.0 to 89.0 over documents), so Figure~\ref{fig:bl} and Table~\ref{tab:bl} give intervals over documents where they give any. The keyword lexicon was written by an analyst who had seen the table. Any later classifier must beat the document prior and the wording rule, not only the majority class.
+Binding status is largely a property of the document. A document prior reaches 83.3\% under row level CV, where other provisions of the same document are in training, against 46.9\% for the majority class, and falls back to the majority rate under grouped CV and LOFO (46.9\% and 46.9\%) because it has nothing to look up. The same leak inflates the learned models: the embedding with a document indicator drops from 81.3\% under row level CV to 48.6\% under grouped CV, and the plain embedding from 60.9\% to 50.2\%. Under the fair protocols the learned wording models are not clearly better than the majority class on binding status in five classes (embedding 50.2\%, TF-IDF 49.1\%, against 46.9\%; document level interval for the embedding 38.0 to 63.3). The wording rule does better (57.8\% grouped, interval 46.0 to 69.6; 77.9\% against 60.7\% in three classes), so the wording of one provision carries some information about its force, but document level intervals overlap heavily and the ordering is suggestive. For test type the picture reverses: the embedding (52.4\% grouped, 53.8\% under LOFO) beats the keyword rule (46.2\%), which beats TF-IDF (28.2\%) and the majority class (19.8\%); the test type is recoverable from the text of the paraphrase, binding status much less so. These scores show that the coding is regular and not that it is correct, since the labels are the analyst's own and the paraphrase being classified was written by the same analyst. Row level intervals ignore clustering by document (79.2 to 87.2 for the document prior under row level CV, against 76.5 to 88.4 over documents), so Figure~\ref{fig:bl} and Table~\ref{tab:bl} give intervals over documents where they give any. The keyword lexicon was written by an analyst who had seen the table. Any later classifier must beat the document prior and the wording rule, not only the majority class.
 
 \subsection{Coding reliability (RQ4)}
-Two coders who saw the row paraphrase, the document name and the locator, and a written codebook but not the original codes, recoded 120 headline rows drawn uniformly at random, without stratification, from the 290 (seed 20261029). Table~\ref{tab:ag} gives percentage agreement and Cohen's kappa for each pair, and Krippendorff's alpha over three coders.
+Two coders who saw the row paraphrase, the document name and the locator, and a written codebook but not the original codes, recoded 120 headline rows drawn uniformly at random, without stratification, from the 303 (seed 20261029). Table~\ref{tab:ag} gives percentage agreement and Cohen's kappa for each pair, and Krippendorff's alpha over three coders.
 
 \begin{table}[t]\centering\small
 \resizebox{\ifdim\width>\columnwidth\columnwidth\else\width\fi}{!}{%
@@ -202,19 +203,19 @@ Table~\ref{tab:rb} and Figure~\ref{fig:rb} recompute the binding share of test p
 \toprule
 Scenario & Binding share (\%) \\
 \midrule
-Headline test rows as coded & 27.9 \\
-Leave one family out, range & 20.8 to 31.9 \\
-Excluded rows added back, all binding & 32.8 \\
-Ambiguous rows all binding & 40.0 \\
-Both, most favourable to binding & 44.1 \\
-Each document weighted equally & 25.5 \\
-Document level bootstrap, 95\% interval & 13.4 to 43.7 \\
-Each family weighted equally & 31.5 \\
-Mandatory only (conditional not counted) & 9.0 \\
-Without ISO, IEC and translated rows & 28.3 \\
-Without ISO and IEC catalogue rows & 29.1 \\
-Without machine translated rows & 27.1 \\
-Most favourable assumptions with document resampling, 95\% interval & 29.2 to 59.1 \\
+Headline test rows as coded & 27.7 \\
+Leave one family out, range & 21.0 to 32.3 \\
+Excluded rows added back, all binding & 32.4 \\
+Ambiguous rows all binding & 39.3 \\
+Both, most favourable to binding & 43.2 \\
+Each document weighted equally & 25.0 \\
+Document level bootstrap, 95\% interval & 13.7 to 43.2 \\
+Each family weighted equally & 28.2 \\
+Mandatory only (conditional not counted) & 8.9 \\
+Without ISO, IEC and translated rows & 28.1 \\
+Without ISO and IEC catalogue rows & 28.9 \\
+Without machine translated rows & 26.9 \\
+Most favourable assumptions with document resampling, 95\% interval & 28.9 to 57.8 \\
 \bottomrule
 \end{tabular}}
 \caption{Binding (mandatory or conditional) share of test provisions under alternative assumptions.}\label{tab:rb}
@@ -225,7 +226,7 @@ Most favourable assumptions with document resampling, 95\% interval & 29.2 to 59
 \caption{Binding share under alternative assumptions, each taken separately.}\label{fig:rb}
 \end{figure}
 
-The statement that binding provisions are a minority survives every scenario we tried when each is taken separately. The most favourable combination of coding assumptions gives 44.1\%. Leaving out one family at a time gives 20.8\% to 31.9\%, weighting each document equally gives 25.5\% and weighting each family equally gives 31.5\%. Dropping the 12 headline rows from ISO catalogue pages gives 29.1\%, dropping the 13 headline rows read through a machine or unofficial translation gives 27.1\%, and dropping both gives 28.3\%, so the access type of those rows does not drive the result. The document level interval for the share as coded (13.4 to 43.7) is wide. The strongest test combines the most favourable coding assumptions (excluded rows and ambiguous rows all binding) with resampling of documents: the median is 43.9\%, the 95\% interval is 29.2 to 59.1, and 22.0\% of resamples reach half or more. A majority therefore cannot be excluded if the most favourable coding and an unlucky sample of documents occurred together. The supportable statement is that binding provisions are a minority as coded and under each alternative assumption alone, and that the size of the minority should be quoted with its range.
+The statement that binding provisions are a minority survives every scenario we tried when each is taken separately. The most favourable combination of coding assumptions gives 43.2\%. Leaving out one family at a time gives 21.0\% to 32.3\%, weighting each document equally gives 25.0\% and weighting each family equally gives 28.2\%. Dropping the 12 headline rows from ISO catalogue pages gives 28.9\%, dropping the 13 headline rows read through a machine or unofficial translation gives 26.9\%, and dropping both gives 28.1\%, so the access type of those rows does not drive the result. The document level interval for the share as coded (13.7 to 43.2) is wide. The strongest test combines the most favourable coding assumptions (excluded rows and ambiguous rows all binding) with resampling of documents: the median is 43.0\%, the 95\% interval is 28.9 to 57.8, and 18.1\% of resamples reach half or more. A majority therefore cannot be excluded if the most favourable coding and an unlucky sample of documents occurred together. The supportable statement is that binding provisions are a minority as coded and under each alternative assumption alone, and that the size of the minority should be quoted with its range.
 
 \subsection{Fresh independent verification (RQ6)}\label{sec:verify}
 We drew 120 rows uniformly at random (seed 20261028; rows of every type, test, enabler and context, not only headline rows) from the 485 rows that earlier checks had marked verified, and independent verifiers saw only the row and the rules and reread the primary source. Of these, 94 could be read in the working session and 26 could not (21.7\%), mostly because of a session level domain restriction and not because sites refused. Table~\ref{tab:vf} gives the error rates on readable rows. The verifiers' own grading found 4 errors (4.3\%); in the strict regrading the orchestrating agent counted as errors two rows the verifiers had called minor (an understated modality and an imprecise actor), so 6 rows had an error; they are listed in Appendix~\ref{app:errors} and accepted corrections were applied to the table. Two of the six concerned binding status: one row moved from ambiguous to guidance and one from guidance to conditional, so the corrections changed the binding count by one row, upward; the other four concerned a date attributed to a page that does not state it, an understated modality in two paraphrases and an imprecise actor. If every unreadable row were an error, the rate for the whole sample would be as high as 26.7\%, so we report the rate for readable rows. This rate is for rows that earlier checks had already passed and for the readable part of the sample: only 17 of 26 sampled European Union rows could be read; the Act itself was mostly readable (17 of 20 rows) while the unreadable ones came from the Act itself (3 of 20 rows), the general purpose model code and the standards family, so whether they would add binding provisions is unknown. The earlier phase 3 fresh sample, drawn before the corrections, found 3 errors in 23 verifiable rows (13.0\%, 95\% interval 4.5 to 32.1), and a recheck of rows that earlier passes had left open or unverified found 15 in 142 (10.6\%); the recheck covered rows that had been left open and not a random sample, so its rate is not comparable with the others. The samples are reported separately because they were drawn at different times. The true error rate of the whole table is plausibly higher than the readable subset suggests, and all verifiers are language models.
@@ -278,7 +279,7 @@ The engine agreed on 2457 of 2460 decisions (99.9\%) and matched 81 of 82 scenar
 \end{figure}
 
 \section{Discussion}
-\paragraph{What this means for a reader of the sources} As coded, 60\% of the headline provisions are voluntary or guidance and 12\% cannot be settled from the text, so a reader who treats every provision that mentions testing as a requirement would be wrong about most of them under the coding used here, although the share depends on the assumptions examined in Section~\ref{sec:audit} and the ambiguous share differs between coders. The practical rule that follows is to read the force of the document and the actor before the wording of the clause, since force is a property of the document and the wording of a single clause predicts it only moderately on unseen families (Section~\ref{sec:baselines}).
+\paragraph{What this means for a reader of the sources} As coded, 61\% of the headline provisions are voluntary or guidance and 12\% cannot be settled from the text, so a reader who treats every provision that mentions testing as a requirement would be wrong about most of them under the coding used here, although the share depends on the assumptions examined in Section~\ref{sec:audit} and the ambiguous share differs between coders. The practical rule that follows is to read the force of the document and the actor before the wording of the clause, since force is a property of the document and the wording of a single clause predicts it only moderately on unseen families (Section~\ref{sec:baselines}).
 
 \paragraph{What this means for authors of requirements} We find no evidence that binding provisions are more specific than guidance, and between a quarter and a third of them (24.7\% and 30.9\% by the two coders) say only that some testing happens. Where a regime leaves the metric to the provider or to a later standard, a reader cannot tell from the text whether a given test discharges the duty, and the research on benchmark validity suggests that the choice matters \citep{reuel2024betterbench,bean2025measuring}. Requirements that name a method, a data condition or a pass criterion, or that point to a standard that does, would be easier to meet and to audit. We state this as a consequence of the measurement and not as a finding about the intent of any regulator.
 
@@ -294,7 +295,7 @@ The engine agreed on 2457 of 2460 decisions (99.9\%) and matched 81 of 82 scenar
 \item \textbf{Currency.} Several documents were being revised at retrieval. Rows carry retrieval dates, and time sensitive items are listed in the repository.
 \item \textbf{Model identity.} The exact model name and version of the agents were not recorded during coding and cannot be recovered.
 \item \textbf{Extraction recall.} Recall of the extraction step, that is the share of test provisions in a document that became rows, was measured only in the small completeness pilot, not across the full table.
-\item \textbf{Omitted and concentrated cases.} Twelve Canadian test rows were entirely blocked and are not in the headline, so a binding Canadian instrument, if any, is missing. Ambiguous rows are concentrated: Saudi documents supply 19 of the 35 headline ambiguous rows. Conditional provisions, mostly dependent on a risk class, count as binding, so the headline binding share is higher than the mandatory only share (9.0\%, 26 rows). No human has coded any row.
+\item \textbf{Omitted and concentrated cases.} Twelve Canadian test rows were entirely blocked and are not in the headline, so a binding Canadian instrument, if any, is missing. Ambiguous rows are concentrated: Saudi documents supply 19 of the 35 headline ambiguous rows. Conditional provisions, mostly dependent on a risk class, count as binding, so the headline binding share is higher than the mandatory only share (8.9\%, 27 rows). No human has coded any row.
 \item \textbf{Post hoc analyses.} The grouped cross validation, the masked document coding check, the adjusted specificity comparison and the combined favourable scenario were added after the first results and after review. They were not preregistered, and no adjustment for multiple comparisons was made; intervals should be read as descriptive.
 \item \textbf{Tool.} Evaluation is against scenarios and synthetic profiles, with no user study. Applicability rules are the authors' proposals and have not been reviewed by a lawyer. The tool was checked against scenarios written by the same authors and run through the same engine, so agreement with them shows internal consistency and not correctness.
 \item \textbf{Literature.} The related work search ran under a restricted budget. Works cited were opened; 69 of 81 were read in full text and the rest at abstract or landing page level, as marked in the repository.

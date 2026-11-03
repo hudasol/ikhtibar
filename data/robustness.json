@@ -4,40 +4,40 @@
   "n_translated_headline": 13,
   "without_either": {
    "ambiguous": 35,
-   "binding": 75,
-   "binding_pct": 28.3,
-   "mandatory": 24,
-   "n": 265,
-   "non_binding": 155
+   "binding": 78,
+   "binding_pct": 28.1,
+   "mandatory": 25,
+   "n": 278,
+   "non_binding": 165
   },
   "without_iso_catalogue_rows": {
    "ambiguous": 35,
-   "binding": 81,
-   "binding_pct": 29.1,
-   "mandatory": 26,
-   "n": 278,
-   "non_binding": 162
+   "binding": 84,
+   "binding_pct": 28.9,
+   "mandatory": 27,
+   "n": 291,
+   "non_binding": 172
   },
   "without_translated_rows": {
    "ambiguous": 35,
-   "binding": 75,
-   "binding_pct": 27.1,
-   "mandatory": 24,
-   "n": 277,
-   "non_binding": 167
+   "binding": 78,
+   "binding_pct": 26.9,
+   "mandatory": 25,
+   "n": 290,
+   "non_binding": 177
   }
  },
  "ambiguous_bounds": {
-  "ambiguous_all_binding_pct": 40.0,
-  "ambiguous_all_non_binding_pct": 27.9
+  "ambiguous_all_binding_pct": 39.3,
+  "ambiguous_all_non_binding_pct": 27.7
  },
  "base": {
   "ambiguous": 35,
-  "binding": 81,
-  "binding_pct": 27.9,
-  "mandatory": 26,
-  "n": 290,
-  "non_binding": 174
+  "binding": 84,
+  "binding_pct": 27.7,
+  "mandatory": 27,
+  "n": 303,
+  "non_binding": 184
  },
  "claim_binding_is_minority": {
   "all_leave_one_family_out": true,
@@ -51,198 +51,207 @@
   "survives_every_scenario": true
  },
  "excluded_bounds": {
-  "all_excluded_binding_pct": 32.8,
-  "all_excluded_non_binding_pct": 26.0,
-  "as_coded_pct": 29.9
+  "all_excluded_binding_pct": 32.4,
+  "all_excluded_non_binding_pct": 25.9,
+  "as_coded_pct": 29.6
  },
  "excluded_rows": {
   "coded_binding_in_table": 12,
   "n": 21
  },
  "extreme_bounds": {
-  "least_favourable_to_binding_pct": 26.0,
-  "most_favourable_to_binding_pct": 44.1
+  "least_favourable_to_binding_pct": 25.9,
+  "most_favourable_to_binding_pct": 43.2
  },
  "family_weighted": {
-  "families": 16,
+  "families": 17,
   "families_with_any_binding": 10,
-  "mean_family_binding_pct": 31.5
+  "mean_family_binding_pct": 28.2
  },
  "favourable_with_sampling": {
   "binding_pct_ci95": [
-   29.2,
-   59.1
+   28.9,
+   57.8
   ],
-  "median_pct": 43.9,
+  "median_pct": 43.0,
   "reps": 5000,
-  "share_of_resamples_at_or_above_50": 22.0
+  "share_of_resamples_at_or_above_50": 18.1
  },
  "framework_bootstrap": {
   "binding_pct_ci95": [
-   13.4,
-   43.7
+   13.7,
+   43.2
   ],
   "reps": 5000,
   "seed": 20261028
  },
  "framework_weighted": {
-  "frameworks": 71,
+  "frameworks": 75,
   "frameworks_all_binding": 14,
-  "frameworks_majority_binding": 18,
-  "frameworks_with_any_binding_pct": 29.6,
-  "frameworks_with_any_binding_test_provision": 21,
-  "mean_framework_binding_pct": 25.5
+  "frameworks_majority_binding": 19,
+  "frameworks_with_any_binding_pct": 29.3,
+  "frameworks_with_any_binding_test_provision": 22,
+  "mean_framework_binding_pct": 25.0
  },
  "leave_one_family_out": {
   "China": {
    "ambiguous": 35,
-   "binding": 71,
-   "binding_pct": 26.0,
+   "binding": 74,
+   "binding_pct": 25.9,
    "dropped_rows": 17,
-   "mandatory": 21,
-   "n": 273,
-   "non_binding": 167
+   "mandatory": 22,
+   "n": 286,
+   "non_binding": 177
   },
   "EU-AI-Act": {
    "ambiguous": 35,
-   "binding": 54,
-   "binding_pct": 20.8,
+   "binding": 57,
+   "binding_pct": 21.0,
    "dropped_rows": 31,
-   "mandatory": 26,
-   "n": 259,
-   "non_binding": 170
+   "mandatory": 27,
+   "n": 272,
+   "non_binding": 180
   },
   "EU-GPAI-CoP": {
    "ambiguous": 35,
-   "binding": 81,
-   "binding_pct": 28.8,
+   "binding": 84,
+   "binding_pct": 28.6,
    "dropped_rows": 9,
-   "mandatory": 26,
-   "n": 281,
-   "non_binding": 165
+   "mandatory": 27,
+   "n": 294,
+   "non_binding": 175
   },
   "EU-Standards": {
    "ambiguous": 35,
-   "binding": 81,
-   "binding_pct": 28.0,
+   "binding": 84,
+   "binding_pct": 27.8,
    "dropped_rows": 1,
-   "mandatory": 26,
-   "n": 289,
-   "non_binding": 173
+   "mandatory": 27,
+   "n": 302,
+   "non_binding": 183
   },
   "ISO-IEC": {
    "ambiguous": 35,
-   "binding": 81,
-   "binding_pct": 29.1,
+   "binding": 84,
+   "binding_pct": 28.9,
    "dropped_rows": 12,
-   "mandatory": 26,
-   "n": 278,
-   "non_binding": 162
+   "mandatory": 27,
+   "n": 291,
+   "non_binding": 172
   },
   "Japan": {
    "ambiguous": 35,
-   "binding": 79,
-   "binding_pct": 28.7,
+   "binding": 82,
+   "binding_pct": 28.5,
    "dropped_rows": 15,
-   "mandatory": 24,
-   "n": 275,
-   "non_binding": 161
+   "mandatory": 25,
+   "n": 288,
+   "non_binding": 171
   },
   "Korea": {
    "ambiguous": 35,
-   "binding": 78,
-   "binding_pct": 27.5,
+   "binding": 81,
+   "binding_pct": 27.3,
    "dropped_rows": 6,
-   "mandatory": 26,
-   "n": 284,
-   "non_binding": 171
+   "mandatory": 27,
+   "n": 297,
+   "non_binding": 181
   },
   "Saudi": {
    "ambiguous": 16,
-   "binding": 81,
-   "binding_pct": 31.2,
+   "binding": 84,
+   "binding_pct": 30.8,
    "dropped_rows": 30,
-   "mandatory": 26,
-   "n": 260,
-   "non_binding": 163
+   "mandatory": 27,
+   "n": 273,
+   "non_binding": 173
   },
   "Singapore": {
    "ambiguous": 34,
-   "binding": 81,
-   "binding_pct": 31.5,
+   "binding": 84,
+   "binding_pct": 31.1,
    "dropped_rows": 33,
-   "mandatory": 26,
-   "n": 257,
-   "non_binding": 142
+   "mandatory": 27,
+   "n": 270,
+   "non_binding": 152
   },
   "UAE-AbuDhabi-DoH": {
    "ambiguous": 29,
-   "binding": 70,
-   "binding_pct": 25.6,
+   "binding": 73,
+   "binding_pct": 25.5,
    "dropped_rows": 17,
-   "mandatory": 18,
-   "n": 273,
-   "non_binding": 174
+   "mandatory": 19,
+   "n": 286,
+   "non_binding": 184
   },
   "UAE-DIFC-ADGM": {
    "ambiguous": 31,
-   "binding": 73,
-   "binding_pct": 26.6,
+   "binding": 76,
+   "binding_pct": 26.5,
    "dropped_rows": 16,
-   "mandatory": 26,
-   "n": 274,
-   "non_binding": 170
+   "mandatory": 27,
+   "n": 287,
+   "non_binding": 180
   },
   "UAE-Dubai": {
    "ambiguous": 34,
-   "binding": 74,
-   "binding_pct": 27.4,
+   "binding": 77,
+   "binding_pct": 27.2,
    "dropped_rows": 20,
-   "mandatory": 21,
-   "n": 270,
-   "non_binding": 162
+   "mandatory": 22,
+   "n": 283,
+   "non_binding": 172
   },
   "UAE-Federal": {
    "ambiguous": 34,
-   "binding": 72,
-   "binding_pct": 26.9,
+   "binding": 75,
+   "binding_pct": 26.7,
    "dropped_rows": 22,
-   "mandatory": 20,
-   "n": 268,
-   "non_binding": 162
+   "mandatory": 21,
+   "n": 281,
+   "non_binding": 172
   },
   "UK": {
    "ambiguous": 32,
-   "binding": 80,
-   "binding_pct": 29.9,
+   "binding": 83,
+   "binding_pct": 29.5,
    "dropped_rows": 22,
-   "mandatory": 26,
-   "n": 268,
-   "non_binding": 156
+   "mandatory": 27,
+   "n": 281,
+   "non_binding": 166
   },
   "US-NIST": {
    "ambiguous": 35,
-   "binding": 81,
-   "binding_pct": 31.9,
-   "dropped_rows": 36,
-   "mandatory": 26,
-   "n": 254,
-   "non_binding": 138
+   "binding": 84,
+   "binding_pct": 32.3,
+   "dropped_rows": 43,
+   "mandatory": 27,
+   "n": 260,
+   "non_binding": 141
   },
   "US-OMB": {
    "ambiguous": 35,
    "binding": 78,
-   "binding_pct": 27.2,
-   "dropped_rows": 3,
+   "binding_pct": 26.4,
+   "dropped_rows": 8,
    "mandatory": 26,
-   "n": 287,
-   "non_binding": 174
+   "n": 295,
+   "non_binding": 182
+  },
+  "US-WH": {
+   "ambiguous": 35,
+   "binding": 84,
+   "binding_pct": 27.8,
+   "dropped_rows": 1,
+   "mandatory": 27,
+   "n": 302,
+   "non_binding": 183
   }
  },
  "leave_one_family_out_range": {
   "family_giving_max": "US-NIST",
   "family_giving_min": "EU-AI-Act",
-  "max_binding_pct": 31.9,
-  "min_binding_pct": 20.8
+  "max_binding_pct": 32.3,
+  "min_binding_pct": 21.0
  }
 }

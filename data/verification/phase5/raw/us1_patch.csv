@@ -1,0 +1,5 @@
+row_id,field,new_value,reason
+US-NIST-P4-05,clause_or_page,Sec. 2 (pp. 2-4); Appendix B (pp. 19-21),Testing Layer section runs pp.2-4.
+US-NIST-P4-05,requirement_paraphrase,"The pilot evaluated LLM applications at three levels: model testing with predefined prompts, red teaming by instructed testers, and field testing with realistic tasks. Describes practice in a pilot.",Source says red teamers were instructed; only annotators are called trained.
+US-NIST-P4-06,clause_or_page,Sec. 5.2 (pp. 9-12),"Pilot Measurement Results subsection starts p.10, ends about p.12."
+US-NIST-P4-07,clause_or_page,Sec. 4.1.1 (pp. 14-15); Sec. 1 (p. 1),Scenario based risk statements are on p.15 and p.1.

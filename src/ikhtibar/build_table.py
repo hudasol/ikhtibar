@@ -12,6 +12,8 @@ TODAY = "2026-10-12"      # phase 2 check date (rounds 1 and 2)
 P3_DATE = "2026-10-16"    # phase 3 check date (rounds 3 and 4)
 P3 = D / "verification" / "phase3"
 P4 = D / "verification" / "phase4"
+P5 = D / "verification" / "phase5"
+P5_DATE = "2026-11-03"    # phase 5 check date (overnight run)
 
 OUT_COLS = [
     "row_id", "family", "framework", "clause_or_page", "requirement_paraphrase", "binding_status",
@@ -96,6 +98,10 @@ def main():
         for r in read(f):
             r["_round"] = 4; r["_file"] = os.path.basename(f); ver4[r["row_id"]] = r; ver[r["row_id"]] = r
     regrade(4, ver4)
+    # phase 5: round 5 = fresh independent check of the new phase 5 rows
+    for f in sorted(glob.glob(str(P5 / "p5res_*.csv"))):
+        for r in read(f):
+            r["_round"] = 5; r["_file"] = os.path.basename(f); ver[r["row_id"]] = r
     # rows whose phase 3 reading used a file saved by the standard fetch tool and read locally (disclosed)
     relabel = {r["row_id"]: r["access_path"] for r in read(P3 / "access_relabel.csv")} if (P3 / "access_relabel.csv").exists() else {}
     fresh3 = set()
@@ -139,12 +145,24 @@ def main():
             x["phase1_provisional"] = ""
             rows[r["row_id"]] = x; order.append(r["row_id"])
 
+    # new phase 5 rows (US candidates and the rows from the extended reference list), checked by fresh verifiers
+    for f in sorted(glob.glob(str(P5 / "p5new_*.csv"))):
+        for r in read(f):
+            x = {c: r.get(c, "") for c in OUT_COLS}
+            x["retrieved_on"] = r["retrieval_date"]
+            x["coding_note"] = "coded by phase 5 research agent (proposal), checked by a fresh verifier"
+            x["sample_type"] = "new_row_phase5"
+            x["phase1_provisional"] = ""
+            rows[r["row_id"]] = x; order.append(r["row_id"])
+
     # apply patches
     fails = []
     patches = json.load(open(D / "patches.json", encoding="utf-8"))
     for f in sorted(glob.glob(str(P3 / "patches_*.json"))):   # phase 3 accepted corrections, applied after phase 2
         patches += json.load(open(f, encoding="utf-8"))
     for f in sorted(glob.glob(str(P4 / "patches_*.json"))):   # phase 4 accepted corrections, applied last
+        patches += json.load(open(f, encoding="utf-8"))
+    for f in sorted(glob.glob(str(P5 / "patches_p5*.json"))):   # phase 5 corrections
         patches += json.load(open(f, encoding="utf-8"))
     applied = {}
     for p in patches:
@@ -186,14 +204,14 @@ def main():
         x["p3_sample"] = ("fresh_random_seed_20261016" if rid in fresh3 else
                           "new_row_phase3" if x["sample_type"] == "new_row_phase3" else
                           "phase3_recheck" if rid in ver3 else "")
-        if x["sample_type"] not in ("new_row_phase2", "new_row_phase3"):
+        if x["sample_type"] not in ("new_row_phase2", "new_row_phase3", "new_row_phase5"):
             if rid in sets["fresh"]: x["sample_type"] = "fresh_random_seed_20261012"
             elif rid in sets["cited"]: x["sample_type"] = "cited_in_prose"
             elif rid in sets["must"]: x["sample_type"] = "targeted"
             elif v: x["sample_type"] = "targeted"
             else: x["sample_type"] = "not_rechecked"
             if rid in sets["cited"] and rid in sets["fresh"]: x["sample_type"] = "cited_in_prose"
-        if v is None and x["sample_type"] == "new_row_phase3":
+        if v is None and x["sample_type"] in ("new_row_phase3", "new_row_phase5"):
             x["verification_status"] = "NEW_UNCHECKED"
             x["verification_round"] = ""
         elif v is None:
@@ -209,7 +227,7 @@ def main():
             if x["language_read"] == "" and v.get("language_read"):
                 x["language_read"] = v["language_read"]
             if raw in ("PASS", "MINOR", "ERROR"):
-                x["last_checked_on"] = P3_DATE if v["_round"] >= 3 else TODAY
+                x["last_checked_on"] = P5_DATE if v["_round"] >= 5 else P3_DATE if v["_round"] >= 3 else TODAY
                 if raw == "PASS" or adj == "PASS":
                     x["verification_status"] = "VERIFIED"
                 else:

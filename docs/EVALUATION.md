@@ -19,49 +19,49 @@ Throughout, the labels are the analyst's own codes (made with AI assistance and 
 
 ## 1. Baselines for the two codings
 
-Population: 290 headline test rows from 71 documents in 16 families. Protocols: 10 times repeated stratified five fold cross validation, and leave one family out, which removes every document of a family from training. Intervals are bootstrap 95% intervals over rows (2000 resamples, fixed seed). The models use scikit-learn 1.9.1. Methods were chosen by the analyst, who had seen the table, and were committed together with the code.
+Population: 303 headline test rows from 75 documents in 17 families. Protocols: 10 times repeated stratified five fold cross validation, and leave one family out, which removes every document of a family from training. Intervals are bootstrap 95% intervals over rows (2000 resamples, fixed seed). The models use scikit-learn 1.9.1. Methods were chosen by the analyst, who had seen the table, and were committed together with the code.
 
 ### Binding status, five classes (mandatory, conditional, voluntary, guidance, ambiguous)
 
 | Method | Accuracy, row level 5 fold CV (95% CI over rows) | Accuracy, document grouped CV (95% CI over documents) | Macro F1 (grouped) | Kappa (grouped) | Accuracy, leave one family out (95% CI over documents) | Macro F1 |
 |---|---|---|---|---|---|---|
-| Majority class | 45.5 (39.7 to 51.4) | 45.5 (30.2 to 61.7) | 12.5 | 0.0 | 45.5 (29.7 to 61.8) | 12.5 |
-| Document prior (most common label in the same document) | 84.3 (80.2 to 88.2) | 45.5 (30.2 to 61.7) | 12.5 | 0.0 | 45.5 (29.7 to 61.8) | 12.5 |
-| Wording rule (shall, must versus should, may) | 58.3 (52.8 to 64.1) | 55.6 (43.7 to 67.9) | 29.1 | 0.306 | 58.3 (46.1 to 69.6) | 31.2 |
-| TF-IDF with logistic regression | 50.9 (45.0 to 56.5) | 48.1 (32.8 to 64.4) | 17.4 | 0.064 | 46.9 (31.0 to 63.3) | 15.3 |
-| TF-IDF with logistic regression plus document indicator | 79.1 (74.4 to 83.1) | 45.5 (30.2 to 61.7) | 12.5 | 0.0 | 45.5 (29.7 to 61.8) | 12.5 |
-| Frozen sentence embedding with logistic regression | 61.7 (56.7 to 66.8) | 49.2 (35.7 to 63.7) | 25.4 | 0.186 | 49.3 (36.5 to 63.3) | 28.6 |
-| Frozen sentence embedding with logistic regression plus document indicator | 82.9 (79.1 to 86.5) | 47.6 (32.2 to 63.6) | 17.6 | 0.075 | 47.9 (32.7 to 64.3) | 18.6 |
+| Majority class | 46.9 (41.3 to 52.1) | 46.9 (32.2 to 63.3) | 12.8 | 0.0 | 46.9 (31.7 to 62.5) | 12.8 |
+| Document prior (most common label in the same document) | 83.3 (79.2 to 87.2) | 46.9 (32.2 to 63.3) | 12.8 | 0.0 | 46.9 (31.7 to 62.5) | 12.8 |
+| Wording rule (shall, must versus should, may) | 59.7 (54.1 to 65.0) | 57.8 (46.0 to 69.6) | 30.4 | 0.329 | 59.7 (47.3 to 70.7) | 31.7 |
+| TF-IDF with logistic regression | 51.9 (46.5 to 57.3) | 49.1 (34.6 to 65.3) | 17.1 | 0.058 | 48.2 (33.0 to 63.5) | 15.5 |
+| TF-IDF with logistic regression plus document indicator | 79.2 (74.9 to 83.2) | 46.9 (32.2 to 63.3) | 12.8 | 0.0 | 46.9 (31.7 to 62.5) | 12.8 |
+| Frozen sentence embedding with logistic regression | 60.9 (56.3 to 65.8) | 50.2 (38.0 to 63.3) | 27.2 | 0.198 | 52.5 (40.3 to 65.1) | 31.4 |
+| Frozen sentence embedding with logistic regression plus document indicator | 81.3 (77.3 to 85.0) | 48.6 (34.2 to 64.6) | 17.3 | 0.063 | 49.2 (34.0 to 64.7) | 17.3 |
 
 ### Binding status, three classes (binding, non binding, ambiguous)
 
 | Method | Accuracy, row level 5 fold CV (95% CI over rows) | Accuracy, document grouped CV (95% CI over documents) | Macro F1 (grouped) | Kappa (grouped) | Accuracy, leave one family out (95% CI over documents) | Macro F1 |
 |---|---|---|---|---|---|---|
-| Majority class | 60.0 (54.1 to 65.5) | 60.0 (44.8 to 75.3) | 25.0 | 0.0 | 60.0 (44.8 to 75.3) | 25.0 |
-| Document prior (most common label in the same document) | 89.6 (86.2 to 92.8) | 60.0 (44.8 to 75.3) | 25.0 | 0.0 | 60.0 (44.8 to 75.3) | 25.0 |
-| Wording rule (shall, must versus should, may) | 76.9 (72.1 to 82.1) | 76.9 (68.8 to 84.5) | 60.8 | 0.554 | 76.9 (68.8 to 84.5) | 60.8 |
-| TF-IDF with logistic regression | 64.9 (59.2 to 70.0) | 62.4 (47.2 to 77.6) | 31.0 | 0.087 | 61.4 (46.0 to 76.9) | 28.4 |
-| TF-IDF with logistic regression plus document indicator | 84.7 (80.7 to 88.2) | 60.0 (44.8 to 75.3) | 25.0 | 0.0 | 60.0 (44.8 to 75.3) | 25.0 |
-| Frozen sentence embedding with logistic regression | 73.5 (69.0 to 78.0) | 64.2 (51.3 to 77.4) | 42.0 | 0.263 | 62.1 (50.6 to 74.6) | 42.3 |
-| Frozen sentence embedding with logistic regression plus document indicator | 88.0 (84.7 to 91.1) | 61.7 (46.6 to 76.7) | 31.8 | 0.104 | 61.7 (46.4 to 77.2) | 31.2 |
+| Majority class | 60.7 (55.1 to 66.0) | 60.7 (46.1 to 75.6) | 25.2 | 0.0 | 60.7 (46.1 to 75.6) | 25.2 |
+| Document prior (most common label in the same document) | 89.1 (85.6 to 92.2) | 60.7 (46.1 to 75.6) | 25.2 | 0.0 | 60.7 (46.1 to 75.6) | 25.2 |
+| Wording rule (shall, must versus should, may) | 77.9 (73.3 to 82.5) | 77.9 (69.8 to 85.4) | 61.4 | 0.568 | 77.9 (69.8 to 85.4) | 61.4 |
+| TF-IDF with logistic regression | 65.3 (60.0 to 70.3) | 62.8 (48.3 to 77.7) | 30.6 | 0.077 | 61.7 (47.3 to 76.8) | 28.3 |
+| TF-IDF with logistic regression plus document indicator | 84.9 (81.0 to 88.4) | 60.7 (46.1 to 75.6) | 25.2 | 0.0 | 60.7 (46.1 to 75.6) | 25.2 |
+| Frozen sentence embedding with logistic regression | 73.0 (68.5 to 77.4) | 63.5 (52.0 to 75.5) | 42.1 | 0.245 | 64.7 (53.8 to 75.9) | 45.2 |
+| Frozen sentence embedding with logistic regression plus document indicator | 87.5 (84.0 to 90.7) | 62.5 (48.2 to 77.1) | 31.3 | 0.089 | 62.7 (47.7 to 77.7) | 30.7 |
 
 ### Primary test type, fifteen classes
 
 | Method | Accuracy, row level 5 fold CV (95% CI over rows) | Accuracy, document grouped CV (95% CI over documents) | Macro F1 (grouped) | Kappa (grouped) | Accuracy, leave one family out (95% CI over documents) | Macro F1 |
 |---|---|---|---|---|---|---|
-| Majority class | 20.0 (15.5 to 24.8) | 20.0 (13.8 to 26.4) | 2.2 | 0.0 | 14.5 (8.9 to 21.0) | 1.8 |
-| Document prior (most common label in the same document) | 27.8 (23.4 to 32.6) | 20.0 (13.8 to 26.4) | 2.2 | 0.0 | 14.5 (8.9 to 21.0) | 1.8 |
-| Keyword rule (taxonomy definitions) | 47.2 (41.4 to 53.1) | 47.2 (41.2 to 52.9) | 43.9 | 0.414 | 47.2 (41.6 to 52.8) | 43.9 |
-| TF-IDF with logistic regression | 29.9 (25.3 to 35.1) | 27.9 (22.2 to 34.1) | 8.5 | 0.112 | 25.2 (19.9 to 31.1) | 7.0 |
-| TF-IDF with logistic regression plus document indicator | 32.2 (27.3 to 37.2) | 27.4 (22.3 to 32.8) | 7.2 | 0.109 | 22.8 (18.1 to 28.7) | 5.7 |
-| Frozen sentence embedding with logistic regression | 61.2 (56.3 to 66.3) | 55.7 (49.2 to 62.2) | 39.6 | 0.492 | 53.8 (46.6 to 61.2) | 38.5 |
-| Frozen sentence embedding with logistic regression plus document indicator | 55.0 (50.2 to 60.3) | 55.0 (48.4 to 61.1) | 37.1 | 0.481 | 51.4 (43.5 to 58.7) | 32.9 |
+| Majority class | 19.8 (15.5 to 24.4) | 19.8 (13.8 to 25.9) | 2.2 | 0.0 | 14.5 (9.3 to 20.5) | 1.9 |
+| Document prior (most common label in the same document) | 27.3 (23.2 to 31.8) | 19.8 (13.8 to 25.9) | 2.2 | 0.0 | 14.5 (9.3 to 20.5) | 1.9 |
+| Keyword rule (taxonomy definitions) | 46.2 (40.6 to 52.1) | 46.2 (40.2 to 51.6) | 42.9 | 0.402 | 46.2 (39.9 to 51.5) | 42.9 |
+| TF-IDF with logistic regression | 29.2 (24.4 to 34.2) | 28.2 (22.2 to 34.0) | 8.5 | 0.117 | 25.7 (20.6 to 31.2) | 6.8 |
+| TF-IDF with logistic regression plus document indicator | 31.6 (27.3 to 36.4) | 27.7 (22.5 to 32.9) | 7.4 | 0.116 | 23.4 (18.5 to 28.9) | 5.1 |
+| Frozen sentence embedding with logistic regression | 59.1 (54.2 to 64.0) | 52.4 (46.3 to 58.7) | 37.4 | 0.455 | 53.8 (46.6 to 61.2) | 37.3 |
+| Frozen sentence embedding with logistic regression plus document indicator | 53.1 (48.4 to 58.1) | 51.7 (45.4 to 57.9) | 34.4 | 0.444 | 51.8 (44.6 to 58.7) | 32.8 |
 
 ### Reading the results
 
-- Binding status is largely a property of the document, in the sense that a document prior reaches 84.3% accuracy when other provisions of the same document were seen in training, against 45.5% for the majority class. This is close to tautological. When a whole family is held out, the document prior falls back to the majority rate (45.5%), because it has nothing to look up, and the wording rule is the better method.
-- Learned wording models do little better than the majority class on binding status when families are held out (TF-IDF 46.9%, frozen sentence embedding 49.3%, against 45.5%), and the wording rule reaches 58.3%. Document level intervals overlap, so this ordering is suggestive. Wording carries some signal but much less than document identity.
-- For test type, a frozen sentence embedding with logistic regression (61.2% under cross validation, 53.8% leaving a family out) beats a keyword rule built from the taxonomy definitions (47.2%), which beats TF-IDF (29.9%) and the majority class (20.0%). Test type is largely recoverable from the paraphrase text; the paraphrase was written by the analyst, so this shows regularity and not correctness.
+- Binding status is largely a property of the document, in the sense that a document prior reaches 83.3% accuracy when other provisions of the same document were seen in training, against 46.9% for the majority class. This is close to tautological. When a whole family is held out, the document prior falls back to the majority rate (46.9%), because it has nothing to look up, and the wording rule is the better method.
+- Learned wording models do little better than the majority class on binding status when families are held out (TF-IDF 48.2%, frozen sentence embedding 52.5%, against 46.9%), and the wording rule reaches 59.7%. Document level intervals overlap, so this ordering is suggestive. Wording carries some signal but much less than document identity.
+- For test type, a frozen sentence embedding with logistic regression (59.1% under cross validation, 53.8% leaving a family out) beats a keyword rule built from the taxonomy definitions (46.2%), which beats TF-IDF (29.2%) and the majority class (19.8%). Test type is largely recoverable from the paraphrase text; the paraphrase was written by the analyst, so this shows regularity and not correctness.
 - Limits of these baselines: intervals are bootstrap intervals over rows and ignore clustering by document, so they understate uncertainty. The keyword lexicon was written by an analyst who had seen the table. The text classified is the analyst's own paraphrase. The labels are the analyst's own codes.
 - Any later classifier, or any language model coder, should be compared with the document prior, the wording rule and the embedding baseline, not with the majority class alone.
 
@@ -107,22 +107,22 @@ The two blind coders agree with each other closely (kappa 0.905 on five classes)
 
 ## 4. Robustness of the headline finding
 
-Claim under test: binding (mandatory or conditional) test provisions are a minority of test provisions. Headline: 81 of 290 (27.9%).
+Claim under test: binding (mandatory or conditional) test provisions are a minority of test provisions. Headline: 84 of 303 (27.7%).
 
 | Scenario | Binding share of test provisions (%) |
 |---|---|
-| Headline test rows as coded | 27.9 |
-| Leave one family out, lowest (without EU-AI-Act) | 20.8 |
-| Leave one family out, highest (without US-NIST) | 31.9 |
-| Rows excluded from the headline added back, all counted binding | 32.8 |
-| Rows excluded from the headline added back, all counted non binding | 26.0 |
-| Ambiguous rows all counted binding | 40.0 |
-| Both adjustments, most favourable to binding | 44.1 |
-| Both adjustments, least favourable to binding | 26.0 |
-| Each document weighted equally (mean over documents) | 25.5 |
-| Document level bootstrap, 95% interval | 13.4 to 43.7 |
+| Headline test rows as coded | 27.7 |
+| Leave one family out, lowest (without EU-AI-Act) | 21.0 |
+| Leave one family out, highest (without US-NIST) | 32.3 |
+| Rows excluded from the headline added back, all counted binding | 32.4 |
+| Rows excluded from the headline added back, all counted non binding | 25.9 |
+| Ambiguous rows all counted binding | 39.3 |
+| Both adjustments, most favourable to binding | 43.2 |
+| Both adjustments, least favourable to binding | 25.9 |
+| Each document weighted equally (mean over documents) | 25.0 |
+| Document level bootstrap, 95% interval | 13.7 to 43.2 |
 
-The claim survives every scenario. Even when every excluded row and every ambiguous row is counted as binding, the binding share is 44.1%. The share is also not driven by a few long documents: of 71 documents, 21 (29.6%) contain any binding test provision. The conclusion that binding provisions are a minority is supported, but the size of the minority depends on coding choices and should be quoted with the interval, not as one number.
+The claim survives every scenario. Even when every excluded row and every ambiguous row is counted as binding, the binding share is 43.2%. The share is also not driven by a few long documents: of 75 documents, 22 (29.3%) contain any binding test provision. The conclusion that binding provisions are a minority is supported, but the size of the minority depends on coding choices and should be quoted with the interval, not as one number.
 
 ## 5. Fresh independent verification
 

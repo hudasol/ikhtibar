@@ -1,0 +1,248 @@
+{
+ "access_sensitivity": {
+  "n_iso_headline": 12,
+  "n_translated_headline": 13,
+  "without_either": {
+   "ambiguous": 35,
+   "binding": 75,
+   "binding_pct": 28.3,
+   "mandatory": 24,
+   "n": 265,
+   "non_binding": 155
+  },
+  "without_iso_catalogue_rows": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 29.1,
+   "mandatory": 26,
+   "n": 278,
+   "non_binding": 162
+  },
+  "without_translated_rows": {
+   "ambiguous": 35,
+   "binding": 75,
+   "binding_pct": 27.1,
+   "mandatory": 24,
+   "n": 277,
+   "non_binding": 167
+  }
+ },
+ "ambiguous_bounds": {
+  "ambiguous_all_binding_pct": 40.0,
+  "ambiguous_all_non_binding_pct": 27.9
+ },
+ "base": {
+  "ambiguous": 35,
+  "binding": 81,
+  "binding_pct": 27.9,
+  "mandatory": 26,
+  "n": 290,
+  "non_binding": 174
+ },
+ "claim_binding_is_minority": {
+  "all_leave_one_family_out": true,
+  "ambiguous_all_binding": true,
+  "base": true,
+  "excluded_all_binding": true,
+  "extreme_most_favourable": true,
+  "framework_bootstrap_upper": true,
+  "framework_weighted_mean": true,
+  "statement": "binding (mandatory or conditional) test provisions are a minority (below 50%)",
+  "survives_every_scenario": true
+ },
+ "excluded_bounds": {
+  "all_excluded_binding_pct": 32.8,
+  "all_excluded_non_binding_pct": 26.0,
+  "as_coded_pct": 29.9
+ },
+ "excluded_rows": {
+  "coded_binding_in_table": 12,
+  "n": 21
+ },
+ "extreme_bounds": {
+  "least_favourable_to_binding_pct": 26.0,
+  "most_favourable_to_binding_pct": 44.1
+ },
+ "family_weighted": {
+  "families": 16,
+  "families_with_any_binding": 10,
+  "mean_family_binding_pct": 31.5
+ },
+ "favourable_with_sampling": {
+  "binding_pct_ci95": [
+   29.2,
+   59.1
+  ],
+  "median_pct": 43.9,
+  "reps": 5000,
+  "share_of_resamples_at_or_above_50": 22.0
+ },
+ "framework_bootstrap": {
+  "binding_pct_ci95": [
+   13.4,
+   43.7
+  ],
+  "reps": 5000,
+  "seed": 20261028
+ },
+ "framework_weighted": {
+  "frameworks": 71,
+  "frameworks_all_binding": 14,
+  "frameworks_majority_binding": 18,
+  "frameworks_with_any_binding_pct": 29.6,
+  "frameworks_with_any_binding_test_provision": 21,
+  "mean_framework_binding_pct": 25.5
+ },
+ "leave_one_family_out": {
+  "China": {
+   "ambiguous": 35,
+   "binding": 71,
+   "binding_pct": 26.0,
+   "dropped_rows": 17,
+   "mandatory": 21,
+   "n": 273,
+   "non_binding": 167
+  },
+  "EU-AI-Act": {
+   "ambiguous": 35,
+   "binding": 54,
+   "binding_pct": 20.8,
+   "dropped_rows": 31,
+   "mandatory": 26,
+   "n": 259,
+   "non_binding": 170
+  },
+  "EU-GPAI-CoP": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 28.8,
+   "dropped_rows": 9,
+   "mandatory": 26,
+   "n": 281,
+   "non_binding": 165
+  },
+  "EU-Standards": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 28.0,
+   "dropped_rows": 1,
+   "mandatory": 26,
+   "n": 289,
+   "non_binding": 173
+  },
+  "ISO-IEC": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 29.1,
+   "dropped_rows": 12,
+   "mandatory": 26,
+   "n": 278,
+   "non_binding": 162
+  },
+  "Japan": {
+   "ambiguous": 35,
+   "binding": 79,
+   "binding_pct": 28.7,
+   "dropped_rows": 15,
+   "mandatory": 24,
+   "n": 275,
+   "non_binding": 161
+  },
+  "Korea": {
+   "ambiguous": 35,
+   "binding": 78,
+   "binding_pct": 27.5,
+   "dropped_rows": 6,
+   "mandatory": 26,
+   "n": 284,
+   "non_binding": 171
+  },
+  "Saudi": {
+   "ambiguous": 16,
+   "binding": 81,
+   "binding_pct": 31.2,
+   "dropped_rows": 30,
+   "mandatory": 26,
+   "n": 260,
+   "non_binding": 163
+  },
+  "Singapore": {
+   "ambiguous": 34,
+   "binding": 81,
+   "binding_pct": 31.5,
+   "dropped_rows": 33,
+   "mandatory": 26,
+   "n": 257,
+   "non_binding": 142
+  },
+  "UAE-AbuDhabi-DoH": {
+   "ambiguous": 29,
+   "binding": 70,
+   "binding_pct": 25.6,
+   "dropped_rows": 17,
+   "mandatory": 18,
+   "n": 273,
+   "non_binding": 174
+  },
+  "UAE-DIFC-ADGM": {
+   "ambiguous": 31,
+   "binding": 73,
+   "binding_pct": 26.6,
+   "dropped_rows": 16,
+   "mandatory": 26,
+   "n": 274,
+   "non_binding": 170
+  },
+  "UAE-Dubai": {
+   "ambiguous": 34,
+   "binding": 74,
+   "binding_pct": 27.4,
+   "dropped_rows": 20,
+   "mandatory": 21,
+   "n": 270,
+   "non_binding": 162
+  },
+  "UAE-Federal": {
+   "ambiguous": 34,
+   "binding": 72,
+   "binding_pct": 26.9,
+   "dropped_rows": 22,
+   "mandatory": 20,
+   "n": 268,
+   "non_binding": 162
+  },
+  "UK": {
+   "ambiguous": 32,
+   "binding": 80,
+   "binding_pct": 29.9,
+   "dropped_rows": 22,
+   "mandatory": 26,
+   "n": 268,
+   "non_binding": 156
+  },
+  "US-NIST": {
+   "ambiguous": 35,
+   "binding": 81,
+   "binding_pct": 31.9,
+   "dropped_rows": 36,
+   "mandatory": 26,
+   "n": 254,
+   "non_binding": 138
+  },
+  "US-OMB": {
+   "ambiguous": 35,
+   "binding": 78,
+   "binding_pct": 27.2,
+   "dropped_rows": 3,
+   "mandatory": 26,
+   "n": 287,
+   "non_binding": 174
+  }
+ },
+ "leave_one_family_out_range": {
+  "family_giving_max": "US-NIST",
+  "family_giving_min": "EU-AI-Act",
+  "max_binding_pct": 31.9,
+  "min_binding_pct": 20.8
+ }
+}
