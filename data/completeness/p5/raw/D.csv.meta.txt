@@ -1,5 +1,5 @@
 Date: 2026-11-03
-Model: Claude Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)
 Search budget: ran out after 40 searches (shared per-turn limit of 200 exhausted by all agents); 8 later searches were refused.
 Not covered: New Zealand, Switzerland (incl. FINMA), Israel, Turkey, Australia technical standard / national assurance framework / mandatory guardrails paper (searches refused). No official URL was found in results for ICO AI guidance, MeitY AI Governance Guidelines, SEBI AI consultation, Central Bank of Brazil, Brazil PL 2338 full text, so these are not listed (only secondary sources seen).
 Access issues: TGA page refused by allowlist (listed as blocked); digital.gov.au AI in government policy page blocked by robots (retry declined); many gov pages returned landing pages only, so those rows are marked unclear.

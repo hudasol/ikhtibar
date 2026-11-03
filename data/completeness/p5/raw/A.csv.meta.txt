@@ -9,4 +9,4 @@ Not covered, and why:
 - AI Act operative articles (9, 15, 43, 55, 60) and MDR Annex I section 17 and Article 61 were never reached: EUR-Lex pages returned headers or truncated text, and two Service Desk article pages were not on the fetch allowlist. Only recitals, Article 58 and MDR Articles 5, 10, 36, 38 were seen.
 - Most guidance entries were read as landing pages only, not full documents, hence mostly unclear or partly read.
 Result counts in the searches file are my own counts of returned links and may be off by one or two.
-Model: Claude Sonnet 5.5 (claude-sonnet-5-5).
+Model: language model version 5.5 (mid size tier).

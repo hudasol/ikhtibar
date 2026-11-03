@@ -2,4 +2,4 @@ Web address read: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 Retrieval date: 2026-11-03
 Whole document read: partial. WebFetch returned characters 0-100000 and 100000-end (about 123k) as tool-generated summaries, not verbatim text; the first attempt was refused (not on allowlist) and the retry succeeded. Not read directly: the front matter and narrative risk descriptions, Appendix A/B body text (tool reported no testing text in the tail), and any action IDs the summarizer omitted (e.g. GV-1.3-001, MS-2.5-002, MS-2.5-004, MS-2.7-003/004/006 and others were left out or judged non-evaluative). Locators are action IDs as reported by the tool; unverified against original text. The force of all rows is non_binding because the document is a voluntary profile.
 Number of provisions: 66
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

@@ -7,4 +7,4 @@ Missed: the rest of section 3.3 onward (remainder of bias testing, and any later
 Method note: the tool answers through a summarising model; the text was read as quoted passages and paraphrases in successive segments, not as raw text. Rows consolidate closely related sentences into one provision, so the count is lower than the number of sentences seen.
 Number of provisions: 47
 Force: all rows non_binding; the document describes itself as voluntary guidance, although some sentences use "must" (flagged in notes).
-Model: Claude Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

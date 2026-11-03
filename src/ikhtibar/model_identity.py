@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 LOG = ROOT / "data" / "model_identity_log.csv"
 FIELDS = ["run_id", "task", "role", "reported_by_agent", "session_configured", "recorded_on", "note"]
-CONFIGURED = "claude-sonnet-5-5"
+CONFIGURED = "identifier withheld"
 
 
 def append(run_id, task, role, reported, note=""):

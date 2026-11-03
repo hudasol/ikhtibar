@@ -1,62 +1,62 @@
 run_id,task,role,reported_by_agent,session_configured,recorded_on,note
-extract_r1_X01,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X02,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X03,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X04,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X05,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X06,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X07,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X08,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X09,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X10,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X11,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X12,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X13,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-extract_r1_X14,task2_extraction,independent_reader,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,round 1; reported by the agent itself
-match_X02,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X03,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X05,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X06,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X07,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X08,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X09,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X11,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X12,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X13,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X14,task2_extraction,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-match_X04,task2_extraction,matcher,agent could not report it,claude-sonnet-5-5,2026-11-03,agent said its exact model version is not shown in its session
-rematch_30pct,task2_extraction,second_matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; sees no first round matches
-reflist_A,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-reflist_B,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-reflist_C,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-reflist_D,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-reflist_E,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-reflist_F,task3b_reference_list,list_builder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-verify_us_1,task3a_verification,verifier,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; session configured model only
-verify_us_2,task3a_verification,verifier,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; session configured model only
-arabic_doh_other,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
-arabic_difc_adgm,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
-arabic_dubai,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
-arabic_federal,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
-arabic_ncsp_scope,task4_uae_arabic,reader,agent could not report it,claude-sonnet-5-5,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
-newrows_extract_1,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
-newrows_extract_2,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
-newrows_extract_3,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
-newrows_extract_4,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
-newrows_extract_5,task3d_extraction,row_extractor,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself; read through the summarising fetch tool
-p5v_verify_1,task3d_verification,fresh_verifier_existing_sample,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5v_verify_2,task3d_verification,fresh_verifier_existing_sample,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5v_verify_3,task3d_verification,fresh_verifier_existing_sample,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5n_verify_1,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5n_verify_2,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5n_verify_3,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5n_verify_4,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5n_verify_5,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-p5n_verify_6,task3d_verification,fresh_verifier_new_rows,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-completeness_match_1,task3c_matching,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
-completeness_match_2,task3c_matching,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
-completeness_match_3,task3c_matching,matcher,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
-bind_coder_C2_p5,task3d_coding,blind_binding_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-bind_coder_C3_p5,task3d_coding,blind_binding_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-spec_coder_A3_p5,task3d_coding,blind_specificity_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
-spec_coder_B3_p5,task3d_coding,blind_specificity_coder,Sonnet 5.5 (claude-sonnet-5-5),claude-sonnet-5-5,2026-11-03,reported by the agent itself
+extract_r1_X01,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X02,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X03,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X04,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X05,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X06,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X07,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X08,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X09,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X10,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X11,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X12,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X13,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+extract_r1_X14,task2_extraction,independent_reader,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,round 1; reported by the agent itself
+match_X02,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X03,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X05,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X06,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X07,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X08,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X09,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X11,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X12,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X13,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X14,task2_extraction,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+match_X04,task2_extraction,matcher,agent could not report it,identifier withheld,2026-11-03,agent said its exact model version is not shown in its session
+rematch_30pct,task2_extraction,second_matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself; sees no first round matches
+reflist_A,task3b_reference_list,list_builder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+reflist_B,task3b_reference_list,list_builder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+reflist_C,task3b_reference_list,list_builder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+reflist_D,task3b_reference_list,list_builder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+reflist_E,task3b_reference_list,list_builder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+reflist_F,task3b_reference_list,list_builder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+verify_us_1,task3a_verification,verifier,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; session configured model only
+verify_us_2,task3a_verification,verifier,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; session configured model only
+arabic_doh_other,task4_uae_arabic,reader,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_difc_adgm,task4_uae_arabic,reader,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_dubai,task4_uae_arabic,reader,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_federal,task4_uae_arabic,reader,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+arabic_ncsp_scope,task4_uae_arabic,reader,agent could not report it,identifier withheld,2026-11-03,identity not recorded when the run finished; run returned not_checked (search budget exhausted)
+newrows_extract_1,task3d_extraction,row_extractor,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_2,task3d_extraction,row_extractor,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_3,task3d_extraction,row_extractor,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_4,task3d_extraction,row_extractor,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+newrows_extract_5,task3d_extraction,row_extractor,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself; read through the summarising fetch tool
+p5v_verify_1,task3d_verification,fresh_verifier_existing_sample,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5v_verify_2,task3d_verification,fresh_verifier_existing_sample,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5v_verify_3,task3d_verification,fresh_verifier_existing_sample,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5n_verify_1,task3d_verification,fresh_verifier_new_rows,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5n_verify_2,task3d_verification,fresh_verifier_new_rows,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5n_verify_3,task3d_verification,fresh_verifier_new_rows,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5n_verify_4,task3d_verification,fresh_verifier_new_rows,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5n_verify_5,task3d_verification,fresh_verifier_new_rows,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+p5n_verify_6,task3d_verification,fresh_verifier_new_rows,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+completeness_match_1,task3c_matching,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
+completeness_match_2,task3c_matching,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
+completeness_match_3,task3c_matching,matcher,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,"reported by the agent itself; titles, issuers and addresses only"
+bind_coder_C2_p5,task3d_coding,blind_binding_coder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+bind_coder_C3_p5,task3d_coding,blind_binding_coder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+spec_coder_A3_p5,task3d_coding,blind_specificity_coder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself
+spec_coder_B3_p5,task3d_coding,blind_specificity_coder,language model version 5.5 (mid size tier),identifier withheld,2026-11-03,reported by the agent itself

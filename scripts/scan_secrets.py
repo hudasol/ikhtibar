@@ -14,7 +14,7 @@ PATTERNS = {
     "GitHub token": r"\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{30,}\b|\bgithub_pat_[A-Za-z0-9_]{40,}\b",
     "Slack token": r"\bxox[abprs]-[A-Za-z0-9-]{10,}\b",
     "Google API key": r"\bAIza[0-9A-Za-z_\-]{35}\b",
-    "OpenAI or Anthropic style key": r"\bsk-(?:ant-)?[A-Za-z0-9_\-]{32,}\b",
+    "API style key": r"\bsk-(?:ant-)?[A-Za-z0-9_\-]{32,}\b",
     "JWT": r"\beyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\b",
     "generic secret assignment": r"(?i)\b(?:api[_-]?key|secret|passwd|password|token)\b\s*[:=]\s*['\"][^'\"\s]{12,}['\"]",
     "bearer header": r"(?i)authorization\s*[:=]\s*['\"]?bearer\s+[A-Za-z0-9_\-\.]{20,}",

@@ -4,4 +4,4 @@ Retrieval date: 2026-11-03
 Whole document read: partial. Text is 104169 characters; the tool read characters 0-100000 and 100000-104169 (glossary, Ch.13 end, Ch.14). Everything came through the fetch tool's summarising model answering my passage prompts (three passes over the body, one over the tail), so this is a summary-mediated read, not a verbatim full read. Page numbers are inferred by the tool and unreliable. Some passages may have been missed, particularly in Chapters 3-6 and 12 (agent descriptions); the tool reported no red teaming, conformity assessment, safety, bias or security testing text.
 Excluded as not evaluation of an AI system: runtime agent features (Compliance Verifier, Safety Compliance Monitor, audit trail logging, input validation, conditional answer generation validation), prioritisation scoring of opportunities (Ch.7.2, Ch.8), current state readiness assessment (7.1), maturity model self assessment (Ch.11).
 Number of provisions: 14
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

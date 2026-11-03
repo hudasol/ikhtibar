@@ -1,5 +1,5 @@
 Date: 2026-11-03
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)
 Search budget: ran out. The shared per-turn WebSearch limit (200) was hit after 24 successful searches; six later searches were refused (logged with result_count 0).
 Not covered because of that: Singapore FEAT/Veritas/AI Verify Foundation testing framework, MAS existing model risk material, Hong Kong Digital Policy Office and HKMA/SFC further circulars, Japan Digital Agency guidance, METI AI contract guidelines, Korea KCC/FSC guidelines and Korea AISI, TC260 AI Safety Governance Framework 2.0, MIIT and CAICT test standards, Indonesia (Kominfo/Komdigi), Taiwan official text, further Thai and Malaysian instruments.
 Access: several official addresses (MAS PDF, MOH page, MFDS-HSA PDF) were refused by the fetch allowlist and not worked around. Official addresses for Korea, Taiwan, IMDA frameworks, PCPD, GB/T 45654 were never seen, so official_url is blank for those.

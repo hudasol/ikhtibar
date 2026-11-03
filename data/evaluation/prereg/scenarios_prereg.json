@@ -1,9 +1,9 @@
 {
  "written_at": "2026-10-27T21:33:09.826123+00:00",
  "spec_files_read": [
-  "/home/claude/ikhtibar/data/checklist.yaml",
-  "/home/claude/ikhtibar/data/answers_schema.yaml",
-  "/home/claude/ikhtibar/examples/madoun_answers.json"
+  "/work/repo/data/checklist.yaml",
+  "/work/repo/data/answers_schema.yaml",
+  "/work/repo/examples/madoun_answers.json"
  ],
  "method_note": "Expected statuses were computed by a small independent oracle written only from the YAML semantics and the assumptions below (no tool code, tests or docs were opened or run), then spot checked by hand. Per scenario rationale text is generated from the rule and inputs.",
  "assumptions": [

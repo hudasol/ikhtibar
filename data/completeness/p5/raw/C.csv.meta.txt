@@ -1,5 +1,5 @@
 Date: 2026-11-03
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)
 Instruments listed: 34 (rows in C.csv).
 Search budget: RAN OUT after 31 searches (shared limit of 200 per turn reached). Four planned Canada searches were refused: AIDA/Bill C-27 status, voluntary code of conduct on generative AI, Health Canada machine learning enabled medical device guidance, OSFI Guideline E-23. These are NOT covered. Also uncovered: FTC AI statements (only law firm results found, no official page), DoD Responsible AI Toolkit (no official page found), FDA PCCP final guidance official page, California SB 53 and New York RAISE bill text, OPC and CSA guidance, NIST AI 800-1 primary page.
 Fetch problems: gov.ca.gov redirect loop, TBS Canada pages rejected, ai.mil PDFs failed, several redirect targets not on allowlist; each stopped after one retry.

@@ -2,4 +2,4 @@ Web address: http://publications.europa.eu/resource/cellar/b8c9e6d4-849c-11f1-bf
 Retrieval date: 2026-11-03 (attempted)
 Whole document read: no. Nothing was read. WebFetch refused the address with URL_NOT_ON_ALLOWLIST and said not to repeat the same fetch, so I stopped there, as the brief's access rule requires. I did not use any other route.
 Number of provisions: 0 (CSV holds the header row only)
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

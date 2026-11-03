@@ -1,5 +1,5 @@
 Date: 2026-11-03
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)
 Result: 19 instruments listed (target of 25 not met). Arabic searches performed: 9 (target of 15 not met).
 Search budget ran out: yes. The turn level WebSearch limit (shared across agents) was reached after 23 searches; four further Arabic searches were refused and are logged with result_count 0 and "NOT PERFORMED".
 Not covered: Qatar (QCB, QFC), Bahrain (EDB, CBB), Oman (MTCIT), Kuwait; SAMA (no primary instrument found in the one English search); Saudi PDPL and its regulations; CMA; CST; SASO; GAMI; GCAA; MoIAT; TDRA; UAE Cybersecurity Council; SCA stand alone; ADGM FSRA/ODP (no AI instrument seen); Dubai Digital Authority; Abu Dhabi ITC/ADIO/TAMM; DHA Dubai policy (only news results); MOHAP (only news results).

@@ -3,4 +3,4 @@ Address given first (https://aiverifyfoundation.sg/wp-content/uploads/2025/10/Ca
 Retrieval date: 2026-11-03
 Whole document read: partial. Only the fetch tool's summarising model output was available (three prompted passes; no offset segmentation was needed or used). Pass 1 gave representative quotes across the whole paper (about 41 pages), pass 2 gave Part 3 and the Conclusion in detail, pass 3 gave the Introduction, Extreme Risks and Part 2 statements. The raw text was not read directly, so Parts 1 and 2 detail (descriptions of individual benchmarks and red teaming approaches) was not read in full, and paragraph numbers and page numbers come from the summariser and may be imperfect. Part 1 and 2 survey descriptions were treated as not provisions.
 Number of provisions: 22
-Model: Claude Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

@@ -3,4 +3,4 @@ Retrieval date: 2026-11-03
 Whole document read: partial. Only through the WebFetch summarising model (three prompts, passage requests); no verbatim raw text and no offset reading. Document reported as 46 numbered pages. Quotes returned were trimmed, page numbers may be off by one, Annexure C question numbering and Annexure B mapping were not reliable, and the AI System Assessor responsibilities list was missing. Some rows (Annexure C) merge several checklist items.
 Excluded: SDAIA compliance audits of adopting entities (p.29,32) as not evaluation of an AI system; post deployment monitoring-only items.
 Number of provisions: 41
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

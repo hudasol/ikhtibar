@@ -4,4 +4,4 @@ Same document? Cover as reported by the fetch tool: title "Draft of AI Cybersecu
 Retrieval date: 2026-11-03
 Whole document read: NO. Three WebFetch calls (offsets 0 and 5000, differing prompts) returned only a summary of extracted text: table of contents (Executive Summary p6 to Annex B p25), headings, figure/table labels, glossary term names and abbreviation names with blank definitions. The body text of the guidelines (domains Governance, Defense, Resilience, Third-Party; pp16-23) was not available, so no provision could be read or verified. Executive Summary, Introduction, Scope and threat overview body text were also not returned. Only a summarising model answer was seen, not raw text.
 Number of provisions: 0 (CSV contains the header only; this reflects failure to read the body, NOT evidence that the document has no testing or evaluation provisions).
-Model: Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)

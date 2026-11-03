@@ -5,4 +5,4 @@ Whole document read: partial. Read through a summarising model (passages only, n
 Missed: MEASURE 3.2, 3.3, 3.4 and all of MEASURE 4.1 to 4.3 (web page text ended partway through MEASURE 3.1; the PDF fetch was cut at about 126,600 characters, ended in MANAGE 3.2, and showed no MEASURE section in either segment). MAP 5.1 body was only partly seen. Page text of Govern, Manage and Map was truncated around 100,000+ characters, so later subcategories (e.g. MANAGE 3.2 to 4.3 detail, parts of GOVERN 6) may be incomplete. Govern selection was by the summariser's filter.
 Number of provisions: 98
 All rows rated non_binding because the Playbook is voluntary guidance with suggested actions.
-Model: Claude Sonnet 5.5 (claude-sonnet-5-5)
+Model: language model version 5.5 (mid size tier)
