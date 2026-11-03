@@ -1,0 +1,127 @@
+{
+ "family_documents": {
+  "China": {
+   "documents": 7,
+   "with_binding": 5
+  },
+  "EU-AI-Act": {
+   "documents": 3,
+   "with_binding": 2
+  },
+  "EU-GPAI-CoP": {
+   "documents": 1,
+   "with_binding": 0
+  },
+  "EU-Other": {
+   "documents": 1,
+   "with_binding": 0
+  },
+  "EU-Standards": {
+   "documents": 1,
+   "with_binding": 0
+  },
+  "ISO-IEC": {
+   "documents": 1,
+   "with_binding": 0
+  },
+  "International": {
+   "documents": 6,
+   "with_binding": 0
+  },
+  "Japan": {
+   "documents": 10,
+   "with_binding": 1
+  },
+  "Korea": {
+   "documents": 2,
+   "with_binding": 2
+  },
+  "Other-Jurisdictions": {
+   "documents": 4,
+   "with_binding": 1
+  },
+  "Saudi": {
+   "documents": 6,
+   "with_binding": 0
+  },
+  "Singapore": {
+   "documents": 9,
+   "with_binding": 0
+  },
+  "UAE-AbuDhabi-DoH": {
+   "documents": 3,
+   "with_binding": 1
+  },
+  "UAE-DIFC-ADGM": {
+   "documents": 7,
+   "with_binding": 3
+  },
+  "UAE-Dubai": {
+   "documents": 6,
+   "with_binding": 2
+  },
+  "UAE-Federal": {
+   "documents": 8,
+   "with_binding": 3
+  },
+  "UK": {
+   "documents": 9,
+   "with_binding": 1
+  },
+  "US-NIST": {
+   "documents": 7,
+   "with_binding": 0
+  },
+  "US-OMB": {
+   "documents": 2,
+   "with_binding": 2
+  },
+  "US-Sector": {
+   "documents": 7,
+   "with_binding": 1
+  },
+  "US-WH": {
+   "documents": 1,
+   "with_binding": 0
+  }
+ },
+ "note": "exploratory; not registered",
+ "seed": 20261108,
+ "subsets": {
+  "all": {
+   "ci95": [
+    0.684,
+    0.911
+   ],
+   "pair_kappa": 0.817
+  },
+  "confirmation": {
+   "ci95": [
+    0.599,
+    0.94
+   ],
+   "pair_kappa": 0.795
+  },
+  "design": {
+   "ci95": [
+    0.58,
+    0.947
+   ],
+   "pair_kappa": 0.8
+  },
+  "new": {
+   "ci95": [
+    0.647,
+    1.0
+   ],
+   "pair_kappa": 0.863
+  },
+  "old": {
+   "ci95": [
+    0.622,
+    0.904
+   ],
+   "pair_kappa": 0.786
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "any_binding_docs_pct": 10.0,
+ "any_binding_docs_wilson95": [
+  3.5,
+  25.6
+ ],
+ "bootstrap": 4000,
+ "chance_concordance_pct": 78.1,
+ "concordance_excess_ci95": [
+  3.1,
+  33.6
+ ],
+ "concordance_excess_pp": 18.9,
+ "decisions": {
+  "C1_documents_are_pure": true,
+  "C2_concordance_excess": false,
+  "C3_minority_of_documents_binding": true,
+  "C4_minority_of_documents_weighted": true,
+  "C4b_row_level_reported_not_decisive": true,
+  "C5_process_only_gap_ci_excludes_zero": false,
+  "C5_process_only_gap_direction": false
+ },
+ "doc_concordance_pct": 97.0,
+ "doc_weighted_binding_ci95": [
+  0.0,
+  19.3
+ ],
+ "doc_weighted_binding_pct": 8.7,
+ "label_counts": {
+  "ambiguous": 1,
+  "binding": 7,
+  "non_binding": 57
+ },
+ "mixed_share_multi_pct": 5.0,
+ "mixed_share_multi_wilson95": [
+  0.9,
+  23.6
+ ],
+ "n_docs": 30,
+ "n_multi_row_docs": 20,
+ "n_rows": 65,
+ "row_binding_ci95": [
+  0.0,
+  23.5
+ ],
+ "row_binding_pct": 10.8,
+ "s1_gap_binding_rows_compared": {
+  "A": 7.0,
+  "B": 7.0
+ },
+ "s1_gap_ci95": {
+  "A": [
+   -66.7,
+   100.0
+  ],
+  "B": [
+   -66.7,
+   100.0
+  ]
+ },
+ "s1_gap_within_type_pp": {
+  "A": -13.5,
+  "B": -13.5
+ },
+ "seed": 20261107,
+ "subset": "new"
+}
