@@ -1,6 +1,6 @@
 # Handoff: what is done and what needs the author
 
-State on 28 October 2026 (version 4.0). All tests, the content check and the secrets scan pass. Everything below that says "run" assumes `export PYTHONPATH=src`.
+State on 3 November 2026 (version 4.0 frozen at commit fa3e410, extension in phase 5). All tests, the content check and the secrets scan pass. Everything below that says "run" assumes `export PYTHONPATH=src`.
 
 ## Where things are
 
@@ -24,11 +24,11 @@ A test fails if a stored result file or the paper source is older than the table
 4. **Licence.** All rights reserved is applied (`LICENSE`), as you asked. Check that the target venue accepts this for its data availability statement.
 5. **Choose a venue and its template**, then port `paper/main.tmpl.tex`. Complete the affiliation, funding and acknowledgements in the author block (marked by a comment), and decide authorship.
 6. **Check the reference metadata.** `data/paper/refs_candidates.csv` lists 61 works that were opened and read at abstract or landing page level, never in full text. Some authors, years and venues are blank where the page did not show them (see `data/paper/refs_notes.md`). Resolve these and read the works before submission.
-7. **Decide about commit attribution.** Before your rule was applied, 21 commits carry an assistant coauthor trailer, and 25 commits (including most of those made on 28 October before the author name was corrected) show the assistant as the author name. They cannot be changed without rewriting published history, which your rules forbid, so they are left. Commits from this point use your name. Tell me if you want them handled another way.
+7. **Commit attribution.** Every commit on `main` and on the frozen branch is authored and committed under your name and address. The closed pull request reference `refs/pull/1/head` on GitHub still holds three early commits authored as the assistant. They cannot be removed without rewriting published history, which your rules forbid; if you want them gone, deleting and recreating the repository is the only route, and that is your decision (see `docs/MORNING_NOTE.md`).
 
 ## Still to do with web access
 
-Done on 28 October: two retry rounds on the unreadable verification rows (26 of 120 remain unreadable), the six missed United States documents read, a second status recheck, and 14 related work items added. Left: verify the 19 candidate rows in `data/completeness/us_docs_candidate_rows.csv` and add them to the table through the build; widen the completeness reference list beyond the United States; read the 26 still unreadable sample rows (mostly EU Act, EU code of practice and NIST pages refused by the session) from a machine without the domain restriction; the DoH revision, DIFC Regulation 10, EU harmonised standards and Canada Directive points. After any of these, rerun the analyses and the builds as above.
+Done on 28 October: two retry rounds on the unreadable verification rows (26 of 120 remain unreadable), the six missed United States documents read, a second status recheck, and 14 related work items added. Done on 3 November: the 19 United States candidate rows were verified and added, the completeness reference list was widened (189 instruments), 78 rows from newly read documents were added, and extraction recall was measured. Left: the Arabic originals check (`python -m ikhtibar.uae_arabic`, inputs in `data/uae_arabic/`), the time sensitive rereads, and the existing rows that could not be read by the fresh verifiers (27 of 30 sampled); all need a session with search and fetch budget; read the 26 still unreadable sample rows (mostly EU Act, EU code of practice and NIST pages refused by the session) from a machine without the domain restriction; the DoH revision, DIFC Regulation 10, EU harmonised standards and Canada Directive points. After any of these, rerun the analyses and the builds as above.
 
 ## Claims the paper may make, and may not
 

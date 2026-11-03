@@ -70,3 +70,16 @@ Work is done in small commits straight to main, with the full test suite, `check
 ## D. What is not claimed
 
 No claim is made about what the UAE or any other jurisdiction requires beyond what a retrieved source states. Baselines measure how predictable the coding is from text. They do not establish that the coding is correct. The tool is a proposal that structures questions. It is not a compliance determination.
+
+## F. Status after the phase 5 extension (3 November 2026)
+
+Frozen reference: version 4.0, 290 headline test rows, 81 binding (27.9%). Extended table: 355 headline test rows, 88 binding (24.8%). New numbers are always reported beside the frozen ones. The preregistered predictions are in `docs/PREREG_PHASE5.md` and scored in `data/phase5/comparison.json`: 6 hits, 5 misses, 1 not tested.
+
+| Gap | Status | What changed |
+|---|---|---|
+| G2 | Still partly closed | The 97 new rows were recoded by two blind model coders (agreement between them 96.9% on binding status, kappa 0.917; with the table 89.7% and 88.7%). Coders are still models and no human coding exists. The human gold template and instructions are ready (`data/coding/phase4/HUMAN_GOLD_INSTRUCTIONS.md`). Run identities are recorded without the vendor name (decision D21). |
+| G3 | Partly closed | New rows were checked by fresh verifiers: 6 strict errors in 78 rows (7.7%, 3.6% to 15.8%). Pooled with earlier fresh samples, 16 of 217 (7.4%, 4.6% to 11.6%). A fresh sample of 30 existing rows from lightly checked families could be read for only 3, so it adds almost nothing. All verifiers are models. |
+| G4 | Partly closed, estimate lowered | Second reference list of 189 instruments, 91 with a testing provision. The table held 21 of them (23.1%, 15.6% to 32.7%; 35.2% with partial matches), against 68.4% in the first pilot. Extraction recall on 12 readable sampled documents is 38.3% (document bootstrap 25.8% to 56.1%); precision 100% but on 11 rows from 3 documents only. Missed provisions are less often binding (4.2%) than extracted ones (10.1%). The table is a selection of main provisions, not an exhaustive extraction. |
+| G9 | Mostly closed | No change in this phase. |
+| G10 | Open | The time sensitive rereads were blocked because the search budget was used up. Items stay "not determined". |
+| G15 | Open | The Arabic check could not run (search budget). Script, inputs and tests are in place; no UAE row was compared. |
